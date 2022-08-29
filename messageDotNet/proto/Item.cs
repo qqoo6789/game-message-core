@@ -48,32 +48,35 @@ namespace GameMessageCore {
             "Mh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhEKCW5mdF91c2lu",
             "ZxgKIAEoCBIVCg1uZnRfanNvbl9kYXRhGAsgASgJEhgKEG5mdF90aW1lX291",
             "dF9zZWMYDCABKAUiOQoMSXRlbUJhc2VJbmZvEgsKA2NpZBgBIAEoBRILCgNu",
-            "dW0YAiABKAUSDwoHcXVhbGl0eRgDIAEoBSqcAQoHTkZUVHlwZRISCg5ORlRU",
-            "eXBlVW5rbm93bhAAEhUKEU5GVFR5cGVDb25zdW1hYmxlEAESFAoQTkZUVHlw",
-            "ZUVxdWlwbWVudBACEhMKD05GVFR5cGVNYXRlcmlhbBADEhQKEE5GVFR5cGVQ",
-            "bGFjZWFibGUQBBIQCgxORlRUeXBlVGhpcmQQBRITCg9ORlRUeXBlV2VhcmFi",
-            "bGUQBiqGAQoJTkZUUmFyaXR5EhQKEE5GVFJhcml0eVVua25vd24QABITCg9O",
-            "RlRSYXJpdHlDb21tb24QARIRCg1ORlRSYXJpdHlSYXJlEAISEQoNTkZUUmFy",
-            "aXR5RXBpYxADEhMKD05GVFJhcml0eU15dGhpYxAEEhMKD05GVFJhcml0eVVu",
-            "aXF1ZRAFKnMKEU5GVENvbnN1bWFibGVUeXBlEh4KGk5GVENvbnN1bWFibGVU",
-            "eXBlUmVzdG9yZUhQEAASIAocTkZUQ29uc3VtYWJsZVR5cGVMZWFyblJlY2lw",
-            "ZRABEhwKGE5GVENvbnN1bWFibGVUeXBlQWRkQnVmZhACKn0KClRha2VSZWFz",
-            "b24SEwoPVGFrZVJlYXNvbk9uVXNlEAASEgoOVGFrZVJlYXNvbkRyb3AQARIT",
-            "Cg9UYWtlUmVhc29uQnVyc3QQAhIWChJUYWtlUmVhc29uVGFza1Rha2UQAxIZ",
-            "ChVUYWtlUmVhc29uTWFub3JDcmVhdGUQBCotCghJdGVtVHlwZRIQCgxJdGVt",
-            "VHlwZUdhbWUQABIPCgtJdGVtVHlwZU5GVBABKsMCCg1BdHRyaWJ1dGVUeXBl",
-            "EhgKFEF0dHJpYnV0ZVR5cGVVbmtub3duEAASGAoUQXR0cmlidXRlVHlwZUhw",
-            "TGltaXQQARIbChdBdHRyaWJ1dGVUeXBlSHBSZWNvdmVyeRACEhQKEEF0dHJp",
-            "YnV0ZVR5cGVBdHQQAxIZChVBdHRyaWJ1dGVUeXBlQXR0U3BlZWQQBBIUChBB",
-            "dHRyaWJ1dGVUeXBlRGVmEAUSFQoRQXR0cmlidXRlVHlwZUNyaXQQBhIYChRB",
-            "dHRyaWJ1dGVUeXBlQ3JpdERtZxAHEhgKFEF0dHJpYnV0ZVR5cGVIaXRSYXRl",
-            "EAgSGQoVQXR0cmlidXRlVHlwZU1pc3NSYXRlEAkSGgoWQXR0cmlidXRlVHlw",
-            "ZU1vdmVTcGVlZBAKEhgKFEF0dHJpYnV0ZVR5cGVTa2lsbElkEGMq1wEKDkF2",
-            "YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYKEkF2YXRh",
-            "clBvc2l0aW9uSGVhZBABEhYKEkF2YXRhclBvc2l0aW9uQ29hdBACEhYKEkF2",
-            "YXRhclBvc2l0aW9uUGFudBADEhYKEkF2YXRhclBvc2l0aW9uU2hvZRAEEhYK",
-            "EkF2YXRhclBvc2l0aW9uSGFuZBAFEhsKF0F2YXRhclBvc2l0aW9uQWNjZXNz",
-            "b3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QB2IGcHJvdG8z"));
+            "dW0YAiABKAUSDwoHcXVhbGl0eRgDIAEoBSKJAQoMUGxheWVyQXZhdGFyEjEK",
+            "CHBvc2l0aW9uGAEgASgOMh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0",
+            "aW9uEhEKCW9iamVjdF9pZBgCIAEoBRIzCglhdHRyaWJ1dGUYAyABKAsyIC5n",
+            "YW1lTWVzc2FnZUNvcmUuQXZhdGFyQXR0cmlidXRlKpwBCgdORlRUeXBlEhIK",
+            "Dk5GVFR5cGVVbmtub3duEAASFQoRTkZUVHlwZUNvbnN1bWFibGUQARIUChBO",
+            "RlRUeXBlRXF1aXBtZW50EAISEwoPTkZUVHlwZU1hdGVyaWFsEAMSFAoQTkZU",
+            "VHlwZVBsYWNlYWJsZRAEEhAKDE5GVFR5cGVUaGlyZBAFEhMKD05GVFR5cGVX",
+            "ZWFyYWJsZRAGKoYBCglORlRSYXJpdHkSFAoQTkZUUmFyaXR5VW5rbm93bhAA",
+            "EhMKD05GVFJhcml0eUNvbW1vbhABEhEKDU5GVFJhcml0eVJhcmUQAhIRCg1O",
+            "RlRSYXJpdHlFcGljEAMSEwoPTkZUUmFyaXR5TXl0aGljEAQSEwoPTkZUUmFy",
+            "aXR5VW5pcXVlEAUqcwoRTkZUQ29uc3VtYWJsZVR5cGUSHgoaTkZUQ29uc3Vt",
+            "YWJsZVR5cGVSZXN0b3JlSFAQABIgChxORlRDb25zdW1hYmxlVHlwZUxlYXJu",
+            "UmVjaXBlEAESHAoYTkZUQ29uc3VtYWJsZVR5cGVBZGRCdWZmEAIqfQoKVGFr",
+            "ZVJlYXNvbhITCg9UYWtlUmVhc29uT25Vc2UQABISCg5UYWtlUmVhc29uRHJv",
+            "cBABEhMKD1Rha2VSZWFzb25CdXJzdBACEhYKElRha2VSZWFzb25UYXNrVGFr",
+            "ZRADEhkKFVRha2VSZWFzb25NYW5vckNyZWF0ZRAEKi0KCEl0ZW1UeXBlEhAK",
+            "DEl0ZW1UeXBlR2FtZRAAEg8KC0l0ZW1UeXBlTkZUEAEqwwIKDUF0dHJpYnV0",
+            "ZVR5cGUSGAoUQXR0cmlidXRlVHlwZVVua25vd24QABIYChRBdHRyaWJ1dGVU",
+            "eXBlSHBMaW1pdBABEhsKF0F0dHJpYnV0ZVR5cGVIcFJlY292ZXJ5EAISFAoQ",
+            "QXR0cmlidXRlVHlwZUF0dBADEhkKFUF0dHJpYnV0ZVR5cGVBdHRTcGVlZBAE",
+            "EhQKEEF0dHJpYnV0ZVR5cGVEZWYQBRIVChFBdHRyaWJ1dGVUeXBlQ3JpdBAG",
+            "EhgKFEF0dHJpYnV0ZVR5cGVDcml0RG1nEAcSGAoUQXR0cmlidXRlVHlwZUhp",
+            "dFJhdGUQCBIZChVBdHRyaWJ1dGVUeXBlTWlzc1JhdGUQCRIaChZBdHRyaWJ1",
+            "dGVUeXBlTW92ZVNwZWVkEAoSGAoUQXR0cmlidXRlVHlwZVNraWxsSWQQYyrX",
+            "AQoOQXZhdGFyUG9zaXRpb24SFgoSQXZhdGFyUG9zaXRpb25Ob25lEAASFgoS",
+            "QXZhdGFyUG9zaXRpb25IZWFkEAESFgoSQXZhdGFyUG9zaXRpb25Db2F0EAIS",
+            "FgoSQXZhdGFyUG9zaXRpb25QYW50EAMSFgoSQXZhdGFyUG9zaXRpb25TaG9l",
+            "EAQSFgoSQXZhdGFyUG9zaXRpb25IYW5kEAUSGwoXQXZhdGFyUG9zaXRpb25B",
+            "Y2Nlc3NvcnkQBhIYChRBdmF0YXJQb3NpdGlvbldlYXBvbhAHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.TakeReason), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -85,7 +88,8 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AvatarAttribute), global::GameMessageCore.AvatarAttribute.Parser, new[]{ "Rarity", "Durability", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AttributeData), global::GameMessageCore.AttributeData.Parser, new[]{ "Type", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Item), global::GameMessageCore.Item.Parser, new[]{ "ItemType", "Id", "ObjectCid", "Num", "Player", "Attribute", "AvatarPos", "NftUsing", "NftJsonData", "NftTimeOutSec" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemBaseInfo), global::GameMessageCore.ItemBaseInfo.Parser, new[]{ "Cid", "Num", "Quality" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemBaseInfo), global::GameMessageCore.ItemBaseInfo.Parser, new[]{ "Cid", "Num", "Quality" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerAvatar), global::GameMessageCore.PlayerAvatar.Parser, new[]{ "Position", "ObjectId", "Attribute" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3023,6 +3027,290 @@ namespace GameMessageCore {
           }
           case 24: {
             Quality = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// 玩家装备
+  /// </summary>
+  public sealed partial class PlayerAvatar : pb::IMessage<PlayerAvatar>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PlayerAvatar> _parser = new pb::MessageParser<PlayerAvatar>(() => new PlayerAvatar());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PlayerAvatar> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerAvatar() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerAvatar(PlayerAvatar other) : this() {
+      position_ = other.position_;
+      objectId_ = other.objectId_;
+      attribute_ = other.attribute_ != null ? other.attribute_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerAvatar Clone() {
+      return new PlayerAvatar(this);
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 1;
+    private global::GameMessageCore.AvatarPosition position_ = global::GameMessageCore.AvatarPosition.None;
+    /// <summary>
+    /// 装备位置
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.AvatarPosition Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "object_id" field.</summary>
+    public const int ObjectIdFieldNumber = 2;
+    private int objectId_;
+    /// <summary>
+    /// 装备的物品 id
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ObjectId {
+      get { return objectId_; }
+      set {
+        objectId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "attribute" field.</summary>
+    public const int AttributeFieldNumber = 3;
+    private global::GameMessageCore.AvatarAttribute attribute_;
+    /// <summary>
+    /// 属性
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.AvatarAttribute Attribute {
+      get { return attribute_; }
+      set {
+        attribute_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PlayerAvatar);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PlayerAvatar other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Position != other.Position) return false;
+      if (ObjectId != other.ObjectId) return false;
+      if (!object.Equals(Attribute, other.Attribute)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Position != global::GameMessageCore.AvatarPosition.None) hash ^= Position.GetHashCode();
+      if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
+      if (attribute_ != null) hash ^= Attribute.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Position != global::GameMessageCore.AvatarPosition.None) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Position);
+      }
+      if (ObjectId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ObjectId);
+      }
+      if (attribute_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Attribute);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Position != global::GameMessageCore.AvatarPosition.None) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Position);
+      }
+      if (ObjectId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ObjectId);
+      }
+      if (attribute_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Attribute);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Position != global::GameMessageCore.AvatarPosition.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Position);
+      }
+      if (ObjectId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
+      }
+      if (attribute_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Attribute);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PlayerAvatar other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Position != global::GameMessageCore.AvatarPosition.None) {
+        Position = other.Position;
+      }
+      if (other.ObjectId != 0) {
+        ObjectId = other.ObjectId;
+      }
+      if (other.attribute_ != null) {
+        if (attribute_ == null) {
+          Attribute = new global::GameMessageCore.AvatarAttribute();
+        }
+        Attribute.MergeFrom(other.Attribute);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Position = (global::GameMessageCore.AvatarPosition) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            ObjectId = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (attribute_ == null) {
+              Attribute = new global::GameMessageCore.AvatarAttribute();
+            }
+            input.ReadMessage(Attribute);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Position = (global::GameMessageCore.AvatarPosition) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            ObjectId = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (attribute_ == null) {
+              Attribute = new global::GameMessageCore.AvatarAttribute();
+            }
+            input.ReadMessage(Attribute);
             break;
           }
         }

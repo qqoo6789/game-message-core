@@ -193,3 +193,13 @@ message ItemBaseInfo {
   int32       quality = 3;
 }
 
+
+// 玩家装备
+message PlayerAvatar {
+  // 装备位置
+  AvatarPosition position = 1;
+  // 装备的物品 id
+  int32 object_id = 2;
+  // 属性
+  AvatarAttribute attribute = 3;
+}

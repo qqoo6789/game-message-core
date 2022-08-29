@@ -1,7 +1,5 @@
 syntax = "proto3";
-
 package gameMessageCore;
-
 option go_package = "./messageGo/proto";
 
 

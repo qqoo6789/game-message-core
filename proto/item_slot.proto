@@ -1,8 +1,8 @@
 syntax = "proto3";
-
 package gameMessageCore;
-
 option go_package = "./messageGo/proto";
+
+import "item.proto";
 
 
 message ItemSlotAttribute {
@@ -28,19 +28,7 @@ message ItemSlotAttribute {
   int32 move_speed_added = 10;
 }
 
-message ItemSlotSetting {
-  // 道具槽位置 遵循 AvatarPosition 规则
-  int32          position = 1;
-  int32          lv = 2;
-  // 升级下一级消耗的经验
-  int32          up_exp = 3;
-  // 升级下一级消耗的meld
-  int32          up_meld = 4;
-  // 属性加成信息
-  ItemSlotAttribute attribute = 5;
-}
-
 message ItemSlot{
-//   AvatarPosition position = 1;
-//   int32          level    = 2;
+  AvatarPosition position = 1;
+  int32          level    = 2;
 }

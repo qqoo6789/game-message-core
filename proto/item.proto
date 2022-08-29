@@ -192,3 +192,4 @@ message ItemBaseInfo {
   int32       num = 2;
   int32       quality = 3;
 }
+

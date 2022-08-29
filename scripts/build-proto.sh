@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-readonly PROTO_ROOT="./proto" 
-protoc --go_out=. ${PROTO_ROOT}/*.proto
+readonly PROTO_ROOT="proto" 
+protoc --proto_path=${PROTO_ROOT} --go_out=. ${PROTO_ROOT}/*.proto
 
 
 # ------------- create dotnet use proto file ----------------

@@ -1,0 +1,194 @@
+syntax = "proto3";
+
+package gameMessageCore;
+
+
+enum NFTType{
+  NFTTypeUnknown = 0;
+  NFTTypeConsumable = 1;
+  NFTTypeEquipment = 2;
+  NFTTypeMaterial = 3;
+  NFTTypePlaceable = 4;
+  NFTTypeThird = 5;
+  NFTTypeWearable = 6;
+}
+
+// NFT品质
+enum NFTRarity{
+  NFTRarityUnknown = 0; // 无
+  NFTRarityCommon  = 1; // 普通 common
+  NFTRarityRare    = 2; // 稀有 rare
+  NFTRarityEpic    = 3; // 史诗 epic
+  NFTRarityMythic  = 4; // 神话 mythic
+  NFTRarityUnique  = 5; // 唯一 unique
+}
+
+// 消耗品作用类型
+enum NFTConsumableType{
+  NFTConsumableTypeRestoreHP = 0;
+  NFTConsumableTypeLearnRecipe = 1;
+  NFTConsumableTypeAddBuff = 2;
+}
+
+// 消耗品
+message NFTConsumableInfo{
+  string quality = 1;
+  NFTConsumableType consumable_type = 2;
+  int32  value = 3;
+}
+
+
+message NftSkill{
+  int32  skill_id = 1;
+  int32  skill_level = 2;
+}
+
+// 放置类NFT道具
+message NftPlaceableInfo{
+  string      token    = 1;
+  // 第三方NFT 没有cid
+  int32       object_cid = 2;
+  // nft 品质 第三方NFT 没有cid
+  NFTRarity placeable_rarity = 3; 
+  // 道具关联技能
+  repeated NftSkill   skills  = 4;
+}
+
+// 第三方NFT道具信息
+message NftThirdNftInfo{
+  string name = 1;
+  // 显示资源URL
+  string res_url = 2;
+  // 描述信息
+  string desc  = 3;
+  // 放置过期时间
+  int32  time_out_sec = 4;
+  // token (address)
+  string token_url = 5;
+  // token Id
+  string token_id = 6;
+}
+
+// 装备类NFT道具信息
+message NftWearableInfo{
+  string      token    = 1;
+  int32       object_cid = 2;
+  NFTRarity   wearable_rarity = 3;
+}
+
+//道具为什么被扣除
+enum TakeReason {
+  // 被使用(包含道具使用 和 建造扣除)
+  TakeReasonOnUse = 0;
+  // 玩家丢弃
+  TakeReasonDrop = 1;
+  // 死亡掉落
+  TakeReasonBurst = 2;
+  // 任务扣除
+  TakeReasonTaskTake = 3;
+  // 创建领地
+  TakeReasonManorCreate = 4; 
+}
+
+enum ItemType{
+  // 游戏道具
+  ItemTypeGame=0;
+  // 放置类NFT
+  ItemTypeNFT=1;
+}
+
+// 装备属性(保存的是增量-实际数据 = 增量 + 配置数据)
+message AvatarAttribute{
+  // 稀有度 unique,  mythic, epic, rare, common
+  string rarity = 1;
+  // 耐久度
+  int32 durability = 2;
+  // 属性增量
+  repeated AttributeData data = 3;
+}
+
+
+// 装备属性Type
+enum AttributeType {
+  AttributeTypeUnknown = 0;
+  // HP limit
+  AttributeTypeHpLimit = 1;
+  // HP Recovery
+  AttributeTypeHpRecovery = 2;
+  // 增加普通攻击
+  AttributeTypeAtt = 3;
+  // 增加普通攻击速度
+  AttributeTypeAttSpeed = 4;
+  // 增加普通防御
+  AttributeTypeDef = 5;
+  // 增加暴击率
+  AttributeTypeCrit = 6;
+  // 增加暴击伤害
+  AttributeTypeCritDmg = 7;
+  // 增加命中率
+  AttributeTypeHitRate = 8;
+  // 增加闪避率
+  AttributeTypeMissRate = 9;
+  // 移动速度
+  AttributeTypeMoveSpeed= 10;
+
+  // 挂载的技能ID
+  AttributeTypeSkillId= 99;
+}
+
+
+// 属性字段增量数据 1v1
+message AttributeData{
+  // type
+  AttributeType type = 1;
+  // 增量数值
+  int32 value = 2;
+}
+
+// 玩家装备位置
+enum AvatarPosition {
+  // 没有装备位置
+  AvatarPositionNone = 0;
+  // 头盔
+  AvatarPositionHead = 1;
+  // 上衣
+  AvatarPositionCoat = 2;
+  // 裤子
+  AvatarPositionPant = 3;
+  // 鞋子
+  AvatarPositionShoe = 4;
+  // 手
+  AvatarPositionHand = 5;
+  // 饰品
+  AvatarPositionAccessory = 6;
+  // 武器
+  AvatarPositionWeapon = 7;
+}
+
+// 道具
+message Item {
+  ItemType item_type = 1;
+  string id = 2;
+  // 对应的 objectId,
+  int32 object_cid = 3;
+  int32 num = 4;
+  string player = 5;
+  // 装备属性配置
+  AvatarAttribute attribute = 8;
+  AvatarPosition  avatar_pos = 9;
+  // nft资产如果建造在地图中了此时 nft_using = true
+  bool           nft_using = 10;
+
+  // nft 详细数据
+  string        nft_json_data = 11;
+  // nft 过期时间
+  int32         nft_time_out_sec = 12;
+}
+
+
+
+message ItemBaseInfo {
+  int32       cid = 1;
+  int32       num = 2;
+  int32       quality = 3;
+}

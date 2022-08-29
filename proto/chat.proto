@@ -1,0 +1,41 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+
+
+// 频道类型
+enum ChatChannelType {
+  ChatChannelTypeUnknown = 0;
+  // 系统
+  ChatChannelTypeSystem = 1;
+  // 世界
+  ChatChannelTypeWorld = 2;
+  // 附近
+  ChatChannelTypeNear = 3;
+  // 私聊
+  ChatChannelTypePrivate = 4;
+}
+
+message ChatSettings{
+   ChatChannelType chat_type = 1;
+   int32 cd  = 2;
+}
+
+
+enum ChatState {
+    ChatStateNormal = 0;
+    // 禁言
+    ChatStateBan = 1;
+}
+
+// 玩家接收到的聊天信息
+message ChatMessage {
+  string sender_id = 1;
+  string sender_name = 2;
+  string sender_icon = 3;
+  ChatChannelType chat_type = 4;
+  string content = 5;
+  string receiver_user = 6;  
+}

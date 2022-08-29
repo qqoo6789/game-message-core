@@ -11,20 +11,21 @@ enum ServiceStatus {
 }
 
 enum ServiceType{
-    // 主服务
-    ServiceTypeMain = 0;
-    // 账号服务
-    ServiceTypeAccount = 1;
-    // 场景(战斗)服务
-    ServiceTypeScene = 2;
-    // 任务服务
-    ServiceTypeTask = 3;
-    // 聊天服务
-    ServiceTypeChat = 4;
-    // 网关服务
-    ServiceTypeGateway = 5;
-    // 服务管理
-    ServiceTypeManager = 6;
+  ServiceTypeUnknown = 0;
+  // 主服务
+  ServiceTypeMain = 1;
+  // 账号服务
+  ServiceTypeAccount = 2;
+  // 场景(战斗)服务
+  ServiceTypeScene = 3;
+  // 任务服务
+  ServiceTypeTask = 4;
+  // 聊天服务
+  ServiceTypeChat = 5;
+  // 网关服务
+  ServiceTypeGateway = 6;
+  // 服务管理
+  ServiceTypeManager = 7;
 }
 
 message ServiceInfo {

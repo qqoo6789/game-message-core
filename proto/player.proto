@@ -1,0 +1,18 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+
+// 容貌数据
+message PlayerFeature {
+  int32 eyebrow = 1; // 眉毛
+  int32 mouth = 2; // 嘴型
+  int32 eye = 3; // 眼镜
+  int32 face = 4; // 脸型
+  int32 hair = 5; // 头发
+  int32 glove = 6; // 手套
+  int32 clothes = 7; // 衣服/上衣
+  int32 pants = 8; // 裤子
+  int32 shoes = 9; // 鞋子
+}

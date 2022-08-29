@@ -1,0 +1,17 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+
+enum OSType {
+    OSTypeUnknow = 0;
+    OSTypeAndroid = 1;
+    OSTypeIOS = 2;
+    OSTypeMac = 3;
+    OSTypeWinPhone = 4;
+    OSTypeWinPc = 5;
+    OSTypeLinux = 6;
+    OSTypeUnix = 7;
+}
+

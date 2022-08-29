@@ -1,0 +1,36 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+// 服务定义
+
+enum ServiceStatus {
+  ServiceStatusUnknown = 0;
+  ServiceStatusUp = 1;
+  ServiceStatusDown = 2;
+}
+
+enum ServiceType{
+    // 主服务
+    ServiceTypeMain = 0;
+    // 账号服务
+    ServiceTypeAccount = 1;
+    // 场景(战斗)服务
+    ServiceTypeScene = 2;
+    // 任务服务
+    ServiceTypeTask = 3;
+    // 聊天服务
+    ServiceTypeChat = 4;
+    // 网关服务
+    ServiceTypeGateway = 5;
+    // 服务管理
+    ServiceTypeManager = 6;
+}
+
+message ServiceInfo {
+  ServiceType type = 1;
+  int32       service_id = 2;  
+  string      host = 3;   
+  string      port = 4;   
+  string      version = 5;
+}

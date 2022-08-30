@@ -24,13 +24,14 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKu8BCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrgCCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
             "QnJvYWRDYXN0SXRlbVVwZGF0ZRCSgAQSFgoQQnJvYWRDYXN0SXRlbURlbBCT",
-            "gAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCDgAgSCgoE",
-            "UGluZxCBgBhiBnByb3RvMw=="));
+            "gAQSHQoXQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1T",
+            "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhEKC1F1ZXJ5UGxheWVy",
+            "EIGACBISCgxDcmVhdGVQbGF5ZXIQg4AIEgoKBFBpbmcQgYAYYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -64,6 +65,18 @@ namespace GameMessageCore {
     /// del道具
     /// </summary>
     [pbr::OriginalName("BroadCastItemDel")] BroadCastItemDel = 65555,
+    /// <summary>
+    /// 推送 玩家道具槽
+    /// </summary>
+    [pbr::OriginalName("BroadCastUpdateItemSlot")] BroadCastUpdateItemSlot = 65556,
+    /// <summary>
+    /// 查询 玩家道具槽信息
+    /// </summary>
+    [pbr::OriginalName("GetItemSlot")] GetItemSlot = 65557,
+    /// <summary>
+    /// 升级 玩家道具槽
+    /// </summary>
+    [pbr::OriginalName("UpgradeItemSlot")] UpgradeItemSlot = 65559,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

@@ -1,0 +1,79 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+import "entity.proto";
+
+
+enum EntityCombatState {
+  EntityCombatStateUnknown = 0;
+  EntityCombatStateBegin = 1;
+  EntityCombatStateEnd = 2;
+  EntityCombatStateInterrupted = 3;
+}
+
+//-------------------------------
+
+enum DamageEffectId{
+   DamageEffectIdUnknown = 0;
+   // 普通攻击效果
+   DamageEffectId1001 = 1001;
+   // 普通攻击效果（采集木头类）
+   DamageEffectId1002 = 1002;
+   // 普通攻击效果（采集石头类）
+   DamageEffectId1003 = 1003;
+   // 普通攻击效果（用手采集类）
+   DamageEffectId1004 = 1004;
+   // 持续伤害效果
+   DamageEffectId1005 = 1005;
+   // 持续加血效果
+   DamageEffectId1006 = 1006;
+   // 一次性加血效果
+   DamageEffectId1007 = 1007;
+   // 减速效果
+   DamageEffectId1008 = 1008;
+   // 击退效果
+   DamageEffectId1009 = 1009;
+}
+
+enum DamageState {
+  // 普通伤害
+  DamageStateNormal = 0;
+  // 暴击伤害
+  DamageStateCrit = 1;
+  // 未命中
+  DamageStateMiss = 3;
+}
+
+message DamageData{
+  DamageState dmg_state = 1;
+  // 当前数值
+  int32 current_int = 2;
+  // 变更数值 delta = current - 原来 (<0为伤害, >0回血)
+  int32 delta_int = 3;
+}
+
+message DamageEffectBeatBack{
+  EntityLocation  cur_loc = 1;
+  EntityLocation  back_to_pos = 2;
+}
+
+message DamageEffect{
+   DamageEffectId  effectType = 1;
+   // 效果过期时间
+   int32    expired_at  = 2;
+
+   oneof data {
+      int32                 int_value = 10;
+      string                str_value = 11;
+      DamageEffectBeatBack  beat_back_value = 12;
+      DamageData            damage_value = 13;
+   }
+}
+
+message EntityDamage{
+  EntityId  entity = 1;
+  int32     skill_id  = 2;
+  repeated  DamageEffect  effect = 3;
+}

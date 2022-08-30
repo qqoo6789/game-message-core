@@ -8,6 +8,8 @@ import "os.proto";
 import "platform.proto";
 import "item.proto";
 import "item_slot.proto";
+import "entity.proto";
+import "skill.proto";
 
 
 // 消息交互体.
@@ -46,14 +48,31 @@ message Envelope {
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
 
 
-
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
     QueryPlayerResponse               query_player_response                 = 0x020002;
     CreatePlayerRequest               create_player_request                 = 0x020003;
     CreatePlayerResponse              create_player_response                = 0x020004;
 
+
     //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    EnterMapRequest                   enter_map_request                     = 0x030001;    
+    EnterMapResponse                  enter_map_response                    = 0x030002;
+    UpdateSelfLocationRequest         update_self_location_request          = 0x030003;
+    UpdateSelfLocationResponse        update_self_location_response         = 0x030004;
+    UseSkillRequest                   use_skill_request                     = 0x030005;
+    UseSkillResponse                  use_skill_response                    = 0x030006;
+    PickFallingObjectRequest          pick_falling_object_request           = 0x030007;
+    PickFallingObjectResponse         pick_falling_object_response          = 0x030008;
+    RespawnPlayerRequest              respawn_player_request                = 0x030009;
+    RespawnPlayerResponse             respawn_player_response               = 0x030010;
+    BroadCastInitMapElementResponse   broad_cast_init_map_element_response  = 0x030011;
+    BroadCastMapEntityUpdateResponse  broad_cast_map_entity_update_response = 0x030012;
+    BroadCastEntityDestroyResponse    broad_cast_entity_destroy_response    = 0x030013;
+    BroadCastEntityMoveResponse       broad_cast_entity_move_response       = 0x030014;
+    BroadCastEntityCombatResponse     broad_cast_entity_combat_response     = 0x030015;
+    BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;                         
+                                   
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 
@@ -176,6 +195,102 @@ message CreatePlayerResponse {
 
 
 //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+message EnterMapRequest {}
+message EnterMapResponse {
+  // 当前玩家信息
+  Player          me = 1;
+  // 当前玩家位置
+  EntityLocation  location = 2;
+  int32           relive_time = 3;
+}
+message UpdateSelfLocationRequest {
+  EntityMovement  movement = 1;
+}
+message UpdateSelfLocationResponse {
+  EntityMovement  movement = 1;
+}
+message UseSkillRequest {
+  // 使用的技能 id
+  int32           skill_id = 1;
+  // 技能使用方向，相对于玩家当前位置.
+  EntityLocation  dir = 2;
+  // 技能使用的位置  指定后，会将玩家重置到该位置.
+  EntityLocation  from_location = 3;
+  // 技能指定使用的目标
+  EntityId        target_id = 4;
+  // 连击动作
+  int32           combo_index = 5;
+}
+message UseSkillResponse {
+}
+// 拾取一个掉落物
+message PickFallingObjectRequest {
+  int64           falling_object_id = 1;
+}
+message PickFallingObjectResponse {
+  // 拾取到的掉落物记录
+  FallingObject   falling_objects = 1;
+  // 拾取的玩家
+  Player          pickup_player = 2;
+}
+message RespawnPlayerRequest {
+  PlayerRespawnPoint respawn_point = 1;
+}
+message RespawnPlayerResponse {
+  int64          user_id = 1;
+  int32          cur_hp = 2;
+  bool           active = 3;
+  EntityLocation location = 4;
+}
+message BroadCastRespawnPlayerResponse {
+  int64          user_id = 1;
+  int32          cur_hp = 2;
+  bool           active = 3;
+  EntityLocation location = 4;
+}
+message BroadCastInitMapElementResponse {
+  // 视野内新增的实体列表
+  repeated EntityWithLocation entity = 1; //实体
+  bool     final = 2; // 是否最后一个包
+}
+// 实体拾取掉落推送
+message BroadCastFallingObjectPickedResponse {
+  // 拾取到的掉落物记录
+  repeated FallingObject  falling_objects = 1;
+  // 拾取的实体
+  EntityId                entity_id = 2;
+}
+message BroadCastMapEntityUpdateResponse{
+  // 视野内新增的实体列表
+  repeated EntityWithLocation entity_added = 1;
+  // 视野内移除的实体列表
+  repeated EntityId           entity_removed = 2;
+}
+message BroadCastEntityMoveResponse{
+  repeated EntityMovement     moves = 1;
+}
+message BroadCastEntityDestroyResponse{
+    // 销毁的 实体列表
+  repeated EntityId           entities = 1;
+}
+message BroadCastEntityCombatResponse{
+  // 技能释放阶段
+  EntityCombatState state = 1;
+  // 使用的技能 id
+  int32 skill_id = 2;
+  // 连击动作
+  int32 combo_index = 3;
+  // 使用技能的对象 id
+  EntityId from_entity = 4;
+  // 技能使用方向，相对于释放玩家当前位置.
+  EntityLocation dir = 5;
+  // 技能释放的位置
+  EntityLocation from_location = 6;
+  // 接收技能伤害的对象 id 数组
+  repeated EntityDamage targets = 7;
+}
+
+
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 
@@ -186,6 +301,11 @@ message PingRequest {}
 message PingResponse {}
 
 //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
+
+
+
+
+
 
 //CTRlServer协议 : 0x0aZZZZ  控制服务 协议 ************************************ 
 

@@ -2,7 +2,13 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
+import "vector.proto";
+import "entityTypeDefine.proto";
+import "player.proto";
+import "item.proto";
 
+
+/// ************************* entity data ***************************************************
 message EntityProfile {
   // 等级
   int32 lv = 1;
@@ -36,4 +42,85 @@ message EntityProfile {
   int32 hp_recovery = 21;
 }
 
+message EntityId {
+  EntityType  type = 1;
+  int64       id = 2;
+}
+
+message EntityLocation {
+  // 对象所在地图 id
+  int32    map_id = 1;
+  // 坐标
+  Vector3  loc = 2;
+}
+
+message EntityWithLocation {
+  EntityId      type_id = 1; 
+
+  oneof entity {
+    Player        player = 10;
+    Monster       monster = 11;
+    FallingObject falling_object = 12;
+  }
+}
+
+message Player {
+  PlayerBaseData        base_data = 1;
+  EntityProfile         profile = 2;  // 玩家属性
+  repeated PlayerAvatar avatars = 3;   // 玩家 avatar
+  bool                  active = 4;  
+  int32                 map_id = 5;
+  Vector3               position = 6; 
+  Vector3               dir = 7;      
+  // repeated bian.proto.EntityBuff buff_list = 28;
+}
+
+message Monster {
+  int32         cid = 1; 
+  int64         id = 2;
+  bool          active = 3;
+  EntityProfile profile = 4;
+  Vector3       position = 5;
+  Vector3       dir = 6;    // 方向（朝向）
+}
+
+// 掉落物
+message FallingObject {
+  int32         cid = 1;
+  int64         id  = 2; 
+  int32         num = 3; 
+  int64         owner = 4;
+  Vector3       position = 5;
+  Vector3       dir = 6;        // 方向（朝向）  
+  int32         quality = 7;    // 品质
+}
+
+/// ************************* move info ***************************************************
+// 玩家 怪物 移动位置信息
+message EntityMoveStep {
+  // 目标点
+  EntityLocation location = 1;
+  // 到达目标点的时间戳 ms
+  int64 stamp = 2;
+}
+enum MovementType {
+  MovementTypeUnknown = 0;
+  // 行走
+  MovementTypeWalk = 1;
+  // 奔跑
+  MovementTypeRun = 2;
+  // 保持现在的外观移动
+  MovementTypeIdle = 3;
+}
+message EntityMovement {
+  EntityType type_id = 1;
+  // 当前位置
+  EntityMoveStep cur_location = 2;
+  // 目标位置
+  EntityMoveStep dest_location = 3;
+  // 移动方式
+  MovementType type = 5;
+  // 实体朝向(交互数据 = 实际数据 * 1000)
+  Vector3 Dir = 6;
+}
 

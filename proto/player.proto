@@ -2,10 +2,12 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
-import "entity.proto";
-import "vector.proto";
-import "item.proto";
 
+enum PlayerRespawnPoint{
+  PlayerRespawnPointLcoal = 0;
+  PlayerRespawnPointCity = 1;
+  PlayerRespawnPointArea = 2;
+}
 
 
 // 容貌数据
@@ -34,14 +36,3 @@ message PlayerBaseData {
   // 引导记录字段
   bool guide = 8;
 } 
-
-message Player {
-  PlayerBaseData        base_data = 1;
-  EntityProfile         profile = 2;  // 玩家属性
-  repeated PlayerAvatar avatars = 3;   // 玩家 avatar
-  bool                  active = 4;  
-  int32                 map_id = 5;
-  Vector3               position = 6; 
-  Vector3               dir = 7;      
-  // repeated bian.proto.EntityBuff buff_list = 28;
-}

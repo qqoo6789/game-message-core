@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuECCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvwECgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -32,7 +32,14 @@ namespace GameMessageCore {
             "gAQSHQoXQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1T",
             "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhIKDFNpZ25pblBsYXll",
             "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSEQoLUXVlcnlQbGF5ZXIQgYAI",
-            "EhIKDENyZWF0ZVBsYXllchCDgAgSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+            "EhIKDENyZWF0ZVBsYXllchCDgAgSDgoIRW50ZXJNYXAQgYAMEhgKElVwZGF0",
+            "ZVNlbGZMb2NhdGlvbhCDgAwSDgoIVXNlU2tpbGwQhYAMEhcKEVBpY2tGYWxs",
+            "aW5nT2JqZWN0EIeADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9hZENh",
+            "c3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5VXBk",
+            "YXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9h",
+            "ZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQ",
+            "lYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEgoKBFBpbmcQgYAY",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -91,6 +98,20 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
     [pbr::OriginalName("CreatePlayer")] CreatePlayer = 131075,
+    /// <summary>
+    ///screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    /// </summary>
+    [pbr::OriginalName("EnterMap")] EnterMap = 196609,
+    [pbr::OriginalName("UpdateSelfLocation")] UpdateSelfLocation = 196611,
+    [pbr::OriginalName("UseSkill")] UseSkill = 196613,
+    [pbr::OriginalName("PickFallingObject")] PickFallingObject = 196615,
+    [pbr::OriginalName("RespawnPlayer")] RespawnPlayer = 196617,
+    [pbr::OriginalName("BroadCastInitMapElement")] BroadCastInitMapElement = 196625,
+    [pbr::OriginalName("BroadCastMapEntityUpdate")] BroadCastMapEntityUpdate = 196626,
+    [pbr::OriginalName("BroadCastEntityDestroy")] BroadCastEntityDestroy = 196627,
+    [pbr::OriginalName("BroadCastEntityMove")] BroadCastEntityMove = 196628,
+    [pbr::OriginalName("BroadCastEntityCombat")] BroadCastEntityCombat = 196629,
+    [pbr::OriginalName("BroadCastRespawnPlayer")] BroadCastRespawnPlayer = 196630,
     /// <summary>
     ///getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>

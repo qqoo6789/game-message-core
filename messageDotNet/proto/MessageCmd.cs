@@ -24,9 +24,13 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKk4KDEVudmVs",
-            "b3BlVHlwZRILCgdVbmtub3duEAASEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENy",
-            "ZWF0ZVBsYXllchCDgAgSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKu8BCgxFbnZl",
+            "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
+            "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
+            "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
+            "QnJvYWRDYXN0SXRlbVVwZGF0ZRCSgAQSFgoQQnJvYWRDYXN0SXRlbURlbBCT",
+            "gAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCDgAgSCgoE",
+            "UGluZxCBgBhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -40,6 +44,26 @@ namespace GameMessageCore {
     ///保留id协议      : 0x00ZZZZ   *********************************************** 
     /// </summary>
     [pbr::OriginalName("Unknown")] Unknown = 0,
+    /// <summary>
+    ///mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
+    /// </summary>
+    [pbr::OriginalName("ItemGet")] ItemGet = 65537,
+    [pbr::OriginalName("ItemUse")] ItemUse = 65539,
+    [pbr::OriginalName("ItemDrop")] ItemDrop = 65541,
+    [pbr::OriginalName("UpdateAvatar")] UpdateAvatar = 65543,
+    [pbr::OriginalName("UnloadAvatar")] UnloadAvatar = 65545,
+    /// <summary>
+    /// 添加道具
+    /// </summary>
+    [pbr::OriginalName("BroadCastItemAdd")] BroadCastItemAdd = 65553,
+    /// <summary>
+    /// 更新道具
+    /// </summary>
+    [pbr::OriginalName("BroadCastItemUpdate")] BroadCastItemUpdate = 65554,
+    /// <summary>
+    /// del道具
+    /// </summary>
+    [pbr::OriginalName("BroadCastItemDel")] BroadCastItemDel = 65555,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

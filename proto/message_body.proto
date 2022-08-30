@@ -3,6 +3,7 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 import "message_cmd.proto";
+import "player.proto";
 
 
 // 消息交互体.
@@ -19,6 +20,8 @@ message Envelope {
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
+    QueryPlayerRequest      query_player_request   = 0x020001;
+    QueryPlayerResponse     query_player_response  = 0x020002;
 
     //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
 
@@ -46,6 +49,12 @@ message Envelope {
 //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
+message QueryPlayerRequest {
+  string token = 1; 
+}
+message QueryPlayerResponse {
+  PlayerBaseData player = 1; // 玩家信息
+}
 
 //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
 

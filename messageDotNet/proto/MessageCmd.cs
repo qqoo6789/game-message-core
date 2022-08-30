@@ -24,14 +24,15 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrgCCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuECCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
             "QnJvYWRDYXN0SXRlbVVwZGF0ZRCSgAQSFgoQQnJvYWRDYXN0SXRlbURlbBCT",
             "gAQSHQoXQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1T",
-            "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhEKC1F1ZXJ5UGxheWVy",
-            "EIGACBISCgxDcmVhdGVQbGF5ZXIQg4AIEgoKBFBpbmcQgYAYYgZwcm90bzM="));
+            "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhIKDFNpZ25pblBsYXll",
+            "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSEQoLUXVlcnlQbGF5ZXIQgYAI",
+            "EhIKDENyZWF0ZVBsYXllchCDgAgSCgoEUGluZxCBgBhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -77,6 +78,14 @@ namespace GameMessageCore {
     /// 升级 玩家道具槽
     /// </summary>
     [pbr::OriginalName("UpgradeItemSlot")] UpgradeItemSlot = 65559,
+    /// <summary>
+    /// 登录角色
+    /// </summary>
+    [pbr::OriginalName("SigninPlayer")] SigninPlayer = 65561,
+    /// <summary>
+    /// 角色退出游戏
+    /// </summary>
+    [pbr::OriginalName("SignOutPlayer")] SignOutPlayer = 65569,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

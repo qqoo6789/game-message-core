@@ -41,6 +41,8 @@ enum EnvelopeType {
     BroadCastUpdateItemSlot         = 0x010014;     // 推送 玩家道具槽
     GetItemSlot                     = 0x010015;     // 查询 玩家道具槽信息
     UpgradeItemSlot                 = 0x010017;     // 升级 玩家道具槽
+    SigninPlayer                    = 0x010019;     // 登录角色
+    SignOutPlayer                   = 0x010021;     // 角色退出游戏
 
 
 

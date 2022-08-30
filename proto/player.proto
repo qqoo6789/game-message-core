@@ -14,5 +14,19 @@ message PlayerFeature {
   int32 glove = 6; // 手套
   int32 clothes = 7; // 衣服/上衣
   int32 pants = 8; // 裤子
-  int32 shoes = 9; // 鞋子
 }
+
+message PlayerBaseData {
+  string user_id = 1; 
+  string name = 2;
+  int32  role_id = 3;
+  // 玩家性别
+  // other=未知性别
+  // male=男性
+  // female=女性
+  string gender = 5;
+  string role_icon = 6;
+  PlayerFeature feature = 7;
+  // 引导记录字段
+  bool guide = 8;
+} 

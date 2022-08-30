@@ -29,11 +29,11 @@ namespace GameMessageCore {
             "ZRISCgpzZXJ2aWNlX2lkGAIgASgFEgwKBGhvc3QYAyABKAkSDAoEcG9ydBgE",
             "IAEoCRIPCgd2ZXJzaW9uGAUgASgJKlUKDVNlcnZpY2VTdGF0dXMSGAoUU2Vy",
             "dmljZVN0YXR1c1Vua25vd24QABITCg9TZXJ2aWNlU3RhdHVzVXAQARIVChFT",
-            "ZXJ2aWNlU3RhdHVzRG93bhACKqoBCgtTZXJ2aWNlVHlwZRITCg9TZXJ2aWNl",
-            "VHlwZU1haW4QABIWChJTZXJ2aWNlVHlwZUFjY291bnQQARIUChBTZXJ2aWNl",
-            "VHlwZVNjZW5lEAISEwoPU2VydmljZVR5cGVUYXNrEAMSEwoPU2VydmljZVR5",
-            "cGVDaGF0EAQSFgoSU2VydmljZVR5cGVHYXRld2F5EAUSFgoSU2VydmljZVR5",
-            "cGVNYW5hZ2VyEAZiBnByb3RvMw=="));
+            "ZXJ2aWNlU3RhdHVzRG93bhACKsIBCgtTZXJ2aWNlVHlwZRIWChJTZXJ2aWNl",
+            "VHlwZVVua25vd24QABITCg9TZXJ2aWNlVHlwZU1haW4QARIWChJTZXJ2aWNl",
+            "VHlwZUFjY291bnQQAhIUChBTZXJ2aWNlVHlwZVNjZW5lEAMSEwoPU2Vydmlj",
+            "ZVR5cGVUYXNrEAQSEwoPU2VydmljZVR5cGVDaGF0EAUSFgoSU2VydmljZVR5",
+            "cGVHYXRld2F5EAYSFgoSU2VydmljZVR5cGVNYW5hZ2VyEAdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceStatus), typeof(global::GameMessageCore.ServiceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -51,34 +51,35 @@ namespace GameMessageCore {
   }
 
   public enum ServiceType {
+    [pbr::OriginalName("ServiceTypeUnknown")] Unknown = 0,
     /// <summary>
     /// 主服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeMain")] Main = 0,
+    [pbr::OriginalName("ServiceTypeMain")] Main = 1,
     /// <summary>
     /// 账号服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeAccount")] Account = 1,
+    [pbr::OriginalName("ServiceTypeAccount")] Account = 2,
     /// <summary>
     /// 场景(战斗)服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeScene")] Scene = 2,
+    [pbr::OriginalName("ServiceTypeScene")] Scene = 3,
     /// <summary>
     /// 任务服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeTask")] Task = 3,
+    [pbr::OriginalName("ServiceTypeTask")] Task = 4,
     /// <summary>
     /// 聊天服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeChat")] Chat = 4,
+    [pbr::OriginalName("ServiceTypeChat")] Chat = 5,
     /// <summary>
     /// 网关服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeGateway")] Gateway = 5,
+    [pbr::OriginalName("ServiceTypeGateway")] Gateway = 6,
     /// <summary>
     /// 服务管理
     /// </summary>
-    [pbr::OriginalName("ServiceTypeManager")] Manager = 6,
+    [pbr::OriginalName("ServiceTypeManager")] Manager = 7,
   }
 
   #endregion
@@ -134,7 +135,7 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::GameMessageCore.ServiceType type_ = global::GameMessageCore.ServiceType.Main;
+    private global::GameMessageCore.ServiceType type_ = global::GameMessageCore.ServiceType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.ServiceType Type {
@@ -219,7 +220,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != global::GameMessageCore.ServiceType.Main) hash ^= Type.GetHashCode();
+      if (Type != global::GameMessageCore.ServiceType.Unknown) hash ^= Type.GetHashCode();
       if (ServiceId != 0) hash ^= ServiceId.GetHashCode();
       if (Host.Length != 0) hash ^= Host.GetHashCode();
       if (Port.Length != 0) hash ^= Port.GetHashCode();
@@ -242,7 +243,7 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != global::GameMessageCore.ServiceType.Main) {
+      if (Type != global::GameMessageCore.ServiceType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -272,7 +273,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != global::GameMessageCore.ServiceType.Main) {
+      if (Type != global::GameMessageCore.ServiceType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -302,7 +303,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != global::GameMessageCore.ServiceType.Main) {
+      if (Type != global::GameMessageCore.ServiceType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (ServiceId != 0) {
@@ -329,7 +330,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Type != global::GameMessageCore.ServiceType.Main) {
+      if (other.Type != global::GameMessageCore.ServiceType.Unknown) {
         Type = other.Type;
       }
       if (other.ServiceId != 0) {

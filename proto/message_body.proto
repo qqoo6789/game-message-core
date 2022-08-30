@@ -7,6 +7,7 @@ import "player.proto";
 import "os.proto";
 import "platform.proto";
 import "item.proto";
+import "item_slot.proto";
 
 
 // 消息交互体.
@@ -21,19 +22,24 @@ message Envelope {
     
 
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
-    ItemGetRequest                item_get_request                = 0x010001;
-    ItemGetResponse               item_get_response               = 0x010002;
-    ItemUseRequest                item_use_request                = 0x010003;
-    ItemUseResponse               item_use_response               = 0x010004;
-    ItemDropRequest               item_drop_request               = 0x010005;
-    ItemDropResponse              item_drop_response              = 0x010006;
-    UpdateAvatarRequest           update_avatar_request           = 0x010007;
-    UpdateAvatarResponse          update_avatar_response          = 0x010008;
-    UnloadAvatarRequest           unload_avatar_request           = 0x010009;
-    UnloadAvatarResponse          unload_avatar_response          = 0x010010;
-    BroadCastItemAddResponse      broad_cast_item_add_response    = 0x010011;
-    BroadCastItemUpdateResponse   broad_cast_item_update_response = 0x010012;
-    BroadCastItemDelResponse      broad_cast_item_del_response    = 0x010013;
+    ItemGetRequest                    item_get_request                      = 0x010001;
+    ItemGetResponse                   item_get_response                     = 0x010002;
+    ItemUseRequest                    item_use_request                      = 0x010003;
+    ItemUseResponse                   item_use_response                     = 0x010004;
+    ItemDropRequest                   item_drop_request                     = 0x010005;
+    ItemDropResponse                  item_drop_response                    = 0x010006;
+    UpdateAvatarRequest               update_avatar_request                 = 0x010007;
+    UpdateAvatarResponse              update_avatar_response                = 0x010008;
+    UnloadAvatarRequest               unload_avatar_request                 = 0x010009;
+    UnloadAvatarResponse              unload_avatar_response                = 0x010010;
+    BroadCastItemAddResponse          broad_cast_item_add_response          = 0x010011;
+    BroadCastItemUpdateResponse       broad_cast_item_update_response       = 0x010012;
+    BroadCastItemDelResponse          broad_cast_item_del_response          = 0x010013;
+    BroadCastUpdateItemSlotResponse   broad_cast_update_item_slot_response  = 0x010014;
+    GetItemSlotRequest                get_item_slot_request                 = 0x010015;
+    GetItemSlotResponse               get_item_slot_response                = 0x010016;
+    UpgradeItemSlotRequest            upgrade_item_slot_request             = 0x010017;
+    UpgradeItemSlotResponse           upgrade_item_slot_response            = 0x010018;
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -104,6 +110,22 @@ message BroadCastItemUpdateResponse {
 message BroadCastItemDelResponse {
   repeated Item   items = 1;
 }
+
+message BroadCastUpdateItemSlotResponse{
+  repeated ItemSlot slots = 1;
+}
+message GetItemSlotRequest {
+}
+message GetItemSlotResponse{
+  repeated ItemSlot slots = 1;
+}
+message UpgradeItemSlotRequest{
+  AvatarPosition    position = 1;
+}
+message UpgradeItemSlotResponse{
+  repeated ItemSlot slots = 1;
+}
+
 
 
 

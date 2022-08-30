@@ -24,9 +24,9 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKjoKDEVudmVs",
-            "b3BlVHlwZRILCgdVbmtub3duEAASEQoLUXVlcnlQbGF5ZXIQgYAIEgoKBFBp",
-            "bmcQgYAYYgZwcm90bzM="));
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKk4KDEVudmVs",
+            "b3BlVHlwZRILCgdVbmtub3duEAASEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENy",
+            "ZWF0ZVBsYXllchCDgAgSCgoEUGluZxCBgBhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -44,6 +44,7 @@ namespace GameMessageCore {
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
+    [pbr::OriginalName("CreatePlayer")] CreatePlayer = 131075,
     /// <summary>
     ///getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>

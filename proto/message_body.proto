@@ -4,6 +4,8 @@ option go_package = "./messageGo/proto";
 
 import "message_cmd.proto";
 import "player.proto";
+import "os.proto";
+import "platform.proto";
 
 
 // 消息交互体.
@@ -20,8 +22,10 @@ message Envelope {
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
-    QueryPlayerRequest      query_player_request   = 0x020001;
-    QueryPlayerResponse     query_player_response  = 0x020002;
+    QueryPlayerRequest      query_player_request    = 0x020001;
+    QueryPlayerResponse     query_player_response   = 0x020002;
+    CreatePlayerRequest     create_player_request   = 0x020003;
+    CreatePlayerResponse    create_player_response  = 0x020004;
 
     //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
 
@@ -32,6 +36,7 @@ message Envelope {
     //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     PingRequest             ping_request  = 0x060001;
     PingResponse            ping_response = 0x060002;
+    
 
     //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
 
@@ -50,9 +55,23 @@ message Envelope {
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerRequest {
-  string token = 1; 
+  string        token = 1; 
 }
 message QueryPlayerResponse {
+  PlayerBaseData player = 1; // 玩家信息
+}
+
+message CreatePlayerRequest {
+  int64         user_id = 1;
+  string        nick_name = 2;// 名字
+  int32         role_id = 3;  // 配置 ID
+  string        gender = 4;   // 玩家性别，男生为 male, 女生为 female
+  string        icon = 5;     //角色头像
+  PlayerFeature feature = 6;  // 容貌数据
+  OSType        os_type = 7;  // 渠道(android/ios)
+  PlatformType  platform = 8; // 平台(taptap...)
+}
+message CreatePlayerResponse {
   PlayerBaseData player = 1; // 玩家信息
 }
 

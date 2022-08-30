@@ -3,8 +3,6 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 
-
-
 // 频道类型
 enum ChatChannelType {
   ChatChannelTypeUnknown = 0;
@@ -17,12 +15,6 @@ enum ChatChannelType {
   // 私聊
   ChatChannelTypePrivate = 4;
 }
-
-message ChatSettings{
-   ChatChannelType chat_type = 1;
-   int32 cd  = 2;
-}
-
 
 enum ChatState {
     ChatStateNormal = 0;

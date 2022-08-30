@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrMGCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKqkHCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -39,11 +39,13 @@ namespace GameMessageCore {
             "YXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9h",
             "ZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQ",
             "lYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg8KCVNlbGZUYXNr",
-            "cxCAgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQgYAQEhAKCkFjY2Vw",
-            "dFRhc2sQgoAQEhUKD0FiYW5kb25tZW50VGFzaxCDgBASEAoKVGFza1Jld2Fy",
-            "ZBCEgBASFAoOVGFza0xpc3RSZXdhcmQQhYAQEhkKE1VwZ3JhZGVUYXNrUHJv",
-            "Z3Jlc3MQhoAQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQh4AQEgoKBFBpbmcQ",
-            "gYAYYgZwcm90bzM="));
+            "cxCBgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQEhAKCkFjY2Vw",
+            "dFRhc2sQhYAQEhUKD0FiYW5kb25tZW50VGFzaxCHgBASEAoKVGFza1Jld2Fy",
+            "ZBCJgBASFAoOVGFza0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3JhZGVUYXNrUHJv",
+            "Z3Jlc3MQk4AQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQEhUKD1NlbmRD",
+            "aGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzEIOAFBIg",
+            "ChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoYQnJvYWRDYXN0",
+            "VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -119,35 +121,45 @@ namespace GameMessageCore {
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>
-    [pbr::OriginalName("SelfTasks")] SelfTasks = 262144,
+    [pbr::OriginalName("SelfTasks")] SelfTasks = 262145,
     /// <summary>
     /// 任务链进度更新(推送)
     /// </summary>
-    [pbr::OriginalName("BroadCastUpdateTaskList")] BroadCastUpdateTaskList = 262145,
+    [pbr::OriginalName("BroadCastUpdateTaskList")] BroadCastUpdateTaskList = 262147,
     /// <summary>
     /// 领取任务
     /// </summary>
-    [pbr::OriginalName("AcceptTask")] AcceptTask = 262146,
+    [pbr::OriginalName("AcceptTask")] AcceptTask = 262149,
     /// <summary>
     /// 放弃任务(任务有保护时间)
     /// </summary>
-    [pbr::OriginalName("AbandonmentTask")] AbandonmentTask = 262147,
+    [pbr::OriginalName("AbandonmentTask")] AbandonmentTask = 262151,
     /// <summary>
     /// 获取任务奖励(附带提交任务功能)
     /// </summary>
-    [pbr::OriginalName("TaskReward")] TaskReward = 262148,
+    [pbr::OriginalName("TaskReward")] TaskReward = 262153,
     /// <summary>
     /// 获取任务链奖励
     /// </summary>
-    [pbr::OriginalName("TaskListReward")] TaskListReward = 262149,
+    [pbr::OriginalName("TaskListReward")] TaskListReward = 262161,
     /// <summary>
     /// 上报更新任务进度
     /// </summary>
-    [pbr::OriginalName("UpgradeTaskProgress")] UpgradeTaskProgress = 262150,
+    [pbr::OriginalName("UpgradeTaskProgress")] UpgradeTaskProgress = 262163,
     /// <summary>
     /// 推送获取的任务奖励
     /// </summary>
-    [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262151,
+    [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262165,
+    /// <summary>
+    ///chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
+    /// </summary>
+    [pbr::OriginalName("SendChatMessage")] SendChatMessage = 327681,
+    /// <summary>
+    /// 批量推送的聊天消息
+    /// </summary>
+    [pbr::OriginalName("BroadCastChatMessages")] BroadCastChatMessages = 327683,
+    [pbr::OriginalName("BroadCastRemoveChatMessage")] BroadCastRemoveChatMessage = 327684,
+    [pbr::OriginalName("BroadCastUpdateChatState")] BroadCastUpdateChatState = 327685,
     /// <summary>
     ///getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>

@@ -11,6 +11,8 @@ import "item_slot.proto";
 import "entity.proto";
 import "skill.proto";
 import "task.proto";
+import "chat.proto";
+
 
 
 
@@ -94,6 +96,12 @@ message Envelope {
 
 
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
+    SendChatMessageRequest            send_chat_message_request                 = 0x0510001;
+    SendChatMessageResponse           send_chat_message_response                = 0x0510002;
+    BroadCastChatMessagesResponse     broad_cast_chat_messages_response         = 0x0510003;
+    BroadCastRemoveChatMessageResponse broad_cast_remove_chat_message_response  = 0x0510004;
+    BroadCastUpdateChatStateResponse  broad_cast_update_chat_state_response     = 0x0510005;
+
 
     //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     PingRequest                       ping_request                          = 0x060001;
@@ -374,6 +382,30 @@ message BroadCastTaskRewardResponse{
 
 
 //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
+
+message SendChatMessageRequest {
+  ChatChannelType chat_type = 1;
+  string          content = 2;
+  // 发送到*世界/分线/附近/副本*这些公共频道的时候不需要带`receiver_id`
+  // 只有*私聊*需要带`receiver_id`
+  int64          receiver_player_id = 3;
+}
+message SendChatMessageResponse {
+  int64          msg_id = 1;
+}
+// 玩家接收到的聊天信息
+message BroadCastChatMessagesResponse {
+  repeated ChatMessage    messages = 1;
+  bool                    historical_record = 2;
+}
+message BroadCastRemoveChatMessageResponse{
+  repeated int64  msg_ids = 1;
+}
+message BroadCastUpdateChatStateResponse{
+  ChatState       chat_state = 1;
+}
+
+
 
 //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
 message PingRequest {}

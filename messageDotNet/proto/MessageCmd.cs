@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvwECgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrMGCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -38,8 +38,12 @@ namespace GameMessageCore {
             "c3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5VXBk",
             "YXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9h",
             "ZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQ",
-            "lYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEgoKBFBpbmcQgYAY",
-            "YgZwcm90bzM="));
+            "lYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg8KCVNlbGZUYXNr",
+            "cxCAgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQgYAQEhAKCkFjY2Vw",
+            "dFRhc2sQgoAQEhUKD0FiYW5kb25tZW50VGFzaxCDgBASEAoKVGFza1Jld2Fy",
+            "ZBCEgBASFAoOVGFza0xpc3RSZXdhcmQQhYAQEhkKE1VwZ3JhZGVUYXNrUHJv",
+            "Z3Jlc3MQhoAQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQh4AQEgoKBFBpbmcQ",
+            "gYAYYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -112,6 +116,38 @@ namespace GameMessageCore {
     [pbr::OriginalName("BroadCastEntityMove")] BroadCastEntityMove = 196628,
     [pbr::OriginalName("BroadCastEntityCombat")] BroadCastEntityCombat = 196629,
     [pbr::OriginalName("BroadCastRespawnPlayer")] BroadCastRespawnPlayer = 196630,
+    /// <summary>
+    ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
+    /// </summary>
+    [pbr::OriginalName("SelfTasks")] SelfTasks = 262144,
+    /// <summary>
+    /// 任务链进度更新(推送)
+    /// </summary>
+    [pbr::OriginalName("BroadCastUpdateTaskList")] BroadCastUpdateTaskList = 262145,
+    /// <summary>
+    /// 领取任务
+    /// </summary>
+    [pbr::OriginalName("AcceptTask")] AcceptTask = 262146,
+    /// <summary>
+    /// 放弃任务(任务有保护时间)
+    /// </summary>
+    [pbr::OriginalName("AbandonmentTask")] AbandonmentTask = 262147,
+    /// <summary>
+    /// 获取任务奖励(附带提交任务功能)
+    /// </summary>
+    [pbr::OriginalName("TaskReward")] TaskReward = 262148,
+    /// <summary>
+    /// 获取任务链奖励
+    /// </summary>
+    [pbr::OriginalName("TaskListReward")] TaskListReward = 262149,
+    /// <summary>
+    /// 上报更新任务进度
+    /// </summary>
+    [pbr::OriginalName("UpgradeTaskProgress")] UpgradeTaskProgress = 262150,
+    /// <summary>
+    /// 推送获取的任务奖励
+    /// </summary>
+    [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262151,
     /// <summary>
     ///getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>

@@ -10,6 +10,8 @@ import "item.proto";
 import "item_slot.proto";
 import "entity.proto";
 import "skill.proto";
+import "task.proto";
+
 
 
 // 消息交互体.
@@ -75,6 +77,21 @@ message Envelope {
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
+    SelfTasksRequest                  self_tasks_request                    = 0x040001;
+    SelfTasksResponse                 self_tasks_response                   = 0x040002;
+    BroadCastUpdateTaskListResponse   broad_cast_update_task_list_response  = 0x040003;
+    AcceptTaskRequest                 accept_task_request                   = 0x040004;
+    AcceptTaskResponse                accept_task_response                  = 0x040005;
+    AbandonmentTaskRequest            abandonment_task_request              = 0x040006;
+    AbandonmentTaskResponse           abandonment_task_response             = 0x040007;
+    TaskRewardRequest                 task_reward_request                   = 0x040008;
+    TaskRewardResponse                task_reward_response                  = 0x040009;
+    TaskListRewardRequest             task_list_reward_request              = 0x040010;
+    TaskListRewardResponse            task_list_reward_response             = 0x040011;
+    UpgradeTaskProgressRequest        upgrade_task_progress_request         = 0x040012;
+    UpgradeTaskProgressResponse       upgrade_task_progress_response        = 0x040013;
+    BroadCastTaskRewardResponse       broad_cast_task_reward_response       = 0x040014;
+
 
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
 
@@ -293,6 +310,68 @@ message BroadCastEntityCombatResponse{
 
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
+
+message SelfTasksRequest {}
+message SelfTasksResponse {
+  // 玩家已经接取的任务列表
+  PlayerTask        tasks = 1;
+}
+// 玩家任务状态更新
+message BroadCastUpdateTaskListResponse {
+  TaskListType      kind = 1;
+  TaskList          task_list_info = 2;
+}
+// 领取任务
+message  AcceptTaskRequest{
+  TaskListType      kind = 1;
+}
+message  AcceptTaskResponse{
+  TaskList          task_list_info = 1;
+}
+// 放弃任务(任务有保护时间)
+message  AbandonmentTaskRequest{
+  // task list type
+  TaskListType    kind = 1;
+}
+message  AbandonmentTaskResponse{
+  TaskList        task_list_info = 1;
+}
+// 获取任务奖励
+message  TaskRewardRequest{
+  TaskListType    task_list_kind = 1;
+}
+message  TaskRewardResponse{
+  TaskList        task_list_info = 1;
+}
+// 获取任务链奖励
+message  TaskListRewardRequest{
+  TaskListType    kind = 1;
+}
+message  TaskListRewardResponse{
+  TaskList        task_list_info = 1;
+}
+
+message  UpgradeTaskProgressRequest{
+  TaskListType    task_list_kind = 1;
+  // item NFT ids : 提交寻物任务的 附带信息
+  repeated TaskOptionItem items = 2;
+  // move to pos 附带信息
+  TaskOptionMoveTo        pos = 3;
+  // quiz 附加信息
+  TaskOptionQuiz          quiz = 4;
+}
+message  UpgradeTaskProgressResponse{
+}
+message BroadCastTaskRewardResponse{
+  bool                    is_task_list_reward = 1;
+  TaskListType            task_list_kind = 2;
+  int32                   reward_exp = 3;
+  repeated ItemBaseInfo   reward_item = 4;
+}
+
+
+
+
 
 //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
 

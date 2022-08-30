@@ -65,17 +65,23 @@ enum EnvelopeType {
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
-    SelfTasks                      = 0x040000;        // 查询玩家已接的任务列表（进行中状态）
-    BroadCastUpdateTaskList        = 0x040001;        // 任务链进度更新(推送)
-    AcceptTask                     = 0x040002;        // 领取任务
-    AbandonmentTask                = 0x040003;        // 放弃任务(任务有保护时间)
-    TaskReward                     = 0x040004;        // 获取任务奖励(附带提交任务功能)
-    TaskListReward                 = 0x040005;        // 获取任务链奖励
-    UpgradeTaskProgress            = 0x040006;        // 上报更新任务进度
-    BroadCastTaskReward            = 0x040007;        // 推送获取的任务奖励
+    SelfTasks                      = 0x040001;        // 查询玩家已接的任务列表（进行中状态）
+    BroadCastUpdateTaskList        = 0x040003;        // 任务链进度更新(推送)
+    AcceptTask                     = 0x040005;        // 领取任务
+    AbandonmentTask                = 0x040007;        // 放弃任务(任务有保护时间)
+    TaskReward                     = 0x040009;        // 获取任务奖励(附带提交任务功能)
+    TaskListReward                 = 0x040011;        // 获取任务链奖励
+    UpgradeTaskProgress            = 0x040013;        // 上报更新任务进度
+    BroadCastTaskReward            = 0x040015;        // 推送获取的任务奖励
 
     
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
+    SendChatMessage                = 0x050001;      // 玩家发送聊天消息
+    BroadCastChatMessages          = 0x050003;      // 批量推送的聊天消息
+    BroadCastRemoveChatMessage     = 0x050004;
+    BroadCastUpdateChatState       = 0x050005;
+
+
 
     //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     Ping                = 0x060001;

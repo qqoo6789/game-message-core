@@ -6,6 +6,7 @@ import "message_cmd.proto";
 import "player.proto";
 import "os.proto";
 import "platform.proto";
+import "item.proto";
 
 
 // 消息交互体.
@@ -20,6 +21,20 @@ message Envelope {
     
 
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
+    ItemGetRequest                item_get_request                = 0x010001;
+    ItemGetResponse               item_get_response               = 0x010002;
+    ItemUseRequest                item_use_request                = 0x010003;
+    ItemUseResponse               item_use_response               = 0x010004;
+    ItemDropRequest               item_drop_request               = 0x010005;
+    ItemDropResponse              item_drop_response              = 0x010006;
+    UpdateAvatarRequest           update_avatar_request           = 0x010007;
+    UpdateAvatarResponse          update_avatar_response          = 0x010008;
+    UnloadAvatarRequest           unload_avatar_request           = 0x010009;
+    UnloadAvatarResponse          unload_avatar_response          = 0x010010;
+    BroadCastItemAddResponse      broad_cast_item_add_response    = 0x010011;
+    BroadCastItemUpdateResponse   broad_cast_item_update_response = 0x010012;
+    BroadCastItemDelResponse      broad_cast_item_del_response    = 0x010013;
+
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest      query_player_request    = 0x020001;
@@ -34,8 +49,8 @@ message Envelope {
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
 
     //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
-    PingRequest             ping_request  = 0x060001;
-    PingResponse            ping_response = 0x060002;
+    PingRequest             ping_request            = 0x060001;
+    PingResponse            ping_response           = 0x060002;
     
 
     //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
@@ -52,28 +67,68 @@ message Envelope {
 //保留id协议      : 0x00ZZZZ   ***********************************************      
 
 //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
+message ItemGetRequest {}
+message ItemGetResponse {
+  repeated Item   items = 1;
+}
+message ItemUseRequest { 
+  string          item_id = 1;  // 使用的道具 id
+}
+message ItemUseResponse {
+}
+message ItemDropRequest {
+  string item_id = 1;
+  int32  num = 2;
+}
+message ItemDropResponse {
+}
+// 穿装备
+message UpdateAvatarRequest {
+  string          item_id = 1;
+  AvatarPosition  position = 2; // 装备的位置
+}
+message UpdateAvatarResponse {
+}
+// 卸下装备
+message UnloadAvatarRequest {
+  string item_id = 1;
+}
+message UnloadAvatarResponse {
+}
+message BroadCastItemAddResponse {
+  repeated Item   items = 1;
+}
+message BroadCastItemUpdateResponse {
+  repeated Item   items = 1;
+}
+message BroadCastItemDelResponse {
+  repeated Item   items = 1;
+}
+
+
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerRequest {
-  string        token = 1; 
+  string          token = 1; 
 }
 message QueryPlayerResponse {
-  PlayerBaseData player = 1; // 玩家信息
+  PlayerBaseData  player = 1; // 玩家信息
 }
 
 message CreatePlayerRequest {
-  int64         user_id = 1;
-  string        nick_name = 2;// 名字
-  int32         role_id = 3;  // 配置 ID
-  string        gender = 4;   // 玩家性别，男生为 male, 女生为 female
-  string        icon = 5;     //角色头像
-  PlayerFeature feature = 6;  // 容貌数据
-  OSType        os_type = 7;  // 渠道(android/ios)
-  PlatformType  platform = 8; // 平台(taptap...)
+  int64           user_id = 1;
+  string          nick_name = 2;// 名字
+  int32           role_id = 3;  // 配置 ID
+  string          gender = 4;   // 玩家性别，男生为 male, 女生为 female
+  string          icon = 5;     //角色头像
+  PlayerFeature   feature = 6;  // 容貌数据
+  OSType          os_type = 7;  // 渠道(android/ios)
+  PlatformType    platform = 8; // 平台(taptap...)
 }
 message CreatePlayerResponse {
-  PlayerBaseData player = 1; // 玩家信息
+  PlayerBaseData  player = 1; // 玩家信息
 }
+
 
 //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
 

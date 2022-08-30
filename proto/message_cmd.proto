@@ -30,6 +30,14 @@ enum EnvelopeType {
     Unknown = 0;
 
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
+    ItemGet             = 0x010001;
+    ItemUse             = 0x010003;
+    ItemDrop            = 0x010005;
+    UpdateAvatar        = 0x010007;
+    UnloadAvatar        = 0x010009;
+    BroadCastItemAdd    = 0x010011;     // 添加道具
+    BroadCastItemUpdate = 0x010012;     // 更新道具
+    BroadCastItemDel    = 0x010013;     // del道具
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayer         = 0x020001;

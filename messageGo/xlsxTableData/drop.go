@@ -12,7 +12,7 @@ type DropData struct {
 
 // 掉落物配方.
 type DropTable struct {
-	Id        uint        `gorm:"primaryKey;autoIncrement" json:"id,string"`
+	UId       uint        `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	DropId    int32       `json:"dropId"`
 	DropList  []*DropData `json:"dropList"`  // 宝箱列表
 	CreatedAt time.Time   `json:"createdAt"` // 过期判断条件

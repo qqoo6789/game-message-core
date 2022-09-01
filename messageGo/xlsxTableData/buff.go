@@ -28,7 +28,7 @@ const (
 
 // buff模板
 type BuffTable struct {
-	Id              uint           `gorm:"primaryKey;autoIncrement" json:"id,string"`
+	UId             uint           `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	BuffId          int32          `json:"buffId"`
 	EffectType      BuffEffectType `json:"effectType"`
 	GroupId         int32          `json:"groupId"`

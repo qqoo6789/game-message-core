@@ -18,7 +18,7 @@ const (
 )
 
 type ChatTable struct {
-	Id        uint            `gorm:"primaryKey;autoIncrement" json:"id,string"`
+	UId       uint            `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	ChatType  ChatChannelType `json:"chatType"`
 	Cd        int32           `json:"cd"`
 	CreatedAt time.Time       `json:"createdAt"` // 过期判断条件

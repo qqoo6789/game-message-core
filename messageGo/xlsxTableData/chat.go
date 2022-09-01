@@ -17,7 +17,7 @@ const (
 	ChatChannelTypePrivate ChatChannelType = 4
 )
 
-type ChatTable struct {
+type ChatTableRow struct {
 	UId       uint            `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	ChatType  ChatChannelType `json:"chatType"`
 	Cd        int32           `json:"cd"`

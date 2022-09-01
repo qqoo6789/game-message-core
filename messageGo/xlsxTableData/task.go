@@ -15,7 +15,7 @@ type TaskObjectList struct {
 	ChanceSum int32        `json:"chanceSum"`
 	ParamList []TaskObject `json:"paramList"`
 }
-type TaskTable struct {
+type TaskTableRow struct {
 	UId             uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Level           int32  `json:"level"`
 	Name            string `json:"name"`
@@ -59,72 +59,72 @@ func unMarshal(data string) (*TaskObjectList, error) {
 	return objs, nil
 }
 
-func (p *TaskTable) SetNeedItem(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetNeedItem(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.NeedItemJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetNeedItem() *TaskObjectList {
+func (p *TaskTableRow) GetNeedItem() *TaskObjectList {
 	if p.NeedItem == nil {
 		p.NeedItem, _ = unMarshal(p.NeedItemJson)
 	}
 	return p.NeedItem
 }
 
-func (p *TaskTable) SetUseItem(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetUseItem(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.UseItemJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetUseItem() *TaskObjectList {
+func (p *TaskTableRow) GetUseItem() *TaskObjectList {
 	if p.UseItem == nil {
 		p.UseItem, _ = unMarshal(p.UseItemJson)
 	}
 	return p.UseItem
 }
 
-func (p *TaskTable) SetKillMonster(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetKillMonster(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.KillMonsterJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetKillMonster() *TaskObjectList {
+func (p *TaskTableRow) GetKillMonster() *TaskObjectList {
 	if p.KillMonster == nil {
 		p.KillMonster, _ = unMarshal(p.KillMonsterJson)
 	}
 	return p.KillMonster
 }
 
-func (p *TaskTable) SetTargetPos(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetTargetPos(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.TargetPosJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetTargetPos() *TaskObjectList {
+func (p *TaskTableRow) GetTargetPos() *TaskObjectList {
 	if p.TargetPos == nil {
 		p.TargetPos, _ = unMarshal(p.TargetPosJson)
 	}
 	return p.TargetPos
 }
 
-func (p *TaskTable) SetQuiz(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetQuiz(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.QuizJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetQuiz() *TaskObjectList {
+func (p *TaskTableRow) GetQuiz() *TaskObjectList {
 	if p.Quiz == nil {
 		p.Quiz, _ = unMarshal(p.QuizJson)
 	}
 	return p.Quiz
 }
 
-func (p *TaskTable) SetRewardItems(objs *TaskObjectList) error {
+func (p *TaskTableRow) SetRewardItems(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.RewardItemsJson = string(bs)
 	return err
 }
-func (p *TaskTable) GetRewardItems() *TaskObjectList {
+func (p *TaskTableRow) GetRewardItems() *TaskObjectList {
 	if p.RewardItems == nil {
 		p.RewardItems, _ = unMarshal(p.RewardItemsJson)
 	}

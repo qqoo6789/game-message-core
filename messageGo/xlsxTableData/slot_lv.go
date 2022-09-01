@@ -2,7 +2,7 @@ package xlsxTable
 
 import "time"
 
-type SlotLvTable struct {
+type SlotLvTableRow struct {
 	UId        uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Position   int32     `json:"position"` // 道具槽位置 遵循 AvatarPosition 规则
 	Lv         int32     `json:"lv"`

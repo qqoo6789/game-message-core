@@ -1,6 +1,11 @@
 package xlsxTable
 
-import "time"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+	"time"
+)
 
 // buff效果类型.
 type BuffEffectType int32
@@ -27,15 +32,33 @@ const (
 )
 
 // buff模板
-type BuffTable struct {
+type BuffTableRow struct {
 	UId             uint           `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	BuffId          int32          `json:"buffId"`
 	EffectType      BuffEffectType `json:"effectType"`
 	GroupId         int32          `json:"groupId"`
 	GroupPriority   int32          `json:"groupPriority"` //优先级(越大优先级越高)
-	Params          []int32        `json:"params"`
+	ParamStr        string         `json:"paramStr"`
 	TotalTime       int32          `json:"totalTime"`       //总持续时间
 	TriggerInterval int32          `json:"triggerInterval"` //触发间隔
 
 	CreatedAt time.Time `json:"createdAt"` // 过期判断条件
+}
+
+func (this *BuffTableRow) SetParams(params []int32) {
+	for _, i := range params {
+		this.ParamStr += fmt.Sprintf("%d,", i)
+	}
+	if this.ParamStr != "" {
+		this.ParamStr = this.ParamStr[:len(this.ParamStr)-1]
+	}
+}
+
+func (this *BuffTableRow) GetParams() (params []int32) {
+	splitArray := strings.Split(this.ParamStr, ",")
+	for _, s := range splitArray {
+		num, _ := strconv.ParseInt(s, 10, 32)
+		params = append(params, int32(num))
+	}
+	return
 }

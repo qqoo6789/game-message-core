@@ -16,7 +16,7 @@ type TaskObjectList struct {
 	ParamList []TaskObject `json:"paramList"`
 }
 type TaskTable struct {
-	Id              uint   `gorm:"primaryKey;autoIncrement" json:"id,string"`
+	UId             uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Level           int32  `json:"level"`
 	Name            string `json:"name"`
 	SubSystem       string `json:"subSystem"`

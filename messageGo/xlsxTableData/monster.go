@@ -1,6 +1,8 @@
 package xlsxTable
 
-import "time"
+import (
+	"time"
+)
 
 type MonsterAttType int32
 
@@ -14,7 +16,7 @@ const (
 	MonsterAttTypeDumb MonsterAttType = 3
 )
 
-type MonsterTable struct {
+type MonsterTableRow struct {
 	UId             uint           `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Cid             int32          `json:"cid"`
 	Name            string         `json:"name"`
@@ -23,7 +25,7 @@ type MonsterTable struct {
 	LockEnemyRadius int32          `json:"lockEnemyRadius"` // 锁敌范围
 	CombatDist      int32          `json:"combatDist"`      // 脱战距离
 	DropId          int32          `json:"dropId"`          // 掉落配置ID
-	SkillSequence   []int32        `json:"skillSequence"`   // 技能列表
+	SkillSequence   string         `json:"skillSequence"`   // 技能列表
 	Att             int32          `json:"att"`             // 攻击力
 	AttSpeed        int32          `json:"attSpeed"`        // 攻击速率
 	Def             int32          `json:"def"`             // 防御力

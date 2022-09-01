@@ -2,16 +2,16 @@ package xlsxTable
 
 func TableModels() []interface{} {
 	return []interface{}{
-		BuffTable{},
-		ChatTable{},
-		DropTable{},
+		BuffTableRow{},
+		ChatTableRow{},
+		DropTableRow{},
 		GameValueTable{},
 		ItemTable{},
-		MonsterTable{},
-		RewardTable{},
-		RoleLvTable{},
-		SlotLvTable{},
-		TaskTable{},
-		TaskListTable{},
+		MonsterTableRow{},
+		RewardTableRow{},
+		RoleLvTableRow{},
+		SlotLvTableRow{},
+		TaskTableRow{},
+		TaskListTableRow{},
 	}
 }

@@ -9,6 +9,6 @@ type GameValueTable struct {
 	StringValue   string    `json:"stringValue"`
 	ValueArray    string    `json:"valueArray"`
 	StringArray   string    `json:"stringArray"`
-	IntValueArray []int32   `json:"intValueArray"`
+	IntValueArray string    `json:"intValueArray"`
 	CreatedAt     time.Time `json:"createdAt"` // 过期判断条件
 }

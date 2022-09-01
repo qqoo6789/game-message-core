@@ -2,7 +2,7 @@ package xlsxTable
 
 import "time"
 
-type RoleLvTable struct {
+type RoleLvTableRow struct {
 	UId          uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Lv           int32     `json:"lv"`
 	Exp          int32     `json:"exp"`

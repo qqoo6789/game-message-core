@@ -32,7 +32,7 @@ type MonsterTable struct {
 	CritDmg         int32          `json:"critDmg"`         // 暴击伤害
 	HitRate         int32          `json:"hitRate"`         // 名中率
 	MissRate        int32          `json:"missRate"`        // 闪避率
-	MoveSpeed       float32        `json:"moveSpeed"`       // 移动速度
+	MoveSpeed       int32          `json:"moveSpeed"`       // 移动速度
 	PushDmg         int32          `json:"pushDmg"`         // 击退伤害
 	PushDist        int32          `json:"pushDist"`        // 击退距离
 	CreatedAt       time.Time      `json:"createdAt"`       // 过期判断条件

@@ -4,7 +4,7 @@ import (
 	"time"
 )
 
-type TaskListCnf struct {
+type TaskListTable struct {
 	UId             uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	Level           int32     `json:"level"`
 	System          int32     `json:"system"`
@@ -19,24 +19,24 @@ type TaskListCnf struct {
 	RewardItems *TaskObjectList `gorm:"-" json:"-"`
 }
 
-func (p *TaskListCnf) SetRewardItems(objs *TaskObjectList) error {
+func (p *TaskListTable) SetRewardItems(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.RewardItemsJson = string(bs)
 	return err
 }
-func (p *TaskListCnf) GetRewardItems() *TaskObjectList {
+func (p *TaskListTable) GetRewardItems() *TaskObjectList {
 	if p.RewardItems == nil {
 		p.RewardItems, _ = unMarshal(p.RewardItemsJson)
 	}
 	return p.RewardItems
 }
 
-func (p *TaskListCnf) SetIncludeTask(objs *TaskObjectList) error {
+func (p *TaskListTable) SetIncludeTask(objs *TaskObjectList) error {
 	bs, err := marshal(objs)
 	p.IncludeTaskJson = string(bs)
 	return err
 }
-func (p *TaskListCnf) GetIncludeTask() *TaskObjectList {
+func (p *TaskListTable) GetIncludeTask() *TaskObjectList {
 	if p.IncludeTask == nil {
 		p.IncludeTask, _ = unMarshal(p.IncludeTaskJson)
 	}

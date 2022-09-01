@@ -1,4 +1,4 @@
-package jsonData
+package xlsxTable
 
 import "time"
 
@@ -27,7 +27,7 @@ const (
 )
 
 // buff模板
-type BuffSettings struct {
+type BuffTable struct {
 	Id              uint           `gorm:"primaryKey;autoIncrement" json:"id,string"`
 	BuffId          int32          `json:"buffId"`
 	EffectType      BuffEffectType `json:"effectType"`

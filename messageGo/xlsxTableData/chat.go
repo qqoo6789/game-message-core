@@ -1,4 +1,4 @@
-package jsonData
+package xlsxTable
 
 import "time"
 
@@ -17,7 +17,7 @@ const (
 	ChatChannelTypePrivate ChatChannelType = 4
 )
 
-type ChatSettings struct {
+type ChatTable struct {
 	Id        uint            `gorm:"primaryKey;autoIncrement" json:"id,string"`
 	ChatType  ChatChannelType `json:"chatType"`
 	Cd        int32           `json:"cd"`

@@ -6,6 +6,7 @@ import (
 
 type TaskListTableRow struct {
 	UId             uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
+	Id              int32     `json:"id"`
 	Level           int32     `json:"level"`
 	System          int32     `json:"system"`
 	IncludeTaskJson string    `gorm:"type:text" json:"includeTask"`

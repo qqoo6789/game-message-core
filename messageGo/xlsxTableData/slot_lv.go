@@ -4,6 +4,7 @@ import "time"
 
 type SlotLvTableRow struct {
 	UId        uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
+	Id         int32     `json:"id"`       // 道具槽位置 遵循 AvatarPosition 规则
 	Position   int32     `json:"position"` // 道具槽位置 遵循 AvatarPosition 规则
 	Lv         int32     `json:"lv"`
 	UpExp      int32     `json:"upExp"`      // 升级下一级消耗的经验

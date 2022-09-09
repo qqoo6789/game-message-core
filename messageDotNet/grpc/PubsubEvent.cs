@@ -5,15 +5,6 @@
 internal static class SubscriptionEvent
 {
     /// <summary>
-    /// 注册服务
-    /// </summary>
-    public const string REGISTER_SERVICE = "EventTopicRegisterService";
-    /// <summary>
-    /// 释放服务
-    /// </summary>
-    public const string DESTROY_SERVICE = "EventTopicDestroyService";
-
-    /// <summary>
     /// 存储玩家数据
     /// </summary>
     public const string SAVE_PLAYER_DATA = "EventTopicSavePlayerData";

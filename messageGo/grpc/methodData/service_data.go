@@ -3,7 +3,7 @@ package methodData
 import "game-message-core/proto"
 
 // 服务信息用于服务 注册和释放
-type ServiceData struct {
+type ServiceDataInput struct {
 	MsgVersion  int64             `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
 	Id          int64             `json:"id"`
 	Name        string            `json:"name"`
@@ -16,4 +16,10 @@ type ServiceData struct {
 	MaxOnline   int32             `json:"maxOnline"`
 	CreatedAt   int64             `json:"createdAt"`
 	UpdatedAt   int64             `json:"updatedAt"`
+}
+
+// 服务信息用于服务 注册和释放
+type ServiceDataOutput struct {
+	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	Success    bool  `json:"success"`
 }

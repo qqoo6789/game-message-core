@@ -2,10 +2,10 @@ using System;
 using UnityEngine;
 
 /// <summary>
-/// 服务信息用于服务 注册和释放
+/// 服务信息用于服务 注册和释放 request
 /// </summary>
 [Serializable]
-internal class ServiceData
+internal class ServiceDataInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -21,6 +21,24 @@ internal class ServiceData
     public long CreatedAt;
     public long UpdatedAt;
 
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+}
+
+
+/// <summary>
+/// 服务信息用于服务 注册和释放 response
+/// </summary>
+[Serializable]
+internal class ServiceDataOutput
+{
+    // 消息版本号 值为毫秒时间戳
+    public long MsgVersion;
+    public bool Success;
 
     public string ToJson()
     {

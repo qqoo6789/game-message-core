@@ -29,11 +29,11 @@ namespace GameMessageCore {
             "ZRISCgpzZXJ2aWNlX2lkGAIgASgFEgwKBGhvc3QYAyABKAkSDAoEcG9ydBgE",
             "IAEoCRIPCgd2ZXJzaW9uGAUgASgJKlUKDVNlcnZpY2VTdGF0dXMSGAoUU2Vy",
             "dmljZVN0YXR1c1Vua25vd24QABITCg9TZXJ2aWNlU3RhdHVzVXAQARIVChFT",
-            "ZXJ2aWNlU3RhdHVzRG93bhACKsIBCgtTZXJ2aWNlVHlwZRIWChJTZXJ2aWNl",
+            "ZXJ2aWNlU3RhdHVzRG93bhACKsABCgtTZXJ2aWNlVHlwZRIWChJTZXJ2aWNl",
             "VHlwZVVua25vd24QABITCg9TZXJ2aWNlVHlwZU1haW4QARIWChJTZXJ2aWNl",
             "VHlwZUFjY291bnQQAhIUChBTZXJ2aWNlVHlwZVNjZW5lEAMSEwoPU2Vydmlj",
-            "ZVR5cGVUYXNrEAQSEwoPU2VydmljZVR5cGVDaGF0EAUSFgoSU2VydmljZVR5",
-            "cGVHYXRld2F5EAYSFgoSU2VydmljZVR5cGVNYW5hZ2VyEAdiBnByb3RvMw=="));
+            "ZVR5cGVUYXNrEAQSEwoPU2VydmljZVR5cGVDaGF0EAUSFAoQU2VydmljZVR5",
+            "cGVBZ2VudBAGEhYKElNlcnZpY2VUeXBlTWFuYWdlchAHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceStatus), typeof(global::GameMessageCore.ServiceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -75,7 +75,7 @@ namespace GameMessageCore {
     /// <summary>
     /// 网关服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeGateway")] Gateway = 6,
+    [pbr::OriginalName("ServiceTypeAgent")] Agent = 6,
     /// <summary>
     /// 服务管理
     /// </summary>

@@ -23,7 +23,7 @@ enum ServiceType{
   // 聊天服务
   ServiceTypeChat = 5;
   // 网关服务
-  ServiceTypeGateway = 6;
+  ServiceTypeAgent = 6;
   // 服务管理
   ServiceTypeManager = 7;
 }

@@ -28,7 +28,7 @@ namespace GameMessageCore {
             "dHVyZRIPCgdleWVicm93GAEgASgFEg0KBW1vdXRoGAIgASgFEgsKA2V5ZRgD",
             "IAEoBRIMCgRmYWNlGAQgASgFEgwKBGhhaXIYBSABKAUSDQoFZ2xvdmUYBiAB",
             "KAUSDwoHY2xvdGhlcxgHIAEoBRINCgVwYW50cxgIIAEoBSKjAQoOUGxheWVy",
-            "QmFzZURhdGESDwoHdXNlcl9pZBgBIAEoCRIMCgRuYW1lGAIgASgJEg8KB3Jv",
+            "QmFzZURhdGESDwoHdXNlcl9pZBgBIAEoAxIMCgRuYW1lGAIgASgJEg8KB3Jv",
             "bGVfaWQYAyABKAUSDgoGZ2VuZGVyGAUgASgJEhEKCXJvbGVfaWNvbhgGIAEo",
             "CRIvCgdmZWF0dXJlGAcgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckZl",
             "YXR1cmUSDQoFZ3VpZGUYCCABKAgqaQoSUGxheWVyUmVzcGF3blBvaW50EhsK",
@@ -581,13 +581,13 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 1;
-    private string userId_ = "";
+    private long userId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
+    public long UserId {
       get { return userId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
@@ -701,7 +701,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (RoleId != 0) hash ^= RoleId.GetHashCode();
       if (Gender.Length != 0) hash ^= Gender.GetHashCode();
@@ -726,9 +726,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -764,9 +764,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (UserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(UserId);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -802,8 +802,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -835,7 +835,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.UserId.Length != 0) {
+      if (other.UserId != 0L) {
         UserId = other.UserId;
       }
       if (other.Name.Length != 0) {
@@ -874,8 +874,8 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
           case 18: {
@@ -920,8 +920,8 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            UserId = input.ReadInt64();
             break;
           }
           case 18: {

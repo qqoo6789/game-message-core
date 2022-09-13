@@ -17,3 +17,20 @@ internal static class ManagerServiceAction
     /// </summary>
     public const string DESTROY_SERVICE = "ManagerActionServiceDestroy";
 }
+
+
+
+/// <summary>
+/// MELAND Game Service Action call method API name
+/// </summary>
+internal static class GameServiceAction
+{
+    /// <summary>
+    /// 转发客户端proto Message
+    /// </summary>
+    public const string CLIENT_PROTO_MESSAGE = "ClientProtoMessage";
+    /// <summary>
+    /// 玩家离开游戏(断开网络链接时)
+    /// </summary>
+    public const string PLAYER_LEAVE_GAME = "PlayerLeaveGame";
+}

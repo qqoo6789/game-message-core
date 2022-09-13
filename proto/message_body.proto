@@ -182,12 +182,14 @@ message SigninPlayerRequest {
   bool            reconnect = 4;
   OSType          os_type = 5;      // 渠道(android/ios)
   PlatformType    platform = 6;     // 平台(taptap...)
+  // 客户端期望链接的scene_service_app_id,仅在开发模式有效
+  string          scene_service_app_id = 7; 
 }
 message SigninPlayerResponse {
   Player          player = 1; // 玩家信息
   int64           server_time = 2;
   int64           client_time = 3;
-  int32           scene_server_id = 4;
+  string          scene_service_app_id = 4;
   int64           last_login_time = 5; //上次登录banner的时间
 }
 message SignOutPlayerRequest{}

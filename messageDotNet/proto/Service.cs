@@ -29,11 +29,12 @@ namespace GameMessageCore {
             "ZRISCgpzZXJ2aWNlX2lkGAIgASgFEgwKBGhvc3QYAyABKAkSDAoEcG9ydBgE",
             "IAEoCRIPCgd2ZXJzaW9uGAUgASgJKlUKDVNlcnZpY2VTdGF0dXMSGAoUU2Vy",
             "dmljZVN0YXR1c1Vua25vd24QABITCg9TZXJ2aWNlU3RhdHVzVXAQARIVChFT",
-            "ZXJ2aWNlU3RhdHVzRG93bhACKsABCgtTZXJ2aWNlVHlwZRIWChJTZXJ2aWNl",
+            "ZXJ2aWNlU3RhdHVzRG93bhACKtYBCgtTZXJ2aWNlVHlwZRIWChJTZXJ2aWNl",
             "VHlwZVVua25vd24QABITCg9TZXJ2aWNlVHlwZU1haW4QARIWChJTZXJ2aWNl",
             "VHlwZUFjY291bnQQAhIUChBTZXJ2aWNlVHlwZVNjZW5lEAMSEwoPU2Vydmlj",
             "ZVR5cGVUYXNrEAQSEwoPU2VydmljZVR5cGVDaGF0EAUSFAoQU2VydmljZVR5",
-            "cGVBZ2VudBAGEhYKElNlcnZpY2VUeXBlTWFuYWdlchAHYgZwcm90bzM="));
+            "cGVBZ2VudBAGEhYKElNlcnZpY2VUeXBlTWFuYWdlchAHEhQKEFNlcnZpY2VU",
+            "eXBlTGltaXQQCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceStatus), typeof(global::GameMessageCore.ServiceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -80,6 +81,10 @@ namespace GameMessageCore {
     /// 服务管理
     /// </summary>
     [pbr::OriginalName("ServiceTypeManager")] Manager = 7,
+    /// <summary>
+    /// 服务类型上限标记必须放在最后
+    /// </summary>
+    [pbr::OriginalName("ServiceTypeLimit")] Limit = 8,
   }
 
   #endregion

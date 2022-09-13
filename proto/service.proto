@@ -25,7 +25,9 @@ enum ServiceType{
   // 网关服务
   ServiceTypeAgent = 6;
   // 服务管理
-  ServiceTypeManager = 7;
+  ServiceTypeManager = 7;  
+  // 服务类型上限标记必须放在最后
+  ServiceTypeLimit = 8;
 }
 
 message ServiceInfo {

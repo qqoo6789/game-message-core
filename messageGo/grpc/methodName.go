@@ -14,5 +14,10 @@ const (
 	ProtoMessageActionPullClientMessage         ProtoMessageAction = "PullClientMessage"
 	ProtoMessageActionBroadCastToClient         ProtoMessageAction = "BroadCastToClient"
 	ProtoMessageActionMultipleBroadCastToClient ProtoMessageAction = "MultipleBroadCastToClient"
-	ProtoMessageActionPlayerLeaveGame           ProtoMessageAction = "PlayerLeaveGame"
+)
+
+type UserAction string
+
+const (
+	UserActionLeaveGame UserAction = "UserLeaveGame"
 )

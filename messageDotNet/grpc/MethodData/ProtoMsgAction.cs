@@ -46,6 +46,7 @@ internal class BroadCastToClientInput
     public long MsgVersion;
     public string ServiceAppId;
     public long UserId;
+    public string SocketId;
     public int MsgId;
     public byte[] MsgBody;
 

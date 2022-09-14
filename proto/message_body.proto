@@ -207,7 +207,7 @@ message QueryPlayerResponse {
 }
 
 message CreatePlayerRequest {
-  int64           user_id = 1;
+  string          token = 1;
   string          nick_name = 2;// 名字
   int32           role_id = 3;  // 配置 ID
   string          gender = 4;   // 玩家性别，男生为 male, 女生为 female

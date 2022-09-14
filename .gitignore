@@ -9,3 +9,4 @@
 .idea
 .vscode
 messageDotNet/jsonData/.DS_Store
+*.meta

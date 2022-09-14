@@ -50,6 +50,7 @@ message Envelope {
     SigninPlayerResponse              signin_player_response                = 0x010020;
     SignOutPlayerRequest              sign_out_player_request               = 0x010021;
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
+    BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x010023;
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -195,6 +196,10 @@ message SigninPlayerResponse {
 message SignOutPlayerRequest{}
 message SignOutPlayerResponse{}
 
+message BroadCastEntityProfileUpdateResponse {
+  EntityId entity_id = 1;
+  repeated EntityProfileUpdate profiles = 2;
+}
 
 
 

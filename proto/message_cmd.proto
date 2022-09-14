@@ -43,7 +43,7 @@ enum EnvelopeType {
     UpgradeItemSlot                 = 0x010017;     // 升级 玩家道具槽
     SigninPlayer                    = 0x010019;     // 登录角色
     SignOutPlayer                   = 0x010021;     // 角色退出游戏
-
+    BroadCastEntityProfileUpdate    = 0x010022;
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

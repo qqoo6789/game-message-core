@@ -124,3 +124,30 @@ message EntityMovement {
   Vector3 Dir = 6;
 }
 
+message EntityProfileUpdate {
+  EntityProfileField field = 1;
+  int32 cur_value = 2;
+  string cur_value_str = 3;
+  bool   use_string_value = 4;
+}
+
+
+enum EntityProfileField {
+  EntityProfileFieldUnKnown = 0;
+  EntityProfileFieldLv = 1;
+  EntityProfileFieldExp = 2;
+  EntityProfileFieldAtt = 3;
+  EntityProfileFieldAttSpeed = 4;
+  EntityProfileFieldDef = 5;
+  EntityProfileFieldHpLimit = 6;
+  EntityProfileFieldCritRate = 7;
+  EntityProfileFieldCritDamage = 8;
+  EntityProfileFieldHitRate = 9;
+  EntityProfileFieldMissRate = 10;
+  EntityProfileFieldMoveSpeed = 11;
+  EntityProfileFieldPushDmg = 12;
+  EntityProfileFieldPushDist = 13;
+  EntityProfileFieldHpCurrent = 14;
+  EntityProfileFieldRename = 15;
+  EntityProfileFieldHpRecovery = 16;
+}

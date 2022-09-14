@@ -151,3 +151,11 @@ enum EntityProfileField {
   EntityProfileFieldRename = 15;
   EntityProfileFieldHpRecovery = 16;
 }
+
+enum EntityProfileUpdateTriggers {
+  EntityProfileUpdateTriggersUnKnown = 0;
+  EntityProfileUpdateTriggersBeAttack = 1;
+  EntityProfileUpdateTriggersUsConsumable = 2;
+  EntityProfileUpdateTriggersAutoRecoverHp = 3;
+  EntityProfileUpdateTriggersBuff = 4;
+ }

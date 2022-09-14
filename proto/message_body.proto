@@ -51,7 +51,8 @@ message Envelope {
     SignOutPlayerRequest              sign_out_player_request               = 0x010021;
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
     BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x010023;
-
+    BroadCastEntityProfileUpdateByFieldIdResponse broad_cast_entity_profile_update_by_field_id_response  = 0x010024;
+    BroadCastPlayerProfileUpdateByFieldIdResponse broad_cast_player_profile_update_by_field_id_response = 0x010025;
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -201,6 +202,24 @@ message BroadCastEntityProfileUpdateResponse {
   repeated EntityProfileUpdate profiles = 2;
 }
 
+message BroadCastEntityProfileUpdateByFieldIdResponse {
+   EntityId entity_id = 1;
+   EntityProfileField profile_id = 2;
+   int32 current_value = 3;
+   string str_value = 4;
+   bool flag = 5;
+   EntityProfileUpdateTriggers triggers = 6;
+}
+
+message BroadCastPlayerProfileUpdateByFieldIdResponse {
+  int32 player_id = 1;
+  EntityProfileField profile_id = 2;
+  int32 current_value = 3;
+  // 比较大的数据 使用 string传输
+  string current_value_str = 4;
+  // 是否使用string传输的标识
+  bool use_string_value = 5;
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

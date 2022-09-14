@@ -11,6 +11,7 @@ internal class PullClientMessageInput
     public long MsgVersion;
     public string AgentAppId;
     public long UserId;
+    public int MsgId;
     public byte[] MsgBody;
 
     public string ToJson()
@@ -44,6 +45,7 @@ internal class BroadCastToClientInput
     public long MsgVersion;
     public string ServiceAppId;
     public long UserId;
+    public int MsgId;
     public byte[] MsgBody;
 
     public string ToJson()
@@ -78,6 +80,7 @@ internal class MultipleBroadCastToClientInput
     public long MsgVersion;
     public string ServiceAppId;
     public long[] UserList;
+    public int MsgId;
     public byte[] MsgBody;
 
     public string ToJson()

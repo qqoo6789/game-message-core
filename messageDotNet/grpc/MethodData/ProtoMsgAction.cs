@@ -11,6 +11,7 @@ internal class PullClientMessageInput
     public long MsgVersion;
     public string AgentAppId;
     public long UserId;
+    public string SocketId;
     public int MsgId;
     public byte[] MsgBody;
 

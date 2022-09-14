@@ -113,7 +113,7 @@ enum MovementType {
   MovementTypeIdle = 3;
 }
 message EntityMovement {
-  EntityType type_id = 1;
+  EntityId type_id = 1;
   // 当前位置
   EntityMoveStep cur_location = 2;
   // 目标位置

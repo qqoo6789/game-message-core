@@ -21,14 +21,22 @@ internal static class ManagerServiceAction
 
 
 /// <summary>
-/// MELAND Game Service Action call method API name
+/// MELAND proto message Action calls method name 
 /// </summary>
-internal static class GameServiceAction
+internal static class ProtoMessageAction
 {
     /// <summary>
     /// 转发客户端proto Message
     /// </summary>
-    public const string CLIENT_PROTO_MESSAGE = "ClientProtoMessage";
+    public const string PULL_CLIENT_MESSAGE = "PullClientMessage";
+    /// <summary>
+    /// services 推送 proto message 到客户端 
+    /// </summary>
+    public const string BROAD_CAST_TO_CLIENT = "BroadCastToClient";
+    /// <summary>
+    /// services 批量推送 proto message 到客户端 
+    /// </summary>
+    public const string MULTIPLE_BROAD_CAST_TO_CLIENT = "MultipleBroadCastToClient";
     /// <summary>
     /// 玩家离开游戏(断开网络链接时)
     /// </summary>

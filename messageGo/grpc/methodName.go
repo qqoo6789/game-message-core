@@ -8,9 +8,11 @@ const (
 	ManagerServiceActionDestroy     ManagerServiceAction = "ManagerActionServiceDestroy"
 )
 
-type GameServiceAction string
+type ProtoMessageAction string
 
 const (
-	GameServiceActionClientProtoMessage GameServiceAction = "ClientProtoMessage"
-	GameServiceActionPlayerLeaveGame    GameServiceAction = "PlayerLeaveGame"
+	ProtoMessageActionPullClientMessage         ProtoMessageAction = "PullClientMessage"
+	ProtoMessageActionBroadCastToClient         ProtoMessageAction = "BroadCastToClient"
+	ProtoMessageActionMultipleBroadCastToClient ProtoMessageAction = "MultipleBroadCastToClient"
+	ProtoMessageActionPlayerLeaveGame           ProtoMessageAction = "PlayerLeaveGame"
 )

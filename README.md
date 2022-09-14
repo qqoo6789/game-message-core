@@ -7,7 +7,7 @@ The message data structure used by the Meland game includes JSON structure and p
 ## install tools
 
 + run  "./scripts/install-protoc.sh"  install protoc
-+ run  "./scripts/install-to-tools.sh" install golang use protobuf tools
++ run  "./scripts/install-go-tools.sh" install golang use protobuf tools
 
 ---
 

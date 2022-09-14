@@ -65,6 +65,7 @@ enum EnvelopeType {
 	BroadCastEntityMove            = 0x030014;                                   
 	BroadCastEntityCombat          = 0x030015;                                
 	BroadCastRespawnPlayer         = 0x030016;                        
+	Teleport         = 0x030017;                        
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

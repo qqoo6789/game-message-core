@@ -12,6 +12,7 @@ import "entity.proto";
 import "skill.proto";
 import "task.proto";
 import "chat.proto";
+import "vector.proto";
 
 
 
@@ -53,6 +54,8 @@ message Envelope {
     BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x010023;
     BroadCastEntityProfileUpdateByFieldIdResponse broad_cast_entity_profile_update_by_field_id_response  = 0x010024;
     BroadCastPlayerProfileUpdateByFieldIdResponse broad_cast_player_profile_update_by_field_id_response = 0x010025;
+    TeleportRequest   teleport_request = 0x010026;
+    TeleportResponse  teleport_response = 0x010027;
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -219,6 +222,13 @@ message BroadCastPlayerProfileUpdateByFieldIdResponse {
   string current_value_str = 4;
   // 是否使用string传输的标识
   bool use_string_value = 5;
+}
+
+
+message TeleportRequest {
+  Vector3 to_pos = 9;
+}
+message TeleportResponse {
 }
 
 

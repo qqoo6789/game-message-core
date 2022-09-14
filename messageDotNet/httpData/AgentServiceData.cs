@@ -14,6 +14,7 @@ internal class AgentServiceResp
     public int Online;
     public int MaxOnline;
     public long CreatedAt;
+    public long UpdateAt;
 
     public string ToJson()
     {

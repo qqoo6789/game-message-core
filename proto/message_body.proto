@@ -9,6 +9,7 @@ import "platform.proto";
 import "item.proto";
 import "item_slot.proto";
 import "entity.proto";
+import "entityProfile.proto";
 import "skill.proto";
 import "task.proto";
 import "chat.proto";

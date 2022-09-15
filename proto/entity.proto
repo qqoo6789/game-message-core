@@ -4,43 +4,13 @@ option go_package = "./messageGo/proto";
 
 import "vector.proto";
 import "entityTypeDefine.proto";
+import "entityProfile.proto";
 import "player.proto";
 import "item.proto";
 
 
 /// ************************* entity data ***************************************************
-message EntityProfile {
-  // 等级
-  int32 lv = 1;
-  // 经验值
-  string exp = 2;
-  // 攻击力
-  int32 att = 3;
-  // 攻击速率
-  int32 att_speed = 4;
-  // 防御力
-  int32 def = 5;
-  // 当前血量
-  int32 hp_current = 6;
-  // 血量上限
-  int32 hp_limit = 7;
-  // 暴击(Critical Strikes)率
-  int32 crit_rate = 8;
-  // 暴击伤害
-  int32 crit_dmg = 9;
-  // 名中率
-  int32 hit_rate = 10;
-  // 闪避率
-  int32 miss_rate = 11;
-  // 移动速度
-  float move_speed = 12;
-  // 击退伤害
-  int32 push_dmg = 13;
-  // 击退距离
-  int32 push_dist = 14;
-  // HP恢复
-  int32 hp_recovery = 21;
-}
+
 
 message EntityId {
   EntityType  type = 1;
@@ -123,39 +93,3 @@ message EntityMovement {
   // 实体朝向(交互数据 = 实际数据 * 1000)
   Vector3 Dir = 6;
 }
-
-message EntityProfileUpdate {
-  EntityProfileField field = 1;
-  int32 cur_value = 2;
-  string cur_value_str = 3;
-  bool   use_string_value = 4;
-}
-
-
-enum EntityProfileField {
-  EntityProfileFieldUnKnown = 0;
-  EntityProfileFieldLv = 1;
-  EntityProfileFieldExp = 2;
-  EntityProfileFieldAtt = 3;
-  EntityProfileFieldAttSpeed = 4;
-  EntityProfileFieldDef = 5;
-  EntityProfileFieldHpLimit = 6;
-  EntityProfileFieldCritRate = 7;
-  EntityProfileFieldCritDamage = 8;
-  EntityProfileFieldHitRate = 9;
-  EntityProfileFieldMissRate = 10;
-  EntityProfileFieldMoveSpeed = 11;
-  EntityProfileFieldPushDmg = 12;
-  EntityProfileFieldPushDist = 13;
-  EntityProfileFieldHpCurrent = 14;
-  EntityProfileFieldRename = 15;
-  EntityProfileFieldHpRecovery = 16;
-}
-
-enum EntityProfileUpdateTriggers {
-  EntityProfileUpdateTriggersUnKnown = 0;
-  EntityProfileUpdateTriggersBeAttack = 1;
-  EntityProfileUpdateTriggersUsConsumable = 2;
-  EntityProfileUpdateTriggersAutoRecoverHp = 3;
-  EntityProfileUpdateTriggersBuff = 4;
- }

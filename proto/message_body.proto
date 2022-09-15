@@ -52,8 +52,8 @@ message Envelope {
     SigninPlayerResponse              signin_player_response                = 0x010020;
     SignOutPlayerRequest              sign_out_player_request               = 0x010021;
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
-    TeleportRequest   teleport_request = 0x010023;
-    TeleportResponse  teleport_response = 0x010024;
+    UpgradePlayerLevelRequest         upgrade_player_level_request          = 0x010023;
+    UpgradePlayerLevelResponse        upgrade_player_level_response         = 0x010024;
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -79,7 +79,9 @@ message Envelope {
     BroadCastEntityMoveResponse       broad_cast_entity_move_response       = 0x030014;
     BroadCastEntityCombatResponse     broad_cast_entity_combat_response     = 0x030015;
     BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
-    BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x030017;
+    TeleportRequest                   teleport_request                      = 0x030017;
+    TeleportResponse                  teleport_response                     = 0x030018;
+    BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response = 0x030019;
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -204,12 +206,11 @@ message BroadCastEntityProfileUpdateResponse {
   repeated EntityProfileUpdate profiles = 2;
 }
 
-message TeleportRequest {
-  Vector3 to_pos = 9;
+message  UpgradePlayerLevelRequest{}
+message  UpgradePlayerLevelResponse{
+  int32  cur_level = 1;
+  string cur_exp   = 2;
 }
-message TeleportResponse {
-}
-
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerRequest {
@@ -328,6 +329,12 @@ message BroadCastEntityCombatResponse{
   EntityLocation from_location = 6;
   // 接收技能伤害的对象 id 数组
   repeated EntityDamage targets = 7;
+}
+
+message TeleportRequest {
+  Vector3 to_pos = 9;
+}
+message TeleportResponse {
 }
 
 

@@ -24,30 +24,30 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKt0HCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvcHCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
             "QnJvYWRDYXN0SXRlbVVwZGF0ZRCSgAQSFgoQQnJvYWRDYXN0SXRlbURlbBCT",
             "gAQSHQoXQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1T",
             "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhIKDFNpZ25pblBsYXll",
-            "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSEQoLUXVlcnlQbGF5ZXIQgYAI",
-            "EhIKDENyZWF0ZVBsYXllchCDgAgSDgoIRW50ZXJNYXAQgYAMEhgKElVwZGF0",
-            "ZVNlbGZMb2NhdGlvbhCDgAwSDgoIVXNlU2tpbGwQhYAMEhcKEVBpY2tGYWxs",
-            "aW5nT2JqZWN0EIeADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9hZENh",
-            "c3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5VXBk",
-            "YXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9h",
-            "ZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQ",
-            "lYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVwb3J0",
-            "EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJiADBIPCglT",
-            "ZWxmVGFza3MQgYAQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EIOAEBIQ",
-            "CgpBY2NlcHRUYXNrEIWAEBIVCg9BYmFuZG9ubWVudFRhc2sQh4AQEhAKClRh",
-            "c2tSZXdhcmQQiYAQEhQKDlRhc2tMaXN0UmV3YXJkEJGAEBIZChNVcGdyYWRl",
-            "VGFza1Byb2dyZXNzEJOAEBIZChNCcm9hZENhc3RUYXNrUmV3YXJkEJWAEBIV",
-            "Cg9TZW5kQ2hhdE1lc3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdl",
-            "cxCDgBQSIAoaQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJy",
-            "b2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCBgBhiBnByb3Rv",
-            "Mw=="));
+            "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSGAoSVXBncmFkZVBsYXllckxl",
+            "dmVsEKOABBIRCgtRdWVyeVBsYXllchCBgAgSEgoMQ3JlYXRlUGxheWVyEIOA",
+            "CBIOCghFbnRlck1hcBCBgAwSGAoSVXBkYXRlU2VsZkxvY2F0aW9uEIOADBIO",
+            "CghVc2VTa2lsbBCFgAwSFwoRUGlja0ZhbGxpbmdPYmplY3QQh4AMEhMKDVJl",
+            "c3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2FkQ2FzdEluaXRNYXBFbGVtZW50EJGA",
+            "DBIeChhCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGUQkoAMEhwKFkJyb2FkQ2Fz",
+            "dEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2FzdEVudGl0eU1vdmUQlIAM",
+            "EhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwSHAoWQnJvYWRDYXN0UmVz",
+            "cGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AMEiIKHEJyb2FkQ2FzdEVu",
+            "dGl0eVByb2ZpbGVVcGRhdGUQmYAMEg8KCVNlbGZUYXNrcxCBgBASHQoXQnJv",
+            "YWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQEhAKCkFjY2VwdFRhc2sQhYAQEhUK",
+            "D0FiYW5kb25tZW50VGFzaxCHgBASEAoKVGFza1Jld2FyZBCJgBASFAoOVGFz",
+            "a0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3JhZGVUYXNrUHJvZ3Jlc3MQk4AQEhkK",
+            "E0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCB",
+            "gBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RS",
+            "ZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0",
+            "YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -102,6 +102,10 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("SignOutPlayer")] SignOutPlayer = 65569,
     /// <summary>
+    /// 手动点击升级
+    /// </summary>
+    [pbr::OriginalName("UpgradePlayerLevel")] UpgradePlayerLevel = 65571,
+    /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
@@ -121,7 +125,7 @@ namespace GameMessageCore {
     [pbr::OriginalName("BroadCastEntityCombat")] BroadCastEntityCombat = 196629,
     [pbr::OriginalName("BroadCastRespawnPlayer")] BroadCastRespawnPlayer = 196630,
     [pbr::OriginalName("Teleport")] Teleport = 196631,
-    [pbr::OriginalName("BroadCastEntityProfileUpdate")] BroadCastEntityProfileUpdate = 196632,
+    [pbr::OriginalName("BroadCastEntityProfileUpdate")] BroadCastEntityProfileUpdate = 196633,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

@@ -80,8 +80,6 @@ message Envelope {
     BroadCastEntityCombatResponse     broad_cast_entity_combat_response     = 0x030015;
     BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
     BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x030017;
-    BroadCastEntityProfileUpdateByFieldIdResponse broad_cast_entity_profile_update_by_field_id_response  = 0x030018;
-    BroadCastPlayerProfileUpdateByFieldIdResponse broad_cast_player_profile_update_by_field_id_response = 0x030019;                      
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -205,26 +203,6 @@ message BroadCastEntityProfileUpdateResponse {
   EntityId entity_id = 1;
   repeated EntityProfileUpdate profiles = 2;
 }
-
-message BroadCastEntityProfileUpdateByFieldIdResponse {
-   EntityId entity_id = 1;
-   EntityProfileField profile_id = 2;
-   int32 current_value = 3;
-   string str_value = 4;
-   bool flag = 5;
-   EntityProfileUpdateTriggers triggers = 6;
-}
-
-message BroadCastPlayerProfileUpdateByFieldIdResponse {
-  int32 player_id = 1;
-  EntityProfileField profile_id = 2;
-  int32 current_value = 3;
-  // 比较大的数据 使用 string传输
-  string current_value_str = 4;
-  // 是否使用string传输的标识
-  bool use_string_value = 5;
-}
-
 
 message TeleportRequest {
   Vector3 to_pos = 9;

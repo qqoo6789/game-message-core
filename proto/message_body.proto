@@ -9,9 +9,11 @@ import "platform.proto";
 import "item.proto";
 import "item_slot.proto";
 import "entity.proto";
+import "entityProfile.proto";
 import "skill.proto";
 import "task.proto";
 import "chat.proto";
+import "vector.proto";
 
 
 
@@ -50,7 +52,8 @@ message Envelope {
     SigninPlayerResponse              signin_player_response                = 0x010020;
     SignOutPlayerRequest              sign_out_player_request               = 0x010021;
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
-
+    TeleportRequest   teleport_request = 0x010023;
+    TeleportResponse  teleport_response = 0x010024;
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -75,7 +78,8 @@ message Envelope {
     BroadCastEntityDestroyResponse    broad_cast_entity_destroy_response    = 0x030013;
     BroadCastEntityMoveResponse       broad_cast_entity_move_response       = 0x030014;
     BroadCastEntityCombatResponse     broad_cast_entity_combat_response     = 0x030015;
-    BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;                         
+    BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
+    BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response  = 0x030017;
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -195,7 +199,16 @@ message SigninPlayerResponse {
 message SignOutPlayerRequest{}
 message SignOutPlayerResponse{}
 
+message BroadCastEntityProfileUpdateResponse {
+  EntityId entity_id = 1;
+  repeated EntityProfileUpdate profiles = 2;
+}
 
+message TeleportRequest {
+  Vector3 to_pos = 9;
+}
+message TeleportResponse {
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

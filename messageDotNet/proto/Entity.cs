@@ -25,50 +25,43 @@ namespace GameMessageCore {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgxlbnRpdHkucHJvdG8SD2dhbWVNZXNzYWdlQ29yZRoMdmVjdG9yLnByb3Rv",
-            "GhZlbnRpdHlUeXBlRGVmaW5lLnByb3RvGgxwbGF5ZXIucHJvdG8aCml0ZW0u",
-            "cHJvdG8ikwIKDUVudGl0eVByb2ZpbGUSCgoCbHYYASABKAUSCwoDZXhwGAIg",
-            "ASgJEgsKA2F0dBgDIAEoBRIRCglhdHRfc3BlZWQYBCABKAUSCwoDZGVmGAUg",
-            "ASgFEhIKCmhwX2N1cnJlbnQYBiABKAUSEAoIaHBfbGltaXQYByABKAUSEQoJ",
-            "Y3JpdF9yYXRlGAggASgFEhAKCGNyaXRfZG1nGAkgASgFEhAKCGhpdF9yYXRl",
-            "GAogASgFEhEKCW1pc3NfcmF0ZRgLIAEoBRISCgptb3ZlX3NwZWVkGAwgASgC",
-            "EhAKCHB1c2hfZG1nGA0gASgFEhEKCXB1c2hfZGlzdBgOIAEoBRITCgtocF9y",
-            "ZWNvdmVyeRgVIAEoBSJBCghFbnRpdHlJZBIpCgR0eXBlGAEgASgOMhsuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkVudGl0eVR5cGUSCgoCaWQYAiABKAMiRwoORW50aXR5",
-            "TG9jYXRpb24SDgoGbWFwX2lkGAEgASgFEiUKA2xvYxgCIAEoCzIYLmdhbWVN",
-            "ZXNzYWdlQ29yZS5WZWN0b3IzItwBChJFbnRpdHlXaXRoTG9jYXRpb24SKgoH",
-            "dHlwZV9pZBgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIpCgZw",
-            "bGF5ZXIYCiABKAsyFy5nYW1lTWVzc2FnZUNvcmUuUGxheWVySAASKwoHbW9u",
-            "c3RlchgLIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5Nb25zdGVySAASOAoOZmFs",
-            "bGluZ19vYmplY3QYDCABKAsyHi5nYW1lTWVzc2FnZUNvcmUuRmFsbGluZ09i",
-            "amVjdEgAQggKBmVudGl0eSKQAgoGUGxheWVyEjIKCWJhc2VfZGF0YRgBIAEo",
-            "CzIfLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJCYXNlRGF0YRIvCgdwcm9maWxl",
-            "GAIgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eVByb2ZpbGUSLgoHYXZh",
-            "dGFycxgDIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBdmF0YXISDgoG",
-            "YWN0aXZlGAQgASgIEg4KBm1hcF9pZBgFIAEoBRIqCghwb3NpdGlvbhgGIAEo",
-            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2RpchgHIAEoCzIYLmdh",
-            "bWVNZXNzYWdlQ29yZS5WZWN0b3IzIrYBCgdNb25zdGVyEgsKA2NpZBgBIAEo",
-            "BRIKCgJpZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSLwoHcHJvZmlsZRgEIAEo",
-            "CzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlQcm9maWxlEioKCHBvc2l0aW9u",
-            "GAUgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGlyGAYgASgL",
-            "MhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiqAEKDUZhbGxpbmdPYmplY3QS",
-            "CwoDY2lkGAEgASgFEgoKAmlkGAIgASgDEgsKA251bRgDIAEoBRINCgVvd25l",
-            "chgEIAEoAxIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5W",
-            "ZWN0b3IzEiUKA2RpchgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3Iz",
-            "Eg8KB3F1YWxpdHkYByABKAUiUgoORW50aXR5TW92ZVN0ZXASMQoIbG9jYXRp",
-            "b24YASABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24SDQoF",
-            "c3RhbXAYAiABKAMigQIKDkVudGl0eU1vdmVtZW50EiwKB3R5cGVfaWQYASAB",
-            "KA4yGy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5VHlwZRI1CgxjdXJfbG9jYXRp",
-            "b24YAiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoN",
-            "ZGVzdF9sb2NhdGlvbhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlN",
-            "b3ZlU3RlcBIrCgR0eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVt",
-            "ZW50VHlwZRIlCgNEaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9y",
-            "MypoCgxNb3ZlbWVudFR5cGUSFwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQK",
-            "EE1vdmVtZW50VHlwZVdhbGsQARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBN",
-            "b3ZlbWVudFR5cGVJZGxlEANiBnByb3RvMw=="));
+            "GhZlbnRpdHlUeXBlRGVmaW5lLnByb3RvGhNlbnRpdHlQcm9maWxlLnByb3Rv",
+            "GgxwbGF5ZXIucHJvdG8aCml0ZW0ucHJvdG8iQQoIRW50aXR5SWQSKQoEdHlw",
+            "ZRgBIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlUeXBlEgoKAmlkGAIg",
+            "ASgDIkcKDkVudGl0eUxvY2F0aW9uEg4KBm1hcF9pZBgBIAEoBRIlCgNsb2MY",
+            "AiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyLcAQoSRW50aXR5V2l0",
+            "aExvY2F0aW9uEioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
+            "RW50aXR5SWQSKQoGcGxheWVyGAogASgLMhcuZ2FtZU1lc3NhZ2VDb3JlLlBs",
+            "YXllckgAEisKB21vbnN0ZXIYCyABKAsyGC5nYW1lTWVzc2FnZUNvcmUuTW9u",
+            "c3RlckgAEjgKDmZhbGxpbmdfb2JqZWN0GAwgASgLMh4uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkZhbGxpbmdPYmplY3RIAEIICgZlbnRpdHkikAIKBlBsYXllchIyCgli",
+            "YXNlX2RhdGEYASABKAsyHy5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQmFzZURh",
+            "dGESLwoHcHJvZmlsZRgCIAEoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlQ",
+            "cm9maWxlEi4KB2F2YXRhcnMYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuUGxh",
+            "eWVyQXZhdGFyEg4KBmFjdGl2ZRgEIAEoCBIOCgZtYXBfaWQYBSABKAUSKgoI",
+            "cG9zaXRpb24YBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNk",
+            "aXIYByABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyK2AQoHTW9uc3Rl",
+            "chILCgNjaWQYASABKAUSCgoCaWQYAiABKAMSDgoGYWN0aXZlGAMgASgIEi8K",
+            "B3Byb2ZpbGUYBCABKAsyHi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5UHJvZmls",
+            "ZRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3Iz",
+            "EiUKA2RpchgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzIqgBCg1G",
+            "YWxsaW5nT2JqZWN0EgsKA2NpZBgBIAEoBRIKCgJpZBgCIAEoAxILCgNudW0Y",
+            "AyABKAUSDQoFb3duZXIYBCABKAMSKgoIcG9zaXRpb24YBSABKAsyGC5nYW1l",
+            "TWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVmVjdG9yMxIPCgdxdWFsaXR5GAcgASgFIlIKDkVudGl0eU1vdmVT",
+            "dGVwEjEKCGxvY2F0aW9uGAEgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0",
+            "eUxvY2F0aW9uEg0KBXN0YW1wGAIgASgDIv8BCg5FbnRpdHlNb3ZlbWVudBIq",
+            "Cgd0eXBlX2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEjUK",
+            "DGN1cl9sb2NhdGlvbhgCIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlN",
+            "b3ZlU3RlcBI2Cg1kZXN0X2xvY2F0aW9uGAMgASgLMh8uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkVudGl0eU1vdmVTdGVwEisKBHR5cGUYBSABKA4yHS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuTW92ZW1lbnRUeXBlEiUKA0RpchgGIAEoCzIYLmdhbWVNZXNzYWdl",
+            "Q29yZS5WZWN0b3IzKmgKDE1vdmVtZW50VHlwZRIXChNNb3ZlbWVudFR5cGVV",
+            "bmtub3duEAASFAoQTW92ZW1lbnRUeXBlV2FsaxABEhMKD01vdmVtZW50VHlw",
+            "ZVJ1bhACEhQKEE1vdmVtZW50VHlwZUlkbGUQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityProfile), global::GameMessageCore.EntityProfile.Parser, new[]{ "Lv", "Exp", "Att", "AttSpeed", "Def", "HpCurrent", "HpLimit", "CritRate", "CritDmg", "HitRate", "MissRate", "MoveSpeed", "PushDmg", "PushDist", "HpRecovery" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityId), global::GameMessageCore.EntityId.Parser, new[]{ "Type", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityLocation), global::GameMessageCore.EntityLocation.Parser, new[]{ "MapId", "Loc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityWithLocation), global::GameMessageCore.EntityWithLocation.Parser, new[]{ "TypeId", "Player", "Monster", "FallingObject" }, new[]{ "Entity" }, null, null, null),
@@ -102,761 +95,6 @@ namespace GameMessageCore {
   #endregion
 
   #region Messages
-  /// <summary>
-  //// ************************* entity data ***************************************************
-  /// </summary>
-  public sealed partial class EntityProfile : pb::IMessage<EntityProfile>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<EntityProfile> _parser = new pb::MessageParser<EntityProfile>(() => new EntityProfile());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<EntityProfile> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityProfile() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityProfile(EntityProfile other) : this() {
-      lv_ = other.lv_;
-      exp_ = other.exp_;
-      att_ = other.att_;
-      attSpeed_ = other.attSpeed_;
-      def_ = other.def_;
-      hpCurrent_ = other.hpCurrent_;
-      hpLimit_ = other.hpLimit_;
-      critRate_ = other.critRate_;
-      critDmg_ = other.critDmg_;
-      hitRate_ = other.hitRate_;
-      missRate_ = other.missRate_;
-      moveSpeed_ = other.moveSpeed_;
-      pushDmg_ = other.pushDmg_;
-      pushDist_ = other.pushDist_;
-      hpRecovery_ = other.hpRecovery_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityProfile Clone() {
-      return new EntityProfile(this);
-    }
-
-    /// <summary>Field number for the "lv" field.</summary>
-    public const int LvFieldNumber = 1;
-    private int lv_;
-    /// <summary>
-    /// 等级
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Lv {
-      get { return lv_; }
-      set {
-        lv_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "exp" field.</summary>
-    public const int ExpFieldNumber = 2;
-    private string exp_ = "";
-    /// <summary>
-    /// 经验值
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Exp {
-      get { return exp_; }
-      set {
-        exp_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "att" field.</summary>
-    public const int AttFieldNumber = 3;
-    private int att_;
-    /// <summary>
-    /// 攻击力
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Att {
-      get { return att_; }
-      set {
-        att_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "att_speed" field.</summary>
-    public const int AttSpeedFieldNumber = 4;
-    private int attSpeed_;
-    /// <summary>
-    /// 攻击速率
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int AttSpeed {
-      get { return attSpeed_; }
-      set {
-        attSpeed_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "def" field.</summary>
-    public const int DefFieldNumber = 5;
-    private int def_;
-    /// <summary>
-    /// 防御力
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Def {
-      get { return def_; }
-      set {
-        def_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "hp_current" field.</summary>
-    public const int HpCurrentFieldNumber = 6;
-    private int hpCurrent_;
-    /// <summary>
-    /// 当前血量
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HpCurrent {
-      get { return hpCurrent_; }
-      set {
-        hpCurrent_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "hp_limit" field.</summary>
-    public const int HpLimitFieldNumber = 7;
-    private int hpLimit_;
-    /// <summary>
-    /// 血量上限
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HpLimit {
-      get { return hpLimit_; }
-      set {
-        hpLimit_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "crit_rate" field.</summary>
-    public const int CritRateFieldNumber = 8;
-    private int critRate_;
-    /// <summary>
-    /// 暴击(Critical Strikes)率
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CritRate {
-      get { return critRate_; }
-      set {
-        critRate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "crit_dmg" field.</summary>
-    public const int CritDmgFieldNumber = 9;
-    private int critDmg_;
-    /// <summary>
-    /// 暴击伤害
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CritDmg {
-      get { return critDmg_; }
-      set {
-        critDmg_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "hit_rate" field.</summary>
-    public const int HitRateFieldNumber = 10;
-    private int hitRate_;
-    /// <summary>
-    /// 名中率
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HitRate {
-      get { return hitRate_; }
-      set {
-        hitRate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "miss_rate" field.</summary>
-    public const int MissRateFieldNumber = 11;
-    private int missRate_;
-    /// <summary>
-    /// 闪避率
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MissRate {
-      get { return missRate_; }
-      set {
-        missRate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "move_speed" field.</summary>
-    public const int MoveSpeedFieldNumber = 12;
-    private float moveSpeed_;
-    /// <summary>
-    /// 移动速度
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float MoveSpeed {
-      get { return moveSpeed_; }
-      set {
-        moveSpeed_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "push_dmg" field.</summary>
-    public const int PushDmgFieldNumber = 13;
-    private int pushDmg_;
-    /// <summary>
-    /// 击退伤害
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PushDmg {
-      get { return pushDmg_; }
-      set {
-        pushDmg_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "push_dist" field.</summary>
-    public const int PushDistFieldNumber = 14;
-    private int pushDist_;
-    /// <summary>
-    /// 击退距离
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PushDist {
-      get { return pushDist_; }
-      set {
-        pushDist_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "hp_recovery" field.</summary>
-    public const int HpRecoveryFieldNumber = 21;
-    private int hpRecovery_;
-    /// <summary>
-    /// HP恢复
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HpRecovery {
-      get { return hpRecovery_; }
-      set {
-        hpRecovery_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as EntityProfile);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(EntityProfile other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Lv != other.Lv) return false;
-      if (Exp != other.Exp) return false;
-      if (Att != other.Att) return false;
-      if (AttSpeed != other.AttSpeed) return false;
-      if (Def != other.Def) return false;
-      if (HpCurrent != other.HpCurrent) return false;
-      if (HpLimit != other.HpLimit) return false;
-      if (CritRate != other.CritRate) return false;
-      if (CritDmg != other.CritDmg) return false;
-      if (HitRate != other.HitRate) return false;
-      if (MissRate != other.MissRate) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MoveSpeed, other.MoveSpeed)) return false;
-      if (PushDmg != other.PushDmg) return false;
-      if (PushDist != other.PushDist) return false;
-      if (HpRecovery != other.HpRecovery) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Lv != 0) hash ^= Lv.GetHashCode();
-      if (Exp.Length != 0) hash ^= Exp.GetHashCode();
-      if (Att != 0) hash ^= Att.GetHashCode();
-      if (AttSpeed != 0) hash ^= AttSpeed.GetHashCode();
-      if (Def != 0) hash ^= Def.GetHashCode();
-      if (HpCurrent != 0) hash ^= HpCurrent.GetHashCode();
-      if (HpLimit != 0) hash ^= HpLimit.GetHashCode();
-      if (CritRate != 0) hash ^= CritRate.GetHashCode();
-      if (CritDmg != 0) hash ^= CritDmg.GetHashCode();
-      if (HitRate != 0) hash ^= HitRate.GetHashCode();
-      if (MissRate != 0) hash ^= MissRate.GetHashCode();
-      if (MoveSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MoveSpeed);
-      if (PushDmg != 0) hash ^= PushDmg.GetHashCode();
-      if (PushDist != 0) hash ^= PushDist.GetHashCode();
-      if (HpRecovery != 0) hash ^= HpRecovery.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Lv != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Lv);
-      }
-      if (Exp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Exp);
-      }
-      if (Att != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Att);
-      }
-      if (AttSpeed != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(AttSpeed);
-      }
-      if (Def != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Def);
-      }
-      if (HpCurrent != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(HpCurrent);
-      }
-      if (HpLimit != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(HpLimit);
-      }
-      if (CritRate != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(CritRate);
-      }
-      if (CritDmg != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(CritDmg);
-      }
-      if (HitRate != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(HitRate);
-      }
-      if (MissRate != 0) {
-        output.WriteRawTag(88);
-        output.WriteInt32(MissRate);
-      }
-      if (MoveSpeed != 0F) {
-        output.WriteRawTag(101);
-        output.WriteFloat(MoveSpeed);
-      }
-      if (PushDmg != 0) {
-        output.WriteRawTag(104);
-        output.WriteInt32(PushDmg);
-      }
-      if (PushDist != 0) {
-        output.WriteRawTag(112);
-        output.WriteInt32(PushDist);
-      }
-      if (HpRecovery != 0) {
-        output.WriteRawTag(168, 1);
-        output.WriteInt32(HpRecovery);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Lv != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Lv);
-      }
-      if (Exp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Exp);
-      }
-      if (Att != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Att);
-      }
-      if (AttSpeed != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(AttSpeed);
-      }
-      if (Def != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Def);
-      }
-      if (HpCurrent != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(HpCurrent);
-      }
-      if (HpLimit != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(HpLimit);
-      }
-      if (CritRate != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(CritRate);
-      }
-      if (CritDmg != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(CritDmg);
-      }
-      if (HitRate != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(HitRate);
-      }
-      if (MissRate != 0) {
-        output.WriteRawTag(88);
-        output.WriteInt32(MissRate);
-      }
-      if (MoveSpeed != 0F) {
-        output.WriteRawTag(101);
-        output.WriteFloat(MoveSpeed);
-      }
-      if (PushDmg != 0) {
-        output.WriteRawTag(104);
-        output.WriteInt32(PushDmg);
-      }
-      if (PushDist != 0) {
-        output.WriteRawTag(112);
-        output.WriteInt32(PushDist);
-      }
-      if (HpRecovery != 0) {
-        output.WriteRawTag(168, 1);
-        output.WriteInt32(HpRecovery);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Lv != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Lv);
-      }
-      if (Exp.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Exp);
-      }
-      if (Att != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Att);
-      }
-      if (AttSpeed != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AttSpeed);
-      }
-      if (Def != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Def);
-      }
-      if (HpCurrent != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HpCurrent);
-      }
-      if (HpLimit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HpLimit);
-      }
-      if (CritRate != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CritRate);
-      }
-      if (CritDmg != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CritDmg);
-      }
-      if (HitRate != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HitRate);
-      }
-      if (MissRate != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MissRate);
-      }
-      if (MoveSpeed != 0F) {
-        size += 1 + 4;
-      }
-      if (PushDmg != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PushDmg);
-      }
-      if (PushDist != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PushDist);
-      }
-      if (HpRecovery != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(HpRecovery);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(EntityProfile other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Lv != 0) {
-        Lv = other.Lv;
-      }
-      if (other.Exp.Length != 0) {
-        Exp = other.Exp;
-      }
-      if (other.Att != 0) {
-        Att = other.Att;
-      }
-      if (other.AttSpeed != 0) {
-        AttSpeed = other.AttSpeed;
-      }
-      if (other.Def != 0) {
-        Def = other.Def;
-      }
-      if (other.HpCurrent != 0) {
-        HpCurrent = other.HpCurrent;
-      }
-      if (other.HpLimit != 0) {
-        HpLimit = other.HpLimit;
-      }
-      if (other.CritRate != 0) {
-        CritRate = other.CritRate;
-      }
-      if (other.CritDmg != 0) {
-        CritDmg = other.CritDmg;
-      }
-      if (other.HitRate != 0) {
-        HitRate = other.HitRate;
-      }
-      if (other.MissRate != 0) {
-        MissRate = other.MissRate;
-      }
-      if (other.MoveSpeed != 0F) {
-        MoveSpeed = other.MoveSpeed;
-      }
-      if (other.PushDmg != 0) {
-        PushDmg = other.PushDmg;
-      }
-      if (other.PushDist != 0) {
-        PushDist = other.PushDist;
-      }
-      if (other.HpRecovery != 0) {
-        HpRecovery = other.HpRecovery;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Lv = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Exp = input.ReadString();
-            break;
-          }
-          case 24: {
-            Att = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            AttSpeed = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            Def = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            HpCurrent = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            HpLimit = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            CritRate = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            CritDmg = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            HitRate = input.ReadInt32();
-            break;
-          }
-          case 88: {
-            MissRate = input.ReadInt32();
-            break;
-          }
-          case 101: {
-            MoveSpeed = input.ReadFloat();
-            break;
-          }
-          case 104: {
-            PushDmg = input.ReadInt32();
-            break;
-          }
-          case 112: {
-            PushDist = input.ReadInt32();
-            break;
-          }
-          case 168: {
-            HpRecovery = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Lv = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Exp = input.ReadString();
-            break;
-          }
-          case 24: {
-            Att = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            AttSpeed = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            Def = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            HpCurrent = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            HpLimit = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            CritRate = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            CritDmg = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            HitRate = input.ReadInt32();
-            break;
-          }
-          case 88: {
-            MissRate = input.ReadInt32();
-            break;
-          }
-          case 101: {
-            MoveSpeed = input.ReadFloat();
-            break;
-          }
-          case 104: {
-            PushDmg = input.ReadInt32();
-            break;
-          }
-          case 112: {
-            PushDist = input.ReadInt32();
-            break;
-          }
-          case 168: {
-            HpRecovery = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class EntityId : pb::IMessage<EntityId>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -871,7 +109,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1097,7 +335,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[2]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1338,7 +576,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[3]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1722,7 +960,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[4]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2167,7 +1405,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[5]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2574,7 +1812,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[6]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3013,7 +2251,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[7]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3254,7 +2492,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[8]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3274,7 +2512,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EntityMovement(EntityMovement other) : this() {
-      typeId_ = other.typeId_;
+      typeId_ = other.typeId_ != null ? other.typeId_.Clone() : null;
       curLocation_ = other.curLocation_ != null ? other.curLocation_.Clone() : null;
       destLocation_ = other.destLocation_ != null ? other.destLocation_.Clone() : null;
       type_ = other.type_;
@@ -3290,10 +2528,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "type_id" field.</summary>
     public const int TypeIdFieldNumber = 1;
-    private global::GameMessageCore.EntityType typeId_ = global::GameMessageCore.EntityType.All;
+    private global::GameMessageCore.EntityId typeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityType TypeId {
+    public global::GameMessageCore.EntityId TypeId {
       get { return typeId_; }
       set {
         typeId_ = value;
@@ -3375,7 +2613,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TypeId != other.TypeId) return false;
+      if (!object.Equals(TypeId, other.TypeId)) return false;
       if (!object.Equals(CurLocation, other.CurLocation)) return false;
       if (!object.Equals(DestLocation, other.DestLocation)) return false;
       if (Type != other.Type) return false;
@@ -3387,7 +2625,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (TypeId != global::GameMessageCore.EntityType.All) hash ^= TypeId.GetHashCode();
+      if (typeId_ != null) hash ^= TypeId.GetHashCode();
       if (curLocation_ != null) hash ^= CurLocation.GetHashCode();
       if (destLocation_ != null) hash ^= DestLocation.GetHashCode();
       if (Type != global::GameMessageCore.MovementType.Unknown) hash ^= Type.GetHashCode();
@@ -3410,9 +2648,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TypeId != global::GameMessageCore.EntityType.All) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) TypeId);
+      if (typeId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TypeId);
       }
       if (curLocation_ != null) {
         output.WriteRawTag(18);
@@ -3440,9 +2678,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TypeId != global::GameMessageCore.EntityType.All) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) TypeId);
+      if (typeId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TypeId);
       }
       if (curLocation_ != null) {
         output.WriteRawTag(18);
@@ -3470,8 +2708,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (TypeId != global::GameMessageCore.EntityType.All) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TypeId);
+      if (typeId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TypeId);
       }
       if (curLocation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CurLocation);
@@ -3497,8 +2735,11 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.TypeId != global::GameMessageCore.EntityType.All) {
-        TypeId = other.TypeId;
+      if (other.typeId_ != null) {
+        if (typeId_ == null) {
+          TypeId = new global::GameMessageCore.EntityId();
+        }
+        TypeId.MergeFrom(other.TypeId);
       }
       if (other.curLocation_ != null) {
         if (curLocation_ == null) {
@@ -3536,8 +2777,11 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TypeId = (global::GameMessageCore.EntityType) input.ReadEnum();
+          case 10: {
+            if (typeId_ == null) {
+              TypeId = new global::GameMessageCore.EntityId();
+            }
+            input.ReadMessage(TypeId);
             break;
           }
           case 18: {
@@ -3580,8 +2824,11 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            TypeId = (global::GameMessageCore.EntityType) input.ReadEnum();
+          case 10: {
+            if (typeId_ == null) {
+              TypeId = new global::GameMessageCore.EntityId();
+            }
+            input.ReadMessage(TypeId);
             break;
           }
           case 18: {

@@ -43,6 +43,7 @@ enum EnvelopeType {
     UpgradeItemSlot                 = 0x010017;     // 升级 玩家道具槽
     SigninPlayer                    = 0x010019;     // 登录角色
     SignOutPlayer                   = 0x010021;     // 角色退出游戏
+    UpgradePlayerLevel              = 0x010023;     // 手动点击升级
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayer                     = 0x020001;
@@ -60,8 +61,8 @@ enum EnvelopeType {
 	BroadCastEntityMove            = 0x030014;                                   
 	BroadCastEntityCombat          = 0x030015;                                
 	BroadCastRespawnPlayer         = 0x030016;                        
-	Teleport         = 0x030017;   
-    BroadCastEntityProfileUpdate    = 0x030018;                     
+	Teleport                       = 0x030017;   
+    BroadCastEntityProfileUpdate   = 0x030019;                     
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

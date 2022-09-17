@@ -172,13 +172,12 @@ message Item {
   // 对应的 objectId,
   int32 object_cid = 3;
   int32 num = 4;
-  string player = 5;
+  int64 user_id = 5;
   // 装备属性配置
   AvatarAttribute attribute = 8;
   AvatarPosition  avatar_pos = 9;
   // nft资产如果建造在地图中了此时 nft_using = true
-  bool           nft_using = 10;
-
+  bool          nft_using = 10;
   // nft 详细数据
   string        nft_json_data = 11;
   // nft 过期时间

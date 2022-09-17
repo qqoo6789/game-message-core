@@ -40,43 +40,43 @@ namespace GameMessageCore {
             "YXJBdHRyaWJ1dGUSDgoGcmFyaXR5GAEgASgJEhIKCmR1cmFiaWxpdHkYAiAB",
             "KAUSLAoEZGF0YRgDIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVE",
             "YXRhIkwKDUF0dHJpYnV0ZURhdGESLAoEdHlwZRgBIAEoDjIeLmdhbWVNZXNz",
-            "YWdlQ29yZS5BdHRyaWJ1dGVUeXBlEg0KBXZhbHVlGAIgASgFIp8CCgRJdGVt",
+            "YWdlQ29yZS5BdHRyaWJ1dGVUeXBlEg0KBXZhbHVlGAIgASgFIqACCgRJdGVt",
             "EiwKCWl0ZW1fdHlwZRgBIAEoDjIZLmdhbWVNZXNzYWdlQ29yZS5JdGVtVHlw",
             "ZRIKCgJpZBgCIAEoCRISCgpvYmplY3RfY2lkGAMgASgFEgsKA251bRgEIAEo",
-            "BRIOCgZwbGF5ZXIYBSABKAkSMwoJYXR0cmlidXRlGAggASgLMiAuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkF2YXRhckF0dHJpYnV0ZRIzCgphdmF0YXJfcG9zGAkgASgO",
-            "Mh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhEKCW5mdF91c2lu",
-            "ZxgKIAEoCBIVCg1uZnRfanNvbl9kYXRhGAsgASgJEhgKEG5mdF90aW1lX291",
-            "dF9zZWMYDCABKAUiOQoMSXRlbUJhc2VJbmZvEgsKA2NpZBgBIAEoBRILCgNu",
-            "dW0YAiABKAUSDwoHcXVhbGl0eRgDIAEoBSKJAQoMUGxheWVyQXZhdGFyEjEK",
-            "CHBvc2l0aW9uGAEgASgOMh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0",
-            "aW9uEhEKCW9iamVjdF9pZBgCIAEoBRIzCglhdHRyaWJ1dGUYAyABKAsyIC5n",
-            "YW1lTWVzc2FnZUNvcmUuQXZhdGFyQXR0cmlidXRlKpwBCgdORlRUeXBlEhIK",
-            "Dk5GVFR5cGVVbmtub3duEAASFQoRTkZUVHlwZUNvbnN1bWFibGUQARIUChBO",
-            "RlRUeXBlRXF1aXBtZW50EAISEwoPTkZUVHlwZU1hdGVyaWFsEAMSFAoQTkZU",
-            "VHlwZVBsYWNlYWJsZRAEEhAKDE5GVFR5cGVUaGlyZBAFEhMKD05GVFR5cGVX",
-            "ZWFyYWJsZRAGKoYBCglORlRSYXJpdHkSFAoQTkZUUmFyaXR5VW5rbm93bhAA",
-            "EhMKD05GVFJhcml0eUNvbW1vbhABEhEKDU5GVFJhcml0eVJhcmUQAhIRCg1O",
-            "RlRSYXJpdHlFcGljEAMSEwoPTkZUUmFyaXR5TXl0aGljEAQSEwoPTkZUUmFy",
-            "aXR5VW5pcXVlEAUqcwoRTkZUQ29uc3VtYWJsZVR5cGUSHgoaTkZUQ29uc3Vt",
-            "YWJsZVR5cGVSZXN0b3JlSFAQABIgChxORlRDb25zdW1hYmxlVHlwZUxlYXJu",
-            "UmVjaXBlEAESHAoYTkZUQ29uc3VtYWJsZVR5cGVBZGRCdWZmEAIqfQoKVGFr",
-            "ZVJlYXNvbhITCg9UYWtlUmVhc29uT25Vc2UQABISCg5UYWtlUmVhc29uRHJv",
-            "cBABEhMKD1Rha2VSZWFzb25CdXJzdBACEhYKElRha2VSZWFzb25UYXNrVGFr",
-            "ZRADEhkKFVRha2VSZWFzb25NYW5vckNyZWF0ZRAEKi0KCEl0ZW1UeXBlEhAK",
-            "DEl0ZW1UeXBlR2FtZRAAEg8KC0l0ZW1UeXBlTkZUEAEqwwIKDUF0dHJpYnV0",
-            "ZVR5cGUSGAoUQXR0cmlidXRlVHlwZVVua25vd24QABIYChRBdHRyaWJ1dGVU",
-            "eXBlSHBMaW1pdBABEhsKF0F0dHJpYnV0ZVR5cGVIcFJlY292ZXJ5EAISFAoQ",
-            "QXR0cmlidXRlVHlwZUF0dBADEhkKFUF0dHJpYnV0ZVR5cGVBdHRTcGVlZBAE",
-            "EhQKEEF0dHJpYnV0ZVR5cGVEZWYQBRIVChFBdHRyaWJ1dGVUeXBlQ3JpdBAG",
-            "EhgKFEF0dHJpYnV0ZVR5cGVDcml0RG1nEAcSGAoUQXR0cmlidXRlVHlwZUhp",
-            "dFJhdGUQCBIZChVBdHRyaWJ1dGVUeXBlTWlzc1JhdGUQCRIaChZBdHRyaWJ1",
-            "dGVUeXBlTW92ZVNwZWVkEAoSGAoUQXR0cmlidXRlVHlwZVNraWxsSWQQYyrX",
-            "AQoOQXZhdGFyUG9zaXRpb24SFgoSQXZhdGFyUG9zaXRpb25Ob25lEAASFgoS",
-            "QXZhdGFyUG9zaXRpb25IZWFkEAESFgoSQXZhdGFyUG9zaXRpb25Db2F0EAIS",
-            "FgoSQXZhdGFyUG9zaXRpb25QYW50EAMSFgoSQXZhdGFyUG9zaXRpb25TaG9l",
-            "EAQSFgoSQXZhdGFyUG9zaXRpb25IYW5kEAUSGwoXQXZhdGFyUG9zaXRpb25B",
-            "Y2Nlc3NvcnkQBhIYChRBdmF0YXJQb3NpdGlvbldlYXBvbhAHYgZwcm90bzM="));
+            "BRIPCgd1c2VyX2lkGAUgASgDEjMKCWF0dHJpYnV0ZRgIIAEoCzIgLmdhbWVN",
+            "ZXNzYWdlQ29yZS5BdmF0YXJBdHRyaWJ1dGUSMwoKYXZhdGFyX3BvcxgJIAEo",
+            "DjIfLmdhbWVNZXNzYWdlQ29yZS5BdmF0YXJQb3NpdGlvbhIRCgluZnRfdXNp",
+            "bmcYCiABKAgSFQoNbmZ0X2pzb25fZGF0YRgLIAEoCRIYChBuZnRfdGltZV9v",
+            "dXRfc2VjGAwgASgFIjkKDEl0ZW1CYXNlSW5mbxILCgNjaWQYASABKAUSCwoD",
+            "bnVtGAIgASgFEg8KB3F1YWxpdHkYAyABKAUiiQEKDFBsYXllckF2YXRhchIx",
+            "Cghwb3NpdGlvbhgBIAEoDjIfLmdhbWVNZXNzYWdlQ29yZS5BdmF0YXJQb3Np",
+            "dGlvbhIRCglvYmplY3RfaWQYAiABKAUSMwoJYXR0cmlidXRlGAMgASgLMiAu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkF2YXRhckF0dHJpYnV0ZSqcAQoHTkZUVHlwZRIS",
+            "Cg5ORlRUeXBlVW5rbm93bhAAEhUKEU5GVFR5cGVDb25zdW1hYmxlEAESFAoQ",
+            "TkZUVHlwZUVxdWlwbWVudBACEhMKD05GVFR5cGVNYXRlcmlhbBADEhQKEE5G",
+            "VFR5cGVQbGFjZWFibGUQBBIQCgxORlRUeXBlVGhpcmQQBRITCg9ORlRUeXBl",
+            "V2VhcmFibGUQBiqGAQoJTkZUUmFyaXR5EhQKEE5GVFJhcml0eVVua25vd24Q",
+            "ABITCg9ORlRSYXJpdHlDb21tb24QARIRCg1ORlRSYXJpdHlSYXJlEAISEQoN",
+            "TkZUUmFyaXR5RXBpYxADEhMKD05GVFJhcml0eU15dGhpYxAEEhMKD05GVFJh",
+            "cml0eVVuaXF1ZRAFKnMKEU5GVENvbnN1bWFibGVUeXBlEh4KGk5GVENvbnN1",
+            "bWFibGVUeXBlUmVzdG9yZUhQEAASIAocTkZUQ29uc3VtYWJsZVR5cGVMZWFy",
+            "blJlY2lwZRABEhwKGE5GVENvbnN1bWFibGVUeXBlQWRkQnVmZhACKn0KClRh",
+            "a2VSZWFzb24SEwoPVGFrZVJlYXNvbk9uVXNlEAASEgoOVGFrZVJlYXNvbkRy",
+            "b3AQARITCg9UYWtlUmVhc29uQnVyc3QQAhIWChJUYWtlUmVhc29uVGFza1Rh",
+            "a2UQAxIZChVUYWtlUmVhc29uTWFub3JDcmVhdGUQBCotCghJdGVtVHlwZRIQ",
+            "CgxJdGVtVHlwZUdhbWUQABIPCgtJdGVtVHlwZU5GVBABKsMCCg1BdHRyaWJ1",
+            "dGVUeXBlEhgKFEF0dHJpYnV0ZVR5cGVVbmtub3duEAASGAoUQXR0cmlidXRl",
+            "VHlwZUhwTGltaXQQARIbChdBdHRyaWJ1dGVUeXBlSHBSZWNvdmVyeRACEhQK",
+            "EEF0dHJpYnV0ZVR5cGVBdHQQAxIZChVBdHRyaWJ1dGVUeXBlQXR0U3BlZWQQ",
+            "BBIUChBBdHRyaWJ1dGVUeXBlRGVmEAUSFQoRQXR0cmlidXRlVHlwZUNyaXQQ",
+            "BhIYChRBdHRyaWJ1dGVUeXBlQ3JpdERtZxAHEhgKFEF0dHJpYnV0ZVR5cGVI",
+            "aXRSYXRlEAgSGQoVQXR0cmlidXRlVHlwZU1pc3NSYXRlEAkSGgoWQXR0cmli",
+            "dXRlVHlwZU1vdmVTcGVlZBAKEhgKFEF0dHJpYnV0ZVR5cGVTa2lsbElkEGMq",
+            "1wEKDkF2YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYK",
+            "EkF2YXRhclBvc2l0aW9uSGVhZBABEhYKEkF2YXRhclBvc2l0aW9uQ29hdBAC",
+            "EhYKEkF2YXRhclBvc2l0aW9uUGFudBADEhYKEkF2YXRhclBvc2l0aW9uU2hv",
+            "ZRAEEhYKEkF2YXRhclBvc2l0aW9uSGFuZBAFEhsKF0F2YXRhclBvc2l0aW9u",
+            "QWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QB2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.TakeReason), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -87,7 +87,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftWearableInfo), global::GameMessageCore.NftWearableInfo.Parser, new[]{ "Token", "ObjectCid", "WearableRarity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AvatarAttribute), global::GameMessageCore.AvatarAttribute.Parser, new[]{ "Rarity", "Durability", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AttributeData), global::GameMessageCore.AttributeData.Parser, new[]{ "Type", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Item), global::GameMessageCore.Item.Parser, new[]{ "ItemType", "Id", "ObjectCid", "Num", "Player", "Attribute", "AvatarPos", "NftUsing", "NftJsonData", "NftTimeOutSec" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Item), global::GameMessageCore.Item.Parser, new[]{ "ItemType", "Id", "ObjectCid", "Num", "UserId", "Attribute", "AvatarPos", "NftUsing", "NftJsonData", "NftTimeOutSec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemBaseInfo), global::GameMessageCore.ItemBaseInfo.Parser, new[]{ "Cid", "Num", "Quality" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerAvatar), global::GameMessageCore.PlayerAvatar.Parser, new[]{ "Position", "ObjectId", "Attribute" }, null, null, null, null)
           }));
@@ -2265,7 +2265,7 @@ namespace GameMessageCore {
       id_ = other.id_;
       objectCid_ = other.objectCid_;
       num_ = other.num_;
-      player_ = other.player_;
+      userId_ = other.userId_;
       attribute_ = other.attribute_ != null ? other.attribute_.Clone() : null;
       avatarPos_ = other.avatarPos_;
       nftUsing_ = other.nftUsing_;
@@ -2331,15 +2331,15 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "player" field.</summary>
-    public const int PlayerFieldNumber = 5;
-    private string player_ = "";
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 5;
+    private long userId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Player {
-      get { return player_; }
+    public long UserId {
+      get { return userId_; }
       set {
-        player_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userId_ = value;
       }
     }
 
@@ -2434,7 +2434,7 @@ namespace GameMessageCore {
       if (Id != other.Id) return false;
       if (ObjectCid != other.ObjectCid) return false;
       if (Num != other.Num) return false;
-      if (Player != other.Player) return false;
+      if (UserId != other.UserId) return false;
       if (!object.Equals(Attribute, other.Attribute)) return false;
       if (AvatarPos != other.AvatarPos) return false;
       if (NftUsing != other.NftUsing) return false;
@@ -2451,7 +2451,7 @@ namespace GameMessageCore {
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (ObjectCid != 0) hash ^= ObjectCid.GetHashCode();
       if (Num != 0) hash ^= Num.GetHashCode();
-      if (Player.Length != 0) hash ^= Player.GetHashCode();
+      if (UserId != 0L) hash ^= UserId.GetHashCode();
       if (attribute_ != null) hash ^= Attribute.GetHashCode();
       if (AvatarPos != global::GameMessageCore.AvatarPosition.None) hash ^= AvatarPos.GetHashCode();
       if (NftUsing != false) hash ^= NftUsing.GetHashCode();
@@ -2491,9 +2491,9 @@ namespace GameMessageCore {
         output.WriteRawTag(32);
         output.WriteInt32(Num);
       }
-      if (Player.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Player);
+      if (UserId != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(UserId);
       }
       if (attribute_ != null) {
         output.WriteRawTag(66);
@@ -2541,9 +2541,9 @@ namespace GameMessageCore {
         output.WriteRawTag(32);
         output.WriteInt32(Num);
       }
-      if (Player.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Player);
+      if (UserId != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(UserId);
       }
       if (attribute_ != null) {
         output.WriteRawTag(66);
@@ -2587,8 +2587,8 @@ namespace GameMessageCore {
       if (Num != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Num);
       }
-      if (Player.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Player);
+      if (UserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserId);
       }
       if (attribute_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Attribute);
@@ -2629,8 +2629,8 @@ namespace GameMessageCore {
       if (other.Num != 0) {
         Num = other.Num;
       }
-      if (other.Player.Length != 0) {
-        Player = other.Player;
+      if (other.UserId != 0L) {
+        UserId = other.UserId;
       }
       if (other.attribute_ != null) {
         if (attribute_ == null) {
@@ -2681,8 +2681,8 @@ namespace GameMessageCore {
             Num = input.ReadInt32();
             break;
           }
-          case 42: {
-            Player = input.ReadString();
+          case 40: {
+            UserId = input.ReadInt64();
             break;
           }
           case 66: {
@@ -2739,8 +2739,8 @@ namespace GameMessageCore {
             Num = input.ReadInt32();
             break;
           }
-          case 42: {
-            Player = input.ReadString();
+          case 40: {
+            UserId = input.ReadInt64();
             break;
           }
           case 66: {

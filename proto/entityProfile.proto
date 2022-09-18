@@ -7,7 +7,7 @@ message EntityProfile {
   // 等级
   int32 lv = 1;
   // 经验值
-  string exp = 2;
+  int64 exp = 2;
   // 攻击力
   int32 att = 3;
   // 攻击速率

@@ -25,7 +25,7 @@ namespace GameMessageCore {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNlbnRpdHlQcm9maWxlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUikwIKDUVu",
-            "dGl0eVByb2ZpbGUSCgoCbHYYASABKAUSCwoDZXhwGAIgASgJEgsKA2F0dBgD",
+            "dGl0eVByb2ZpbGUSCgoCbHYYASABKAUSCwoDZXhwGAIgASgDEgsKA2F0dBgD",
             "IAEoBRIRCglhdHRfc3BlZWQYBCABKAUSCwoDZGVmGAUgASgFEhIKCmhwX2N1",
             "cnJlbnQYBiABKAUSEAoIaHBfbGltaXQYByABKAUSEQoJY3JpdF9yYXRlGAgg",
             "ASgFEhAKCGNyaXRfZG1nGAkgASgFEhAKCGhpdF9yYXRlGAogASgFEhEKCW1p",
@@ -169,16 +169,16 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "exp" field.</summary>
     public const int ExpFieldNumber = 2;
-    private string exp_ = "";
+    private long exp_;
     /// <summary>
     /// 经验值
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Exp {
+    public long Exp {
       get { return exp_; }
       set {
-        exp_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        exp_ = value;
       }
     }
 
@@ -415,7 +415,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (Lv != 0) hash ^= Lv.GetHashCode();
-      if (Exp.Length != 0) hash ^= Exp.GetHashCode();
+      if (Exp != 0L) hash ^= Exp.GetHashCode();
       if (Att != 0) hash ^= Att.GetHashCode();
       if (AttSpeed != 0) hash ^= AttSpeed.GetHashCode();
       if (Def != 0) hash ^= Def.GetHashCode();
@@ -451,9 +451,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(Lv);
       }
-      if (Exp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Exp);
+      if (Exp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Exp);
       }
       if (Att != 0) {
         output.WriteRawTag(24);
@@ -521,9 +521,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(Lv);
       }
-      if (Exp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Exp);
+      if (Exp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Exp);
       }
       if (Att != 0) {
         output.WriteRawTag(24);
@@ -590,8 +590,8 @@ namespace GameMessageCore {
       if (Lv != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Lv);
       }
-      if (Exp.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Exp);
+      if (Exp != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Exp);
       }
       if (Att != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Att);
@@ -647,7 +647,7 @@ namespace GameMessageCore {
       if (other.Lv != 0) {
         Lv = other.Lv;
       }
-      if (other.Exp.Length != 0) {
+      if (other.Exp != 0L) {
         Exp = other.Exp;
       }
       if (other.Att != 0) {
@@ -708,8 +708,8 @@ namespace GameMessageCore {
             Lv = input.ReadInt32();
             break;
           }
-          case 18: {
-            Exp = input.ReadString();
+          case 16: {
+            Exp = input.ReadInt64();
             break;
           }
           case 24: {
@@ -783,8 +783,8 @@ namespace GameMessageCore {
             Lv = input.ReadInt32();
             break;
           }
-          case 18: {
-            Exp = input.ReadString();
+          case 16: {
+            Exp = input.ReadInt64();
             break;
           }
           case 24: {

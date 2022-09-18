@@ -16,6 +16,12 @@ internal static class ManagerServiceAction
     /// 释放服务
     /// </summary>
     public const string DESTROY_SERVICE = "ManagerActionServiceDestroy";
+    /// <summary>
+    /// 查询服务信息
+    /// </summary>
+    public const string DESTROY_SERVICE = "ManagerActionSelectService";
+
+
 }
 
 /// <summary>

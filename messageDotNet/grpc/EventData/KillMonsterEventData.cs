@@ -9,5 +9,5 @@ internal class KillMonsterEventData : EventDataBase
 {
     public int MonsterCid;
     public string MonsterName;
-
+    public GameMessageCore.ItemBaseInfo[] DropList;
 }

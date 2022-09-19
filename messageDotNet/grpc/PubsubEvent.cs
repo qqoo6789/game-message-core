@@ -9,10 +9,6 @@ internal static class SubscriptionEvent
     /// </summary>
     public const string SAVE_PLAYER_DATA = "EventTopicSavePlayerData";
     /// <summary>
-    /// 玩家拾取道具
-    /// </summary>
-    public const string PICK_DROP = "EventTopicPickDrop";
-    /// <summary>
     /// 击杀怪物
     /// </summary>
     public const string KILL_MONSTER = "EventTopicKillMonster";

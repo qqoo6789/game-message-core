@@ -20,4 +20,10 @@ internal static class SubscriptionEvent
     /// 玩家死亡
     /// </summary>
     public const string PLAYER_DEATH = "EventTopicPlayerDeath";
+    /// <summary>
+    /// use NFT event
+    /// </summary>
+    public const string USE_NFT = "EventTopicUseNFT";
+
+
 }

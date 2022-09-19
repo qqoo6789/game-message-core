@@ -7,4 +7,5 @@ const (
 	SubscriptionEventPickDrop       SubscriptionEvent = "EventTopicPickDrop"
 	SubscriptionEventKillMonster    SubscriptionEvent = "EventTopicKillMonster"
 	SubscriptionEventPlayerDeath    SubscriptionEvent = "EventTopicPlayerDeath"
+	SubscriptionEventUseNFT         SubscriptionEvent = "EventTopicUseNFT"
 )

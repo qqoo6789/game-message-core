@@ -209,7 +209,7 @@ message BroadCastEntityProfileUpdateResponse {
 message  UpgradePlayerLevelRequest{}
 message  UpgradePlayerLevelResponse{
   int32  cur_level = 1;
-  string cur_exp   = 2;
+  int64  cur_exp   = 2;
 }
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

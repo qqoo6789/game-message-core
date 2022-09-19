@@ -20,6 +20,10 @@ internal static class SubscriptionEvent
     /// use NFT event
     /// </summary>
     public const string USE_NFT = "EventTopicUseNFT";
+    /// <summary>
+    /// user enter game event
+    /// </summary>
+    public const string USER_ENTER_GAME = "EventTopicUserEnterGame";
 
 
 }

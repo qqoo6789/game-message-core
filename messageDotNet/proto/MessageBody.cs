@@ -185,7 +185,7 @@ namespace GameMessageCore {
             "YW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSNgoIcHJvZmlsZXMYAiADKAsyJC5n",
             "YW1lTWVzc2FnZUNvcmUuRW50aXR5UHJvZmlsZVVwZGF0ZSIbChlVcGdyYWRl",
             "UGxheWVyTGV2ZWxSZXF1ZXN0IkAKGlVwZ3JhZGVQbGF5ZXJMZXZlbFJlc3Bv",
-            "bnNlEhEKCWN1cl9sZXZlbBgBIAEoBRIPCgdjdXJfZXhwGAIgASgJIiMKElF1",
+            "bnNlEhEKCWN1cl9sZXZlbBgBIAEoBRIPCgdjdXJfZXhwGAIgASgDIiMKElF1",
             "ZXJ5UGxheWVyUmVxdWVzdBINCgV0b2tlbhgBIAEoCSJGChNRdWVyeVBsYXll",
             "clJlc3BvbnNlEi8KBnBsYXllchgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5Q",
             "bGF5ZXJCYXNlRGF0YSLyAQoTQ3JlYXRlUGxheWVyUmVxdWVzdBINCgV0b2tl",
@@ -9016,13 +9016,13 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "cur_exp" field.</summary>
     public const int CurExpFieldNumber = 2;
-    private string curExp_ = "";
+    private long curExp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CurExp {
+    public long CurExp {
       get { return curExp_; }
       set {
-        curExp_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        curExp_ = value;
       }
     }
 
@@ -9051,7 +9051,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (CurLevel != 0) hash ^= CurLevel.GetHashCode();
-      if (CurExp.Length != 0) hash ^= CurExp.GetHashCode();
+      if (CurExp != 0L) hash ^= CurExp.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9074,9 +9074,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(CurLevel);
       }
-      if (CurExp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CurExp);
+      if (CurExp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(CurExp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -9092,9 +9092,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(CurLevel);
       }
-      if (CurExp.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CurExp);
+      if (CurExp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(CurExp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -9109,8 +9109,8 @@ namespace GameMessageCore {
       if (CurLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurLevel);
       }
-      if (CurExp.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CurExp);
+      if (CurExp != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CurExp);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -9127,7 +9127,7 @@ namespace GameMessageCore {
       if (other.CurLevel != 0) {
         CurLevel = other.CurLevel;
       }
-      if (other.CurExp.Length != 0) {
+      if (other.CurExp != 0L) {
         CurExp = other.CurExp;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -9149,8 +9149,8 @@ namespace GameMessageCore {
             CurLevel = input.ReadInt32();
             break;
           }
-          case 18: {
-            CurExp = input.ReadString();
+          case 16: {
+            CurExp = input.ReadInt64();
             break;
           }
         }
@@ -9172,8 +9172,8 @@ namespace GameMessageCore {
             CurLevel = input.ReadInt32();
             break;
           }
-          case 18: {
-            CurExp = input.ReadString();
+          case 16: {
+            CurExp = input.ReadInt64();
             break;
           }
         }

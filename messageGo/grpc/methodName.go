@@ -20,5 +20,6 @@ const (
 type UserAction string
 
 const (
-	UserActionLeaveGame UserAction = "UserLeaveGame"
+	UserActionUpdateUsedAvatar UserAction = "UpdateUsedAvatar"
+	UserActionLeaveGame        UserAction = "UserLeaveGame"
 )

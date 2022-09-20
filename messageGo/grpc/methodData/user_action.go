@@ -7,7 +7,6 @@ type UserLeaveGameInput struct {
 	AgentAppId string `json:"agentAppId"` // 网关 appId
 	UserId     int64  `json:"userId"`     //
 }
-
 type UserLeaveGameOutput struct {
 	Success bool   `json:"success"`
 	ErrMsg  string `json:"errMsg"`
@@ -20,8 +19,18 @@ type UpdateUsedAvatarInput struct {
 	UsingAvatars []proto.PlayerAvatar `json:"usingAvatars"`
 	CurProfile   proto.EntityProfile  `json:"curProfile"`
 }
-
 type UpdateUsedAvatarOutput struct {
+	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	Success    bool  `json:"success"`
+}
+
+// 更新玩家战斗属性(升级/装备槽等级变更)
+type UpdateUserProfileInput struct {
+	MsgVersion int64               `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	UserId     int64               `json:"userId"`
+	CurProfile proto.EntityProfile `json:"curProfile"`
+}
+type UpdateUserProfileOutput struct {
 	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
 	Success    bool  `json:"success"`
 }

@@ -53,6 +53,10 @@ internal static class ProtoMessageAction
 internal static class UserAction
 {
     /// <summary>
+    /// 更新玩家战斗属性(升级/装备槽等级变更)
+    /// </summary>
+    public const string UPDATE_USER_PROFILE = "UpdateUserProfile";
+    /// <summary>
     /// 更新玩家使用的装备
     /// </summary>
     public const string UPDATE_USED_AVATAR = "UpdateUsedAvatar";

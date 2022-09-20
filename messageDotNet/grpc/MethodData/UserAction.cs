@@ -17,15 +17,11 @@ internal class UserLeaveGameInput
         return JsonUtility.ToJson(this);
     }
 }
-
-
-/// <summary>
-/// agent service forward client message response
-/// </summary>
 [Serializable]
 internal class UserLeaveGameOutput
 {
     public bool Success;
+
     public string ErrMsg;
 
     public string ToJson()
@@ -34,7 +30,6 @@ internal class UserLeaveGameOutput
     }
 
 }
-
 
 /// <summary>
 ///  更新玩家使用的装备
@@ -52,13 +47,37 @@ internal class UpdateUsedAvatarInput
         return JsonUtility.ToJson(this);
     }
 }
-
-
-/// <summary>
-/// agent service forward client message response
-/// </summary>
 [Serializable]
 internal class UpdateUsedAvatarOutput
+{
+    public bool Success;
+    public string ErrMsg;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+}
+
+/// <summary>
+/// 更新玩家战斗属性(升级/装备槽等级变更)
+/// </summary>
+[Serializable]
+internal class UpdateUserProfileInput
+{
+    // 消息版本号 值为毫秒时间戳
+    public long MsgVersion;
+    public long UserId;
+
+    public GameMessageCore.EntityProfile CurProfile;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+internal class UpdateUserProfileOutput
 {
     public bool Success;
     public string ErrMsg;

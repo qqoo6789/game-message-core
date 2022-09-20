@@ -13,4 +13,5 @@ type KillMonsterEventData struct {
 	MonsterCid        int32                `json:"monsterCid"`
 	MonsterName       string               `json:"monsterName"`
 	DropList          []proto.ItemBaseInfo `json:"dropList"`
+	Exp               int32                `json:"exp"`
 }

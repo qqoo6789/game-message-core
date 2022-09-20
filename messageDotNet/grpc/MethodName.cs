@@ -53,6 +53,10 @@ internal static class ProtoMessageAction
 internal static class UserAction
 {
     /// <summary>
+    /// 更新玩家使用的装备
+    /// </summary>
+    public const string UPDATE_USED_AVATAR = "UpdateUsedAvatar";
+    /// <summary>
     /// 玩家离开游戏(断开网络链接时)
     /// </summary>
     public const string USER_LEAVE_GAME = "UserLeaveGame";

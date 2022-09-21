@@ -5,7 +5,7 @@ using UnityEngine;
 /// http请求网关数据的response
 /// </summary>
 [Serializable]
-internal class AgentServiceResp
+public class AgentServiceResp
 {
     public int ErrorCode;//TODO: NEED USE GLOBAL ERROR CODE
     public string ErrorMessage;

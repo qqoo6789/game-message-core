@@ -2,7 +2,7 @@
 /// <summary>
 /// MELAND service call method API name
 /// </summary>
-internal static class ManagerServiceAction
+public static class ManagerServiceAction
 {
     /// <summary>
     /// 获取服务时间戳
@@ -27,7 +27,7 @@ internal static class ManagerServiceAction
 /// <summary>
 /// MELAND proto message Action calls method name 
 /// </summary>
-internal static class ProtoMessageAction
+public static class ProtoMessageAction
 {
     /// <summary>
     /// 转发客户端proto Message
@@ -50,7 +50,7 @@ internal static class ProtoMessageAction
 /// <summary>
 /// MELAND user action method api
 /// </summary>
-internal static class UserAction
+public static class UserAction
 {
     /// <summary>
     /// 更新玩家战斗属性(升级/装备槽等级变更)

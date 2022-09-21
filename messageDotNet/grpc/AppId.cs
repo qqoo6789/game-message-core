@@ -2,7 +2,7 @@
 /// <summary>
 /// MELAND service APPID, 注意(scene/agent)的appId为启动服务时动态配置的
 /// </summary>
-internal static class GRPCAppId
+public static class GRPCAppId
 {
     public const string MELAND_SERVICE_APPID_MANAGER = "meland_service_manager";
     public const string MELAND_SERVICE_APPID_MAIN = "meland_service_main";

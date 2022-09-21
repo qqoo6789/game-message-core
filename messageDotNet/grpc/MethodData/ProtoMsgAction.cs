@@ -5,7 +5,7 @@ using UnityEngine;
 /// agent service forward client message request
 /// </summary>
 [Serializable]
-internal class PullClientMessageInput
+public class PullClientMessageInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -25,7 +25,7 @@ internal class PullClientMessageInput
 /// agent service forward client message response
 /// </summary>
 [Serializable]
-internal class PullClientMessageOutput
+public class PullClientMessageOutput
 {
     public bool Success;
     public string ErrMsg;
@@ -40,7 +40,7 @@ internal class PullClientMessageOutput
 /// other service broadcast proto message to client request
 /// </summary>
 [Serializable]
-internal class BroadCastToClientInput
+public class BroadCastToClientInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -60,7 +60,7 @@ internal class BroadCastToClientInput
 /// agent service forward client message response
 /// </summary>
 [Serializable]
-internal class BroadCastToClientOutput
+public class BroadCastToClientOutput
 {
     public bool Success;
     public string ErrMsg;
@@ -76,7 +76,7 @@ internal class BroadCastToClientOutput
 /// other service multiple broadcast proto message to client request
 /// </summary>
 [Serializable]
-internal class MultipleBroadCastToClientInput
+public class MultipleBroadCastToClientInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -95,7 +95,7 @@ internal class MultipleBroadCastToClientInput
 /// other service multiple broadcast proto message to client response
 /// </summary>
 [Serializable]
-internal class MultipleBroadCastToClientOutput
+public class MultipleBroadCastToClientOutput
 {
     public bool Success;
     public string ErrMsg;

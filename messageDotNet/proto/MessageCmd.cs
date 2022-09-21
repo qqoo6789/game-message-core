@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvcHCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpQICgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -40,14 +40,15 @@ namespace GameMessageCore {
             "dEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2FzdEVudGl0eU1vdmUQlIAM",
             "EhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwSHAoWQnJvYWRDYXN0UmVz",
             "cGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AMEiIKHEJyb2FkQ2FzdEVu",
-            "dGl0eVByb2ZpbGVVcGRhdGUQmYAMEg8KCVNlbGZUYXNrcxCBgBASHQoXQnJv",
-            "YWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQEhAKCkFjY2VwdFRhc2sQhYAQEhUK",
-            "D0FiYW5kb25tZW50VGFzaxCHgBASEAoKVGFza1Jld2FyZBCJgBASFAoOVGFz",
-            "a0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3JhZGVUYXNrUHJvZ3Jlc3MQk4AQEhkK",
-            "E0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCB",
-            "gBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RS",
-            "ZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0",
-            "YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJvdG8z"));
+            "dGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsKFUJyb2FkQ2FzdE1vbnN0ZXJEZWF0",
+            "aBChgAwSDwoJU2VsZlRhc2tzEIGAEBIdChdCcm9hZENhc3RVcGRhdGVUYXNr",
+            "TGlzdBCDgBASEAoKQWNjZXB0VGFzaxCFgBASFQoPQWJhbmRvbm1lbnRUYXNr",
+            "EIeAEBIQCgpUYXNrUmV3YXJkEImAEBIUCg5UYXNrTGlzdFJld2FyZBCRgBAS",
+            "GQoTVXBncmFkZVRhc2tQcm9ncmVzcxCTgBASGQoTQnJvYWRDYXN0VGFza1Jl",
+            "d2FyZBCVgBASFQoPU2VuZENoYXRNZXNzYWdlEIGAFBIbChVCcm9hZENhc3RD",
+            "aGF0TWVzc2FnZXMQg4AUEiAKGkJyb2FkQ2FzdFJlbW92ZUNoYXRNZXNzYWdl",
+            "EISAFBIeChhCcm9hZENhc3RVcGRhdGVDaGF0U3RhdGUQhYAUEgoKBFBpbmcQ",
+            "gYAYYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -126,6 +127,7 @@ namespace GameMessageCore {
     [pbr::OriginalName("BroadCastRespawnPlayer")] BroadCastRespawnPlayer = 196630,
     [pbr::OriginalName("Teleport")] Teleport = 196631,
     [pbr::OriginalName("BroadCastEntityProfileUpdate")] BroadCastEntityProfileUpdate = 196633,
+    [pbr::OriginalName("BroadCastMonsterDeath")] BroadCastMonsterDeath = 196641,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

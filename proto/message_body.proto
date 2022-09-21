@@ -82,6 +82,7 @@ message Envelope {
     TeleportRequest                   teleport_request                      = 0x030017;
     TeleportResponse                  teleport_response                     = 0x030018;
     BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response = 0x030019;
+    BroadCastMonsterDeathResponse      broad_cast_monster_death_response     = 0x030021;
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -204,6 +205,14 @@ message SignOutPlayerResponse{}
 message BroadCastEntityProfileUpdateResponse {
   EntityId entity_id = 1;
   repeated EntityProfileUpdate profiles = 2;
+}
+
+message BroadCastMonsterDeathResponse{
+  int32                 map_id = 1;
+  int64                 monster_id = 2;
+  int32                 cid = 3; 
+  Vector3               pos = 4;
+  repeated ItemBaseInfo drop_list = 5;
 }
 
 message  UpgradePlayerLevelRequest{}

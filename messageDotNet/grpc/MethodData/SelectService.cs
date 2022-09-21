@@ -5,7 +5,7 @@ using UnityEngine;
 /// 向manager service 查询服务信息
 /// </summary>
 [Serializable]
-internal class ManagerActionSelectServiceInput
+public class ManagerActionSelectServiceInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -22,7 +22,7 @@ internal class ManagerActionSelectServiceInput
 /// 服务信息用于服务 注册和释放 response
 /// </summary>
 [Serializable]
-internal class ManagerActionSelectServiceOutput
+public class ManagerActionSelectServiceOutput
 {
     public int ErrorCode;
     public string ErrorMessage;

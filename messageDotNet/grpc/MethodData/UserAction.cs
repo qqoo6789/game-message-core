@@ -5,7 +5,7 @@ using UnityEngine;
 /// player exit game 
 /// </summary>
 [Serializable]
-internal class UserLeaveGameInput
+public class UserLeaveGameInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -18,7 +18,7 @@ internal class UserLeaveGameInput
     }
 }
 [Serializable]
-internal class UserLeaveGameOutput
+public class UserLeaveGameOutput
 {
     public bool Success;
 
@@ -35,7 +35,7 @@ internal class UserLeaveGameOutput
 ///  更新玩家使用的装备
 /// </summary>
 [Serializable]
-internal class UpdateUsedAvatarInput
+public class UpdateUsedAvatarInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -48,7 +48,7 @@ internal class UpdateUsedAvatarInput
     }
 }
 [Serializable]
-internal class UpdateUsedAvatarOutput
+public class UpdateUsedAvatarOutput
 {
     public bool Success;
     public string ErrMsg;
@@ -64,7 +64,7 @@ internal class UpdateUsedAvatarOutput
 /// 更新玩家战斗属性(升级/装备槽等级变更)
 /// </summary>
 [Serializable]
-internal class UpdateUserProfileInput
+public class UpdateUserProfileInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
@@ -77,7 +77,7 @@ internal class UpdateUserProfileInput
     }
 }
 [Serializable]
-internal class UpdateUserProfileOutput
+public class UpdateUserProfileOutput
 {
     public bool Success;
     public string ErrMsg;

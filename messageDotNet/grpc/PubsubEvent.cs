@@ -2,7 +2,7 @@
 /// <summary>
 /// MELAND service pubsub event topic name 
 /// </summary>
-internal static class SubscriptionEvent
+public static class SubscriptionEvent
 {
     /// <summary>
     /// 存储玩家数据

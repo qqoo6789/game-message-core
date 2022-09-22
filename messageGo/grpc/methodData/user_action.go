@@ -34,3 +34,20 @@ type UpdateUserProfileOutput struct {
 	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
 	Success    bool  `json:"success"`
 }
+
+// 获取user 详细数据
+type GetUserDataInput struct {
+	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	UserId     int64 `json:"userId"`
+}
+type GetUserDataInputOutput struct {
+	MsgVersion int64                `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	Success    bool                 `json:"success"`
+	ErrMsg     string               `json:"errMsg"`
+	BaseData   proto.PlayerBaseData `json:"baseData"`
+	Profile    proto.EntityProfile  `json:"profile"`
+	MapId      int32                `json:"mapId"`
+	Pos        proto.Vector3        `json:"pos"`
+	Dir        proto.Vector3        `json:"dir"`
+	Avatars    []proto.PlayerAvatar `json:"avatars"`
+}

@@ -64,4 +64,10 @@ public static class UserAction
     /// 玩家离开游戏(断开网络链接时)
     /// </summary>
     public const string USER_LEAVE_GAME = "UserLeaveGame";
+
+    /// <summary>
+    ///  查询玩家详细数据 for main service
+    /// </summary>
+    public const string GET_USER_DATA = "GetUserData";
+
 }

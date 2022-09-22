@@ -105,7 +105,7 @@ public class GetUserDataInput
     }
 }
 [Serializable]
-public class GetUserDataInputOutput
+public class GetUserDataOutput
 {
     public bool Success;
     public string ErrMsg;

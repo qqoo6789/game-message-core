@@ -88,3 +88,37 @@ public class UpdateUserProfileOutput
     }
 
 }
+
+/// <summary>
+/// 获取user 详细数据
+/// </summary>
+[Serializable]
+public class GetUserDataInput
+{
+    // 消息版本号 值为毫秒时间戳
+    public long MsgVersion;
+    public long UserId;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class GetUserDataInputOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public GameMessageCore.PlayerBaseData BaseData;
+    public GameMessageCore.EntityProfile Profile;
+    public int MapId;
+    public GameMessageCore.Vector3 Pos;
+    public GameMessageCore.Vector3 Dir;
+    public GameMessageCore.PlayerAvatar[] Avatars;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+}

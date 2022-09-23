@@ -81,8 +81,9 @@ message Envelope {
     BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
     TeleportRequest                   teleport_request                      = 0x030017;
     TeleportResponse                  teleport_response                     = 0x030018;
-    BroadCastEntityProfileUpdateResponse   broad_cast_entity_profile_update_response = 0x030019;
-    BroadCastMonsterDeathResponse      broad_cast_monster_death_response     = 0x030021;
+    BroadCastEntityProfileUpdateResponse    broad_cast_entity_profile_update_response = 0x030019;
+    BroadCastMonsterDeathResponse           broad_cast_monster_death_response         = 0x030021;
+    BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response  = 0x030022;
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -345,6 +346,12 @@ message TeleportRequest {
   Vector3 to_pos = 9;
 }
 message TeleportResponse {
+}
+message BroadCastEntityAvatarUpdateResponse {
+  // 变化的entity id
+  EntityId              entity_id = 1;
+  // 变化后的 avatar 装备列表
+  repeated PlayerAvatar avatars = 2;
 }
 
 

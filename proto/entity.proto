@@ -41,7 +41,9 @@ message Player {
   bool                  active = 4;  
   int32                 map_id = 5;
   Vector3               position = 6; 
-  Vector3               dir = 7;      
+  Vector3               dir = 7;
+  //实体cd数据
+  EntityCD entity_cd = 8;      
   // repeated bian.proto.EntityBuff buff_list = 28;
 }
 
@@ -92,4 +94,19 @@ message EntityMovement {
   MovementType type = 5;
   // 实体朝向(交互数据 = 实际数据 * 1000)
   Vector3 Dir = 6;
+}
+
+message EntityCD {
+  repeated EntitySkillCD skill_cd_list = 1; //技能cd列表
+  repeated EntityExtendCD extend_cd_list = 2; //扩展cd列表
+}
+
+message EntitySkillCD {
+  int32 skill_id = 1; //技能cd
+  int64 time = 2;//到期时间
+}
+
+message EntityExtendCD {
+  int32 type = 1; //扩展类型
+  int64 time = 2; //到期时间
 }

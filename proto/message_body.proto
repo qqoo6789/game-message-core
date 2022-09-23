@@ -299,6 +299,7 @@ message BroadCastRespawnPlayerResponse {
   int32          cur_hp = 2;
   bool           active = 3;
   EntityLocation location = 4;
+  int64 revive_cd = 5;
 }
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表

@@ -1,0 +1,143 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+import "message_body.proto";
+import "service.proto";
+import "item.proto";
+import "entityProfile.proto";
+import "player.proto";
+import "vector.proto";
+
+
+// 服务信息用于服务 注册和释放
+message ServiceRegisterInput{
+  int64       msg_version     = 1; 
+  int64       id              = 2; 
+  string      name            = 3;
+  string      app_id          = 4;
+  ServiceType service_type    = 5; 
+  int32       map_id          = 6;
+  string      host            = 7;
+  int32       port            = 8;
+  int32       online          = 9;
+  int32       max_online      = 10;
+  int64       create_at       = 11;
+  int64       update_at       = 12;
+}
+message ServiceRegisterOutput{
+  bool        success         = 1;
+  string      err_msg         = 2;
+}
+
+// 向manager service 查询服务信息
+message ManagerActionSelectServiceInput{
+  int64       msg_version  = 1;
+  ServiceType service_type = 2; 
+  int32       map_id       = 3;
+}
+message ManagerActionSelectServiceOutput{
+  int32       error_code      = 1;
+  string      error_message   = 2;
+  ServiceType service_type    = 3; 
+  string      service_app_id  = 4;
+  int32       map_id          = 5;
+  string      host            = 6;
+  int32       port            = 7;
+  int32       online          = 8;
+  int32       max_online      = 9;
+  int64       create_at       = 10;
+  int64       update_at       = 11;
+}
+
+// agent service forward client message request
+ message PullClientMessageInput{
+  int64     msg_version   = 1;
+  string    agent_app_id  = 2;
+  int64     user_id       = 3;
+  string    socket_id     = 4;
+  int32     msg_id        = 5;
+  Envelope  msg           = 6;  
+}
+message PullClientMessageOutput{
+  bool        success         = 1;
+  string      err_msg         = 2;
+}
+
+// other service broadcast proto message to client request
+ message BroadCastToClientInput{
+  int64     msg_version     = 1;
+  string    service_app_id  = 2;
+  int64     user_id         = 3;
+  string    socket_id       = 4;
+  int32     msg_id          = 5;
+  Envelope  msg             = 6;  
+}
+message BroadCastToClientOutput{
+  bool        success       = 1;
+  string      err_msg       = 2;
+}
+
+// other service multiple broadcast proto message to client request
+ message MultipleBroadCastToClientInput{
+  int64     msg_version      = 1;
+  string    service_app_id   = 2;
+  repeated  int64 user_list  = 3;
+  int32     msg_id           = 5;
+  Envelope  msg              = 6;  
+}
+message MultipleBroadCastToClientOutput{
+  bool      success         = 1;
+  string    err_msg         = 2;
+}
+
+// user leave game 
+ message UserLeaveGameInput{
+  int64     msg_version     = 1;
+  string    service_app_id  = 2;
+  int64     user_id         = 3;
+}
+message UserLeaveGameOutput{
+  bool      success         = 1;
+  string    err_msg         = 2;
+}
+
+// 更新玩家使用的装备
+ message UpdateUsedAvatarInput{
+  int64     msg_version     = 1;
+  int64     user_id         = 2;
+  repeated  PlayerAvatar using_avatars = 3;
+  EntityProfile cur_profile = 4;
+}
+message UpdateUsedAvatarOutput{
+  bool      success         = 1;
+  string    err_msg         = 2;
+}
+
+// 更新玩家战斗属性(升级/装备槽等级变更)
+ message UpdateUserProfileInput{
+  int64         msg_version     = 1;
+  int64         user_id         = 2;
+  EntityProfile cur_profile     = 3;
+}
+message UpdateUserProfileOutput{
+  bool      success         = 1;
+  string    err_msg         = 2;
+}
+
+// 获取user 详细数据
+ message GetUserDataInput{
+  int64         msg_version     = 1;
+  int64         user_id         = 2;
+}
+message GetUserDataOutput{
+  bool            success    = 1;
+  string          err_msg    = 2;
+  PlayerBaseData  base_data  = 3;
+  EntityProfile   profile    = 4;
+  int32           map_id     = 5;
+  Vector3         position   = 6;
+  Vector3         dir        = 7;
+  repeated PlayerAvatar avatars = 8;
+}
+

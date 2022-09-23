@@ -1,0 +1,74 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+// import "message_body.proto";
+import "entityTypeDefine.proto";
+import "item.proto";
+// import "entityProfile.proto";
+import "player.proto";
+import "vector.proto";
+
+
+// 玩家进入游戏
+message  UserEnterGameEvent{
+  int64           msg_version             = 1;
+  string          scene_service_app_id    = 2;
+  int32           map_id                  = 3;  
+  PlayerBaseData  base_data               = 4;
+  Vector3         position                = 5;
+  Vector3         dir                     = 6;
+}
+
+// 玩家击杀怪物
+message  KillMonsterEvent{
+  int64           msg_version             = 1;
+  string          scene_service_app_id    = 2;
+  int64           user_id                 = 3;  
+  int32           map_id                  = 4; 
+  Vector3         position                = 5;
+  int32           monster_cid             = 6;     
+  string          monster_name            = 7;
+  int32           exp                     = 8;
+  repeated   ItemBaseInfo  drop_list      = 9;
+}
+
+// 玩家死亡
+message  PlayerDeathEvent{
+  int64           msg_version             = 1;
+  string          scene_service_app_id    = 2;
+  int64           user_id                 = 3;  
+  int32           map_id                  = 4; 
+  Vector3         position                = 5;
+  EntityType      killer_type             = 6;    
+  int64           killer_id               = 7;
+  string          killer_name             = 8;
+}
+
+// 存储玩家数据
+message  SavePlayerEvent{
+  int64           msg_version             = 1;
+  string          scene_service_app_id    = 2;
+  int64           user_id                 = 3;  
+  int32           map_id                  = 4; 
+  Vector3         position                = 5;
+  Vector3         dir                     = 6;
+  int32           cur_hp                  = 7; 
+}
+
+// 玩家使用nft
+message  UserUseNFTEvent{
+  int64             msg_version        = 1;
+  int64             user_id            = 3;  
+  string            nft_id             = 4; 
+  NFTType           nft_type           = 5;
+  int32             num                = 6;
+  Vector3           position           = 7; 
+  NFTConsumableInfo consumable_data    = 8;
+}
+
+
+
+
+
+

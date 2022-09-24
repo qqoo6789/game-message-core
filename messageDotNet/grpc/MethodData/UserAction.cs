@@ -111,6 +111,7 @@ public class GetUserDataOutput
     public string ErrMsg;
     public GrpcPlayerBaseData BaseData;
     public GrpcEntityProfile Profile;
+    public GrpcPlayerFeature Feature;
     public int MapId;
     public GrpcVector3 Pos;
     public GrpcVector3 Dir;

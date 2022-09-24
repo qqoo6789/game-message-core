@@ -48,6 +48,7 @@ type GetUserDataOutput struct {
 	ErrMsg     string                       `json:"errMsg"`
 	BaseData   base_data.GrpcPlayerBaseData `json:"baseData"`
 	Profile    base_data.GrpcEntityProfile  `json:"profile"`
+	Feature    base_data.GrpcPlayerFeature  `json:"feature"`
 	MapId      int32                        `json:"mapId"`
 	Pos        base_data.GrpcVector3        `json:"pos"`
 	Dir        base_data.GrpcVector3        `json:"dir"`

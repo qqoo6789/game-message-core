@@ -29,9 +29,9 @@ public class GrpcVector3
     {
         return new GameMessageCore.Vector3()
         {
-            X = p.X,
-            Y = p.Y,
-            Z = p.Z,
+            X = X,
+            Y = Y,
+            Z = Z,
         };
     }
 

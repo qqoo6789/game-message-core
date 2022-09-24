@@ -63,7 +63,7 @@ public class GrpcAvatarAttribute
         Data = new GrpcAttributeData[attr.Data.Count];
         for (int i = 0; i < attr.Data.Count; i++)
         {
-            grpcAt = new GrpcAttributeData();
+            GrpcAttributeData grpcAt = new();
             grpcAt.Set(attr.Data[i]);
             Data[i] = grpcAt;
         }
@@ -76,7 +76,10 @@ public class GrpcAvatarAttribute
             Rarity = Rarity,
             Durability = Durability,
         };
-        attribute.Data.Add(Data);
+        foreach (GrpcAttributeData at in Data)
+        {
+            attribute.Data.Add(at.ToProtoData());
+        }
         return attribute;
     }
 
@@ -152,7 +155,7 @@ public class GrpcItemBaseInfo
     }
     public GameMessageCore.ItemBaseInfo ToProtoData()
     {
-        return new GameMessageCore()
+        return new GameMessageCore.ItemBaseInfo()
         {
             Cid = Cid,
             Num = Num,
@@ -167,7 +170,7 @@ public class GrpcItemBaseInfo
 public class GrpcNFTConsumableInfo
 {
     public string Quality;
-    public proto.NFTConsumableType ConsumableType;
+    public GameMessageCore.NFTConsumableType ConsumableType;
     public int Value;
 
     public string ToJson()

@@ -5,15 +5,15 @@ using UnityEngine;
 [Serializable]
 public class GrpcPlayerFeature
 {
-    public int32 Eyebrow;
-    public int32 Mouth;
-    public int32 Eye;
-    public int32 Face;
-    public int32 Hair;
-    public int32 Glove;
-    public int32 Clothes;
-    public int32 Pants;
-	
+    public int Eyebrow;
+    public int Mouth;
+    public int Eye;
+    public int Face;
+    public int Hair;
+    public int Glove;
+    public int Clothes;
+    public int Pants;
+
     public string ToJson()
     {
         return JsonUtility.ToJson(this);

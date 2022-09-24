@@ -10,9 +10,9 @@ public class UserEnterGameEvent
     public long MsgVersion;
     public string SceneServiceAppId;
     public int MapId;
-    public GameMessageCore.PlayerBaseData BaseData;
-    public GameMessageCore.Vector3 Position;
-    public GameMessageCore.Vector3 Dir;
+    public GrpcPlayerBaseData BaseData;
+    public GrpcVector3 Position;
+    public GrpcVector3 Dir;
 
     public string ToJson()
     {

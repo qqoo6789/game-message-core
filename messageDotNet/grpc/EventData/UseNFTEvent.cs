@@ -13,7 +13,7 @@ public class UserUseNFTEvent
     public int Cid;
     public GameMessageCore.NFTType NftType;
     public int Num;
-    public GameMessageCore.NFTConsumableInfo ConsumableData;
+    public GrpcNFTConsumableInfo ConsumableData;
     public int X;
     public int Y;
 

@@ -5,9 +5,9 @@ using UnityEngine;
 [Serializable]
 public class GrpcVector3
 {
-    public float32 X;
-    public float32 Y;
-    public float32 Z;
+    public float X;
+    public float Y;
+    public float Z;
 
     public string ToJson()
     {
@@ -24,7 +24,7 @@ public class GrpcVector3
         Y = v.Z;
         Z = v.Z;
     }
-	
+
     public GameMessageCore.Vector3 ToProtoData()
     {
         return new GameMessageCore.Vector3()

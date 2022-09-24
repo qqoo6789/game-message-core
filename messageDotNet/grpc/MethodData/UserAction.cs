@@ -40,8 +40,8 @@ public class UpdateUsedAvatarInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public long UserId;
-    public GameMessageCore.PlayerAvatar[] UsingAvatars;
-    public GameMessageCore.EntityProfile CurProfile;
+    public GrpcPlayerAvatar[] UsingAvatars;
+    public GrpcEntityProfile CurProfile;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -70,7 +70,7 @@ public class UpdateUserProfileInput
     public long MsgVersion;
     public long UserId;
 
-    public GameMessageCore.EntityProfile CurProfile;
+    public GrpcEntityProfile CurProfile;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -109,12 +109,12 @@ public class GetUserDataOutput
 {
     public bool Success;
     public string ErrMsg;
-    public GameMessageCore.PlayerBaseData BaseData;
-    public GameMessageCore.EntityProfile Profile;
+    public GrpcPlayerBaseData BaseData;
+    public GrpcEntityProfile Profile;
     public int MapId;
-    public GameMessageCore.Vector3 Pos;
-    public GameMessageCore.Vector3 Dir;
-    public GameMessageCore.PlayerAvatar[] Avatars;
+    public GrpcVector3 Pos;
+    public GrpcVector3 Dir;
+    public GrpcPlayerAvatar[] Avatars;
 
     public string ToJson()
     {

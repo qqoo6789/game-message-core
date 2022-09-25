@@ -21,7 +21,7 @@ public class GrpcVector3
             return;
         }
         X = v.X;
-        Y = v.Z;
+        Y = v.Y;
         Z = v.Z;
     }
 

@@ -14,7 +14,7 @@ func (p *GrpcVector3) Set(v *proto.Vector3) {
 		return
 	}
 	p.X = v.X
-	p.Y = v.Z
+	p.Y = v.Y
 	p.Z = v.Z
 }
 func (p *GrpcVector3) ToProtoData() proto.Vector3 {

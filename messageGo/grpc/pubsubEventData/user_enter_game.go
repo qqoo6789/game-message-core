@@ -3,7 +3,8 @@ package pubsubEventData
 type UserEnterGameEvent struct {
 	MsgVersion        int64   `json:"msgVersion"`        // 消息版本号 值为毫秒时间戳
 	SceneServiceAppId string  `json:"sceneServiceAppId"` //
-	MapId             int32   `json:"mapId"`
+	AgentAppId        string  `json:"agentAppId"`
+	UserSocketId      string  `json:"userSocketId"`
 	UserId            int64   `json:"userId"`
 	Name              string  `json:"name"`
 	RoleId            int32   `json:"roleId"`
@@ -18,6 +19,7 @@ type UserEnterGameEvent struct {
 	Glove             int32   `json:"glove"`
 	Clothes           int32   `json:"clothes"`
 	Pants             int32   `json:"pants"`
+	MapId             int32   `json:"mapId"`
 	X                 float32 `json:"x"`
 	Y                 float32 `json:"y"`
 	Z                 float32 `json:"z"`

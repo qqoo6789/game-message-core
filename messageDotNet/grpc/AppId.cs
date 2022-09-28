@@ -4,11 +4,11 @@
 /// </summary>
 public static class GRPCAppId
 {
-    public const string MELAND_SERVICE_APPID_MANAGER = "meland_service_manager";
-    public const string MELAND_SERVICE_APPID_MAIN = "meland_service_main";
-    public const string MELAND_SERVICE_APPID_ACCOUNT = "meland_service_account";
-    public const string MELAND_SERVICE_APPID_TASK = "meland_service_task";
-    public const string MELAND_SERVICE_APPID_CHAT = "meland_service_chat";
-    public const string MELAND_SERVICE_APPID_SCENE_XX = "meland_service_scene_xx";
-    public const string MELAND_SERVICE_APPID_AGENT_XX = "meland_service_agent_xx";
+    public const string MELAND_SERVICE_APPID_MANAGER = "meland-service-manager";
+    public const string MELAND_SERVICE_APPID_MAIN = "meland-service-main";
+    public const string MELAND_SERVICE_APPID_ACCOUNT = "meland-service-account";
+    public const string MELAND_SERVICE_APPID_TASK = "meland-service-task";
+    public const string MELAND_SERVICE_APPID_CHAT = "meland-service-chat";
+    public const string MELAND_SERVICE_APPID_SCENE_XX = "meland-service-scene-xx";
+    public const string MELAND_SERVICE_APPID_AGENT_XX = "meland-service-agent-xx";
 }

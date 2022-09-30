@@ -24,20 +24,21 @@ namespace GameMessageCore {
     static ChatReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpjaGF0LnByb3RvEg9nYW1lTWVzc2FnZUNvcmUipwEKC0NoYXRNZXNzYWdl",
-            "EhEKCXNlbmRlcl9pZBgBIAEoCRITCgtzZW5kZXJfbmFtZRgCIAEoCRITCgtz",
-            "ZW5kZXJfaWNvbhgDIAEoCRIzCgljaGF0X3R5cGUYBCABKA4yIC5nYW1lTWVz",
-            "c2FnZUNvcmUuQ2hhdENoYW5uZWxUeXBlEg8KB2NvbnRlbnQYBSABKAkSFQoN",
-            "cmVjZWl2ZXJfdXNlchgGIAEoCSqXAQoPQ2hhdENoYW5uZWxUeXBlEhoKFkNo",
-            "YXRDaGFubmVsVHlwZVVua25vd24QABIZChVDaGF0Q2hhbm5lbFR5cGVTeXN0",
-            "ZW0QARIYChRDaGF0Q2hhbm5lbFR5cGVXb3JsZBACEhcKE0NoYXRDaGFubmVs",
-            "VHlwZU5lYXIQAxIaChZDaGF0Q2hhbm5lbFR5cGVQcml2YXRlEAQqMgoJQ2hh",
-            "dFN0YXRlEhMKD0NoYXRTdGF0ZU5vcm1hbBAAEhAKDENoYXRTdGF0ZUJhbhAB",
-            "YgZwcm90bzM="));
+            "CgpjaGF0LnByb3RvEg9nYW1lTWVzc2FnZUNvcmUitwEKC0NoYXRNZXNzYWdl",
+            "Eg4KBm1zZ19pZBgBIAEoAxIRCglzZW5kZXJfaWQYAiABKAMSEwoLc2VuZGVy",
+            "X25hbWUYAyABKAkSEwoLc2VuZGVyX2ljb24YBCABKAkSMwoJY2hhdF90eXBl",
+            "GAUgASgOMiAuZ2FtZU1lc3NhZ2VDb3JlLkNoYXRDaGFubmVsVHlwZRIPCgdj",
+            "b250ZW50GAYgASgJEhUKDXJlY2VpdmVyX3VzZXIYByABKAMqugEKD0NoYXRD",
+            "aGFubmVsVHlwZRIaChZDaGF0Q2hhbm5lbFR5cGVVbmtub3duEAASGQoVQ2hh",
+            "dENoYW5uZWxUeXBlU3lzdGVtEAESGAoUQ2hhdENoYW5uZWxUeXBlV29ybGQQ",
+            "AhIXChNDaGF0Q2hhbm5lbFR5cGVOZWFyEAMSGgoWQ2hhdENoYW5uZWxUeXBl",
+            "UHJpdmF0ZRAEEiEKHENoYXRDaGFubmVsVHlwZUNvbXByZWhlbnNpdmUQ5wcq",
+            "MgoJQ2hhdFN0YXRlEhMKD0NoYXRTdGF0ZU5vcm1hbBAAEhAKDENoYXRTdGF0",
+            "ZUJhbhABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ChatChannelType), typeof(global::GameMessageCore.ChatState), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ChatMessage), global::GameMessageCore.ChatMessage.Parser, new[]{ "SenderId", "SenderName", "SenderIcon", "ChatType", "Content", "ReceiverUser" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ChatMessage), global::GameMessageCore.ChatMessage.Parser, new[]{ "MsgId", "SenderId", "SenderName", "SenderIcon", "ChatType", "Content", "ReceiverUser" }, null, null, null, null)
           }));
     }
     #endregion
@@ -65,6 +66,10 @@ namespace GameMessageCore {
     /// 私聊
     /// </summary>
     [pbr::OriginalName("ChatChannelTypePrivate")] Private = 4,
+    /// <summary>
+    /// 综合 实际上服务器并不会下发此频道的消息,仅用于客户端 (该频道的定义放最后) 
+    /// </summary>
+    [pbr::OriginalName("ChatChannelTypeComprehensive")] Comprehensive = 999,
   }
 
   public enum ChatState {
@@ -115,6 +120,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChatMessage(ChatMessage other) : this() {
+      msgId_ = other.msgId_;
       senderId_ = other.senderId_;
       senderName_ = other.senderName_;
       senderIcon_ = other.senderIcon_;
@@ -130,20 +136,32 @@ namespace GameMessageCore {
       return new ChatMessage(this);
     }
 
-    /// <summary>Field number for the "sender_id" field.</summary>
-    public const int SenderIdFieldNumber = 1;
-    private string senderId_ = "";
+    /// <summary>Field number for the "msg_id" field.</summary>
+    public const int MsgIdFieldNumber = 1;
+    private long msgId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string SenderId {
+    public long MsgId {
+      get { return msgId_; }
+      set {
+        msgId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sender_id" field.</summary>
+    public const int SenderIdFieldNumber = 2;
+    private long senderId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long SenderId {
       get { return senderId_; }
       set {
-        senderId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        senderId_ = value;
       }
     }
 
     /// <summary>Field number for the "sender_name" field.</summary>
-    public const int SenderNameFieldNumber = 2;
+    public const int SenderNameFieldNumber = 3;
     private string senderName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -155,7 +173,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "sender_icon" field.</summary>
-    public const int SenderIconFieldNumber = 3;
+    public const int SenderIconFieldNumber = 4;
     private string senderIcon_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -167,7 +185,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "chat_type" field.</summary>
-    public const int ChatTypeFieldNumber = 4;
+    public const int ChatTypeFieldNumber = 5;
     private global::GameMessageCore.ChatChannelType chatType_ = global::GameMessageCore.ChatChannelType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -179,7 +197,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 5;
+    public const int ContentFieldNumber = 6;
     private string content_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -191,14 +209,14 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "receiver_user" field.</summary>
-    public const int ReceiverUserFieldNumber = 6;
-    private string receiverUser_ = "";
+    public const int ReceiverUserFieldNumber = 7;
+    private long receiverUser_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ReceiverUser {
+    public long ReceiverUser {
       get { return receiverUser_; }
       set {
-        receiverUser_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        receiverUser_ = value;
       }
     }
 
@@ -217,6 +235,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (MsgId != other.MsgId) return false;
       if (SenderId != other.SenderId) return false;
       if (SenderName != other.SenderName) return false;
       if (SenderIcon != other.SenderIcon) return false;
@@ -230,12 +249,13 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (SenderId.Length != 0) hash ^= SenderId.GetHashCode();
+      if (MsgId != 0L) hash ^= MsgId.GetHashCode();
+      if (SenderId != 0L) hash ^= SenderId.GetHashCode();
       if (SenderName.Length != 0) hash ^= SenderName.GetHashCode();
       if (SenderIcon.Length != 0) hash ^= SenderIcon.GetHashCode();
       if (ChatType != global::GameMessageCore.ChatChannelType.Unknown) hash ^= ChatType.GetHashCode();
       if (Content.Length != 0) hash ^= Content.GetHashCode();
-      if (ReceiverUser.Length != 0) hash ^= ReceiverUser.GetHashCode();
+      if (ReceiverUser != 0L) hash ^= ReceiverUser.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -254,29 +274,33 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (SenderId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(SenderId);
+      if (MsgId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MsgId);
+      }
+      if (SenderId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(SenderId);
       }
       if (SenderName.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(26);
         output.WriteString(SenderName);
       }
       if (SenderIcon.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteString(SenderIcon);
       }
       if (ChatType != global::GameMessageCore.ChatChannelType.Unknown) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteEnum((int) ChatType);
       }
       if (Content.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(50);
         output.WriteString(Content);
       }
-      if (ReceiverUser.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ReceiverUser);
+      if (ReceiverUser != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(ReceiverUser);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -288,29 +312,33 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SenderId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(SenderId);
+      if (MsgId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MsgId);
+      }
+      if (SenderId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(SenderId);
       }
       if (SenderName.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(26);
         output.WriteString(SenderName);
       }
       if (SenderIcon.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteString(SenderIcon);
       }
       if (ChatType != global::GameMessageCore.ChatChannelType.Unknown) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteEnum((int) ChatType);
       }
       if (Content.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(50);
         output.WriteString(Content);
       }
-      if (ReceiverUser.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ReceiverUser);
+      if (ReceiverUser != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(ReceiverUser);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -322,8 +350,11 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (SenderId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SenderId);
+      if (MsgId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MsgId);
+      }
+      if (SenderId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(SenderId);
       }
       if (SenderName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SenderName);
@@ -337,8 +368,8 @@ namespace GameMessageCore {
       if (Content.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
       }
-      if (ReceiverUser.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ReceiverUser);
+      if (ReceiverUser != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ReceiverUser);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -352,7 +383,10 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.SenderId.Length != 0) {
+      if (other.MsgId != 0L) {
+        MsgId = other.MsgId;
+      }
+      if (other.SenderId != 0L) {
         SenderId = other.SenderId;
       }
       if (other.SenderName.Length != 0) {
@@ -367,7 +401,7 @@ namespace GameMessageCore {
       if (other.Content.Length != 0) {
         Content = other.Content;
       }
-      if (other.ReceiverUser.Length != 0) {
+      if (other.ReceiverUser != 0L) {
         ReceiverUser = other.ReceiverUser;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -385,28 +419,32 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            SenderId = input.ReadString();
+          case 8: {
+            MsgId = input.ReadInt64();
             break;
           }
-          case 18: {
-            SenderName = input.ReadString();
+          case 16: {
+            SenderId = input.ReadInt64();
             break;
           }
           case 26: {
+            SenderName = input.ReadString();
+            break;
+          }
+          case 34: {
             SenderIcon = input.ReadString();
             break;
           }
-          case 32: {
+          case 40: {
             ChatType = (global::GameMessageCore.ChatChannelType) input.ReadEnum();
             break;
           }
-          case 42: {
+          case 50: {
             Content = input.ReadString();
             break;
           }
-          case 50: {
-            ReceiverUser = input.ReadString();
+          case 56: {
+            ReceiverUser = input.ReadInt64();
             break;
           }
         }
@@ -424,28 +462,32 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            SenderId = input.ReadString();
+          case 8: {
+            MsgId = input.ReadInt64();
             break;
           }
-          case 18: {
-            SenderName = input.ReadString();
+          case 16: {
+            SenderId = input.ReadInt64();
             break;
           }
           case 26: {
+            SenderName = input.ReadString();
+            break;
+          }
+          case 34: {
             SenderIcon = input.ReadString();
             break;
           }
-          case 32: {
+          case 40: {
             ChatType = (global::GameMessageCore.ChatChannelType) input.ReadEnum();
             break;
           }
-          case 42: {
+          case 50: {
             Content = input.ReadString();
             break;
           }
-          case 50: {
-            ReceiverUser = input.ReadString();
+          case 56: {
+            ReceiverUser = input.ReadInt64();
             break;
           }
         }

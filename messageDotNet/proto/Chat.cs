@@ -28,13 +28,13 @@ namespace GameMessageCore {
             "Eg4KBm1zZ19pZBgBIAEoAxIRCglzZW5kZXJfaWQYAiABKAMSEwoLc2VuZGVy",
             "X25hbWUYAyABKAkSEwoLc2VuZGVyX2ljb24YBCABKAkSMwoJY2hhdF90eXBl",
             "GAUgASgOMiAuZ2FtZU1lc3NhZ2VDb3JlLkNoYXRDaGFubmVsVHlwZRIPCgdj",
-            "b250ZW50GAYgASgJEhUKDXJlY2VpdmVyX3VzZXIYByABKAMquQEKD0NoYXRD",
+            "b250ZW50GAYgASgJEhUKDXJlY2VpdmVyX3VzZXIYByABKAMqugEKD0NoYXRD",
             "aGFubmVsVHlwZRIaChZDaGF0Q2hhbm5lbFR5cGVVbmtub3duEAASGQoVQ2hh",
             "dENoYW5uZWxUeXBlU3lzdGVtEAESGAoUQ2hhdENoYW5uZWxUeXBlV29ybGQQ",
             "AhIXChNDaGF0Q2hhbm5lbFR5cGVOZWFyEAMSGgoWQ2hhdENoYW5uZWxUeXBl",
-            "UHJpdmF0ZRAEEiAKHENoYXRDaGFubmVsVHlwZUNvbXByZWhlbnNpdmUQBSoy",
-            "CglDaGF0U3RhdGUSEwoPQ2hhdFN0YXRlTm9ybWFsEAASEAoMQ2hhdFN0YXRl",
-            "QmFuEAFiBnByb3RvMw=="));
+            "UHJpdmF0ZRAEEiEKHENoYXRDaGFubmVsVHlwZUNvbXByZWhlbnNpdmUQ5wcq",
+            "MgoJQ2hhdFN0YXRlEhMKD0NoYXRTdGF0ZU5vcm1hbBAAEhAKDENoYXRTdGF0",
+            "ZUJhbhABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ChatChannelType), typeof(global::GameMessageCore.ChatState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -67,9 +67,9 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("ChatChannelTypePrivate")] Private = 4,
     /// <summary>
-    /// 综合 
+    /// 综合 实际上服务器并不会下发此频道的消息,仅用于客户端 (该频道的定义放最后) 
     /// </summary>
-    [pbr::OriginalName("ChatChannelTypeComprehensive")] Comprehensive = 5,
+    [pbr::OriginalName("ChatChannelTypeComprehensive")] Comprehensive = 999,
   }
 
   public enum ChatState {

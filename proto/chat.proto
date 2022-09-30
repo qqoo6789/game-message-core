@@ -14,8 +14,8 @@ enum ChatChannelType {
   ChatChannelTypeNear = 3;
   // 私聊
   ChatChannelTypePrivate = 4;
-  // 综合 
-  ChatChannelTypeComprehensive = 5;
+  // 综合 实际上服务器并不会下发此频道的消息,仅用于客户端 (该频道的定义放最后) 
+  ChatChannelTypeComprehensive = 999;
 }
 
 enum ChatState {

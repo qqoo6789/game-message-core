@@ -62,7 +62,7 @@ type GrpcPlayerAvatar struct {
 	// 装备位置
 	Position proto.AvatarPosition `json:"position"`
 	// 装备的物品 id
-	ObjectId int32 ` json:"object_id"`
+	ObjectId int32 ` json:"objectId"`
 	// 属性
 	Attribute *GrpcAvatarAttribute `json:"attribute"`
 }

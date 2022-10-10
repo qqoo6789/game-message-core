@@ -9,6 +9,12 @@ const (
 	ManagerServiceActionSelectService ManagerServiceAction = "ManagerActionSelectService"
 )
 
+type MainServiceAction string
+
+const (
+	MainServiceActionTakeNFT MainServiceAction = "MainServiceActionTakeNFT"
+)
+
 type ProtoMessageAction string
 
 const (

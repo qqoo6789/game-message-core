@@ -7,6 +7,9 @@ using UnityEngine;
 [Serializable]
 public class SavePlayerEventData : EventDataBase
 {
+    public long MsgVersion;
+    public string AgentServiceAppId;
+    public string SceneServiceAppId;
     public int CurHP;
     public float DirX;
     public float DirY;

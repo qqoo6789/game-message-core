@@ -65,6 +65,7 @@ enum EnvelopeType {
     BroadCastEntityProfileUpdate   = 0x030019;
     BroadCastMonsterDeath          = 0x030021;
     BroadCastEntityAvatarUpdate    = 0x030022;
+    BroadCastEntityBattleDataUpdate   = 0x030023;
 
 
 

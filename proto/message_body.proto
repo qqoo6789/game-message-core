@@ -84,6 +84,7 @@ message Envelope {
     BroadCastEntityProfileUpdateResponse    broad_cast_entity_profile_update_response = 0x030019;
     BroadCastMonsterDeathResponse           broad_cast_monster_death_response         = 0x030021;
     BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response  = 0x030022;
+    BroadCastEntityBattleDataUpdateResponse    broad_cast_entity_battle_data_update_response = 0x030023;
                                    
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -215,6 +216,11 @@ message BroadCastMonsterDeathResponse{
   int32                 cid = 4; 
   Vector3               pos = 5;
   repeated ItemBaseInfo drop_list = 6;
+}
+
+message BroadCastEntityBattleDataUpdateResponse {
+  EntityId entity_id = 1;
+  bool isInBattle = 2;
 }
 
 message  UpgradePlayerLevelRequest{}

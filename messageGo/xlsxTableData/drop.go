@@ -7,10 +7,10 @@ import (
 
 // 掉落物配置.
 type DropData struct {
-	ObjectCid   int32 `json:"objectCid"`
+	Cid         int32 `json:"cid"`
+	Quality     int32 `json:"quality"`     // 品质定值
+	Possibility int32 `json:"possibility"` // 万份比例
 	Num         int32 `json:"num"`
-	Possibility int32 `json:"possibility"` // 宝箱触发万份比例
-	Quality     int32 `json:"quality"`     // 品质  1~5
 }
 
 type DropList struct {

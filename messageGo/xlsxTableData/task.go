@@ -28,7 +28,7 @@ type TaskTableRow struct {
 	TargetPosJson   string `gorm:"type:text" json:"targetPosJson"`
 	QuizJson        string `gorm:"type:text" json:"quizJson"`
 	RequestLand     int32  `json:"requestLand"`
-	RewardItemsJson string `gorm:"type:text" json:"rewardItemsJson"`
+	RewardId        int32  `json:"rewardId"`
 	RewardExp       int32  `json:"rewardExp"`
 	Difficulty      int32  `json:"difficulty"`
 
@@ -39,7 +39,6 @@ type TaskTableRow struct {
 	KillMonster *TaskObjectList `gorm:"-" json:"-"`
 	TargetPos   *TaskObjectList `gorm:"-" json:"-"`
 	Quiz        *TaskObjectList `gorm:"-" json:"-"`
-	RewardItems *TaskObjectList `gorm:"-" json:"-"`
 }
 
 func marshal(objs *TaskObjectList) ([]byte, error) {
@@ -118,16 +117,4 @@ func (p *TaskTableRow) GetQuiz() *TaskObjectList {
 		p.Quiz, _ = unMarshal(p.QuizJson)
 	}
 	return p.Quiz
-}
-
-func (p *TaskTableRow) SetRewardItems(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.RewardItemsJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetRewardItems() *TaskObjectList {
-	if p.RewardItems == nil {
-		p.RewardItems, _ = unMarshal(p.RewardItemsJson)
-	}
-	return p.RewardItems
 }

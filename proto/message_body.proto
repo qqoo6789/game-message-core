@@ -219,8 +219,8 @@ message BroadCastMonsterDeathResponse{
 }
 
 message BroadCastEntityBattleDataUpdateResponse {
-  EntityId entity_id = 1;
-  bool isInBattle = 2;
+  EntityId    entity_id = 1;
+  bool        isInBattle = 2;
 }
 
 message  UpgradePlayerLevelRequest{}

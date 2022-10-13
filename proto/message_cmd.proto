@@ -50,22 +50,22 @@ enum EnvelopeType {
     CreatePlayer                    = 0x020003;   
 
     //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
-    EnterMap                       = 0x030001;
-    UpdateSelfLocation             = 0x030003;
-    UseSkill                       = 0x030005;
-    PickFallingObject              = 0x030007;
-    RespawnPlayer                  = 0x030009;
-    BroadCastInitMapElement        = 0x030011;
-    BroadCastMapEntityUpdate       = 0x030012;
-    BroadCastEntityDestroy         = 0x030013;
-    BroadCastEntityMove            = 0x030014;
-    BroadCastEntityCombat          = 0x030015;
-    BroadCastRespawnPlayer         = 0x030016;
-    Teleport                       = 0x030017;
-    BroadCastEntityProfileUpdate   = 0x030019;
-    BroadCastMonsterDeath          = 0x030021;
-    BroadCastEntityAvatarUpdate    = 0x030022;
-    BroadCastEntityBattleDataUpdate   = 0x030023;
+    EnterMap                        = 0x030001;
+    UpdateSelfLocation              = 0x030003;
+    UseSkill                        = 0x030005;
+    PickFallingObject               = 0x030007;
+    RespawnPlayer                   = 0x030009;
+    BroadCastInitMapElement         = 0x030011;
+    BroadCastMapEntityUpdate        = 0x030012;
+    BroadCastEntityDestroy          = 0x030013;
+    BroadCastEntityMove             = 0x030014;
+    BroadCastEntityCombat           = 0x030015;
+    BroadCastRespawnPlayer          = 0x030016;
+    Teleport                        = 0x030017;
+    BroadCastEntityProfileUpdate    = 0x030019;
+    BroadCastMonsterDeath           = 0x030021;
+    BroadCastEntityAvatarUpdate     = 0x030022;
+    BroadCastEntityBattleDataUpdate = 0x030023;
 
 
 

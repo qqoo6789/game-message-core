@@ -2,10 +2,12 @@ package grpc
 
 type AppId string
 
-const AppIdMelandServiceManager AppId = "meland-service-manager"
-const AppIdMelandServiceMain AppId = "meland-service-main"
-const AppIdMelandServiceAccount AppId = "meland-service-account"
-const AppIdMelandServiceTask AppId = "meland-service-task"
-const AppIdMelandServiceChat AppId = "meland-service-chat"
-const AppIdMelandServiceSceneXX AppId = "meland-service-scene-xx" // xx为动态ID
-const AppIdMelandServiceAgentXX AppId = "meland-service-agent-xx" // xx为动态ID
+const (
+	GAME_SERVICE_APPID_MANAGER  AppId = "game-service-manager"
+	GAME_SERVICE_APPID_MAIN     AppId = "game-service-main"
+	GAME_SERVICE_APPID_ACCOUNT  AppId = "game-service-account"
+	GAME_SERVICE_APPID_TASK     AppId = "game-service-task"
+	GAME_SERVICE_APPID_CHAT     AppId = "game-service-chat"
+	GAME_SERVICE_APPID_SCENE_XX AppId = "game-service-scene-xx" // xx为动态ID
+	GAME_SERVICE_APPID_AGENT_XX AppId = "game-service-agent-xx" // xx为动态ID
+)

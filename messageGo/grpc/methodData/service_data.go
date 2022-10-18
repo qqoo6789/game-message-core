@@ -5,8 +5,6 @@ import "game-message-core/proto"
 // 服务信息用于服务 注册和释放
 type ServiceDataInput struct {
 	MsgVersion  int64             `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
-	Id          int64             `json:"id"`
-	Name        string            `json:"name"`
 	AppId       string            `json:"appId"`
 	ServiceType proto.ServiceType `json:"serviceType"`
 	Host        string            `json:"host"`

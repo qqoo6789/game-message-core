@@ -13,8 +13,10 @@ enum EntityType {
   EntityTypeFallingObject = 3;
   // 客户端专用，主角
   MainPlayer = 4; 
-
+  // npc
+  EntityTypeNpc = 5;
   // 最大值
-  EntityTypeMax = 5;
+  EntityTypeMax = 6;
+
 }
 

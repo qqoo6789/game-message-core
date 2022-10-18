@@ -24,11 +24,11 @@ namespace GameMessageCore {
     static EntityTypeDefineReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqjAEK",
+            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqnwEK",
             "CkVudGl0eVR5cGUSEQoNRW50aXR5VHlwZUFsbBAAEhQKEEVudGl0eVR5cGVQ",
             "bGF5ZXIQARIVChFFbnRpdHlUeXBlTW9uc3RlchACEhsKF0VudGl0eVR5cGVG",
-            "YWxsaW5nT2JqZWN0EAMSDgoKTWFpblBsYXllchAEEhEKDUVudGl0eVR5cGVN",
-            "YXgQBWIGcHJvdG8z"));
+            "YWxsaW5nT2JqZWN0EAMSDgoKTWFpblBsYXllchAEEhEKDUVudGl0eVR5cGVO",
+            "cGMQBRIRCg1FbnRpdHlUeXBlTWF4EAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityType), }, null, null));
@@ -56,9 +56,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("MainPlayer")] MainPlayer = 4,
     /// <summary>
+    /// npc
+    /// </summary>
+    [pbr::OriginalName("EntityTypeNpc")] Npc = 5,
+    /// <summary>
     /// 最大值
     /// </summary>
-    [pbr::OriginalName("EntityTypeMax")] Max = 5,
+    [pbr::OriginalName("EntityTypeMax")] Max = 6,
   }
 
   #endregion

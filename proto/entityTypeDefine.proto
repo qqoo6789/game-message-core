@@ -9,14 +9,14 @@ enum EntityType {
   EntityTypePlayer = 1;
   // 怪物
   EntityTypeMonster = 2;
-  // 掉落物
-  EntityTypeFallingObject = 3;
-  // 客户端专用，主角
-  MainPlayer = 4; 
+  // 建造物
+  EntityTypeNftBuild = 3;
   // npc
-  EntityTypeNpc = 5;
-  // 最大值
-  EntityTypeMax = 6;
+  EntityTypeNpc = 4;
 
+  // 公共类型最大值  
+  EntityTypeMax = 5;
+  // 客户端专用，主角
+  MainPlayer = 999; 
 }
 

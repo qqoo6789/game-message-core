@@ -44,6 +44,17 @@ enum EnvelopeType {
     SigninPlayer                    = 0x010019;     // 登录角色
     SignOutPlayer                   = 0x010021;     // 角色退出游戏
     UpgradePlayerLevel              = 0x010023;     // 手动点击升级
+    QueryLands                      = 0x010025;     // 请求所有占地地块信息
+    BroadCastInitLand               = 0x010027;     // 请求QueryLands后地块数据分批次推送        
+    OccupyLand                      = 0x010029;     // 占地
+    Build                           = 0x010031;     // 建造
+    Recycling                       = 0x010033;     // 拆除
+    Charged                         = 0x010035;     // 充电charged
+    Harvest                         = 0x010037;     // 收获(harvest)自己建造物的产出(有电量的build) 
+    Collection                      = 0x010039;     // 采集/偷取(collection) 他人的或者自己的没电量的建造物产出 
+    BroadCastMultiUpLand            = 0x010041;     // 广播批量更新地格信息
+    SelfNftBuilds                   = 0x010043;     // 请求自己所有的建造物
+
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayer                     = 0x020001;
@@ -53,7 +64,6 @@ enum EnvelopeType {
     EnterMap                        = 0x030001;
     UpdateSelfLocation              = 0x030003;
     UseSkill                        = 0x030005;
-    PickFallingObject               = 0x030007;
     RespawnPlayer                   = 0x030009;
     BroadCastInitMapElement         = 0x030011;
     BroadCastMapEntityUpdate        = 0x030012;

@@ -14,6 +14,7 @@ import "skill.proto";
 import "task.proto";
 import "chat.proto";
 import "vector.proto";
+import "land.proto";
 
 
 
@@ -54,6 +55,26 @@ message Envelope {
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
     UpgradePlayerLevelRequest         upgrade_player_level_request          = 0x010023;
     UpgradePlayerLevelResponse        upgrade_player_level_response         = 0x010024;
+    QueryLandsRequest                 query_lands_request                   = 0x010025;
+    QueryLandsResponse                query_lands_response                  = 0x010026;
+    BroadCastInitLandResponse         broadcast_init_land_response          = 0x010027;
+    OccupyLandRequest                 occupy_land_request                   = 0x010029;
+    OccupyLandResponse                occupy_land_response                  = 0x010030;         
+    BuildRequest                      build_request                         = 0x010031;
+    BuildResponse                     build_response                        = 0x010032;         
+    RecyclingRequest                  recycling_request                     = 0x010033;
+    RecyclingResponse                 recycling_response                    = 0x010034;         
+    ChargedRequest                    charged_request                       = 0x010035;
+    ChargedResponse                   charged_response                      = 0x010036;
+    HarvestRequest                    harvest_request                       = 0x010037;
+    HarvestResponse                   harvest_response                      = 0x010038;         
+    CollectionRequest                 collection_request                    = 0x010039;         
+    CollectionResponse                collection_response                   = 0x010040;         
+    BroadCastMultiUpLandResponse      broad_cast_multi_up_land_response     = 0x010041; 
+    SelfNftBuildsRequest              self_nft_builds_request               = 0x010043;         
+    SelfNftBuildsResponse             self_nft_builds_response              = 0x010044; 
+
+
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -68,9 +89,7 @@ message Envelope {
     UpdateSelfLocationRequest         update_self_location_request          = 0x030003;
     UpdateSelfLocationResponse        update_self_location_response         = 0x030004;
     UseSkillRequest                   use_skill_request                     = 0x030005;
-    UseSkillResponse                  use_skill_response                    = 0x030006;
-    PickFallingObjectRequest          pick_falling_object_request           = 0x030007;
-    PickFallingObjectResponse         pick_falling_object_response          = 0x030008;
+    UseSkillResponse                  use_skill_response                    = 0x030006; 
     RespawnPlayerRequest              respawn_player_request                = 0x030009;
     RespawnPlayerResponse             respawn_player_response               = 0x030010;
     BroadCastInitMapElementResponse   broad_cast_init_map_element_response  = 0x030011;
@@ -229,6 +248,59 @@ message  UpgradePlayerLevelResponse{
   int64  cur_exp   = 2;
 }
 
+
+// 占地相关
+message QueryLandsRequest{}
+message QueryLandsResponse{}
+message BroadCastInitLandResponse{
+  repeated LandData lands = 1;
+}
+message OccupyLandRequest{
+  int32       landId = 1;
+  int32       x = 2;
+  int32       z = 3; 
+}
+message OccupyLandResponse{}
+message BuildRequest{
+  string          nftId = 1;
+  Vector3         postion = 2;
+  repeated int32  landIds = 3; 
+}
+message BuildResponse{}
+message RecyclingRequest{
+  int64       buildId = 1; // == entity Id
+  string      nftId   = 2;  
+}
+message RecyclingResponse{}
+message ChargedRequest{
+  int64       buildId = 1;
+  string      nftId   = 2;  
+  int32       num     = 3;
+}
+message ChargedResponse{}
+message HarvestRequest{
+  int64       buildId = 1;
+  string      nftId   = 2;  
+}
+message HarvestResponse{}
+message CollectionRequest{
+  int64       buildId = 1;
+  string      nftId   = 2;  
+}
+message CollectionResponse{}
+
+message BroadCastMultiUpLandResponse{
+  repeated LandData lands = 1;
+}
+
+message SelfNftBuildsRequest{ 
+}
+message SelfNftBuildsResponse{
+  repeated NftBuild builds = 1;
+}
+
+
+
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerRequest {
   string          token = 1; 
@@ -280,17 +352,7 @@ message UseSkillRequest {
   int32           combo_index = 5;
 }
 message UseSkillResponse {
-}
-// 拾取一个掉落物
-message PickFallingObjectRequest {
-  int64           falling_object_id = 1;
-}
-message PickFallingObjectResponse {
-  // 拾取到的掉落物记录
-  FallingObject   falling_objects = 1;
-  // 拾取的玩家
-  Player          pickup_player = 2;
-}
+} 
 message RespawnPlayerRequest {
   PlayerRespawnPoint respawn_point = 1;
 }
@@ -311,14 +373,7 @@ message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体
   bool     final = 2; // 是否最后一个包
-}
-// 实体拾取掉落推送
-message BroadCastFallingObjectPickedResponse {
-  // 拾取到的掉落物记录
-  repeated FallingObject  falling_objects = 1;
-  // 拾取的实体
-  EntityId                entity_id = 2;
-}
+} 
 message BroadCastMapEntityUpdateResponse{
   // 视野内新增的实体列表
   repeated EntityWithLocation entity_added = 1;

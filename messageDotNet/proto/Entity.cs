@@ -29,57 +29,59 @@ namespace GameMessageCore {
             "GgxwbGF5ZXIucHJvdG8aCml0ZW0ucHJvdG8iQQoIRW50aXR5SWQSKQoEdHlw",
             "ZRgBIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlUeXBlEgoKAmlkGAIg",
             "ASgDIkcKDkVudGl0eUxvY2F0aW9uEg4KBm1hcF9pZBgBIAEoBRIlCgNsb2MY",
-            "AiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyKBAgoSRW50aXR5V2l0",
+            "AiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyLzAQoSRW50aXR5V2l0",
             "aExvY2F0aW9uEioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
             "RW50aXR5SWQSKQoGcGxheWVyGAogASgLMhcuZ2FtZU1lc3NhZ2VDb3JlLlBs",
             "YXllckgAEisKB21vbnN0ZXIYCyABKAsyGC5nYW1lTWVzc2FnZUNvcmUuTW9u",
-            "c3RlckgAEjgKDmZhbGxpbmdfb2JqZWN0GAwgASgLMh4uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkZhbGxpbmdPYmplY3RIABIjCgNucGMYDSABKAsyFC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuTnBjSABCCAoGZW50aXR5Ir4CCgZQbGF5ZXISMgoJYmFzZV9kYXRh",
-            "GAEgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckJhc2VEYXRhEi8KB3By",
-            "b2ZpbGUYAiABKAsyHi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5UHJvZmlsZRIu",
-            "CgdhdmF0YXJzGAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckF2YXRh",
-            "chIOCgZhY3RpdmUYBCABKAgSDgoGbWFwX2lkGAUgASgFEioKCHBvc2l0aW9u",
-            "GAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGlyGAcgASgL",
-            "MhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSLAoJZW50aXR5X2NkGAggASgL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUNEIrYBCgdNb25zdGVyEgsKA2Np",
-            "ZBgBIAEoBRIKCgJpZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSLwoHcHJvZmls",
-            "ZRgEIAEoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlQcm9maWxlEioKCHBv",
-            "c2l0aW9uGAUgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGly",
-            "GAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMisgEKA05wYxILCgNj",
-            "aWQYASABKAUSCgoCaWQYAiABKAMSDgoGYWN0aXZlGAMgASgIEi8KB3Byb2Zp",
-            "bGUYBCABKAsyHi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5UHJvZmlsZRIqCghw",
-            "b3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2Rp",
-            "chgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzIqgBCg1GYWxsaW5n",
-            "T2JqZWN0EgsKA2NpZBgBIAEoBRIKCgJpZBgCIAEoAxILCgNudW0YAyABKAUS",
-            "DQoFb3duZXIYBCABKAMSKgoIcG9zaXRpb24YBSABKAsyGC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUu",
-            "VmVjdG9yMxIPCgdxdWFsaXR5GAcgASgFIlIKDkVudGl0eU1vdmVTdGVwEjEK",
-            "CGxvY2F0aW9uGAEgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUxvY2F0",
-            "aW9uEg0KBXN0YW1wGAIgASgDIv8BCg5FbnRpdHlNb3ZlbWVudBIqCgd0eXBl",
-            "X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEjUKDGN1cl9s",
-            "b2NhdGlvbhgCIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlU3Rl",
-            "cBI2Cg1kZXN0X2xvY2F0aW9uGAMgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVu",
-            "dGl0eU1vdmVTdGVwEisKBHR5cGUYBSABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
-            "TW92ZW1lbnRUeXBlEiUKA0RpchgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5W",
-            "ZWN0b3IzInoKCEVudGl0eUNEEjUKDXNraWxsX2NkX2xpc3QYASADKAsyHi5n",
-            "YW1lTWVzc2FnZUNvcmUuRW50aXR5U2tpbGxDRBI3Cg5leHRlbmRfY2RfbGlz",
-            "dBgCIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlFeHRlbmRDRCIvCg1F",
-            "bnRpdHlTa2lsbENEEhAKCHNraWxsX2lkGAEgASgFEgwKBHRpbWUYAiABKAMi",
-            "LAoORW50aXR5RXh0ZW5kQ0QSDAoEdHlwZRgBIAEoBRIMCgR0aW1lGAIgASgD",
-            "KmgKDE1vdmVtZW50VHlwZRIXChNNb3ZlbWVudFR5cGVVbmtub3duEAASFAoQ",
-            "TW92ZW1lbnRUeXBlV2FsaxABEhMKD01vdmVtZW50VHlwZVJ1bhACEhQKEE1v",
-            "dmVtZW50VHlwZUlkbGUQA2IGcHJvdG8z"));
+            "c3RlckgAEioKBWJ1aWxkGAwgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLk5mdEJ1",
+            "aWxkSAASIwoDbnBjGA0gASgLMhQuZ2FtZU1lc3NhZ2VDb3JlLk5wY0gAQggK",
+            "BmVudGl0eSK+AgoGUGxheWVyEjIKCWJhc2VfZGF0YRgBIAEoCzIfLmdhbWVN",
+            "ZXNzYWdlQ29yZS5QbGF5ZXJCYXNlRGF0YRIvCgdwcm9maWxlGAIgASgLMh4u",
+            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eVByb2ZpbGUSLgoHYXZhdGFycxgDIAMo",
+            "CzIdLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBdmF0YXISDgoGYWN0aXZlGAQg",
+            "ASgIEg4KBm1hcF9pZBgFIAEoBRIqCghwb3NpdGlvbhgGIAEoCzIYLmdhbWVN",
+            "ZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2RpchgHIAEoCzIYLmdhbWVNZXNzYWdl",
+            "Q29yZS5WZWN0b3IzEiwKCWVudGl0eV9jZBgIIAEoCzIZLmdhbWVNZXNzYWdl",
+            "Q29yZS5FbnRpdHlDRCK2AQoHTW9uc3RlchILCgNjaWQYASABKAUSCgoCaWQY",
+            "AiABKAMSDgoGYWN0aXZlGAMgASgIEi8KB3Byb2ZpbGUYBCABKAsyHi5nYW1l",
+            "TWVzc2FnZUNvcmUuRW50aXR5UHJvZmlsZRIqCghwb3NpdGlvbhgFIAEoCzIY",
+            "LmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2RpchgGIAEoCzIYLmdhbWVN",
+            "ZXNzYWdlQ29yZS5WZWN0b3IzIrIBCgNOcGMSCwoDY2lkGAEgASgFEgoKAmlk",
+            "GAIgASgDEg4KBmFjdGl2ZRgDIAEoCBIvCgdwcm9maWxlGAQgASgLMh4uZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLkVudGl0eVByb2ZpbGUSKgoIcG9zaXRpb24YBSABKAsy",
+            "GC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1l",
+            "TWVzc2FnZUNvcmUuVmVjdG9yMyKhAgoITmZ0QnVpbGQSCgoCaWQYASABKAMS",
+            "CwoDY2lkGAIgASgFEg8KB2Zyb21OZnQYAyABKAkSDQoFb3duZXIYBCABKAMS",
+            "DwoHbGFuZElkcxgFIAMoBRIqCghwb3NpdGlvbhgGIAEoCzIYLmdhbWVNZXNz",
+            "YWdlQ29yZS5WZWN0b3IzEiUKA2RpchgHIAEoCzIYLmdhbWVNZXNzYWdlQ29y",
+            "ZS5WZWN0b3IzEhMKC2VsZWN0cmljRW5kGAggASgFEhYKDnByb2R1Y2VCZWdp",
+            "bkF0GAkgASgFEhgKEGhhcnZlc3RJdGVtQ291bnQYCiABKAUSGwoTY29sbGVj",
+            "dGlvbkl0ZW1Db3VudBgLIAEoBRIUCgxjb2xsZWN0aW9uQXQYDCABKAUiUgoO",
+            "RW50aXR5TW92ZVN0ZXASMQoIbG9jYXRpb24YASABKAsyHy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5TG9jYXRpb24SDQoFc3RhbXAYAiABKAMi/wEKDkVudGl0",
+            "eU1vdmVtZW50EioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
+            "RW50aXR5SWQSNQoMY3VyX2xvY2F0aW9uGAIgASgLMh8uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkVudGl0eU1vdmVTdGVwEjYKDWRlc3RfbG9jYXRpb24YAyABKAsyHy5n",
+            "YW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASKwoEdHlwZRgFIAEoDjId",
+            "LmdhbWVNZXNzYWdlQ29yZS5Nb3ZlbWVudFR5cGUSJQoDRGlyGAYgASgLMhgu",
+            "Z2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiegoIRW50aXR5Q0QSNQoNc2tpbGxf",
+            "Y2RfbGlzdBgBIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlTa2lsbENE",
+            "EjcKDmV4dGVuZF9jZF9saXN0GAIgAygLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVu",
+            "dGl0eUV4dGVuZENEIi8KDUVudGl0eVNraWxsQ0QSEAoIc2tpbGxfaWQYASAB",
+            "KAUSDAoEdGltZRgCIAEoAyIsCg5FbnRpdHlFeHRlbmRDRBIMCgR0eXBlGAEg",
+            "ASgFEgwKBHRpbWUYAiABKAMqaAoMTW92ZW1lbnRUeXBlEhcKE01vdmVtZW50",
+            "VHlwZVVua25vd24QABIUChBNb3ZlbWVudFR5cGVXYWxrEAESEwoPTW92ZW1l",
+            "bnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityId), global::GameMessageCore.EntityId.Parser, new[]{ "Type", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityLocation), global::GameMessageCore.EntityLocation.Parser, new[]{ "MapId", "Loc" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityWithLocation), global::GameMessageCore.EntityWithLocation.Parser, new[]{ "TypeId", "Player", "Monster", "FallingObject", "Npc" }, new[]{ "Entity" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityWithLocation), global::GameMessageCore.EntityWithLocation.Parser, new[]{ "TypeId", "Player", "Monster", "Build", "Npc" }, new[]{ "Entity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Player), global::GameMessageCore.Player.Parser, new[]{ "BaseData", "Profile", "Avatars", "Active", "MapId", "Position", "Dir", "EntityCd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Npc), global::GameMessageCore.Npc.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.FallingObject), global::GameMessageCore.FallingObject.Parser, new[]{ "Cid", "Id", "Num", "Owner", "Position", "Dir", "Quality" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "ProduceBeginAt", "HarvestItemCount", "CollectionItemCount", "CollectionAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMoveStep), global::GameMessageCore.EntityMoveStep.Parser, new[]{ "Location", "Stamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMovement), global::GameMessageCore.EntityMovement.Parser, new[]{ "TypeId", "CurLocation", "DestLocation", "Type", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityCD), global::GameMessageCore.EntityCD.Parser, new[]{ "SkillCdList", "ExtendCdList" }, null, null, null, null),
@@ -619,8 +621,8 @@ namespace GameMessageCore {
         case EntityOneofCase.Monster:
           Monster = other.Monster.Clone();
           break;
-        case EntityOneofCase.FallingObject:
-          FallingObject = other.FallingObject.Clone();
+        case EntityOneofCase.Build:
+          Build = other.Build.Clone();
           break;
         case EntityOneofCase.Npc:
           Npc = other.Npc.Clone();
@@ -672,15 +674,15 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "falling_object" field.</summary>
-    public const int FallingObjectFieldNumber = 12;
+    /// <summary>Field number for the "build" field.</summary>
+    public const int BuildFieldNumber = 12;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.FallingObject FallingObject {
-      get { return entityCase_ == EntityOneofCase.FallingObject ? (global::GameMessageCore.FallingObject) entity_ : null; }
+    public global::GameMessageCore.NftBuild Build {
+      get { return entityCase_ == EntityOneofCase.Build ? (global::GameMessageCore.NftBuild) entity_ : null; }
       set {
         entity_ = value;
-        entityCase_ = value == null ? EntityOneofCase.None : EntityOneofCase.FallingObject;
+        entityCase_ = value == null ? EntityOneofCase.None : EntityOneofCase.Build;
       }
     }
 
@@ -702,7 +704,7 @@ namespace GameMessageCore {
       None = 0,
       Player = 10,
       Monster = 11,
-      FallingObject = 12,
+      Build = 12,
       Npc = 13,
     }
     private EntityOneofCase entityCase_ = EntityOneofCase.None;
@@ -737,7 +739,7 @@ namespace GameMessageCore {
       if (!object.Equals(TypeId, other.TypeId)) return false;
       if (!object.Equals(Player, other.Player)) return false;
       if (!object.Equals(Monster, other.Monster)) return false;
-      if (!object.Equals(FallingObject, other.FallingObject)) return false;
+      if (!object.Equals(Build, other.Build)) return false;
       if (!object.Equals(Npc, other.Npc)) return false;
       if (EntityCase != other.EntityCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -750,7 +752,7 @@ namespace GameMessageCore {
       if (typeId_ != null) hash ^= TypeId.GetHashCode();
       if (entityCase_ == EntityOneofCase.Player) hash ^= Player.GetHashCode();
       if (entityCase_ == EntityOneofCase.Monster) hash ^= Monster.GetHashCode();
-      if (entityCase_ == EntityOneofCase.FallingObject) hash ^= FallingObject.GetHashCode();
+      if (entityCase_ == EntityOneofCase.Build) hash ^= Build.GetHashCode();
       if (entityCase_ == EntityOneofCase.Npc) hash ^= Npc.GetHashCode();
       hash ^= (int) entityCase_;
       if (_unknownFields != null) {
@@ -783,9 +785,9 @@ namespace GameMessageCore {
         output.WriteRawTag(90);
         output.WriteMessage(Monster);
       }
-      if (entityCase_ == EntityOneofCase.FallingObject) {
+      if (entityCase_ == EntityOneofCase.Build) {
         output.WriteRawTag(98);
-        output.WriteMessage(FallingObject);
+        output.WriteMessage(Build);
       }
       if (entityCase_ == EntityOneofCase.Npc) {
         output.WriteRawTag(106);
@@ -813,9 +815,9 @@ namespace GameMessageCore {
         output.WriteRawTag(90);
         output.WriteMessage(Monster);
       }
-      if (entityCase_ == EntityOneofCase.FallingObject) {
+      if (entityCase_ == EntityOneofCase.Build) {
         output.WriteRawTag(98);
-        output.WriteMessage(FallingObject);
+        output.WriteMessage(Build);
       }
       if (entityCase_ == EntityOneofCase.Npc) {
         output.WriteRawTag(106);
@@ -840,8 +842,8 @@ namespace GameMessageCore {
       if (entityCase_ == EntityOneofCase.Monster) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Monster);
       }
-      if (entityCase_ == EntityOneofCase.FallingObject) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FallingObject);
+      if (entityCase_ == EntityOneofCase.Build) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Build);
       }
       if (entityCase_ == EntityOneofCase.Npc) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Npc);
@@ -877,11 +879,11 @@ namespace GameMessageCore {
           }
           Monster.MergeFrom(other.Monster);
           break;
-        case EntityOneofCase.FallingObject:
-          if (FallingObject == null) {
-            FallingObject = new global::GameMessageCore.FallingObject();
+        case EntityOneofCase.Build:
+          if (Build == null) {
+            Build = new global::GameMessageCore.NftBuild();
           }
-          FallingObject.MergeFrom(other.FallingObject);
+          Build.MergeFrom(other.Build);
           break;
         case EntityOneofCase.Npc:
           if (Npc == null) {
@@ -932,12 +934,12 @@ namespace GameMessageCore {
             break;
           }
           case 98: {
-            global::GameMessageCore.FallingObject subBuilder = new global::GameMessageCore.FallingObject();
-            if (entityCase_ == EntityOneofCase.FallingObject) {
-              subBuilder.MergeFrom(FallingObject);
+            global::GameMessageCore.NftBuild subBuilder = new global::GameMessageCore.NftBuild();
+            if (entityCase_ == EntityOneofCase.Build) {
+              subBuilder.MergeFrom(Build);
             }
             input.ReadMessage(subBuilder);
-            FallingObject = subBuilder;
+            Build = subBuilder;
             break;
           }
           case 106: {
@@ -990,12 +992,12 @@ namespace GameMessageCore {
             break;
           }
           case 98: {
-            global::GameMessageCore.FallingObject subBuilder = new global::GameMessageCore.FallingObject();
-            if (entityCase_ == EntityOneofCase.FallingObject) {
-              subBuilder.MergeFrom(FallingObject);
+            global::GameMessageCore.NftBuild subBuilder = new global::GameMessageCore.NftBuild();
+            if (entityCase_ == EntityOneofCase.Build) {
+              subBuilder.MergeFrom(Build);
             }
             input.ReadMessage(subBuilder);
-            FallingObject = subBuilder;
+            Build = subBuilder;
             break;
           }
           case 106: {
@@ -2314,18 +2316,18 @@ namespace GameMessageCore {
   }
 
   /// <summary>
-  /// 掉落物
+  /// 建造物
   /// </summary>
-  public sealed partial class FallingObject : pb::IMessage<FallingObject>
+  public sealed partial class NftBuild : pb::IMessage<NftBuild>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<FallingObject> _parser = new pb::MessageParser<FallingObject>(() => new FallingObject());
+    private static readonly pb::MessageParser<NftBuild> _parser = new pb::MessageParser<NftBuild>(() => new NftBuild());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<FallingObject> Parser { get { return _parser; } }
+    public static pb::MessageParser<NftBuild> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2341,7 +2343,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FallingObject() {
+    public NftBuild() {
       OnConstruction();
     }
 
@@ -2349,37 +2351,30 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FallingObject(FallingObject other) : this() {
-      cid_ = other.cid_;
+    public NftBuild(NftBuild other) : this() {
       id_ = other.id_;
-      num_ = other.num_;
+      cid_ = other.cid_;
+      fromNft_ = other.fromNft_;
       owner_ = other.owner_;
+      landIds_ = other.landIds_.Clone();
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
-      quality_ = other.quality_;
+      electricEnd_ = other.electricEnd_;
+      produceBeginAt_ = other.produceBeginAt_;
+      harvestItemCount_ = other.harvestItemCount_;
+      collectionItemCount_ = other.collectionItemCount_;
+      collectionAt_ = other.collectionAt_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FallingObject Clone() {
-      return new FallingObject(this);
-    }
-
-    /// <summary>Field number for the "cid" field.</summary>
-    public const int CidFieldNumber = 1;
-    private int cid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Cid {
-      get { return cid_; }
-      set {
-        cid_ = value;
-      }
+    public NftBuild Clone() {
+      return new NftBuild(this);
     }
 
     /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 2;
+    public const int IdFieldNumber = 1;
     private long id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2390,15 +2385,27 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "num" field.</summary>
-    public const int NumFieldNumber = 3;
-    private int num_;
+    /// <summary>Field number for the "cid" field.</summary>
+    public const int CidFieldNumber = 2;
+    private int cid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Num {
-      get { return num_; }
+    public int Cid {
+      get { return cid_; }
       set {
-        num_ = value;
+        cid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "fromNft" field.</summary>
+    public const int FromNftFieldNumber = 3;
+    private string fromNft_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FromNft {
+      get { return fromNft_; }
+      set {
+        fromNft_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2414,8 +2421,19 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "landIds" field.</summary>
+    public const int LandIdsFieldNumber = 5;
+    private static readonly pb::FieldCodec<int> _repeated_landIds_codec
+        = pb::FieldCodec.ForInt32(42);
+    private readonly pbc::RepeatedField<int> landIds_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> LandIds {
+      get { return landIds_; }
+    }
+
     /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 5;
+    public const int PositionFieldNumber = 6;
     private global::GameMessageCore.Vector3 position_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2427,11 +2445,8 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "dir" field.</summary>
-    public const int DirFieldNumber = 6;
+    public const int DirFieldNumber = 7;
     private global::GameMessageCore.Vector3 dir_;
-    /// <summary>
-    /// 方向（朝向）  
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.Vector3 Dir {
@@ -2441,43 +2456,108 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "quality" field.</summary>
-    public const int QualityFieldNumber = 7;
-    private int quality_;
+    /// <summary>Field number for the "electricEnd" field.</summary>
+    public const int ElectricEndFieldNumber = 8;
+    private int electricEnd_;
     /// <summary>
-    /// 品质
+    /// 电量过期时间 单位秒
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Quality {
-      get { return quality_; }
+    public int ElectricEnd {
+      get { return electricEnd_; }
       set {
-        quality_ = value;
+        electricEnd_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "produceBeginAt" field.</summary>
+    public const int ProduceBeginAtFieldNumber = 9;
+    private int produceBeginAt_;
+    /// <summary>
+    /// 开始产出时间(没电时清空) 单位秒 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ProduceBeginAt {
+      get { return produceBeginAt_; }
+      set {
+        produceBeginAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "harvestItemCount" field.</summary>
+    public const int HarvestItemCountFieldNumber = 10;
+    private int harvestItemCount_;
+    /// <summary>
+    /// 可收获的物品数量统计(没电时转移到采集) 单位秒 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HarvestItemCount {
+      get { return harvestItemCount_; }
+      set {
+        harvestItemCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "collectionItemCount" field.</summary>
+    public const int CollectionItemCountFieldNumber = 11;
+    private int collectionItemCount_;
+    /// <summary>
+    /// 可采集(偷取)物品数量统计 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CollectionItemCount {
+      get { return collectionItemCount_; }
+      set {
+        collectionItemCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "collectionAt" field.</summary>
+    public const int CollectionAtFieldNumber = 12;
+    private int collectionAt_;
+    /// <summary>
+    /// 下次可采集(偷取)的时间戳 单位秒 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CollectionAt {
+      get { return collectionAt_; }
+      set {
+        collectionAt_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as FallingObject);
+      return Equals(other as NftBuild);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(FallingObject other) {
+    public bool Equals(NftBuild other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Cid != other.Cid) return false;
       if (Id != other.Id) return false;
-      if (Num != other.Num) return false;
+      if (Cid != other.Cid) return false;
+      if (FromNft != other.FromNft) return false;
       if (Owner != other.Owner) return false;
+      if(!landIds_.Equals(other.landIds_)) return false;
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
-      if (Quality != other.Quality) return false;
+      if (ElectricEnd != other.ElectricEnd) return false;
+      if (ProduceBeginAt != other.ProduceBeginAt) return false;
+      if (HarvestItemCount != other.HarvestItemCount) return false;
+      if (CollectionItemCount != other.CollectionItemCount) return false;
+      if (CollectionAt != other.CollectionAt) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2485,13 +2565,18 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Id != 0L) hash ^= Id.GetHashCode();
-      if (Num != 0) hash ^= Num.GetHashCode();
+      if (Cid != 0) hash ^= Cid.GetHashCode();
+      if (FromNft.Length != 0) hash ^= FromNft.GetHashCode();
       if (Owner != 0L) hash ^= Owner.GetHashCode();
+      hash ^= landIds_.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
-      if (Quality != 0) hash ^= Quality.GetHashCode();
+      if (ElectricEnd != 0) hash ^= ElectricEnd.GetHashCode();
+      if (ProduceBeginAt != 0) hash ^= ProduceBeginAt.GetHashCode();
+      if (HarvestItemCount != 0) hash ^= HarvestItemCount.GetHashCode();
+      if (CollectionItemCount != 0) hash ^= CollectionItemCount.GetHashCode();
+      if (CollectionAt != 0) hash ^= CollectionAt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2510,33 +2595,50 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Cid != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cid);
-      }
       if (Id != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteInt64(Id);
       }
-      if (Num != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Num);
+      if (Cid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Cid);
+      }
+      if (FromNft.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(FromNft);
       }
       if (Owner != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(Owner);
       }
+      landIds_.WriteTo(output, _repeated_landIds_codec);
       if (position_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(50);
         output.WriteMessage(Position);
       }
       if (dir_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(Dir);
       }
-      if (Quality != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(Quality);
+      if (ElectricEnd != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(ElectricEnd);
+      }
+      if (ProduceBeginAt != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ProduceBeginAt);
+      }
+      if (HarvestItemCount != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(HarvestItemCount);
+      }
+      if (CollectionItemCount != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(CollectionItemCount);
+      }
+      if (CollectionAt != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(CollectionAt);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2548,33 +2650,50 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Cid != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cid);
-      }
       if (Id != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteInt64(Id);
       }
-      if (Num != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Num);
+      if (Cid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Cid);
+      }
+      if (FromNft.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(FromNft);
       }
       if (Owner != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(Owner);
       }
+      landIds_.WriteTo(ref output, _repeated_landIds_codec);
       if (position_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(50);
         output.WriteMessage(Position);
       }
       if (dir_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(Dir);
       }
-      if (Quality != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(Quality);
+      if (ElectricEnd != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(ElectricEnd);
+      }
+      if (ProduceBeginAt != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ProduceBeginAt);
+      }
+      if (HarvestItemCount != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(HarvestItemCount);
+      }
+      if (CollectionItemCount != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(CollectionItemCount);
+      }
+      if (CollectionAt != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(CollectionAt);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2586,26 +2705,39 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Cid != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cid);
-      }
       if (Id != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
       }
-      if (Num != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Num);
+      if (Cid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cid);
+      }
+      if (FromNft.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FromNft);
       }
       if (Owner != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Owner);
       }
+      size += landIds_.CalculateSize(_repeated_landIds_codec);
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
       if (dir_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Dir);
       }
-      if (Quality != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Quality);
+      if (ElectricEnd != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ElectricEnd);
+      }
+      if (ProduceBeginAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProduceBeginAt);
+      }
+      if (HarvestItemCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestItemCount);
+      }
+      if (CollectionItemCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionItemCount);
+      }
+      if (CollectionAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionAt);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2615,22 +2747,23 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(FallingObject other) {
+    public void MergeFrom(NftBuild other) {
       if (other == null) {
         return;
-      }
-      if (other.Cid != 0) {
-        Cid = other.Cid;
       }
       if (other.Id != 0L) {
         Id = other.Id;
       }
-      if (other.Num != 0) {
-        Num = other.Num;
+      if (other.Cid != 0) {
+        Cid = other.Cid;
+      }
+      if (other.FromNft.Length != 0) {
+        FromNft = other.FromNft;
       }
       if (other.Owner != 0L) {
         Owner = other.Owner;
       }
+      landIds_.Add(other.landIds_);
       if (other.position_ != null) {
         if (position_ == null) {
           Position = new global::GameMessageCore.Vector3();
@@ -2643,8 +2776,20 @@ namespace GameMessageCore {
         }
         Dir.MergeFrom(other.Dir);
       }
-      if (other.Quality != 0) {
-        Quality = other.Quality;
+      if (other.ElectricEnd != 0) {
+        ElectricEnd = other.ElectricEnd;
+      }
+      if (other.ProduceBeginAt != 0) {
+        ProduceBeginAt = other.ProduceBeginAt;
+      }
+      if (other.HarvestItemCount != 0) {
+        HarvestItemCount = other.HarvestItemCount;
+      }
+      if (other.CollectionItemCount != 0) {
+        CollectionItemCount = other.CollectionItemCount;
+      }
+      if (other.CollectionAt != 0) {
+        CollectionAt = other.CollectionAt;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2662,37 +2807,58 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Cid = input.ReadInt32();
-            break;
-          }
-          case 16: {
             Id = input.ReadInt64();
             break;
           }
-          case 24: {
-            Num = input.ReadInt32();
+          case 16: {
+            Cid = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            FromNft = input.ReadString();
             break;
           }
           case 32: {
             Owner = input.ReadInt64();
             break;
           }
-          case 42: {
+          case 42:
+          case 40: {
+            landIds_.AddEntriesFrom(input, _repeated_landIds_codec);
+            break;
+          }
+          case 50: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Position);
             break;
           }
-          case 50: {
+          case 58: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Dir);
             break;
           }
-          case 56: {
-            Quality = input.ReadInt32();
+          case 64: {
+            ElectricEnd = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            ProduceBeginAt = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            HarvestItemCount = input.ReadInt32();
+            break;
+          }
+          case 88: {
+            CollectionItemCount = input.ReadInt32();
+            break;
+          }
+          case 96: {
+            CollectionAt = input.ReadInt32();
             break;
           }
         }
@@ -2711,37 +2877,58 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Cid = input.ReadInt32();
-            break;
-          }
-          case 16: {
             Id = input.ReadInt64();
             break;
           }
-          case 24: {
-            Num = input.ReadInt32();
+          case 16: {
+            Cid = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            FromNft = input.ReadString();
             break;
           }
           case 32: {
             Owner = input.ReadInt64();
             break;
           }
-          case 42: {
+          case 42:
+          case 40: {
+            landIds_.AddEntriesFrom(ref input, _repeated_landIds_codec);
+            break;
+          }
+          case 50: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Position);
             break;
           }
-          case 50: {
+          case 58: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Dir);
             break;
           }
-          case 56: {
-            Quality = input.ReadInt32();
+          case 64: {
+            ElectricEnd = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            ProduceBeginAt = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            HarvestItemCount = input.ReadInt32();
+            break;
+          }
+          case 88: {
+            CollectionItemCount = input.ReadInt32();
+            break;
+          }
+          case 96: {
+            CollectionAt = input.ReadInt32();
             break;
           }
         }

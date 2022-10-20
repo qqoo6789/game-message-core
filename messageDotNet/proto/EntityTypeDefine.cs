@@ -24,11 +24,11 @@ namespace GameMessageCore {
     static EntityTypeDefineReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqnwEK",
+            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqmwEK",
             "CkVudGl0eVR5cGUSEQoNRW50aXR5VHlwZUFsbBAAEhQKEEVudGl0eVR5cGVQ",
-            "bGF5ZXIQARIVChFFbnRpdHlUeXBlTW9uc3RlchACEhsKF0VudGl0eVR5cGVG",
-            "YWxsaW5nT2JqZWN0EAMSDgoKTWFpblBsYXllchAEEhEKDUVudGl0eVR5cGVO",
-            "cGMQBRIRCg1FbnRpdHlUeXBlTWF4EAZiBnByb3RvMw=="));
+            "bGF5ZXIQARIVChFFbnRpdHlUeXBlTW9uc3RlchACEhYKEkVudGl0eVR5cGVO",
+            "ZnRCdWlsZBADEhEKDUVudGl0eVR5cGVOcGMQBBIRCg1FbnRpdHlUeXBlTWF4",
+            "EAUSDwoKTWFpblBsYXllchDnB2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityType), }, null, null));
@@ -48,21 +48,21 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("EntityTypeMonster")] Monster = 2,
     /// <summary>
-    /// 掉落物
+    /// 建造物
     /// </summary>
-    [pbr::OriginalName("EntityTypeFallingObject")] FallingObject = 3,
-    /// <summary>
-    /// 客户端专用，主角
-    /// </summary>
-    [pbr::OriginalName("MainPlayer")] MainPlayer = 4,
+    [pbr::OriginalName("EntityTypeNftBuild")] NftBuild = 3,
     /// <summary>
     /// npc
     /// </summary>
-    [pbr::OriginalName("EntityTypeNpc")] Npc = 5,
+    [pbr::OriginalName("EntityTypeNpc")] Npc = 4,
     /// <summary>
-    /// 最大值
+    /// 公共类型最大值  
     /// </summary>
-    [pbr::OriginalName("EntityTypeMax")] Max = 6,
+    [pbr::OriginalName("EntityTypeMax")] Max = 5,
+    /// <summary>
+    /// 客户端专用，主角
+    /// </summary>
+    [pbr::OriginalName("MainPlayer")] MainPlayer = 999,
   }
 
   #endregion

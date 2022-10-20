@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKt4ICgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKoEKCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -32,24 +32,28 @@ namespace GameMessageCore {
             "gAQSHQoXQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1T",
             "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhIKDFNpZ25pblBsYXll",
             "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSGAoSVXBncmFkZVBsYXllckxl",
-            "dmVsEKOABBIRCgtRdWVyeVBsYXllchCBgAgSEgoMQ3JlYXRlUGxheWVyEIOA",
-            "CBIOCghFbnRlck1hcBCBgAwSGAoSVXBkYXRlU2VsZkxvY2F0aW9uEIOADBIO",
-            "CghVc2VTa2lsbBCFgAwSFwoRUGlja0ZhbGxpbmdPYmplY3QQh4AMEhMKDVJl",
-            "c3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2FkQ2FzdEluaXRNYXBFbGVtZW50EJGA",
-            "DBIeChhCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGUQkoAMEhwKFkJyb2FkQ2Fz",
-            "dEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2FzdEVudGl0eU1vdmUQlIAM",
-            "EhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwSHAoWQnJvYWRDYXN0UmVz",
-            "cGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AMEiIKHEJyb2FkQ2FzdEVu",
-            "dGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsKFUJyb2FkQ2FzdE1vbnN0ZXJEZWF0",
-            "aBChgAwSIQobQnJvYWRDYXN0RW50aXR5QXZhdGFyVXBkYXRlEKKADBIlCh9C",
-            "cm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRlEKOADBIPCglTZWxmVGFz",
-            "a3MQgYAQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EIOAEBIQCgpBY2Nl",
-            "cHRUYXNrEIWAEBIVCg9BYmFuZG9ubWVudFRhc2sQh4AQEhAKClRhc2tSZXdh",
-            "cmQQiYAQEhQKDlRhc2tMaXN0UmV3YXJkEJGAEBIZChNVcGdyYWRlVGFza1By",
-            "b2dyZXNzEJOAEBIZChNCcm9hZENhc3RUYXNrUmV3YXJkEJWAEBIVCg9TZW5k",
-            "Q2hhdE1lc3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQS",
-            "IAoaQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2Fz",
-            "dFVwZGF0ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+            "dmVsEKOABBIQCgpRdWVyeUxhbmRzEKWABBIXChFCcm9hZENhc3RJbml0TGFu",
+            "ZBCngAQSEAoKT2NjdXB5TGFuZBCpgAQSCwoFQnVpbGQQsYAEEg8KCVJlY3lj",
+            "bGluZxCzgAQSDQoHQ2hhcmdlZBC1gAQSDQoHSGFydmVzdBC3gAQSEAoKQ29s",
+            "bGVjdGlvbhC5gAQSGgoUQnJvYWRDYXN0TXVsdGlVcExhbmQQwYAEEhMKDVNl",
+            "bGZOZnRCdWlsZHMQw4AEEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQ",
+            "bGF5ZXIQg4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRp",
+            "b24Qg4AMEg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImADBId",
+            "ChdCcm9hZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFw",
+            "RW50aXR5VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOA",
+            "DBIZChNCcm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRp",
+            "dHlDb21iYXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4K",
+            "CFRlbGVwb3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRl",
+            "EJmADBIbChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2Fz",
+            "dEVudGl0eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0",
+            "dGxlRGF0YVVwZGF0ZRCjgAwSDwoJU2VsZlRhc2tzEIGAEBIdChdCcm9hZENh",
+            "c3RVcGRhdGVUYXNrTGlzdBCDgBASEAoKQWNjZXB0VGFzaxCFgBASFQoPQWJh",
+            "bmRvbm1lbnRUYXNrEIeAEBIQCgpUYXNrUmV3YXJkEImAEBIUCg5UYXNrTGlz",
+            "dFJld2FyZBCRgBASGQoTVXBncmFkZVRhc2tQcm9ncmVzcxCTgBASGQoTQnJv",
+            "YWRDYXN0VGFza1Jld2FyZBCVgBASFQoPU2VuZENoYXRNZXNzYWdlEIGAFBIb",
+            "ChVCcm9hZENhc3RDaGF0TWVzc2FnZXMQg4AUEiAKGkJyb2FkQ2FzdFJlbW92",
+            "ZUNoYXRNZXNzYWdlEISAFBIeChhCcm9hZENhc3RVcGRhdGVDaGF0U3RhdGUQ",
+            "hYAUEgoKBFBpbmcQgYAYYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -108,6 +112,46 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("UpgradePlayerLevel")] UpgradePlayerLevel = 65571,
     /// <summary>
+    /// 请求所有占地地块信息
+    /// </summary>
+    [pbr::OriginalName("QueryLands")] QueryLands = 65573,
+    /// <summary>
+    /// 请求QueryLands后地块数据分批次推送        
+    /// </summary>
+    [pbr::OriginalName("BroadCastInitLand")] BroadCastInitLand = 65575,
+    /// <summary>
+    /// 占地
+    /// </summary>
+    [pbr::OriginalName("OccupyLand")] OccupyLand = 65577,
+    /// <summary>
+    /// 建造
+    /// </summary>
+    [pbr::OriginalName("Build")] Build = 65585,
+    /// <summary>
+    /// 拆除
+    /// </summary>
+    [pbr::OriginalName("Recycling")] Recycling = 65587,
+    /// <summary>
+    /// 充电charged
+    /// </summary>
+    [pbr::OriginalName("Charged")] Charged = 65589,
+    /// <summary>
+    /// 收获(harvest)自己建造物的产出(有电量的build) 
+    /// </summary>
+    [pbr::OriginalName("Harvest")] Harvest = 65591,
+    /// <summary>
+    /// 采集/偷取(collection) 他人的或者自己的没电量的建造物产出 
+    /// </summary>
+    [pbr::OriginalName("Collection")] Collection = 65593,
+    /// <summary>
+    /// 广播批量更新地格信息
+    /// </summary>
+    [pbr::OriginalName("BroadCastMultiUpLand")] BroadCastMultiUpLand = 65601,
+    /// <summary>
+    /// 请求自己所有的建造物
+    /// </summary>
+    [pbr::OriginalName("SelfNftBuilds")] SelfNftBuilds = 65603,
+    /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
@@ -118,7 +162,6 @@ namespace GameMessageCore {
     [pbr::OriginalName("EnterMap")] EnterMap = 196609,
     [pbr::OriginalName("UpdateSelfLocation")] UpdateSelfLocation = 196611,
     [pbr::OriginalName("UseSkill")] UseSkill = 196613,
-    [pbr::OriginalName("PickFallingObject")] PickFallingObject = 196615,
     [pbr::OriginalName("RespawnPlayer")] RespawnPlayer = 196617,
     [pbr::OriginalName("BroadCastInitMapElement")] BroadCastInitMapElement = 196625,
     [pbr::OriginalName("BroadCastMapEntityUpdate")] BroadCastMapEntityUpdate = 196626,

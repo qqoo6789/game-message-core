@@ -30,7 +30,7 @@ message EntityWithLocation {
   oneof entity {
     Player        player = 10;
     Monster       monster = 11;
-    FallingObject falling_object = 12;
+    NftBuild      build = 12;
     Npc           npc = 13;
   }
 }
@@ -44,7 +44,7 @@ message Player {
   Vector3               position = 6; 
   Vector3               dir = 7;
   //实体cd数据
-  EntityCD entity_cd = 8;      
+  EntityCD              entity_cd = 8;      
   // repeated bian.proto.EntityBuff buff_list = 28;
 }
 
@@ -66,15 +66,25 @@ message Npc {
   Vector3       dir = 6;    // 方向（朝向）
 }
 
-// 掉落物
-message FallingObject {
-  int32         cid = 1;
-  int64         id  = 2; 
-  int32         num = 3; 
-  int64         owner = 4;
-  Vector3       position = 5;
-  Vector3       dir = 6;        // 方向（朝向）  
-  int32         quality = 7;    // 品质
+// 建造物
+message NftBuild {
+  int64           id  = 1; 
+  int32           cid = 2;
+  string          fromNft = 3;
+  int64           owner = 4;
+  repeated int32  landIds = 5;      
+  Vector3         position = 6;
+  Vector3         dir = 7;  
+  // 电量过期时间 单位秒
+  int32           electricEnd = 8; 
+  // 开始产出时间(没电时清空) 单位秒 
+  int32           produceBeginAt = 9;
+  // 可收获的物品数量统计(没电时转移到采集) 单位秒 
+  int32           harvestItemCount = 10;
+  // 可采集(偷取)物品数量统计 
+  int32           collectionItemCount = 11;
+  // 下次可采集(偷取)的时间戳 单位秒 
+  int32           collectionAt = 12;
 }
 
 /// ************************* move info ***************************************************

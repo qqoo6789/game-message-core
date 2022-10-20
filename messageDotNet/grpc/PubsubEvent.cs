@@ -25,5 +25,18 @@ public static class SubscriptionEvent
     /// </summary>
     public const string USER_ENTER_GAME = "EventTopicUserEnterGame";
 
+    /// <summary>
+    /// add nft build event
+    /// </summary>
+    public const string NFT_BUILD_ADD = "EventTopicNftBuildAdd";
+
+    /// <summary>
+    /// update nft build event
+    /// </summary>
+    public const string NFT_BUILD_UPDATE = "EventTopicNftBuildUpdate";
+    /// <summary>
+    /// remove nft build event
+    /// </summary>
+    public const string NFT_BUILD_REMOVE = "EventTopicNftBuildRemove";
 
 }

@@ -25,6 +25,22 @@ public static class ManagerServiceAction
 }
 
 /// <summary>
+///  main service call method API name
+/// </summary>
+public static class MainServiceAction
+{
+    /// <summary>
+    /// 扣除nft
+    /// </summary>
+    public const string TAKE_NFT = "MainServiceActionTakeNFT";
+    /// <summary>
+    /// 获取所有建造物数据 for main service
+    /// </summary>
+    public const string GET_ALL_BUILD = "MainServiceActionGetAllBuild";
+
+}
+
+/// <summary>
 /// MELAND proto message Action calls method name 
 /// </summary>
 public static class ProtoMessageAction

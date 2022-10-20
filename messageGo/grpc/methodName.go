@@ -12,7 +12,8 @@ const (
 type MainServiceAction string
 
 const (
-	MainServiceActionTakeNFT MainServiceAction = "MainServiceActionTakeNFT"
+	MainServiceActionTakeNFT     MainServiceAction = "MainServiceActionTakeNFT"
+	MainServiceActionGetAllBuild MainServiceAction = "MainServiceActionGetAllBuild"
 )
 
 type ProtoMessageAction string

@@ -267,7 +267,9 @@ message BuildRequest{
   Vector3         postion = 2;
   repeated int32  landIds = 3; 
 }
-message BuildResponse{}
+message BuildResponse{
+  NftBuild        build = 1;
+}
 message RecyclingRequest{
   int64       buildId = 1; // == entity Id
   string      nftId   = 2;  

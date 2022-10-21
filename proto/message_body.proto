@@ -57,7 +57,7 @@ message Envelope {
     UpgradePlayerLevelResponse        upgrade_player_level_response         = 0x010024;
     QueryLandsRequest                 query_lands_request                   = 0x010025;
     QueryLandsResponse                query_lands_response                  = 0x010026;
-    BroadCastInitLandResponse         broadcast_init_land_response          = 0x010027;
+    BroadCastInitLandResponse         broad_cast_init_land_response         = 0x010027;
     OccupyLandRequest                 occupy_land_request                   = 0x010029;
     OccupyLandResponse                occupy_land_response                  = 0x010030;         
     BuildRequest                      build_request                         = 0x010031;

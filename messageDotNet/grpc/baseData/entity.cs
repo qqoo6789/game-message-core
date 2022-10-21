@@ -83,7 +83,7 @@ public class GrpcNftBuild
     public long Id;
     public int Cid;
     public string FromNft;
-    public long owner;
+    public long Owner;
     public int[] LandIds;
     public GrpcVector3 Position;
     public GrpcVector3 Dir;

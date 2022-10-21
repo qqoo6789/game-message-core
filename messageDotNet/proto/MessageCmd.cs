@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKoEKCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKqEKCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -36,24 +36,25 @@ namespace GameMessageCore {
             "ZBCngAQSEAoKT2NjdXB5TGFuZBCpgAQSCwoFQnVpbGQQsYAEEg8KCVJlY3lj",
             "bGluZxCzgAQSDQoHQ2hhcmdlZBC1gAQSDQoHSGFydmVzdBC3gAQSEAoKQ29s",
             "bGVjdGlvbhC5gAQSGgoUQnJvYWRDYXN0TXVsdGlVcExhbmQQwYAEEhMKDVNl",
-            "bGZOZnRCdWlsZHMQw4AEEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQ",
-            "bGF5ZXIQg4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRp",
-            "b24Qg4AMEg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImADBId",
-            "ChdCcm9hZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFw",
-            "RW50aXR5VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOA",
-            "DBIZChNCcm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRp",
-            "dHlDb21iYXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4K",
-            "CFRlbGVwb3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRl",
-            "EJmADBIbChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2Fz",
-            "dEVudGl0eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0",
-            "dGxlRGF0YVVwZGF0ZRCjgAwSDwoJU2VsZlRhc2tzEIGAEBIdChdCcm9hZENh",
-            "c3RVcGRhdGVUYXNrTGlzdBCDgBASEAoKQWNjZXB0VGFzaxCFgBASFQoPQWJh",
-            "bmRvbm1lbnRUYXNrEIeAEBIQCgpUYXNrUmV3YXJkEImAEBIUCg5UYXNrTGlz",
-            "dFJld2FyZBCRgBASGQoTVXBncmFkZVRhc2tQcm9ncmVzcxCTgBASGQoTQnJv",
-            "YWRDYXN0VGFza1Jld2FyZBCVgBASFQoPU2VuZENoYXRNZXNzYWdlEIGAFBIb",
-            "ChVCcm9hZENhc3RDaGF0TWVzc2FnZXMQg4AUEiAKGkJyb2FkQ2FzdFJlbW92",
-            "ZUNoYXRNZXNzYWdlEISAFBIeChhCcm9hZENhc3RVcGRhdGVDaGF0U3RhdGUQ",
-            "hYAUEgoKBFBpbmcQgYAYYgZwcm90bzM="));
+            "bGZOZnRCdWlsZHMQw4AEEh4KGEJyb2FkQ2FzdFNlbGZCdWlsZFVwZGF0ZRDF",
+            "gAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCDgAgSDgoI",
+            "RW50ZXJNYXAQgYAMEhgKElVwZGF0ZVNlbGZMb2NhdGlvbhCDgAwSDgoIVXNl",
+            "U2tpbGwQhYAMEhMKDVJlc3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2FkQ2FzdElu",
+            "aXRNYXBFbGVtZW50EJGADBIeChhCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGUQ",
+            "koAMEhwKFkJyb2FkQ2FzdEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2Fz",
+            "dEVudGl0eU1vdmUQlIAMEhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwS",
+            "HAoWQnJvYWRDYXN0UmVzcGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AM",
+            "EiIKHEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsKFUJyb2Fk",
+            "Q2FzdE1vbnN0ZXJEZWF0aBChgAwSIQobQnJvYWRDYXN0RW50aXR5QXZhdGFy",
+            "VXBkYXRlEKKADBIlCh9Ccm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRl",
+            "EKOADBIPCglTZWxmVGFza3MQgYAQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tM",
+            "aXN0EIOAEBIQCgpBY2NlcHRUYXNrEIWAEBIVCg9BYmFuZG9ubWVudFRhc2sQ",
+            "h4AQEhAKClRhc2tSZXdhcmQQiYAQEhQKDlRhc2tMaXN0UmV3YXJkEJGAEBIZ",
+            "ChNVcGdyYWRlVGFza1Byb2dyZXNzEJOAEBIZChNCcm9hZENhc3RUYXNrUmV3",
+            "YXJkEJWAEBIVCg9TZW5kQ2hhdE1lc3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENo",
+            "YXRNZXNzYWdlcxCDgBQSIAoaQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQ",
+            "hIAUEh4KGEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCB",
+            "gBhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -151,6 +152,10 @@ namespace GameMessageCore {
     /// 请求自己所有的建造物
     /// </summary>
     [pbr::OriginalName("SelfNftBuilds")] SelfNftBuilds = 65603,
+    /// <summary>
+    /// 广播更新建造物数据,只广播给owner
+    /// </summary>
+    [pbr::OriginalName("BroadCastSelfBuildUpdate")] BroadCastSelfBuildUpdate = 65605,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

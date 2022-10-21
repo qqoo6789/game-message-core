@@ -48,30 +48,31 @@ const (
 	//保留id协议      : 0x00ZZZZ   ***********************************************
 	EnvelopeType_Unknown EnvelopeType = 0
 	//mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
-	EnvelopeType_ItemGet                 EnvelopeType = 65537
-	EnvelopeType_ItemUse                 EnvelopeType = 65539
-	EnvelopeType_ItemDrop                EnvelopeType = 65541
-	EnvelopeType_UpdateAvatar            EnvelopeType = 65543
-	EnvelopeType_UnloadAvatar            EnvelopeType = 65545
-	EnvelopeType_BroadCastItemAdd        EnvelopeType = 65553 // 添加道具
-	EnvelopeType_BroadCastItemUpdate     EnvelopeType = 65554 // 更新道具
-	EnvelopeType_BroadCastItemDel        EnvelopeType = 65555 // del道具
-	EnvelopeType_BroadCastUpdateItemSlot EnvelopeType = 65556 // 推送 玩家道具槽
-	EnvelopeType_GetItemSlot             EnvelopeType = 65557 // 查询 玩家道具槽信息
-	EnvelopeType_UpgradeItemSlot         EnvelopeType = 65559 // 升级 玩家道具槽
-	EnvelopeType_SigninPlayer            EnvelopeType = 65561 // 登录角色
-	EnvelopeType_SignOutPlayer           EnvelopeType = 65569 // 角色退出游戏
-	EnvelopeType_UpgradePlayerLevel      EnvelopeType = 65571 // 手动点击升级
-	EnvelopeType_QueryLands              EnvelopeType = 65573 // 请求所有占地地块信息
-	EnvelopeType_BroadCastInitLand       EnvelopeType = 65575 // 请求QueryLands后地块数据分批次推送
-	EnvelopeType_OccupyLand              EnvelopeType = 65577 // 占地
-	EnvelopeType_Build                   EnvelopeType = 65585 // 建造
-	EnvelopeType_Recycling               EnvelopeType = 65587 // 拆除
-	EnvelopeType_Charged                 EnvelopeType = 65589 // 充电charged
-	EnvelopeType_Harvest                 EnvelopeType = 65591 // 收获(harvest)自己建造物的产出(有电量的build)
-	EnvelopeType_Collection              EnvelopeType = 65593 // 采集/偷取(collection) 他人的或者自己的没电量的建造物产出
-	EnvelopeType_BroadCastMultiUpLand    EnvelopeType = 65601 // 广播批量更新地格信息
-	EnvelopeType_SelfNftBuilds           EnvelopeType = 65603 // 请求自己所有的建造物
+	EnvelopeType_ItemGet                  EnvelopeType = 65537
+	EnvelopeType_ItemUse                  EnvelopeType = 65539
+	EnvelopeType_ItemDrop                 EnvelopeType = 65541
+	EnvelopeType_UpdateAvatar             EnvelopeType = 65543
+	EnvelopeType_UnloadAvatar             EnvelopeType = 65545
+	EnvelopeType_BroadCastItemAdd         EnvelopeType = 65553 // 添加道具
+	EnvelopeType_BroadCastItemUpdate      EnvelopeType = 65554 // 更新道具
+	EnvelopeType_BroadCastItemDel         EnvelopeType = 65555 // del道具
+	EnvelopeType_BroadCastUpdateItemSlot  EnvelopeType = 65556 // 推送 玩家道具槽
+	EnvelopeType_GetItemSlot              EnvelopeType = 65557 // 查询 玩家道具槽信息
+	EnvelopeType_UpgradeItemSlot          EnvelopeType = 65559 // 升级 玩家道具槽
+	EnvelopeType_SigninPlayer             EnvelopeType = 65561 // 登录角色
+	EnvelopeType_SignOutPlayer            EnvelopeType = 65569 // 角色退出游戏
+	EnvelopeType_UpgradePlayerLevel       EnvelopeType = 65571 // 手动点击升级
+	EnvelopeType_QueryLands               EnvelopeType = 65573 // 请求所有占地地块信息
+	EnvelopeType_BroadCastInitLand        EnvelopeType = 65575 // 请求QueryLands后地块数据分批次推送
+	EnvelopeType_OccupyLand               EnvelopeType = 65577 // 占地
+	EnvelopeType_Build                    EnvelopeType = 65585 // 建造
+	EnvelopeType_Recycling                EnvelopeType = 65587 // 拆除
+	EnvelopeType_Charged                  EnvelopeType = 65589 // 充电charged
+	EnvelopeType_Harvest                  EnvelopeType = 65591 // 收获(harvest)自己建造物的产出(有电量的build)
+	EnvelopeType_Collection               EnvelopeType = 65593 // 采集/偷取(collection) 他人的或者自己的没电量的建造物产出
+	EnvelopeType_BroadCastMultiUpLand     EnvelopeType = 65601 // 广播批量更新地格信息
+	EnvelopeType_SelfNftBuilds            EnvelopeType = 65603 // 请求自己所有的建造物
+	EnvelopeType_BroadCastSelfBuildUpdate EnvelopeType = 65605 // 广播更新建造物数据,只广播给owner
 	//accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 	EnvelopeType_QueryPlayer  EnvelopeType = 131073
 	EnvelopeType_CreatePlayer EnvelopeType = 131075
@@ -137,6 +138,7 @@ var (
 		65593:  "Collection",
 		65601:  "BroadCastMultiUpLand",
 		65603:  "SelfNftBuilds",
+		65605:  "BroadCastSelfBuildUpdate",
 		131073: "QueryPlayer",
 		131075: "CreatePlayer",
 		196609: "EnterMap",
@@ -194,6 +196,7 @@ var (
 		"Collection":                      65593,
 		"BroadCastMultiUpLand":            65601,
 		"SelfNftBuilds":                   65603,
+		"BroadCastSelfBuildUpdate":        65605,
 		"QueryPlayer":                     131073,
 		"CreatePlayer":                    131075,
 		"EnterMap":                        196609,
@@ -259,7 +262,7 @@ var File_message_cmd_proto protoreflect.FileDescriptor
 var file_message_cmd_proto_rawDesc = []byte{
 	0x0a, 0x11, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6d, 0x64, 0x2e, 0x70, 0x72,
 	0x6f, 0x74, 0x6f, 0x12, 0x0f, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x43, 0x6f, 0x72, 0x65, 0x2a, 0x81, 0x0a, 0x0a, 0x0c, 0x45, 0x6e, 0x76, 0x65, 0x6c, 0x6f, 0x70,
+	0x43, 0x6f, 0x72, 0x65, 0x2a, 0xa1, 0x0a, 0x0a, 0x0c, 0x45, 0x6e, 0x76, 0x65, 0x6c, 0x6f, 0x70,
 	0x65, 0x54, 0x79, 0x70, 0x65, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e,
 	0x10, 0x00, 0x12, 0x0d, 0x0a, 0x07, 0x49, 0x74, 0x65, 0x6d, 0x47, 0x65, 0x74, 0x10, 0x81, 0x80,
 	0x04, 0x12, 0x0d, 0x0a, 0x07, 0x49, 0x74, 0x65, 0x6d, 0x55, 0x73, 0x65, 0x10, 0x83, 0x80, 0x04,
@@ -291,7 +294,9 @@ var file_message_cmd_proto_rawDesc = []byte{
 	0x65, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x10, 0xb9, 0x80, 0x04, 0x12, 0x1a, 0x0a, 0x14, 0x42, 0x72,
 	0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x4d, 0x75, 0x6c, 0x74, 0x69, 0x55, 0x70, 0x4c, 0x61,
 	0x6e, 0x64, 0x10, 0xc1, 0x80, 0x04, 0x12, 0x13, 0x0a, 0x0d, 0x53, 0x65, 0x6c, 0x66, 0x4e, 0x66,
-	0x74, 0x42, 0x75, 0x69, 0x6c, 0x64, 0x73, 0x10, 0xc3, 0x80, 0x04, 0x12, 0x11, 0x0a, 0x0b, 0x51,
+	0x74, 0x42, 0x75, 0x69, 0x6c, 0x64, 0x73, 0x10, 0xc3, 0x80, 0x04, 0x12, 0x1e, 0x0a, 0x18, 0x42,
+	0x72, 0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x53, 0x65, 0x6c, 0x66, 0x42, 0x75, 0x69, 0x6c,
+	0x64, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x10, 0xc5, 0x80, 0x04, 0x12, 0x11, 0x0a, 0x0b, 0x51,
 	0x75, 0x65, 0x72, 0x79, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x10, 0x81, 0x80, 0x08, 0x12, 0x12,
 	0x0a, 0x0c, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x10, 0x83,
 	0x80, 0x08, 0x12, 0x0e, 0x0a, 0x08, 0x45, 0x6e, 0x74, 0x65, 0x72, 0x4d, 0x61, 0x70, 0x10, 0x81,

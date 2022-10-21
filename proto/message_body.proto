@@ -73,6 +73,7 @@ message Envelope {
     BroadCastMultiUpLandResponse      broad_cast_multi_up_land_response     = 0x010041; 
     SelfNftBuildsRequest              self_nft_builds_request               = 0x010043;         
     SelfNftBuildsResponse             self_nft_builds_response              = 0x010044; 
+    BroadCastSelfBuildUpdateResponse  broad_cast_self_build_update_response = 0x010045; 
 
 
 
@@ -297,6 +298,10 @@ message SelfNftBuildsRequest{
 }
 message SelfNftBuildsResponse{
   repeated NftBuild builds = 1;
+}
+
+message BroadCastSelfBuildUpdateResponse{
+  NftBuild          build = 1;
 }
 
 

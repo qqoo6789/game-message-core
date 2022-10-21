@@ -25,7 +25,7 @@ namespace GameMessageCore {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgpsYW5kLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiYAoITGFuZERhdGESCgoC",
-            "aWQYASABKAUSCQoBeBgCIAEoBRIJCgF6GAMgASgFEg0KBW93bmVyGAQgASgF",
+            "aWQYASABKAUSCQoBeBgCIAEoBRIJCgF6GAMgASgFEg0KBW93bmVyGAQgASgD",
             "EhAKCG9jY3VweUF0GAUgASgFEhEKCXRpbWVvdXRBdBgGIAEoBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
@@ -124,10 +124,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "owner" field.</summary>
     public const int OwnerFieldNumber = 4;
-    private int owner_;
+    private long owner_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Owner {
+    public long Owner {
       get { return owner_; }
       set {
         owner_ = value;
@@ -197,7 +197,7 @@ namespace GameMessageCore {
       if (Id != 0) hash ^= Id.GetHashCode();
       if (X != 0) hash ^= X.GetHashCode();
       if (Z != 0) hash ^= Z.GetHashCode();
-      if (Owner != 0) hash ^= Owner.GetHashCode();
+      if (Owner != 0L) hash ^= Owner.GetHashCode();
       if (OccupyAt != 0) hash ^= OccupyAt.GetHashCode();
       if (TimeoutAt != 0) hash ^= TimeoutAt.GetHashCode();
       if (_unknownFields != null) {
@@ -230,9 +230,9 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt32(Z);
       }
-      if (Owner != 0) {
+      if (Owner != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(Owner);
+        output.WriteInt64(Owner);
       }
       if (OccupyAt != 0) {
         output.WriteRawTag(40);
@@ -264,9 +264,9 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt32(Z);
       }
-      if (Owner != 0) {
+      if (Owner != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(Owner);
+        output.WriteInt64(Owner);
       }
       if (OccupyAt != 0) {
         output.WriteRawTag(40);
@@ -295,8 +295,8 @@ namespace GameMessageCore {
       if (Z != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Z);
       }
-      if (Owner != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Owner);
+      if (Owner != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Owner);
       }
       if (OccupyAt != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(OccupyAt);
@@ -325,7 +325,7 @@ namespace GameMessageCore {
       if (other.Z != 0) {
         Z = other.Z;
       }
-      if (other.Owner != 0) {
+      if (other.Owner != 0L) {
         Owner = other.Owner;
       }
       if (other.OccupyAt != 0) {
@@ -362,7 +362,7 @@ namespace GameMessageCore {
             break;
           }
           case 32: {
-            Owner = input.ReadInt32();
+            Owner = input.ReadInt64();
             break;
           }
           case 40: {
@@ -401,7 +401,7 @@ namespace GameMessageCore {
             break;
           }
           case 32: {
-            Owner = input.ReadInt32();
+            Owner = input.ReadInt64();
             break;
           }
           case 40: {

@@ -4,13 +4,19 @@ option go_package = "./messageGo/proto";
 
 
 import "entity.proto";
+import "vector.proto";
 
 
 enum EntityCombatState {
   EntityCombatStateUnknown = 0;
+  //技能开始
   EntityCombatStateBegin = 1;
+  //前摇结束
   EntityCombatStateEnd = 2;
+  //技能打断
   EntityCombatStateInterrupted = 3;
+  //飞行物打中目标时
+  EntityCombatStateFlyHit = 4;
 }
 
 //-------------------------------
@@ -76,4 +82,11 @@ message EntityDamage{
   EntityId  entity = 1;
   int32     skill_id  = 2;
   repeated  DamageEffect  effect = 3;
+}
+
+//技能飞行物数据
+message SkillFlyerData{
+  EntityId target = 1;
+  int64 dest_stamp  = 2;
+  Vector3 dir = 3;
 }

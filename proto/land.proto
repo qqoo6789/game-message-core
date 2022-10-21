@@ -7,7 +7,7 @@ message LandData{
   int32   id        = 1;
   int32   x         = 2;
   int32   z         = 3;
-  int32   owner     = 4;
+  int64   owner     = 4;
   // 占领时间 单位秒
   int32   occupyAt = 5;  
   // 占领过期时间 单位秒

@@ -264,7 +264,7 @@ message OccupyLandRequest{
 message OccupyLandResponse{}
 message BuildRequest{
   string          nftId = 1;
-  Vector3         postion = 2;
+  Vector3         position = 2;
   repeated int32  landIds = 3; 
 }
 message BuildResponse{

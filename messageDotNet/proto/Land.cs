@@ -24,13 +24,14 @@ namespace GameMessageCore {
     static LandReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpsYW5kLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiYAoITGFuZERhdGESCgoC",
-            "aWQYASABKAUSCQoBeBgCIAEoBRIJCgF6GAMgASgFEg0KBW93bmVyGAQgASgD",
-            "EhAKCG9jY3VweUF0GAUgASgFEhEKCXRpbWVvdXRBdBgGIAEoBWIGcHJvdG8z"));
+            "CgpsYW5kLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiawoITGFuZERhdGESCgoC",
+            "aWQYASABKAUSCQoBeBgCIAEoAhIJCgF5GAMgASgCEgkKAXoYBCABKAISDQoF",
+            "b3duZXIYBSABKAMSEAoIb2NjdXB5QXQYBiABKAUSEQoJdGltZW91dEF0GAcg",
+            "ASgFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.LandData), global::GameMessageCore.LandData.Parser, new[]{ "Id", "X", "Z", "Owner", "OccupyAt", "TimeoutAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.LandData), global::GameMessageCore.LandData.Parser, new[]{ "Id", "X", "Y", "Z", "Owner", "OccupyAt", "TimeoutAt" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,6 +74,7 @@ namespace GameMessageCore {
     public LandData(LandData other) : this() {
       id_ = other.id_;
       x_ = other.x_;
+      y_ = other.y_;
       z_ = other.z_;
       owner_ = other.owner_;
       occupyAt_ = other.occupyAt_;
@@ -100,22 +102,34 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "x" field.</summary>
     public const int XFieldNumber = 2;
-    private int x_;
+    private float x_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int X {
+    public float X {
       get { return x_; }
       set {
         x_ = value;
       }
     }
 
-    /// <summary>Field number for the "z" field.</summary>
-    public const int ZFieldNumber = 3;
-    private int z_;
+    /// <summary>Field number for the "y" field.</summary>
+    public const int YFieldNumber = 3;
+    private float y_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Z {
+    public float Y {
+      get { return y_; }
+      set {
+        y_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "z" field.</summary>
+    public const int ZFieldNumber = 4;
+    private float z_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Z {
       get { return z_; }
       set {
         z_ = value;
@@ -123,7 +137,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "owner" field.</summary>
-    public const int OwnerFieldNumber = 4;
+    public const int OwnerFieldNumber = 5;
     private long owner_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -135,7 +149,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "occupyAt" field.</summary>
-    public const int OccupyAtFieldNumber = 5;
+    public const int OccupyAtFieldNumber = 6;
     private int occupyAt_;
     /// <summary>
     /// 占领时间 单位秒
@@ -150,7 +164,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "timeoutAt" field.</summary>
-    public const int TimeoutAtFieldNumber = 6;
+    public const int TimeoutAtFieldNumber = 7;
     private int timeoutAt_;
     /// <summary>
     /// 占领过期时间 单位秒
@@ -182,8 +196,9 @@ namespace GameMessageCore {
         return true;
       }
       if (Id != other.Id) return false;
-      if (X != other.X) return false;
-      if (Z != other.Z) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
       if (Owner != other.Owner) return false;
       if (OccupyAt != other.OccupyAt) return false;
       if (TimeoutAt != other.TimeoutAt) return false;
@@ -195,8 +210,9 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
-      if (X != 0) hash ^= X.GetHashCode();
-      if (Z != 0) hash ^= Z.GetHashCode();
+      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
+      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
+      if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
       if (Owner != 0L) hash ^= Owner.GetHashCode();
       if (OccupyAt != 0) hash ^= OccupyAt.GetHashCode();
       if (TimeoutAt != 0) hash ^= TimeoutAt.GetHashCode();
@@ -222,24 +238,28 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (X != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(X);
+      if (X != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(X);
       }
-      if (Z != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Z);
+      if (Y != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Z);
       }
       if (Owner != 0L) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt64(Owner);
       }
       if (OccupyAt != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(OccupyAt);
       }
       if (TimeoutAt != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(56);
         output.WriteInt32(TimeoutAt);
       }
       if (_unknownFields != null) {
@@ -256,24 +276,28 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (X != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(X);
+      if (X != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(X);
       }
-      if (Z != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Z);
+      if (Y != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Z);
       }
       if (Owner != 0L) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt64(Owner);
       }
       if (OccupyAt != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(OccupyAt);
       }
       if (TimeoutAt != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(56);
         output.WriteInt32(TimeoutAt);
       }
       if (_unknownFields != null) {
@@ -289,11 +313,14 @@ namespace GameMessageCore {
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
-      if (X != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(X);
+      if (X != 0F) {
+        size += 1 + 4;
       }
-      if (Z != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Z);
+      if (Y != 0F) {
+        size += 1 + 4;
+      }
+      if (Z != 0F) {
+        size += 1 + 4;
       }
       if (Owner != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Owner);
@@ -319,10 +346,13 @@ namespace GameMessageCore {
       if (other.Id != 0) {
         Id = other.Id;
       }
-      if (other.X != 0) {
+      if (other.X != 0F) {
         X = other.X;
       }
-      if (other.Z != 0) {
+      if (other.Y != 0F) {
+        Y = other.Y;
+      }
+      if (other.Z != 0F) {
         Z = other.Z;
       }
       if (other.Owner != 0L) {
@@ -353,23 +383,27 @@ namespace GameMessageCore {
             Id = input.ReadInt32();
             break;
           }
-          case 16: {
-            X = input.ReadInt32();
+          case 21: {
+            X = input.ReadFloat();
             break;
           }
-          case 24: {
-            Z = input.ReadInt32();
+          case 29: {
+            Y = input.ReadFloat();
             break;
           }
-          case 32: {
-            Owner = input.ReadInt64();
+          case 37: {
+            Z = input.ReadFloat();
             break;
           }
           case 40: {
-            OccupyAt = input.ReadInt32();
+            Owner = input.ReadInt64();
             break;
           }
           case 48: {
+            OccupyAt = input.ReadInt32();
+            break;
+          }
+          case 56: {
             TimeoutAt = input.ReadInt32();
             break;
           }
@@ -392,23 +426,27 @@ namespace GameMessageCore {
             Id = input.ReadInt32();
             break;
           }
-          case 16: {
-            X = input.ReadInt32();
+          case 21: {
+            X = input.ReadFloat();
             break;
           }
-          case 24: {
-            Z = input.ReadInt32();
+          case 29: {
+            Y = input.ReadFloat();
             break;
           }
-          case 32: {
-            Owner = input.ReadInt64();
+          case 37: {
+            Z = input.ReadFloat();
             break;
           }
           case 40: {
-            OccupyAt = input.ReadInt32();
+            Owner = input.ReadInt64();
             break;
           }
           case 48: {
+            OccupyAt = input.ReadInt32();
+            break;
+          }
+          case 56: {
             TimeoutAt = input.ReadInt32();
             break;
           }

@@ -5,13 +5,14 @@ option go_package = "./messageGo/proto";
 
 message LandData{
   int32   id        = 1;
-  int32   x         = 2;
-  int32   z         = 3;
-  int64   owner     = 4;
+  float   x         = 2;
+  float   y         = 3;
+  float   z         = 4;
+  int64   owner     = 5;
   // 占领时间 单位秒
-  int32   occupyAt = 5;  
+  int32   occupyAt = 6;  
   // 占领过期时间 单位秒
   // 当地块上存在有电量建筑物时，
   // 该时间戳无效 || 在充电时更新该时间戳
-  int32   timeoutAt = 6;
+  int32   timeoutAt = 7;
 }

@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKscKCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuoKCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -37,25 +37,25 @@ namespace GameMessageCore {
             "bGluZxCzgAQSDQoHQ2hhcmdlZBC1gAQSDQoHSGFydmVzdBC3gAQSEAoKQ29s",
             "bGVjdGlvbhC5gAQSGgoUQnJvYWRDYXN0TXVsdGlVcExhbmQQwYAEEhMKDVNl",
             "bGZOZnRCdWlsZHMQw4AEEh4KGEJyb2FkQ2FzdFNlbGZCdWlsZFVwZGF0ZRDF",
-            "gAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCDgAgSDgoI",
-            "RW50ZXJNYXAQgYAMEhgKElVwZGF0ZVNlbGZMb2NhdGlvbhCDgAwSDgoIVXNl",
-            "U2tpbGwQhYAMEhMKDVJlc3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2FkQ2FzdElu",
-            "aXRNYXBFbGVtZW50EJGADBIeChhCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGUQ",
-            "koAMEhwKFkJyb2FkQ2FzdEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2Fz",
-            "dEVudGl0eU1vdmUQlIAMEhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwS",
-            "HAoWQnJvYWRDYXN0UmVzcGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AM",
-            "EiIKHEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsKFUJyb2Fk",
-            "Q2FzdE1vbnN0ZXJEZWF0aBChgAwSIQobQnJvYWRDYXN0RW50aXR5QXZhdGFy",
-            "VXBkYXRlEKKADBIlCh9Ccm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRl",
-            "EKOADBIkCh5Ccm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRhdGUQpYAMEg8K",
-            "CVNlbGZUYXNrcxCBgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQ",
-            "EhAKCkFjY2VwdFRhc2sQhYAQEhUKD0FiYW5kb25tZW50VGFzaxCHgBASEAoK",
-            "VGFza1Jld2FyZBCJgBASFAoOVGFza0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3Jh",
-            "ZGVUYXNrUHJvZ3Jlc3MQk4AQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQ",
-            "EhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3Nh",
-            "Z2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoY",
-            "QnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJv",
-            "dG8z"));
+            "gAQSIQobQnJvYWRDYXN0U2VsZkJ1aWxkUmVjeWNsaW5nEMeABBIRCgtRdWVy",
+            "eVBsYXllchCBgAgSEgoMQ3JlYXRlUGxheWVyEIOACBIOCghFbnRlck1hcBCB",
+            "gAwSGAoSVXBkYXRlU2VsZkxvY2F0aW9uEIOADBIOCghVc2VTa2lsbBCFgAwS",
+            "EwoNUmVzcGF3blBsYXllchCJgAwSHQoXQnJvYWRDYXN0SW5pdE1hcEVsZW1l",
+            "bnQQkYAMEh4KGEJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZRCSgAwSHAoWQnJv",
+            "YWRDYXN0RW50aXR5RGVzdHJveRCTgAwSGQoTQnJvYWRDYXN0RW50aXR5TW92",
+            "ZRCUgAwSGwoVQnJvYWRDYXN0RW50aXR5Q29tYmF0EJWADBIcChZCcm9hZENh",
+            "c3RSZXNwYXduUGxheWVyEJaADBIOCghUZWxlcG9ydBCXgAwSIgocQnJvYWRD",
+            "YXN0RW50aXR5UHJvZmlsZVVwZGF0ZRCZgAwSGwoVQnJvYWRDYXN0TW9uc3Rl",
+            "ckRlYXRoEKGADBIhChtCcm9hZENhc3RFbnRpdHlBdmF0YXJVcGRhdGUQooAM",
+            "EiUKH0Jyb2FkQ2FzdEVudGl0eUJhdHRsZURhdGFVcGRhdGUQo4AMEiQKHkJy",
+            "b2FkQ2FzdEVudGl0eUJ1aWxkRGF0YVVwZGF0ZRClgAwSDwoJU2VsZlRhc2tz",
+            "EIGAEBIdChdCcm9hZENhc3RVcGRhdGVUYXNrTGlzdBCDgBASEAoKQWNjZXB0",
+            "VGFzaxCFgBASFQoPQWJhbmRvbm1lbnRUYXNrEIeAEBIQCgpUYXNrUmV3YXJk",
+            "EImAEBIUCg5UYXNrTGlzdFJld2FyZBCRgBASGQoTVXBncmFkZVRhc2tQcm9n",
+            "cmVzcxCTgBASGQoTQnJvYWRDYXN0VGFza1Jld2FyZBCVgBASFQoPU2VuZENo",
+            "YXRNZXNzYWdlEIGAFBIbChVCcm9hZENhc3RDaGF0TWVzc2FnZXMQg4AUEiAK",
+            "GkJyb2FkQ2FzdFJlbW92ZUNoYXRNZXNzYWdlEISAFBIeChhCcm9hZENhc3RV",
+            "cGRhdGVDaGF0U3RhdGUQhYAUEgoKBFBpbmcQgYAYYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -157,6 +157,10 @@ namespace GameMessageCore {
     /// 广播更新建造物数据,只广播给owner
     /// </summary>
     [pbr::OriginalName("BroadCastSelfBuildUpdate")] BroadCastSelfBuildUpdate = 65605,
+    /// <summary>
+    /// 广播移除ui界面中的建筑物,只广播给owner
+    /// </summary>
+    [pbr::OriginalName("BroadCastSelfBuildRecycling")] BroadCastSelfBuildRecycling = 65607,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

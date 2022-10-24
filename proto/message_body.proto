@@ -74,7 +74,7 @@ message Envelope {
     SelfNftBuildsRequest              self_nft_builds_request               = 0x010043;         
     SelfNftBuildsResponse             self_nft_builds_response              = 0x010044; 
     BroadCastSelfBuildUpdateResponse  broad_cast_self_build_update_response = 0x010045; 
-
+    BroadCastSelfBuildRecyclingResponse broad_cast_self_build_recycling_response = 0x010047; 
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -304,6 +304,12 @@ message SelfNftBuildsResponse{
 
 message BroadCastSelfBuildUpdateResponse{
   NftBuild          build = 1;
+}
+
+message BroadCastSelfBuildRecyclingResponse{
+  int64           buildId  = 1; 
+  string          fromNft = 2;
+  int64           owner = 3;   
 }
 
 

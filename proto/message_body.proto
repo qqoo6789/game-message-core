@@ -101,11 +101,11 @@ message Envelope {
     BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
     TeleportRequest                   teleport_request                      = 0x030017;
     TeleportResponse                  teleport_response                     = 0x030018;
-    BroadCastEntityProfileUpdateResponse    broad_cast_entity_profile_update_response = 0x030019;
-    BroadCastMonsterDeathResponse           broad_cast_monster_death_response         = 0x030021;
-    BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response  = 0x030022;
-    BroadCastEntityBattleDataUpdateResponse    broad_cast_entity_battle_data_update_response = 0x030023;
-                                   
+    BroadCastEntityProfileUpdateResponse    broad_cast_entity_profile_update_response     = 0x030019;
+    BroadCastMonsterDeathResponse           broad_cast_monster_death_response             = 0x030021;
+    BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response      = 0x030022;
+    BroadCastEntityBattleDataUpdateResponse broad_cast_entity_battle_data_update_response = 0x030023;
+    BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;                                
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -422,6 +422,21 @@ message BroadCastEntityAvatarUpdateResponse {
   // 变化后的 avatar 装备列表
   repeated PlayerAvatar avatars = 2;
 }
+message BroadCastEntityBuildDataUpdateResponse {
+  // 变化的entity id
+  EntityId        entity_id = 1; 
+  // 电量过期时间 单位秒
+  int32           electricEnd = 2; 
+  // 开始产出时间(没电时清空) 单位秒 
+  int32           produceBeginAt = 3;
+  // 可收获的物品数量统计(没电时转移到采集) 单位秒 
+  int32           harvestItemCount = 4;
+  // 可采集(偷取)物品数量统计 
+  int32           collectionItemCount = 15;
+  // 下次可采集(偷取)的时间戳 单位秒 
+  int32           collectionAt = 6;
+}
+
 
 
 

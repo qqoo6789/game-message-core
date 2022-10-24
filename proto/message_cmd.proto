@@ -77,7 +77,7 @@ enum EnvelopeType {
     BroadCastMonsterDeath           = 0x030021;
     BroadCastEntityAvatarUpdate     = 0x030022;
     BroadCastEntityBattleDataUpdate = 0x030023;
-
+    BroadCastEntityBuildDataUpdate  = 0x030025;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

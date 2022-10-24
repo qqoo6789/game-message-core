@@ -55,6 +55,7 @@ enum EnvelopeType {
     BroadCastMultiUpLand            = 0x010041;     // 广播批量更新地格信息
     SelfNftBuilds                   = 0x010043;     // 请求自己所有的建造物
     BroadCastSelfBuildUpdate        = 0x010045;     // 广播更新建造物数据,只广播给owner
+    BroadCastSelfBuildRecycling     = 0x010047;     // 广播移除ui界面中的建筑物,只广播给owner
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

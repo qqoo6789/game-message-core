@@ -72,11 +72,16 @@ namespace GameMessageCore {
             "BhIYChRBdHRyaWJ1dGVUeXBlQ3JpdERtZxAHEhgKFEF0dHJpYnV0ZVR5cGVI",
             "aXRSYXRlEAgSGQoVQXR0cmlidXRlVHlwZU1pc3NSYXRlEAkSGgoWQXR0cmli",
             "dXRlVHlwZU1vdmVTcGVlZBAKEhgKFEF0dHJpYnV0ZVR5cGVTa2lsbElkEGMq",
-            "1wEKDkF2YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYK",
+            "pQMKDkF2YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYK",
             "EkF2YXRhclBvc2l0aW9uSGVhZBABEhYKEkF2YXRhclBvc2l0aW9uQ29hdBAC",
             "EhYKEkF2YXRhclBvc2l0aW9uUGFudBADEhYKEkF2YXRhclBvc2l0aW9uU2hv",
             "ZRAEEhYKEkF2YXRhclBvc2l0aW9uSGFuZBAFEhsKF0F2YXRhclBvc2l0aW9u",
-            "QWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QB2IGcHJvdG8z"));
+            "QWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QBxIgChxBdmF0",
+            "YXJQb3NpdGlvbkFwcGVhcmFuY2VIZWFkEAsSIAocQXZhdGFyUG9zaXRpb25B",
+            "cHBlYXJhbmNlQ29hdBAMEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZVBh",
+            "bnQQDRIgChxBdmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VTaG9lEA4SIAocQXZh",
+            "dGFyUG9zaXRpb25BcHBlYXJhbmNlSGFuZBAPEiIKHkF2YXRhclBvc2l0aW9u",
+            "QXBwZWFyYW5jZVdlYXBvbhARYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.TakeReason), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -269,6 +274,30 @@ namespace GameMessageCore {
     /// 武器
     /// </summary>
     [pbr::OriginalName("AvatarPositionWeapon")] Weapon = 7,
+    /// <summary>
+    /// 时装头盔
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearanceHead")] AppearanceHead = 11,
+    /// <summary>
+    /// 时装上衣
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearanceCoat")] AppearanceCoat = 12,
+    /// <summary>
+    /// 时装裤子
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearancePant")] AppearancePant = 13,
+    /// <summary>
+    /// 时装鞋子
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearanceShoe")] AppearanceShoe = 14,
+    /// <summary>
+    /// 时装手
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearanceHand")] AppearanceHand = 15,
+    /// <summary>
+    /// 时装武器
+    /// </summary>
+    [pbr::OriginalName("AvatarPositionAppearanceWeapon")] AppearanceWeapon = 17,
   }
 
   #endregion

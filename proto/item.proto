@@ -163,6 +163,19 @@ enum AvatarPosition {
   AvatarPositionAccessory = 6;
   // 武器
   AvatarPositionWeapon = 7;
+
+   // 时装头盔
+  AvatarPositionAppearanceHead = 11;
+  // 时装上衣
+  AvatarPositionAppearanceCoat = 12;
+  // 时装裤子
+  AvatarPositionAppearancePant = 13;
+  // 时装鞋子
+  AvatarPositionAppearanceShoe = 14;
+  // 时装手
+  AvatarPositionAppearanceHand = 15;
+  // 时装武器
+  AvatarPositionAppearanceWeapon = 17;
 }
 
 // 道具

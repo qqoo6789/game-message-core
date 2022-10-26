@@ -66,18 +66,27 @@ func (p *GrpcEntityProfile) ToProtoData() *proto.EntityProfile {
 
 // 对应 proto.NftBuild
 type GrpcNftBuild struct {
-	Id                  int64       `json:"id"`
-	Cid                 int32       `json:"cid"`
-	FromNft             string      `json:"fromNft"`
-	Owner               int64       `json:"owner"`
-	LandIds             []int32     `json:"landIds"`
-	Position            GrpcVector3 `json:"position"`
-	Dir                 GrpcVector3 `json:"dir"`
-	ElectricEnd         int32       `json:"electricEnd"`         // 电量过期时间 单位秒``
-	ProduceBeginAt      int32       `json:"produceBeginAt"`      // 开始产出时间(没电时清空) 单位秒s
-	HarvestItemCount    int32       `json:"harvestItemCount"`    // 可收获的物品数量统计(没电时转移到采集) 单位秒
-	CollectionItemCount int32       `json:"collectionItemCount"` // 可采集(偷取)物品数量统计
-	CollectionAt        int32       `json:"collectionAt"`        // 下次可采集(偷取)的时间戳 单位秒
+	Id       int64       `json:"id"`
+	Cid      int32       `json:"cid"`
+	FromNft  string      `json:"fromNft"`
+	Owner    int64       `json:"owner"`
+	LandIds  []int32     `json:"landIds"`
+	Position GrpcVector3 `json:"position"`
+	Dir      GrpcVector3 `json:"dir"`
+	// 电量过期时间 单位秒
+	ElectricEnd int32 `json:"electricEnd"`
+	// 产出开始时间点.
+	HarvestStartAt int32 `json:"harvestStartAt"`
+	// 可以收集的时间
+	HarvestAt int32 `json:"harvestAt"`
+	// 可收获的物品数量统计(没电时转移到采集) 单位秒
+	HarvestItemCount int32 `json:"harvestItemCount"`
+	// 采集开始时间点
+	CollectionStartAt int32 `json:"collectionStartAt"`
+	// 下次可采集(偷取)的时间戳 单位秒
+	CollectionAt int32 `json:"collectionAt"`
+	// 可采集(偷取)物品数量统计
+	CollectionItemCount int32 `json:"collectionItemCount"`
 }
 
 func (p *GrpcNftBuild) Set(build *proto.NftBuild) {
@@ -90,10 +99,13 @@ func (p *GrpcNftBuild) Set(build *proto.NftBuild) {
 	p.Owner = build.Owner
 	p.LandIds = build.LandIds
 	p.ElectricEnd = build.ElectricEnd
-	p.ProduceBeginAt = build.ProduceBeginAt
+	p.HarvestStartAt = build.HarvestStartAt
+	p.HarvestAt = build.HarvestAt
 	p.HarvestItemCount = build.HarvestItemCount
-	p.CollectionItemCount = build.CollectionItemCount
+	p.CollectionStartAt = build.CollectionStartAt
 	p.CollectionAt = build.CollectionAt
+	p.CollectionItemCount = build.CollectionItemCount
+
 	p.Position.Set(build.Position)
 	p.Dir.Set(build.Dir)
 }
@@ -106,10 +118,12 @@ func (p *GrpcNftBuild) ToProtoData() *proto.NftBuild {
 		Owner:               p.Owner,
 		LandIds:             p.LandIds,
 		ElectricEnd:         p.ElectricEnd,
-		ProduceBeginAt:      p.ProduceBeginAt,
+		HarvestStartAt:      p.HarvestStartAt,
+		HarvestAt:           p.HarvestAt,
 		HarvestItemCount:    p.HarvestItemCount,
-		CollectionItemCount: p.CollectionItemCount,
+		CollectionStartAt:   p.CollectionStartAt,
 		CollectionAt:        p.CollectionAt,
+		CollectionItemCount: p.CollectionItemCount,
 	}
 
 	pbPos := p.Position.ToProtoData()

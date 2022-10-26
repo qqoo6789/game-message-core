@@ -108,9 +108,9 @@ message Envelope {
     PlayerActionCollectRequest              player_action_collect_request                = 0x030027;
     PlayerActionCollectResponse             player_action_collect_response               = 0x030029;    
     BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response    = 0x030031;                               
-    SceneDestructionRequest  scene_destruction_request  = 0x030032;                                
-    SceneDestructionResponse  scene_destruction_response  = 0x030033;
-    BroadCastSceneDestructionResponse    broad_cast_scene_destruction_response    = 0x030034;
+    SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
+    SceneDestructionResponse                scene_destruction_response                    = 0x030034;
+    BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -415,7 +415,7 @@ message BroadCastMapEntityUpdateResponse{
   // 视野内移除的实体列表
   repeated EntityId           entity_removed = 2;
   // 视野内当前场景中被破坏的元素列表
-  repeated DestructionElement destruction_elements = 3;
+  repeated DestructionElementData destruction_elements = 3;
 }
 message BroadCastEntityMoveResponse{
   repeated EntityMovement     moves = 1;
@@ -486,7 +486,7 @@ message SceneDestructionResponse
 
 message BroadCastSceneDestructionResponse
 {
-  repeated DestructionElement destruction_elements = 1;
+  repeated DestructionElementData destruction_elements = 1;
 }
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

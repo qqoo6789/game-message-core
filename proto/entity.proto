@@ -35,7 +35,7 @@ message EntityWithLocation {
   }
 }
 
-message DestructionElement
+message DestructionElementData
 {
   //唯一ID
   int64 id = 1;

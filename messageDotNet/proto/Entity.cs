@@ -50,28 +50,29 @@ namespace GameMessageCore {
             "GAIgASgDEg4KBmFjdGl2ZRgDIAEoCBIvCgdwcm9maWxlGAQgASgLMh4uZ2Ft",
             "ZU1lc3NhZ2VDb3JlLkVudGl0eVByb2ZpbGUSKgoIcG9zaXRpb24YBSABKAsy",
             "GC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1l",
-            "TWVzc2FnZUNvcmUuVmVjdG9yMyKhAgoITmZ0QnVpbGQSCgoCaWQYASABKAMS",
+            "TWVzc2FnZUNvcmUuVmVjdG9yMyLPAgoITmZ0QnVpbGQSCgoCaWQYASABKAMS",
             "CwoDY2lkGAIgASgFEg8KB2Zyb21OZnQYAyABKAkSDQoFb3duZXIYBCABKAMS",
             "DwoHbGFuZElkcxgFIAMoBRIqCghwb3NpdGlvbhgGIAEoCzIYLmdhbWVNZXNz",
             "YWdlQ29yZS5WZWN0b3IzEiUKA2RpchgHIAEoCzIYLmdhbWVNZXNzYWdlQ29y",
-            "ZS5WZWN0b3IzEhMKC2VsZWN0cmljRW5kGAggASgFEhYKDnByb2R1Y2VCZWdp",
-            "bkF0GAkgASgFEhgKEGhhcnZlc3RJdGVtQ291bnQYCiABKAUSGwoTY29sbGVj",
-            "dGlvbkl0ZW1Db3VudBgLIAEoBRIUCgxjb2xsZWN0aW9uQXQYDCABKAUiUgoO",
-            "RW50aXR5TW92ZVN0ZXASMQoIbG9jYXRpb24YASABKAsyHy5nYW1lTWVzc2Fn",
-            "ZUNvcmUuRW50aXR5TG9jYXRpb24SDQoFc3RhbXAYAiABKAMi/wEKDkVudGl0",
-            "eU1vdmVtZW50EioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
-            "RW50aXR5SWQSNQoMY3VyX2xvY2F0aW9uGAIgASgLMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkVudGl0eU1vdmVTdGVwEjYKDWRlc3RfbG9jYXRpb24YAyABKAsyHy5n",
-            "YW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASKwoEdHlwZRgFIAEoDjId",
-            "LmdhbWVNZXNzYWdlQ29yZS5Nb3ZlbWVudFR5cGUSJQoDRGlyGAYgASgLMhgu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiegoIRW50aXR5Q0QSNQoNc2tpbGxf",
-            "Y2RfbGlzdBgBIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlTa2lsbENE",
-            "EjcKDmV4dGVuZF9jZF9saXN0GAIgAygLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVu",
-            "dGl0eUV4dGVuZENEIi8KDUVudGl0eVNraWxsQ0QSEAoIc2tpbGxfaWQYASAB",
-            "KAUSDAoEdGltZRgCIAEoAyIsCg5FbnRpdHlFeHRlbmRDRBIMCgR0eXBlGAEg",
-            "ASgFEgwKBHRpbWUYAiABKAMqaAoMTW92ZW1lbnRUeXBlEhcKE01vdmVtZW50",
-            "VHlwZVVua25vd24QABIUChBNb3ZlbWVudFR5cGVXYWxrEAESEwoPTW92ZW1l",
-            "bnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADYgZwcm90bzM="));
+            "ZS5WZWN0b3IzEhMKC2VsZWN0cmljRW5kGAggASgFEhYKDmhhcnZlc3RTdGFy",
+            "dEF0GAkgASgFEhEKCWhhcnZlc3RBdBgKIAEoBRIYChBoYXJ2ZXN0SXRlbUNv",
+            "dW50GAsgASgFEhkKEWNvbGxlY3Rpb25TdGFydEF0GAwgASgFEhQKDGNvbGxl",
+            "Y3Rpb25BdBgNIAEoBRIbChNjb2xsZWN0aW9uSXRlbUNvdW50GA4gASgFIlIK",
+            "DkVudGl0eU1vdmVTdGVwEjEKCGxvY2F0aW9uGAEgASgLMh8uZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkVudGl0eUxvY2F0aW9uEg0KBXN0YW1wGAIgASgDIv8BCg5FbnRp",
+            "dHlNb3ZlbWVudBIqCgd0eXBlX2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkVudGl0eUlkEjUKDGN1cl9sb2NhdGlvbhgCIAEoCzIfLmdhbWVNZXNzYWdl",
+            "Q29yZS5FbnRpdHlNb3ZlU3RlcBI2Cg1kZXN0X2xvY2F0aW9uGAMgASgLMh8u",
+            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eU1vdmVTdGVwEisKBHR5cGUYBSABKA4y",
+            "HS5nYW1lTWVzc2FnZUNvcmUuTW92ZW1lbnRUeXBlEiUKA0RpchgGIAEoCzIY",
+            "LmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzInoKCEVudGl0eUNEEjUKDXNraWxs",
+            "X2NkX2xpc3QYASADKAsyHi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5U2tpbGxD",
+            "RBI3Cg5leHRlbmRfY2RfbGlzdBgCIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5F",
+            "bnRpdHlFeHRlbmRDRCIvCg1FbnRpdHlTa2lsbENEEhAKCHNraWxsX2lkGAEg",
+            "ASgFEgwKBHRpbWUYAiABKAMiLAoORW50aXR5RXh0ZW5kQ0QSDAoEdHlwZRgB",
+            "IAEoBRIMCgR0aW1lGAIgASgDKmgKDE1vdmVtZW50VHlwZRIXChNNb3ZlbWVu",
+            "dFR5cGVVbmtub3duEAASFAoQTW92ZW1lbnRUeXBlV2FsaxABEhMKD01vdmVt",
+            "ZW50VHlwZVJ1bhACEhQKEE1vdmVtZW50VHlwZUlkbGUQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,7 +82,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Player), global::GameMessageCore.Player.Parser, new[]{ "BaseData", "Profile", "Avatars", "Active", "MapId", "Position", "Dir", "EntityCd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Npc), global::GameMessageCore.Npc.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "ProduceBeginAt", "HarvestItemCount", "CollectionItemCount", "CollectionAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "HarvestStartAt", "HarvestAt", "HarvestItemCount", "CollectionStartAt", "CollectionAt", "CollectionItemCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMoveStep), global::GameMessageCore.EntityMoveStep.Parser, new[]{ "Location", "Stamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMovement), global::GameMessageCore.EntityMovement.Parser, new[]{ "TypeId", "CurLocation", "DestLocation", "Type", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityCD), global::GameMessageCore.EntityCD.Parser, new[]{ "SkillCdList", "ExtendCdList" }, null, null, null, null),
@@ -2360,10 +2361,12 @@ namespace GameMessageCore {
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       electricEnd_ = other.electricEnd_;
-      produceBeginAt_ = other.produceBeginAt_;
+      harvestStartAt_ = other.harvestStartAt_;
+      harvestAt_ = other.harvestAt_;
       harvestItemCount_ = other.harvestItemCount_;
-      collectionItemCount_ = other.collectionItemCount_;
+      collectionStartAt_ = other.collectionStartAt_;
       collectionAt_ = other.collectionAt_;
+      collectionItemCount_ = other.collectionItemCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2471,26 +2474,41 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "produceBeginAt" field.</summary>
-    public const int ProduceBeginAtFieldNumber = 9;
-    private int produceBeginAt_;
+    /// <summary>Field number for the "harvestStartAt" field.</summary>
+    public const int HarvestStartAtFieldNumber = 9;
+    private int harvestStartAt_;
     /// <summary>
-    /// 开始产出时间(没电时清空) 单位秒 
+    /// 产出开始时间点.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ProduceBeginAt {
-      get { return produceBeginAt_; }
+    public int HarvestStartAt {
+      get { return harvestStartAt_; }
       set {
-        produceBeginAt_ = value;
+        harvestStartAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "harvestAt" field.</summary>
+    public const int HarvestAtFieldNumber = 10;
+    private int harvestAt_;
+    /// <summary>
+    /// 可以收集的时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HarvestAt {
+      get { return harvestAt_; }
+      set {
+        harvestAt_ = value;
       }
     }
 
     /// <summary>Field number for the "harvestItemCount" field.</summary>
-    public const int HarvestItemCountFieldNumber = 10;
+    public const int HarvestItemCountFieldNumber = 11;
     private int harvestItemCount_;
     /// <summary>
-    /// 可收获的物品数量统计(没电时转移到采集) 单位秒 
+    /// 可收获的物品数量统计(没电时转移到采集) 单位秒
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2501,26 +2519,26 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "collectionItemCount" field.</summary>
-    public const int CollectionItemCountFieldNumber = 11;
-    private int collectionItemCount_;
+    /// <summary>Field number for the "collectionStartAt" field.</summary>
+    public const int CollectionStartAtFieldNumber = 12;
+    private int collectionStartAt_;
     /// <summary>
-    /// 可采集(偷取)物品数量统计 
+    /// 采集开始时间点
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CollectionItemCount {
-      get { return collectionItemCount_; }
+    public int CollectionStartAt {
+      get { return collectionStartAt_; }
       set {
-        collectionItemCount_ = value;
+        collectionStartAt_ = value;
       }
     }
 
     /// <summary>Field number for the "collectionAt" field.</summary>
-    public const int CollectionAtFieldNumber = 12;
+    public const int CollectionAtFieldNumber = 13;
     private int collectionAt_;
     /// <summary>
-    /// 下次可采集(偷取)的时间戳 单位秒 
+    /// 下次可采集(偷取)的时间戳 单位秒
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2528,6 +2546,21 @@ namespace GameMessageCore {
       get { return collectionAt_; }
       set {
         collectionAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "collectionItemCount" field.</summary>
+    public const int CollectionItemCountFieldNumber = 14;
+    private int collectionItemCount_;
+    /// <summary>
+    /// 可采集(偷取)物品数量统计
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CollectionItemCount {
+      get { return collectionItemCount_; }
+      set {
+        collectionItemCount_ = value;
       }
     }
 
@@ -2554,10 +2587,12 @@ namespace GameMessageCore {
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       if (ElectricEnd != other.ElectricEnd) return false;
-      if (ProduceBeginAt != other.ProduceBeginAt) return false;
+      if (HarvestStartAt != other.HarvestStartAt) return false;
+      if (HarvestAt != other.HarvestAt) return false;
       if (HarvestItemCount != other.HarvestItemCount) return false;
-      if (CollectionItemCount != other.CollectionItemCount) return false;
+      if (CollectionStartAt != other.CollectionStartAt) return false;
       if (CollectionAt != other.CollectionAt) return false;
+      if (CollectionItemCount != other.CollectionItemCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2573,10 +2608,12 @@ namespace GameMessageCore {
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (ElectricEnd != 0) hash ^= ElectricEnd.GetHashCode();
-      if (ProduceBeginAt != 0) hash ^= ProduceBeginAt.GetHashCode();
+      if (HarvestStartAt != 0) hash ^= HarvestStartAt.GetHashCode();
+      if (HarvestAt != 0) hash ^= HarvestAt.GetHashCode();
       if (HarvestItemCount != 0) hash ^= HarvestItemCount.GetHashCode();
-      if (CollectionItemCount != 0) hash ^= CollectionItemCount.GetHashCode();
+      if (CollectionStartAt != 0) hash ^= CollectionStartAt.GetHashCode();
       if (CollectionAt != 0) hash ^= CollectionAt.GetHashCode();
+      if (CollectionItemCount != 0) hash ^= CollectionItemCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2624,21 +2661,29 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteInt32(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
+      if (HarvestStartAt != 0) {
         output.WriteRawTag(72);
-        output.WriteInt32(ProduceBeginAt);
+        output.WriteInt32(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(HarvestAt);
       }
       if (HarvestItemCount != 0) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(88);
         output.WriteInt32(HarvestItemCount);
       }
-      if (CollectionItemCount != 0) {
-        output.WriteRawTag(88);
-        output.WriteInt32(CollectionItemCount);
+      if (CollectionStartAt != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(CollectionStartAt);
       }
       if (CollectionAt != 0) {
-        output.WriteRawTag(96);
+        output.WriteRawTag(104);
         output.WriteInt32(CollectionAt);
+      }
+      if (CollectionItemCount != 0) {
+        output.WriteRawTag(112);
+        output.WriteInt32(CollectionItemCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2679,21 +2724,29 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteInt32(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
+      if (HarvestStartAt != 0) {
         output.WriteRawTag(72);
-        output.WriteInt32(ProduceBeginAt);
+        output.WriteInt32(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(HarvestAt);
       }
       if (HarvestItemCount != 0) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(88);
         output.WriteInt32(HarvestItemCount);
       }
-      if (CollectionItemCount != 0) {
-        output.WriteRawTag(88);
-        output.WriteInt32(CollectionItemCount);
+      if (CollectionStartAt != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(CollectionStartAt);
       }
       if (CollectionAt != 0) {
-        output.WriteRawTag(96);
+        output.WriteRawTag(104);
         output.WriteInt32(CollectionAt);
+      }
+      if (CollectionItemCount != 0) {
+        output.WriteRawTag(112);
+        output.WriteInt32(CollectionItemCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2727,17 +2780,23 @@ namespace GameMessageCore {
       if (ElectricEnd != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProduceBeginAt);
+      if (HarvestStartAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestAt);
       }
       if (HarvestItemCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestItemCount);
       }
-      if (CollectionItemCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionItemCount);
+      if (CollectionStartAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionStartAt);
       }
       if (CollectionAt != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionAt);
+      }
+      if (CollectionItemCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionItemCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2779,17 +2838,23 @@ namespace GameMessageCore {
       if (other.ElectricEnd != 0) {
         ElectricEnd = other.ElectricEnd;
       }
-      if (other.ProduceBeginAt != 0) {
-        ProduceBeginAt = other.ProduceBeginAt;
+      if (other.HarvestStartAt != 0) {
+        HarvestStartAt = other.HarvestStartAt;
+      }
+      if (other.HarvestAt != 0) {
+        HarvestAt = other.HarvestAt;
       }
       if (other.HarvestItemCount != 0) {
         HarvestItemCount = other.HarvestItemCount;
       }
-      if (other.CollectionItemCount != 0) {
-        CollectionItemCount = other.CollectionItemCount;
+      if (other.CollectionStartAt != 0) {
+        CollectionStartAt = other.CollectionStartAt;
       }
       if (other.CollectionAt != 0) {
         CollectionAt = other.CollectionAt;
+      }
+      if (other.CollectionItemCount != 0) {
+        CollectionItemCount = other.CollectionItemCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2846,19 +2911,27 @@ namespace GameMessageCore {
             break;
           }
           case 72: {
-            ProduceBeginAt = input.ReadInt32();
+            HarvestStartAt = input.ReadInt32();
             break;
           }
           case 80: {
-            HarvestItemCount = input.ReadInt32();
+            HarvestAt = input.ReadInt32();
             break;
           }
           case 88: {
-            CollectionItemCount = input.ReadInt32();
+            HarvestItemCount = input.ReadInt32();
             break;
           }
           case 96: {
+            CollectionStartAt = input.ReadInt32();
+            break;
+          }
+          case 104: {
             CollectionAt = input.ReadInt32();
+            break;
+          }
+          case 112: {
+            CollectionItemCount = input.ReadInt32();
             break;
           }
         }
@@ -2916,19 +2989,27 @@ namespace GameMessageCore {
             break;
           }
           case 72: {
-            ProduceBeginAt = input.ReadInt32();
+            HarvestStartAt = input.ReadInt32();
             break;
           }
           case 80: {
-            HarvestItemCount = input.ReadInt32();
+            HarvestAt = input.ReadInt32();
             break;
           }
           case 88: {
-            CollectionItemCount = input.ReadInt32();
+            HarvestItemCount = input.ReadInt32();
             break;
           }
           case 96: {
+            CollectionStartAt = input.ReadInt32();
+            break;
+          }
+          case 104: {
             CollectionAt = input.ReadInt32();
+            break;
+          }
+          case 112: {
+            CollectionItemCount = input.ReadInt32();
             break;
           }
         }

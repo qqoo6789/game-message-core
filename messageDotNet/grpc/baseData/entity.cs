@@ -87,11 +87,14 @@ public class GrpcNftBuild
     public int[] LandIds;
     public GrpcVector3 Position;
     public GrpcVector3 Dir;
+
     public int ElectricEnd;
-    public int ProduceBeginAt;
+    public int HarvestStartAt;
+    public int HarvestAt;
     public int HarvestItemCount;
-    public int CollectionItemCount;
+    public int CollectionStartAt;
     public int CollectionAt;
+    public int CollectionItemCount;
 
     public string ToJson()
     {
@@ -109,11 +112,15 @@ public class GrpcNftBuild
         Cid = build.Cid;
         FromNft = build.FromNft;
         Owner = build.Owner;
+
         ElectricEnd = build.ElectricEnd;
-        ProduceBeginAt = build.ProduceBeginAt;
+        HarvestStartAt = build.HarvestStartAt;
+        HarvestAt = build.HarvestAt;
         HarvestItemCount = build.HarvestItemCount;
-        CollectionItemCount = build.CollectionItemCount;
+        CollectionStartAt = build.CollectionStartAt;
         CollectionAt = build.CollectionAt;
+        CollectionItemCount = build.CollectionItemCount;
+
         Position.Set(build.Position);
         Dir.Set(build.Dir);
 
@@ -138,10 +145,12 @@ public class GrpcNftBuild
             Position = Position.ToProtoData(),
             Dir = Dir.ToProtoData(),
             ElectricEnd = ElectricEnd,
-            ProduceBeginAt = ProduceBeginAt,
+            HarvestStartAt = HarvestStartAt,
+            HarvestAt = HarvestAt,
             HarvestItemCount = HarvestItemCount,
-            CollectionItemCount = CollectionItemCount,
+            CollectionStartAt = CollectionStartAt,
             CollectionAt = CollectionAt,
+            CollectionItemCount = CollectionItemCount,
         };
         foreach (int landId in LandIds)
         {

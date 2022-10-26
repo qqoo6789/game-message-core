@@ -432,15 +432,19 @@ message BroadCastEntityBuildDataUpdateResponse {
   // 变化的entity id
   EntityId        entity_id = 1; 
   // 电量过期时间 单位秒
-  int32           electricEnd = 2; 
-  // 开始产出时间(没电时清空) 单位秒 
-  int32           produceBeginAt = 3;
-  // 可收获的物品数量统计(没电时转移到采集) 单位秒 
-  int32           harvestItemCount = 4;
-  // 可采集(偷取)物品数量统计 
-  int32           collectionItemCount = 15;
-  // 下次可采集(偷取)的时间戳 单位秒 
-  int32           collectionAt = 6;
+  int32           electricEnd = 2;	
+  // 产出开始时间点.
+  int32           harvestStartAt = 3;
+  // 可以收集的时间
+  int32           harvestAt  = 4;
+  // 可收获的物品数量统计(没电时转移到采集) 单位秒
+  int32           harvestItemCount = 5;
+  // 采集开始时间点
+  int32           collectionStartAt = 6;
+  // 下次可采集(偷取)的时间戳 单位秒
+  int32           collectionAt  = 7;
+  // 可采集(偷取)物品数量统计
+  int32           collectionItemCount = 8;
 }
 
 

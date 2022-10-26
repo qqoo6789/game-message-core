@@ -303,49 +303,50 @@ namespace GameMessageCore {
             "cjMiEgoQVGVsZXBvcnRSZXNwb25zZSKDAQojQnJvYWRDYXN0RW50aXR5QXZh",
             "dGFyVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhkuZ2FtZU1l",
             "c3NhZ2VDb3JlLkVudGl0eUlkEi4KB2F2YXRhcnMYAiADKAsyHS5nYW1lTWVz",
-            "c2FnZUNvcmUuUGxheWVyQXZhdGFyItABCiZCcm9hZENhc3RFbnRpdHlCdWls",
+            "c2FnZUNvcmUuUGxheWVyQXZhdGFyIv4BCiZCcm9hZENhc3RFbnRpdHlCdWls",
             "ZERhdGFVcGRhdGVSZXNwb25zZRIsCgllbnRpdHlfaWQYASABKAsyGS5nYW1l",
             "TWVzc2FnZUNvcmUuRW50aXR5SWQSEwoLZWxlY3RyaWNFbmQYAiABKAUSFgoO",
-            "cHJvZHVjZUJlZ2luQXQYAyABKAUSGAoQaGFydmVzdEl0ZW1Db3VudBgEIAEo",
-            "BRIbChNjb2xsZWN0aW9uSXRlbUNvdW50GA8gASgFEhQKDGNvbGxlY3Rpb25B",
-            "dBgGIAEoBSISChBTZWxmVGFza3NSZXF1ZXN0Ij8KEVNlbGZUYXNrc1Jlc3Bv",
-            "bnNlEioKBXRhc2tzGAEgASgLMhsuZ2FtZU1lc3NhZ2VDb3JlLlBsYXllclRh",
-            "c2sigQEKH0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0UmVzcG9uc2USKwoEa2lu",
-            "ZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSMQoOdGFz",
-            "a19saXN0X2luZm8YAiABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3Qi",
-            "QAoRQWNjZXB0VGFza1JlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrTGlzdFR5cGUiRwoSQWNjZXB0VGFza1Jlc3BvbnNlEjEK",
-            "DnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tM",
-            "aXN0IkUKFkFiYW5kb25tZW50VGFza1JlcXVlc3QSKwoEa2luZBgBIAEoDjId",
-            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiTAoXQWJhbmRvbm1lbnRU",
-            "YXNrUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsyGS5nYW1lTWVz",
-            "c2FnZUNvcmUuVGFza0xpc3QiSgoRVGFza1Jld2FyZFJlcXVlc3QSNQoOdGFz",
-            "a19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RU",
-            "eXBlIkcKElRhc2tSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgB",
-            "IAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJEChVUYXNrTGlzdFJl",
-            "d2FyZFJlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5U",
-            "YXNrTGlzdFR5cGUiSwoWVGFza0xpc3RSZXdhcmRSZXNwb25zZRIxCg50YXNr",
-            "X2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCLi",
-            "AQoaVXBncmFkZVRhc2tQcm9ncmVzc1JlcXVlc3QSNQoOdGFza19saXN0X2tp",
-            "bmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEi4KBWl0",
-            "ZW1zGAIgAygLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtEi4K",
-            "A3BvcxgDIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uTW92ZVRv",
-            "Ei0KBHF1aXoYBCABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblF1",
-            "aXoiHQobVXBncmFkZVRhc2tQcm9ncmVzc1Jlc3BvbnNlIrkBChtCcm9hZENh",
-            "c3RUYXNrUmV3YXJkUmVzcG9uc2USGwoTaXNfdGFza19saXN0X3Jld2FyZBgB",
-            "IAEoCBI1Cg50YXNrX2xpc3Rfa2luZBgCIAEoDjIdLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrTGlzdFR5cGUSEgoKcmV3YXJkX2V4cBgDIAEoBRIyCgtyZXdhcmRf",
-            "aXRlbRgEIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8iegoW",
-            "U2VuZENoYXRNZXNzYWdlUmVxdWVzdBIzCgljaGF0X3R5cGUYASABKA4yIC5n",
-            "YW1lTWVzc2FnZUNvcmUuQ2hhdENoYW5uZWxUeXBlEg8KB2NvbnRlbnQYAiAB",
-            "KAkSGgoScmVjZWl2ZXJfcGxheWVyX2lkGAMgASgDIikKF1NlbmRDaGF0TWVz",
-            "c2FnZVJlc3BvbnNlEg4KBm1zZ19pZBgBIAEoAyJqCh1Ccm9hZENhc3RDaGF0",
-            "TWVzc2FnZXNSZXNwb25zZRIuCghtZXNzYWdlcxgBIAMoCzIcLmdhbWVNZXNz",
-            "YWdlQ29yZS5DaGF0TWVzc2FnZRIZChFoaXN0b3JpY2FsX3JlY29yZBgCIAEo",
-            "CCI1CiJCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZVJlc3BvbnNlEg8KB21z",
-            "Z19pZHMYASADKAMiUgogQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlUmVzcG9u",
-            "c2USLgoKY2hhdF9zdGF0ZRgBIAEoDjIaLmdhbWVNZXNzYWdlQ29yZS5DaGF0",
-            "U3RhdGUiDQoLUGluZ1JlcXVlc3QiDgoMUGluZ1Jlc3BvbnNlYgZwcm90bzM="));
+            "aGFydmVzdFN0YXJ0QXQYAyABKAUSEQoJaGFydmVzdEF0GAQgASgFEhgKEGhh",
+            "cnZlc3RJdGVtQ291bnQYBSABKAUSGQoRY29sbGVjdGlvblN0YXJ0QXQYBiAB",
+            "KAUSFAoMY29sbGVjdGlvbkF0GAcgASgFEhsKE2NvbGxlY3Rpb25JdGVtQ291",
+            "bnQYCCABKAUiEgoQU2VsZlRhc2tzUmVxdWVzdCI/ChFTZWxmVGFza3NSZXNw",
+            "b25zZRIqCgV0YXNrcxgBIAEoCzIbLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJU",
+            "YXNrIoEBCh9Ccm9hZENhc3RVcGRhdGVUYXNrTGlzdFJlc3BvbnNlEisKBGtp",
+            "bmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEjEKDnRh",
+            "c2tfbGlzdF9pbmZvGAIgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0",
+            "IkAKEUFjY2VwdFRhc2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVz",
+            "c2FnZUNvcmUuVGFza0xpc3RUeXBlIkcKEkFjY2VwdFRhc2tSZXNwb25zZRIx",
+            "Cg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
+            "TGlzdCJFChZBYmFuZG9ubWVudFRhc2tSZXF1ZXN0EisKBGtpbmQYASABKA4y",
+            "HS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlIkwKF0FiYW5kb25tZW50",
+            "VGFza1Jlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlRhc2tMaXN0IkoKEVRhc2tSZXdhcmRSZXF1ZXN0EjUKDnRh",
+            "c2tfbGlzdF9raW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0",
+            "VHlwZSJHChJUYXNrUmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8Y",
+            "ASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiRAoVVGFza0xpc3RS",
+            "ZXdhcmRSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza0xpc3RUeXBlIksKFlRhc2tMaXN0UmV3YXJkUmVzcG9uc2USMQoOdGFz",
+            "a19saXN0X2luZm8YASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3Qi",
+            "4gEKGlVwZ3JhZGVUYXNrUHJvZ3Jlc3NSZXF1ZXN0EjUKDnRhc2tfbGlzdF9r",
+            "aW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIuCgVp",
+            "dGVtcxgCIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbRIu",
+            "CgNwb3MYAyABKAsyIS5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbk1vdmVU",
+            "bxItCgRxdWl6GAQgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25R",
+            "dWl6Ih0KG1VwZ3JhZGVUYXNrUHJvZ3Jlc3NSZXNwb25zZSK5AQobQnJvYWRD",
+            "YXN0VGFza1Jld2FyZFJlc3BvbnNlEhsKE2lzX3Rhc2tfbGlzdF9yZXdhcmQY",
+            "ASABKAgSNQoOdGFza19saXN0X2tpbmQYAiABKA4yHS5nYW1lTWVzc2FnZUNv",
+            "cmUuVGFza0xpc3RUeXBlEhIKCnJld2FyZF9leHAYAyABKAUSMgoLcmV3YXJk",
+            "X2l0ZW0YBCADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvInoK",
+            "FlNlbmRDaGF0TWVzc2FnZVJlcXVlc3QSMwoJY2hhdF90eXBlGAEgASgOMiAu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkNoYXRDaGFubmVsVHlwZRIPCgdjb250ZW50GAIg",
+            "ASgJEhoKEnJlY2VpdmVyX3BsYXllcl9pZBgDIAEoAyIpChdTZW5kQ2hhdE1l",
+            "c3NhZ2VSZXNwb25zZRIOCgZtc2dfaWQYASABKAMiagodQnJvYWRDYXN0Q2hh",
+            "dE1lc3NhZ2VzUmVzcG9uc2USLgoIbWVzc2FnZXMYASADKAsyHC5nYW1lTWVz",
+            "c2FnZUNvcmUuQ2hhdE1lc3NhZ2USGQoRaGlzdG9yaWNhbF9yZWNvcmQYAiAB",
+            "KAgiNQoiQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2VSZXNwb25zZRIPCgdt",
+            "c2dfaWRzGAEgAygDIlIKIEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZVJlc3Bv",
+            "bnNlEi4KCmNoYXRfc3RhdGUYASABKA4yGi5nYW1lTWVzc2FnZUNvcmUuQ2hh",
+            "dFN0YXRlIg0KC1BpbmdSZXF1ZXN0Ig4KDFBpbmdSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -418,7 +419,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TeleportRequest), global::GameMessageCore.TeleportRequest.Parser, new[]{ "ToPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TeleportResponse), global::GameMessageCore.TeleportResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityAvatarUpdateResponse), global::GameMessageCore.BroadCastEntityAvatarUpdateResponse.Parser, new[]{ "EntityId", "Avatars" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityBuildDataUpdateResponse), global::GameMessageCore.BroadCastEntityBuildDataUpdateResponse.Parser, new[]{ "EntityId", "ElectricEnd", "ProduceBeginAt", "HarvestItemCount", "CollectionItemCount", "CollectionAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityBuildDataUpdateResponse), global::GameMessageCore.BroadCastEntityBuildDataUpdateResponse.Parser, new[]{ "EntityId", "ElectricEnd", "HarvestStartAt", "HarvestAt", "HarvestItemCount", "CollectionStartAt", "CollectionAt", "CollectionItemCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksRequest), global::GameMessageCore.SelfTasksRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksResponse), global::GameMessageCore.SelfTasksResponse.Parser, new[]{ "Tasks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastUpdateTaskListResponse), global::GameMessageCore.BroadCastUpdateTaskListResponse.Parser, new[]{ "Kind", "TaskListInfo" }, null, null, null, null),
@@ -20065,10 +20066,12 @@ namespace GameMessageCore {
     public BroadCastEntityBuildDataUpdateResponse(BroadCastEntityBuildDataUpdateResponse other) : this() {
       entityId_ = other.entityId_ != null ? other.entityId_.Clone() : null;
       electricEnd_ = other.electricEnd_;
-      produceBeginAt_ = other.produceBeginAt_;
+      harvestStartAt_ = other.harvestStartAt_;
+      harvestAt_ = other.harvestAt_;
       harvestItemCount_ = other.harvestItemCount_;
-      collectionItemCount_ = other.collectionItemCount_;
+      collectionStartAt_ = other.collectionStartAt_;
       collectionAt_ = other.collectionAt_;
+      collectionItemCount_ = other.collectionItemCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -20108,26 +20111,41 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "produceBeginAt" field.</summary>
-    public const int ProduceBeginAtFieldNumber = 3;
-    private int produceBeginAt_;
+    /// <summary>Field number for the "harvestStartAt" field.</summary>
+    public const int HarvestStartAtFieldNumber = 3;
+    private int harvestStartAt_;
     /// <summary>
-    /// 开始产出时间(没电时清空) 单位秒 
+    /// 产出开始时间点.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ProduceBeginAt {
-      get { return produceBeginAt_; }
+    public int HarvestStartAt {
+      get { return harvestStartAt_; }
       set {
-        produceBeginAt_ = value;
+        harvestStartAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "harvestAt" field.</summary>
+    public const int HarvestAtFieldNumber = 4;
+    private int harvestAt_;
+    /// <summary>
+    /// 可以收集的时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HarvestAt {
+      get { return harvestAt_; }
+      set {
+        harvestAt_ = value;
       }
     }
 
     /// <summary>Field number for the "harvestItemCount" field.</summary>
-    public const int HarvestItemCountFieldNumber = 4;
+    public const int HarvestItemCountFieldNumber = 5;
     private int harvestItemCount_;
     /// <summary>
-    /// 可收获的物品数量统计(没电时转移到采集) 单位秒 
+    /// 可收获的物品数量统计(没电时转移到采集) 单位秒
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -20138,26 +20156,26 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "collectionItemCount" field.</summary>
-    public const int CollectionItemCountFieldNumber = 15;
-    private int collectionItemCount_;
+    /// <summary>Field number for the "collectionStartAt" field.</summary>
+    public const int CollectionStartAtFieldNumber = 6;
+    private int collectionStartAt_;
     /// <summary>
-    /// 可采集(偷取)物品数量统计 
+    /// 采集开始时间点
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CollectionItemCount {
-      get { return collectionItemCount_; }
+    public int CollectionStartAt {
+      get { return collectionStartAt_; }
       set {
-        collectionItemCount_ = value;
+        collectionStartAt_ = value;
       }
     }
 
     /// <summary>Field number for the "collectionAt" field.</summary>
-    public const int CollectionAtFieldNumber = 6;
+    public const int CollectionAtFieldNumber = 7;
     private int collectionAt_;
     /// <summary>
-    /// 下次可采集(偷取)的时间戳 单位秒 
+    /// 下次可采集(偷取)的时间戳 单位秒
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -20165,6 +20183,21 @@ namespace GameMessageCore {
       get { return collectionAt_; }
       set {
         collectionAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "collectionItemCount" field.</summary>
+    public const int CollectionItemCountFieldNumber = 8;
+    private int collectionItemCount_;
+    /// <summary>
+    /// 可采集(偷取)物品数量统计
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CollectionItemCount {
+      get { return collectionItemCount_; }
+      set {
+        collectionItemCount_ = value;
       }
     }
 
@@ -20185,10 +20218,12 @@ namespace GameMessageCore {
       }
       if (!object.Equals(EntityId, other.EntityId)) return false;
       if (ElectricEnd != other.ElectricEnd) return false;
-      if (ProduceBeginAt != other.ProduceBeginAt) return false;
+      if (HarvestStartAt != other.HarvestStartAt) return false;
+      if (HarvestAt != other.HarvestAt) return false;
       if (HarvestItemCount != other.HarvestItemCount) return false;
-      if (CollectionItemCount != other.CollectionItemCount) return false;
+      if (CollectionStartAt != other.CollectionStartAt) return false;
       if (CollectionAt != other.CollectionAt) return false;
+      if (CollectionItemCount != other.CollectionItemCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -20198,10 +20233,12 @@ namespace GameMessageCore {
       int hash = 1;
       if (entityId_ != null) hash ^= EntityId.GetHashCode();
       if (ElectricEnd != 0) hash ^= ElectricEnd.GetHashCode();
-      if (ProduceBeginAt != 0) hash ^= ProduceBeginAt.GetHashCode();
+      if (HarvestStartAt != 0) hash ^= HarvestStartAt.GetHashCode();
+      if (HarvestAt != 0) hash ^= HarvestAt.GetHashCode();
       if (HarvestItemCount != 0) hash ^= HarvestItemCount.GetHashCode();
-      if (CollectionItemCount != 0) hash ^= CollectionItemCount.GetHashCode();
+      if (CollectionStartAt != 0) hash ^= CollectionStartAt.GetHashCode();
       if (CollectionAt != 0) hash ^= CollectionAt.GetHashCode();
+      if (CollectionItemCount != 0) hash ^= CollectionItemCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -20228,20 +20265,28 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
+      if (HarvestStartAt != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(ProduceBeginAt);
+        output.WriteInt32(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(HarvestAt);
       }
       if (HarvestItemCount != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(HarvestItemCount);
       }
-      if (CollectionAt != 0) {
+      if (CollectionStartAt != 0) {
         output.WriteRawTag(48);
+        output.WriteInt32(CollectionStartAt);
+      }
+      if (CollectionAt != 0) {
+        output.WriteRawTag(56);
         output.WriteInt32(CollectionAt);
       }
       if (CollectionItemCount != 0) {
-        output.WriteRawTag(120);
+        output.WriteRawTag(64);
         output.WriteInt32(CollectionItemCount);
       }
       if (_unknownFields != null) {
@@ -20262,20 +20307,28 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
+      if (HarvestStartAt != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(ProduceBeginAt);
+        output.WriteInt32(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(HarvestAt);
       }
       if (HarvestItemCount != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(HarvestItemCount);
       }
-      if (CollectionAt != 0) {
+      if (CollectionStartAt != 0) {
         output.WriteRawTag(48);
+        output.WriteInt32(CollectionStartAt);
+      }
+      if (CollectionAt != 0) {
+        output.WriteRawTag(56);
         output.WriteInt32(CollectionAt);
       }
       if (CollectionItemCount != 0) {
-        output.WriteRawTag(120);
+        output.WriteRawTag(64);
         output.WriteInt32(CollectionItemCount);
       }
       if (_unknownFields != null) {
@@ -20294,17 +20347,23 @@ namespace GameMessageCore {
       if (ElectricEnd != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ElectricEnd);
       }
-      if (ProduceBeginAt != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProduceBeginAt);
+      if (HarvestStartAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestStartAt);
+      }
+      if (HarvestAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestAt);
       }
       if (HarvestItemCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestItemCount);
       }
-      if (CollectionItemCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionItemCount);
+      if (CollectionStartAt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionStartAt);
       }
       if (CollectionAt != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionAt);
+      }
+      if (CollectionItemCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CollectionItemCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -20327,17 +20386,23 @@ namespace GameMessageCore {
       if (other.ElectricEnd != 0) {
         ElectricEnd = other.ElectricEnd;
       }
-      if (other.ProduceBeginAt != 0) {
-        ProduceBeginAt = other.ProduceBeginAt;
+      if (other.HarvestStartAt != 0) {
+        HarvestStartAt = other.HarvestStartAt;
+      }
+      if (other.HarvestAt != 0) {
+        HarvestAt = other.HarvestAt;
       }
       if (other.HarvestItemCount != 0) {
         HarvestItemCount = other.HarvestItemCount;
       }
-      if (other.CollectionItemCount != 0) {
-        CollectionItemCount = other.CollectionItemCount;
+      if (other.CollectionStartAt != 0) {
+        CollectionStartAt = other.CollectionStartAt;
       }
       if (other.CollectionAt != 0) {
         CollectionAt = other.CollectionAt;
+      }
+      if (other.CollectionItemCount != 0) {
+        CollectionItemCount = other.CollectionItemCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -20366,18 +20431,26 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            ProduceBeginAt = input.ReadInt32();
+            HarvestStartAt = input.ReadInt32();
             break;
           }
           case 32: {
+            HarvestAt = input.ReadInt32();
+            break;
+          }
+          case 40: {
             HarvestItemCount = input.ReadInt32();
             break;
           }
           case 48: {
+            CollectionStartAt = input.ReadInt32();
+            break;
+          }
+          case 56: {
             CollectionAt = input.ReadInt32();
             break;
           }
-          case 120: {
+          case 64: {
             CollectionItemCount = input.ReadInt32();
             break;
           }
@@ -20408,18 +20481,26 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            ProduceBeginAt = input.ReadInt32();
+            HarvestStartAt = input.ReadInt32();
             break;
           }
           case 32: {
+            HarvestAt = input.ReadInt32();
+            break;
+          }
+          case 40: {
             HarvestItemCount = input.ReadInt32();
             break;
           }
           case 48: {
+            CollectionStartAt = input.ReadInt32();
+            break;
+          }
+          case 56: {
             CollectionAt = input.ReadInt32();
             break;
           }
-          case 120: {
+          case 64: {
             CollectionItemCount = input.ReadInt32();
             break;
           }

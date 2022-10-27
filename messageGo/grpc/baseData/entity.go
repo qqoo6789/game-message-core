@@ -87,6 +87,10 @@ type GrpcNftBuild struct {
 	CollectionAt int32 `json:"collectionAt"`
 	// 可采集(偷取)物品数量统计
 	CollectionItemCount int32 `json:"collectionItemCount"`
+	// 电量不足时建造保护期开始时间
+	LandPlacementPowerZeroCooldownStartAt int32 `json:"landPlacementPowerZeroCooldownStartAt"`
+	// 电量不足时建造保护期
+	LandPlacementPowerZeroCooldown int32 `json:"landPlacementPowerZeroCooldown"`
 }
 
 func (p *GrpcNftBuild) Set(build *proto.NftBuild) {
@@ -105,25 +109,28 @@ func (p *GrpcNftBuild) Set(build *proto.NftBuild) {
 	p.CollectionStartAt = build.CollectionStartAt
 	p.CollectionAt = build.CollectionAt
 	p.CollectionItemCount = build.CollectionItemCount
-
+	p.LandPlacementPowerZeroCooldownStartAt = build.LandPlacementPowerZeroCooldownStartAt
+	p.LandPlacementPowerZeroCooldown = build.LandPlacementPowerZeroCooldown
 	p.Position.Set(build.Position)
 	p.Dir.Set(build.Dir)
 }
 
 func (p *GrpcNftBuild) ToProtoData() *proto.NftBuild {
 	pbBuild := &proto.NftBuild{
-		Id:                  p.Id,
-		Cid:                 p.Cid,
-		FromNft:             p.FromNft,
-		Owner:               p.Owner,
-		LandIds:             p.LandIds,
-		ElectricEnd:         p.ElectricEnd,
-		HarvestStartAt:      p.HarvestStartAt,
-		HarvestAt:           p.HarvestAt,
-		HarvestItemCount:    p.HarvestItemCount,
-		CollectionStartAt:   p.CollectionStartAt,
-		CollectionAt:        p.CollectionAt,
-		CollectionItemCount: p.CollectionItemCount,
+		Id:                                    p.Id,
+		Cid:                                   p.Cid,
+		FromNft:                               p.FromNft,
+		Owner:                                 p.Owner,
+		LandIds:                               p.LandIds,
+		ElectricEnd:                           p.ElectricEnd,
+		HarvestStartAt:                        p.HarvestStartAt,
+		HarvestAt:                             p.HarvestAt,
+		HarvestItemCount:                      p.HarvestItemCount,
+		CollectionStartAt:                     p.CollectionStartAt,
+		CollectionAt:                          p.CollectionAt,
+		CollectionItemCount:                   p.CollectionItemCount,
+		LandPlacementPowerZeroCooldownStartAt: p.LandPlacementPowerZeroCooldownStartAt,
+		LandPlacementPowerZeroCooldown:        p.LandPlacementPowerZeroCooldown,
 	}
 
 	pbPos := p.Position.ToProtoData()

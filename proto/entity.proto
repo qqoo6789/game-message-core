@@ -89,6 +89,10 @@ message NftBuild {
   int32           collectionAt  = 13;
   // 可采集(偷取)物品数量统计
   int32           collectionItemCount = 14;
+  // 电量不足时建造保护期开始时间
+  int32           landPlacementPowerZeroCooldownStartAt = 15;
+  // 电量不足时建造保护期
+  int32           landPlacementPowerZeroCooldown = 16;
 }
 
 /// ************************* move info ***************************************************

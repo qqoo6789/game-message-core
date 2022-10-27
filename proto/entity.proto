@@ -92,7 +92,7 @@ message NftBuild {
   // 电量不足时建造保护期开始时间
   int32           landPlacementPowerZeroCooldownStartAt = 15;
   // 电量不足时建造保护期
-  int32           landPlacementPowerZeroCooldown = 16;
+  int32           landPlacementPowerZeroCooldownAt = 16;
 }
 
 /// ************************* move info ***************************************************

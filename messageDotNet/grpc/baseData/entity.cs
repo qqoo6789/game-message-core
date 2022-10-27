@@ -98,7 +98,7 @@ public class GrpcNftBuild
     ///电量不足时建造保护期开始时间
     public int LandPlacementPowerZeroCooldownStartAt;
     //电量不足时建造保护期
-    public int LandPlacementPowerZeroCooldown;
+    public int LandPlacementPowerZeroCooldownAt;
 
     public string ToJson()
     {
@@ -125,7 +125,7 @@ public class GrpcNftBuild
         CollectionAt = build.CollectionAt;
         CollectionItemCount = build.CollectionItemCount;
         LandPlacementPowerZeroCooldownStartAt = build.LandPlacementPowerZeroCooldownStartAt;
-        LandPlacementPowerZeroCooldown = build.LandPlacementPowerZeroCooldown;
+        LandPlacementPowerZeroCooldownAt = build.LandPlacementPowerZeroCooldownAt;
         Position.Set(build.Position);
         Dir.Set(build.Dir);
 
@@ -157,7 +157,7 @@ public class GrpcNftBuild
             CollectionAt = CollectionAt,
             CollectionItemCount = CollectionItemCount,
             LandPlacementPowerZeroCooldownStartAt = LandPlacementPowerZeroCooldownStartAt,
-            LandPlacementPowerZeroCooldown = LandPlacementPowerZeroCooldown,
+            LandPlacementPowerZeroCooldownAt = LandPlacementPowerZeroCooldownAt,
         };
         foreach (int landId in LandIds)
         {

@@ -407,6 +407,7 @@ message BroadCastPlayerActionCollectResponse {
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体
+  repeated DestructionElementData destruction_elements = 2; // 视野内当前场景中被破坏的元素列表
   bool     final = 2; // 是否最后一个包
 } 
 message BroadCastMapEntityUpdateResponse{

@@ -5,6 +5,11 @@
 public static class SubscriptionEvent
 {
     /// <summary>
+    /// 服务销毁事件
+    /// </summary>
+    public const string SERVICE_UNREGISTER = "EventTopicServiceUnregister";
+
+    /// <summary>
     /// 存储玩家数据
     /// </summary>
     public const string SAVE_PLAYER_DATA = "EventTopicSavePlayerData";

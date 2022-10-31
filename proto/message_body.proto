@@ -106,9 +106,9 @@ message Envelope {
     BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response      = 0x030022;
     BroadCastEntityBattleDataUpdateResponse broad_cast_entity_battle_data_update_response = 0x030023;
     BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;
-    PlayerCollectRequest              player_collect_request                = 0x030027;
-    PlayerCollectResponse             player_collect_response               = 0x030029;    
-    BroadCastPlayerCollectResponse    broad_cast_player_collect_response    = 0x030031;                               
+    PlayerActionCollectRequest              player_action_collect_request                = 0x030027;
+    PlayerActionCollectResponse             player_action_collect_response               = 0x030029;    
+    BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response    = 0x030031;                               
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -388,11 +388,11 @@ message BroadCastRespawnPlayerResponse {
   int64 revive_cd = 5;
 }
 
-message PlayerCollectRequest {
+message PlayerActionCollectRequest {
 }
-message PlayerCollectResponse {
+message PlayerActionCollectResponse {
 }
-message BroadCastPlayerCollectResponse {
+message BroadCastPlayerActionCollectResponse {
   int64          user_id = 1;
 }
 

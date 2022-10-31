@@ -105,7 +105,10 @@ message Envelope {
     BroadCastMonsterDeathResponse           broad_cast_monster_death_response             = 0x030021;
     BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response      = 0x030022;
     BroadCastEntityBattleDataUpdateResponse broad_cast_entity_battle_data_update_response = 0x030023;
-    BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;                                
+    BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;
+    PlayerActionCollectRequest              player_action_collect_request                = 0x030027;
+    PlayerActionCollectResponse             player_action_collect_response               = 0x030029;    
+    BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response    = 0x030031;                               
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -384,6 +387,15 @@ message BroadCastRespawnPlayerResponse {
   EntityLocation location = 4;
   int64 revive_cd = 5;
 }
+
+message PlayerActionCollectRequest {
+}
+message PlayerActionCollectResponse {
+}
+message BroadCastPlayerActionCollectResponse {
+  int64          user_id = 1;
+}
+
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体

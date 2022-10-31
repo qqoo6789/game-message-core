@@ -79,6 +79,8 @@ enum EnvelopeType {
     BroadCastEntityAvatarUpdate     = 0x030022;
     BroadCastEntityBattleDataUpdate = 0x030023;
     BroadCastEntityBuildDataUpdate  = 0x030025;
+    PlayerCollect                   = 0x030027;
+    BroadCastPlayerCollect          = 0x030029;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

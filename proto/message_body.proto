@@ -276,9 +276,11 @@ message RecyclingRequest{
 }
 message RecyclingResponse{}
 message ChargedRequest{
-  int64       buildId = 1;
-  string      nftId   = 2;  
-  int32       num     = 3;
+  int64       buildId        = 1;
+  string      nftId          = 2;
+  int32       num            = 3;
+  // 使用token购买电量的数量
+  int32       nativeTokenNum = 4;
 }
 message ChargedResponse{}
 message HarvestRequest{

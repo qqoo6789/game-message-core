@@ -75,7 +75,8 @@ message Envelope {
     SelfNftBuildsResponse             self_nft_builds_response              = 0x010044; 
     BroadCastSelfBuildUpdateResponse  broad_cast_self_build_update_response = 0x010045; 
     BroadCastSelfBuildRecyclingResponse broad_cast_self_build_recycling_response = 0x010047; 
-
+    MintBatteryRequest                mint_battery_request                  = 0x010049;
+    MintBatteryResponse               mint_battery_response                 = 0x010050;
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -281,9 +282,7 @@ message RecyclingResponse{}
 message ChargedRequest{
   int64       buildId        = 1;
   string      nftId          = 2;
-  int32       num            = 3;
-  // 使用token购买电量的数量
-  int32       nativeTokenNum = 4;
+  int32       num            = 3; 
 }
 message ChargedResponse{}
 message HarvestRequest{
@@ -316,6 +315,16 @@ message BroadCastSelfBuildRecyclingResponse{
   string          fromNft = 2;
   int64           owner = 3;   
 }
+
+message MintBatteryRequest{ 
+  // mint 数量
+  int32          mintNum = 1;
+  // 赠送数量, 由前端传过来, 防止后端配表跟前端不一致时, 出现问题
+  int32          giftNum = 2;
+}
+message MintBatteryResponse{ }
+
+
 
 
 

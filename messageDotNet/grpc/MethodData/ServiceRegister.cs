@@ -5,20 +5,13 @@ using UnityEngine;
 /// 服务信息用于服务 注册和释放 request
 /// </summary>
 [Serializable]
-public class ServiceDataInput
+public class ServiceRegisterInput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
-    public string APPID;
-    public GameMessageCore.ServiceType ServiceType;
-    public string Host;
-    public int Port;
-    public int MapId;
-    public int Online;
-    public int MaxOnline;
-    public long CreatedAt;
-    public long UpdatedAt;
 
+    // 服务数据
+    public ServiceData Service;
 
     public string ToJson()
     {
@@ -32,7 +25,7 @@ public class ServiceDataInput
 /// 服务信息用于服务 注册和释放 response
 /// </summary>
 [Serializable]
-public class ServiceDataOutput
+public class ServiceRegisterOutput
 {
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;

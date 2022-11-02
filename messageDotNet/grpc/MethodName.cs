@@ -13,10 +13,6 @@ public static class ManagerServiceAction
     /// </summary>
     public const string REGISTER_SERVICE = "ManagerActionServiceRegister";
     /// <summary>
-    /// 释放服务
-    /// </summary>
-    public const string DESTROY_SERVICE = "ManagerActionServiceDestroy";
-    /// <summary>
     /// 查询服务信息
     /// </summary>
     public const string SELECT_SERVICE = "ManagerActionSelectService";

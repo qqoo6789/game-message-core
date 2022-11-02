@@ -164,7 +164,9 @@ enum AvatarPosition {
   // 武器
   AvatarPositionWeapon = 7;
 
-   // 时装头盔
+  // 时装装备位置相对于装备位置偏移量
+  AppearancePosOffset          = 10;
+  // 时装头盔
   AvatarPositionAppearanceHead = 11;
   // 时装上衣
   AvatarPositionAppearanceCoat = 12;

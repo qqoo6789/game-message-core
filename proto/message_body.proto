@@ -172,8 +172,8 @@ message ItemDropResponse {
 }
 // 穿装备
 message UpdateAvatarRequest {
-  string          item_id = 1;
-  AvatarPosition  position = 2; // 装备的位置
+  string          itemId = 1;
+  bool            isAppearance = 2; // 是否使用为时装
 }
 message UpdateAvatarResponse {
 }

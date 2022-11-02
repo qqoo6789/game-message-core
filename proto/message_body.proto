@@ -58,8 +58,6 @@ message Envelope {
     QueryLandsRequest                 query_lands_request                   = 0x010025;
     QueryLandsResponse                query_lands_response                  = 0x010026;
     BroadCastInitLandResponse         broad_cast_init_land_response         = 0x010027;
-    OccupyLandRequest                 occupy_land_request                   = 0x010029;
-    OccupyLandResponse                occupy_land_response                  = 0x010030;         
     BuildRequest                      build_request                         = 0x010031;
     BuildResponse                     build_response                        = 0x010032;         
     RecyclingRequest                  recycling_request                     = 0x010033;
@@ -262,13 +260,7 @@ message QueryLandsRequest{}
 message QueryLandsResponse{}
 message BroadCastInitLandResponse{
   repeated LandData lands = 1;
-}
-message OccupyLandRequest{
-  int32       landId = 1;
-  int32       x = 2;
-  int32       z = 3; 
-}
-message OccupyLandResponse{}
+} 
 message BuildRequest{
   string          nftId = 1;
   Vector3         position = 2;

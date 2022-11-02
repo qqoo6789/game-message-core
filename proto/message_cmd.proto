@@ -46,7 +46,6 @@ enum EnvelopeType {
     UpgradePlayerLevel              = 0x010023;     // 手动点击升级
     QueryLands                      = 0x010025;     // 请求所有占地地块信息
     BroadCastInitLand               = 0x010027;     // 请求QueryLands后地块数据分批次推送        
-    OccupyLand                      = 0x010029;     // 占地
     Build                           = 0x010031;     // 建造
     Recycling                       = 0x010033;     // 拆除
     Charged                         = 0x010035;     // 充电charged

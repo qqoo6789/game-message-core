@@ -53,10 +53,6 @@ public static class ProtoMessageAction
     /// services 批量推送 proto message 到客户端 
     /// </summary>
     public const string MULTIPLE_BROAD_CAST_TO_CLIENT = "MultipleBroadCastToClient";
-    /// <summary>
-    /// 玩家离开游戏(断开网络链接时)
-    /// </summary>
-    public const string PLAYER_LEAVE_GAME = "PlayerLeaveGame";
 }
 
 /// <summary>
@@ -72,11 +68,6 @@ public static class UserAction
     /// 更新玩家使用的装备
     /// </summary>
     public const string UPDATE_USED_AVATAR = "UpdateUsedAvatar";
-    /// <summary>
-    /// 玩家离开游戏(断开网络链接时)
-    /// </summary>
-    public const string USER_LEAVE_GAME = "UserLeaveGame";
-
     /// <summary>
     ///  查询玩家详细数据 for main service
     /// </summary>

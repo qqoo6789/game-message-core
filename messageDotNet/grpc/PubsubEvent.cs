@@ -29,7 +29,10 @@ public static class SubscriptionEvent
     /// user enter game event
     /// </summary>
     public const string USER_ENTER_GAME = "EventTopicUserEnterGame";
-
+    /// <summary>
+    /// 玩家离开游戏(断开网络链接时)
+    /// </summary>
+    public const string USER_LEAVE_GAME = "EventTopicUserLeaveGame";
     /// <summary>
     /// add nft build event
     /// </summary>

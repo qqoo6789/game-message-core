@@ -72,16 +72,17 @@ namespace GameMessageCore {
             "BhIYChRBdHRyaWJ1dGVUeXBlQ3JpdERtZxAHEhgKFEF0dHJpYnV0ZVR5cGVI",
             "aXRSYXRlEAgSGQoVQXR0cmlidXRlVHlwZU1pc3NSYXRlEAkSGgoWQXR0cmli",
             "dXRlVHlwZU1vdmVTcGVlZBAKEhgKFEF0dHJpYnV0ZVR5cGVTa2lsbElkEGMq",
-            "pQMKDkF2YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYK",
+            "vgMKDkF2YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYK",
             "EkF2YXRhclBvc2l0aW9uSGVhZBABEhYKEkF2YXRhclBvc2l0aW9uQ29hdBAC",
             "EhYKEkF2YXRhclBvc2l0aW9uUGFudBADEhYKEkF2YXRhclBvc2l0aW9uU2hv",
             "ZRAEEhYKEkF2YXRhclBvc2l0aW9uSGFuZBAFEhsKF0F2YXRhclBvc2l0aW9u",
-            "QWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QBxIgChxBdmF0",
-            "YXJQb3NpdGlvbkFwcGVhcmFuY2VIZWFkEAsSIAocQXZhdGFyUG9zaXRpb25B",
-            "cHBlYXJhbmNlQ29hdBAMEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZVBh",
-            "bnQQDRIgChxBdmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VTaG9lEA4SIAocQXZh",
-            "dGFyUG9zaXRpb25BcHBlYXJhbmNlSGFuZBAPEiIKHkF2YXRhclBvc2l0aW9u",
-            "QXBwZWFyYW5jZVdlYXBvbhARYgZwcm90bzM="));
+            "QWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QBxIXChNBcHBl",
+            "YXJhbmNlUG9zT2Zmc2V0EAoSIAocQXZhdGFyUG9zaXRpb25BcHBlYXJhbmNl",
+            "SGVhZBALEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZUNvYXQQDBIgChxB",
+            "dmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VQYW50EA0SIAocQXZhdGFyUG9zaXRp",
+            "b25BcHBlYXJhbmNlU2hvZRAOEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5j",
+            "ZUhhbmQQDxIiCh5BdmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VXZWFwb24QEWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.TakeReason), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -274,6 +275,10 @@ namespace GameMessageCore {
     /// 武器
     /// </summary>
     [pbr::OriginalName("AvatarPositionWeapon")] Weapon = 7,
+    /// <summary>
+    /// 时装装备位置相对于装备位置偏移量
+    /// </summary>
+    [pbr::OriginalName("AppearancePosOffset")] AppearancePosOffset = 10,
     /// <summary>
     /// 时装头盔
     /// </summary>

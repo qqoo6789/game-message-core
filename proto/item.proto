@@ -28,6 +28,7 @@ enum NFTConsumableType{
   NFTConsumableTypeRestoreHP = 0;
   NFTConsumableTypeLearnRecipe = 1;
   NFTConsumableTypeAddBuff = 2;
+  NFTConsumableTypeOccupyLand = 3;
 }
 
 // 消耗品

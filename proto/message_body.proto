@@ -160,7 +160,10 @@ message ItemGetResponse {
   repeated Item   items = 1;
 }
 message ItemUseRequest { 
-  string          item_id = 1;  // 使用的道具 id
+  // 使用的道具 id
+  string          itemId = 1;
+  // 使用消耗品的动态参数
+  string          args = 2;
 }
 message ItemUseResponse {
 }

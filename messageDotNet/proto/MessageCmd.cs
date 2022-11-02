@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKroLCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrwLCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -37,27 +37,27 @@ namespace GameMessageCore {
             "bGluZxCzgAQSDQoHQ2hhcmdlZBC1gAQSDQoHSGFydmVzdBC3gAQSEAoKQ29s",
             "bGVjdGlvbhC5gAQSGgoUQnJvYWRDYXN0TXVsdGlVcExhbmQQwYAEEhMKDVNl",
             "bGZOZnRCdWlsZHMQw4AEEh4KGEJyb2FkQ2FzdFNlbGZCdWlsZFVwZGF0ZRDF",
-            "gAQSIQobQnJvYWRDYXN0U2VsZkJ1aWxkUmVjeWNsaW5nEMeABBIPCgtNaW50",
-            "QmF0dGVyeRBJEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQbGF5ZXIQ",
-            "g4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRpb24Qg4AM",
-            "Eg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9h",
-            "ZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5",
-            "VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNC",
-            "cm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21i",
-            "YXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVw",
-            "b3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJmADBIb",
-            "ChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2FzdEVudGl0",
-            "eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0",
-            "YVVwZGF0ZRCjgAwSJAoeQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRl",
-            "EKWADBIZChNQbGF5ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxCcm9hZENhc3RQ",
-            "bGF5ZXJBY3Rpb25Db2xsZWN0EKmADBIPCglTZWxmVGFza3MQgYAQEh0KF0Jy",
-            "b2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EIOAEBIQCgpBY2NlcHRUYXNrEIWAEBIV",
-            "Cg9BYmFuZG9ubWVudFRhc2sQh4AQEhAKClRhc2tSZXdhcmQQiYAQEhQKDlRh",
-            "c2tMaXN0UmV3YXJkEJGAEBIZChNVcGdyYWRlVGFza1Byb2dyZXNzEJOAEBIZ",
-            "ChNCcm9hZENhc3RUYXNrUmV3YXJkEJWAEBIVCg9TZW5kQ2hhdE1lc3NhZ2UQ",
-            "gYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQSIAoaQnJvYWRDYXN0",
-            "UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2FzdFVwZGF0ZUNoYXRT",
-            "dGF0ZRCFgBQSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+            "gAQSIQobQnJvYWRDYXN0U2VsZkJ1aWxkUmVjeWNsaW5nEMeABBIRCgtNaW50",
+            "QmF0dGVyeRDJgAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXll",
+            "chCDgAgSDgoIRW50ZXJNYXAQgYAMEhgKElVwZGF0ZVNlbGZMb2NhdGlvbhCD",
+            "gAwSDgoIVXNlU2tpbGwQhYAMEhMKDVJlc3Bhd25QbGF5ZXIQiYAMEh0KF0Jy",
+            "b2FkQ2FzdEluaXRNYXBFbGVtZW50EJGADBIeChhCcm9hZENhc3RNYXBFbnRp",
+            "dHlVcGRhdGUQkoAMEhwKFkJyb2FkQ2FzdEVudGl0eURlc3Ryb3kQk4AMEhkK",
+            "E0Jyb2FkQ2FzdEVudGl0eU1vdmUQlIAMEhsKFUJyb2FkQ2FzdEVudGl0eUNv",
+            "bWJhdBCVgAwSHAoWQnJvYWRDYXN0UmVzcGF3blBsYXllchCWgAwSDgoIVGVs",
+            "ZXBvcnQQl4AMEiIKHEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRhdGUQmYAM",
+            "EhsKFUJyb2FkQ2FzdE1vbnN0ZXJEZWF0aBChgAwSIQobQnJvYWRDYXN0RW50",
+            "aXR5QXZhdGFyVXBkYXRlEKKADBIlCh9Ccm9hZENhc3RFbnRpdHlCYXR0bGVE",
+            "YXRhVXBkYXRlEKOADBIkCh5Ccm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRh",
+            "dGUQpYAMEhkKE1BsYXllckFjdGlvbkNvbGxlY3QQp4AMEiIKHEJyb2FkQ2Fz",
+            "dFBsYXllckFjdGlvbkNvbGxlY3QQqYAMEg8KCVNlbGZUYXNrcxCBgBASHQoX",
+            "QnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQEhAKCkFjY2VwdFRhc2sQhYAQ",
+            "EhUKD0FiYW5kb25tZW50VGFzaxCHgBASEAoKVGFza1Jld2FyZBCJgBASFAoO",
+            "VGFza0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3JhZGVUYXNrUHJvZ3Jlc3MQk4AQ",
+            "EhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQEhUKD1NlbmRDaGF0TWVzc2Fn",
+            "ZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENh",
+            "c3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hh",
+            "dFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -166,7 +166,7 @@ namespace GameMessageCore {
     /// <summary>
     /// 使用token 购买电池(透传给 theweb3)
     /// </summary>
-    [pbr::OriginalName("MintBattery")] MintBattery = 73,
+    [pbr::OriginalName("MintBattery")] MintBattery = 65609,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

@@ -3,8 +3,18 @@ package xlsxTable
 import (
 	"encoding/json"
 	"fmt"
+	"game-message-core/proto"
 	"time"
 )
+
+type TaskXlsxRowOption struct {
+	OptionType proto.TaskOptionType `json:"optionType"`
+	Value      string               `json:"value"`
+}
+
+type TaskXlsxOptions struct {
+	Options []TaskXlsxRowOption `json:"options"`
+}
 
 type TaskObject struct {
 	Param1 int32 `json:"param1"`

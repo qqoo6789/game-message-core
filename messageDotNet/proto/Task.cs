@@ -29,33 +29,35 @@ namespace GameMessageCore {
             "IAEoCSIxChFUYXNrT3B0aW9uTW9uc3RlchIPCgdtb25fY2lkGAEgASgFEgsK",
             "A251bRgCIAEoBSIoChBUYXNrT3B0aW9uTW92ZVRvEgkKAXIYASABKAUSCQoB",
             "YxgCIAEoBSI1Cg5UYXNrT3B0aW9uUXVpehIRCglxdWl6X3R5cGUYASABKAUS",
-            "EAoIcXVpel9udW0YAiABKAUipAIKDVRhc2tPcHRpb25DbmYSJwoEa2luZBgB",
-            "IAEoDjIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrVHlwZRINCgNudW0YCyABKAVI",
-            "ABIvCgRpdGVtGAwgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25J",
-            "dGVtSAASNgoIbW9uX2luZm8YDSABKAsyIi5nYW1lTWVzc2FnZUNvcmUuVGFz",
-            "a09wdGlvbk1vbnN0ZXJIABI0Cgd0YXJfcG9zGA4gASgLMiEuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tPcHRpb25Nb3ZlVG9IABI0CglxdWl6X2luZm8YDyABKAsy",
-            "Hy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblF1aXpIAEIGCgRkYXRhIk4K",
-            "ClRhc2tPcHRpb24SMgoKb3B0aW9uX2NuZhgBIAEoCzIeLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrT3B0aW9uQ25mEgwKBHJhdGUYAiABKAUiiwEKBFRhc2sSDwoH",
-            "dGFza19pZBgBIAEoBRIsCgl0YXNrX2tpbmQYAiABKA4yGS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVGFza1R5cGUSFgoOY3JlYXRlZF9hdF9zZWMYAyABKAMSLAoHb3B0",
-            "aW9ucxgEIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uIrYBCghU",
-            "YXNrTGlzdBIKCgJpZBgBIAEoBRIrCgRraW5kGAIgASgOMh0uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tMaXN0VHlwZRITCgtjYW5fcmVjZWl2ZRgDIAEoCBINCgVk",
-            "b2luZxgEIAEoCBIMCgRyYXRlGAUgASgFEicKCGN1cl90YXNrGAYgASgLMhUu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlRhc2sSFgoOcmVjZWl2ZV9yZXdhcmQYByABKAUi",
-            "OwoKUGxheWVyVGFzaxItCgp0YXNrX2xpc3RzGAEgAygLMhkuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tMaXN0KqIBCghUYXNrVHlwZRITCg9UYXNrVHlwZVVua25v",
-            "d24QABITCg9UYXNrVHlwZUdldEl0ZW0QARITCg9UYXNrVHlwZVVzZUl0ZW0Q",
-            "AhIXChNUYXNrVHlwZUtpbGxNb25zdGVyEAMSEgoOVGFza1R5cGVNb3ZlVG8Q",
-            "BBIQCgxUYXNrVHlwZVF1aXoQBRIYChRUYXNrVHlwZU9jY3VwaWVkTGFuZBAG",
-            "Km8KDFRhc2tMaXN0VHlwZRIXChNUYXNrTGlzdFR5cGVVbmtub3duEAASFQoR",
-            "VGFza0xpc3RUeXBlRGFpbHkQARIYChRUYXNrTGlzdFR5cGVSZXdhcmRlZBAC",
-            "EhUKEVRhc2tMaXN0VHlwZU90aGVyEANiBnByb3RvMw=="));
+            "EAoIcXVpel9udW0YAiABKAUiqgIKDVRhc2tPcHRpb25DbmYSLQoEa2luZBgB",
+            "IAEoDjIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVHlwZRINCgNudW0Y",
+            "CyABKAVIABIvCgRpdGVtGAwgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
+            "cHRpb25JdGVtSAASNgoIbW9uX2luZm8YDSABKAsyIi5nYW1lTWVzc2FnZUNv",
+            "cmUuVGFza09wdGlvbk1vbnN0ZXJIABI0Cgd0YXJfcG9zGA4gASgLMiEuZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Nb3ZlVG9IABI0CglxdWl6X2luZm8Y",
+            "DyABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblF1aXpIAEIGCgRk",
+            "YXRhIk4KClRhc2tPcHRpb24SMgoKb3B0aW9uX2NuZhgBIAEoCzIeLmdhbWVN",
+            "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uQ25mEgwKBHJhdGUYAiABKAUikQEKBFRh",
+            "c2sSDwoHdGFza19pZBgBIAEoBRIyCgl0YXNrX2tpbmQYAiABKA4yHy5nYW1l",
+            "TWVzc2FnZUNvcmUuVGFza09wdGlvblR5cGUSFgoOY3JlYXRlZF9hdF9zZWMY",
+            "AyABKAMSLAoHb3B0aW9ucxgEIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
+            "T3B0aW9uIrYBCghUYXNrTGlzdBIKCgJpZBgBIAEoBRIrCgRraW5kGAIgASgO",
+            "Mh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRITCgtjYW5fcmVjZWl2",
+            "ZRgDIAEoCBINCgVkb2luZxgEIAEoCBIMCgRyYXRlGAUgASgFEicKCGN1cl90",
+            "YXNrGAYgASgLMhUuZ2FtZU1lc3NhZ2VDb3JlLlRhc2sSFgoOcmVjZWl2ZV9y",
+            "ZXdhcmQYByABKAUiOwoKUGxheWVyVGFzaxItCgp0YXNrX2xpc3RzGAEgAygL",
+            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0KuwBCg5UYXNrT3B0aW9uVHlw",
+            "ZRIZChVVbmtub3duVGFza09wdGlvblR5cGUQABIOCgpIYW5kSW5JdGVtEAES",
+            "CwoHVXNlSXRlbRACEg4KClBpY2tVcEl0ZW0QAxIPCgtLaWxsTW9uc3RlchAE",
+            "Eg0KCVVzZXJMZXZlbBAFEhMKD1RhcmdldFNsb3RMZXZlbBAGEhIKDlNsb3RM",
+            "ZXZlbENvdW50EAcSEwoPQ3JhZnRTa2lsbExldmVsEAgSDQoJUmVjaXBlVXNl",
+            "EAkSEQoNVGFza1R5cGVDb3VudBAKEhIKDlRhcmdldFBvc2l0aW9uEAsqbwoM",
+            "VGFza0xpc3RUeXBlEhcKE1Rhc2tMaXN0VHlwZVVua25vd24QABIVChFUYXNr",
+            "TGlzdFR5cGVEYWlseRABEhgKFFRhc2tMaXN0VHlwZVJld2FyZGVkEAISFQoR",
+            "VGFza0xpc3RUeXBlT3RoZXIQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionItem), global::GameMessageCore.TaskOptionItem.Parser, new[]{ "ItemCid", "Num", "NftId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionMonster), global::GameMessageCore.TaskOptionMonster.Parser, new[]{ "MonCid", "Num" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionMoveTo), global::GameMessageCore.TaskOptionMoveTo.Parser, new[]{ "R", "C" }, null, null, null, null),
@@ -71,32 +73,52 @@ namespace GameMessageCore {
 
   }
   #region Enums
-  public enum TaskType {
-    [pbr::OriginalName("TaskTypeUnknown")] Unknown = 0,
+  public enum TaskOptionType {
+    [pbr::OriginalName("UnknownTaskOptionType")] UnknownTaskOptionType = 0,
     /// <summary>
-    /// 寻物任务
+    /// 上交若干数量的指定道具(寻物任务)
     /// </summary>
-    [pbr::OriginalName("TaskTypeGetItem")] GetItem = 1,
+    [pbr::OriginalName("HandInItem")] HandInItem = 1,
     /// <summary>
-    /// 使用道具
+    /// 使用若干数量的指定道具
     /// </summary>
-    [pbr::OriginalName("TaskTypeUseItem")] UseItem = 2,
+    [pbr::OriginalName("UseItem")] UseItem = 2,
     /// <summary>
-    /// 打怪任务
+    /// 获得若干数量的指定道具
     /// </summary>
-    [pbr::OriginalName("TaskTypeKillMonster")] KillMonster = 3,
+    [pbr::OriginalName("PickUpItem")] PickUpItem = 3,
     /// <summary>
-    /// 寻路任务
+    /// 杀死若干数量的指定怪物
     /// </summary>
-    [pbr::OriginalName("TaskTypeMoveTo")] MoveTo = 4,
+    [pbr::OriginalName("KillMonster")] KillMonster = 4,
     /// <summary>
-    /// Quiz
+    ///角色达到某等级
     /// </summary>
-    [pbr::OriginalName("TaskTypeQuiz")] Quiz = 5,
+    [pbr::OriginalName("UserLevel")] UserLevel = 5,
     /// <summary>
-    /// 攻占地块
+    ///指定插槽达到某等级
     /// </summary>
-    [pbr::OriginalName("TaskTypeOccupiedLand")] OccupiedLand = 6,
+    [pbr::OriginalName("TargetSlotLevel")] TargetSlotLevel = 6,
+    /// <summary>
+    ///指定数量插槽都达到某等级
+    /// </summary>
+    [pbr::OriginalName("SlotLevelCount")] SlotLevelCount = 7,
+    /// <summary>
+    ///指定合成技能达到某等级
+    /// </summary>
+    [pbr::OriginalName("CraftSkillLevel")] CraftSkillLevel = 8,
+    /// <summary>
+    ///使用指定的配方合成
+    /// </summary>
+    [pbr::OriginalName("RecipeUse")] RecipeUse = 9,
+    /// <summary>
+    ///完成若干数量的指定类型任务
+    /// </summary>
+    [pbr::OriginalName("TaskTypeCount")] TaskTypeCount = 10,
+    /// <summary>
+    ///到达指定坐标点指定半径范围内的区域
+    /// </summary>
+    [pbr::OriginalName("TargetPosition")] TargetPosition = 11,
   }
 
   public enum TaskListType {
@@ -1126,10 +1148,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "kind" field.</summary>
     public const int KindFieldNumber = 1;
-    private global::GameMessageCore.TaskType kind_ = global::GameMessageCore.TaskType.Unknown;
+    private global::GameMessageCore.TaskOptionType kind_ = global::GameMessageCore.TaskOptionType.UnknownTaskOptionType;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskType Kind {
+    public global::GameMessageCore.TaskOptionType Kind {
       get { return kind_; }
       set {
         kind_ = value;
@@ -1249,7 +1271,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Kind != global::GameMessageCore.TaskType.Unknown) hash ^= Kind.GetHashCode();
+      if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) hash ^= Kind.GetHashCode();
       if (dataCase_ == DataOneofCase.Num) hash ^= Num.GetHashCode();
       if (dataCase_ == DataOneofCase.Item) hash ^= Item.GetHashCode();
       if (dataCase_ == DataOneofCase.MonInfo) hash ^= MonInfo.GetHashCode();
@@ -1274,7 +1296,7 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Kind != global::GameMessageCore.TaskType.Unknown) {
+      if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Kind);
       }
@@ -1308,7 +1330,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Kind != global::GameMessageCore.TaskType.Unknown) {
+      if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Kind);
       }
@@ -1342,7 +1364,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Kind != global::GameMessageCore.TaskType.Unknown) {
+      if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Kind);
       }
       if (dataCase_ == DataOneofCase.Num) {
@@ -1372,7 +1394,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Kind != global::GameMessageCore.TaskType.Unknown) {
+      if (other.Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         Kind = other.Kind;
       }
       switch (other.DataCase) {
@@ -1421,7 +1443,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Kind = (global::GameMessageCore.TaskType) input.ReadEnum();
+            Kind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
             break;
           }
           case 88: {
@@ -1480,7 +1502,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Kind = (global::GameMessageCore.TaskType) input.ReadEnum();
+            Kind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
             break;
           }
           case 88: {
@@ -1838,13 +1860,13 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "task_kind" field.</summary>
     public const int TaskKindFieldNumber = 2;
-    private global::GameMessageCore.TaskType taskKind_ = global::GameMessageCore.TaskType.Unknown;
+    private global::GameMessageCore.TaskOptionType taskKind_ = global::GameMessageCore.TaskOptionType.UnknownTaskOptionType;
     /// <summary>
     /// 任务类型
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskType TaskKind {
+    public global::GameMessageCore.TaskOptionType TaskKind {
       get { return taskKind_; }
       set {
         taskKind_ = value;
@@ -1907,7 +1929,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (TaskId != 0) hash ^= TaskId.GetHashCode();
-      if (TaskKind != global::GameMessageCore.TaskType.Unknown) hash ^= TaskKind.GetHashCode();
+      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) hash ^= TaskKind.GetHashCode();
       if (CreatedAtSec != 0L) hash ^= CreatedAtSec.GetHashCode();
       hash ^= options_.GetHashCode();
       if (_unknownFields != null) {
@@ -1932,7 +1954,7 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskType.Unknown) {
+      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         output.WriteRawTag(16);
         output.WriteEnum((int) TaskKind);
       }
@@ -1955,7 +1977,7 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskType.Unknown) {
+      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         output.WriteRawTag(16);
         output.WriteEnum((int) TaskKind);
       }
@@ -1977,7 +1999,7 @@ namespace GameMessageCore {
       if (TaskId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskType.Unknown) {
+      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TaskKind);
       }
       if (CreatedAtSec != 0L) {
@@ -1999,7 +2021,7 @@ namespace GameMessageCore {
       if (other.TaskId != 0) {
         TaskId = other.TaskId;
       }
-      if (other.TaskKind != global::GameMessageCore.TaskType.Unknown) {
+      if (other.TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         TaskKind = other.TaskKind;
       }
       if (other.CreatedAtSec != 0L) {
@@ -2026,7 +2048,7 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            TaskKind = (global::GameMessageCore.TaskType) input.ReadEnum();
+            TaskKind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
             break;
           }
           case 24: {
@@ -2057,7 +2079,7 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            TaskKind = (global::GameMessageCore.TaskType) input.ReadEnum();
+            TaskKind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
             break;
           }
           case 24: {

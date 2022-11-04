@@ -2,11 +2,12 @@ package xlsxTable
 
 import (
 	"encoding/json"
-	"fmt"
+	"errors"
 	"game-message-core/proto"
 	"time"
 )
 
+// ----------- make task xlsx used types --------------------------
 type TaskXlsxRowOption struct {
 	OptionType proto.TaskOptionType `json:"optionType"`
 	Value      string               `json:"value"`
@@ -16,115 +17,69 @@ type TaskXlsxOptions struct {
 	Options []TaskXlsxRowOption `json:"options"`
 }
 
-type TaskObject struct {
+//--------------- task db table used types --------------------------
+
+type TaskTableOptionParam struct {
 	Param1 int32 `json:"param1"`
 	Param2 int32 `json:"param2"`
 	Param3 int32 `json:"param3"`
+	Param4 int32 `json:"param4"`
+	Param5 int32 `json:"param5"`
 }
-type TaskObjectList struct {
-	ChanceSum int32        `json:"chanceSum"`
-	ParamList []TaskObject `json:"paramList"`
+
+type TaskTableOption struct {
+	OptionType      proto.TaskOptionType   `json:"optionType"`
+	RandomExclusive int32                  `json:"randomSum"` // 通常为10000
+	RandList        []TaskTableOptionParam `json:"randList"`
 }
+
+type TaskTableRowOptionList struct {
+	Options []TaskTableOption `json:"options"`
+}
+
 type TaskTableRow struct {
-	UId             uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
-	Id              int32  `json:"id"`
-	Level           int32  `json:"level"`
-	Name            string `json:"name"`
-	SubSystem       string `json:"subSystem"`
-	Kind            int32  `json:"kind"`
-	NeedItemJson    string `gorm:"type:text" json:"needItemJson"`
-	UseItemJson     string `gorm:"type:text" json:"useItemJson"`
-	KillMonsterJson string `gorm:"type:text" json:"killMonsterJson"`
-	TargetPosJson   string `gorm:"type:text" json:"targetPosJson"`
-	QuizJson        string `gorm:"type:text" json:"quizJson"`
-	RequestLand     int32  `json:"requestLand"`
-	RewardId        int32  `json:"rewardId"`
-	RewardExp       int32  `json:"rewardExp"`
-	Difficulty      int32  `json:"difficulty"`
+	UId         uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
+	Id          int32  `json:"id"`
+	Level       int32  `json:"level"`
+	Name        string `json:"name"`
+	SubSystem   string `json:"subSystem"`
+	RewardId    int32  `json:"rewardId"`
+	RewardExp   int32  `json:"rewardExp"`
+	Difficulty  int32  `json:"difficulty"`
+	NextTaskId  int32  `json:"nextTaskId"`
+	OptionsJson string `gorm:"type:text" json:"optionsJson"`
 
 	CreatedAt time.Time `json:"createdAt"` // 过期判断条件,
 
-	NeedItem    *TaskObjectList `gorm:"-" json:"-"`
-	UseItem     *TaskObjectList `gorm:"-" json:"-"`
-	KillMonster *TaskObjectList `gorm:"-" json:"-"`
-	TargetPos   *TaskObjectList `gorm:"-" json:"-"`
-	Quiz        *TaskObjectList `gorm:"-" json:"-"`
+	Options *TaskTableRowOptionList `gorm:"-" json:"-"`
 }
 
-func marshal(objs *TaskObjectList) ([]byte, error) {
-	if objs == nil {
-		return nil, fmt.Errorf("TaskObjectList is nil")
+func (p *TaskTableRow) SetOptions(options *TaskTableRowOptionList) error {
+	if options == nil {
+		return errors.New("options is nil")
 	}
-	return json.Marshal(objs)
-}
-func unMarshal(data string) (*TaskObjectList, error) {
-	if len(data) < 2 {
-		return nil, nil
+	if len(options.Options) < 1 {
+		return errors.New("options is empty")
 	}
 
-	objs := &TaskObjectList{}
-	if err := json.Unmarshal([]byte(data), objs); err != nil {
-		return nil, err
+	bs, err := json.Marshal(options)
+	if err != nil {
+		return err
 	}
-	return objs, nil
+
+	p.Options = options
+	p.OptionsJson = string(bs)
+	return nil
 }
 
-func (p *TaskTableRow) SetNeedItem(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.NeedItemJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetNeedItem() *TaskObjectList {
-	if p.NeedItem == nil {
-		p.NeedItem, _ = unMarshal(p.NeedItemJson)
+func (p *TaskTableRow) GetOptions() (*TaskTableRowOptionList, error) {
+	if p.Options == nil {
+		options := &TaskTableRowOptionList{}
+		err := json.Unmarshal([]byte(p.OptionsJson), options)
+		if err != nil {
+			return nil, err
+		}
+		p.Options = options
 	}
-	return p.NeedItem
-}
-
-func (p *TaskTableRow) SetUseItem(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.UseItemJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetUseItem() *TaskObjectList {
-	if p.UseItem == nil {
-		p.UseItem, _ = unMarshal(p.UseItemJson)
-	}
-	return p.UseItem
-}
-
-func (p *TaskTableRow) SetKillMonster(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.KillMonsterJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetKillMonster() *TaskObjectList {
-	if p.KillMonster == nil {
-		p.KillMonster, _ = unMarshal(p.KillMonsterJson)
-	}
-	return p.KillMonster
-}
-
-func (p *TaskTableRow) SetTargetPos(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.TargetPosJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetTargetPos() *TaskObjectList {
-	if p.TargetPos == nil {
-		p.TargetPos, _ = unMarshal(p.TargetPosJson)
-	}
-	return p.TargetPos
-}
-
-func (p *TaskTableRow) SetQuiz(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.QuizJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetQuiz() *TaskObjectList {
-	if p.Quiz == nil {
-		p.Quiz, _ = unMarshal(p.QuizJson)
-	}
-	return p.Quiz
+	return p.Options, nil
 }

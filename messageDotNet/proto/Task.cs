@@ -54,7 +54,7 @@ namespace GameMessageCore {
             "EAkSEQoNVGFza1R5cGVDb3VudBAKEhIKDlRhcmdldFBvc2l0aW9uEAsqbwoM",
             "VGFza0xpc3RUeXBlEhcKE1Rhc2tMaXN0VHlwZVVua25vd24QABIVChFUYXNr",
             "TGlzdFR5cGVEYWlseRABEhgKFFRhc2tMaXN0VHlwZVJld2FyZGVkEAISFQoR",
-            "VGFza0xpc3RUeXBlT3RoZXIQA2IGcHJvdG8z"));
+            "VGFza0xpc3RUeXBlR3VpZGUQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -132,9 +132,9 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("TaskListTypeRewarded")] Rewarded = 2,
     /// <summary>
-    /// other任务
+    /// 主线任务(引导任务)
     /// </summary>
-    [pbr::OriginalName("TaskListTypeOther")] Other = 3,
+    [pbr::OriginalName("TaskListTypeGuide")] Guide = 3,
   }
 
   #endregion

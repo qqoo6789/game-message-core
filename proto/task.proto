@@ -85,8 +85,8 @@ enum TaskListType {
   TaskListTypeDaily = 1;
   // 悬赏任务
   TaskListTypeRewarded = 2;
-  // other任务
-  TaskListTypeOther = 3;
+  // 主线任务(引导任务)
+  TaskListTypeGuide = 3;
 }
 
 message TaskList{

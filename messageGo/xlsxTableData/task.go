@@ -70,7 +70,7 @@ func (p *TaskTableRow) SetDesignateOptions(designateOptions *TaskRowOptionList) 
 }
 
 func (p *TaskTableRow) GetDesignateOptions() (*TaskRowOptionList, error) {
-	if p.DesignateOptions == nil {
+	if p.DesignateOptions == nil && len(p.DesignateOptionsJson) > 2 {
 		options := &TaskRowOptionList{}
 		err := json.Unmarshal([]byte(p.DesignateOptionsJson), options)
 		if err != nil {
@@ -97,7 +97,7 @@ func (p *TaskTableRow) SetChanceOptions(chanceOptions *TaskRowOptionList) error 
 }
 
 func (p *TaskTableRow) GetChanceOptions() (*TaskRowOptionList, error) {
-	if p.ChanceOptions == nil {
+	if p.ChanceOptions == nil && len(p.ChanceOptionsJson) > 2 {
 		options := &TaskRowOptionList{}
 		err := json.Unmarshal([]byte(p.ChanceOptionsJson), options)
 		if err != nil {

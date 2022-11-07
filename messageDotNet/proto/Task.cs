@@ -31,47 +31,48 @@ namespace GameMessageCore {
             "bG90UG9zGAEgASgFEg0KBWxldmVsGAIgASgFIkAKGFRhc2tPcHRpb25TbG90",
             "TGV2ZWxDb3VudBIRCglzbG90TGV2ZWwYASABKAUSEQoJc2xvdENvdW50GAIg",
             "ASgFIjsKGVRhc2tPcHRpb25DcmFmdFNraWxsTGV2ZWwSDwoHc2tpbGxJZBgB",
-            "IAEoBRINCgVsZXZlbBgCIAEoBSInChNUYXNrT3B0aW9uVXNlUmVjaXBlEhAK",
-            "CHJlY2lwZUlkGAEgASgFIlcKF1Rhc2tPcHRpb25UYXNrVHlwZUNvdW50Ei0K",
-            "BGtpbmQYASABKA4yHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblR5cGUS",
-            "DQoFY291bnQYAiABKAUiTwoYVGFza09wdGlvblRhcmdldFBvc2l0aW9uEgkK",
-            "AXgYASABKAUSCQoBeRgCIAEoBRIJCgF6GAMgASgFEhIKCmRpc3RPZmZzZXQY",
-            "BCABKAUi7AUKDVRhc2tPcHRpb25DbmYSLQoEa2luZBgBIAEoDjIfLmdhbWVN",
-            "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uVHlwZRITCgl1c2VyTGV2ZWwYCyABKAVI",
-            "ABI1CgpoYW5kSW5JdGVtGAwgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
-            "cHRpb25JdGVtSAASMgoHdXNlSXRlbRgNIAEoCzIfLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrT3B0aW9uSXRlbUgAEjUKCnBpY2tVcEl0ZW0YDiABKAsyHy5nYW1l",
-            "TWVzc2FnZUNvcmUuVGFza09wdGlvbkl0ZW1IABI9CgtraWxsTW9uc3RlchgP",
-            "IAEoCzImLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uS2lsbE1vbnN0ZXJI",
-            "ABJFCg90YXJnZXRTbG90TGV2ZWwYECABKAsyKi5nYW1lTWVzc2FnZUNvcmUu",
-            "VGFza09wdGlvblRhcmdldFNsb3RMZXZlbEgAEkMKDnNsb3RMZXZlbENvdW50",
-            "GBEgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25TbG90TGV2ZWxD",
-            "b3VudEgAEkUKD2NyYWZ0U2tpbGxMZXZlbBgSIAEoCzIqLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVsSAASOQoJdXNlUmVjaXBl",
-            "GBMgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNpcGVI",
-            "ABIYCg5SZWNpcGVVc2VDb3VudBgUIAEoBUgAEkEKDVRhc2tUeXBlQ291bnQY",
-            "FSABKAsyKC5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblRhc2tUeXBlQ291",
-            "bnRIABJDCg5UYXJnZXRQb3NpdGlvbhgWIAEoCzIpLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb25IAEIGCgRkYXRhIk4KClRhc2tP",
-            "cHRpb24SMgoKb3B0aW9uX2NuZhgBIAEoCzIeLmdhbWVNZXNzYWdlQ29yZS5U",
-            "YXNrT3B0aW9uQ25mEgwKBHJhdGUYAiABKAUikQEKBFRhc2sSDwoHdGFza19p",
-            "ZBgBIAEoBRIyCgl0YXNrX2tpbmQYAiABKA4yHy5nYW1lTWVzc2FnZUNvcmUu",
-            "VGFza09wdGlvblR5cGUSFgoOY3JlYXRlZF9hdF9zZWMYAyABKAMSLAoHb3B0",
-            "aW9ucxgEIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uIrYBCghU",
-            "YXNrTGlzdBIKCgJpZBgBIAEoBRIrCgRraW5kGAIgASgOMh0uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tMaXN0VHlwZRITCgtjYW5fcmVjZWl2ZRgDIAEoCBINCgVk",
-            "b2luZxgEIAEoCBIMCgRyYXRlGAUgASgFEicKCGN1cl90YXNrGAYgASgLMhUu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlRhc2sSFgoOcmVjZWl2ZV9yZXdhcmQYByABKAUi",
-            "OwoKUGxheWVyVGFzaxItCgp0YXNrX2xpc3RzGAEgAygLMhkuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tMaXN0KoACCg5UYXNrT3B0aW9uVHlwZRIZChVVbmtub3du",
-            "VGFza09wdGlvblR5cGUQABIOCgpIYW5kSW5JdGVtEAESCwoHVXNlSXRlbRAC",
-            "Eg4KClBpY2tVcEl0ZW0QAxIPCgtLaWxsTW9uc3RlchAEEg0KCVVzZXJMZXZl",
-            "bBAFEhMKD1RhcmdldFNsb3RMZXZlbBAGEhIKDlNsb3RMZXZlbENvdW50EAcS",
-            "EwoPQ3JhZnRTa2lsbExldmVsEAgSDQoJVXNlUmVjaXBlEAkSEgoOUmVjaXBl",
-            "VXNlQ291bnQQChIRCg1UYXNrVHlwZUNvdW50EAsSEgoOVGFyZ2V0UG9zaXRp",
-            "b24QDCpvCgxUYXNrTGlzdFR5cGUSFwoTVGFza0xpc3RUeXBlVW5rbm93bhAA",
-            "EhUKEVRhc2tMaXN0VHlwZURhaWx5EAESGAoUVGFza0xpc3RUeXBlUmV3YXJk",
-            "ZWQQAhIVChFUYXNrTGlzdFR5cGVHdWlkZRADYgZwcm90bzM="));
+            "IAEoBRINCgVsZXZlbBgCIAEoBSI2ChNUYXNrT3B0aW9uVXNlUmVjaXBlEhAK",
+            "CHJlY2lwZUlkGAEgASgFEg0KBXRpbWVzGAIgASgFIlcKF1Rhc2tPcHRpb25U",
+            "YXNrVHlwZUNvdW50Ei0KBGtpbmQYASABKA4yHy5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza09wdGlvblR5cGUSDQoFY291bnQYAiABKAUiTwoYVGFza09wdGlvblRh",
+            "cmdldFBvc2l0aW9uEgkKAXgYASABKAUSCQoBeRgCIAEoBRIJCgF6GAMgASgF",
+            "EhIKCmRpc3RPZmZzZXQYBCABKAUi7AUKDVRhc2tPcHRpb25DbmYSLQoEa2lu",
+            "ZBgBIAEoDjIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVHlwZRITCgl1",
+            "c2VyTGV2ZWwYCyABKAVIABI1CgpoYW5kSW5JdGVtGAwgASgLMh8uZ2FtZU1l",
+            "c3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtSAASMgoHdXNlSXRlbRgNIAEoCzIf",
+            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbUgAEjUKCnBpY2tVcEl0",
+            "ZW0YDiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbkl0ZW1IABI9",
+            "CgtraWxsTW9uc3RlchgPIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0",
+            "aW9uS2lsbE1vbnN0ZXJIABJFCg90YXJnZXRTbG90TGV2ZWwYECABKAsyKi5n",
+            "YW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblRhcmdldFNsb3RMZXZlbEgAEkMK",
+            "DnNsb3RMZXZlbENvdW50GBEgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
+            "cHRpb25TbG90TGV2ZWxDb3VudEgAEkUKD2NyYWZ0U2tpbGxMZXZlbBgSIAEo",
+            "CzIqLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVs",
+            "SAASOQoJdXNlUmVjaXBlGBMgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
+            "cHRpb25Vc2VSZWNpcGVIABIYCg5SZWNpcGVVc2VDb3VudBgUIAEoBUgAEkEK",
+            "DVRhc2tUeXBlQ291bnQYFSABKAsyKC5nYW1lTWVzc2FnZUNvcmUuVGFza09w",
+            "dGlvblRhc2tUeXBlQ291bnRIABJDCg5UYXJnZXRQb3NpdGlvbhgWIAEoCzIp",
+            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb25IAEIG",
+            "CgRkYXRhIk4KClRhc2tPcHRpb24SMgoKb3B0aW9uX2NuZhgBIAEoCzIeLmdh",
+            "bWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uQ25mEgwKBHJhdGUYAiABKAUikQEK",
+            "BFRhc2sSDwoHdGFza19pZBgBIAEoBRIyCgl0YXNrX2tpbmQYAiABKA4yHy5n",
+            "YW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblR5cGUSFgoOY3JlYXRlZF9hdF9z",
+            "ZWMYAyABKAMSLAoHb3B0aW9ucxgEIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5U",
+            "YXNrT3B0aW9uIrYBCghUYXNrTGlzdBIKCgJpZBgBIAEoBRIrCgRraW5kGAIg",
+            "ASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRITCgtjYW5fcmVj",
+            "ZWl2ZRgDIAEoCBINCgVkb2luZxgEIAEoCBIMCgRyYXRlGAUgASgFEicKCGN1",
+            "cl90YXNrGAYgASgLMhUuZ2FtZU1lc3NhZ2VDb3JlLlRhc2sSFgoOcmVjZWl2",
+            "ZV9yZXdhcmQYByABKAUiOwoKUGxheWVyVGFzaxItCgp0YXNrX2xpc3RzGAEg",
+            "AygLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0KoQCCg5UYXNrT3B0aW9u",
+            "VHlwZRIZChVVbmtub3duVGFza09wdGlvblR5cGUQABIOCgpIYW5kSW5JdGVt",
+            "EAESCwoHVXNlSXRlbRACEg4KClBpY2tVcEl0ZW0QAxIPCgtLaWxsTW9uc3Rl",
+            "chAEEg0KCVVzZXJMZXZlbBAFEhMKD1RhcmdldFNsb3RMZXZlbBAGEhIKDlNs",
+            "b3RMZXZlbENvdW50EAcSEwoPQ3JhZnRTa2lsbExldmVsEAgSDQoJVXNlUmVj",
+            "aXBlEAkSEgoOUmVjaXBlVXNlQ291bnQQChIVChFUYXNrTGlzdFR5cGVDb3Vu",
+            "dBALEhIKDlRhcmdldFBvc2l0aW9uEAwqbwoMVGFza0xpc3RUeXBlEhcKE1Rh",
+            "c2tMaXN0VHlwZVVua25vd24QABIVChFUYXNrTGlzdFR5cGVEYWlseRABEhgK",
+            "FFRhc2tMaXN0VHlwZVJld2FyZGVkEAISFQoRVGFza0xpc3RUeXBlR3VpZGUQ",
+            "A2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -80,7 +81,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTargetSlotLevel), global::GameMessageCore.TaskOptionTargetSlotLevel.Parser, new[]{ "SlotPos", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionSlotLevelCount), global::GameMessageCore.TaskOptionSlotLevelCount.Parser, new[]{ "SlotLevel", "SlotCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCraftSkillLevel), global::GameMessageCore.TaskOptionCraftSkillLevel.Parser, new[]{ "SkillId", "Level" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionUseRecipe), global::GameMessageCore.TaskOptionUseRecipe.Parser, new[]{ "RecipeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionUseRecipe), global::GameMessageCore.TaskOptionUseRecipe.Parser, new[]{ "RecipeId", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTaskTypeCount), global::GameMessageCore.TaskOptionTaskTypeCount.Parser, new[]{ "Kind", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTargetPosition), global::GameMessageCore.TaskOptionTargetPosition.Parser, new[]{ "X", "Y", "Z", "DistOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCnf), global::GameMessageCore.TaskOptionCnf.Parser, new[]{ "Kind", "UserLevel", "HandInItem", "UseItem", "PickUpItem", "KillMonster", "TargetSlotLevel", "SlotLevelCount", "CraftSkillLevel", "UseRecipe", "RecipeUseCount", "TaskTypeCount", "TargetPosition" }, new[]{ "Data" }, null, null, null),
@@ -139,7 +140,7 @@ namespace GameMessageCore {
     /// <summary>
     ///完成若干数量的指定类型任务
     /// </summary>
-    [pbr::OriginalName("TaskTypeCount")] TaskTypeCount = 11,
+    [pbr::OriginalName("TaskListTypeCount")] TaskListTypeCount = 11,
     /// <summary>
     ///到达指定坐标点指定半径范围内的区域
     /// </summary>
@@ -1370,6 +1371,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TaskOptionUseRecipe(TaskOptionUseRecipe other) : this() {
       recipeId_ = other.recipeId_;
+      times_ = other.times_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1391,6 +1393,18 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "times" field.</summary>
+    public const int TimesFieldNumber = 2;
+    private int times_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Times {
+      get { return times_; }
+      set {
+        times_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1407,6 +1421,7 @@ namespace GameMessageCore {
         return true;
       }
       if (RecipeId != other.RecipeId) return false;
+      if (Times != other.Times) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1415,6 +1430,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (RecipeId != 0) hash ^= RecipeId.GetHashCode();
+      if (Times != 0) hash ^= Times.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1437,6 +1453,10 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(RecipeId);
       }
+      if (Times != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Times);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1451,6 +1471,10 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(RecipeId);
       }
+      if (Times != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Times);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1463,6 +1487,9 @@ namespace GameMessageCore {
       int size = 0;
       if (RecipeId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(RecipeId);
+      }
+      if (Times != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Times);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1478,6 +1505,9 @@ namespace GameMessageCore {
       }
       if (other.RecipeId != 0) {
         RecipeId = other.RecipeId;
+      }
+      if (other.Times != 0) {
+        Times = other.Times;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1498,6 +1528,10 @@ namespace GameMessageCore {
             RecipeId = input.ReadInt32();
             break;
           }
+          case 16: {
+            Times = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1515,6 +1549,10 @@ namespace GameMessageCore {
             break;
           case 8: {
             RecipeId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Times = input.ReadInt32();
             break;
           }
         }

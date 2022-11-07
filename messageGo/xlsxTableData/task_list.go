@@ -45,7 +45,7 @@ func (p *TaskListTableRow) SetTaskPool(taskPool *TaskListTableTaskPool) error {
 	return err
 }
 
-func (p *TaskListTableRow) GetIncludeTask() (*TaskListTableTaskPool, error) {
+func (p *TaskListTableRow) GetTaskPool() (*TaskListTableTaskPool, error) {
 	if p.TaskPool == nil {
 		taskPool := &TaskListTableTaskPool{}
 		err := json.Unmarshal([]byte(p.TaskPoolJson), taskPool)

@@ -29,5 +29,4 @@ const (
 	UserActionGetUserData       UserAction = "GetUserData"
 	UserActionUpdateUsedAvatar  UserAction = "UpdateUsedAvatar"
 	UserActionUpdateUserProfile UserAction = "UpdateUserProfile"
-	UserActionLeaveGame         UserAction = "UserLeaveGame"
 )

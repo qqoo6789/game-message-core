@@ -25,7 +25,7 @@ enum TaskOptionType{
   //使用指定的配方合成
   RecipeUse = 9; 
   //完成若干数量的指定类型任务
-  TaskTypeCount = 10;
+  TaskListTypeCount = 10;
   //到达指定坐标点指定半径范围内的区域
   TargetPosition = 11;
 }

@@ -46,15 +46,15 @@ namespace GameMessageCore {
             "ZRgDIAEoCBINCgVkb2luZxgEIAEoCBIMCgRyYXRlGAUgASgFEicKCGN1cl90",
             "YXNrGAYgASgLMhUuZ2FtZU1lc3NhZ2VDb3JlLlRhc2sSFgoOcmVjZWl2ZV9y",
             "ZXdhcmQYByABKAUiOwoKUGxheWVyVGFzaxItCgp0YXNrX2xpc3RzGAEgAygL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0KuwBCg5UYXNrT3B0aW9uVHlw",
+            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0KvABCg5UYXNrT3B0aW9uVHlw",
             "ZRIZChVVbmtub3duVGFza09wdGlvblR5cGUQABIOCgpIYW5kSW5JdGVtEAES",
             "CwoHVXNlSXRlbRACEg4KClBpY2tVcEl0ZW0QAxIPCgtLaWxsTW9uc3RlchAE",
             "Eg0KCVVzZXJMZXZlbBAFEhMKD1RhcmdldFNsb3RMZXZlbBAGEhIKDlNsb3RM",
             "ZXZlbENvdW50EAcSEwoPQ3JhZnRTa2lsbExldmVsEAgSDQoJUmVjaXBlVXNl",
-            "EAkSEQoNVGFza1R5cGVDb3VudBAKEhIKDlRhcmdldFBvc2l0aW9uEAsqbwoM",
-            "VGFza0xpc3RUeXBlEhcKE1Rhc2tMaXN0VHlwZVVua25vd24QABIVChFUYXNr",
-            "TGlzdFR5cGVEYWlseRABEhgKFFRhc2tMaXN0VHlwZVJld2FyZGVkEAISFQoR",
-            "VGFza0xpc3RUeXBlR3VpZGUQA2IGcHJvdG8z"));
+            "EAkSFQoRVGFza0xpc3RUeXBlQ291bnQQChISCg5UYXJnZXRQb3NpdGlvbhAL",
+            "Km8KDFRhc2tMaXN0VHlwZRIXChNUYXNrTGlzdFR5cGVVbmtub3duEAASFQoR",
+            "VGFza0xpc3RUeXBlRGFpbHkQARIYChRUYXNrTGlzdFR5cGVSZXdhcmRlZBAC",
+            "EhUKEVRhc2tMaXN0VHlwZUd1aWRlEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -114,7 +114,7 @@ namespace GameMessageCore {
     /// <summary>
     ///完成若干数量的指定类型任务
     /// </summary>
-    [pbr::OriginalName("TaskTypeCount")] TaskTypeCount = 10,
+    [pbr::OriginalName("TaskListTypeCount")] TaskListTypeCount = 10,
     /// <summary>
     ///到达指定坐标点指定半径范围内的区域
     /// </summary>

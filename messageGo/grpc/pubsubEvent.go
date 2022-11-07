@@ -13,6 +13,8 @@ const (
 	SubscriptionEventUserLeaveGame      SubscriptionEvent = "EventTopicUserLeaveGame"
 	SubscriptionEventUserTaskReward     SubscriptionEvent = "EventTopicUserTaskReward"
 	SubscriptionEventUserTaskListFinish SubscriptionEvent = "EventTopicTaskListFinish"
+	SubscriptionEventSlotLevelUpgrade   SubscriptionEvent = "EventTopicSlotLevelUpgrade"
+	SubscriptionEventUserLevelUpgrade   SubscriptionEvent = "EventTopicUserLevelUpgrade"
 
 	// user nft build events
 	SubscriptionEventNftBuildAdd    SubscriptionEvent = "EventTopicNftBuildAdd"

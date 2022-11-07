@@ -54,9 +54,13 @@ public static class SubscriptionEvent
     /// task list finish event
     /// </summary>
     public const string TASK_LIST_FINISH = "EventTopicTaskListFinish";
-
-
-
-
+    /// <summary>
+    /// slot level update event
+    /// </summary>
+    public const string SLOT_LEVEL_UPGRADE = "EventTopicSlotLevelUpgrade";
+    /// <summary>
+    /// user level update event
+    /// </summary>
+    public const string USER_LEVEL_UPGRADE = "EventTopicUserLevelUpgrade";
 
 }

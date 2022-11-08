@@ -2,7 +2,6 @@ package xlsxTable
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"game-message-core/proto"
 	"time"
@@ -56,7 +55,8 @@ type TaskTableRow struct {
 
 func (p *TaskTableRow) SetDesignateOptions(designateOptions *TaskRowOptionList) error {
 	if designateOptions == nil {
-		return errors.New("designateOptions is nil")
+		p.DesignateOptions = nil
+		p.DesignateOptionsJson = ""
 	}
 
 	bs, err := json.Marshal(designateOptions)
@@ -83,7 +83,9 @@ func (p *TaskTableRow) GetDesignateOptions() (*TaskRowOptionList, error) {
 
 func (p *TaskTableRow) SetChanceOptions(chanceOptions *TaskRowOptionList) error {
 	if chanceOptions == nil {
-		return errors.New("designateOptions is nil")
+		p.ChanceOptions = nil
+		p.ChanceOptionsJson = ""
+		return nil
 	}
 
 	bs, err := json.Marshal(chanceOptions)
@@ -112,10 +114,10 @@ func (p *TaskTableRow) Check() error {
 	chanceOptionsExist := false
 	designateOptionsExist := false
 
-	if p.ChanceOptions != nil || len(p.ChanceOptions.Options) > 0 {
+	if p.ChanceOptions != nil && len(p.ChanceOptions.Options) > 0 {
 		chanceOptionsExist = true
 	}
-	if p.DesignateOptions != nil || len(p.DesignateOptions.Options) > 0 {
+	if p.DesignateOptions != nil && len(p.DesignateOptions.Options) > 0 {
 		designateOptionsExist = true
 	}
 	if !chanceOptionsExist && !designateOptionsExist {

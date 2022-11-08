@@ -2,6 +2,7 @@ package xlsxTable
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 )
 
@@ -36,6 +37,12 @@ type TaskListTableRow struct {
 }
 
 func (p *TaskListTableRow) SetTaskPool(taskPool *TaskListTableTaskPool) error {
+	if taskPool == nil {
+		p.TaskPoolJson = ""
+		p.TaskPool = nil
+		return nil
+	}
+
 	bs, err := json.Marshal(taskPool)
 	if err != nil {
 		return err
@@ -46,7 +53,7 @@ func (p *TaskListTableRow) SetTaskPool(taskPool *TaskListTableTaskPool) error {
 }
 
 func (p *TaskListTableRow) GetTaskPool() (*TaskListTableTaskPool, error) {
-	if p.TaskPool == nil {
+	if p.TaskPool == nil && len(p.TaskPoolJson) > 2 {
 		taskPool := &TaskListTableTaskPool{}
 		err := json.Unmarshal([]byte(p.TaskPoolJson), taskPool)
 		if err != nil {
@@ -59,6 +66,11 @@ func (p *TaskListTableRow) GetTaskPool() (*TaskListTableTaskPool, error) {
 }
 
 func (p *TaskListTableRow) SetSequence(taskSequence *TaskListTableTaskSequence) error {
+	if taskSequence == nil {
+		p.TaskSequenceJson = ""
+		p.TaskSequence = nil
+		return nil
+	}
 	bs, err := json.Marshal(taskSequence)
 	if err != nil {
 		return err
@@ -69,7 +81,7 @@ func (p *TaskListTableRow) SetSequence(taskSequence *TaskListTableTaskSequence) 
 }
 
 func (p *TaskListTableRow) GetSequence() (*TaskListTableTaskSequence, error) {
-	if p.TaskSequence == nil {
+	if p.TaskSequence == nil && len(p.TaskSequenceJson) > 2 {
 		taskSequence := &TaskListTableTaskSequence{}
 		err := json.Unmarshal([]byte(p.TaskSequenceJson), taskSequence)
 		if err != nil {
@@ -79,4 +91,19 @@ func (p *TaskListTableRow) GetSequence() (*TaskListTableTaskSequence, error) {
 		p.TaskSequence = taskSequence
 	}
 	return p.TaskSequence, nil
+}
+func (p *TaskListTableRow) Check() error {
+	taskPoolExist := false
+	taskSequenceExist := false
+
+	if p.TaskPool != nil && len(p.TaskPool.Param) > 0 {
+		taskPoolExist = true
+	}
+	if p.TaskSequence != nil && len(p.TaskSequence.Sequence) > 0 {
+		taskSequenceExist = true
+	}
+	if !taskPoolExist && !taskSequenceExist {
+		return fmt.Errorf("task list [%d] task list is empty", p.Id)
+	}
+	return nil
 }

@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuMLCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvwLCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1V",
             "c2UQg4AEEg4KCEl0ZW1Ecm9wEIWABBISCgxVcGRhdGVBdmF0YXIQh4AEEhIK",
             "DFVubG9hZEF2YXRhchCJgAQSFgoQQnJvYWRDYXN0SXRlbUFkZBCRgAQSGQoT",
@@ -33,32 +33,33 @@ namespace GameMessageCore {
             "bG90EJWABBIVCg9VcGdyYWRlSXRlbVNsb3QQl4AEEhIKDFNpZ25pblBsYXll",
             "chCZgAQSEwoNU2lnbk91dFBsYXllchChgAQSGAoSVXBncmFkZVBsYXllckxl",
             "dmVsEKOABBIQCgpRdWVyeUxhbmRzEKWABBIXChFCcm9hZENhc3RJbml0TGFu",
-            "ZBCngAQSCwoFQnVpbGQQsYAEEg8KCVJlY3ljbGluZxCzgAQSDQoHQ2hhcmdl",
-            "ZBC1gAQSDQoHSGFydmVzdBC3gAQSEAoKQ29sbGVjdGlvbhC5gAQSGgoUQnJv",
-            "YWRDYXN0TXVsdGlVcExhbmQQwYAEEhMKDVNlbGZOZnRCdWlsZHMQw4AEEh4K",
-            "GEJyb2FkQ2FzdFNlbGZCdWlsZFVwZGF0ZRDFgAQSIQobQnJvYWRDYXN0U2Vs",
-            "ZkJ1aWxkUmVjeWNsaW5nEMeABBIRCgtNaW50QmF0dGVyeRDJgAQSEQoLUXVl",
-            "cnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCDgAgSDgoIRW50ZXJNYXAQ",
-            "gYAMEhgKElVwZGF0ZVNlbGZMb2NhdGlvbhCDgAwSDgoIVXNlU2tpbGwQhYAM",
-            "EhMKDVJlc3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2FkQ2FzdEluaXRNYXBFbGVt",
-            "ZW50EJGADBIeChhCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGUQkoAMEhwKFkJy",
-            "b2FkQ2FzdEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jyb2FkQ2FzdEVudGl0eU1v",
-            "dmUQlIAMEhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJhdBCVgAwSHAoWQnJvYWRD",
-            "YXN0UmVzcGF3blBsYXllchCWgAwSDgoIVGVsZXBvcnQQl4AMEiIKHEJyb2Fk",
-            "Q2FzdEVudGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsKFUJyb2FkQ2FzdE1vbnN0",
-            "ZXJEZWF0aBChgAwSIQobQnJvYWRDYXN0RW50aXR5QXZhdGFyVXBkYXRlEKKA",
-            "DBIlCh9Ccm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRlEKOADBIkCh5C",
-            "cm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRhdGUQpYAMEhkKE1BsYXllckFj",
-            "dGlvbkNvbGxlY3QQp4AMEiIKHEJyb2FkQ2FzdFBsYXllckFjdGlvbkNvbGxl",
-            "Y3QQqYAMEhYKEFNjZW5lRGVzdHJ1Y3Rpb24Qs4AMEh8KGUJyb2FkQ2FzdFNj",
-            "ZW5lRGVzdHJ1Y3Rpb24QtYAMEg8KCVNlbGZUYXNrcxCBgBASHQoXQnJvYWRD",
-            "YXN0VXBkYXRlVGFza0xpc3QQg4AQEhAKCkFjY2VwdFRhc2sQhYAQEhUKD0Fi",
-            "YW5kb25tZW50VGFzaxCHgBASEAoKVGFza1Jld2FyZBCJgBASFAoOVGFza0xp",
-            "c3RSZXdhcmQQkYAQEhkKE1VwZ3JhZGVUYXNrUHJvZ3Jlc3MQk4AQEhkKE0Jy",
-            "b2FkQ2FzdFRhc2tSZXdhcmQQlYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQS",
-            "GwoVQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RSZW1v",
-            "dmVDaGF0TWVzc2FnZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRl",
-            "EIWAFBIKCgRQaW5nEIGAGGIGcHJvdG8z"));
+            "ZBCngAQSFwoRQnJvYWRDYXN0SW5pdEl0ZW0QqYAEEgsKBUJ1aWxkELGABBIP",
+            "CglSZWN5Y2xpbmcQs4AEEg0KB0NoYXJnZWQQtYAEEg0KB0hhcnZlc3QQt4AE",
+            "EhAKCkNvbGxlY3Rpb24QuYAEEhoKFEJyb2FkQ2FzdE11bHRpVXBMYW5kEMGA",
+            "BBITCg1TZWxmTmZ0QnVpbGRzEMOABBIeChhCcm9hZENhc3RTZWxmQnVpbGRV",
+            "cGRhdGUQxYAEEiEKG0Jyb2FkQ2FzdFNlbGZCdWlsZFJlY3ljbGluZxDHgAQS",
+            "EQoLTWludEJhdHRlcnkQyYAEEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVh",
+            "dGVQbGF5ZXIQg4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9j",
+            "YXRpb24Qg4AMEg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImA",
+            "DBIdChdCcm9hZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0",
+            "TWFwRW50aXR5VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95",
+            "EJOADBIZChNCcm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RF",
+            "bnRpdHlDb21iYXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAM",
+            "Eg4KCFRlbGVwb3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBk",
+            "YXRlEJmADBIbChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2Fk",
+            "Q2FzdEVudGl0eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5",
+            "QmF0dGxlRGF0YVVwZGF0ZRCjgAwSJAoeQnJvYWRDYXN0RW50aXR5QnVpbGRE",
+            "YXRhVXBkYXRlEKWADBIZChNQbGF5ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxC",
+            "cm9hZENhc3RQbGF5ZXJBY3Rpb25Db2xsZWN0EKmADBIWChBTY2VuZURlc3Ry",
+            "dWN0aW9uELOADBIfChlCcm9hZENhc3RTY2VuZURlc3RydWN0aW9uELWADBIP",
+            "CglTZWxmVGFza3MQgYAQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EIOA",
+            "EBIQCgpBY2NlcHRUYXNrEIWAEBIVCg9BYmFuZG9ubWVudFRhc2sQh4AQEhAK",
+            "ClRhc2tSZXdhcmQQiYAQEhQKDlRhc2tMaXN0UmV3YXJkEJGAEBIZChNVcGdy",
+            "YWRlVGFza1Byb2dyZXNzEJOAEBIZChNCcm9hZENhc3RUYXNrUmV3YXJkEJWA",
+            "EBIVCg9TZW5kQ2hhdE1lc3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNz",
+            "YWdlcxCDgBQSIAoaQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4K",
+            "GEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCBgBhiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -121,9 +122,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("QueryLands")] QueryLands = 65573,
     /// <summary>
-    /// 请求QueryLands后地块数据分批次推送        
+    /// 请求QueryLands后地块数据分批次推送  
     /// </summary>
     [pbr::OriginalName("BroadCastInitLand")] BroadCastInitLand = 65575,
+    /// <summary>
+    /// 初始玩家道具数据     
+    /// </summary>
+    [pbr::OriginalName("BroadCastInitItem")] BroadCastInitItem = 65577,
     /// <summary>
     /// 建造
     /// </summary>

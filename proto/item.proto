@@ -44,16 +44,16 @@ message NftSkill{
   int32  skill_level = 2;
 }
 
-// 放置类NFT道具
-message NftPlaceableInfo{
-  string      token    = 1;
-  // 第三方NFT 没有cid
-  int32       object_cid = 2;
-  // nft 品质 第三方NFT 没有cid
-  NFTRarity placeable_rarity = 3; 
-  // 道具关联技能
-  repeated NftSkill   skills  = 4;
-}
+// // 放置类NFT道具
+// message NftPlaceableInfo{
+//   string      token    = 1;
+//   // 第三方NFT 没有cid
+//   int32       object_cid = 2;
+//   // nft 品质 第三方NFT 没有cid
+//   NFTRarity placeable_rarity = 3; 
+//   // 道具关联技能
+//   repeated NftSkill   skills  = 4;
+// }
 
 // 第三方NFT道具信息
 message NftThirdNftInfo{
@@ -77,19 +77,19 @@ message NftWearableInfo{
   NFTRarity   wearable_rarity = 3;
 }
 
-//道具为什么被扣除
-enum TakeReason {
-  // 被使用(包含道具使用 和 建造扣除)
-  TakeReasonOnUse = 0;
-  // 玩家丢弃
-  TakeReasonDrop = 1;
-  // 死亡掉落
-  TakeReasonBurst = 2;
-  // 任务扣除
-  TakeReasonTaskTake = 3;
-  // 创建领地
-  TakeReasonManorCreate = 4; 
-}
+// //道具为什么被扣除
+// enum TakeReason {
+//   // 被使用(包含道具使用 和 建造扣除)
+//   TakeReasonOnUse = 0;
+//   // 玩家丢弃
+//   TakeReasonDrop = 1;
+//   // 死亡掉落
+//   TakeReasonBurst = 2;
+//   // 任务扣除
+//   TakeReasonTaskTake = 3;
+//   // 创建领地
+//   TakeReasonManorCreate = 4; 
+// }
 
 enum ItemType{
   // 游戏道具
@@ -183,21 +183,22 @@ enum AvatarPosition {
 
 // 道具
 message Item {
-  ItemType item_type = 1;
-  string id = 2;
-  // 对应的 objectId,
-  int32 object_cid = 3;
-  int32 num = 4;
-  int64 user_id = 5;
-  // 装备属性配置
-  AvatarAttribute attribute = 8;
-  AvatarPosition  avatar_pos = 9;
+  ItemType        itemType = 1;
+  string          id = 2;
+  int32           object_cid = 3;  // 对应的 objectId,
+  int32           num = 4;
+  int64           userId = 5;  
+  AvatarPosition  avatarPos = 9;
   // nft资产如果建造在地图中了此时 nft_using = true
-  bool          nft_using = 10;
-  // nft 详细数据
-  string        nft_json_data = 11;
+  bool            nftUsing = 10;
+  // NFT data  
+  NftData         nftData = 11;
   // nft 过期时间
-  int32         nft_time_out_sec = 12;
+  int32           nft_time_out_sec = 12;
+
+  // AvatarAttribute attribute = 98;// 装备属性配置
+   // nft 详细数据
+  // string          nft_json_data = 99;
 }
 
 
@@ -217,4 +218,24 @@ message PlayerAvatar {
   int32 object_id = 2;
   // 属性
   AvatarAttribute attribute = 3;
+}
+
+message NftData{
+  string      network = 1;
+  string      productId = 2;
+  string      tokenId = 3;
+  NftMetadata metadata = 4;
+}
+
+message NftMetadata{
+  string                name = 1;
+  string                description = 2;
+  string                image = 3;
+  string                backGroundColor = 4;
+  repeated NftAttribute attributes = 5;
+}
+
+message NftAttribute{
+  string  traitType = 1;
+  string  value = 2;
 }

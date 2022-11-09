@@ -44,17 +44,6 @@ message NftSkill{
   int32  skill_level = 2;
 }
 
-// // 放置类NFT道具
-// message NftPlaceableInfo{
-//   string      token    = 1;
-//   // 第三方NFT 没有cid
-//   int32       object_cid = 2;
-//   // nft 品质 第三方NFT 没有cid
-//   NFTRarity placeable_rarity = 3; 
-//   // 道具关联技能
-//   repeated NftSkill   skills  = 4;
-// }
-
 // 第三方NFT道具信息
 message NftThirdNftInfo{
   string name = 1;
@@ -76,20 +65,6 @@ message NftWearableInfo{
   int32       object_cid = 2;
   NFTRarity   wearable_rarity = 3;
 }
-
-// //道具为什么被扣除
-// enum TakeReason {
-//   // 被使用(包含道具使用 和 建造扣除)
-//   TakeReasonOnUse = 0;
-//   // 玩家丢弃
-//   TakeReasonDrop = 1;
-//   // 死亡掉落
-//   TakeReasonBurst = 2;
-//   // 任务扣除
-//   TakeReasonTaskTake = 3;
-//   // 创建领地
-//   TakeReasonManorCreate = 4; 
-// }
 
 enum ItemType{
   // 游戏道具
@@ -194,11 +169,7 @@ message Item {
   // NFT data  
   NftData         nftData = 11;
   // nft 过期时间
-  int32           nft_time_out_sec = 12;
-
-  // AvatarAttribute attribute = 98;// 装备属性配置
-   // nft 详细数据
-  // string          nft_json_data = 99;
+  int32           nftTimeOutSec = 12; 
 }
 
 
@@ -224,7 +195,8 @@ message NftData{
   string      network = 1;
   string      productId = 2;
   string      tokenId = 3;
-  NftMetadata metadata = 4;
+  bool        isMelandAi = 4;
+  NftMetadata metadata = 5;
 }
 
 message NftMetadata{

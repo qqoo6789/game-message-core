@@ -37,52 +37,52 @@ namespace GameMessageCore {
             "aXR5GAEgASgJEhIKCmR1cmFiaWxpdHkYAiABKAUSLAoEZGF0YRgDIAMoCzIe",
             "LmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVEYXRhIkwKDUF0dHJpYnV0ZURh",
             "dGESLAoEdHlwZRgBIAEoDjIeLmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVU",
-            "eXBlEg0KBXZhbHVlGAIgASgFIvsBCgRJdGVtEisKCGl0ZW1UeXBlGAEgASgO",
+            "eXBlEg0KBXZhbHVlGAIgASgFIvgBCgRJdGVtEisKCGl0ZW1UeXBlGAEgASgO",
             "MhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1UeXBlEgoKAmlkGAIgASgJEhIKCm9i",
             "amVjdF9jaWQYAyABKAUSCwoDbnVtGAQgASgFEg4KBnVzZXJJZBgFIAEoAxIy",
             "CglhdmF0YXJQb3MYCSABKA4yHy5nYW1lTWVzc2FnZUNvcmUuQXZhdGFyUG9z",
             "aXRpb24SEAoIbmZ0VXNpbmcYCiABKAgSKQoHbmZ0RGF0YRgLIAEoCzIYLmdh",
-            "bWVNZXNzYWdlQ29yZS5OZnREYXRhEhgKEG5mdF90aW1lX291dF9zZWMYDCAB",
-            "KAUiOQoMSXRlbUJhc2VJbmZvEgsKA2NpZBgBIAEoBRILCgNudW0YAiABKAUS",
-            "DwoHcXVhbGl0eRgDIAEoBSKJAQoMUGxheWVyQXZhdGFyEjEKCHBvc2l0aW9u",
-            "GAEgASgOMh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhEKCW9i",
-            "amVjdF9pZBgCIAEoBRIzCglhdHRyaWJ1dGUYAyABKAsyIC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQXZhdGFyQXR0cmlidXRlIm4KB05mdERhdGESDwoHbmV0d29yaxgB",
-            "IAEoCRIRCglwcm9kdWN0SWQYAiABKAkSDwoHdG9rZW5JZBgDIAEoCRIuCght",
-            "ZXRhZGF0YRgEIAEoCzIcLmdhbWVNZXNzYWdlQ29yZS5OZnRNZXRhZGF0YSKL",
-            "AQoLTmZ0TWV0YWRhdGESDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgC",
-            "IAEoCRINCgVpbWFnZRgDIAEoCRIXCg9iYWNrR3JvdW5kQ29sb3IYBCABKAkS",
-            "MQoKYXR0cmlidXRlcxgFIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5OZnRBdHRy",
-            "aWJ1dGUiMAoMTmZ0QXR0cmlidXRlEhEKCXRyYWl0VHlwZRgBIAEoCRINCgV2",
-            "YWx1ZRgCIAEoCSqcAQoHTkZUVHlwZRISCg5ORlRUeXBlVW5rbm93bhAAEhUK",
-            "EU5GVFR5cGVDb25zdW1hYmxlEAESFAoQTkZUVHlwZUVxdWlwbWVudBACEhMK",
-            "D05GVFR5cGVNYXRlcmlhbBADEhQKEE5GVFR5cGVQbGFjZWFibGUQBBIQCgxO",
-            "RlRUeXBlVGhpcmQQBRITCg9ORlRUeXBlV2VhcmFibGUQBiqGAQoJTkZUUmFy",
-            "aXR5EhQKEE5GVFJhcml0eVVua25vd24QABITCg9ORlRSYXJpdHlDb21tb24Q",
-            "ARIRCg1ORlRSYXJpdHlSYXJlEAISEQoNTkZUUmFyaXR5RXBpYxADEhMKD05G",
-            "VFJhcml0eU15dGhpYxAEEhMKD05GVFJhcml0eVVuaXF1ZRAFKpQBChFORlRD",
-            "b25zdW1hYmxlVHlwZRIeChpORlRDb25zdW1hYmxlVHlwZVJlc3RvcmVIUBAA",
-            "EiAKHE5GVENvbnN1bWFibGVUeXBlTGVhcm5SZWNpcGUQARIcChhORlRDb25z",
-            "dW1hYmxlVHlwZUFkZEJ1ZmYQAhIfChtORlRDb25zdW1hYmxlVHlwZU9jY3Vw",
-            "eUxhbmQQAyotCghJdGVtVHlwZRIQCgxJdGVtVHlwZUdhbWUQABIPCgtJdGVt",
-            "VHlwZU5GVBABKsMCCg1BdHRyaWJ1dGVUeXBlEhgKFEF0dHJpYnV0ZVR5cGVV",
-            "bmtub3duEAASGAoUQXR0cmlidXRlVHlwZUhwTGltaXQQARIbChdBdHRyaWJ1",
-            "dGVUeXBlSHBSZWNvdmVyeRACEhQKEEF0dHJpYnV0ZVR5cGVBdHQQAxIZChVB",
-            "dHRyaWJ1dGVUeXBlQXR0U3BlZWQQBBIUChBBdHRyaWJ1dGVUeXBlRGVmEAUS",
-            "FQoRQXR0cmlidXRlVHlwZUNyaXQQBhIYChRBdHRyaWJ1dGVUeXBlQ3JpdERt",
-            "ZxAHEhgKFEF0dHJpYnV0ZVR5cGVIaXRSYXRlEAgSGQoVQXR0cmlidXRlVHlw",
-            "ZU1pc3NSYXRlEAkSGgoWQXR0cmlidXRlVHlwZU1vdmVTcGVlZBAKEhgKFEF0",
-            "dHJpYnV0ZVR5cGVTa2lsbElkEGMqvgMKDkF2YXRhclBvc2l0aW9uEhYKEkF2",
-            "YXRhclBvc2l0aW9uTm9uZRAAEhYKEkF2YXRhclBvc2l0aW9uSGVhZBABEhYK",
-            "EkF2YXRhclBvc2l0aW9uQ29hdBACEhYKEkF2YXRhclBvc2l0aW9uUGFudBAD",
-            "EhYKEkF2YXRhclBvc2l0aW9uU2hvZRAEEhYKEkF2YXRhclBvc2l0aW9uSGFu",
-            "ZBAFEhsKF0F2YXRhclBvc2l0aW9uQWNjZXNzb3J5EAYSGAoUQXZhdGFyUG9z",
-            "aXRpb25XZWFwb24QBxIXChNBcHBlYXJhbmNlUG9zT2Zmc2V0EAoSIAocQXZh",
-            "dGFyUG9zaXRpb25BcHBlYXJhbmNlSGVhZBALEiAKHEF2YXRhclBvc2l0aW9u",
-            "QXBwZWFyYW5jZUNvYXQQDBIgChxBdmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VQ",
-            "YW50EA0SIAocQXZhdGFyUG9zaXRpb25BcHBlYXJhbmNlU2hvZRAOEiAKHEF2",
-            "YXRhclBvc2l0aW9uQXBwZWFyYW5jZUhhbmQQDxIiCh5BdmF0YXJQb3NpdGlv",
-            "bkFwcGVhcmFuY2VXZWFwb24QEWIGcHJvdG8z"));
+            "bWVNZXNzYWdlQ29yZS5OZnREYXRhEhUKDW5mdFRpbWVPdXRTZWMYDCABKAUi",
+            "OQoMSXRlbUJhc2VJbmZvEgsKA2NpZBgBIAEoBRILCgNudW0YAiABKAUSDwoH",
+            "cXVhbGl0eRgDIAEoBSKJAQoMUGxheWVyQXZhdGFyEjEKCHBvc2l0aW9uGAEg",
+            "ASgOMh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhEKCW9iamVj",
+            "dF9pZBgCIAEoBRIzCglhdHRyaWJ1dGUYAyABKAsyIC5nYW1lTWVzc2FnZUNv",
+            "cmUuQXZhdGFyQXR0cmlidXRlIoIBCgdOZnREYXRhEg8KB25ldHdvcmsYASAB",
+            "KAkSEQoJcHJvZHVjdElkGAIgASgJEg8KB3Rva2VuSWQYAyABKAkSEgoKaXNN",
+            "ZWxhbmRBaRgEIAEoCBIuCghtZXRhZGF0YRgFIAEoCzIcLmdhbWVNZXNzYWdl",
+            "Q29yZS5OZnRNZXRhZGF0YSKLAQoLTmZ0TWV0YWRhdGESDAoEbmFtZRgBIAEo",
+            "CRITCgtkZXNjcmlwdGlvbhgCIAEoCRINCgVpbWFnZRgDIAEoCRIXCg9iYWNr",
+            "R3JvdW5kQ29sb3IYBCABKAkSMQoKYXR0cmlidXRlcxgFIAMoCzIdLmdhbWVN",
+            "ZXNzYWdlQ29yZS5OZnRBdHRyaWJ1dGUiMAoMTmZ0QXR0cmlidXRlEhEKCXRy",
+            "YWl0VHlwZRgBIAEoCRINCgV2YWx1ZRgCIAEoCSqcAQoHTkZUVHlwZRISCg5O",
+            "RlRUeXBlVW5rbm93bhAAEhUKEU5GVFR5cGVDb25zdW1hYmxlEAESFAoQTkZU",
+            "VHlwZUVxdWlwbWVudBACEhMKD05GVFR5cGVNYXRlcmlhbBADEhQKEE5GVFR5",
+            "cGVQbGFjZWFibGUQBBIQCgxORlRUeXBlVGhpcmQQBRITCg9ORlRUeXBlV2Vh",
+            "cmFibGUQBiqGAQoJTkZUUmFyaXR5EhQKEE5GVFJhcml0eVVua25vd24QABIT",
+            "Cg9ORlRSYXJpdHlDb21tb24QARIRCg1ORlRSYXJpdHlSYXJlEAISEQoNTkZU",
+            "UmFyaXR5RXBpYxADEhMKD05GVFJhcml0eU15dGhpYxAEEhMKD05GVFJhcml0",
+            "eVVuaXF1ZRAFKpQBChFORlRDb25zdW1hYmxlVHlwZRIeChpORlRDb25zdW1h",
+            "YmxlVHlwZVJlc3RvcmVIUBAAEiAKHE5GVENvbnN1bWFibGVUeXBlTGVhcm5S",
+            "ZWNpcGUQARIcChhORlRDb25zdW1hYmxlVHlwZUFkZEJ1ZmYQAhIfChtORlRD",
+            "b25zdW1hYmxlVHlwZU9jY3VweUxhbmQQAyotCghJdGVtVHlwZRIQCgxJdGVt",
+            "VHlwZUdhbWUQABIPCgtJdGVtVHlwZU5GVBABKsMCCg1BdHRyaWJ1dGVUeXBl",
+            "EhgKFEF0dHJpYnV0ZVR5cGVVbmtub3duEAASGAoUQXR0cmlidXRlVHlwZUhw",
+            "TGltaXQQARIbChdBdHRyaWJ1dGVUeXBlSHBSZWNvdmVyeRACEhQKEEF0dHJp",
+            "YnV0ZVR5cGVBdHQQAxIZChVBdHRyaWJ1dGVUeXBlQXR0U3BlZWQQBBIUChBB",
+            "dHRyaWJ1dGVUeXBlRGVmEAUSFQoRQXR0cmlidXRlVHlwZUNyaXQQBhIYChRB",
+            "dHRyaWJ1dGVUeXBlQ3JpdERtZxAHEhgKFEF0dHJpYnV0ZVR5cGVIaXRSYXRl",
+            "EAgSGQoVQXR0cmlidXRlVHlwZU1pc3NSYXRlEAkSGgoWQXR0cmlidXRlVHlw",
+            "ZU1vdmVTcGVlZBAKEhgKFEF0dHJpYnV0ZVR5cGVTa2lsbElkEGMqvgMKDkF2",
+            "YXRhclBvc2l0aW9uEhYKEkF2YXRhclBvc2l0aW9uTm9uZRAAEhYKEkF2YXRh",
+            "clBvc2l0aW9uSGVhZBABEhYKEkF2YXRhclBvc2l0aW9uQ29hdBACEhYKEkF2",
+            "YXRhclBvc2l0aW9uUGFudBADEhYKEkF2YXRhclBvc2l0aW9uU2hvZRAEEhYK",
+            "EkF2YXRhclBvc2l0aW9uSGFuZBAFEhsKF0F2YXRhclBvc2l0aW9uQWNjZXNz",
+            "b3J5EAYSGAoUQXZhdGFyUG9zaXRpb25XZWFwb24QBxIXChNBcHBlYXJhbmNl",
+            "UG9zT2Zmc2V0EAoSIAocQXZhdGFyUG9zaXRpb25BcHBlYXJhbmNlSGVhZBAL",
+            "EiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZUNvYXQQDBIgChxBdmF0YXJQ",
+            "b3NpdGlvbkFwcGVhcmFuY2VQYW50EA0SIAocQXZhdGFyUG9zaXRpb25BcHBl",
+            "YXJhbmNlU2hvZRAOEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZUhhbmQQ",
+            "DxIiCh5BdmF0YXJQb3NpdGlvbkFwcGVhcmFuY2VXZWFwb24QEWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -95,7 +95,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Item), global::GameMessageCore.Item.Parser, new[]{ "ItemType", "Id", "ObjectCid", "Num", "UserId", "AvatarPos", "NftUsing", "NftData", "NftTimeOutSec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemBaseInfo), global::GameMessageCore.ItemBaseInfo.Parser, new[]{ "Cid", "Num", "Quality" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerAvatar), global::GameMessageCore.PlayerAvatar.Parser, new[]{ "Position", "ObjectId", "Attribute" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftData), global::GameMessageCore.NftData.Parser, new[]{ "Network", "ProductId", "TokenId", "Metadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftData), global::GameMessageCore.NftData.Parser, new[]{ "Network", "ProductId", "TokenId", "IsMelandAi", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftMetadata), global::GameMessageCore.NftMetadata.Parser, new[]{ "Name", "Description", "Image", "BackGroundColor", "Attributes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftAttribute), global::GameMessageCore.NftAttribute.Parser, new[]{ "TraitType", "Value" }, null, null, null, null)
           }));
@@ -2094,7 +2094,7 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "nft_time_out_sec" field.</summary>
+    /// <summary>Field number for the "nftTimeOutSec" field.</summary>
     public const int NftTimeOutSecFieldNumber = 12;
     private int nftTimeOutSec_;
     /// <summary>
@@ -3027,6 +3027,7 @@ namespace GameMessageCore {
       network_ = other.network_;
       productId_ = other.productId_;
       tokenId_ = other.tokenId_;
+      isMelandAi_ = other.isMelandAi_;
       metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3073,8 +3074,20 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "isMelandAi" field.</summary>
+    public const int IsMelandAiFieldNumber = 4;
+    private bool isMelandAi_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsMelandAi {
+      get { return isMelandAi_; }
+      set {
+        isMelandAi_ = value;
+      }
+    }
+
     /// <summary>Field number for the "metadata" field.</summary>
-    public const int MetadataFieldNumber = 4;
+    public const int MetadataFieldNumber = 5;
     private global::GameMessageCore.NftMetadata metadata_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3103,6 +3116,7 @@ namespace GameMessageCore {
       if (Network != other.Network) return false;
       if (ProductId != other.ProductId) return false;
       if (TokenId != other.TokenId) return false;
+      if (IsMelandAi != other.IsMelandAi) return false;
       if (!object.Equals(Metadata, other.Metadata)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3114,6 +3128,7 @@ namespace GameMessageCore {
       if (Network.Length != 0) hash ^= Network.GetHashCode();
       if (ProductId.Length != 0) hash ^= ProductId.GetHashCode();
       if (TokenId.Length != 0) hash ^= TokenId.GetHashCode();
+      if (IsMelandAi != false) hash ^= IsMelandAi.GetHashCode();
       if (metadata_ != null) hash ^= Metadata.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3145,8 +3160,12 @@ namespace GameMessageCore {
         output.WriteRawTag(26);
         output.WriteString(TokenId);
       }
+      if (IsMelandAi != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsMelandAi);
+      }
       if (metadata_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteMessage(Metadata);
       }
       if (_unknownFields != null) {
@@ -3171,8 +3190,12 @@ namespace GameMessageCore {
         output.WriteRawTag(26);
         output.WriteString(TokenId);
       }
+      if (IsMelandAi != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsMelandAi);
+      }
       if (metadata_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteMessage(Metadata);
       }
       if (_unknownFields != null) {
@@ -3193,6 +3216,9 @@ namespace GameMessageCore {
       }
       if (TokenId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenId);
+      }
+      if (IsMelandAi != false) {
+        size += 1 + 1;
       }
       if (metadata_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
@@ -3217,6 +3243,9 @@ namespace GameMessageCore {
       }
       if (other.TokenId.Length != 0) {
         TokenId = other.TokenId;
+      }
+      if (other.IsMelandAi != false) {
+        IsMelandAi = other.IsMelandAi;
       }
       if (other.metadata_ != null) {
         if (metadata_ == null) {
@@ -3251,7 +3280,11 @@ namespace GameMessageCore {
             TokenId = input.ReadString();
             break;
           }
-          case 34: {
+          case 32: {
+            IsMelandAi = input.ReadBool();
+            break;
+          }
+          case 42: {
             if (metadata_ == null) {
               Metadata = new global::GameMessageCore.NftMetadata();
             }
@@ -3285,7 +3318,11 @@ namespace GameMessageCore {
             TokenId = input.ReadString();
             break;
           }
-          case 34: {
+          case 32: {
+            IsMelandAi = input.ReadBool();
+            break;
+          }
+          case 42: {
             if (metadata_ == null) {
               Metadata = new global::GameMessageCore.NftMetadata();
             }

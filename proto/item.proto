@@ -193,10 +193,9 @@ message PlayerAvatar {
 
 message NftData{
   string      network = 1;
-  string      productId = 2;
-  string      tokenId = 3;
-  bool        isMelandAi = 4;
-  NftMetadata metadata = 5;
+  string      tokenId = 2;
+  bool        isMelandAi = 3;
+  NftMetadata metadata = 4;
 }
 
 message NftMetadata{

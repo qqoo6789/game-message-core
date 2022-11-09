@@ -35,6 +35,14 @@ message EntityWithLocation {
   }
 }
 
+message DestructionElementData
+{
+  //唯一ID
+  int64 id = 1;
+  //下次恢复的时间戳
+  int64 restore_stamp = 2;
+}
+
 message Player {
   PlayerBaseData        base_data = 1;
   EntityProfile         profile = 2;  // 玩家属性

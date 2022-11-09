@@ -108,6 +108,10 @@ message Envelope {
     PlayerActionCollectRequest              player_action_collect_request                = 0x030027;
     PlayerActionCollectResponse             player_action_collect_response               = 0x030029;    
     BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response    = 0x030031;                               
+    SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
+    SceneDestructionResponse                scene_destruction_response                    = 0x030034;
+    BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
+
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -403,13 +407,16 @@ message BroadCastPlayerActionCollectResponse {
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体
-  bool     final = 2; // 是否最后一个包
+  repeated DestructionElementData destruction_elements = 2; // 视野内当前场景中被破坏的元素列表
+  bool     final = 3; // 是否最后一个包
 } 
 message BroadCastMapEntityUpdateResponse{
   // 视野内新增的实体列表
   repeated EntityWithLocation entity_added = 1;
   // 视野内移除的实体列表
   repeated EntityId           entity_removed = 2;
+  // 视野内当前场景中被破坏的元素列表
+  repeated DestructionElementData destruction_elements = 3;
 }
 message BroadCastEntityMoveResponse{
   repeated EntityMovement     moves = 1;
@@ -469,8 +476,19 @@ message BroadCastEntityBuildDataUpdateResponse {
   int32           collectionItemCount = 8;
 }
 
+message SceneDestructionRequest{
+  repeated int64 ids = 1;
+}
 
+message SceneDestructionResponse
+{
 
+}
+
+message BroadCastSceneDestructionResponse
+{
+  repeated DestructionElementData destruction_elements = 1;
+}
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

@@ -58,6 +58,7 @@ message Envelope {
     QueryLandsRequest                 query_lands_request                   = 0x010025;
     QueryLandsResponse                query_lands_response                  = 0x010026;
     BroadCastInitLandResponse         broad_cast_init_land_response         = 0x010027;
+    BroadCastInitItemResponse         broad_cast_init_item_response         = 0x010029;
     BuildRequest                      build_request                         = 0x010031;
     BuildResponse                     build_response                        = 0x010032;         
     RecyclingRequest                  recycling_request                     = 0x010033;
@@ -158,7 +159,8 @@ message Envelope {
 
 //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
 message ItemGetRequest {}
-message ItemGetResponse {
+message ItemGetResponse {}
+message BroadCastInitItemResponse{
   repeated Item   items = 1;
 }
 message ItemUseRequest { 

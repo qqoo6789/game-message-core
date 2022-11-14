@@ -45,7 +45,8 @@ enum EnvelopeType {
     SignOutPlayer                   = 0x010021;     // 角色退出游戏
     UpgradePlayerLevel              = 0x010023;     // 手动点击升级
     QueryLands                      = 0x010025;     // 请求所有占地地块信息
-    BroadCastInitLand               = 0x010027;     // 请求QueryLands后地块数据分批次推送        
+    BroadCastInitLand               = 0x010027;     // 请求QueryLands后地块数据分批次推送  
+    BroadCastInitItem               = 0x010029;     // 初始玩家道具数据     
     Build                           = 0x010031;     // 建造
     Recycling                       = 0x010033;     // 拆除
     Charged                         = 0x010035;     // 充电charged

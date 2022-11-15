@@ -11,7 +11,7 @@ enum TaskOptionType{
   // 使用若干数量的指定道具
   UseItem = 2;
   // 获得若干数量的指定道具
-  PickUpItem = 3;
+  GetItem = 3;
   // 杀死若干数量的指定怪物
   KillMonster = 4; 
   //角色达到某等级
@@ -26,10 +26,12 @@ enum TaskOptionType{
   UseRecipe = 9; 
   //累计合成多少次
   RecipeUseCount = 10;
-  //完成若干数量的指定类型任务
-  TaskListTypeCount = 11;
+  //完成若干指定任务链的任务
+  TaskCount = 11;
+  //完成若干次的指定类型任务链
+  TaskListTypeCount = 12;
   //到达指定坐标点指定半径范围内的区域
-  TargetPosition = 12;
+  TargetPosition = 13;
 }
 
 
@@ -58,6 +60,10 @@ message TaskOptionUseRecipe{
   int32           recipeId = 1;
   int32           times = 2;
 }
+message TaskOptionFinishTaskCount{
+  TaskListType    kind  = 1;
+  int32           count = 2;
+}
 message TaskOptionFinishTaskListCount{
   TaskListType    kind  = 1;
   int32           count = 2;
@@ -80,7 +86,7 @@ message TaskOptionCnf {
     // 使用若干数量的指定道具  
     TaskOptionItem                    useItem = 13;
     // 获得若干数量的指定道具     
-    TaskOptionItem                    pickUpItem = 14;
+    TaskOptionItem                    getItem = 14;
     // 杀死若干数量的指定怪物     
     TaskOptionKillMonster             killMonster = 15;
     // 指定插槽达到某等级 
@@ -93,10 +99,12 @@ message TaskOptionCnf {
     TaskOptionUseRecipe               useRecipe = 19;
     // 累计合成多少次
     int32                             RecipeUseCount = 20;
-    // 完成若干数量的指定类型任务
-    TaskOptionFinishTaskListCount     FinishTaskListCount = 21;
+    // 完成若干指定任务链的任务
+    TaskOptionFinishTaskCount         FinishTaskCount = 21;
+    // 完成若干次的指定类型任务链
+    TaskOptionFinishTaskListCount     FinishTaskListCount = 22;
     // 到达指定坐标点指定半径范围内的区域
-    TaskOptionTargetPosition          TargetPosition = 22;
+    TaskOptionTargetPosition          TargetPosition = 23;
   }
 }
 

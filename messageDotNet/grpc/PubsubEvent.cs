@@ -51,6 +51,10 @@ public static class SubscriptionEvent
     /// </summary>
     public const string TASK_REWARD = "EventTopicUserTaskReward";
     /// <summary>
+    /// task finish event
+    /// </summary>
+    public const string TASK_FINISH = "EventTopicTaskFinish";
+    /// <summary>
     /// task list finish event
     /// </summary>
     public const string TASK_LIST_FINISH = "EventTopicTaskListFinish";

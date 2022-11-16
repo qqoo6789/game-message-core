@@ -33,10 +33,13 @@ namespace GameMessageCore {
             "CRIvCgdmZWF0dXJlGAcgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckZl",
             "YXR1cmUSDQoFZ3VpZGUYCCABKAgqaQoSUGxheWVyUmVzcGF3blBvaW50EhsK",
             "F1BsYXllclJlc3Bhd25Qb2ludExjb2FsEAASGgoWUGxheWVyUmVzcGF3blBv",
-            "aW50Q2l0eRABEhoKFlBsYXllclJlc3Bhd25Qb2ludEFyZWEQAmIGcHJvdG8z"));
+            "aW50Q2l0eRABEhoKFlBsYXllclJlc3Bhd25Qb2ludEFyZWEQAipcCgtUaWNr",
+            "T3V0VHlwZRIWChJUaWNrT3V0VHlwZVVua25vd24QABIQCgxTZXJ2aWNlQ2xv",
+            "c2UQARIQCgxSZXBlYXRTaW5nSW4QAhIRCg1JbGxlZ2FsQXRrU3BkEANiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.PlayerRespawnPoint), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.PlayerRespawnPoint), typeof(global::GameMessageCore.TickOutType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerFeature), global::GameMessageCore.PlayerFeature.Parser, new[]{ "Eyebrow", "Mouth", "Eye", "Face", "Hair", "Glove", "Clothes", "Pants" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerBaseData), global::GameMessageCore.PlayerBaseData.Parser, new[]{ "UserId", "Name", "RoleId", "Gender", "RoleIcon", "Feature", "Guide" }, null, null, null, null)
           }));
@@ -49,6 +52,22 @@ namespace GameMessageCore {
     [pbr::OriginalName("PlayerRespawnPointLcoal")] Lcoal = 0,
     [pbr::OriginalName("PlayerRespawnPointCity")] City = 1,
     [pbr::OriginalName("PlayerRespawnPointArea")] Area = 2,
+  }
+
+  public enum TickOutType {
+    [pbr::OriginalName("TickOutTypeUnknown")] Unknown = 0,
+    /// <summary>
+    /// 服务关闭
+    /// </summary>
+    [pbr::OriginalName("ServiceClose")] ServiceClose = 1,
+    /// <summary>
+    /// 重复登录
+    /// </summary>
+    [pbr::OriginalName("RepeatSingIn")] RepeatSingIn = 2,
+    /// <summary>
+    /// 非法攻击速度
+    /// </summary>
+    [pbr::OriginalName("IllegalAtkSpd")] IllegalAtkSpd = 3,
   }
 
   #endregion

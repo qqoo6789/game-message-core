@@ -29,6 +29,7 @@ message Envelope {
   oneof payload {
     //保留id协议      : 0x00ZZZZ   *********************************************** 
     
+    BroadCastTickOutResponse          broad_cast_tick_out_response          = 0x009999;     
 
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
     ItemGetRequest                    item_get_request                      = 0x010001;
@@ -159,6 +160,11 @@ message Envelope {
 
 
 //保留id协议      : 0x00ZZZZ   ***********************************************      
+
+message BroadCastTickOutResponse{
+    TickOutType   kind = 1;
+}
+
 
 //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
 message ItemGetRequest {}

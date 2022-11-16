@@ -67,4 +67,6 @@ public static class SubscriptionEvent
     /// </summary>
     public const string USER_LEVEL_UPGRADE = "EventTopicUserLevelUpgrade";
 
+    public const string TICK_OUT_PLAYER = "EventTopicTickOutPlayer";
+
 }

@@ -17,6 +17,7 @@ public static class ManagerServiceAction
     /// </summary>
     public const string SELECT_SERVICE = "ManagerActionSelectService";
 
+    public const string MULTI_SELECT_SERVICE = "ManagerActionMultiSelectService";
 
 }
 

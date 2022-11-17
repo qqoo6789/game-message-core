@@ -12,7 +12,7 @@ public class TickOutPlayerEvent
     public string AgentId;
     public string SceneServiceAppId;
     public string SocketId;
-
+    public GameMessageCore.TickOutType TickOutCode;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);

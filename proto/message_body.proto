@@ -112,6 +112,9 @@ message Envelope {
     SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
     SceneDestructionResponse                scene_destruction_response                    = 0x030034;
     BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
+    PlayerActionChatRequest              player_action_chat_request                = 0x030037;
+    PlayerActionChatResponse             player_action_chat_response               = 0x030039;    
+    BroadCastPlayerActionChatResponse    broad_cast_player_action_chat_response    = 0x030041;  
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -404,6 +407,16 @@ message PlayerActionCollectResponse {
 }
 message BroadCastPlayerActionCollectResponse {
   int64          user_id = 1;
+}
+
+message PlayerActionChatRequest {
+  bool           show = 1;
+}
+message PlayerActionChatResponse {
+}
+message BroadCastPlayerActionChatResponse {
+  int64          user_id = 1;
+  bool           show = 2;
 }
 
 message BroadCastInitMapElementResponse {

@@ -3,9 +3,10 @@ package grpc
 type ManagerServiceAction string
 
 const (
-	ManagerServiceActionServiceTime   ManagerServiceAction = "QueryServerTime"
-	ManagerServiceActionRegister      ManagerServiceAction = "ManagerActionServiceRegister"
-	ManagerServiceActionSelectService ManagerServiceAction = "ManagerActionSelectService"
+	ManagerServiceActionServiceTime        ManagerServiceAction = "QueryServerTime"
+	ManagerServiceActionRegister           ManagerServiceAction = "ManagerActionServiceRegister"
+	ManagerServiceActionSelectService      ManagerServiceAction = "ManagerActionSelectService"
+	ManagerServiceActionMultiSelectService ManagerServiceAction = "ManagerActionMultiSelectService"
 )
 
 type MainServiceAction string

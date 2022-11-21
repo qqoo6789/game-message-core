@@ -84,6 +84,8 @@ enum EnvelopeType {
     BroadCastPlayerActionCollect          = 0x030029;
     SceneDestruction                = 0x030033;
     BroadCastSceneDestruction       = 0x030035;
+    PlayerActionChat                   = 0x030037;
+    BroadCastPlayerActionChat          = 0x030039;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

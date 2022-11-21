@@ -85,7 +85,7 @@ message Envelope {
     CreatePlayerResponse              create_player_response                = 0x020004;
 
 
-    //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    //sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
     EnterMapRequest                   enter_map_request                     = 0x030001;    
     EnterMapResponse                  enter_map_response                    = 0x030002;
     UpdateSelfLocationRequest         update_self_location_request          = 0x030003;
@@ -107,15 +107,19 @@ message Envelope {
     BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response      = 0x030022;
     BroadCastEntityBattleDataUpdateResponse broad_cast_entity_battle_data_update_response = 0x030023;
     BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;
-    PlayerActionCollectRequest              player_action_collect_request                = 0x030027;
-    PlayerActionCollectResponse             player_action_collect_response               = 0x030029;    
-    BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response    = 0x030031;                               
+    PlayerActionCollectRequest              player_action_collect_request                 = 0x030027;
+    PlayerActionCollectResponse             player_action_collect_response                = 0x030029;    
+    BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response     = 0x030031;                               
     SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
     SceneDestructionResponse                scene_destruction_response                    = 0x030034;
     BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
     PlayerActionChatRequest              player_action_chat_request                = 0x030037;
     PlayerActionChatResponse             player_action_chat_response               = 0x030039;    
     BroadCastPlayerActionChatResponse    broad_cast_player_action_chat_response    = 0x030041;  
+
+    QueryServerTimeRequest                  query_Server_time_request                     = 0x030041;
+    QueryServerTimeResponse                 query_Server_time_response                    = 0x030042;
+
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -500,16 +504,25 @@ message BroadCastEntityBuildDataUpdateResponse {
 message SceneDestructionRequest{
   repeated int64 ids = 1;
 }
-
-message SceneDestructionResponse
-{
-
-}
-
+message SceneDestructionResponse{}
 message BroadCastSceneDestructionResponse
 {
   repeated DestructionElementData destruction_elements = 1;
 }
+
+
+message QueryServerTimeRequest {
+  int64     client_time = 1;
+}
+message QueryServerTimeResponse {
+  int64     client_time = 1;
+  int64     system_time = 2;
+}
+
+
+
+
+
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

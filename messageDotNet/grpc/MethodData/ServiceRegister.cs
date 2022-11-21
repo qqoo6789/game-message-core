@@ -7,11 +7,10 @@ using UnityEngine;
 [Serializable]
 public class ServiceRegisterInput
 {
-    // 消息版本号 值为毫秒时间戳
-    public long MsgVersion;
-
     // 服务数据
     public ServiceData Service;
+    // register service current time MS
+    public long RegisterAt;
 
     public string ToJson()
     {
@@ -27,9 +26,12 @@ public class ServiceRegisterInput
 [Serializable]
 public class ServiceRegisterOutput
 {
-    // 消息版本号 值为毫秒时间戳
-    public long MsgVersion;
     public bool Success;
+    // register service current time MS
+    public long RegisterAt;
+    // service manager current time MS
+    public long ManagerAt;
+
 
     public string ToJson()
     {

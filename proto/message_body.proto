@@ -548,13 +548,15 @@ message  TaskListRewardResponse{
 }
 
 message  UpgradeTaskProgressRequest{
-  TaskListType    task_list_kind = 1;
-  // item NFT ids : 提交寻物任务的 附带信息
-  repeated TaskOptionItem items = 2;
-  // move to pos 附带信息
-  TaskOptionMoveTo        pos = 3;
-  // quiz 附加信息
-  TaskOptionQuiz          quiz = 4;
+  TaskListType              task_list_kind = 1;
+  // item NFT ids : 上交若干数量的指定道具
+  repeated TaskOptionItem   items = 2;
+  // 到达指定坐标点指定半径范围内的区域
+  TaskOptionTargetPosition  pos = 3;
+  // 使用指定的配方合成
+  TaskOptionUseRecipe       useRecipe = 4;
+  // 指定合成技能达到某等级
+  TaskOptionCraftSkillLevel craftSkillLevel = 5;
 }
 message  UpgradeTaskProgressResponse{
 }

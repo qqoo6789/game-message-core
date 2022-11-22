@@ -46,5 +46,25 @@ public static class SubscriptionEvent
     /// remove nft build event
     /// </summary>
     public const string NFT_BUILD_REMOVE = "EventTopicNftBuildRemove";
+    /// <summary>
+    /// task reward event
+    /// </summary>
+    public const string TASK_REWARD = "EventTopicUserTaskReward";
+    /// <summary>
+    /// task finish event
+    /// </summary>
+    public const string TASK_FINISH = "EventTopicTaskFinish";
+    /// <summary>
+    /// task list finish event
+    /// </summary>
+    public const string TASK_LIST_FINISH = "EventTopicTaskListFinish";
+    /// <summary>
+    /// slot level update event
+    /// </summary>
+    public const string SLOT_LEVEL_UPGRADE = "EventTopicSlotLevelUpgrade";
+    /// <summary>
+    /// user level update event
+    /// </summary>
+    public const string USER_LEVEL_UPGRADE = "EventTopicUserLevelUpgrade";
 
 }

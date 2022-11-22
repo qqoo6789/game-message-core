@@ -2,59 +2,109 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
+ 
 
-enum TaskType {
-  TaskTypeUnknown = 0;
-  // 寻物任务
-  TaskTypeGetItem = 1;
-  // 使用道具
-  TaskTypeUseItem = 2;
-  // 打怪任务
-  TaskTypeKillMonster = 3;
-  // 寻路任务
-  TaskTypeMoveTo = 4;
-  // Quiz
-  TaskTypeQuiz = 5;
-  // 攻占地块
-  TaskTypeOccupiedLand = 6;
+enum TaskOptionType{
+  UnknownTaskOptionType = 0;
+  // 上交若干数量的指定道具(寻物任务)
+  HandInItem = 1;
+  // 使用若干数量的指定道具
+  UseItem = 2;
+  // 获得若干数量的指定道具
+  GetItem = 3;
+  // 杀死若干数量的指定怪物
+  KillMonster = 4; 
+  //角色达到某等级
+  UserLevel = 5;
+  //指定插槽达到某等级
+  TargetSlotLevel = 6;
+  //指定数量插槽都达到某等级
+  SlotLevelCount = 7;
+  //指定合成技能达到某等级
+  CraftSkillLevel = 8;
+  //使用指定的配方合成
+  UseRecipe = 9; 
+  //累计合成多少次
+  RecipeUseCount = 10;
+  //完成若干指定任务链的任务
+  TaskCount = 11;
+  //完成若干次的指定类型任务链
+  TaskListTypeCount = 12;
+  //到达指定坐标点指定半径范围内的区域
+  TargetPosition = 13;
 }
 
-enum TaskListType {
-  TaskListTypeUnknown = 0;
-  // 每日任务
-  TaskListTypeDaily = 1;
-  // 悬赏任务
-  TaskListTypeRewarded = 2;
-  // other任务
-  TaskListTypeOther = 3;
-}
 
 message TaskOptionItem {
-  int32  item_cid = 1;
-  int32  num = 2; // max 10
-  string nft_id = 3;
+  int32           itemCid = 1;
+  int32           num = 2; // max 10
+  string          nftId = 3;
 }
-message TaskOptionMonster {
-  int32 mon_cid = 1;
-  int32 num = 2;
+message TaskOptionKillMonster {
+  int32           monCid = 1;
+  int32           num = 2;
 }
-message TaskOptionMoveTo {
-  int32 r = 1;
-  int32 c = 2;
+message TaskOptionTargetSlotLevel{
+  int32           slotPos = 1;
+  int32           level   = 2;
 }
-message TaskOptionQuiz {
-  int32 quiz_type = 1;
-  int32 quiz_num = 2;
+message TaskOptionSlotLevelCount{
+  int32           slotLevel = 1;
+  int32           slotCount = 2;
 }
+message TaskOptionCraftSkillLevel{
+  int32           skillId = 1;
+  int32           level   = 2;
+}
+message TaskOptionUseRecipe{
+  int32           recipeId = 1;
+  int32           times = 2;
+}
+message TaskOptionFinishTaskCount{
+  TaskListType    kind  = 1;
+  int32           count = 2;
+}
+message TaskOptionFinishTaskListCount{
+  TaskListType    kind  = 1;
+  int32           count = 2;
+}
+message TaskOptionTargetPosition{
+  int32           x          = 1;
+  int32           y          = 2;
+  int32           z          = 3;
+  int32           distOffset = 4;
+}
+
 message TaskOptionCnf {
-  TaskType kind = 1;
+  TaskOptionType kind = 1;
 
   oneof data{
-    int32             num = 11;
-    TaskOptionItem    item = 12;
-    TaskOptionMonster mon_info = 13;
-    TaskOptionMoveTo  tar_pos = 14;
-    TaskOptionQuiz    quiz_info = 15;
+    // 角色达到某等级
+    int32                             userLevel = 11;
+    // 上交若干数量的指定道具(寻物任务)
+    TaskOptionItem                    handInItem = 12;
+    // 使用若干数量的指定道具  
+    TaskOptionItem                    useItem = 13;
+    // 获得若干数量的指定道具     
+    TaskOptionItem                    getItem = 14;
+    // 杀死若干数量的指定怪物     
+    TaskOptionKillMonster             killMonster = 15;
+    // 指定插槽达到某等级 
+    TaskOptionTargetSlotLevel         targetSlotLevel = 16;
+    // 指定数量插槽都达到某等级
+    TaskOptionSlotLevelCount          slotLevelCount = 17;
+    // 指定合成技能达到某等级
+    TaskOptionCraftSkillLevel         craftSkillLevel = 18;
+    // 使用指定的配方合成
+    TaskOptionUseRecipe               useRecipe = 19;
+    // 累计合成多少次
+    int32                             RecipeUseCount = 20;
+    // 完成若干指定任务链的任务
+    TaskOptionFinishTaskCount         FinishTaskCount = 21;
+    // 完成若干次的指定类型任务链
+    TaskOptionFinishTaskListCount     FinishTaskListCount = 22;
+    // 到达指定坐标点指定半径范围内的区域
+    TaskOptionTargetPosition          TargetPosition = 23;
   }
 }
 
@@ -70,11 +120,21 @@ message Task {
   // 任务 ID
   int32     task_id = 1;
   // 任务类型
-  TaskType  task_kind = 2;
+  TaskOptionType  task_kind = 2;
   // 任务的接取时间
   int64     created_at_sec = 3;
   // 子项信息
   repeated  TaskOption options = 4;
+}
+
+enum TaskListType {
+  TaskListTypeUnknown = 0;
+  // 每日任务
+  TaskListTypeDaily = 1;
+  // 悬赏任务
+  TaskListTypeRewarded = 2;
+  // 主线任务(引导任务)
+  TaskListTypeGuide = 3;
 }
 
 message TaskList{

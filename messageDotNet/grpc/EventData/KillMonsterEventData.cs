@@ -7,6 +7,8 @@ using UnityEngine;
 [Serializable]
 public class KillMonsterEventData : EventDataBase
 {
+    public long MsgVersion;
+    public string SceneServiceAppId;
     public int MonsterCid;
     public string MonsterName;
     public GrpcItemBaseInfo[] DropList;

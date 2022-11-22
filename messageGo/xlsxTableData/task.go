@@ -3,118 +3,125 @@ package xlsxTable
 import (
 	"encoding/json"
 	"fmt"
+	"game-message-core/proto"
 	"time"
 )
 
-type TaskObject struct {
-	Param1 int32 `json:"param1"`
-	Param2 int32 `json:"param2"`
-	Param3 int32 `json:"param3"`
+// ----------- make task xlsx used types --------------------------
+type TaskXlsxOption struct {
+	OptionType proto.TaskOptionType `json:"optionType"`
+	Value      string               `json:"value"`
 }
-type TaskObjectList struct {
-	ChanceSum int32        `json:"chanceSum"`
-	ParamList []TaskObject `json:"paramList"`
+
+type TaskXlsxOptions struct {
+	Options []TaskXlsxOption `json:"options"`
 }
+
+//--------------- task db table used types --------------------------
+
+type TaskRowOption struct {
+	OptionType proto.TaskOptionType `json:"optionType"`
+	Param1     int32                `json:"param1"`
+	Param2     int32                `json:"param2"`
+	Param3     int32                `json:"param3"`
+	Param4     int32                `json:"param4"`
+	Chance     int32                `json:"chance"` // 权重值
+}
+
+type TaskRowOptionList struct {
+	// 权重和
+	ChanceSum int32 `json:"chanceSum"`
+	// 子项列表
+	Options []TaskRowOption `json:"options"`
+}
+
 type TaskTableRow struct {
-	UId             uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
-	Id              int32  `json:"id"`
-	Level           int32  `json:"level"`
-	Name            string `json:"name"`
-	SubSystem       string `json:"subSystem"`
-	Kind            int32  `json:"kind"`
-	NeedItemJson    string `gorm:"type:text" json:"needItemJson"`
-	UseItemJson     string `gorm:"type:text" json:"useItemJson"`
-	KillMonsterJson string `gorm:"type:text" json:"killMonsterJson"`
-	TargetPosJson   string `gorm:"type:text" json:"targetPosJson"`
-	QuizJson        string `gorm:"type:text" json:"quizJson"`
-	RequestLand     int32  `json:"requestLand"`
-	RewardId        int32  `json:"rewardId"`
-	RewardExp       int32  `json:"rewardExp"`
-	Difficulty      int32  `json:"difficulty"`
+	UId                  uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
+	Id                   int32  `json:"id"`
+	Level                int32  `json:"level"`
+	Name                 string `json:"name"`
+	SubSystem            string `json:"subSystem"`
+	RewardId             int32  `json:"rewardId"`
+	RewardExp            int32  `json:"rewardExp"`
+	Difficulty           int32  `json:"difficulty"`
+	DesignateOptionsJson string `gorm:"type:text" json:"designateOptionsJson"`
+	ChanceOptionsJson    string `gorm:"type:text" json:"chanceOptionsJson"`
 
 	CreatedAt time.Time `json:"createdAt"` // 过期判断条件,
 
-	NeedItem    *TaskObjectList `gorm:"-" json:"-"`
-	UseItem     *TaskObjectList `gorm:"-" json:"-"`
-	KillMonster *TaskObjectList `gorm:"-" json:"-"`
-	TargetPos   *TaskObjectList `gorm:"-" json:"-"`
-	Quiz        *TaskObjectList `gorm:"-" json:"-"`
+	DesignateOptions *TaskRowOptionList `gorm:"-" json:"-"`
+	ChanceOptions    *TaskRowOptionList `gorm:"-" json:"-"`
 }
 
-func marshal(objs *TaskObjectList) ([]byte, error) {
-	if objs == nil {
-		return nil, fmt.Errorf("TaskObjectList is nil")
-	}
-	return json.Marshal(objs)
-}
-func unMarshal(data string) (*TaskObjectList, error) {
-	if len(data) < 2 {
-		return nil, nil
+func (p *TaskTableRow) SetDesignateOptions(designateOptions *TaskRowOptionList) error {
+	if designateOptions == nil {
+		p.DesignateOptions = nil
+		p.DesignateOptionsJson = ""
 	}
 
-	objs := &TaskObjectList{}
-	if err := json.Unmarshal([]byte(data), objs); err != nil {
-		return nil, err
+	bs, err := json.Marshal(designateOptions)
+	if err != nil {
+		return err
 	}
-	return objs, nil
+
+	p.DesignateOptions = designateOptions
+	p.DesignateOptionsJson = string(bs)
+	return nil
 }
 
-func (p *TaskTableRow) SetNeedItem(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.NeedItemJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetNeedItem() *TaskObjectList {
-	if p.NeedItem == nil {
-		p.NeedItem, _ = unMarshal(p.NeedItemJson)
+func (p *TaskTableRow) GetDesignateOptions() (*TaskRowOptionList, error) {
+	if p.DesignateOptions == nil && len(p.DesignateOptionsJson) > 2 {
+		options := &TaskRowOptionList{}
+		err := json.Unmarshal([]byte(p.DesignateOptionsJson), options)
+		if err != nil {
+			return nil, err
+		}
+		p.DesignateOptions = options
 	}
-	return p.NeedItem
+	return p.DesignateOptions, nil
 }
 
-func (p *TaskTableRow) SetUseItem(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.UseItemJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetUseItem() *TaskObjectList {
-	if p.UseItem == nil {
-		p.UseItem, _ = unMarshal(p.UseItemJson)
+func (p *TaskTableRow) SetChanceOptions(chanceOptions *TaskRowOptionList) error {
+	if chanceOptions == nil {
+		p.ChanceOptions = nil
+		p.ChanceOptionsJson = ""
+		return nil
 	}
-	return p.UseItem
+
+	bs, err := json.Marshal(chanceOptions)
+	if err != nil {
+		return err
+	}
+
+	p.ChanceOptions = chanceOptions
+	p.ChanceOptionsJson = string(bs)
+	return nil
 }
 
-func (p *TaskTableRow) SetKillMonster(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.KillMonsterJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetKillMonster() *TaskObjectList {
-	if p.KillMonster == nil {
-		p.KillMonster, _ = unMarshal(p.KillMonsterJson)
+func (p *TaskTableRow) GetChanceOptions() (*TaskRowOptionList, error) {
+	if p.ChanceOptions == nil && len(p.ChanceOptionsJson) > 2 {
+		options := &TaskRowOptionList{}
+		err := json.Unmarshal([]byte(p.ChanceOptionsJson), options)
+		if err != nil {
+			return nil, err
+		}
+		p.ChanceOptions = options
 	}
-	return p.KillMonster
+	return p.ChanceOptions, nil
 }
 
-func (p *TaskTableRow) SetTargetPos(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.TargetPosJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetTargetPos() *TaskObjectList {
-	if p.TargetPos == nil {
-		p.TargetPos, _ = unMarshal(p.TargetPosJson)
-	}
-	return p.TargetPos
-}
+func (p *TaskTableRow) Check() error {
+	chanceOptionsExist := false
+	designateOptionsExist := false
 
-func (p *TaskTableRow) SetQuiz(objs *TaskObjectList) error {
-	bs, err := marshal(objs)
-	p.QuizJson = string(bs)
-	return err
-}
-func (p *TaskTableRow) GetQuiz() *TaskObjectList {
-	if p.Quiz == nil {
-		p.Quiz, _ = unMarshal(p.QuizJson)
+	if p.ChanceOptions != nil && len(p.ChanceOptions.Options) > 0 {
+		chanceOptionsExist = true
 	}
-	return p.Quiz
+	if p.DesignateOptions != nil && len(p.DesignateOptions.Options) > 0 {
+		designateOptionsExist = true
+	}
+	if !chanceOptionsExist && !designateOptionsExist {
+		return fmt.Errorf("task [%d] options is empty", p.Id)
+	}
+	return nil
 }

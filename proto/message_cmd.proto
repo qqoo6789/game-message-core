@@ -90,7 +90,7 @@ enum EnvelopeType {
     BroadCastPlayerActionChat          = 0x030039;
 
 
-    QueryServerTime                 = 0x030041;       // 客户端请求服务器时间
+    QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

@@ -117,8 +117,8 @@ message Envelope {
     PlayerActionChatResponse             player_action_chat_response               = 0x030039;    
     BroadCastPlayerActionChatResponse    broad_cast_player_action_chat_response    = 0x030041;  
 
-    QueryServerTimeRequest                  query_Server_time_request                     = 0x030041;
-    QueryServerTimeResponse                 query_Server_time_response                    = 0x030042;
+    QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
+    QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
 
 
 

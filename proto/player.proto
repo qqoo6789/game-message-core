@@ -36,3 +36,14 @@ message PlayerBaseData {
   // 引导记录字段
   bool guide = 8;
 } 
+
+
+enum TickOutType{
+  TickOutTypeUnknown  = 0;
+  // 服务关闭
+  ServiceClose          = 1;
+  // 重复登录
+  RepeatSingIn          = 2;
+  // 非法攻击速度
+  IllegalAtkSpd         = 3;
+}

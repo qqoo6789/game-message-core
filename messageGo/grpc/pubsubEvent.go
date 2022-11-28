@@ -21,4 +21,6 @@ const (
 	SubscriptionEventNftBuildAdd    SubscriptionEvent = "EventTopicNftBuildAdd"
 	SubscriptionEventNftBuildUpdate SubscriptionEvent = "EventTopicNftBuildUpdate"
 	SubscriptionEventNftBuildRemove SubscriptionEvent = "EventTopicNftBuildRemove"
+
+	SubscriptionEventTickOutPlayer SubscriptionEvent = "EventTopicTickOutPlayer"
 )

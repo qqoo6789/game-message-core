@@ -29,6 +29,8 @@ enum EnvelopeType {
     //保留id协议      : 0x00ZZZZ   *********************************************** 
     Unknown = 0;
 
+    BroadCastTickOut                = 0x009999;    // 踢玩家下线
+
     //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
     ItemGet                         = 0x010001;
     ItemUse                         = 0x010003;

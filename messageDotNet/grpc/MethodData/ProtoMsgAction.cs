@@ -12,6 +12,7 @@ public class PullClientMessageInput
     public string AgentAppId;
     public long UserId;
     public string SocketId;
+    public string SceneServiceId;
     public int MsgId;
     public byte[] MsgBody;
 

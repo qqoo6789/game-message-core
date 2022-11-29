@@ -50,6 +50,8 @@ enum DamageState {
   DamageStateCrit = 1;
   // 未命中
   DamageStateMiss = 3;
+  // 掉落伤害
+  DamageStateFall = 4;
 }
 
 message DamageData{

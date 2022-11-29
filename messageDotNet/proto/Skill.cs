@@ -51,9 +51,9 @@ namespace GameMessageCore {
             "6wcSFwoSRGFtYWdlRWZmZWN0SWQxMDA0EOwHEhcKEkRhbWFnZUVmZmVjdElk",
             "MTAwNRDtBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDYQ7gcSFwoSRGFtYWdlRWZm",
             "ZWN0SWQxMDA3EO8HEhcKEkRhbWFnZUVmZmVjdElkMTAwOBDwBxIXChJEYW1h",
-            "Z2VFZmZlY3RJZDEwMDkQ8QcqTgoLRGFtYWdlU3RhdGUSFQoRRGFtYWdlU3Rh",
+            "Z2VFZmZlY3RJZDEwMDkQ8QcqYwoLRGFtYWdlU3RhdGUSFQoRRGFtYWdlU3Rh",
             "dGVOb3JtYWwQABITCg9EYW1hZ2VTdGF0ZUNyaXQQARITCg9EYW1hZ2VTdGF0",
-            "ZU1pc3MQA2IGcHJvdG8z"));
+            "ZU1pc3MQAxITCg9EYW1hZ2VTdGF0ZUZhbGwQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -141,6 +141,10 @@ namespace GameMessageCore {
     /// 未命中
     /// </summary>
     [pbr::OriginalName("DamageStateMiss")] Miss = 3,
+    /// <summary>
+    /// 掉落伤害
+    /// </summary>
+    [pbr::OriginalName("DamageStateFall")] Fall = 4,
   }
 
   #endregion

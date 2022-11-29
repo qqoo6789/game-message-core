@@ -65,7 +65,7 @@ enum EnvelopeType {
     QueryPlayer                     = 0x020001;
     CreatePlayer                    = 0x020003;   
 
-    //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    //sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
     EnterMap                        = 0x030001;
     UpdateSelfLocation              = 0x030003;
     UseSkill                        = 0x030005;
@@ -82,12 +82,15 @@ enum EnvelopeType {
     BroadCastEntityAvatarUpdate     = 0x030022;
     BroadCastEntityBattleDataUpdate = 0x030023;
     BroadCastEntityBuildDataUpdate  = 0x030025;
-    PlayerActionCollect                   = 0x030027;
-    BroadCastPlayerActionCollect          = 0x030029;
+    PlayerActionCollect             = 0x030027;
+    BroadCastPlayerActionCollect    = 0x030029;
     SceneDestruction                = 0x030033;
     BroadCastSceneDestruction       = 0x030035;
     PlayerActionChat                   = 0x030037;
     BroadCastPlayerActionChat          = 0x030039;
+
+
+    QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

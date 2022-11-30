@@ -31,7 +31,8 @@ enum ServiceType{
 }
 
 enum SceneServiceSubType{
-  World = 0;
-  Home = 1;
-  Dungeon = 2;
+  UnknownSubType = 0;
+  World = 1;
+  Home = 2;
+  Dungeon = 3;
 } 

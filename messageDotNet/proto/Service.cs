@@ -29,8 +29,9 @@ namespace GameMessageCore {
             "bhABEhYKElNlcnZpY2VUeXBlQWNjb3VudBACEhQKEFNlcnZpY2VUeXBlU2Nl",
             "bmUQAxITCg9TZXJ2aWNlVHlwZVRhc2sQBBITCg9TZXJ2aWNlVHlwZUNoYXQQ",
             "BRIUChBTZXJ2aWNlVHlwZUFnZW50EAYSFgoSU2VydmljZVR5cGVNYW5hZ2Vy",
-            "EAcSFAoQU2VydmljZVR5cGVMaW1pdBAIKjcKE1NjZW5lU2VydmljZVN1YlR5",
-            "cGUSCQoFV29ybGQQABIICgRIb21lEAESCwoHRHVuZ2VvbhACYgZwcm90bzM="));
+            "EAcSFAoQU2VydmljZVR5cGVMaW1pdBAIKksKE1NjZW5lU2VydmljZVN1YlR5",
+            "cGUSEgoOVW5rbm93blN1YlR5cGUQABIJCgVXb3JsZBABEggKBEhvbWUQAhIL",
+            "CgdEdW5nZW9uEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceType), typeof(global::GameMessageCore.SceneServiceSubType), }, null, null));
@@ -76,9 +77,10 @@ namespace GameMessageCore {
   }
 
   public enum SceneServiceSubType {
-    [pbr::OriginalName("World")] World = 0,
-    [pbr::OriginalName("Home")] Home = 1,
-    [pbr::OriginalName("Dungeon")] Dungeon = 2,
+    [pbr::OriginalName("UnknownSubType")] UnknownSubType = 0,
+    [pbr::OriginalName("World")] World = 1,
+    [pbr::OriginalName("Home")] Home = 2,
+    [pbr::OriginalName("Dungeon")] Dungeon = 3,
   }
 
   #endregion

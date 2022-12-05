@@ -34,6 +34,10 @@ public static class MainServiceAction
     /// 获取所有建造物数据 for main service
     /// </summary>
     public const string GET_ALL_BUILD = "MainServiceActionGetAllBuild";
+    /// <summary>
+    /// 查询玩家家园数据
+    /// </summary>
+    public const string GET_HOME_DATA = "MainServiceActionGetHomeData";
 
 }
 

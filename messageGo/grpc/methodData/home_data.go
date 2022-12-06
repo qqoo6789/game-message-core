@@ -9,8 +9,8 @@ type MainServiceActionGetHomeDataInput struct {
 	UserId int64 `json:"userId"`
 }
 type MainServiceActionGetHomeDataOutput struct {
-	Success bool                     `json:"success"`
-	ErrMsg  string                   `json:"errMsg"`
-	UserId  int64                    `json:"userId"`
-	Data    []base_data.GrpcHomeData `json:"data"`
+	Success bool                   `json:"success"`
+	ErrMsg  string                 `json:"errMsg"`
+	UserId  int64                  `json:"userId"`
+	Data    base_data.GrpcHomeData `json:"data"`
 }

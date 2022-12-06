@@ -18,6 +18,7 @@ public class MainServiceActionGetHomeDataOutput
 {
     public bool Success;
     public string ErrMsg;
+    public long UserId;
     public GrpcHomeData Data;
     public string ToJson()
     {

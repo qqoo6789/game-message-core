@@ -11,5 +11,6 @@ type MainServiceActionGetHomeDataInput struct {
 type MainServiceActionGetHomeDataOutput struct {
 	Success bool                     `json:"success"`
 	ErrMsg  string                   `json:"errMsg"`
+	UserId  int64                    `json:"userId"`
 	Data    []base_data.GrpcHomeData `json:"data"`
 }

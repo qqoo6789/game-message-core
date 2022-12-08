@@ -5,6 +5,7 @@ type ManagerServiceAction string
 const (
 	ManagerServiceActionServiceTime        ManagerServiceAction = "QueryServerTime"
 	ManagerServiceActionRegister           ManagerServiceAction = "ManagerActionServiceRegister"
+	ManagerServiceActionStartService       ManagerServiceAction = "ManagerActionStartService"
 	ManagerServiceActionSelectService      ManagerServiceAction = "ManagerActionSelectService"
 	ManagerServiceActionMultiSelectService ManagerServiceAction = "ManagerActionMultiSelectService"
 )

@@ -5,6 +5,10 @@
 public static class ManagerServiceAction
 {
     /// <summary>
+    /// 启动服务
+    /// </summary>
+    public const string START_SERVICE = "ManagerActionStartService";
+    /// <summary>
     /// 获取服务时间戳
     /// </summary>
     public const string SERVICE_TIMESTAMP = "QueryServerTime";

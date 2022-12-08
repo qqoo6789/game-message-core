@@ -5,6 +5,11 @@
 public static class SubscriptionEvent
 {
     /// <summary>
+    /// 服务启动完成事件
+    /// </summary>
+    public const string SERVICE_STARTED = "EventTopicServiceStarted";
+
+    /// <summary>
     /// 服务销毁事件
     /// </summary>
     public const string SERVICE_UNREGISTER = "EventTopicServiceUnregister";

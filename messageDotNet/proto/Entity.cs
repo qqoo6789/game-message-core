@@ -62,26 +62,25 @@ namespace GameMessageCore {
             "dEF0GAwgASgFEhQKDGNvbGxlY3Rpb25BdBgNIAEoBRIbChNjb2xsZWN0aW9u",
             "SXRlbUNvdW50GA4gASgFEi0KJWxhbmRQbGFjZW1lbnRQb3dlclplcm9Db29s",
             "ZG93blN0YXJ0QXQYDyABKAUSKAogbGFuZFBsYWNlbWVudFBvd2VyWmVyb0Nv",
-            "b2xkb3duQXQYECABKAUitwEKCFJlc291cmNlEgsKA2NpZBgBIAEoBRIKCgJp",
-            "ZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSLwoHcHJvZmlsZRgEIAEoCzIeLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlQcm9maWxlEioKCHBvc2l0aW9uGAUgASgL",
-            "MhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGlyGAYgASgLMhguZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLlZlY3RvcjMiUgoORW50aXR5TW92ZVN0ZXASMQoIbG9j",
-            "YXRpb24YASABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24S",
-            "DQoFc3RhbXAYAiABKAMi/wEKDkVudGl0eU1vdmVtZW50EioKB3R5cGVfaWQY",
-            "ASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSNQoMY3VyX2xvY2F0",
-            "aW9uGAIgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eU1vdmVTdGVwEjYK",
-            "DWRlc3RfbG9jYXRpb24YAyABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5",
-            "TW92ZVN0ZXASKwoEdHlwZRgFIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5Nb3Zl",
-            "bWVudFR5cGUSJQoDRGlyGAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3Rv",
-            "cjMiegoIRW50aXR5Q0QSNQoNc2tpbGxfY2RfbGlzdBgBIAMoCzIeLmdhbWVN",
-            "ZXNzYWdlQ29yZS5FbnRpdHlTa2lsbENEEjcKDmV4dGVuZF9jZF9saXN0GAIg",
-            "AygLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUV4dGVuZENEIi8KDUVudGl0",
-            "eVNraWxsQ0QSEAoIc2tpbGxfaWQYASABKAUSDAoEdGltZRgCIAEoAyIsCg5F",
-            "bnRpdHlFeHRlbmRDRBIMCgR0eXBlGAEgASgFEgwKBHRpbWUYAiABKAMqaAoM",
-            "TW92ZW1lbnRUeXBlEhcKE01vdmVtZW50VHlwZVVua25vd24QABIUChBNb3Zl",
-            "bWVudFR5cGVXYWxrEAESEwoPTW92ZW1lbnRUeXBlUnVuEAISFAoQTW92ZW1l",
-            "bnRUeXBlSWRsZRADYgZwcm90bzM="));
+            "b2xkb3duQXQYECABKAUihgEKCFJlc291cmNlEgsKA2NpZBgBIAEoBRIKCgJp",
+            "ZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSKgoIcG9zaXRpb24YBSABKAsyGC5n",
+            "YW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1lTWVz",
+            "c2FnZUNvcmUuVmVjdG9yMyJSCg5FbnRpdHlNb3ZlU3RlcBIxCghsb2NhdGlv",
+            "bhgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhINCgVz",
+            "dGFtcBgCIAEoAyL/AQoORW50aXR5TW92ZW1lbnQSKgoHdHlwZV9pZBgBIAEo",
+            "CzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBI1CgxjdXJfbG9jYXRpb24Y",
+            "AiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoNZGVz",
+            "dF9sb2NhdGlvbhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3Zl",
+            "U3RlcBIrCgR0eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVtZW50",
+            "VHlwZRIlCgNEaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyJ6",
+            "CghFbnRpdHlDRBI1Cg1za2lsbF9jZF9saXN0GAEgAygLMh4uZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkVudGl0eVNraWxsQ0QSNwoOZXh0ZW5kX2NkX2xpc3QYAiADKAsy",
+            "Hy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5RXh0ZW5kQ0QiLwoNRW50aXR5U2tp",
+            "bGxDRBIQCghza2lsbF9pZBgBIAEoBRIMCgR0aW1lGAIgASgDIiwKDkVudGl0",
+            "eUV4dGVuZENEEgwKBHR5cGUYASABKAUSDAoEdGltZRgCIAEoAypoCgxNb3Zl",
+            "bWVudFR5cGUSFwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQKEE1vdmVtZW50",
+            "VHlwZVdhbGsQARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBNb3ZlbWVudFR5",
+            "cGVJZGxlEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -93,7 +92,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Npc), global::GameMessageCore.Npc.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "HarvestStartAt", "HarvestAt", "HarvestItemCount", "CollectionStartAt", "CollectionAt", "CollectionItemCount", "LandPlacementPowerZeroCooldownStartAt", "LandPlacementPowerZeroCooldownAt" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Resource), global::GameMessageCore.Resource.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Resource), global::GameMessageCore.Resource.Parser, new[]{ "Cid", "Id", "Active", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMoveStep), global::GameMessageCore.EntityMoveStep.Parser, new[]{ "Location", "Stamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMovement), global::GameMessageCore.EntityMovement.Parser, new[]{ "TypeId", "CurLocation", "DestLocation", "Type", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityCD), global::GameMessageCore.EntityCD.Parser, new[]{ "SkillCdList", "ExtendCdList" }, null, null, null, null),
@@ -3432,7 +3431,6 @@ namespace GameMessageCore {
       cid_ = other.cid_;
       id_ = other.id_;
       active_ = other.active_;
-      profile_ = other.profile_ != null ? other.profile_.Clone() : null;
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -3477,18 +3475,6 @@ namespace GameMessageCore {
       get { return active_; }
       set {
         active_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "profile" field.</summary>
-    public const int ProfileFieldNumber = 4;
-    private global::GameMessageCore.EntityProfile profile_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityProfile Profile {
-      get { return profile_; }
-      set {
-        profile_ = value;
       }
     }
 
@@ -3537,7 +3523,6 @@ namespace GameMessageCore {
       if (Cid != other.Cid) return false;
       if (Id != other.Id) return false;
       if (Active != other.Active) return false;
-      if (!object.Equals(Profile, other.Profile)) return false;
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -3550,7 +3535,6 @@ namespace GameMessageCore {
       if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Id != 0L) hash ^= Id.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
-      if (profile_ != null) hash ^= Profile.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (_unknownFields != null) {
@@ -3583,10 +3567,6 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -3617,10 +3597,6 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -3648,9 +3624,6 @@ namespace GameMessageCore {
       if (Active != false) {
         size += 1 + 1;
       }
-      if (profile_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
-      }
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
@@ -3677,12 +3650,6 @@ namespace GameMessageCore {
       }
       if (other.Active != false) {
         Active = other.Active;
-      }
-      if (other.profile_ != null) {
-        if (profile_ == null) {
-          Profile = new global::GameMessageCore.EntityProfile();
-        }
-        Profile.MergeFrom(other.Profile);
       }
       if (other.position_ != null) {
         if (position_ == null) {
@@ -3721,13 +3688,6 @@ namespace GameMessageCore {
           }
           case 24: {
             Active = input.ReadBool();
-            break;
-          }
-          case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
             break;
           }
           case 42: {
@@ -3769,13 +3729,6 @@ namespace GameMessageCore {
           }
           case 24: {
             Active = input.ReadBool();
-            break;
-          }
-          case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
             break;
           }
           case 42: {

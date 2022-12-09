@@ -33,3 +33,12 @@ const (
 	UserActionUpdateUsedAvatar  UserAction = "UpdateUsedAvatar"
 	UserActionUpdateUserProfile UserAction = "UpdateUserProfile"
 )
+
+type ChangeServiceAction string
+
+const (
+	// user请求进入目标scene service（预进入阶段）
+	ChangeServiceActionApplyEnterService ChangeServiceAction = "ChangeServiceActionApplyEnterService"
+	// user正式进入目标scene service（正式进入阶段）
+	ChangeServiceActionJoinService ChangeServiceAction = "ChangeServiceActionJoinService"
+)

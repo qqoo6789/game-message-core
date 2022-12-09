@@ -46,7 +46,7 @@ public static class MainServiceAction
 }
 
 /// <summary>
-/// MELAND proto message Action calls method name 
+/// proto message Action calls method name 
 /// </summary>
 public static class ProtoMessageAction
 {
@@ -65,7 +65,7 @@ public static class ProtoMessageAction
 }
 
 /// <summary>
-/// MELAND user action method api
+/// user action method api
 /// </summary>
 public static class UserAction
 {
@@ -81,5 +81,19 @@ public static class UserAction
     ///  查询玩家详细数据 for main service
     /// </summary>
     public const string GET_USER_DATA = "GetUserData";
+}
 
+/// <summary>
+/// user change service action
+/// </summary>
+public static class ChangeServiceAction
+{
+    /// <summary>
+    /// user请求进入目标scene service（预进入阶段）
+    /// </summary>
+    public const string APPLY_ENTER_SERVICE = "ChangeServiceActionApplyEnterService";
+    /// <summary>
+    /// user正式进入目标scene service（正式进入阶段）
+    /// </summary>
+    public const string JOIN_SERVICE = "ChangeServiceActionJoinService";
 }

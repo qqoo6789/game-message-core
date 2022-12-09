@@ -15,6 +15,20 @@ public static class SubscriptionEvent
     public const string SERVICE_UNREGISTER = "EventTopicServiceUnregister";
 
     /// <summary>
+    /// 玩家请求进入服务 response event
+    /// </summary>
+    public const string APPLY_ENTER_SERVICE_RES = "EventTopicUserApplyEnterServiceRes";
+    /// <summary>
+    /// 玩家正式进入服务 response event
+    /// </summary>
+    public const string JOIN_SERVICE_RES = "EventTopicUserJoinServiceRes";
+
+    /// <summary>
+    /// 玩家完成服务切换事件
+    /// </summary>
+    public const string USER_CHANGE_SERVICE = "EventTopicUserChangeService";
+
+    /// <summary>
     /// 存储玩家数据
     /// </summary>
     public const string SAVE_PLAYER_DATA = "EventTopicSavePlayerData";

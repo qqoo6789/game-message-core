@@ -15,6 +15,7 @@ import "task.proto";
 import "chat.proto";
 import "vector.proto";
 import "land.proto";
+import "service.proto";
 
 
 
@@ -113,13 +114,12 @@ message Envelope {
     SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
     SceneDestructionResponse                scene_destruction_response                    = 0x030034;
     BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
-    PlayerActionChatRequest              player_action_chat_request                = 0x030037;
-    PlayerActionChatResponse             player_action_chat_response               = 0x030039;    
-    BroadCastPlayerActionChatResponse    broad_cast_player_action_chat_response    = 0x030041;  
-
+    PlayerActionChatRequest                 player_action_chat_request                    = 0x030037;
+    PlayerActionChatResponse                player_action_chat_response                   = 0x030039;    
+    BroadCastPlayerActionChatResponse       broad_cast_player_action_chat_response        = 0x030041; 
     QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
     QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
-
+    BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -518,10 +518,11 @@ message QueryServerTimeResponse {
   int64     client_time = 1;
   int64     system_time = 2;
 }
-
-
-
-
+message BroadCastChangeServiceResponse{
+  ServiceType         serType    = 1;
+  SceneServiceSubType serSubType = 2;
+  int64               serOwner   = 3;  
+}
 
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

@@ -3,7 +3,12 @@ package grpc
 type SubscriptionEvent string
 
 const (
+	SubscriptionEventServiceStarted    SubscriptionEvent = "EventTopicServiceStarted"
 	SubscriptionEventServiceUnregister SubscriptionEvent = "EventTopicServiceUnregister"
+
+	SubscriptionEventUserApplyEnterServiceRes SubscriptionEvent = "EventTopicUserApplyEnterServiceRes"
+	SubscriptionEventUserJoinServiceRes       SubscriptionEvent = "EventTopicUserJoinServiceRes"
+	SubscriptionEventUserChangeService        SubscriptionEvent = "EventTopicUserChangeService"
 
 	SubscriptionEventSavePlayerData   SubscriptionEvent = "EventTopicSavePlayerData"
 	SubscriptionEventKillMonster      SubscriptionEvent = "EventTopicKillMonster"

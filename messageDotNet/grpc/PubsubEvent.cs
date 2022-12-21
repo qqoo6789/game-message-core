@@ -13,6 +13,11 @@ public static class SubscriptionEvent
     /// 服务销毁事件
     /// </summary>
     public const string SERVICE_UNREGISTER = "EventTopicServiceUnregister";
+    /// <summary>
+    /// SPOT服务迁移事件
+    /// </summary>
+    public const string SERVICE_TRANSFER = "EventTopicServiceTransfer";
+
 
     /// <summary>
     /// 玩家请求进入服务 response event
@@ -27,6 +32,7 @@ public static class SubscriptionEvent
     /// 玩家完成服务切换事件
     /// </summary>
     public const string USER_CHANGE_SERVICE = "EventTopicUserChangeService";
+
 
     /// <summary>
     /// 存储玩家数据

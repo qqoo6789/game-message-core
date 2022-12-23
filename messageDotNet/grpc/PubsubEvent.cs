@@ -97,4 +97,12 @@ public static class SubscriptionEvent
     /// user level update event
     /// </summary>
     public const string SAVE_HOME_DATA = "EventTopicSaveHomeData";
+    /// <summary>
+    /// home Granary Stockpile Event
+    /// </summary>
+    public const string GRANARY_STOCKPILE = "EventTopicGranaryStockpile";
+
+
+
 }
+

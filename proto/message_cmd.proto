@@ -59,6 +59,12 @@ enum EnvelopeType {
     BroadCastSelfBuildUpdate        = 0x010045;     // 广播更新建造物数据,只广播给owner
     BroadCastSelfBuildRecycling     = 0x010047;     // 广播移除ui界面中的建筑物,只广播给owner
     MintBattery                     = 0x010049;     // 使用token 购买电池(透传给 theweb3)
+    QueryGranary                    = 0x010051;     // 查询仓库所有道具
+    GranaryCollect                  = 0x010053;     // 取出仓库中的所有道具
+    BroadCastGranaryUpdate          = 0x010055;     // 全量更新仓库数据
+    BroadCastUpGranaryItem          = 0x010057;     // 更新仓库道具
+
+
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

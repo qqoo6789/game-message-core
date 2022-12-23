@@ -78,6 +78,15 @@ message Envelope {
     BroadCastSelfBuildRecyclingResponse broad_cast_self_build_recycling_response = 0x010047; 
     MintBatteryRequest                mint_battery_request                  = 0x010049;
     MintBatteryResponse               mint_battery_response                 = 0x010050;
+    QueryGranaryRequest               query_granary_request                 = 0x010051;
+    QueryGranaryResponse              query_granary_response                = 0x010052;
+    GranaryCollectRequest             granary_collect_request               = 0x010053;
+    GranaryCollectResponse            granary_collect_response              = 0x010054;
+    BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
+    BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
+
+
+
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -338,8 +347,18 @@ message MintBatteryRequest{
 }
 message MintBatteryResponse{ }
 
-
-
+message QueryGranaryRequest{}
+message QueryGranaryResponse{
+  repeated ItemBaseInfo items = 1;
+}
+message GranaryCollectRequest{}
+message GranaryCollectResponse{}
+message BroadCastGranaryUpdateResponse{
+  repeated ItemBaseInfo items = 1;
+}
+message BroadCastUpGranaryItemResponse{
+  ItemBaseInfo    items = 1;
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

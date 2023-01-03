@@ -352,7 +352,9 @@ message QueryGranaryResponse{
   repeated ItemBaseInfo items = 1;
 }
 message GranaryCollectRequest{}
-message GranaryCollectResponse{}
+message GranaryCollectResponse{
+  repeated ItemBaseInfo items = 1;
+}
 message BroadCastGranaryUpdateResponse{
   repeated ItemBaseInfo items = 1;
 }

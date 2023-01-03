@@ -460,7 +460,7 @@ message BroadCastEntityCombatResponse{
   // 使用技能的对象 id
   EntityId from_entity = 4;
   // 使用技能的目标
-  EntityId target_entity  = 5;
+  repeated int64 target_list  = 5;
   // 技能使用方向，相对于释放玩家当前位置.
   EntityLocation dir = 6;
   // 技能释放的位置

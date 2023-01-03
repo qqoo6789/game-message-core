@@ -5214,16 +5214,18 @@ type BroadCastEntityCombatResponse struct {
 	ComboIndex int32 `protobuf:"varint,3,opt,name=combo_index,json=comboIndex,proto3" json:"combo_index,omitempty"`
 	// 使用技能的对象 id
 	FromEntity *EntityId `protobuf:"bytes,4,opt,name=from_entity,json=fromEntity,proto3" json:"from_entity,omitempty"`
+	// 使用技能的目标
+	TargetEntity *EntityId `protobuf:"bytes,5,opt,name=target_entity,json=targetEntity,proto3" json:"target_entity,omitempty"`
 	// 技能使用方向，相对于释放玩家当前位置.
-	Dir *EntityLocation `protobuf:"bytes,5,opt,name=dir,proto3" json:"dir,omitempty"`
+	Dir *EntityLocation `protobuf:"bytes,6,opt,name=dir,proto3" json:"dir,omitempty"`
 	// 技能释放的位置
-	FromLocation *EntityLocation `protobuf:"bytes,6,opt,name=from_location,json=fromLocation,proto3" json:"from_location,omitempty"`
+	FromLocation *EntityLocation `protobuf:"bytes,7,opt,name=from_location,json=fromLocation,proto3" json:"from_location,omitempty"`
 	// 当前消息状态的服务器时间
-	CurStamp int64 `protobuf:"varint,7,opt,name=cur_stamp,json=curStamp,proto3" json:"cur_stamp,omitempty"`
+	CurStamp int64 `protobuf:"varint,8,opt,name=cur_stamp,json=curStamp,proto3" json:"cur_stamp,omitempty"`
 	// 接收技能伤害的对象 id 数组
-	Targets []*EntityDamage `protobuf:"bytes,8,rep,name=targets,proto3" json:"targets,omitempty"`
+	Targets []*EntityDamage `protobuf:"bytes,9,rep,name=targets,proto3" json:"targets,omitempty"`
 	// 产生的所有技能飞行物
-	Flyers []*SkillFlyerData `protobuf:"bytes,9,rep,name=flyers,proto3" json:"flyers,omitempty"`
+	Flyers []*SkillFlyerData `protobuf:"bytes,10,rep,name=flyers,proto3" json:"flyers,omitempty"`
 }
 
 func (x *BroadCastEntityCombatResponse) Reset() {
@@ -5282,6 +5284,13 @@ func (x *BroadCastEntityCombatResponse) GetComboIndex() int32 {
 func (x *BroadCastEntityCombatResponse) GetFromEntity() *EntityId {
 	if x != nil {
 		return x.FromEntity
+	}
+	return nil
+}
+
+func (x *BroadCastEntityCombatResponse) GetTargetEntity() *EntityId {
+	if x != nil {
+		return x.TargetEntity
 	}
 	return nil
 }
@@ -7939,7 +7948,7 @@ var file_message_body_proto_rawDesc = []byte{
 	0x0a, 0x08, 0x65, 0x6e, 0x74, 0x69, 0x74, 0x69, 0x65, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b,
 	0x32, 0x19, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f,
 	0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x49, 0x64, 0x52, 0x08, 0x65, 0x6e, 0x74,
-	0x69, 0x74, 0x69, 0x65, 0x73, 0x22, 0xd9, 0x03, 0x0a, 0x1d, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43,
+	0x69, 0x74, 0x69, 0x65, 0x73, 0x22, 0x99, 0x04, 0x0a, 0x1d, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43,
 	0x61, 0x73, 0x74, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x43, 0x6f, 0x6d, 0x62, 0x61, 0x74, 0x52,
 	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x38, 0x0a, 0x05, 0x73, 0x74, 0x61, 0x74, 0x65,
 	0x18, 0x01, 0x20, 0x01, 0x28, 0x0e, 0x32, 0x22, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73,
@@ -7952,21 +7961,25 @@ var file_message_body_proto_rawDesc = []byte{
 	0x0b, 0x66, 0x72, 0x6f, 0x6d, 0x5f, 0x65, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x18, 0x04, 0x20, 0x01,
 	0x28, 0x0b, 0x32, 0x19, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
 	0x43, 0x6f, 0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x49, 0x64, 0x52, 0x0a, 0x66,
-	0x72, 0x6f, 0x6d, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x12, 0x31, 0x0a, 0x03, 0x64, 0x69, 0x72,
-	0x18, 0x05, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1f, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73,
+	0x72, 0x6f, 0x6d, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x12, 0x3e, 0x0a, 0x0d, 0x74, 0x61, 0x72,
+	0x67, 0x65, 0x74, 0x5f, 0x65, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x18, 0x05, 0x20, 0x01, 0x28, 0x0b,
+	0x32, 0x19, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f,
+	0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x49, 0x64, 0x52, 0x0c, 0x74, 0x61, 0x72,
+	0x67, 0x65, 0x74, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x12, 0x31, 0x0a, 0x03, 0x64, 0x69, 0x72,
+	0x18, 0x06, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1f, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73,
 	0x73, 0x61, 0x67, 0x65, 0x43, 0x6f, 0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x4c,
 	0x6f, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x03, 0x64, 0x69, 0x72, 0x12, 0x44, 0x0a, 0x0d,
-	0x66, 0x72, 0x6f, 0x6d, 0x5f, 0x6c, 0x6f, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x06, 0x20,
+	0x66, 0x72, 0x6f, 0x6d, 0x5f, 0x6c, 0x6f, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x07, 0x20,
 	0x01, 0x28, 0x0b, 0x32, 0x1f, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67,
 	0x65, 0x43, 0x6f, 0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x4c, 0x6f, 0x63, 0x61,
 	0x74, 0x69, 0x6f, 0x6e, 0x52, 0x0c, 0x66, 0x72, 0x6f, 0x6d, 0x4c, 0x6f, 0x63, 0x61, 0x74, 0x69,
 	0x6f, 0x6e, 0x12, 0x1b, 0x0a, 0x09, 0x63, 0x75, 0x72, 0x5f, 0x73, 0x74, 0x61, 0x6d, 0x70, 0x18,
-	0x07, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x63, 0x75, 0x72, 0x53, 0x74, 0x61, 0x6d, 0x70, 0x12,
-	0x37, 0x0a, 0x07, 0x74, 0x61, 0x72, 0x67, 0x65, 0x74, 0x73, 0x18, 0x08, 0x20, 0x03, 0x28, 0x0b,
+	0x08, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x63, 0x75, 0x72, 0x53, 0x74, 0x61, 0x6d, 0x70, 0x12,
+	0x37, 0x0a, 0x07, 0x74, 0x61, 0x72, 0x67, 0x65, 0x74, 0x73, 0x18, 0x09, 0x20, 0x03, 0x28, 0x0b,
 	0x32, 0x1d, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f,
 	0x72, 0x65, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x44, 0x61, 0x6d, 0x61, 0x67, 0x65, 0x52,
 	0x07, 0x74, 0x61, 0x72, 0x67, 0x65, 0x74, 0x73, 0x12, 0x37, 0x0a, 0x06, 0x66, 0x6c, 0x79, 0x65,
-	0x72, 0x73, 0x18, 0x09, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x1f, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d,
+	0x72, 0x73, 0x18, 0x0a, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x1f, 0x2e, 0x67, 0x61, 0x6d, 0x65, 0x4d,
 	0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f, 0x72, 0x65, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
 	0x46, 0x6c, 0x79, 0x65, 0x72, 0x44, 0x61, 0x74, 0x61, 0x52, 0x06, 0x66, 0x6c, 0x79, 0x65, 0x72,
 	0x73, 0x22, 0x42, 0x0a, 0x0f, 0x54, 0x65, 0x6c, 0x65, 0x70, 0x6f, 0x72, 0x74, 0x52, 0x65, 0x71,
@@ -8471,41 +8484,42 @@ var file_message_body_proto_depIdxs = []int32{
 	112, // 148: gameMessageCore.BroadCastEntityDestroyResponse.entities:type_name -> gameMessageCore.EntityId
 	125, // 149: gameMessageCore.BroadCastEntityCombatResponse.state:type_name -> gameMessageCore.EntityCombatState
 	112, // 150: gameMessageCore.BroadCastEntityCombatResponse.from_entity:type_name -> gameMessageCore.EntityId
-	120, // 151: gameMessageCore.BroadCastEntityCombatResponse.dir:type_name -> gameMessageCore.EntityLocation
-	120, // 152: gameMessageCore.BroadCastEntityCombatResponse.from_location:type_name -> gameMessageCore.EntityLocation
-	126, // 153: gameMessageCore.BroadCastEntityCombatResponse.targets:type_name -> gameMessageCore.EntityDamage
-	127, // 154: gameMessageCore.BroadCastEntityCombatResponse.flyers:type_name -> gameMessageCore.SkillFlyerData
-	114, // 155: gameMessageCore.TeleportRequest.to_pos:type_name -> gameMessageCore.Vector3
-	112, // 156: gameMessageCore.BroadCastEntityAvatarUpdateResponse.entity_id:type_name -> gameMessageCore.EntityId
-	128, // 157: gameMessageCore.BroadCastEntityAvatarUpdateResponse.avatars:type_name -> gameMessageCore.PlayerAvatar
-	112, // 158: gameMessageCore.BroadCastEntityBuildDataUpdateResponse.entity_id:type_name -> gameMessageCore.EntityId
-	124, // 159: gameMessageCore.BroadCastSceneDestructionResponse.destruction_elements:type_name -> gameMessageCore.DestructionElementData
-	129, // 160: gameMessageCore.SelfTasksResponse.tasks:type_name -> gameMessageCore.PlayerTask
-	130, // 161: gameMessageCore.BroadCastUpdateTaskListResponse.kind:type_name -> gameMessageCore.TaskListType
-	131, // 162: gameMessageCore.BroadCastUpdateTaskListResponse.task_list_info:type_name -> gameMessageCore.TaskList
-	130, // 163: gameMessageCore.AcceptTaskRequest.kind:type_name -> gameMessageCore.TaskListType
-	131, // 164: gameMessageCore.AcceptTaskResponse.task_list_info:type_name -> gameMessageCore.TaskList
-	130, // 165: gameMessageCore.AbandonmentTaskRequest.kind:type_name -> gameMessageCore.TaskListType
-	131, // 166: gameMessageCore.AbandonmentTaskResponse.task_list_info:type_name -> gameMessageCore.TaskList
-	130, // 167: gameMessageCore.TaskRewardRequest.task_list_kind:type_name -> gameMessageCore.TaskListType
-	131, // 168: gameMessageCore.TaskRewardResponse.task_list_info:type_name -> gameMessageCore.TaskList
-	130, // 169: gameMessageCore.TaskListRewardRequest.kind:type_name -> gameMessageCore.TaskListType
-	131, // 170: gameMessageCore.TaskListRewardResponse.task_list_info:type_name -> gameMessageCore.TaskList
-	130, // 171: gameMessageCore.UpgradeTaskProgressRequest.task_list_kind:type_name -> gameMessageCore.TaskListType
-	132, // 172: gameMessageCore.UpgradeTaskProgressRequest.items:type_name -> gameMessageCore.TaskOptionItem
-	133, // 173: gameMessageCore.UpgradeTaskProgressRequest.pos:type_name -> gameMessageCore.TaskOptionTargetPosition
-	134, // 174: gameMessageCore.UpgradeTaskProgressRequest.useRecipe:type_name -> gameMessageCore.TaskOptionUseRecipe
-	135, // 175: gameMessageCore.UpgradeTaskProgressRequest.craftSkillLevel:type_name -> gameMessageCore.TaskOptionCraftSkillLevel
-	130, // 176: gameMessageCore.BroadCastTaskRewardResponse.task_list_kind:type_name -> gameMessageCore.TaskListType
-	115, // 177: gameMessageCore.BroadCastTaskRewardResponse.reward_item:type_name -> gameMessageCore.ItemBaseInfo
-	136, // 178: gameMessageCore.SendChatMessageRequest.chat_type:type_name -> gameMessageCore.ChatChannelType
-	137, // 179: gameMessageCore.BroadCastChatMessagesResponse.messages:type_name -> gameMessageCore.ChatMessage
-	138, // 180: gameMessageCore.BroadCastUpdateChatStateResponse.chat_state:type_name -> gameMessageCore.ChatState
-	181, // [181:181] is the sub-list for method output_type
-	181, // [181:181] is the sub-list for method input_type
-	181, // [181:181] is the sub-list for extension type_name
-	181, // [181:181] is the sub-list for extension extendee
-	0,   // [0:181] is the sub-list for field type_name
+	112, // 151: gameMessageCore.BroadCastEntityCombatResponse.target_entity:type_name -> gameMessageCore.EntityId
+	120, // 152: gameMessageCore.BroadCastEntityCombatResponse.dir:type_name -> gameMessageCore.EntityLocation
+	120, // 153: gameMessageCore.BroadCastEntityCombatResponse.from_location:type_name -> gameMessageCore.EntityLocation
+	126, // 154: gameMessageCore.BroadCastEntityCombatResponse.targets:type_name -> gameMessageCore.EntityDamage
+	127, // 155: gameMessageCore.BroadCastEntityCombatResponse.flyers:type_name -> gameMessageCore.SkillFlyerData
+	114, // 156: gameMessageCore.TeleportRequest.to_pos:type_name -> gameMessageCore.Vector3
+	112, // 157: gameMessageCore.BroadCastEntityAvatarUpdateResponse.entity_id:type_name -> gameMessageCore.EntityId
+	128, // 158: gameMessageCore.BroadCastEntityAvatarUpdateResponse.avatars:type_name -> gameMessageCore.PlayerAvatar
+	112, // 159: gameMessageCore.BroadCastEntityBuildDataUpdateResponse.entity_id:type_name -> gameMessageCore.EntityId
+	124, // 160: gameMessageCore.BroadCastSceneDestructionResponse.destruction_elements:type_name -> gameMessageCore.DestructionElementData
+	129, // 161: gameMessageCore.SelfTasksResponse.tasks:type_name -> gameMessageCore.PlayerTask
+	130, // 162: gameMessageCore.BroadCastUpdateTaskListResponse.kind:type_name -> gameMessageCore.TaskListType
+	131, // 163: gameMessageCore.BroadCastUpdateTaskListResponse.task_list_info:type_name -> gameMessageCore.TaskList
+	130, // 164: gameMessageCore.AcceptTaskRequest.kind:type_name -> gameMessageCore.TaskListType
+	131, // 165: gameMessageCore.AcceptTaskResponse.task_list_info:type_name -> gameMessageCore.TaskList
+	130, // 166: gameMessageCore.AbandonmentTaskRequest.kind:type_name -> gameMessageCore.TaskListType
+	131, // 167: gameMessageCore.AbandonmentTaskResponse.task_list_info:type_name -> gameMessageCore.TaskList
+	130, // 168: gameMessageCore.TaskRewardRequest.task_list_kind:type_name -> gameMessageCore.TaskListType
+	131, // 169: gameMessageCore.TaskRewardResponse.task_list_info:type_name -> gameMessageCore.TaskList
+	130, // 170: gameMessageCore.TaskListRewardRequest.kind:type_name -> gameMessageCore.TaskListType
+	131, // 171: gameMessageCore.TaskListRewardResponse.task_list_info:type_name -> gameMessageCore.TaskList
+	130, // 172: gameMessageCore.UpgradeTaskProgressRequest.task_list_kind:type_name -> gameMessageCore.TaskListType
+	132, // 173: gameMessageCore.UpgradeTaskProgressRequest.items:type_name -> gameMessageCore.TaskOptionItem
+	133, // 174: gameMessageCore.UpgradeTaskProgressRequest.pos:type_name -> gameMessageCore.TaskOptionTargetPosition
+	134, // 175: gameMessageCore.UpgradeTaskProgressRequest.useRecipe:type_name -> gameMessageCore.TaskOptionUseRecipe
+	135, // 176: gameMessageCore.UpgradeTaskProgressRequest.craftSkillLevel:type_name -> gameMessageCore.TaskOptionCraftSkillLevel
+	130, // 177: gameMessageCore.BroadCastTaskRewardResponse.task_list_kind:type_name -> gameMessageCore.TaskListType
+	115, // 178: gameMessageCore.BroadCastTaskRewardResponse.reward_item:type_name -> gameMessageCore.ItemBaseInfo
+	136, // 179: gameMessageCore.SendChatMessageRequest.chat_type:type_name -> gameMessageCore.ChatChannelType
+	137, // 180: gameMessageCore.BroadCastChatMessagesResponse.messages:type_name -> gameMessageCore.ChatMessage
+	138, // 181: gameMessageCore.BroadCastUpdateChatStateResponse.chat_state:type_name -> gameMessageCore.ChatState
+	182, // [182:182] is the sub-list for method output_type
+	182, // [182:182] is the sub-list for method input_type
+	182, // [182:182] is the sub-list for extension type_name
+	182, // [182:182] is the sub-list for extension extendee
+	0,   // [0:182] is the sub-list for field type_name
 }
 
 func init() { file_message_body_proto_init() }

@@ -328,72 +328,73 @@ namespace GameMessageCore {
             "dmVSZXNwb25zZRIuCgVtb3ZlcxgBIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5F",
             "bnRpdHlNb3ZlbWVudCJNCh5Ccm9hZENhc3RFbnRpdHlEZXN0cm95UmVzcG9u",
             "c2USKwoIZW50aXRpZXMYASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5",
-            "SWQigwMKHUJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlEjEKBXN0YXRl",
+            "SWQitQMKHUJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlEjEKBXN0YXRl",
             "GAEgASgOMiIuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUNvbWJhdFN0YXRlEhAK",
             "CHNraWxsX2lkGAIgASgFEhMKC2NvbWJvX2luZGV4GAMgASgFEi4KC2Zyb21f",
-            "ZW50aXR5GAQgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEiwKA2Rp",
-            "chgFIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhI2Cg1m",
-            "cm9tX2xvY2F0aW9uGAYgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUxv",
-            "Y2F0aW9uEhEKCWN1cl9zdGFtcBgHIAEoAxIuCgd0YXJnZXRzGAggAygLMh0u",
-            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eURhbWFnZRIvCgZmbHllcnMYCSADKAsy",
-            "Hy5nYW1lTWVzc2FnZUNvcmUuU2tpbGxGbHllckRhdGEiOwoPVGVsZXBvcnRS",
-            "ZXF1ZXN0EigKBnRvX3BvcxgJIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0",
-            "b3IzIhIKEFRlbGVwb3J0UmVzcG9uc2UigwEKI0Jyb2FkQ2FzdEVudGl0eUF2",
-            "YXRhclVwZGF0ZVJlc3BvbnNlEiwKCWVudGl0eV9pZBgBIAEoCzIZLmdhbWVN",
-            "ZXNzYWdlQ29yZS5FbnRpdHlJZBIuCgdhdmF0YXJzGAIgAygLMh0uZ2FtZU1l",
-            "c3NhZ2VDb3JlLlBsYXllckF2YXRhciL+AQomQnJvYWRDYXN0RW50aXR5QnVp",
-            "bGREYXRhVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhkuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC2VsZWN0cmljRW5kGAIgASgFEhYK",
-            "DmhhcnZlc3RTdGFydEF0GAMgASgFEhEKCWhhcnZlc3RBdBgEIAEoBRIYChBo",
-            "YXJ2ZXN0SXRlbUNvdW50GAUgASgFEhkKEWNvbGxlY3Rpb25TdGFydEF0GAYg",
-            "ASgFEhQKDGNvbGxlY3Rpb25BdBgHIAEoBRIbChNjb2xsZWN0aW9uSXRlbUNv",
-            "dW50GAggASgFIiYKF1NjZW5lRGVzdHJ1Y3Rpb25SZXF1ZXN0EgsKA2lkcxgB",
-            "IAMoAyIaChhTY2VuZURlc3RydWN0aW9uUmVzcG9uc2UiagohQnJvYWRDYXN0",
-            "U2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlEkUKFGRlc3RydWN0aW9uX2VsZW1l",
-            "bnRzGAEgAygLMicuZ2FtZU1lc3NhZ2VDb3JlLkRlc3RydWN0aW9uRWxlbWVu",
-            "dERhdGEiLQoWUXVlcnlTZXJ2ZXJUaW1lUmVxdWVzdBITCgtjbGllbnRfdGlt",
-            "ZRgBIAEoAyJDChdRdWVyeVNlcnZlclRpbWVSZXNwb25zZRITCgtjbGllbnRf",
-            "dGltZRgBIAEoAxITCgtzeXN0ZW1fdGltZRgCIAEoAyISChBTZWxmVGFza3NS",
-            "ZXF1ZXN0Ij8KEVNlbGZUYXNrc1Jlc3BvbnNlEioKBXRhc2tzGAEgASgLMhsu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlBsYXllclRhc2sigQEKH0Jyb2FkQ2FzdFVwZGF0",
-            "ZVRhc2tMaXN0UmVzcG9uc2USKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrTGlzdFR5cGUSMQoOdGFza19saXN0X2luZm8YAiABKAsyGS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiQAoRQWNjZXB0VGFza1JlcXVlc3QS",
-            "KwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUi",
-            "RwoSQWNjZXB0VGFza1Jlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkUKFkFiYW5kb25tZW50VGFz",
-            "a1JlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
-            "TGlzdFR5cGUiTAoXQWJhbmRvbm1lbnRUYXNrUmVzcG9uc2USMQoOdGFza19s",
-            "aXN0X2luZm8YASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiSgoR",
-            "VGFza1Jld2FyZFJlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlIkcKElRhc2tSZXdhcmRSZXNw",
-            "b25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrTGlzdCJEChVUYXNrTGlzdFJld2FyZFJlcXVlc3QSKwoEa2luZBgB",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiSwoWVGFza0xp",
-            "c3RSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdh",
-            "bWVNZXNzYWdlQ29yZS5UYXNrTGlzdCK5AgoaVXBncmFkZVRhc2tQcm9ncmVz",
-            "c1JlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVGFza0xpc3RUeXBlEi4KBWl0ZW1zGAIgAygLMh8uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tPcHRpb25JdGVtEjYKA3BvcxgDIAEoCzIpLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24SNwoJdXNlUmVjaXBl",
-            "GAQgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNpcGUS",
-            "QwoPY3JhZnRTa2lsbExldmVsGAUgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlRh",
-            "c2tPcHRpb25DcmFmdFNraWxsTGV2ZWwiHQobVXBncmFkZVRhc2tQcm9ncmVz",
-            "c1Jlc3BvbnNlIrkBChtCcm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2USGwoT",
-            "aXNfdGFza19saXN0X3Jld2FyZBgBIAEoCBI1Cg50YXNrX2xpc3Rfa2luZBgC",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSEgoKcmV3YXJk",
-            "X2V4cBgDIAEoBRIyCgtyZXdhcmRfaXRlbRgEIAMoCzIdLmdhbWVNZXNzYWdl",
-            "Q29yZS5JdGVtQmFzZUluZm8iegoWU2VuZENoYXRNZXNzYWdlUmVxdWVzdBIz",
-            "CgljaGF0X3R5cGUYASABKA4yIC5nYW1lTWVzc2FnZUNvcmUuQ2hhdENoYW5u",
-            "ZWxUeXBlEg8KB2NvbnRlbnQYAiABKAkSGgoScmVjZWl2ZXJfcGxheWVyX2lk",
-            "GAMgASgDIikKF1NlbmRDaGF0TWVzc2FnZVJlc3BvbnNlEg4KBm1zZ19pZBgB",
-            "IAEoAyJqCh1Ccm9hZENhc3RDaGF0TWVzc2FnZXNSZXNwb25zZRIuCghtZXNz",
-            "YWdlcxgBIAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5DaGF0TWVzc2FnZRIZChFo",
-            "aXN0b3JpY2FsX3JlY29yZBgCIAEoCCI1CiJCcm9hZENhc3RSZW1vdmVDaGF0",
-            "TWVzc2FnZVJlc3BvbnNlEg8KB21zZ19pZHMYASADKAMiUgogQnJvYWRDYXN0",
-            "VXBkYXRlQ2hhdFN0YXRlUmVzcG9uc2USLgoKY2hhdF9zdGF0ZRgBIAEoDjIa",
-            "LmdhbWVNZXNzYWdlQ29yZS5DaGF0U3RhdGUiDQoLUGluZ1JlcXVlc3QiDgoM",
-            "UGluZ1Jlc3BvbnNlYgZwcm90bzM="));
+            "ZW50aXR5GAQgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEjAKDXRh",
+            "cmdldF9lbnRpdHkYBSABKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQS",
+            "LAoDZGlyGAYgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUxvY2F0aW9u",
+            "EjYKDWZyb21fbG9jYXRpb24YByABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50",
+            "aXR5TG9jYXRpb24SEQoJY3VyX3N0YW1wGAggASgDEi4KB3RhcmdldHMYCSAD",
+            "KAsyHS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5RGFtYWdlEi8KBmZseWVycxgK",
+            "IAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5Ta2lsbEZseWVyRGF0YSI7Cg9UZWxl",
+            "cG9ydFJlcXVlc3QSKAoGdG9fcG9zGAkgASgLMhguZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlZlY3RvcjMiEgoQVGVsZXBvcnRSZXNwb25zZSKDAQojQnJvYWRDYXN0RW50",
+            "aXR5QXZhdGFyVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhku",
+            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEi4KB2F2YXRhcnMYAiADKAsyHS5n",
+            "YW1lTWVzc2FnZUNvcmUuUGxheWVyQXZhdGFyIv4BCiZCcm9hZENhc3RFbnRp",
+            "dHlCdWlsZERhdGFVcGRhdGVSZXNwb25zZRIsCgllbnRpdHlfaWQYASABKAsy",
+            "GS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSEwoLZWxlY3RyaWNFbmQYAiAB",
+            "KAUSFgoOaGFydmVzdFN0YXJ0QXQYAyABKAUSEQoJaGFydmVzdEF0GAQgASgF",
+            "EhgKEGhhcnZlc3RJdGVtQ291bnQYBSABKAUSGQoRY29sbGVjdGlvblN0YXJ0",
+            "QXQYBiABKAUSFAoMY29sbGVjdGlvbkF0GAcgASgFEhsKE2NvbGxlY3Rpb25J",
+            "dGVtQ291bnQYCCABKAUiJgoXU2NlbmVEZXN0cnVjdGlvblJlcXVlc3QSCwoD",
+            "aWRzGAEgAygDIhoKGFNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25zZSJqCiFCcm9h",
+            "ZENhc3RTY2VuZURlc3RydWN0aW9uUmVzcG9uc2USRQoUZGVzdHJ1Y3Rpb25f",
+            "ZWxlbWVudHMYASADKAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rpb25F",
+            "bGVtZW50RGF0YSItChZRdWVyeVNlcnZlclRpbWVSZXF1ZXN0EhMKC2NsaWVu",
+            "dF90aW1lGAEgASgDIkMKF1F1ZXJ5U2VydmVyVGltZVJlc3BvbnNlEhMKC2Ns",
+            "aWVudF90aW1lGAEgASgDEhMKC3N5c3RlbV90aW1lGAIgASgDIhIKEFNlbGZU",
+            "YXNrc1JlcXVlc3QiPwoRU2VsZlRhc2tzUmVzcG9uc2USKgoFdGFza3MYASAB",
+            "KAsyGy5nYW1lTWVzc2FnZUNvcmUuUGxheWVyVGFzayKBAQofQnJvYWRDYXN0",
+            "VXBkYXRlVGFza0xpc3RSZXNwb25zZRIrCgRraW5kGAEgASgOMh0uZ2FtZU1l",
+            "c3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIxCg50YXNrX2xpc3RfaW5mbxgCIAEo",
+            "CzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJAChFBY2NlcHRUYXNrUmVx",
+            "dWVzdBIrCgRraW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0",
+            "VHlwZSJHChJBY2NlcHRUYXNrUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8Y",
+            "ASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiRQoWQWJhbmRvbm1l",
+            "bnRUYXNrUmVxdWVzdBIrCgRraW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlRhc2tMaXN0VHlwZSJMChdBYmFuZG9ubWVudFRhc2tSZXNwb25zZRIxCg50",
+            "YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlz",
+            "dCJKChFUYXNrUmV3YXJkUmVxdWVzdBI1Cg50YXNrX2xpc3Rfa2luZBgBIAEo",
+            "DjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiRwoSVGFza1Jld2Fy",
+            "ZFJlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLlRhc2tMaXN0IkQKFVRhc2tMaXN0UmV3YXJkUmVxdWVzdBIrCgRr",
+            "aW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZSJLChZU",
+            "YXNrTGlzdFJld2FyZFJlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgL",
+            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IrkCChpVcGdyYWRlVGFza1By",
+            "b2dyZXNzUmVxdWVzdBI1Cg50YXNrX2xpc3Rfa2luZBgBIAEoDjIdLmdhbWVN",
+            "ZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSLgoFaXRlbXMYAiADKAsyHy5nYW1l",
+            "TWVzc2FnZUNvcmUuVGFza09wdGlvbkl0ZW0SNgoDcG9zGAMgASgLMikuZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25UYXJnZXRQb3NpdGlvbhI3Cgl1c2VS",
+            "ZWNpcGUYBCABKAsyJC5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblVzZVJl",
+            "Y2lwZRJDCg9jcmFmdFNraWxsTGV2ZWwYBSABKAsyKi5nYW1lTWVzc2FnZUNv",
+            "cmUuVGFza09wdGlvbkNyYWZ0U2tpbGxMZXZlbCIdChtVcGdyYWRlVGFza1By",
+            "b2dyZXNzUmVzcG9uc2UiuQEKG0Jyb2FkQ2FzdFRhc2tSZXdhcmRSZXNwb25z",
+            "ZRIbChNpc190YXNrX2xpc3RfcmV3YXJkGAEgASgIEjUKDnRhc2tfbGlzdF9r",
+            "aW5kGAIgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRISCgpy",
+            "ZXdhcmRfZXhwGAMgASgFEjIKC3Jld2FyZF9pdGVtGAQgAygLMh0uZ2FtZU1l",
+            "c3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbyJ6ChZTZW5kQ2hhdE1lc3NhZ2VSZXF1",
+            "ZXN0EjMKCWNoYXRfdHlwZRgBIAEoDjIgLmdhbWVNZXNzYWdlQ29yZS5DaGF0",
+            "Q2hhbm5lbFR5cGUSDwoHY29udGVudBgCIAEoCRIaChJyZWNlaXZlcl9wbGF5",
+            "ZXJfaWQYAyABKAMiKQoXU2VuZENoYXRNZXNzYWdlUmVzcG9uc2USDgoGbXNn",
+            "X2lkGAEgASgDImoKHUJyb2FkQ2FzdENoYXRNZXNzYWdlc1Jlc3BvbnNlEi4K",
+            "CG1lc3NhZ2VzGAEgAygLMhwuZ2FtZU1lc3NhZ2VDb3JlLkNoYXRNZXNzYWdl",
+            "EhkKEWhpc3RvcmljYWxfcmVjb3JkGAIgASgIIjUKIkJyb2FkQ2FzdFJlbW92",
+            "ZUNoYXRNZXNzYWdlUmVzcG9uc2USDwoHbXNnX2lkcxgBIAMoAyJSCiBCcm9h",
+            "ZENhc3RVcGRhdGVDaGF0U3RhdGVSZXNwb25zZRIuCgpjaGF0X3N0YXRlGAEg",
+            "ASgOMhouZ2FtZU1lc3NhZ2VDb3JlLkNoYXRTdGF0ZSINCgtQaW5nUmVxdWVz",
+            "dCIOCgxQaW5nUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -470,7 +471,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastMapEntityUpdateResponse), global::GameMessageCore.BroadCastMapEntityUpdateResponse.Parser, new[]{ "EntityAdded", "EntityRemoved", "DestructionElements" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityMoveResponse), global::GameMessageCore.BroadCastEntityMoveResponse.Parser, new[]{ "Moves" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityDestroyResponse), global::GameMessageCore.BroadCastEntityDestroyResponse.Parser, new[]{ "Entities" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityCombatResponse), global::GameMessageCore.BroadCastEntityCombatResponse.Parser, new[]{ "State", "SkillId", "ComboIndex", "FromEntity", "Dir", "FromLocation", "CurStamp", "Targets", "Flyers" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityCombatResponse), global::GameMessageCore.BroadCastEntityCombatResponse.Parser, new[]{ "State", "SkillId", "ComboIndex", "FromEntity", "TargetEntity", "Dir", "FromLocation", "CurStamp", "Targets", "Flyers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TeleportRequest), global::GameMessageCore.TeleportRequest.Parser, new[]{ "ToPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TeleportResponse), global::GameMessageCore.TeleportResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityAvatarUpdateResponse), global::GameMessageCore.BroadCastEntityAvatarUpdateResponse.Parser, new[]{ "EntityId", "Avatars" }, null, null, null, null),
@@ -21257,6 +21258,7 @@ namespace GameMessageCore {
       skillId_ = other.skillId_;
       comboIndex_ = other.comboIndex_;
       fromEntity_ = other.fromEntity_ != null ? other.fromEntity_.Clone() : null;
+      targetEntity_ = other.targetEntity_ != null ? other.targetEntity_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       fromLocation_ = other.fromLocation_ != null ? other.fromLocation_.Clone() : null;
       curStamp_ = other.curStamp_;
@@ -21331,8 +21333,23 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "target_entity" field.</summary>
+    public const int TargetEntityFieldNumber = 5;
+    private global::GameMessageCore.EntityId targetEntity_;
+    /// <summary>
+    /// 使用技能的目标
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.EntityId TargetEntity {
+      get { return targetEntity_; }
+      set {
+        targetEntity_ = value;
+      }
+    }
+
     /// <summary>Field number for the "dir" field.</summary>
-    public const int DirFieldNumber = 5;
+    public const int DirFieldNumber = 6;
     private global::GameMessageCore.EntityLocation dir_;
     /// <summary>
     /// 技能使用方向，相对于释放玩家当前位置.
@@ -21347,7 +21364,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "from_location" field.</summary>
-    public const int FromLocationFieldNumber = 6;
+    public const int FromLocationFieldNumber = 7;
     private global::GameMessageCore.EntityLocation fromLocation_;
     /// <summary>
     /// 技能释放的位置
@@ -21362,7 +21379,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "cur_stamp" field.</summary>
-    public const int CurStampFieldNumber = 7;
+    public const int CurStampFieldNumber = 8;
     private long curStamp_;
     /// <summary>
     /// 当前消息状态的服务器时间
@@ -21377,9 +21394,9 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "targets" field.</summary>
-    public const int TargetsFieldNumber = 8;
+    public const int TargetsFieldNumber = 9;
     private static readonly pb::FieldCodec<global::GameMessageCore.EntityDamage> _repeated_targets_codec
-        = pb::FieldCodec.ForMessage(66, global::GameMessageCore.EntityDamage.Parser);
+        = pb::FieldCodec.ForMessage(74, global::GameMessageCore.EntityDamage.Parser);
     private readonly pbc::RepeatedField<global::GameMessageCore.EntityDamage> targets_ = new pbc::RepeatedField<global::GameMessageCore.EntityDamage>();
     /// <summary>
     /// 接收技能伤害的对象 id 数组
@@ -21391,9 +21408,9 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "flyers" field.</summary>
-    public const int FlyersFieldNumber = 9;
+    public const int FlyersFieldNumber = 10;
     private static readonly pb::FieldCodec<global::GameMessageCore.SkillFlyerData> _repeated_flyers_codec
-        = pb::FieldCodec.ForMessage(74, global::GameMessageCore.SkillFlyerData.Parser);
+        = pb::FieldCodec.ForMessage(82, global::GameMessageCore.SkillFlyerData.Parser);
     private readonly pbc::RepeatedField<global::GameMessageCore.SkillFlyerData> flyers_ = new pbc::RepeatedField<global::GameMessageCore.SkillFlyerData>();
     /// <summary>
     /// 产生的所有技能飞行物
@@ -21423,6 +21440,7 @@ namespace GameMessageCore {
       if (SkillId != other.SkillId) return false;
       if (ComboIndex != other.ComboIndex) return false;
       if (!object.Equals(FromEntity, other.FromEntity)) return false;
+      if (!object.Equals(TargetEntity, other.TargetEntity)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       if (!object.Equals(FromLocation, other.FromLocation)) return false;
       if (CurStamp != other.CurStamp) return false;
@@ -21439,6 +21457,7 @@ namespace GameMessageCore {
       if (SkillId != 0) hash ^= SkillId.GetHashCode();
       if (ComboIndex != 0) hash ^= ComboIndex.GetHashCode();
       if (fromEntity_ != null) hash ^= FromEntity.GetHashCode();
+      if (targetEntity_ != null) hash ^= TargetEntity.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (fromLocation_ != null) hash ^= FromLocation.GetHashCode();
       if (CurStamp != 0L) hash ^= CurStamp.GetHashCode();
@@ -21478,16 +21497,20 @@ namespace GameMessageCore {
         output.WriteRawTag(34);
         output.WriteMessage(FromEntity);
       }
-      if (dir_ != null) {
+      if (targetEntity_ != null) {
         output.WriteRawTag(42);
+        output.WriteMessage(TargetEntity);
+      }
+      if (dir_ != null) {
+        output.WriteRawTag(50);
         output.WriteMessage(Dir);
       }
       if (fromLocation_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(FromLocation);
       }
       if (CurStamp != 0L) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt64(CurStamp);
       }
       targets_.WriteTo(output, _repeated_targets_codec);
@@ -21518,16 +21541,20 @@ namespace GameMessageCore {
         output.WriteRawTag(34);
         output.WriteMessage(FromEntity);
       }
-      if (dir_ != null) {
+      if (targetEntity_ != null) {
         output.WriteRawTag(42);
+        output.WriteMessage(TargetEntity);
+      }
+      if (dir_ != null) {
+        output.WriteRawTag(50);
         output.WriteMessage(Dir);
       }
       if (fromLocation_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(FromLocation);
       }
       if (CurStamp != 0L) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt64(CurStamp);
       }
       targets_.WriteTo(ref output, _repeated_targets_codec);
@@ -21553,6 +21580,9 @@ namespace GameMessageCore {
       }
       if (fromEntity_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(FromEntity);
+      }
+      if (targetEntity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetEntity);
       }
       if (dir_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Dir);
@@ -21591,6 +21621,12 @@ namespace GameMessageCore {
           FromEntity = new global::GameMessageCore.EntityId();
         }
         FromEntity.MergeFrom(other.FromEntity);
+      }
+      if (other.targetEntity_ != null) {
+        if (targetEntity_ == null) {
+          TargetEntity = new global::GameMessageCore.EntityId();
+        }
+        TargetEntity.MergeFrom(other.TargetEntity);
       }
       if (other.dir_ != null) {
         if (dir_ == null) {
@@ -21644,28 +21680,35 @@ namespace GameMessageCore {
             break;
           }
           case 42: {
+            if (targetEntity_ == null) {
+              TargetEntity = new global::GameMessageCore.EntityId();
+            }
+            input.ReadMessage(TargetEntity);
+            break;
+          }
+          case 50: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.EntityLocation();
             }
             input.ReadMessage(Dir);
             break;
           }
-          case 50: {
+          case 58: {
             if (fromLocation_ == null) {
               FromLocation = new global::GameMessageCore.EntityLocation();
             }
             input.ReadMessage(FromLocation);
             break;
           }
-          case 56: {
+          case 64: {
             CurStamp = input.ReadInt64();
             break;
           }
-          case 66: {
+          case 74: {
             targets_.AddEntriesFrom(input, _repeated_targets_codec);
             break;
           }
-          case 74: {
+          case 82: {
             flyers_.AddEntriesFrom(input, _repeated_flyers_codec);
             break;
           }
@@ -21704,28 +21747,35 @@ namespace GameMessageCore {
             break;
           }
           case 42: {
+            if (targetEntity_ == null) {
+              TargetEntity = new global::GameMessageCore.EntityId();
+            }
+            input.ReadMessage(TargetEntity);
+            break;
+          }
+          case 50: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.EntityLocation();
             }
             input.ReadMessage(Dir);
             break;
           }
-          case 50: {
+          case 58: {
             if (fromLocation_ == null) {
               FromLocation = new global::GameMessageCore.EntityLocation();
             }
             input.ReadMessage(FromLocation);
             break;
           }
-          case 56: {
+          case 64: {
             CurStamp = input.ReadInt64();
             break;
           }
-          case 66: {
+          case 74: {
             targets_.AddEntriesFrom(ref input, _repeated_targets_codec);
             break;
           }
-          case 74: {
+          case 82: {
             flyers_.AddEntriesFrom(ref input, _repeated_flyers_codec);
             break;
           }

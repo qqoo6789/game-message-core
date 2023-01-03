@@ -459,16 +459,18 @@ message BroadCastEntityCombatResponse{
   int32 combo_index = 3;
   // 使用技能的对象 id
   EntityId from_entity = 4;
+  // 使用技能的目标
+  EntityId target_entity  = 5;
   // 技能使用方向，相对于释放玩家当前位置.
-  EntityLocation dir = 5;
+  EntityLocation dir = 6;
   // 技能释放的位置
-  EntityLocation from_location = 6;
+  EntityLocation from_location = 7;
   // 当前消息状态的服务器时间
-  int64 cur_stamp = 7;
+  int64 cur_stamp = 8;
   // 接收技能伤害的对象 id 数组
-  repeated EntityDamage targets = 8;
+  repeated EntityDamage targets = 9;
   // 产生的所有技能飞行物
-  repeated SkillFlyerData flyers= 9;
+  repeated SkillFlyerData flyers= 10;
 }
 
 message TeleportRequest {

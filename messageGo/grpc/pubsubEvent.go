@@ -6,7 +6,6 @@ const (
 	// 服务注册｜注销｜迁移
 	SubscriptionEventServiceStarted    SubscriptionEvent = "EventTopicServiceStarted"
 	SubscriptionEventServiceUnregister SubscriptionEvent = "EventTopicServiceUnregister"
-	SubscriptionEventServiceTransfer   SubscriptionEvent = "EventTopicServiceTransfer"
 
 	// 无缝切换地图
 	SubscriptionEventUserApplyEnterServiceRes SubscriptionEvent = "EventTopicUserApplyEnterServiceRes"

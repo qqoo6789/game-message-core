@@ -31,6 +31,10 @@ public static class ManagerServiceAction
 public static class MainServiceAction
 {
     /// <summary>
+    /// 添加nft
+    /// </summary>
+    public const string MINT_NFT = "MainServiceActionMintNFT";
+    /// <summary>
     /// 扣除nft
     /// </summary>
     public const string TAKE_NFT = "MainServiceActionTakeNFT";

@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKoINCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKugNCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -38,31 +38,33 @@ namespace GameMessageCore {
             "YXJnZWQQtYAEEg0KB0hhcnZlc3QQt4AEEhAKCkNvbGxlY3Rpb24QuYAEEhoK",
             "FEJyb2FkQ2FzdE11bHRpVXBMYW5kEMGABBITCg1TZWxmTmZ0QnVpbGRzEMOA",
             "BBIeChhCcm9hZENhc3RTZWxmQnVpbGRVcGRhdGUQxYAEEiEKG0Jyb2FkQ2Fz",
-            "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhEK",
-            "C1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQbGF5ZXIQg4AIEg4KCEVudGVy",
-            "TWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRpb24Qg4AMEg4KCFVzZVNraWxs",
-            "EIWADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9hZENhc3RJbml0TWFw",
-            "RWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5VXBkYXRlEJKADBIc",
-            "ChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9hZENhc3RFbnRp",
-            "dHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQlYAMEhwKFkJy",
-            "b2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVwb3J0EJeADBIiChxC",
-            "cm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJmADBIbChVCcm9hZENhc3RN",
-            "b25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0",
-            "ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0YVVwZGF0ZRCjgAwS",
-            "JAoeQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRlEKWADBIZChNQbGF5",
-            "ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxCcm9hZENhc3RQbGF5ZXJBY3Rpb25D",
-            "b2xsZWN0EKmADBIWChBTY2VuZURlc3RydWN0aW9uELOADBIfChlCcm9hZENh",
-            "c3RTY2VuZURlc3RydWN0aW9uELWADBIWChBQbGF5ZXJBY3Rpb25DaGF0ELeA",
-            "DBIfChlCcm9hZENhc3RQbGF5ZXJBY3Rpb25DaGF0ELmADBIVCg9RdWVyeVNl",
-            "cnZlclRpbWUQw4AMEhwKFkJyb2FkQ2FzdENoYW5nZVNlcnZpY2UQxYAMEg8K",
-            "CVNlbGZUYXNrcxCBgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQ",
-            "EhAKCkFjY2VwdFRhc2sQhYAQEhUKD0FiYW5kb25tZW50VGFzaxCHgBASEAoK",
-            "VGFza1Jld2FyZBCJgBASFAoOVGFza0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3Jh",
-            "ZGVUYXNrUHJvZ3Jlc3MQk4AQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQ",
-            "EhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3Nh",
-            "Z2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoY",
-            "QnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJv",
-            "dG8z"));
+            "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhIK",
+            "DFF1ZXJ5R3JhbmFyeRDRgAQSFAoOR3JhbmFyeUNvbGxlY3QQ04AEEhwKFkJy",
+            "b2FkQ2FzdEdyYW5hcnlVcGRhdGUQ1YAEEhwKFkJyb2FkQ2FzdFVwR3JhbmFy",
+            "eUl0ZW0Q14AEEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQbGF5ZXIQ",
+            "g4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRpb24Qg4AM",
+            "Eg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9h",
+            "ZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5",
+            "VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNC",
+            "cm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21i",
+            "YXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVw",
+            "b3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJmADBIb",
+            "ChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2FzdEVudGl0",
+            "eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0",
+            "YVVwZGF0ZRCjgAwSJAoeQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRl",
+            "EKWADBIZChNQbGF5ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxCcm9hZENhc3RQ",
+            "bGF5ZXJBY3Rpb25Db2xsZWN0EKmADBIWChBTY2VuZURlc3RydWN0aW9uELOA",
+            "DBIfChlCcm9hZENhc3RTY2VuZURlc3RydWN0aW9uELWADBIWChBQbGF5ZXJB",
+            "Y3Rpb25DaGF0ELeADBIfChlCcm9hZENhc3RQbGF5ZXJBY3Rpb25DaGF0ELmA",
+            "DBIVCg9RdWVyeVNlcnZlclRpbWUQw4AMEhwKFkJyb2FkQ2FzdENoYW5nZVNl",
+            "cnZpY2UQxYAMEg8KCVNlbGZUYXNrcxCBgBASHQoXQnJvYWRDYXN0VXBkYXRl",
+            "VGFza0xpc3QQg4AQEhAKCkFjY2VwdFRhc2sQhYAQEhUKD0FiYW5kb25tZW50",
+            "VGFzaxCHgBASEAoKVGFza1Jld2FyZBCJgBASFAoOVGFza0xpc3RSZXdhcmQQ",
+            "kYAQEhkKE1VwZ3JhZGVUYXNrUHJvZ3Jlc3MQk4AQEhkKE0Jyb2FkQ2FzdFRh",
+            "c2tSZXdhcmQQlYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRD",
+            "YXN0Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVz",
+            "c2FnZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQ",
+            "aW5nEIGAGGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -176,6 +178,22 @@ namespace GameMessageCore {
     /// 使用token 购买电池(透传给 theweb3)
     /// </summary>
     [pbr::OriginalName("MintBattery")] MintBattery = 65609,
+    /// <summary>
+    /// 查询仓库所有道具
+    /// </summary>
+    [pbr::OriginalName("QueryGranary")] QueryGranary = 65617,
+    /// <summary>
+    /// 取出仓库中的所有道具
+    /// </summary>
+    [pbr::OriginalName("GranaryCollect")] GranaryCollect = 65619,
+    /// <summary>
+    /// 全量更新仓库数据
+    /// </summary>
+    [pbr::OriginalName("BroadCastGranaryUpdate")] BroadCastGranaryUpdate = 65621,
+    /// <summary>
+    /// 更新仓库道具
+    /// </summary>
+    [pbr::OriginalName("BroadCastUpGranaryItem")] BroadCastUpGranaryItem = 65623,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>

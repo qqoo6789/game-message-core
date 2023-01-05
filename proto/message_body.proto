@@ -16,6 +16,7 @@ import "chat.proto";
 import "vector.proto";
 import "land.proto";
 import "service.proto";
+import "home.proto";
 
 
 
@@ -132,6 +133,8 @@ message Envelope {
     QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
     QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
     BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
+    HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
+    HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -555,7 +558,20 @@ message BroadCastChangeServiceResponse{
   SceneServiceSubType serSubType = 2;
   int64               serOwner   = 3;  
 }
-
+message HomeResourceOperateRequest
+{
+  repeated CollectResourceBaseInfo resourceList = 1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
+message HomeResourceOperateResponse
+{
+  repeated CollectResourceOperateResult operateResultList = 1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

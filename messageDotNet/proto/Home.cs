@@ -24,24 +24,25 @@ namespace GameMessageCore {
     static HomeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiWQoXQ29sbGVjdFJlc291",
-            "cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgCIAEoDjIkLmdhbWVN",
-            "ZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIm0KHENvbGxlY3RSZXNv",
-            "dXJjZU9wZXJhdGVSZXN1bHQSOgoIYmFzZUluZm8YASABKAsyKC5nYW1lTWVz",
-            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlQmFzZUluZm8SEQoJaXRlbVZhbGlk",
-            "GAIgASgIKpEBCgpIb21lQWN0aW9uEhIKDkhvbWVBY3Rpb25Ob25lEAASFAoQ",
-            "SG9tZUFjdGlvbkhvZWluZxACEhQKEEhvbWVBY3Rpb25Tb3dpbmcQBBIWChJI",
-            "b21lQWN0aW9uV2F0ZXJpbmcQCBIVChFIb21lQWN0aW9uSGFydmVzdBAQEhQK",
-            "EEhvbWVBY3Rpb25NYW51cmUQICqqAQoTQ29sbGVjdFJlc291cmNlVHlwZRIe",
-            "ChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5rbm93bhAAEhsKF0NvbGxlY3RSZXNv",
-            "dXJjZVR5cGVTb2lsEAESGwoXQ29sbGVjdFJlc291cmNlVHlwZVJvY2sQAhIb",
-            "ChdDb2xsZWN0UmVzb3VyY2VUeXBlVHJlZRAEEhwKGENvbGxlY3RSZXNvdXJj",
-            "ZVR5cGVHcmFzcxAIYgZwcm90bzM="));
+            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8iWQoX",
+            "Q29sbGVjdFJlc291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgC",
+            "IAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIp4B",
+            "ChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0EjoKCGJhc2VJbmZvGAEg",
+            "ASgLMiguZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
+            "EhEKCWl0ZW1WYWxpZBgCIAEoCBIvCghkcm9wTGlzdBgDIAMoCzIdLmdhbWVN",
+            "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qkQEKCkhvbWVBY3Rpb24SEgoOSG9t",
+            "ZUFjdGlvbk5vbmUQABIUChBIb21lQWN0aW9uSG9laW5nEAISFAoQSG9tZUFj",
+            "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhUKEUhvbWVB",
+            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKqoBChNDb2xs",
+            "ZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3du",
+            "EAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIbChdDb2xsZWN0UmVz",
+            "b3VyY2VUeXBlUm9jaxACEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVUcmVlEAQS",
+            "HAoYQ29sbGVjdFJlc291cmNlVHlwZUdyYXNzEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "BaseInfo", "ItemValid" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "BaseInfo", "ItemValid", "DropList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -351,6 +352,7 @@ namespace GameMessageCore {
     public CollectResourceOperateResult(CollectResourceOperateResult other) : this() {
       baseInfo_ = other.baseInfo_ != null ? other.baseInfo_.Clone() : null;
       itemValid_ = other.itemValid_;
+      dropList_ = other.dropList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -387,6 +389,17 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "dropList" field.</summary>
+    public const int DropListFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::GameMessageCore.ItemBaseInfo> _repeated_dropList_codec
+        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.ItemBaseInfo.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> dropList_ = new pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> DropList {
+      get { return dropList_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -404,6 +417,7 @@ namespace GameMessageCore {
       }
       if (!object.Equals(BaseInfo, other.BaseInfo)) return false;
       if (ItemValid != other.ItemValid) return false;
+      if(!dropList_.Equals(other.dropList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -413,6 +427,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (baseInfo_ != null) hash ^= BaseInfo.GetHashCode();
       if (ItemValid != false) hash ^= ItemValid.GetHashCode();
+      hash ^= dropList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -439,6 +454,7 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteBool(ItemValid);
       }
+      dropList_.WriteTo(output, _repeated_dropList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -457,6 +473,7 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteBool(ItemValid);
       }
+      dropList_.WriteTo(ref output, _repeated_dropList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -473,6 +490,7 @@ namespace GameMessageCore {
       if (ItemValid != false) {
         size += 1 + 1;
       }
+      size += dropList_.CalculateSize(_repeated_dropList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -494,6 +512,7 @@ namespace GameMessageCore {
       if (other.ItemValid != false) {
         ItemValid = other.ItemValid;
       }
+      dropList_.Add(other.dropList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -520,6 +539,10 @@ namespace GameMessageCore {
             ItemValid = input.ReadBool();
             break;
           }
+          case 26: {
+            dropList_.AddEntriesFrom(input, _repeated_dropList_codec);
+            break;
+          }
         }
       }
     #endif
@@ -544,6 +567,10 @@ namespace GameMessageCore {
           }
           case 16: {
             ItemValid = input.ReadBool();
+            break;
+          }
+          case 26: {
+            dropList_.AddEntriesFrom(ref input, _repeated_dropList_codec);
             break;
           }
         }

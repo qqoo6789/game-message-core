@@ -2,6 +2,7 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
+import "item.proto";
 
 enum HomeAction {
       HomeActionNone = 0;
@@ -37,4 +38,5 @@ message CollectResourceOperateResult{
   CollectResourceBaseInfo baseInfo = 1;
   //道具有效  在播种和施肥时候专精不够时候 会返回false
   bool itemValid=2;
+  repeated ItemBaseInfo dropList = 3;
 }

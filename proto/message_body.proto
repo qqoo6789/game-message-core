@@ -416,8 +416,8 @@ message UseSkillRequest {
   EntityLocation  from_location = 3;
   // 技能指定使用的目标
   EntityId        target_id = 4;
-  // 连击动作
-  int32           combo_index = 5;
+  //是技能开始还是停止 有些持续需要手动停止
+  bool is_start = 5;
 }
 message UseSkillResponse {
 } 

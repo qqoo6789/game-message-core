@@ -4569,7 +4569,7 @@ func (x *UpgradeTalentNodeRequest) GetType() TalentType {
 	if x != nil {
 		return x.Type
 	}
-	return TalentType_TalentTypeUnknow
+	return TalentType_TalentTypeUnknown
 }
 
 func (x *UpgradeTalentNodeRequest) GetNodeId() int32 {

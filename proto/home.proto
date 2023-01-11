@@ -23,10 +23,8 @@ enum CollectResourceType
     CollectResourceTypeUnknown = 0;
     // 土壤作物
     CollectResourceTypeSoil = 1 ;
-    // 岩石 矿石
-    CollectResourceTypeRock = 2;
-    CollectResourceTypeTree = 4;
-    CollectResourceTypeGrass = 8;
+    // 采集资源
+    HomeResource = 2;
 }
 
 message CollectResourceBaseInfo{

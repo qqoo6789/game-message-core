@@ -87,10 +87,8 @@ message Envelope {
     GranaryCollectResponse            granary_collect_response              = 0x010054;
     BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
     BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
-    QueryTalentRequest                query_talent_request                  = 0x010059;
-    QueryTalentResponse               query_talent_response                 = 0x010060;
-    UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010061;
-    UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010062;
+    UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010059;
+    UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010060;
 
 
 
@@ -141,6 +139,9 @@ message Envelope {
     HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
     HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
     BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049;
+    QueryTalentRequest                      query_talent_request                          = 0x030051;
+    QueryTalentResponse                     query_talent_response                         = 0x030052;
+
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

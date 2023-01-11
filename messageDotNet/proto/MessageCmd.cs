@@ -41,25 +41,25 @@ namespace GameMessageCore {
             "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhIK",
             "DFF1ZXJ5R3JhbmFyeRDRgAQSFAoOR3JhbmFyeUNvbGxlY3QQ04AEEhwKFkJy",
             "b2FkQ2FzdEdyYW5hcnlVcGRhdGUQ1YAEEhwKFkJyb2FkQ2FzdFVwR3JhbmFy",
-            "eUl0ZW0Q14AEEhEKC1F1ZXJ5VGFsZW50ENmABBIXChFVcGdyYWRlVGFsZW50",
-            "Tm9kZRDhgAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENyZWF0ZVBsYXllchCD",
-            "gAgSDgoIRW50ZXJNYXAQgYAMEhgKElVwZGF0ZVNlbGZMb2NhdGlvbhCDgAwS",
-            "DgoIVXNlU2tpbGwQhYAMEhMKDVJlc3Bhd25QbGF5ZXIQiYAMEh0KF0Jyb2Fk",
-            "Q2FzdEluaXRNYXBFbGVtZW50EJGADBIeChhCcm9hZENhc3RNYXBFbnRpdHlV",
-            "cGRhdGUQkoAMEhwKFkJyb2FkQ2FzdEVudGl0eURlc3Ryb3kQk4AMEhkKE0Jy",
-            "b2FkQ2FzdEVudGl0eU1vdmUQlIAMEhsKFUJyb2FkQ2FzdEVudGl0eUNvbWJh",
-            "dBCVgAwSHAoWQnJvYWRDYXN0UmVzcGF3blBsYXllchCWgAwSDgoIVGVsZXBv",
-            "cnQQl4AMEiIKHEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRhdGUQmYAMEhsK",
-            "FUJyb2FkQ2FzdE1vbnN0ZXJEZWF0aBChgAwSIQobQnJvYWRDYXN0RW50aXR5",
-            "QXZhdGFyVXBkYXRlEKKADBIlCh9Ccm9hZENhc3RFbnRpdHlCYXR0bGVEYXRh",
-            "VXBkYXRlEKOADBIkCh5Ccm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRhdGUQ",
-            "pYAMEhkKE1BsYXllckFjdGlvbkNvbGxlY3QQp4AMEiIKHEJyb2FkQ2FzdFBs",
-            "YXllckFjdGlvbkNvbGxlY3QQqYAMEhYKEFNjZW5lRGVzdHJ1Y3Rpb24Qs4AM",
-            "Eh8KGUJyb2FkQ2FzdFNjZW5lRGVzdHJ1Y3Rpb24QtYAMEhYKEFBsYXllckFj",
-            "dGlvbkNoYXQQt4AMEh8KGUJyb2FkQ2FzdFBsYXllckFjdGlvbkNoYXQQuYAM",
-            "EhEKC0dldEhvbWVEYXRhEMGADBIVCg9RdWVyeVNlcnZlclRpbWUQw4AMEhwK",
-            "FkJyb2FkQ2FzdENoYW5nZVNlcnZpY2UQxYAMEhkKE0hvbWVSZXNvdXJjZU9w",
-            "ZXJhdGUQx4AMEiAKGkJyb2FkQ2FzdEhvbWVEYXRhSW5pdEJhdGNoEMmADBIP",
+            "eUl0ZW0Q14AEEhcKEVVwZ3JhZGVUYWxlbnROb2RlENmABBIRCgtRdWVyeVBs",
+            "YXllchCBgAgSEgoMQ3JlYXRlUGxheWVyEIOACBIOCghFbnRlck1hcBCBgAwS",
+            "GAoSVXBkYXRlU2VsZkxvY2F0aW9uEIOADBIOCghVc2VTa2lsbBCFgAwSEwoN",
+            "UmVzcGF3blBsYXllchCJgAwSHQoXQnJvYWRDYXN0SW5pdE1hcEVsZW1lbnQQ",
+            "kYAMEh4KGEJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZRCSgAwSHAoWQnJvYWRD",
+            "YXN0RW50aXR5RGVzdHJveRCTgAwSGQoTQnJvYWRDYXN0RW50aXR5TW92ZRCU",
+            "gAwSGwoVQnJvYWRDYXN0RW50aXR5Q29tYmF0EJWADBIcChZCcm9hZENhc3RS",
+            "ZXNwYXduUGxheWVyEJaADBIOCghUZWxlcG9ydBCXgAwSIgocQnJvYWRDYXN0",
+            "RW50aXR5UHJvZmlsZVVwZGF0ZRCZgAwSGwoVQnJvYWRDYXN0TW9uc3RlckRl",
+            "YXRoEKGADBIhChtCcm9hZENhc3RFbnRpdHlBdmF0YXJVcGRhdGUQooAMEiUK",
+            "H0Jyb2FkQ2FzdEVudGl0eUJhdHRsZURhdGFVcGRhdGUQo4AMEiQKHkJyb2Fk",
+            "Q2FzdEVudGl0eUJ1aWxkRGF0YVVwZGF0ZRClgAwSGQoTUGxheWVyQWN0aW9u",
+            "Q29sbGVjdBCngAwSIgocQnJvYWRDYXN0UGxheWVyQWN0aW9uQ29sbGVjdBCp",
+            "gAwSFgoQU2NlbmVEZXN0cnVjdGlvbhCzgAwSHwoZQnJvYWRDYXN0U2NlbmVE",
+            "ZXN0cnVjdGlvbhC1gAwSFgoQUGxheWVyQWN0aW9uQ2hhdBC3gAwSHwoZQnJv",
+            "YWRDYXN0UGxheWVyQWN0aW9uQ2hhdBC5gAwSEQoLR2V0SG9tZURhdGEQwYAM",
+            "EhUKD1F1ZXJ5U2VydmVyVGltZRDDgAwSHAoWQnJvYWRDYXN0Q2hhbmdlU2Vy",
+            "dmljZRDFgAwSGQoTSG9tZVJlc291cmNlT3BlcmF0ZRDHgAwSIAoaQnJvYWRD",
+            "YXN0SG9tZURhdGFJbml0QmF0Y2gQyYAMEhEKC1F1ZXJ5VGFsZW50ENGADBIP",
             "CglTZWxmVGFza3MQgYAQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EIOA",
             "EBIQCgpBY2NlcHRUYXNrEIWAEBIVCg9BYmFuZG9ubWVudFRhc2sQh4AQEhAK",
             "ClRhc2tSZXdhcmQQiYAQEhQKDlRhc2tMaXN0UmV3YXJkEJGAEBIZChNVcGdy",
@@ -198,13 +198,9 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("BroadCastUpGranaryItem")] BroadCastUpGranaryItem = 65623,
     /// <summary>
-    /// 查询天赋数据
-    /// </summary>
-    [pbr::OriginalName("QueryTalent")] QueryTalent = 65625,
-    /// <summary>
     /// 解锁/升级 天赋节点
     /// </summary>
-    [pbr::OriginalName("UpgradeTalentNode")] UpgradeTalentNode = 65633,
+    [pbr::OriginalName("UpgradeTalentNode")] UpgradeTalentNode = 65625,
     /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
@@ -243,6 +239,10 @@ namespace GameMessageCore {
     [pbr::OriginalName("BroadCastChangeService")] BroadCastChangeService = 196677,
     [pbr::OriginalName("HomeResourceOperate")] HomeResourceOperate = 196679,
     [pbr::OriginalName("BroadCastHomeDataInitBatch")] BroadCastHomeDataInitBatch = 196681,
+    /// <summary>
+    /// 查询天赋数据
+    /// </summary>
+    [pbr::OriginalName("QueryTalent")] QueryTalent = 196689,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

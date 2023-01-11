@@ -120,95 +120,95 @@ namespace GameMessageCore {
             "ZV9yZXNwb25zZRjVgAQgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
             "dEdyYW5hcnlVcGRhdGVSZXNwb25zZUgAEmAKI2Jyb2FkX2Nhc3RfdXBfZ3Jh",
             "bmFyeV9pdGVtX3Jlc3BvbnNlGNeABCABKAsyLy5nYW1lTWVzc2FnZUNvcmUu",
-            "QnJvYWRDYXN0VXBHcmFuYXJ5SXRlbVJlc3BvbnNlSAASRQoUcXVlcnlfdGFs",
-            "ZW50X3JlcXVlc3QY2YAEIAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVRh",
-            "bGVudFJlcXVlc3RIABJHChVxdWVyeV90YWxlbnRfcmVzcG9uc2UY4IAEIAEo",
-            "CzIkLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVRhbGVudFJlc3BvbnNlSAASUgob",
-            "dXBncmFkZV90YWxlbnRfbm9kZV9yZXF1ZXN0GOGABCABKAsyKS5nYW1lTWVz",
-            "c2FnZUNvcmUuVXBncmFkZVRhbGVudE5vZGVSZXF1ZXN0SAASVAocdXBncmFk",
-            "ZV90YWxlbnRfbm9kZV9yZXNwb25zZRjigAQgASgLMiouZ2FtZU1lc3NhZ2VD",
-            "b3JlLlVwZ3JhZGVUYWxlbnROb2RlUmVzcG9uc2VIABJFChRxdWVyeV9wbGF5",
-            "ZXJfcmVxdWVzdBiBgAggASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5UGxh",
-            "eWVyUmVxdWVzdEgAEkcKFXF1ZXJ5X3BsYXllcl9yZXNwb25zZRiCgAggASgL",
-            "MiQuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5UGxheWVyUmVzcG9uc2VIABJHChVj",
-            "cmVhdGVfcGxheWVyX3JlcXVlc3QYg4AIIAEoCzIkLmdhbWVNZXNzYWdlQ29y",
-            "ZS5DcmVhdGVQbGF5ZXJSZXF1ZXN0SAASSQoWY3JlYXRlX3BsYXllcl9yZXNw",
-            "b25zZRiEgAggASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLkNyZWF0ZVBsYXllclJl",
-            "c3BvbnNlSAASPwoRZW50ZXJfbWFwX3JlcXVlc3QYgYAMIAEoCzIgLmdhbWVN",
-            "ZXNzYWdlQ29yZS5FbnRlck1hcFJlcXVlc3RIABJBChJlbnRlcl9tYXBfcmVz",
-            "cG9uc2UYgoAMIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5FbnRlck1hcFJlc3Bv",
-            "bnNlSAASVAocdXBkYXRlX3NlbGZfbG9jYXRpb25fcmVxdWVzdBiDgAwgASgL",
-            "MiouZ2FtZU1lc3NhZ2VDb3JlLlVwZGF0ZVNlbGZMb2NhdGlvblJlcXVlc3RI",
-            "ABJWCh11cGRhdGVfc2VsZl9sb2NhdGlvbl9yZXNwb25zZRiEgAwgASgLMisu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlVwZGF0ZVNlbGZMb2NhdGlvblJlc3BvbnNlSAAS",
-            "PwoRdXNlX3NraWxsX3JlcXVlc3QYhYAMIAEoCzIgLmdhbWVNZXNzYWdlQ29y",
-            "ZS5Vc2VTa2lsbFJlcXVlc3RIABJBChJ1c2Vfc2tpbGxfcmVzcG9uc2UYhoAM",
-            "IAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5Vc2VTa2lsbFJlc3BvbnNlSAASSQoW",
-            "cmVzcGF3bl9wbGF5ZXJfcmVxdWVzdBiJgAwgASgLMiUuZ2FtZU1lc3NhZ2VD",
-            "b3JlLlJlc3Bhd25QbGF5ZXJSZXF1ZXN0SAASSwoXcmVzcGF3bl9wbGF5ZXJf",
-            "cmVzcG9uc2UYkIAMIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5SZXNwYXduUGxh",
-            "eWVyUmVzcG9uc2VIABJiCiRicm9hZF9jYXN0X2luaXRfbWFwX2VsZW1lbnRf",
-            "cmVzcG9uc2UYkYAMIAEoCzIwLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJ",
-            "bml0TWFwRWxlbWVudFJlc3BvbnNlSAASZAolYnJvYWRfY2FzdF9tYXBfZW50",
-            "aXR5X3VwZGF0ZV9yZXNwb25zZRiSgAwgASgLMjEuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZVJlc3BvbnNlSAASXwoiYnJvYWRf",
-            "Y2FzdF9lbnRpdHlfZGVzdHJveV9yZXNwb25zZRiTgAwgASgLMi8uZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eURlc3Ryb3lSZXNwb25zZUgAElkK",
-            "H2Jyb2FkX2Nhc3RfZW50aXR5X21vdmVfcmVzcG9uc2UYlIAMIAEoCzIsLmdh",
-            "bWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlNb3ZlUmVzcG9uc2VIABJd",
-            "CiFicm9hZF9jYXN0X2VudGl0eV9jb21iYXRfcmVzcG9uc2UYlYAMIAEoCzIu",
-            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlDb21iYXRSZXNwb25z",
-            "ZUgAEl8KImJyb2FkX2Nhc3RfcmVzcGF3bl9wbGF5ZXJfcmVzcG9uc2UYloAM",
-            "IAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RSZXNwYXduUGxheWVy",
-            "UmVzcG9uc2VIABI+ChB0ZWxlcG9ydF9yZXF1ZXN0GJeADCABKAsyIC5nYW1l",
-            "TWVzc2FnZUNvcmUuVGVsZXBvcnRSZXF1ZXN0SAASQAoRdGVsZXBvcnRfcmVz",
-            "cG9uc2UYmIAMIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5UZWxlcG9ydFJlc3Bv",
-            "bnNlSAASbAopYnJvYWRfY2FzdF9lbnRpdHlfcHJvZmlsZV91cGRhdGVfcmVz",
-            "cG9uc2UYmYAMIAEoCzI1LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRp",
-            "dHlQcm9maWxlVXBkYXRlUmVzcG9uc2VIABJdCiFicm9hZF9jYXN0X21vbnN0",
-            "ZXJfZGVhdGhfcmVzcG9uc2UYoYAMIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5C",
-            "cm9hZENhc3RNb25zdGVyRGVhdGhSZXNwb25zZUgAEmoKKGJyb2FkX2Nhc3Rf",
-            "ZW50aXR5X2F2YXRhcl91cGRhdGVfcmVzcG9uc2UYooAMIAEoCzI0LmdhbWVN",
-            "ZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlBdmF0YXJVcGRhdGVSZXNwb25z",
-            "ZUgAEnMKLWJyb2FkX2Nhc3RfZW50aXR5X2JhdHRsZV9kYXRhX3VwZGF0ZV9y",
-            "ZXNwb25zZRijgAwgASgLMjguZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVu",
-            "dGl0eUJhdHRsZURhdGFVcGRhdGVSZXNwb25zZUgAEnEKLGJyb2FkX2Nhc3Rf",
-            "ZW50aXR5X2J1aWxkX2RhdGFfdXBkYXRlX3Jlc3BvbnNlGKWADCABKAsyNy5n",
-            "YW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRl",
-            "UmVzcG9uc2VIABJWCh1wbGF5ZXJfYWN0aW9uX2NvbGxlY3RfcmVxdWVzdBin",
-            "gAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckFjdGlvbkNvbGxlY3RS",
-            "ZXF1ZXN0SAASWAoecGxheWVyX2FjdGlvbl9jb2xsZWN0X3Jlc3BvbnNlGKmA",
-            "DCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ29sbGVjdFJl",
-            "c3BvbnNlSAASbAopYnJvYWRfY2FzdF9wbGF5ZXJfYWN0aW9uX2NvbGxlY3Rf",
-            "cmVzcG9uc2UYsYAMIAEoCzI1LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RQ",
-            "bGF5ZXJBY3Rpb25Db2xsZWN0UmVzcG9uc2VIABJPChlzY2VuZV9kZXN0cnVj",
-            "dGlvbl9yZXF1ZXN0GLOADCABKAsyKC5nYW1lTWVzc2FnZUNvcmUuU2NlbmVE",
-            "ZXN0cnVjdGlvblJlcXVlc3RIABJRChpzY2VuZV9kZXN0cnVjdGlvbl9yZXNw",
-            "b25zZRi0gAwgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlNjZW5lRGVzdHJ1Y3Rp",
-            "b25SZXNwb25zZUgAEmUKJWJyb2FkX2Nhc3Rfc2NlbmVfZGVzdHJ1Y3Rpb25f",
-            "cmVzcG9uc2UYtYAMIAEoCzIyLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RT",
-            "Y2VuZURlc3RydWN0aW9uUmVzcG9uc2VIABJQChpwbGF5ZXJfYWN0aW9uX2No",
-            "YXRfcmVxdWVzdBi3gAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckFj",
-            "dGlvbkNoYXRSZXF1ZXN0SAASUgobcGxheWVyX2FjdGlvbl9jaGF0X3Jlc3Bv",
-            "bnNlGLiADCABKAsyKS5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ2hh",
-            "dFJlc3BvbnNlSAASZgomYnJvYWRfY2FzdF9wbGF5ZXJfYWN0aW9uX2NoYXRf",
-            "cmVzcG9uc2UYuYAMIAEoCzIyLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RQ",
-            "bGF5ZXJBY3Rpb25DaGF0UmVzcG9uc2VIABJGChVnZXRfaG9tZV9kYXRhX3Jl",
-            "cXVlc3QYwYAMIAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5HZXRIb21lRGF0YVJl",
-            "cXVlc3RIABJIChZnZXRfaG9tZV9kYXRhX3Jlc3BvbnNlGMKADCABKAsyJC5n",
-            "YW1lTWVzc2FnZUNvcmUuR2V0SG9tZURhdGFSZXNwb25zZUgAEk4KGXF1ZXJ5",
-            "X1NlcnZlcl90aW1lX3JlcXVlc3QYw4AMIAEoCzInLmdhbWVNZXNzYWdlQ29y",
-            "ZS5RdWVyeVNlcnZlclRpbWVSZXF1ZXN0SAASUAoacXVlcnlfU2VydmVyX3Rp",
-            "bWVfcmVzcG9uc2UYxIAMIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVNl",
-            "cnZlclRpbWVSZXNwb25zZUgAEl8KImJyb2FkX2Nhc3RfY2hhbmdlX3NlcnZp",
-            "Y2VfcmVzcG9uc2UYxYAMIAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENh",
-            "c3RDaGFuZ2VTZXJ2aWNlUmVzcG9uc2VIABJWCh1ob21lX3Jlc291cmNlX29w",
-            "ZXJhdGVfcmVxdWVzdBjHgAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLkhvbWVS",
-            "ZXNvdXJjZU9wZXJhdGVSZXF1ZXN0SAASWAoeaG9tZV9yZXNvdXJjZV9vcGVy",
-            "YXRlX3Jlc3BvbnNlGMiADCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuSG9tZVJl",
-            "c291cmNlT3BlcmF0ZVJlc3BvbnNlSAASaQooYnJvYWRfY2FzdF9ob21lX2Rh",
-            "dGFfaW5pdF9iYXRjaF9yZXNwb25zZRjJgAwgASgLMjMuZ2FtZU1lc3NhZ2VD",
-            "b3JlLkJyb2FkQ2FzdEhvbWVEYXRhSW5pdEJhdGNoUmVzcG9uc2VIABJBChJz",
+            "QnJvYWRDYXN0VXBHcmFuYXJ5SXRlbVJlc3BvbnNlSAASUgobdXBncmFkZV90",
+            "YWxlbnRfbm9kZV9yZXF1ZXN0GNmABCABKAsyKS5nYW1lTWVzc2FnZUNvcmUu",
+            "VXBncmFkZVRhbGVudE5vZGVSZXF1ZXN0SAASVAocdXBncmFkZV90YWxlbnRf",
+            "bm9kZV9yZXNwb25zZRjggAQgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlVwZ3Jh",
+            "ZGVUYWxlbnROb2RlUmVzcG9uc2VIABJFChRxdWVyeV9wbGF5ZXJfcmVxdWVz",
+            "dBiBgAggASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5UGxheWVyUmVxdWVz",
+            "dEgAEkcKFXF1ZXJ5X3BsYXllcl9yZXNwb25zZRiCgAggASgLMiQuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlF1ZXJ5UGxheWVyUmVzcG9uc2VIABJHChVjcmVhdGVfcGxh",
+            "eWVyX3JlcXVlc3QYg4AIIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5DcmVhdGVQ",
+            "bGF5ZXJSZXF1ZXN0SAASSQoWY3JlYXRlX3BsYXllcl9yZXNwb25zZRiEgAgg",
+            "ASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLkNyZWF0ZVBsYXllclJlc3BvbnNlSAAS",
+            "PwoRZW50ZXJfbWFwX3JlcXVlc3QYgYAMIAEoCzIgLmdhbWVNZXNzYWdlQ29y",
+            "ZS5FbnRlck1hcFJlcXVlc3RIABJBChJlbnRlcl9tYXBfcmVzcG9uc2UYgoAM",
+            "IAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5FbnRlck1hcFJlc3BvbnNlSAASVAoc",
+            "dXBkYXRlX3NlbGZfbG9jYXRpb25fcmVxdWVzdBiDgAwgASgLMiouZ2FtZU1l",
+            "c3NhZ2VDb3JlLlVwZGF0ZVNlbGZMb2NhdGlvblJlcXVlc3RIABJWCh11cGRh",
+            "dGVfc2VsZl9sb2NhdGlvbl9yZXNwb25zZRiEgAwgASgLMisuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLlVwZGF0ZVNlbGZMb2NhdGlvblJlc3BvbnNlSAASPwoRdXNlX3Nr",
+            "aWxsX3JlcXVlc3QYhYAMIAEoCzIgLmdhbWVNZXNzYWdlQ29yZS5Vc2VTa2ls",
+            "bFJlcXVlc3RIABJBChJ1c2Vfc2tpbGxfcmVzcG9uc2UYhoAMIAEoCzIhLmdh",
+            "bWVNZXNzYWdlQ29yZS5Vc2VTa2lsbFJlc3BvbnNlSAASSQoWcmVzcGF3bl9w",
+            "bGF5ZXJfcmVxdWVzdBiJgAwgASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLlJlc3Bh",
+            "d25QbGF5ZXJSZXF1ZXN0SAASSwoXcmVzcGF3bl9wbGF5ZXJfcmVzcG9uc2UY",
+            "kIAMIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5SZXNwYXduUGxheWVyUmVzcG9u",
+            "c2VIABJiCiRicm9hZF9jYXN0X2luaXRfbWFwX2VsZW1lbnRfcmVzcG9uc2UY",
+            "kYAMIAEoCzIwLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJbml0TWFwRWxl",
+            "bWVudFJlc3BvbnNlSAASZAolYnJvYWRfY2FzdF9tYXBfZW50aXR5X3VwZGF0",
+            "ZV9yZXNwb25zZRiSgAwgASgLMjEuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
+            "dE1hcEVudGl0eVVwZGF0ZVJlc3BvbnNlSAASXwoiYnJvYWRfY2FzdF9lbnRp",
+            "dHlfZGVzdHJveV9yZXNwb25zZRiTgAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkJyb2FkQ2FzdEVudGl0eURlc3Ryb3lSZXNwb25zZUgAElkKH2Jyb2FkX2Nh",
+            "c3RfZW50aXR5X21vdmVfcmVzcG9uc2UYlIAMIAEoCzIsLmdhbWVNZXNzYWdl",
+            "Q29yZS5Ccm9hZENhc3RFbnRpdHlNb3ZlUmVzcG9uc2VIABJdCiFicm9hZF9j",
+            "YXN0X2VudGl0eV9jb21iYXRfcmVzcG9uc2UYlYAMIAEoCzIuLmdhbWVNZXNz",
+            "YWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlDb21iYXRSZXNwb25zZUgAEl8KImJy",
+            "b2FkX2Nhc3RfcmVzcGF3bl9wbGF5ZXJfcmVzcG9uc2UYloAMIAEoCzIvLmdh",
+            "bWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RSZXNwYXduUGxheWVyUmVzcG9uc2VI",
+            "ABI+ChB0ZWxlcG9ydF9yZXF1ZXN0GJeADCABKAsyIC5nYW1lTWVzc2FnZUNv",
+            "cmUuVGVsZXBvcnRSZXF1ZXN0SAASQAoRdGVsZXBvcnRfcmVzcG9uc2UYmIAM",
+            "IAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5UZWxlcG9ydFJlc3BvbnNlSAASbAop",
+            "YnJvYWRfY2FzdF9lbnRpdHlfcHJvZmlsZV91cGRhdGVfcmVzcG9uc2UYmYAM",
+            "IAEoCzI1LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlQcm9maWxl",
+            "VXBkYXRlUmVzcG9uc2VIABJdCiFicm9hZF9jYXN0X21vbnN0ZXJfZGVhdGhf",
+            "cmVzcG9uc2UYoYAMIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RN",
+            "b25zdGVyRGVhdGhSZXNwb25zZUgAEmoKKGJyb2FkX2Nhc3RfZW50aXR5X2F2",
+            "YXRhcl91cGRhdGVfcmVzcG9uc2UYooAMIAEoCzI0LmdhbWVNZXNzYWdlQ29y",
+            "ZS5Ccm9hZENhc3RFbnRpdHlBdmF0YXJVcGRhdGVSZXNwb25zZUgAEnMKLWJy",
+            "b2FkX2Nhc3RfZW50aXR5X2JhdHRsZV9kYXRhX3VwZGF0ZV9yZXNwb25zZRij",
+            "gAwgASgLMjguZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eUJhdHRs",
+            "ZURhdGFVcGRhdGVSZXNwb25zZUgAEnEKLGJyb2FkX2Nhc3RfZW50aXR5X2J1",
+            "aWxkX2RhdGFfdXBkYXRlX3Jlc3BvbnNlGKWADCABKAsyNy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRlUmVzcG9uc2VI",
+            "ABJWCh1wbGF5ZXJfYWN0aW9uX2NvbGxlY3RfcmVxdWVzdBingAwgASgLMisu",
+            "Z2FtZU1lc3NhZ2VDb3JlLlBsYXllckFjdGlvbkNvbGxlY3RSZXF1ZXN0SAAS",
+            "WAoecGxheWVyX2FjdGlvbl9jb2xsZWN0X3Jlc3BvbnNlGKmADCABKAsyLC5n",
+            "YW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ29sbGVjdFJlc3BvbnNlSAAS",
+            "bAopYnJvYWRfY2FzdF9wbGF5ZXJfYWN0aW9uX2NvbGxlY3RfcmVzcG9uc2UY",
+            "sYAMIAEoCzI1LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RQbGF5ZXJBY3Rp",
+            "b25Db2xsZWN0UmVzcG9uc2VIABJPChlzY2VuZV9kZXN0cnVjdGlvbl9yZXF1",
+            "ZXN0GLOADCABKAsyKC5nYW1lTWVzc2FnZUNvcmUuU2NlbmVEZXN0cnVjdGlv",
+            "blJlcXVlc3RIABJRChpzY2VuZV9kZXN0cnVjdGlvbl9yZXNwb25zZRi0gAwg",
+            "ASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25z",
+            "ZUgAEmUKJWJyb2FkX2Nhc3Rfc2NlbmVfZGVzdHJ1Y3Rpb25fcmVzcG9uc2UY",
+            "tYAMIAEoCzIyLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RTY2VuZURlc3Ry",
+            "dWN0aW9uUmVzcG9uc2VIABJQChpwbGF5ZXJfYWN0aW9uX2NoYXRfcmVxdWVz",
+            "dBi3gAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckFjdGlvbkNoYXRS",
+            "ZXF1ZXN0SAASUgobcGxheWVyX2FjdGlvbl9jaGF0X3Jlc3BvbnNlGLiADCAB",
+            "KAsyKS5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ2hhdFJlc3BvbnNl",
+            "SAASZgomYnJvYWRfY2FzdF9wbGF5ZXJfYWN0aW9uX2NoYXRfcmVzcG9uc2UY",
+            "uYAMIAEoCzIyLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RQbGF5ZXJBY3Rp",
+            "b25DaGF0UmVzcG9uc2VIABJGChVnZXRfaG9tZV9kYXRhX3JlcXVlc3QYwYAM",
+            "IAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5HZXRIb21lRGF0YVJlcXVlc3RIABJI",
+            "ChZnZXRfaG9tZV9kYXRhX3Jlc3BvbnNlGMKADCABKAsyJC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuR2V0SG9tZURhdGFSZXNwb25zZUgAEk4KGXF1ZXJ5X1NlcnZlcl90",
+            "aW1lX3JlcXVlc3QYw4AMIAEoCzInLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVNl",
+            "cnZlclRpbWVSZXF1ZXN0SAASUAoacXVlcnlfU2VydmVyX3RpbWVfcmVzcG9u",
+            "c2UYxIAMIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVNlcnZlclRpbWVS",
+            "ZXNwb25zZUgAEl8KImJyb2FkX2Nhc3RfY2hhbmdlX3NlcnZpY2VfcmVzcG9u",
+            "c2UYxYAMIAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RDaGFuZ2VT",
+            "ZXJ2aWNlUmVzcG9uc2VIABJWCh1ob21lX3Jlc291cmNlX29wZXJhdGVfcmVx",
+            "dWVzdBjHgAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLkhvbWVSZXNvdXJjZU9w",
+            "ZXJhdGVSZXF1ZXN0SAASWAoeaG9tZV9yZXNvdXJjZV9vcGVyYXRlX3Jlc3Bv",
+            "bnNlGMiADCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuSG9tZVJlc291cmNlT3Bl",
+            "cmF0ZVJlc3BvbnNlSAASaQooYnJvYWRfY2FzdF9ob21lX2RhdGFfaW5pdF9i",
+            "YXRjaF9yZXNwb25zZRjJgAwgASgLMjMuZ2FtZU1lc3NhZ2VDb3JlLkJyb2Fk",
+            "Q2FzdEhvbWVEYXRhSW5pdEJhdGNoUmVzcG9uc2VIABJFChRxdWVyeV90YWxl",
+            "bnRfcmVxdWVzdBjRgAwgASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5VGFs",
+            "ZW50UmVxdWVzdEgAEkcKFXF1ZXJ5X3RhbGVudF9yZXNwb25zZRjSgAwgASgL",
+            "MiQuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5VGFsZW50UmVzcG9uc2VIABJBChJz",
             "ZWxmX3Rhc2tzX3JlcXVlc3QYgYAQIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5T",
             "ZWxmVGFza3NSZXF1ZXN0SAASQwoTc2VsZl90YXNrc19yZXNwb25zZRiCgBAg",
             "ASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLlNlbGZUYXNrc1Jlc3BvbnNlSAASYgok",
@@ -454,7 +454,7 @@ namespace GameMessageCore {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "QueryTalentRequest", "QueryTalentResponse", "UpgradeTalentNodeRequest", "UpgradeTalentNodeResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "HomeResourceOperateRequest", "HomeResourceOperateResponse", "BroadCastHomeDataInitBatchResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "UpgradeTalentNodeRequest", "UpgradeTalentNodeResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "HomeResourceOperateRequest", "HomeResourceOperateResponse", "BroadCastHomeDataInitBatchResponse", "QueryTalentRequest", "QueryTalentResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTickOutResponse), global::GameMessageCore.BroadCastTickOutResponse.Parser, new[]{ "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetRequest), global::GameMessageCore.ItemGetRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetResponse), global::GameMessageCore.ItemGetResponse.Parser, null, null, null, null, null),
@@ -778,12 +778,6 @@ namespace GameMessageCore {
         case PayloadOneofCase.BroadCastUpGranaryItemResponse:
           BroadCastUpGranaryItemResponse = other.BroadCastUpGranaryItemResponse.Clone();
           break;
-        case PayloadOneofCase.QueryTalentRequest:
-          QueryTalentRequest = other.QueryTalentRequest.Clone();
-          break;
-        case PayloadOneofCase.QueryTalentResponse:
-          QueryTalentResponse = other.QueryTalentResponse.Clone();
-          break;
         case PayloadOneofCase.UpgradeTalentNodeRequest:
           UpgradeTalentNodeRequest = other.UpgradeTalentNodeRequest.Clone();
           break;
@@ -915,6 +909,12 @@ namespace GameMessageCore {
           break;
         case PayloadOneofCase.BroadCastHomeDataInitBatchResponse:
           BroadCastHomeDataInitBatchResponse = other.BroadCastHomeDataInitBatchResponse.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentRequest:
+          QueryTalentRequest = other.QueryTalentRequest.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentResponse:
+          QueryTalentResponse = other.QueryTalentResponse.Clone();
           break;
         case PayloadOneofCase.SelfTasksRequest:
           SelfTasksRequest = other.SelfTasksRequest.Clone();
@@ -1665,32 +1665,8 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "query_talent_request" field.</summary>
-    public const int QueryTalentRequestFieldNumber = 65625;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.QueryTalentRequest QueryTalentRequest {
-      get { return payloadCase_ == PayloadOneofCase.QueryTalentRequest ? (global::GameMessageCore.QueryTalentRequest) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentRequest;
-      }
-    }
-
-    /// <summary>Field number for the "query_talent_response" field.</summary>
-    public const int QueryTalentResponseFieldNumber = 65632;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.QueryTalentResponse QueryTalentResponse {
-      get { return payloadCase_ == PayloadOneofCase.QueryTalentResponse ? (global::GameMessageCore.QueryTalentResponse) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentResponse;
-      }
-    }
-
     /// <summary>Field number for the "upgrade_talent_node_request" field.</summary>
-    public const int UpgradeTalentNodeRequestFieldNumber = 65633;
+    public const int UpgradeTalentNodeRequestFieldNumber = 65625;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.UpgradeTalentNodeRequest UpgradeTalentNodeRequest {
@@ -1702,7 +1678,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "upgrade_talent_node_response" field.</summary>
-    public const int UpgradeTalentNodeResponseFieldNumber = 65634;
+    public const int UpgradeTalentNodeResponseFieldNumber = 65632;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.UpgradeTalentNodeResponse UpgradeTalentNodeResponse {
@@ -2223,6 +2199,30 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "query_talent_request" field.</summary>
+    public const int QueryTalentRequestFieldNumber = 196689;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentRequest QueryTalentRequest {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentRequest ? (global::GameMessageCore.QueryTalentRequest) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentRequest;
+      }
+    }
+
+    /// <summary>Field number for the "query_talent_response" field.</summary>
+    public const int QueryTalentResponseFieldNumber = 196690;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentResponse QueryTalentResponse {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentResponse ? (global::GameMessageCore.QueryTalentResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentResponse;
+      }
+    }
+
     /// <summary>Field number for the "self_tasks_request" field.</summary>
     public const int SelfTasksRequestFieldNumber = 262145;
     /// <summary>
@@ -2540,10 +2540,8 @@ namespace GameMessageCore {
       GranaryCollectResponse = 65620,
       BroadCastGranaryUpdateResponse = 65621,
       BroadCastUpGranaryItemResponse = 65623,
-      QueryTalentRequest = 65625,
-      QueryTalentResponse = 65632,
-      UpgradeTalentNodeRequest = 65633,
-      UpgradeTalentNodeResponse = 65634,
+      UpgradeTalentNodeRequest = 65625,
+      UpgradeTalentNodeResponse = 65632,
       QueryPlayerRequest = 131073,
       QueryPlayerResponse = 131074,
       CreatePlayerRequest = 131075,
@@ -2586,6 +2584,8 @@ namespace GameMessageCore {
       HomeResourceOperateRequest = 196679,
       HomeResourceOperateResponse = 196680,
       BroadCastHomeDataInitBatchResponse = 196681,
+      QueryTalentRequest = 196689,
+      QueryTalentResponse = 196690,
       SelfTasksRequest = 262145,
       SelfTasksResponse = 262146,
       BroadCastUpdateTaskListResponse = 262147,
@@ -2693,8 +2693,6 @@ namespace GameMessageCore {
       if (!object.Equals(GranaryCollectResponse, other.GranaryCollectResponse)) return false;
       if (!object.Equals(BroadCastGranaryUpdateResponse, other.BroadCastGranaryUpdateResponse)) return false;
       if (!object.Equals(BroadCastUpGranaryItemResponse, other.BroadCastUpGranaryItemResponse)) return false;
-      if (!object.Equals(QueryTalentRequest, other.QueryTalentRequest)) return false;
-      if (!object.Equals(QueryTalentResponse, other.QueryTalentResponse)) return false;
       if (!object.Equals(UpgradeTalentNodeRequest, other.UpgradeTalentNodeRequest)) return false;
       if (!object.Equals(UpgradeTalentNodeResponse, other.UpgradeTalentNodeResponse)) return false;
       if (!object.Equals(QueryPlayerRequest, other.QueryPlayerRequest)) return false;
@@ -2739,6 +2737,8 @@ namespace GameMessageCore {
       if (!object.Equals(HomeResourceOperateRequest, other.HomeResourceOperateRequest)) return false;
       if (!object.Equals(HomeResourceOperateResponse, other.HomeResourceOperateResponse)) return false;
       if (!object.Equals(BroadCastHomeDataInitBatchResponse, other.BroadCastHomeDataInitBatchResponse)) return false;
+      if (!object.Equals(QueryTalentRequest, other.QueryTalentRequest)) return false;
+      if (!object.Equals(QueryTalentResponse, other.QueryTalentResponse)) return false;
       if (!object.Equals(SelfTasksRequest, other.SelfTasksRequest)) return false;
       if (!object.Equals(SelfTasksResponse, other.SelfTasksResponse)) return false;
       if (!object.Equals(BroadCastUpdateTaskListResponse, other.BroadCastUpdateTaskListResponse)) return false;
@@ -2824,8 +2824,6 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.GranaryCollectResponse) hash ^= GranaryCollectResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastGranaryUpdateResponse) hash ^= BroadCastGranaryUpdateResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastUpGranaryItemResponse) hash ^= BroadCastUpGranaryItemResponse.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) hash ^= QueryTalentRequest.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) hash ^= QueryTalentResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) hash ^= UpgradeTalentNodeRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) hash ^= UpgradeTalentNodeResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) hash ^= QueryPlayerRequest.GetHashCode();
@@ -2870,6 +2868,8 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) hash ^= HomeResourceOperateRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) hash ^= HomeResourceOperateResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) hash ^= BroadCastHomeDataInitBatchResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) hash ^= QueryTalentRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) hash ^= QueryTalentResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) hash ^= SelfTasksRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksResponse) hash ^= SelfTasksResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastUpdateTaskListResponse) hash ^= BroadCastUpdateTaskListResponse.GetHashCode();
@@ -3134,20 +3134,12 @@ namespace GameMessageCore {
         output.WriteRawTag(186, 133, 32);
         output.WriteMessage(BroadCastUpGranaryItemResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
-        output.WriteRawTag(202, 133, 32);
-        output.WriteMessage(QueryTalentRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
-        output.WriteRawTag(130, 134, 32);
-        output.WriteMessage(QueryTalentResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
-        output.WriteRawTag(138, 134, 32);
+        output.WriteRawTag(202, 133, 32);
         output.WriteMessage(UpgradeTalentNodeRequest);
       }
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
-        output.WriteRawTag(146, 134, 32);
+        output.WriteRawTag(130, 134, 32);
         output.WriteMessage(UpgradeTalentNodeResponse);
       }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -3317,6 +3309,14 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         output.WriteRawTag(202, 132, 96);
         output.WriteMessage(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
+        output.WriteRawTag(138, 133, 96);
+        output.WriteMessage(QueryTalentRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
+        output.WriteRawTag(146, 133, 96);
+        output.WriteMessage(QueryTalentResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -3636,20 +3636,12 @@ namespace GameMessageCore {
         output.WriteRawTag(186, 133, 32);
         output.WriteMessage(BroadCastUpGranaryItemResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
-        output.WriteRawTag(202, 133, 32);
-        output.WriteMessage(QueryTalentRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
-        output.WriteRawTag(130, 134, 32);
-        output.WriteMessage(QueryTalentResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
-        output.WriteRawTag(138, 134, 32);
+        output.WriteRawTag(202, 133, 32);
         output.WriteMessage(UpgradeTalentNodeRequest);
       }
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
-        output.WriteRawTag(146, 134, 32);
+        output.WriteRawTag(130, 134, 32);
         output.WriteMessage(UpgradeTalentNodeResponse);
       }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -3819,6 +3811,14 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         output.WriteRawTag(202, 132, 96);
         output.WriteMessage(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
+        output.WriteRawTag(138, 133, 96);
+        output.WriteMessage(QueryTalentRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
+        output.WriteRawTag(146, 133, 96);
+        output.WriteMessage(QueryTalentResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -4082,12 +4082,6 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastUpGranaryItemResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastUpGranaryItemResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(UpgradeTalentNodeRequest);
       }
@@ -4219,6 +4213,12 @@ namespace GameMessageCore {
       }
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         size += 4 + pb::CodedOutputStream.ComputeMessageSize(SelfTasksRequest);
@@ -4620,18 +4620,6 @@ namespace GameMessageCore {
           }
           BroadCastUpGranaryItemResponse.MergeFrom(other.BroadCastUpGranaryItemResponse);
           break;
-        case PayloadOneofCase.QueryTalentRequest:
-          if (QueryTalentRequest == null) {
-            QueryTalentRequest = new global::GameMessageCore.QueryTalentRequest();
-          }
-          QueryTalentRequest.MergeFrom(other.QueryTalentRequest);
-          break;
-        case PayloadOneofCase.QueryTalentResponse:
-          if (QueryTalentResponse == null) {
-            QueryTalentResponse = new global::GameMessageCore.QueryTalentResponse();
-          }
-          QueryTalentResponse.MergeFrom(other.QueryTalentResponse);
-          break;
         case PayloadOneofCase.UpgradeTalentNodeRequest:
           if (UpgradeTalentNodeRequest == null) {
             UpgradeTalentNodeRequest = new global::GameMessageCore.UpgradeTalentNodeRequest();
@@ -4895,6 +4883,18 @@ namespace GameMessageCore {
             BroadCastHomeDataInitBatchResponse = new global::GameMessageCore.BroadCastHomeDataInitBatchResponse();
           }
           BroadCastHomeDataInitBatchResponse.MergeFrom(other.BroadCastHomeDataInitBatchResponse);
+          break;
+        case PayloadOneofCase.QueryTalentRequest:
+          if (QueryTalentRequest == null) {
+            QueryTalentRequest = new global::GameMessageCore.QueryTalentRequest();
+          }
+          QueryTalentRequest.MergeFrom(other.QueryTalentRequest);
+          break;
+        case PayloadOneofCase.QueryTalentResponse:
+          if (QueryTalentResponse == null) {
+            QueryTalentResponse = new global::GameMessageCore.QueryTalentResponse();
+          }
+          QueryTalentResponse.MergeFrom(other.QueryTalentResponse);
           break;
         case PayloadOneofCase.SelfTasksRequest:
           if (SelfTasksRequest == null) {
@@ -5524,24 +5524,6 @@ namespace GameMessageCore {
             break;
           }
           case 525002: {
-            global::GameMessageCore.QueryTalentRequest subBuilder = new global::GameMessageCore.QueryTalentRequest();
-            if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
-              subBuilder.MergeFrom(QueryTalentRequest);
-            }
-            input.ReadMessage(subBuilder);
-            QueryTalentRequest = subBuilder;
-            break;
-          }
-          case 525058: {
-            global::GameMessageCore.QueryTalentResponse subBuilder = new global::GameMessageCore.QueryTalentResponse();
-            if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
-              subBuilder.MergeFrom(QueryTalentResponse);
-            }
-            input.ReadMessage(subBuilder);
-            QueryTalentResponse = subBuilder;
-            break;
-          }
-          case 525066: {
             global::GameMessageCore.UpgradeTalentNodeRequest subBuilder = new global::GameMessageCore.UpgradeTalentNodeRequest();
             if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
               subBuilder.MergeFrom(UpgradeTalentNodeRequest);
@@ -5550,7 +5532,7 @@ namespace GameMessageCore {
             UpgradeTalentNodeRequest = subBuilder;
             break;
           }
-          case 525074: {
+          case 525058: {
             global::GameMessageCore.UpgradeTalentNodeResponse subBuilder = new global::GameMessageCore.UpgradeTalentNodeResponse();
             if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
               subBuilder.MergeFrom(UpgradeTalentNodeResponse);
@@ -5935,6 +5917,24 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastHomeDataInitBatchResponse = subBuilder;
+            break;
+          }
+          case 1573514: {
+            global::GameMessageCore.QueryTalentRequest subBuilder = new global::GameMessageCore.QueryTalentRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
+              subBuilder.MergeFrom(QueryTalentRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentRequest = subBuilder;
+            break;
+          }
+          case 1573522: {
+            global::GameMessageCore.QueryTalentResponse subBuilder = new global::GameMessageCore.QueryTalentResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
+              subBuilder.MergeFrom(QueryTalentResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentResponse = subBuilder;
             break;
           }
           case 2097162: {
@@ -6626,24 +6626,6 @@ namespace GameMessageCore {
             break;
           }
           case 525002: {
-            global::GameMessageCore.QueryTalentRequest subBuilder = new global::GameMessageCore.QueryTalentRequest();
-            if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
-              subBuilder.MergeFrom(QueryTalentRequest);
-            }
-            input.ReadMessage(subBuilder);
-            QueryTalentRequest = subBuilder;
-            break;
-          }
-          case 525058: {
-            global::GameMessageCore.QueryTalentResponse subBuilder = new global::GameMessageCore.QueryTalentResponse();
-            if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
-              subBuilder.MergeFrom(QueryTalentResponse);
-            }
-            input.ReadMessage(subBuilder);
-            QueryTalentResponse = subBuilder;
-            break;
-          }
-          case 525066: {
             global::GameMessageCore.UpgradeTalentNodeRequest subBuilder = new global::GameMessageCore.UpgradeTalentNodeRequest();
             if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
               subBuilder.MergeFrom(UpgradeTalentNodeRequest);
@@ -6652,7 +6634,7 @@ namespace GameMessageCore {
             UpgradeTalentNodeRequest = subBuilder;
             break;
           }
-          case 525074: {
+          case 525058: {
             global::GameMessageCore.UpgradeTalentNodeResponse subBuilder = new global::GameMessageCore.UpgradeTalentNodeResponse();
             if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
               subBuilder.MergeFrom(UpgradeTalentNodeResponse);
@@ -7037,6 +7019,24 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastHomeDataInitBatchResponse = subBuilder;
+            break;
+          }
+          case 1573514: {
+            global::GameMessageCore.QueryTalentRequest subBuilder = new global::GameMessageCore.QueryTalentRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentRequest) {
+              subBuilder.MergeFrom(QueryTalentRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentRequest = subBuilder;
+            break;
+          }
+          case 1573522: {
+            global::GameMessageCore.QueryTalentResponse subBuilder = new global::GameMessageCore.QueryTalentResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentResponse) {
+              subBuilder.MergeFrom(QueryTalentResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentResponse = subBuilder;
             break;
           }
           case 2097162: {

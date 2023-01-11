@@ -33,11 +33,10 @@ namespace GameMessageCore {
             "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qkQEKCkhvbWVBY3Rpb24SEgoOSG9t",
             "ZUFjdGlvbk5vbmUQABIUChBIb21lQWN0aW9uSG9laW5nEAISFAoQSG9tZUFj",
             "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhUKEUhvbWVB",
-            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKqoBChNDb2xs",
-            "ZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3du",
-            "EAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIbChdDb2xsZWN0UmVz",
-            "b3VyY2VUeXBlUm9jaxACEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVUcmVlEAQS",
-            "HAoYQ29sbGVjdFJlc291cmNlVHlwZUdyYXNzEAhiBnByb3RvMw=="));
+            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKmQKE0NvbGxl",
+            "Y3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24Q",
+            "ABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJj",
+            "ZRACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -80,11 +79,9 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("CollectResourceTypeSoil")] Soil = 1,
     /// <summary>
-    /// 岩石 矿石
+    /// 采集资源
     /// </summary>
-    [pbr::OriginalName("CollectResourceTypeRock")] Rock = 2,
-    [pbr::OriginalName("CollectResourceTypeTree")] Tree = 4,
-    [pbr::OriginalName("CollectResourceTypeGrass")] Grass = 8,
+    [pbr::OriginalName("HomeResource")] HomeResource = 2,
   }
 
   #endregion

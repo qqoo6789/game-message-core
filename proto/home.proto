@@ -38,8 +38,15 @@ message CollectResourceBaseInfo{
   CollectResourceType type = 2;
 }
 
+message CollectResourceOperateInfo{
+  CollectResourceBaseInfo baseInfo=1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
+
 message CollectResourceOperateResult{
-  CollectResourceBaseInfo baseInfo = 1;
+  CollectResourceOperateInfo operateInfo = 1;
   //道具有效  在播种和施肥时候专精不够时候 会返回false
   bool itemValid=2;
   repeated ItemBaseInfo dropList = 3;

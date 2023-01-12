@@ -562,17 +562,11 @@ message BroadCastChangeServiceResponse{
 }
 message HomeResourceOperateRequest
 {
-  repeated CollectResourceBaseInfo resourceList = 1;
-  HomeAction   action = 2;
-  //可能是种子cid 也可能是装备cid
-  int32 toolCid = 3;
+  repeated CollectResourceOperateInfo operateInfoList = 1;
 }
 message HomeResourceOperateResponse
 {
   repeated CollectResourceOperateResult operateResultList = 1;
-  HomeAction   action = 2;
-  //可能是种子cid 也可能是装备cid
-  int32 toolCid = 3;
 }
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

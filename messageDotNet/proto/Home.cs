@@ -24,27 +24,32 @@ namespace GameMessageCore {
     static HomeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8iWQoX",
-            "Q29sbGVjdFJlc291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgC",
-            "IAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIpYB",
-            "ChpDb2xsZWN0UmVzb3VyY2VPcGVyYXRlSW5mbxI6CghiYXNlSW5mbxgBIAEo",
-            "CzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxIr",
-            "CgZhY3Rpb24YAiABKA4yGy5nYW1lTWVzc2FnZUNvcmUuSG9tZUFjdGlvbhIP",
-            "Cgd0b29sQ2lkGAMgASgFIqQBChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVz",
-            "dWx0EkAKC29wZXJhdGVJbmZvGAEgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLkNv",
-            "bGxlY3RSZXNvdXJjZU9wZXJhdGVJbmZvEhEKCWl0ZW1WYWxpZBgCIAEoCBIv",
-            "Cghkcm9wTGlzdBgDIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUlu",
-            "Zm8qzQEKCkhvbWVBY3Rpb24SEgoOSG9tZUFjdGlvbk5vbmUQABIUChBIb21l",
-            "QWN0aW9uSG9laW5nEAISFAoQSG9tZUFjdGlvblNvd2luZxAEEhYKEkhvbWVB",
-            "Y3Rpb25XYXRlcmluZxAIEhQKEEhvbWVBY3Rpb25NYW51cmUQEBIVChFIb21l",
-            "QWN0aW9uSGFydmVzdBAgEhEKDUhvbWVBY3Rpb25DdXQQQBIXChJIb21lQWN0",
-            "aW9uRXhjYXZhdGUQgAESDgoJRXJhZGljYXRlEIACKmQKE0NvbGxlY3RSZXNv",
-            "dXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24QABIbChdD",
-            "b2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJjZRACYgZw",
-            "cm90bzM="));
+            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8irQEK",
+            "DVByb3h5U29pbERhdGESCgoCaWQYASABKAQSEgoKc29pbFN0YXR1cxgCIAEo",
+            "BRIYChBzdGF0dXNTdGFydFN0YW1wGAMgASgDEhQKDGdyb3dpbmdTdGFnZRgE",
+            "IAEoBRIPCgdzZWVkQ2lkGAUgASgFEhMKC3Nvd2luZ1ZhbGlkGAYgASgIEhEK",
+            "CW1hbnVyZUNpZBgHIAEoBRITCgttYW51cmVWYWxpZBgIIAEoCCJZChdDb2xs",
+            "ZWN0UmVzb3VyY2VCYXNlSW5mbxIKCgJpZBgBIAEoBBIyCgR0eXBlGAIgASgO",
+            "MiQuZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVR5cGUilgEKGkNv",
+            "bGxlY3RSZXNvdXJjZU9wZXJhdGVJbmZvEjoKCGJhc2VJbmZvGAEgASgLMigu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEisKBmFj",
+            "dGlvbhgCIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5Ib21lQWN0aW9uEg8KB3Rv",
+            "b2xDaWQYAyABKAUipAEKHENvbGxlY3RSZXNvdXJjZU9wZXJhdGVSZXN1bHQS",
+            "QAoLb3BlcmF0ZUluZm8YASABKAsyKy5nYW1lTWVzc2FnZUNvcmUuQ29sbGVj",
+            "dFJlc291cmNlT3BlcmF0ZUluZm8SEQoJaXRlbVZhbGlkGAIgASgIEi8KCGRy",
+            "b3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbyrN",
+            "AQoKSG9tZUFjdGlvbhISCg5Ib21lQWN0aW9uTm9uZRAAEhQKEEhvbWVBY3Rp",
+            "b25Ib2VpbmcQAhIUChBIb21lQWN0aW9uU293aW5nEAQSFgoSSG9tZUFjdGlv",
+            "bldhdGVyaW5nEAgSFAoQSG9tZUFjdGlvbk1hbnVyZRAQEhUKEUhvbWVBY3Rp",
+            "b25IYXJ2ZXN0ECASEQoNSG9tZUFjdGlvbkN1dBBAEhcKEkhvbWVBY3Rpb25F",
+            "eGNhdmF0ZRCAARIOCglFcmFkaWNhdGUQgAIqZAoTQ29sbGVjdFJlc291cmNl",
+            "VHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5rbm93bhAAEhsKF0NvbGxl",
+            "Y3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9tZVJlc291cmNlEAJiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateInfo), global::GameMessageCore.CollectResourceOperateInfo.Parser, new[]{ "BaseInfo", "Action", "ToolCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "OperateInfo", "ItemValid", "DropList" }, null, null, null, null)
@@ -105,6 +110,454 @@ namespace GameMessageCore {
   #endregion
 
   #region Messages
+  public sealed partial class ProxySoilData : pb::IMessage<ProxySoilData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProxySoilData> _parser = new pb::MessageParser<ProxySoilData>(() => new ProxySoilData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProxySoilData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData(ProxySoilData other) : this() {
+      id_ = other.id_;
+      soilStatus_ = other.soilStatus_;
+      statusStartStamp_ = other.statusStartStamp_;
+      growingStage_ = other.growingStage_;
+      seedCid_ = other.seedCid_;
+      sowingValid_ = other.sowingValid_;
+      manureCid_ = other.manureCid_;
+      manureValid_ = other.manureValid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData Clone() {
+      return new ProxySoilData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private ulong id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "soilStatus" field.</summary>
+    public const int SoilStatusFieldNumber = 2;
+    private int soilStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SoilStatus {
+      get { return soilStatus_; }
+      set {
+        soilStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "statusStartStamp" field.</summary>
+    public const int StatusStartStampFieldNumber = 3;
+    private long statusStartStamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long StatusStartStamp {
+      get { return statusStartStamp_; }
+      set {
+        statusStartStamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "growingStage" field.</summary>
+    public const int GrowingStageFieldNumber = 4;
+    private int growingStage_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GrowingStage {
+      get { return growingStage_; }
+      set {
+        growingStage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "seedCid" field.</summary>
+    public const int SeedCidFieldNumber = 5;
+    private int seedCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SeedCid {
+      get { return seedCid_; }
+      set {
+        seedCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sowingValid" field.</summary>
+    public const int SowingValidFieldNumber = 6;
+    private bool sowingValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SowingValid {
+      get { return sowingValid_; }
+      set {
+        sowingValid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureCid" field.</summary>
+    public const int ManureCidFieldNumber = 7;
+    private int manureCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManureCid {
+      get { return manureCid_; }
+      set {
+        manureCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureValid" field.</summary>
+    public const int ManureValidFieldNumber = 8;
+    private bool manureValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ManureValid {
+      get { return manureValid_; }
+      set {
+        manureValid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProxySoilData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProxySoilData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (SoilStatus != other.SoilStatus) return false;
+      if (StatusStartStamp != other.StatusStartStamp) return false;
+      if (GrowingStage != other.GrowingStage) return false;
+      if (SeedCid != other.SeedCid) return false;
+      if (SowingValid != other.SowingValid) return false;
+      if (ManureCid != other.ManureCid) return false;
+      if (ManureValid != other.ManureValid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (SoilStatus != 0) hash ^= SoilStatus.GetHashCode();
+      if (StatusStartStamp != 0L) hash ^= StatusStartStamp.GetHashCode();
+      if (GrowingStage != 0) hash ^= GrowingStage.GetHashCode();
+      if (SeedCid != 0) hash ^= SeedCid.GetHashCode();
+      if (SowingValid != false) hash ^= SowingValid.GetHashCode();
+      if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
+      if (ManureValid != false) hash ^= ManureValid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (SoilStatus != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(ManureValid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (SoilStatus != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(ManureValid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      }
+      if (SoilStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SeedCid);
+      }
+      if (SowingValid != false) {
+        size += 1 + 1;
+      }
+      if (ManureCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ManureCid);
+      }
+      if (ManureValid != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProxySoilData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0UL) {
+        Id = other.Id;
+      }
+      if (other.SoilStatus != 0) {
+        SoilStatus = other.SoilStatus;
+      }
+      if (other.StatusStartStamp != 0L) {
+        StatusStartStamp = other.StatusStartStamp;
+      }
+      if (other.GrowingStage != 0) {
+        GrowingStage = other.GrowingStage;
+      }
+      if (other.SeedCid != 0) {
+        SeedCid = other.SeedCid;
+      }
+      if (other.SowingValid != false) {
+        SowingValid = other.SowingValid;
+      }
+      if (other.ManureCid != 0) {
+        ManureCid = other.ManureCid;
+      }
+      if (other.ManureValid != false) {
+        ManureValid = other.ManureValid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            GrowingStage = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            SeedCid = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            SowingValid = input.ReadBool();
+            break;
+          }
+          case 56: {
+            ManureCid = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ManureValid = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            GrowingStage = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            SeedCid = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            SowingValid = input.ReadBool();
+            break;
+          }
+          case 56: {
+            ManureCid = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ManureValid = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CollectResourceBaseInfo : pb::IMessage<CollectResourceBaseInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -119,7 +572,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -345,7 +798,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -620,7 +1073,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

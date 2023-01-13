@@ -461,7 +461,7 @@ message GetHomeDataRequest {
 message GetHomeDataResponse{
   int64         owner_user_id = 1;
   string        owner_name = 2;
-  string        home_save_data = 3;
+  repeated ProxySoilData soilDataList = 3;
 }
 
 message BroadCastInitMapElementResponse {

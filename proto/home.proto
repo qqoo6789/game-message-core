@@ -33,6 +33,18 @@ enum CollectResourceType
     HomeResource = 2;
 }
 
+message ProxySoilData
+{
+    uint64 id = 1;
+    int32 soilStatus = 2;
+    int64 statusStartStamp = 3;
+    int32 growingStage = 4;
+    int32 seedCid = 5;
+    bool sowingValid = 6;
+    int32 manureCid = 7;
+    bool manureValid = 8;
+}
+
 message CollectResourceBaseInfo{
   uint64 id = 1;
   CollectResourceType type = 2;

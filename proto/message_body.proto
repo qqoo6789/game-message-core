@@ -135,6 +135,7 @@ message Envelope {
     BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
     HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
     HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
+    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -461,7 +462,13 @@ message GetHomeDataRequest {
 message GetHomeDataResponse{
   int64         owner_user_id = 1;
   string        owner_name = 2;
-  repeated ProxySoilData soilDataList = 3;
+  int32         soilDataAllCount = 3;
+}
+message BroadCastHomeDataInitBatchResponse
+{
+  repeated ProxySoilData soilDataList = 1;
+  int64         owner_user_id = 2;
+  bool          final = 3;
 }
 
 message BroadCastInitMapElementResponse {

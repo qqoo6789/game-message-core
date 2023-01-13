@@ -26,22 +26,28 @@ namespace GameMessageCore {
           string.Concat(
             "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8iWQoX",
             "Q29sbGVjdFJlc291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgC",
-            "IAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIp4B",
-            "ChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0EjoKCGJhc2VJbmZvGAEg",
-            "ASgLMiguZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
-            "EhEKCWl0ZW1WYWxpZBgCIAEoCBIvCghkcm9wTGlzdBgDIAMoCzIdLmdhbWVN",
-            "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qkQEKCkhvbWVBY3Rpb24SEgoOSG9t",
-            "ZUFjdGlvbk5vbmUQABIUChBIb21lQWN0aW9uSG9laW5nEAISFAoQSG9tZUFj",
-            "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhUKEUhvbWVB",
-            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKmQKE0NvbGxl",
-            "Y3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24Q",
-            "ABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJj",
-            "ZRACYgZwcm90bzM="));
+            "IAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIpYB",
+            "ChpDb2xsZWN0UmVzb3VyY2VPcGVyYXRlSW5mbxI6CghiYXNlSW5mbxgBIAEo",
+            "CzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxIr",
+            "CgZhY3Rpb24YAiABKA4yGy5nYW1lTWVzc2FnZUNvcmUuSG9tZUFjdGlvbhIP",
+            "Cgd0b29sQ2lkGAMgASgFIqQBChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVz",
+            "dWx0EkAKC29wZXJhdGVJbmZvGAEgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLkNv",
+            "bGxlY3RSZXNvdXJjZU9wZXJhdGVJbmZvEhEKCWl0ZW1WYWxpZBgCIAEoCBIv",
+            "Cghkcm9wTGlzdBgDIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUlu",
+            "Zm8qzQEKCkhvbWVBY3Rpb24SEgoOSG9tZUFjdGlvbk5vbmUQABIUChBIb21l",
+            "QWN0aW9uSG9laW5nEAISFAoQSG9tZUFjdGlvblNvd2luZxAEEhYKEkhvbWVB",
+            "Y3Rpb25XYXRlcmluZxAIEhQKEEhvbWVBY3Rpb25NYW51cmUQEBIVChFIb21l",
+            "QWN0aW9uSGFydmVzdBAgEhEKDUhvbWVBY3Rpb25DdXQQQBIXChJIb21lQWN0",
+            "aW9uRXhjYXZhdGUQgAESDgoJRXJhZGljYXRlEIACKmQKE0NvbGxlY3RSZXNv",
+            "dXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24QABIbChdD",
+            "b2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJjZRACYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "BaseInfo", "ItemValid", "DropList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateInfo), global::GameMessageCore.CollectResourceOperateInfo.Parser, new[]{ "BaseInfo", "Action", "ToolCid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "OperateInfo", "ItemValid", "DropList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -63,13 +69,25 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("HomeActionWatering")] Watering = 8,
     /// <summary>
-    /// 收获
-    /// </summary>
-    [pbr::OriginalName("HomeActionHarvest")] Harvest = 16,
-    /// <summary>
     /// 施肥
     /// </summary>
-    [pbr::OriginalName("HomeActionManure")] Manure = 32,
+    [pbr::OriginalName("HomeActionManure")] Manure = 16,
+    /// <summary>
+    /// 收获收割
+    /// </summary>
+    [pbr::OriginalName("HomeActionHarvest")] Harvest = 32,
+    /// <summary>
+    /// 斧头砍树
+    /// </summary>
+    [pbr::OriginalName("HomeActionCut")] Cut = 64,
+    /// <summary>
+    /// 镐子挖矿
+    /// </summary>
+    [pbr::OriginalName("HomeActionExcavate")] Excavate = 128,
+    /// <summary>
+    /// 铲除植物
+    /// </summary>
+    [pbr::OriginalName("Eradicate")] Eradicate = 256,
   }
 
   public enum CollectResourceType {
@@ -313,6 +331,281 @@ namespace GameMessageCore {
 
   }
 
+  public sealed partial class CollectResourceOperateInfo : pb::IMessage<CollectResourceOperateInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CollectResourceOperateInfo> _parser = new pb::MessageParser<CollectResourceOperateInfo>(() => new CollectResourceOperateInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CollectResourceOperateInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo(CollectResourceOperateInfo other) : this() {
+      baseInfo_ = other.baseInfo_ != null ? other.baseInfo_.Clone() : null;
+      action_ = other.action_;
+      toolCid_ = other.toolCid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo Clone() {
+      return new CollectResourceOperateInfo(this);
+    }
+
+    /// <summary>Field number for the "baseInfo" field.</summary>
+    public const int BaseInfoFieldNumber = 1;
+    private global::GameMessageCore.CollectResourceBaseInfo baseInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.CollectResourceBaseInfo BaseInfo {
+      get { return baseInfo_; }
+      set {
+        baseInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "action" field.</summary>
+    public const int ActionFieldNumber = 2;
+    private global::GameMessageCore.HomeAction action_ = global::GameMessageCore.HomeAction.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.HomeAction Action {
+      get { return action_; }
+      set {
+        action_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "toolCid" field.</summary>
+    public const int ToolCidFieldNumber = 3;
+    private int toolCid_;
+    /// <summary>
+    ///可能是种子cid 也可能是装备cid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ToolCid {
+      get { return toolCid_; }
+      set {
+        toolCid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CollectResourceOperateInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CollectResourceOperateInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(BaseInfo, other.BaseInfo)) return false;
+      if (Action != other.Action) return false;
+      if (ToolCid != other.ToolCid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (baseInfo_ != null) hash ^= BaseInfo.GetHashCode();
+      if (Action != global::GameMessageCore.HomeAction.None) hash ^= Action.GetHashCode();
+      if (ToolCid != 0) hash ^= ToolCid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (baseInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Action);
+      }
+      if (ToolCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ToolCid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (baseInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Action);
+      }
+      if (ToolCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ToolCid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (baseInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Action);
+      }
+      if (ToolCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ToolCid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CollectResourceOperateInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.baseInfo_ != null) {
+        if (baseInfo_ == null) {
+          BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+        }
+        BaseInfo.MergeFrom(other.BaseInfo);
+      }
+      if (other.Action != global::GameMessageCore.HomeAction.None) {
+        Action = other.Action;
+      }
+      if (other.ToolCid != 0) {
+        ToolCid = other.ToolCid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (baseInfo_ == null) {
+              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            }
+            input.ReadMessage(BaseInfo);
+            break;
+          }
+          case 16: {
+            Action = (global::GameMessageCore.HomeAction) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            ToolCid = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (baseInfo_ == null) {
+              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            }
+            input.ReadMessage(BaseInfo);
+            break;
+          }
+          case 16: {
+            Action = (global::GameMessageCore.HomeAction) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            ToolCid = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CollectResourceOperateResult : pb::IMessage<CollectResourceOperateResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -327,7 +620,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -347,7 +640,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CollectResourceOperateResult(CollectResourceOperateResult other) : this() {
-      baseInfo_ = other.baseInfo_ != null ? other.baseInfo_.Clone() : null;
+      operateInfo_ = other.operateInfo_ != null ? other.operateInfo_.Clone() : null;
       itemValid_ = other.itemValid_;
       dropList_ = other.dropList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -359,15 +652,15 @@ namespace GameMessageCore {
       return new CollectResourceOperateResult(this);
     }
 
-    /// <summary>Field number for the "baseInfo" field.</summary>
-    public const int BaseInfoFieldNumber = 1;
-    private global::GameMessageCore.CollectResourceBaseInfo baseInfo_;
+    /// <summary>Field number for the "operateInfo" field.</summary>
+    public const int OperateInfoFieldNumber = 1;
+    private global::GameMessageCore.CollectResourceOperateInfo operateInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.CollectResourceBaseInfo BaseInfo {
-      get { return baseInfo_; }
+    public global::GameMessageCore.CollectResourceOperateInfo OperateInfo {
+      get { return operateInfo_; }
       set {
-        baseInfo_ = value;
+        operateInfo_ = value;
       }
     }
 
@@ -412,7 +705,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(BaseInfo, other.BaseInfo)) return false;
+      if (!object.Equals(OperateInfo, other.OperateInfo)) return false;
       if (ItemValid != other.ItemValid) return false;
       if(!dropList_.Equals(other.dropList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -422,7 +715,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (baseInfo_ != null) hash ^= BaseInfo.GetHashCode();
+      if (operateInfo_ != null) hash ^= OperateInfo.GetHashCode();
       if (ItemValid != false) hash ^= ItemValid.GetHashCode();
       hash ^= dropList_.GetHashCode();
       if (_unknownFields != null) {
@@ -443,9 +736,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (baseInfo_ != null) {
+      if (operateInfo_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(BaseInfo);
+        output.WriteMessage(OperateInfo);
       }
       if (ItemValid != false) {
         output.WriteRawTag(16);
@@ -462,9 +755,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (baseInfo_ != null) {
+      if (operateInfo_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(BaseInfo);
+        output.WriteMessage(OperateInfo);
       }
       if (ItemValid != false) {
         output.WriteRawTag(16);
@@ -481,8 +774,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (baseInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BaseInfo);
+      if (operateInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OperateInfo);
       }
       if (ItemValid != false) {
         size += 1 + 1;
@@ -500,11 +793,11 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.baseInfo_ != null) {
-        if (baseInfo_ == null) {
-          BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+      if (other.operateInfo_ != null) {
+        if (operateInfo_ == null) {
+          OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
         }
-        BaseInfo.MergeFrom(other.BaseInfo);
+        OperateInfo.MergeFrom(other.OperateInfo);
       }
       if (other.ItemValid != false) {
         ItemValid = other.ItemValid;
@@ -526,10 +819,10 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (baseInfo_ == null) {
-              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            if (operateInfo_ == null) {
+              OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
             }
-            input.ReadMessage(BaseInfo);
+            input.ReadMessage(OperateInfo);
             break;
           }
           case 16: {
@@ -556,10 +849,10 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (baseInfo_ == null) {
-              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            if (operateInfo_ == null) {
+              OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
             }
-            input.ReadMessage(BaseInfo);
+            input.ReadMessage(OperateInfo);
             break;
           }
           case 16: {

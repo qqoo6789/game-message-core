@@ -145,8 +145,7 @@ message Envelope {
     QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030051;
     QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030052;
     BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030053;
-
-
+ 
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

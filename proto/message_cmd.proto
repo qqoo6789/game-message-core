@@ -106,7 +106,6 @@ enum EnvelopeType {
 
 
 
-
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasks                      = 0x040001;        // 查询玩家已接的任务列表（进行中状态）
     BroadCastUpdateTaskList        = 0x040003;        // 任务链进度更新(推送)

@@ -89,6 +89,9 @@ message Envelope {
     BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
     UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010059;
     UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010060;
+    QueryTalentExpRequest             query_talent_exp_request              = 0x010061;
+    QueryTalentExpResponse            query_talent_exp_response             = 0x010062;
+    BroadCastUpTalentExpResponse      broad_cast_up_talent_exp_response     = 0x010063;
 
 
 
@@ -138,9 +141,11 @@ message Envelope {
     BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
     HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
     HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
-    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049;
-    QueryTalentRequest                      query_talent_request                          = 0x030051;
-    QueryTalentResponse                     query_talent_response                         = 0x030052;
+    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049; 
+    QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030051;
+    QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030052;
+    BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030053;
+
 
 
 
@@ -374,16 +379,22 @@ message BroadCastGranaryUpdateResponse{
 message BroadCastUpGranaryItemResponse{
   ItemBaseInfo    items = 1;
 }
-
-message QueryTalentRequest{}        
-message QueryTalentResponse{
-  TalentData      data = 1;
-}       
+ 
+// 天赋树相关
 message UpgradeTalentNodeRequest{
   TalentType      type = 1;
   int32           nodeId = 2;
 }  
 message UpgradeTalentNodeResponse{} 
+message QueryTalentExpRequest{}        
+message QueryTalentExpResponse{
+   repeated TalentExp      expData = 1;
+} 
+message BroadCastUpTalentExpResponse{
+   repeated TalentExp      updateExps = 1;
+} 
+
+
 
 
 
@@ -584,6 +595,7 @@ message BroadCastChangeServiceResponse{
   SceneServiceSubType serSubType = 2;
   int64               serOwner   = 3;  
 }
+
 message HomeResourceOperateRequest
 {
   repeated CollectResourceOperateInfo operateInfoList = 1;
@@ -592,6 +604,19 @@ message HomeResourceOperateResponse
 {
   repeated CollectResourceOperateResult operateResultList = 1;
 }
+
+
+message QueryTalentTreeRequest{}        
+message QueryTalentTreeResponse{
+  repeated TalentLevel    levelData = 1;
+  repeated TalentTree     tree = 2;
+}      
+message BroadCastTalentTreeUpdateResponse{
+  repeated TalentLevel    levelData = 1;
+  repeated TalentTree     tree = 2;
+}      
+
+
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

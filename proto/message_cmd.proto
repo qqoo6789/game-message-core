@@ -64,6 +64,8 @@ enum EnvelopeType {
     BroadCastGranaryUpdate          = 0x010055;     // 全量更新仓库数据
     BroadCastUpGranaryItem          = 0x010057;     // 更新仓库道具
     UpgradeTalentNode               = 0x010059;     // 解锁/升级 天赋节点
+    QueryTalentExp                  = 0x010061;     // 查询天赋经验
+    BroadCastUpTalentExp            = 0x010063;     // 广播更新天赋经验
 
 
 
@@ -98,8 +100,9 @@ enum EnvelopeType {
     QueryServerTime                 = 0x030043;     // 客户端请求服务器时间
     BroadCastChangeService          = 0x030045;
     HomeResourceOperate             = 0x030047;
-    BroadCastHomeDataInitBatch      = 0x030049;
-    QueryTalent                     = 0x030051;     // 查询天赋数据
+    BroadCastHomeDataInitBatch      = 0x030049; 
+    QueryTalentTree                 = 0x030051;     // 查询天赋数据
+    BroadCastTalentTreeUpdate       = 0x030053;     // 广播更新天赋树数据
 
 
 

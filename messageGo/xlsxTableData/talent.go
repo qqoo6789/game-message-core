@@ -2,14 +2,36 @@ package xlsxTable
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 )
+
+type RealUpgradeData struct {
+	TalentTreeLv  int32   `json:"talentTreeLv"`  // 技能树等级
+	TalentExpType int32   `json:"talentExpType"` // 升级所需天赋经验类型 TalentType
+	TalentExp     int32   `json:"talentExp"`     // 升级经验(对应天赋类型)
+	PreNodes      []int32 `json:"preNodes"`      // 前置依赖节点列表
+}
 
 type TalentUpgradeData struct {
 	TalentTreeLv  int32   `json:"talentTreeLv"`  // 技能树等级
 	TalentExpType int32   `json:"talentExpType"` // 升级所需天赋经验类型 TalentType
 	TalentExpList []int32 `json:"talentExpList"` // 升级经验(对应天赋类型)
 	PreNodes      []int32 `json:"preNodes"`      // 前置依赖节点列表
+}
+
+func (p *TalentUpgradeData) GetRealUpgradeData(curLv uint32) (*RealUpgradeData, error) {
+	ud := &RealUpgradeData{
+		TalentTreeLv:  p.TalentTreeLv,
+		TalentExpType: p.TalentExpType,
+		PreNodes:      p.PreNodes,
+	}
+
+	if len(p.TalentExpList) < int(curLv) {
+		return nil, fmt.Errorf("node curLv is max level")
+	}
+	ud.TalentExp = p.TalentExpList[int(curLv)]
+	return ud, nil
 }
 
 // 掉落物配方.

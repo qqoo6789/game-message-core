@@ -105,11 +105,17 @@ message NftBuild {
 }
 
 message Resource {
-  int32         cid = 1; 
-  int64         id = 2;
-  bool          active = 3;
-  Vector3       position = 5;
-  Vector3       dir = 6;    // 方向（朝向）
+  bool          active = 1;
+  Vector3       position = 2;
+  Vector3       dir = 3;    // 方向（朝向）
+  ResourcePointInfo pointInfo = 4;
+}
+
+message ResourcePointInfo
+{
+  //资源点ID 在家园中时代表土地id
+  uint64        id = 1;
+  int32         cid = 2; 
 }
 
 /// ************************* move info ***************************************************

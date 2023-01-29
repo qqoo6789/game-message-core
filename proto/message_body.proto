@@ -611,8 +611,8 @@ message QueryTalentTreeResponse{
   repeated TalentTree     tree = 2;
 }      
 message BroadCastTalentTreeUpdateResponse{
-  repeated TalentLevel    levelData = 1;
-  repeated TalentTree     tree = 2;
+  repeated TalentLevel      levelData = 1;
+  repeated TalentTreeUpdate upTrees = 2;
 }      
 
 

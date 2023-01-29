@@ -49,3 +49,10 @@ message TalentData{
     repeated TalentLevel    levelData = 2;
     repeated TalentTree     tree = 3;
 }
+
+message TalentTreeUpdate{
+    TalentType          type = 1;
+    repeated TalentNode addNodes = 2;
+    repeated TalentNode updateNodes = 3;
+    repeated int32      removeNodes = 4;
+}

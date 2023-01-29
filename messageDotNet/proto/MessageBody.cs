@@ -424,50 +424,50 @@ namespace GameMessageCore {
             "UmVzb3VyY2VPcGVyYXRlUmVzdWx0IhgKFlF1ZXJ5VGFsZW50VHJlZVJlcXVl",
             "c3QidQoXUXVlcnlUYWxlbnRUcmVlUmVzcG9uc2USLwoJbGV2ZWxEYXRhGAEg",
             "AygLMhwuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudExldmVsEikKBHRyZWUYAiAD",
-            "KAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHJlZSJ/CiFCcm9hZENhc3RU",
-            "YWxlbnRUcmVlVXBkYXRlUmVzcG9uc2USLwoJbGV2ZWxEYXRhGAEgAygLMhwu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlRhbGVudExldmVsEikKBHRyZWUYAiADKAsyGy5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFsZW50VHJlZSISChBTZWxmVGFza3NSZXF1ZXN0",
-            "Ij8KEVNlbGZUYXNrc1Jlc3BvbnNlEioKBXRhc2tzGAEgASgLMhsuZ2FtZU1l",
-            "c3NhZ2VDb3JlLlBsYXllclRhc2sigQEKH0Jyb2FkQ2FzdFVwZGF0ZVRhc2tM",
-            "aXN0UmVzcG9uc2USKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5U",
-            "YXNrTGlzdFR5cGUSMQoOdGFza19saXN0X2luZm8YAiABKAsyGS5nYW1lTWVz",
-            "c2FnZUNvcmUuVGFza0xpc3QiQAoRQWNjZXB0VGFza1JlcXVlc3QSKwoEa2lu",
-            "ZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiRwoSQWNj",
-            "ZXB0VGFza1Jlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkUKFkFiYW5kb25tZW50VGFza1JlcXVl",
-            "c3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5",
-            "cGUiTAoXQWJhbmRvbm1lbnRUYXNrUmVzcG9uc2USMQoOdGFza19saXN0X2lu",
-            "Zm8YASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiSgoRVGFza1Jl",
-            "d2FyZFJlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVz",
-            "c2FnZUNvcmUuVGFza0xpc3RUeXBlIkcKElRhc2tSZXdhcmRSZXNwb25zZRIx",
-            "Cg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
-            "TGlzdCJEChVUYXNrTGlzdFJld2FyZFJlcXVlc3QSKwoEa2luZBgBIAEoDjId",
-            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiSwoWVGFza0xpc3RSZXdh",
-            "cmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrTGlzdCK5AgoaVXBncmFkZVRhc2tQcm9ncmVzc1JlcXVl",
-            "c3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
-            "VGFza0xpc3RUeXBlEi4KBWl0ZW1zGAIgAygLMh8uZ2FtZU1lc3NhZ2VDb3Jl",
-            "LlRhc2tPcHRpb25JdGVtEjYKA3BvcxgDIAEoCzIpLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24SNwoJdXNlUmVjaXBlGAQgASgL",
-            "MiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNpcGUSQwoPY3Jh",
-            "ZnRTa2lsbExldmVsGAUgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRp",
-            "b25DcmFmdFNraWxsTGV2ZWwiHQobVXBncmFkZVRhc2tQcm9ncmVzc1Jlc3Bv",
-            "bnNlIrkBChtCcm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2USGwoTaXNfdGFz",
-            "a19saXN0X3Jld2FyZBgBIAEoCBI1Cg50YXNrX2xpc3Rfa2luZBgCIAEoDjId",
-            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSEgoKcmV3YXJkX2V4cBgD",
-            "IAEoBRIyCgtyZXdhcmRfaXRlbRgEIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5J",
-            "dGVtQmFzZUluZm8iegoWU2VuZENoYXRNZXNzYWdlUmVxdWVzdBIzCgljaGF0",
-            "X3R5cGUYASABKA4yIC5nYW1lTWVzc2FnZUNvcmUuQ2hhdENoYW5uZWxUeXBl",
-            "Eg8KB2NvbnRlbnQYAiABKAkSGgoScmVjZWl2ZXJfcGxheWVyX2lkGAMgASgD",
-            "IikKF1NlbmRDaGF0TWVzc2FnZVJlc3BvbnNlEg4KBm1zZ19pZBgBIAEoAyJq",
-            "Ch1Ccm9hZENhc3RDaGF0TWVzc2FnZXNSZXNwb25zZRIuCghtZXNzYWdlcxgB",
-            "IAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5DaGF0TWVzc2FnZRIZChFoaXN0b3Jp",
-            "Y2FsX3JlY29yZBgCIAEoCCI1CiJCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2Fn",
-            "ZVJlc3BvbnNlEg8KB21zZ19pZHMYASADKAMiUgogQnJvYWRDYXN0VXBkYXRl",
-            "Q2hhdFN0YXRlUmVzcG9uc2USLgoKY2hhdF9zdGF0ZRgBIAEoDjIaLmdhbWVN",
-            "ZXNzYWdlQ29yZS5DaGF0U3RhdGUiDQoLUGluZ1JlcXVlc3QiDgoMUGluZ1Jl",
-            "c3BvbnNlYgZwcm90bzM="));
+            "KAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHJlZSKIAQohQnJvYWRDYXN0",
+            "VGFsZW50VHJlZVVwZGF0ZVJlc3BvbnNlEi8KCWxldmVsRGF0YRgBIAMoCzIc",
+            "LmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRMZXZlbBIyCgd1cFRyZWVzGAIgAygL",
+            "MiEuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudFRyZWVVcGRhdGUiEgoQU2VsZlRh",
+            "c2tzUmVxdWVzdCI/ChFTZWxmVGFza3NSZXNwb25zZRIqCgV0YXNrcxgBIAEo",
+            "CzIbLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJUYXNrIoEBCh9Ccm9hZENhc3RV",
+            "cGRhdGVUYXNrTGlzdFJlc3BvbnNlEisKBGtpbmQYASABKA4yHS5nYW1lTWVz",
+            "c2FnZUNvcmUuVGFza0xpc3RUeXBlEjEKDnRhc2tfbGlzdF9pbmZvGAIgASgL",
+            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkAKEUFjY2VwdFRhc2tSZXF1",
+            "ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RU",
+            "eXBlIkcKEkFjY2VwdFRhc2tSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgB",
+            "IAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJFChZBYmFuZG9ubWVu",
+            "dFRhc2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza0xpc3RUeXBlIkwKF0FiYW5kb25tZW50VGFza1Jlc3BvbnNlEjEKDnRh",
+            "c2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0",
+            "IkoKEVRhc2tSZXdhcmRSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5kGAEgASgO",
+            "Mh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZSJHChJUYXNrUmV3YXJk",
+            "UmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsyGS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVGFza0xpc3QiRAoVVGFza0xpc3RSZXdhcmRSZXF1ZXN0EisKBGtp",
+            "bmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlIksKFlRh",
+            "c2tMaXN0UmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsy",
+            "GS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiuQIKGlVwZ3JhZGVUYXNrUHJv",
+            "Z3Jlc3NSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5kGAEgASgOMh0uZ2FtZU1l",
+            "c3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIuCgVpdGVtcxgCIAMoCzIfLmdhbWVN",
+            "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbRI2CgNwb3MYAyABKAsyKS5nYW1l",
+            "TWVzc2FnZUNvcmUuVGFza09wdGlvblRhcmdldFBvc2l0aW9uEjcKCXVzZVJl",
+            "Y2lwZRgEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVXNlUmVj",
+            "aXBlEkMKD2NyYWZ0U2tpbGxMZXZlbBgFIAEoCzIqLmdhbWVNZXNzYWdlQ29y",
+            "ZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVsIh0KG1VwZ3JhZGVUYXNrUHJv",
+            "Z3Jlc3NSZXNwb25zZSK5AQobQnJvYWRDYXN0VGFza1Jld2FyZFJlc3BvbnNl",
+            "EhsKE2lzX3Rhc2tfbGlzdF9yZXdhcmQYASABKAgSNQoOdGFza19saXN0X2tp",
+            "bmQYAiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEhIKCnJl",
+            "d2FyZF9leHAYAyABKAUSMgoLcmV3YXJkX2l0ZW0YBCADKAsyHS5nYW1lTWVz",
+            "c2FnZUNvcmUuSXRlbUJhc2VJbmZvInoKFlNlbmRDaGF0TWVzc2FnZVJlcXVl",
+            "c3QSMwoJY2hhdF90eXBlGAEgASgOMiAuZ2FtZU1lc3NhZ2VDb3JlLkNoYXRD",
+            "aGFubmVsVHlwZRIPCgdjb250ZW50GAIgASgJEhoKEnJlY2VpdmVyX3BsYXll",
+            "cl9pZBgDIAEoAyIpChdTZW5kQ2hhdE1lc3NhZ2VSZXNwb25zZRIOCgZtc2df",
+            "aWQYASABKAMiagodQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9uc2USLgoI",
+            "bWVzc2FnZXMYASADKAsyHC5nYW1lTWVzc2FnZUNvcmUuQ2hhdE1lc3NhZ2US",
+            "GQoRaGlzdG9yaWNhbF9yZWNvcmQYAiABKAgiNQoiQnJvYWRDYXN0UmVtb3Zl",
+            "Q2hhdE1lc3NhZ2VSZXNwb25zZRIPCgdtc2dfaWRzGAEgAygDIlIKIEJyb2Fk",
+            "Q2FzdFVwZGF0ZUNoYXRTdGF0ZVJlc3BvbnNlEi4KCmNoYXRfc3RhdGUYASAB",
+            "KA4yGi5nYW1lTWVzc2FnZUNvcmUuQ2hhdFN0YXRlIg0KC1BpbmdSZXF1ZXN0",
+            "Ig4KDFBpbmdSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -573,7 +573,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeResourceOperateResponse), global::GameMessageCore.HomeResourceOperateResponse.Parser, new[]{ "OperateResultList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentTreeRequest), global::GameMessageCore.QueryTalentTreeRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentTreeResponse), global::GameMessageCore.QueryTalentTreeResponse.Parser, new[]{ "LevelData", "Tree" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTalentTreeUpdateResponse), global::GameMessageCore.BroadCastTalentTreeUpdateResponse.Parser, new[]{ "LevelData", "Tree" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTalentTreeUpdateResponse), global::GameMessageCore.BroadCastTalentTreeUpdateResponse.Parser, new[]{ "LevelData", "UpTrees" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksRequest), global::GameMessageCore.SelfTasksRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksResponse), global::GameMessageCore.SelfTasksResponse.Parser, new[]{ "Tasks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastUpdateTaskListResponse), global::GameMessageCore.BroadCastUpdateTaskListResponse.Parser, new[]{ "Kind", "TaskListInfo" }, null, null, null, null),
@@ -28546,7 +28546,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BroadCastTalentTreeUpdateResponse(BroadCastTalentTreeUpdateResponse other) : this() {
       levelData_ = other.levelData_.Clone();
-      tree_ = other.tree_.Clone();
+      upTrees_ = other.upTrees_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -28567,15 +28567,15 @@ namespace GameMessageCore {
       get { return levelData_; }
     }
 
-    /// <summary>Field number for the "tree" field.</summary>
-    public const int TreeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::GameMessageCore.TalentTree> _repeated_tree_codec
-        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.TalentTree.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.TalentTree> tree_ = new pbc::RepeatedField<global::GameMessageCore.TalentTree>();
+    /// <summary>Field number for the "upTrees" field.</summary>
+    public const int UpTreesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentTreeUpdate> _repeated_upTrees_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.TalentTreeUpdate.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate> upTrees_ = new pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.TalentTree> Tree {
-      get { return tree_; }
+    public pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate> UpTrees {
+      get { return upTrees_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28594,7 +28594,7 @@ namespace GameMessageCore {
         return true;
       }
       if(!levelData_.Equals(other.levelData_)) return false;
-      if(!tree_.Equals(other.tree_)) return false;
+      if(!upTrees_.Equals(other.upTrees_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -28603,7 +28603,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= levelData_.GetHashCode();
-      hash ^= tree_.GetHashCode();
+      hash ^= upTrees_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -28623,7 +28623,7 @@ namespace GameMessageCore {
       output.WriteRawMessage(this);
     #else
       levelData_.WriteTo(output, _repeated_levelData_codec);
-      tree_.WriteTo(output, _repeated_tree_codec);
+      upTrees_.WriteTo(output, _repeated_upTrees_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -28635,7 +28635,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       levelData_.WriteTo(ref output, _repeated_levelData_codec);
-      tree_.WriteTo(ref output, _repeated_tree_codec);
+      upTrees_.WriteTo(ref output, _repeated_upTrees_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -28647,7 +28647,7 @@ namespace GameMessageCore {
     public int CalculateSize() {
       int size = 0;
       size += levelData_.CalculateSize(_repeated_levelData_codec);
-      size += tree_.CalculateSize(_repeated_tree_codec);
+      size += upTrees_.CalculateSize(_repeated_upTrees_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -28661,7 +28661,7 @@ namespace GameMessageCore {
         return;
       }
       levelData_.Add(other.levelData_);
-      tree_.Add(other.tree_);
+      upTrees_.Add(other.upTrees_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -28682,7 +28682,7 @@ namespace GameMessageCore {
             break;
           }
           case 18: {
-            tree_.AddEntriesFrom(input, _repeated_tree_codec);
+            upTrees_.AddEntriesFrom(input, _repeated_upTrees_codec);
             break;
           }
         }
@@ -28705,7 +28705,7 @@ namespace GameMessageCore {
             break;
           }
           case 18: {
-            tree_.AddEntriesFrom(ref input, _repeated_tree_codec);
+            upTrees_.AddEntriesFrom(ref input, _repeated_upTrees_codec);
             break;
           }
         }

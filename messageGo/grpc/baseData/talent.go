@@ -21,3 +21,10 @@ type GrpcTalentData struct {
 	Levels []*GrpcTalentLevel `json:"levels"`
 	Trees  []*GrpcTalentTree  `json:"trees"`
 }
+
+type GrpcTalentTreeUpdate struct {
+	TalentType  proto.TalentType     `json:"talentType"`
+	AddNodes    []GrpcTalentNodeData `json:"addNodes"`
+	UpdateNodes []GrpcTalentNodeData `json:"updateNodes"`
+	RemoveNodes []uint32             `json:"removeNodes"`
+}

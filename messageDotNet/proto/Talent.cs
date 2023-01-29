@@ -35,10 +35,14 @@ namespace GameMessageCore {
             "YRIrCgdleHBEYXRhGAEgAygLMhouZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudEV4",
             "cBIvCglsZXZlbERhdGEYAiADKAsyHC5nYW1lTWVzc2FnZUNvcmUuVGFsZW50",
             "TGV2ZWwSKQoEdHJlZRgDIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRU",
-            "cmVlKjwKClRhbGVudFR5cGUSFQoRVGFsZW50VHlwZVVua25vd24QABILCgdG",
-            "YXJtaW5nEAESCgoGQmF0dGxlEAIqQQoPVGFsZW50R2FpbnNUeXBlEg8KC0Fj",
-            "dGl2ZVNraWxsEAASEAoMUGFzc2l2ZVNraWxsEAESCwoHUmVjaXBlcxACYgZw",
-            "cm90bzM="));
+            "cmVlIrMBChBUYWxlbnRUcmVlVXBkYXRlEikKBHR5cGUYASABKA4yGy5nYW1l",
+            "TWVzc2FnZUNvcmUuVGFsZW50VHlwZRItCghhZGROb2RlcxgCIAMoCzIbLmdh",
+            "bWVNZXNzYWdlQ29yZS5UYWxlbnROb2RlEjAKC3VwZGF0ZU5vZGVzGAMgAygL",
+            "MhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudE5vZGUSEwoLcmVtb3ZlTm9kZXMY",
+            "BCADKAUqPAoKVGFsZW50VHlwZRIVChFUYWxlbnRUeXBlVW5rbm93bhAAEgsK",
+            "B0Zhcm1pbmcQARIKCgZCYXR0bGUQAipBCg9UYWxlbnRHYWluc1R5cGUSDwoL",
+            "QWN0aXZlU2tpbGwQABIQCgxQYXNzaXZlU2tpbGwQARILCgdSZWNpcGVzEAJi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TalentType), typeof(global::GameMessageCore.TalentGainsType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,7 +50,8 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentLevel), global::GameMessageCore.TalentLevel.Parser, new[]{ "Type", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentNode), global::GameMessageCore.TalentNode.Parser, new[]{ "NodeId", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentTree), global::GameMessageCore.TalentTree.Parser, new[]{ "Type", "UnlockNodes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentData), global::GameMessageCore.TalentData.Parser, new[]{ "ExpData", "LevelData", "Tree" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentData), global::GameMessageCore.TalentData.Parser, new[]{ "ExpData", "LevelData", "Tree" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentTreeUpdate), global::GameMessageCore.TalentTreeUpdate.Parser, new[]{ "Type", "AddNodes", "UpdateNodes", "RemoveNodes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1240,6 +1245,275 @@ namespace GameMessageCore {
           }
           case 26: {
             tree_.AddEntriesFrom(ref input, _repeated_tree_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TalentTreeUpdate : pb::IMessage<TalentTreeUpdate>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TalentTreeUpdate> _parser = new pb::MessageParser<TalentTreeUpdate>(() => new TalentTreeUpdate());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TalentTreeUpdate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.TalentReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TalentTreeUpdate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TalentTreeUpdate(TalentTreeUpdate other) : this() {
+      type_ = other.type_;
+      addNodes_ = other.addNodes_.Clone();
+      updateNodes_ = other.updateNodes_.Clone();
+      removeNodes_ = other.removeNodes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TalentTreeUpdate Clone() {
+      return new TalentTreeUpdate(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.TalentType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "addNodes" field.</summary>
+    public const int AddNodesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentNode> _repeated_addNodes_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.TalentNode.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentNode> addNodes_ = new pbc::RepeatedField<global::GameMessageCore.TalentNode>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentNode> AddNodes {
+      get { return addNodes_; }
+    }
+
+    /// <summary>Field number for the "updateNodes" field.</summary>
+    public const int UpdateNodesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentNode> _repeated_updateNodes_codec
+        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.TalentNode.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentNode> updateNodes_ = new pbc::RepeatedField<global::GameMessageCore.TalentNode>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentNode> UpdateNodes {
+      get { return updateNodes_; }
+    }
+
+    /// <summary>Field number for the "removeNodes" field.</summary>
+    public const int RemoveNodesFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_removeNodes_codec
+        = pb::FieldCodec.ForInt32(34);
+    private readonly pbc::RepeatedField<int> removeNodes_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> RemoveNodes {
+      get { return removeNodes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TalentTreeUpdate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TalentTreeUpdate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      if(!addNodes_.Equals(other.addNodes_)) return false;
+      if(!updateNodes_.Equals(other.updateNodes_)) return false;
+      if(!removeNodes_.Equals(other.removeNodes_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
+      hash ^= addNodes_.GetHashCode();
+      hash ^= updateNodes_.GetHashCode();
+      hash ^= removeNodes_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      addNodes_.WriteTo(output, _repeated_addNodes_codec);
+      updateNodes_.WriteTo(output, _repeated_updateNodes_codec);
+      removeNodes_.WriteTo(output, _repeated_removeNodes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      addNodes_.WriteTo(ref output, _repeated_addNodes_codec);
+      updateNodes_.WriteTo(ref output, _repeated_updateNodes_codec);
+      removeNodes_.WriteTo(ref output, _repeated_removeNodes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      size += addNodes_.CalculateSize(_repeated_addNodes_codec);
+      size += updateNodes_.CalculateSize(_repeated_updateNodes_codec);
+      size += removeNodes_.CalculateSize(_repeated_removeNodes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TalentTreeUpdate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != global::GameMessageCore.TalentType.Unknown) {
+        Type = other.Type;
+      }
+      addNodes_.Add(other.addNodes_);
+      updateNodes_.Add(other.updateNodes_);
+      removeNodes_.Add(other.removeNodes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Type = (global::GameMessageCore.TalentType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            addNodes_.AddEntriesFrom(input, _repeated_addNodes_codec);
+            break;
+          }
+          case 26: {
+            updateNodes_.AddEntriesFrom(input, _repeated_updateNodes_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            removeNodes_.AddEntriesFrom(input, _repeated_removeNodes_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::GameMessageCore.TalentType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            addNodes_.AddEntriesFrom(ref input, _repeated_addNodes_codec);
+            break;
+          }
+          case 26: {
+            updateNodes_.AddEntriesFrom(ref input, _repeated_updateNodes_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            removeNodes_.AddEntriesFrom(ref input, _repeated_removeNodes_codec);
             break;
           }
         }

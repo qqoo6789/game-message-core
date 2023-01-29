@@ -10,9 +10,7 @@ public class UpdateTalentEvent
     public long MsgVersion;
     public long UserId;
     public GrpcTalentLevel[] Levels;
-    public GrpcTalentNodeData[] AddNodes;
-    public GrpcTalentNodeData[] UpdateNodes;
-    public GrpcTalentNodeData[] RemoveNodes;
+    public GrpcTalentTreeUpdate[] Trees;
 
     public string ToJson()
     {

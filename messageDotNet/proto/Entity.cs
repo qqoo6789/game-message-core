@@ -62,25 +62,27 @@ namespace GameMessageCore {
             "dEF0GAwgASgFEhQKDGNvbGxlY3Rpb25BdBgNIAEoBRIbChNjb2xsZWN0aW9u",
             "SXRlbUNvdW50GA4gASgFEi0KJWxhbmRQbGFjZW1lbnRQb3dlclplcm9Db29s",
             "ZG93blN0YXJ0QXQYDyABKAUSKAogbGFuZFBsYWNlbWVudFBvd2VyWmVyb0Nv",
-            "b2xkb3duQXQYECABKAUihgEKCFJlc291cmNlEgsKA2NpZBgBIAEoBRIKCgJp",
-            "ZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSKgoIcG9zaXRpb24YBSABKAsyGC5n",
-            "YW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1lTWVz",
-            "c2FnZUNvcmUuVmVjdG9yMyJSCg5FbnRpdHlNb3ZlU3RlcBIxCghsb2NhdGlv",
-            "bhgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhINCgVz",
-            "dGFtcBgCIAEoAyL/AQoORW50aXR5TW92ZW1lbnQSKgoHdHlwZV9pZBgBIAEo",
-            "CzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBI1CgxjdXJfbG9jYXRpb24Y",
-            "AiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoNZGVz",
-            "dF9sb2NhdGlvbhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3Zl",
-            "U3RlcBIrCgR0eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVtZW50",
-            "VHlwZRIlCgNEaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyJ6",
-            "CghFbnRpdHlDRBI1Cg1za2lsbF9jZF9saXN0GAEgAygLMh4uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkVudGl0eVNraWxsQ0QSNwoOZXh0ZW5kX2NkX2xpc3QYAiADKAsy",
-            "Hy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5RXh0ZW5kQ0QiLwoNRW50aXR5U2tp",
-            "bGxDRBIQCghza2lsbF9pZBgBIAEoBRIMCgR0aW1lGAIgASgDIiwKDkVudGl0",
-            "eUV4dGVuZENEEgwKBHR5cGUYASABKAUSDAoEdGltZRgCIAEoAypoCgxNb3Zl",
-            "bWVudFR5cGUSFwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQKEE1vdmVtZW50",
-            "VHlwZVdhbGsQARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBNb3ZlbWVudFR5",
-            "cGVJZGxlEANiBnByb3RvMw=="));
+            "b2xkb3duQXQYECABKAUipAEKCFJlc291cmNlEg4KBmFjdGl2ZRgBIAEoCBIq",
+            "Cghwb3NpdGlvbhgCIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUK",
+            "A2RpchgDIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEjUKCXBvaW50",
+            "SW5mbxgEIAEoCzIiLmdhbWVNZXNzYWdlQ29yZS5SZXNvdXJjZVBvaW50SW5m",
+            "byIsChFSZXNvdXJjZVBvaW50SW5mbxIKCgJpZBgBIAEoBBILCgNjaWQYAiAB",
+            "KAUiUgoORW50aXR5TW92ZVN0ZXASMQoIbG9jYXRpb24YASABKAsyHy5nYW1l",
+            "TWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24SDQoFc3RhbXAYAiABKAMi/wEK",
+            "DkVudGl0eU1vdmVtZW50EioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5SWQSNQoMY3VyX2xvY2F0aW9uGAIgASgLMh8uZ2FtZU1l",
+            "c3NhZ2VDb3JlLkVudGl0eU1vdmVTdGVwEjYKDWRlc3RfbG9jYXRpb24YAyAB",
+            "KAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASKwoEdHlwZRgF",
+            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5Nb3ZlbWVudFR5cGUSJQoDRGlyGAYg",
+            "ASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiegoIRW50aXR5Q0QSNQoN",
+            "c2tpbGxfY2RfbGlzdBgBIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlT",
+            "a2lsbENEEjcKDmV4dGVuZF9jZF9saXN0GAIgAygLMh8uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkVudGl0eUV4dGVuZENEIi8KDUVudGl0eVNraWxsQ0QSEAoIc2tpbGxf",
+            "aWQYASABKAUSDAoEdGltZRgCIAEoAyIsCg5FbnRpdHlFeHRlbmRDRBIMCgR0",
+            "eXBlGAEgASgFEgwKBHRpbWUYAiABKAMqaAoMTW92ZW1lbnRUeXBlEhcKE01v",
+            "dmVtZW50VHlwZVVua25vd24QABIUChBNb3ZlbWVudFR5cGVXYWxrEAESEwoP",
+            "TW92ZW1lbnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -92,7 +94,8 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Npc), global::GameMessageCore.Npc.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "HarvestStartAt", "HarvestAt", "HarvestItemCount", "CollectionStartAt", "CollectionAt", "CollectionItemCount", "LandPlacementPowerZeroCooldownStartAt", "LandPlacementPowerZeroCooldownAt" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Resource), global::GameMessageCore.Resource.Parser, new[]{ "Cid", "Id", "Active", "Position", "Dir" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Resource), global::GameMessageCore.Resource.Parser, new[]{ "Active", "Position", "Dir", "PointInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ResourcePointInfo), global::GameMessageCore.ResourcePointInfo.Parser, new[]{ "Id", "Cid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMoveStep), global::GameMessageCore.EntityMoveStep.Parser, new[]{ "Location", "Stamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityMovement), global::GameMessageCore.EntityMovement.Parser, new[]{ "TypeId", "CurLocation", "DestLocation", "Type", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityCD), global::GameMessageCore.EntityCD.Parser, new[]{ "SkillCdList", "ExtendCdList" }, null, null, null, null),
@@ -3428,11 +3431,10 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Resource(Resource other) : this() {
-      cid_ = other.cid_;
-      id_ = other.id_;
       active_ = other.active_;
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
+      pointInfo_ = other.pointInfo_ != null ? other.pointInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3442,32 +3444,8 @@ namespace GameMessageCore {
       return new Resource(this);
     }
 
-    /// <summary>Field number for the "cid" field.</summary>
-    public const int CidFieldNumber = 1;
-    private int cid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Cid {
-      get { return cid_; }
-      set {
-        cid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 2;
-    private long id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
     /// <summary>Field number for the "active" field.</summary>
-    public const int ActiveFieldNumber = 3;
+    public const int ActiveFieldNumber = 1;
     private bool active_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3479,7 +3457,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 5;
+    public const int PositionFieldNumber = 2;
     private global::GameMessageCore.Vector3 position_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3491,7 +3469,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "dir" field.</summary>
-    public const int DirFieldNumber = 6;
+    public const int DirFieldNumber = 3;
     private global::GameMessageCore.Vector3 dir_;
     /// <summary>
     /// 方向（朝向）
@@ -3502,6 +3480,18 @@ namespace GameMessageCore {
       get { return dir_; }
       set {
         dir_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pointInfo" field.</summary>
+    public const int PointInfoFieldNumber = 4;
+    private global::GameMessageCore.ResourcePointInfo pointInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.ResourcePointInfo PointInfo {
+      get { return pointInfo_; }
+      set {
+        pointInfo_ = value;
       }
     }
 
@@ -3520,11 +3510,10 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Cid != other.Cid) return false;
-      if (Id != other.Id) return false;
       if (Active != other.Active) return false;
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
+      if (!object.Equals(PointInfo, other.PointInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3532,11 +3521,10 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Cid != 0) hash ^= Cid.GetHashCode();
-      if (Id != 0L) hash ^= Id.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
+      if (pointInfo_ != null) hash ^= PointInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3555,25 +3543,21 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Cid != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cid);
-      }
-      if (Id != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Id);
-      }
       if (Active != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(8);
         output.WriteBool(Active);
       }
       if (position_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(18);
         output.WriteMessage(Position);
       }
       if (dir_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(26);
         output.WriteMessage(Dir);
+      }
+      if (pointInfo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PointInfo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3585,25 +3569,21 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Cid != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cid);
-      }
-      if (Id != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Id);
-      }
       if (Active != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(8);
         output.WriteBool(Active);
       }
       if (position_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(18);
         output.WriteMessage(Position);
       }
       if (dir_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(26);
         output.WriteMessage(Dir);
+      }
+      if (pointInfo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PointInfo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3615,12 +3595,6 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Cid != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cid);
-      }
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
-      }
       if (Active != false) {
         size += 1 + 1;
       }
@@ -3629,6 +3603,9 @@ namespace GameMessageCore {
       }
       if (dir_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Dir);
+      }
+      if (pointInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PointInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3641,12 +3618,6 @@ namespace GameMessageCore {
     public void MergeFrom(Resource other) {
       if (other == null) {
         return;
-      }
-      if (other.Cid != 0) {
-        Cid = other.Cid;
-      }
-      if (other.Id != 0L) {
-        Id = other.Id;
       }
       if (other.Active != false) {
         Active = other.Active;
@@ -3662,6 +3633,12 @@ namespace GameMessageCore {
           Dir = new global::GameMessageCore.Vector3();
         }
         Dir.MergeFrom(other.Dir);
+      }
+      if (other.pointInfo_ != null) {
+        if (pointInfo_ == null) {
+          PointInfo = new global::GameMessageCore.ResourcePointInfo();
+        }
+        PointInfo.MergeFrom(other.PointInfo);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3679,29 +3656,28 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Cid = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Id = input.ReadInt64();
-            break;
-          }
-          case 24: {
             Active = input.ReadBool();
             break;
           }
-          case 42: {
+          case 18: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Position);
             break;
           }
-          case 50: {
+          case 26: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Dir);
+            break;
+          }
+          case 34: {
+            if (pointInfo_ == null) {
+              PointInfo = new global::GameMessageCore.ResourcePointInfo();
+            }
+            input.ReadMessage(PointInfo);
             break;
           }
         }
@@ -3720,29 +3696,257 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Cid = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Id = input.ReadInt64();
-            break;
-          }
-          case 24: {
             Active = input.ReadBool();
             break;
           }
-          case 42: {
+          case 18: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Position);
             break;
           }
-          case 50: {
+          case 26: {
             if (dir_ == null) {
               Dir = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Dir);
+            break;
+          }
+          case 34: {
+            if (pointInfo_ == null) {
+              PointInfo = new global::GameMessageCore.ResourcePointInfo();
+            }
+            input.ReadMessage(PointInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ResourcePointInfo : pb::IMessage<ResourcePointInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ResourcePointInfo> _parser = new pb::MessageParser<ResourcePointInfo>(() => new ResourcePointInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ResourcePointInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResourcePointInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResourcePointInfo(ResourcePointInfo other) : this() {
+      id_ = other.id_;
+      cid_ = other.cid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResourcePointInfo Clone() {
+      return new ResourcePointInfo(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private ulong id_;
+    /// <summary>
+    ///资源点ID 在家园中时代表土地id
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cid" field.</summary>
+    public const int CidFieldNumber = 2;
+    private int cid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Cid {
+      get { return cid_; }
+      set {
+        cid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ResourcePointInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ResourcePointInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Cid != other.Cid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (Cid != 0) hash ^= Cid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (Cid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Cid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (Cid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Cid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      }
+      if (Cid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ResourcePointInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0UL) {
+        Id = other.Id;
+      }
+      if (other.Cid != 0) {
+        Cid = other.Cid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            Cid = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            Cid = input.ReadInt32();
             break;
           }
         }
@@ -3770,7 +3974,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[9]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4011,7 +4215,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[10]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4396,7 +4600,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[11]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4606,7 +4810,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[12]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4838,7 +5042,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[13]; }
+      get { return global::GameMessageCore.EntityReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

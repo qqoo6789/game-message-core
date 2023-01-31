@@ -24,25 +24,35 @@ namespace GameMessageCore {
     static HomeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8iWQoX",
-            "Q29sbGVjdFJlc291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgC",
-            "IAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIp4B",
-            "ChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0EjoKCGJhc2VJbmZvGAEg",
-            "ASgLMiguZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
-            "EhEKCWl0ZW1WYWxpZBgCIAEoCBIvCghkcm9wTGlzdBgDIAMoCzIdLmdhbWVN",
-            "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qkQEKCkhvbWVBY3Rpb24SEgoOSG9t",
-            "ZUFjdGlvbk5vbmUQABIUChBIb21lQWN0aW9uSG9laW5nEAISFAoQSG9tZUFj",
-            "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhUKEUhvbWVB",
-            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKqoBChNDb2xs",
-            "ZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3du",
-            "EAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIbChdDb2xsZWN0UmVz",
-            "b3VyY2VUeXBlUm9jaxACEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVUcmVlEAQS",
-            "HAoYQ29sbGVjdFJlc291cmNlVHlwZUdyYXNzEAhiBnByb3RvMw=="));
+            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8irQEK",
+            "DVByb3h5U29pbERhdGESCgoCaWQYASABKAQSEgoKc29pbFN0YXR1cxgCIAEo",
+            "BRIYChBzdGF0dXNTdGFydFN0YW1wGAMgASgDEhQKDGdyb3dpbmdTdGFnZRgE",
+            "IAEoBRIPCgdzZWVkQ2lkGAUgASgFEhMKC3Nvd2luZ1ZhbGlkGAYgASgIEhEK",
+            "CW1hbnVyZUNpZBgHIAEoBRITCgttYW51cmVWYWxpZBgIIAEoCCJZChdDb2xs",
+            "ZWN0UmVzb3VyY2VCYXNlSW5mbxIKCgJpZBgBIAEoBBIyCgR0eXBlGAIgASgO",
+            "MiQuZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVR5cGUilgEKGkNv",
+            "bGxlY3RSZXNvdXJjZU9wZXJhdGVJbmZvEjoKCGJhc2VJbmZvGAEgASgLMigu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEisKBmFj",
+            "dGlvbhgCIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5Ib21lQWN0aW9uEg8KB3Rv",
+            "b2xDaWQYAyABKAUipAEKHENvbGxlY3RSZXNvdXJjZU9wZXJhdGVSZXN1bHQS",
+            "QAoLb3BlcmF0ZUluZm8YASABKAsyKy5nYW1lTWVzc2FnZUNvcmUuQ29sbGVj",
+            "dFJlc291cmNlT3BlcmF0ZUluZm8SEQoJaXRlbVZhbGlkGAIgASgIEi8KCGRy",
+            "b3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbyrN",
+            "AQoKSG9tZUFjdGlvbhISCg5Ib21lQWN0aW9uTm9uZRAAEhQKEEhvbWVBY3Rp",
+            "b25Ib2VpbmcQAhIUChBIb21lQWN0aW9uU293aW5nEAQSFgoSSG9tZUFjdGlv",
+            "bldhdGVyaW5nEAgSFAoQSG9tZUFjdGlvbk1hbnVyZRAQEhUKEUhvbWVBY3Rp",
+            "b25IYXJ2ZXN0ECASEQoNSG9tZUFjdGlvbkN1dBBAEhcKEkhvbWVBY3Rpb25F",
+            "eGNhdmF0ZRCAARIOCglFcmFkaWNhdGUQgAIqZAoTQ29sbGVjdFJlc291cmNl",
+            "VHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5rbm93bhAAEhsKF0NvbGxl",
+            "Y3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9tZVJlc291cmNlEAJiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "BaseInfo", "ItemValid", "DropList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateInfo), global::GameMessageCore.CollectResourceOperateInfo.Parser, new[]{ "BaseInfo", "Action", "ToolCid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "OperateInfo", "ItemValid", "DropList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,13 +74,25 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("HomeActionWatering")] Watering = 8,
     /// <summary>
-    /// 收获
-    /// </summary>
-    [pbr::OriginalName("HomeActionHarvest")] Harvest = 16,
-    /// <summary>
     /// 施肥
     /// </summary>
-    [pbr::OriginalName("HomeActionManure")] Manure = 32,
+    [pbr::OriginalName("HomeActionManure")] Manure = 16,
+    /// <summary>
+    /// 收获收割
+    /// </summary>
+    [pbr::OriginalName("HomeActionHarvest")] Harvest = 32,
+    /// <summary>
+    /// 斧头砍树
+    /// </summary>
+    [pbr::OriginalName("HomeActionCut")] Cut = 64,
+    /// <summary>
+    /// 镐子挖矿
+    /// </summary>
+    [pbr::OriginalName("HomeActionExcavate")] Excavate = 128,
+    /// <summary>
+    /// 铲除植物
+    /// </summary>
+    [pbr::OriginalName("Eradicate")] Eradicate = 256,
   }
 
   public enum CollectResourceType {
@@ -80,16 +102,462 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("CollectResourceTypeSoil")] Soil = 1,
     /// <summary>
-    /// 岩石 矿石
+    /// 采集资源
     /// </summary>
-    [pbr::OriginalName("CollectResourceTypeRock")] Rock = 2,
-    [pbr::OriginalName("CollectResourceTypeTree")] Tree = 4,
-    [pbr::OriginalName("CollectResourceTypeGrass")] Grass = 8,
+    [pbr::OriginalName("HomeResource")] HomeResource = 2,
   }
 
   #endregion
 
   #region Messages
+  public sealed partial class ProxySoilData : pb::IMessage<ProxySoilData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProxySoilData> _parser = new pb::MessageParser<ProxySoilData>(() => new ProxySoilData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProxySoilData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData(ProxySoilData other) : this() {
+      id_ = other.id_;
+      soilStatus_ = other.soilStatus_;
+      statusStartStamp_ = other.statusStartStamp_;
+      growingStage_ = other.growingStage_;
+      seedCid_ = other.seedCid_;
+      sowingValid_ = other.sowingValid_;
+      manureCid_ = other.manureCid_;
+      manureValid_ = other.manureValid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySoilData Clone() {
+      return new ProxySoilData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private ulong id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "soilStatus" field.</summary>
+    public const int SoilStatusFieldNumber = 2;
+    private int soilStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SoilStatus {
+      get { return soilStatus_; }
+      set {
+        soilStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "statusStartStamp" field.</summary>
+    public const int StatusStartStampFieldNumber = 3;
+    private long statusStartStamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long StatusStartStamp {
+      get { return statusStartStamp_; }
+      set {
+        statusStartStamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "growingStage" field.</summary>
+    public const int GrowingStageFieldNumber = 4;
+    private int growingStage_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GrowingStage {
+      get { return growingStage_; }
+      set {
+        growingStage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "seedCid" field.</summary>
+    public const int SeedCidFieldNumber = 5;
+    private int seedCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SeedCid {
+      get { return seedCid_; }
+      set {
+        seedCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sowingValid" field.</summary>
+    public const int SowingValidFieldNumber = 6;
+    private bool sowingValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SowingValid {
+      get { return sowingValid_; }
+      set {
+        sowingValid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureCid" field.</summary>
+    public const int ManureCidFieldNumber = 7;
+    private int manureCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManureCid {
+      get { return manureCid_; }
+      set {
+        manureCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureValid" field.</summary>
+    public const int ManureValidFieldNumber = 8;
+    private bool manureValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ManureValid {
+      get { return manureValid_; }
+      set {
+        manureValid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProxySoilData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProxySoilData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (SoilStatus != other.SoilStatus) return false;
+      if (StatusStartStamp != other.StatusStartStamp) return false;
+      if (GrowingStage != other.GrowingStage) return false;
+      if (SeedCid != other.SeedCid) return false;
+      if (SowingValid != other.SowingValid) return false;
+      if (ManureCid != other.ManureCid) return false;
+      if (ManureValid != other.ManureValid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0UL) hash ^= Id.GetHashCode();
+      if (SoilStatus != 0) hash ^= SoilStatus.GetHashCode();
+      if (StatusStartStamp != 0L) hash ^= StatusStartStamp.GetHashCode();
+      if (GrowingStage != 0) hash ^= GrowingStage.GetHashCode();
+      if (SeedCid != 0) hash ^= SeedCid.GetHashCode();
+      if (SowingValid != false) hash ^= SowingValid.GetHashCode();
+      if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
+      if (ManureValid != false) hash ^= ManureValid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (SoilStatus != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(ManureValid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(Id);
+      }
+      if (SoilStatus != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(ManureValid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+      }
+      if (SoilStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SoilStatus);
+      }
+      if (StatusStartStamp != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(StatusStartStamp);
+      }
+      if (GrowingStage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SeedCid);
+      }
+      if (SowingValid != false) {
+        size += 1 + 1;
+      }
+      if (ManureCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ManureCid);
+      }
+      if (ManureValid != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProxySoilData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0UL) {
+        Id = other.Id;
+      }
+      if (other.SoilStatus != 0) {
+        SoilStatus = other.SoilStatus;
+      }
+      if (other.StatusStartStamp != 0L) {
+        StatusStartStamp = other.StatusStartStamp;
+      }
+      if (other.GrowingStage != 0) {
+        GrowingStage = other.GrowingStage;
+      }
+      if (other.SeedCid != 0) {
+        SeedCid = other.SeedCid;
+      }
+      if (other.SowingValid != false) {
+        SowingValid = other.SowingValid;
+      }
+      if (other.ManureCid != 0) {
+        ManureCid = other.ManureCid;
+      }
+      if (other.ManureValid != false) {
+        ManureValid = other.ManureValid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            GrowingStage = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            SeedCid = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            SowingValid = input.ReadBool();
+            break;
+          }
+          case 56: {
+            ManureCid = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ManureValid = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            GrowingStage = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            SeedCid = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            SowingValid = input.ReadBool();
+            break;
+          }
+          case 56: {
+            ManureCid = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ManureValid = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CollectResourceBaseInfo : pb::IMessage<CollectResourceBaseInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -104,7 +572,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -316,6 +784,281 @@ namespace GameMessageCore {
 
   }
 
+  public sealed partial class CollectResourceOperateInfo : pb::IMessage<CollectResourceOperateInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CollectResourceOperateInfo> _parser = new pb::MessageParser<CollectResourceOperateInfo>(() => new CollectResourceOperateInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CollectResourceOperateInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo(CollectResourceOperateInfo other) : this() {
+      baseInfo_ = other.baseInfo_ != null ? other.baseInfo_.Clone() : null;
+      action_ = other.action_;
+      toolCid_ = other.toolCid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CollectResourceOperateInfo Clone() {
+      return new CollectResourceOperateInfo(this);
+    }
+
+    /// <summary>Field number for the "baseInfo" field.</summary>
+    public const int BaseInfoFieldNumber = 1;
+    private global::GameMessageCore.CollectResourceBaseInfo baseInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.CollectResourceBaseInfo BaseInfo {
+      get { return baseInfo_; }
+      set {
+        baseInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "action" field.</summary>
+    public const int ActionFieldNumber = 2;
+    private global::GameMessageCore.HomeAction action_ = global::GameMessageCore.HomeAction.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.HomeAction Action {
+      get { return action_; }
+      set {
+        action_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "toolCid" field.</summary>
+    public const int ToolCidFieldNumber = 3;
+    private int toolCid_;
+    /// <summary>
+    ///可能是种子cid 也可能是装备cid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ToolCid {
+      get { return toolCid_; }
+      set {
+        toolCid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CollectResourceOperateInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CollectResourceOperateInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(BaseInfo, other.BaseInfo)) return false;
+      if (Action != other.Action) return false;
+      if (ToolCid != other.ToolCid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (baseInfo_ != null) hash ^= BaseInfo.GetHashCode();
+      if (Action != global::GameMessageCore.HomeAction.None) hash ^= Action.GetHashCode();
+      if (ToolCid != 0) hash ^= ToolCid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (baseInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Action);
+      }
+      if (ToolCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ToolCid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (baseInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Action);
+      }
+      if (ToolCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ToolCid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (baseInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BaseInfo);
+      }
+      if (Action != global::GameMessageCore.HomeAction.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Action);
+      }
+      if (ToolCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ToolCid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CollectResourceOperateInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.baseInfo_ != null) {
+        if (baseInfo_ == null) {
+          BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+        }
+        BaseInfo.MergeFrom(other.BaseInfo);
+      }
+      if (other.Action != global::GameMessageCore.HomeAction.None) {
+        Action = other.Action;
+      }
+      if (other.ToolCid != 0) {
+        ToolCid = other.ToolCid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (baseInfo_ == null) {
+              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            }
+            input.ReadMessage(BaseInfo);
+            break;
+          }
+          case 16: {
+            Action = (global::GameMessageCore.HomeAction) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            ToolCid = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (baseInfo_ == null) {
+              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            }
+            input.ReadMessage(BaseInfo);
+            break;
+          }
+          case 16: {
+            Action = (global::GameMessageCore.HomeAction) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            ToolCid = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CollectResourceOperateResult : pb::IMessage<CollectResourceOperateResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -330,7 +1073,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -350,7 +1093,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CollectResourceOperateResult(CollectResourceOperateResult other) : this() {
-      baseInfo_ = other.baseInfo_ != null ? other.baseInfo_.Clone() : null;
+      operateInfo_ = other.operateInfo_ != null ? other.operateInfo_.Clone() : null;
       itemValid_ = other.itemValid_;
       dropList_ = other.dropList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -362,15 +1105,15 @@ namespace GameMessageCore {
       return new CollectResourceOperateResult(this);
     }
 
-    /// <summary>Field number for the "baseInfo" field.</summary>
-    public const int BaseInfoFieldNumber = 1;
-    private global::GameMessageCore.CollectResourceBaseInfo baseInfo_;
+    /// <summary>Field number for the "operateInfo" field.</summary>
+    public const int OperateInfoFieldNumber = 1;
+    private global::GameMessageCore.CollectResourceOperateInfo operateInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.CollectResourceBaseInfo BaseInfo {
-      get { return baseInfo_; }
+    public global::GameMessageCore.CollectResourceOperateInfo OperateInfo {
+      get { return operateInfo_; }
       set {
-        baseInfo_ = value;
+        operateInfo_ = value;
       }
     }
 
@@ -415,7 +1158,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(BaseInfo, other.BaseInfo)) return false;
+      if (!object.Equals(OperateInfo, other.OperateInfo)) return false;
       if (ItemValid != other.ItemValid) return false;
       if(!dropList_.Equals(other.dropList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -425,7 +1168,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (baseInfo_ != null) hash ^= BaseInfo.GetHashCode();
+      if (operateInfo_ != null) hash ^= OperateInfo.GetHashCode();
       if (ItemValid != false) hash ^= ItemValid.GetHashCode();
       hash ^= dropList_.GetHashCode();
       if (_unknownFields != null) {
@@ -446,9 +1189,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (baseInfo_ != null) {
+      if (operateInfo_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(BaseInfo);
+        output.WriteMessage(OperateInfo);
       }
       if (ItemValid != false) {
         output.WriteRawTag(16);
@@ -465,9 +1208,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (baseInfo_ != null) {
+      if (operateInfo_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(BaseInfo);
+        output.WriteMessage(OperateInfo);
       }
       if (ItemValid != false) {
         output.WriteRawTag(16);
@@ -484,8 +1227,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (baseInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BaseInfo);
+      if (operateInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OperateInfo);
       }
       if (ItemValid != false) {
         size += 1 + 1;
@@ -503,11 +1246,11 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.baseInfo_ != null) {
-        if (baseInfo_ == null) {
-          BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+      if (other.operateInfo_ != null) {
+        if (operateInfo_ == null) {
+          OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
         }
-        BaseInfo.MergeFrom(other.BaseInfo);
+        OperateInfo.MergeFrom(other.OperateInfo);
       }
       if (other.ItemValid != false) {
         ItemValid = other.ItemValid;
@@ -529,10 +1272,10 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (baseInfo_ == null) {
-              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            if (operateInfo_ == null) {
+              OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
             }
-            input.ReadMessage(BaseInfo);
+            input.ReadMessage(OperateInfo);
             break;
           }
           case 16: {
@@ -559,10 +1302,10 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (baseInfo_ == null) {
-              BaseInfo = new global::GameMessageCore.CollectResourceBaseInfo();
+            if (operateInfo_ == null) {
+              OperateInfo = new global::GameMessageCore.CollectResourceOperateInfo();
             }
-            input.ReadMessage(BaseInfo);
+            input.ReadMessage(OperateInfo);
             break;
           }
           case 16: {

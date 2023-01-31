@@ -98,6 +98,7 @@ enum EnvelopeType {
     QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
     BroadCastChangeService          = 0x030045;
     HomeResourceOperate             = 0x030047;
+    BroadCastHomeDataInitBatch      = 0x030049;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

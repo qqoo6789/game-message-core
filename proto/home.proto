@@ -1,0 +1,65 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+import "item.proto";
+
+enum HomeAction {
+      HomeActionNone = 0;
+      // 锄头锄地
+      HomeActionHoeing = 2;
+      // 播种
+      HomeActionSowing = 4;
+      // 浇水
+      HomeActionWatering = 8;
+      // 施肥
+      HomeActionManure = 16;
+      // 收获收割
+      HomeActionHarvest = 32;
+      // 斧头砍树
+      HomeActionCut = 64;
+      // 镐子挖矿
+      HomeActionExcavate = 128;
+      // 铲除植物
+      Eradicate = 256;
+}
+
+enum CollectResourceType
+{
+    CollectResourceTypeUnknown = 0;
+    // 土壤作物
+    CollectResourceTypeSoil = 1 ;
+    // 采集资源
+    HomeResource = 2;
+}
+
+message ProxySoilData
+{
+    uint64 id = 1;
+    int32 soilStatus = 2;
+    int64 statusStartStamp = 3;
+    int32 growingStage = 4;
+    int32 seedCid = 5;
+    bool sowingValid = 6;
+    int32 manureCid = 7;
+    bool manureValid = 8;
+}
+
+message CollectResourceBaseInfo{
+  uint64 id = 1;
+  CollectResourceType type = 2;
+}
+
+message CollectResourceOperateInfo{
+  CollectResourceBaseInfo baseInfo=1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
+
+message CollectResourceOperateResult{
+  CollectResourceOperateInfo operateInfo = 1;
+  //道具有效  在播种和施肥时候专精不够时候 会返回false
+  bool itemValid=2;
+  repeated ItemBaseInfo dropList = 3;
+}

@@ -20,17 +20,19 @@ type TalentUpgradeData struct {
 	PreNodes      []int32 `json:"preNodes"`      // 前置依赖节点列表
 }
 
-func (p *TalentUpgradeData) GetRealUpgradeData(curLv uint32) (*RealUpgradeData, error) {
+func (p *TalentUpgradeData) GetRealUpgradeData(lv uint32) (*RealUpgradeData, error) {
+	if lv == 0 {
+		return nil, fmt.Errorf("invalid Level 0")
+	}
+	if len(p.TalentExpList) < int(lv) {
+		return nil, fmt.Errorf("node lv is max level")
+	}
 	ud := &RealUpgradeData{
 		TalentTreeLv:  p.TalentTreeLv,
 		TalentExpType: p.TalentExpType,
 		PreNodes:      p.PreNodes,
+		TalentExp:     p.TalentExpList[int(lv-1)],
 	}
-
-	if len(p.TalentExpList) < int(curLv) {
-		return nil, fmt.Errorf("node curLv is max level")
-	}
-	ud.TalentExp = p.TalentExpList[int(curLv)]
 	return ud, nil
 }
 

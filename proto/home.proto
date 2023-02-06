@@ -50,6 +50,13 @@ message CollectResourceBaseInfo{
   CollectResourceType type = 2;
 }
 
+//使用采集技能的信息
+message UseCollectResourceSkillInfo{
+  repeated CollectResourceBaseInfo targets=1;
+  //消耗道具的cid 比如种子 肥料
+  int32 costItemCid = 2;
+}
+
 message CollectResourceOperateInfo{
   CollectResourceBaseInfo baseInfo=1;
   HomeAction   action = 2;

@@ -15,6 +15,7 @@ using UnityEngine;
 public class UserApplyEnterServiceInput
 {
     public long ApplyUser;
+    public int CurHp;
     public GrpcVector3 UserPosition;
     public GrpcVector3 UserDir;
     public ServiceData FromSer;
@@ -47,6 +48,7 @@ public class UserJoinServiceInput
     public long UserId;
     public string UserAgentAppId;
     public string UserSocketId;
+    public int CurHp;
     public GrpcVector3 UserPosition;
     public GrpcVector3 UserDir;
     public ServiceData FromSer;

@@ -17,6 +17,8 @@ import "vector.proto";
 import "land.proto";
 import "service.proto";
 import "home.proto";
+import "talent.proto";
+
 
 
 
@@ -85,6 +87,11 @@ message Envelope {
     GranaryCollectResponse            granary_collect_response              = 0x010054;
     BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
     BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
+    UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010059;
+    UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010060;
+    QueryTalentExpRequest             query_talent_exp_request              = 0x010061;
+    QueryTalentExpResponse            query_talent_exp_response             = 0x010062;
+    BroadCastUpTalentExpResponse      broad_cast_up_talent_exp_response     = 0x010063;
 
 
 
@@ -129,13 +136,16 @@ message Envelope {
     BroadCastPlayerActionChatResponse       broad_cast_player_action_chat_response        = 0x030039;
     GetHomeDataRequest                      get_home_data_request                         = 0x030041; 
     GetHomeDataResponse                     get_home_data_response                        = 0x030042; 
-
     QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
     QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
     BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
     HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
     HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
-    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049;
+    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049; 
+    QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030051;
+    QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030052;
+    BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030053;
+ 
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -368,6 +378,23 @@ message BroadCastGranaryUpdateResponse{
 message BroadCastUpGranaryItemResponse{
   ItemBaseInfo    items = 1;
 }
+ 
+// 天赋树相关
+message UpgradeTalentNodeRequest{
+  TalentType      type = 1;
+  int32           nodeId = 2;
+}  
+message UpgradeTalentNodeResponse{} 
+message QueryTalentExpRequest{}        
+message QueryTalentExpResponse{
+   repeated TalentExp      expData = 1;
+} 
+message BroadCastUpTalentExpResponse{
+   repeated TalentExp      updateExps = 1;
+} 
+
+
+
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -567,6 +594,7 @@ message BroadCastChangeServiceResponse{
   SceneServiceSubType serSubType = 2;
   int64               serOwner   = 3;  
 }
+
 message HomeResourceOperateRequest
 {
   repeated CollectResourceOperateInfo operateInfoList = 1;
@@ -575,6 +603,19 @@ message HomeResourceOperateResponse
 {
   repeated CollectResourceOperateResult operateResultList = 1;
 }
+
+
+message QueryTalentTreeRequest{}        
+message QueryTalentTreeResponse{
+  repeated TalentLevel    levelData = 1;
+  repeated TalentTree     tree = 2;
+}      
+message BroadCastTalentTreeUpdateResponse{
+  repeated TalentLevel      levelData = 1;
+  repeated TalentTreeUpdate upTrees = 2;
+}      
+
+
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

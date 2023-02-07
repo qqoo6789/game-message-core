@@ -29,422 +29,448 @@ namespace GameMessageCore {
             "LnByb3RvGgppdGVtLnByb3RvGg9pdGVtX3Nsb3QucHJvdG8aDGVudGl0eS5w",
             "cm90bxoTZW50aXR5UHJvZmlsZS5wcm90bxoLc2tpbGwucHJvdG8aCnRhc2su",
             "cHJvdG8aCmNoYXQucHJvdG8aDHZlY3Rvci5wcm90bxoKbGFuZC5wcm90bxoN",
-            "c2VydmljZS5wcm90bxoKaG9tZS5wcm90byLdSQoIRW52ZWxvcGUSKwoEdHlw",
-            "ZRgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5FbnZlbG9wZVR5cGUSDgoGc2Vx",
-            "X2lkGAIgASgFEhIKCmVycm9yX2NvZGUYAyABKAUSFQoNZXJyb3JfbWVzc2Fn",
-            "ZRgEIAEoCRJTChxicm9hZF9jYXN0X3RpY2tfb3V0X3Jlc3BvbnNlGJmzAiAB",
-            "KAsyKS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0VGlja091dFJlc3BvbnNl",
-            "SAASPQoQaXRlbV9nZXRfcmVxdWVzdBiBgAQgASgLMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkl0ZW1HZXRSZXF1ZXN0SAASPwoRaXRlbV9nZXRfcmVzcG9uc2UYgoAE",
-            "IAEoCzIgLmdhbWVNZXNzYWdlQ29yZS5JdGVtR2V0UmVzcG9uc2VIABI9ChBp",
-            "dGVtX3VzZV9yZXF1ZXN0GIOABCABKAsyHy5nYW1lTWVzc2FnZUNvcmUuSXRl",
-            "bVVzZVJlcXVlc3RIABI/ChFpdGVtX3VzZV9yZXNwb25zZRiEgAQgASgLMiAu",
-            "Z2FtZU1lc3NhZ2VDb3JlLkl0ZW1Vc2VSZXNwb25zZUgAEj8KEWl0ZW1fZHJv",
-            "cF9yZXF1ZXN0GIWABCABKAsyIC5nYW1lTWVzc2FnZUNvcmUuSXRlbURyb3BS",
-            "ZXF1ZXN0SAASQQoSaXRlbV9kcm9wX3Jlc3BvbnNlGIaABCABKAsyIS5nYW1l",
-            "TWVzc2FnZUNvcmUuSXRlbURyb3BSZXNwb25zZUgAEkcKFXVwZGF0ZV9hdmF0",
-            "YXJfcmVxdWVzdBiHgAQgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlVwZGF0ZUF2",
-            "YXRhclJlcXVlc3RIABJJChZ1cGRhdGVfYXZhdGFyX3Jlc3BvbnNlGIiABCAB",
-            "KAsyJS5nYW1lTWVzc2FnZUNvcmUuVXBkYXRlQXZhdGFyUmVzcG9uc2VIABJH",
-            "ChV1bmxvYWRfYXZhdGFyX3JlcXVlc3QYiYAEIAEoCzIkLmdhbWVNZXNzYWdl",
-            "Q29yZS5VbmxvYWRBdmF0YXJSZXF1ZXN0SAASSQoWdW5sb2FkX2F2YXRhcl9y",
-            "ZXNwb25zZRiQgAQgASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLlVubG9hZEF2YXRh",
-            "clJlc3BvbnNlSAASUwocYnJvYWRfY2FzdF9pdGVtX2FkZF9yZXNwb25zZRiR",
-            "gAQgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEl0ZW1BZGRSZXNw",
-            "b25zZUgAElkKH2Jyb2FkX2Nhc3RfaXRlbV91cGRhdGVfcmVzcG9uc2UYkoAE",
-            "IAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJdGVtVXBkYXRlUmVz",
-            "cG9uc2VIABJTChxicm9hZF9jYXN0X2l0ZW1fZGVsX3Jlc3BvbnNlGJOABCAB",
-            "KAsyKS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0SXRlbURlbFJlc3BvbnNl",
-            "SAASYgokYnJvYWRfY2FzdF91cGRhdGVfaXRlbV9zbG90X3Jlc3BvbnNlGJSA",
-            "BCABKAsyMC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0VXBkYXRlSXRlbVNs",
-            "b3RSZXNwb25zZUgAEkYKFWdldF9pdGVtX3Nsb3RfcmVxdWVzdBiVgAQgASgL",
-            "MiMuZ2FtZU1lc3NhZ2VDb3JlLkdldEl0ZW1TbG90UmVxdWVzdEgAEkgKFmdl",
-            "dF9pdGVtX3Nsb3RfcmVzcG9uc2UYloAEIAEoCzIkLmdhbWVNZXNzYWdlQ29y",
-            "ZS5HZXRJdGVtU2xvdFJlc3BvbnNlSAASTgoZdXBncmFkZV9pdGVtX3Nsb3Rf",
-            "cmVxdWVzdBiXgAQgASgLMicuZ2FtZU1lc3NhZ2VDb3JlLlVwZ3JhZGVJdGVt",
-            "U2xvdFJlcXVlc3RIABJQChp1cGdyYWRlX2l0ZW1fc2xvdF9yZXNwb25zZRiY",
-            "gAQgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlVwZ3JhZGVJdGVtU2xvdFJlc3Bv",
-            "bnNlSAASRwoVc2lnbmluX3BsYXllcl9yZXF1ZXN0GJmABCABKAsyJC5nYW1l",
-            "TWVzc2FnZUNvcmUuU2lnbmluUGxheWVyUmVxdWVzdEgAEkkKFnNpZ25pbl9w",
-            "bGF5ZXJfcmVzcG9uc2UYoIAEIAEoCzIlLmdhbWVNZXNzYWdlQ29yZS5TaWdu",
-            "aW5QbGF5ZXJSZXNwb25zZUgAEkoKF3NpZ25fb3V0X3BsYXllcl9yZXF1ZXN0",
-            "GKGABCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuU2lnbk91dFBsYXllclJlcXVl",
-            "c3RIABJMChhzaWduX291dF9wbGF5ZXJfcmVzcG9uc2UYooAEIAEoCzImLmdh",
-            "bWVNZXNzYWdlQ29yZS5TaWduT3V0UGxheWVyUmVzcG9uc2VIABJUChx1cGdy",
-            "YWRlX3BsYXllcl9sZXZlbF9yZXF1ZXN0GKOABCABKAsyKi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVXBncmFkZVBsYXllckxldmVsUmVxdWVzdEgAElYKHXVwZ3JhZGVf",
-            "cGxheWVyX2xldmVsX3Jlc3BvbnNlGKSABCABKAsyKy5nYW1lTWVzc2FnZUNv",
-            "cmUuVXBncmFkZVBsYXllckxldmVsUmVzcG9uc2VIABJDChNxdWVyeV9sYW5k",
-            "c19yZXF1ZXN0GKWABCABKAsyIi5nYW1lTWVzc2FnZUNvcmUuUXVlcnlMYW5k",
-            "c1JlcXVlc3RIABJFChRxdWVyeV9sYW5kc19yZXNwb25zZRimgAQgASgLMiMu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5TGFuZHNSZXNwb25zZUgAElUKHWJyb2Fk",
-            "X2Nhc3RfaW5pdF9sYW5kX3Jlc3BvbnNlGKeABCABKAsyKi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQnJvYWRDYXN0SW5pdExhbmRSZXNwb25zZUgAElUKHWJyb2FkX2Nh",
-            "c3RfaW5pdF9pdGVtX3Jlc3BvbnNlGKmABCABKAsyKi5nYW1lTWVzc2FnZUNv",
-            "cmUuQnJvYWRDYXN0SW5pdEl0ZW1SZXNwb25zZUgAEjgKDWJ1aWxkX3JlcXVl",
-            "c3QYsYAEIAEoCzIdLmdhbWVNZXNzYWdlQ29yZS5CdWlsZFJlcXVlc3RIABI6",
-            "Cg5idWlsZF9yZXNwb25zZRiygAQgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLkJ1",
-            "aWxkUmVzcG9uc2VIABJAChFyZWN5Y2xpbmdfcmVxdWVzdBizgAQgASgLMiEu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlJlY3ljbGluZ1JlcXVlc3RIABJCChJyZWN5Y2xp",
-            "bmdfcmVzcG9uc2UYtIAEIAEoCzIiLmdhbWVNZXNzYWdlQ29yZS5SZWN5Y2xp",
-            "bmdSZXNwb25zZUgAEjwKD2NoYXJnZWRfcmVxdWVzdBi1gAQgASgLMh8uZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkNoYXJnZWRSZXF1ZXN0SAASPgoQY2hhcmdlZF9yZXNw",
-            "b25zZRi2gAQgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLkNoYXJnZWRSZXNwb25z",
-            "ZUgAEjwKD2hhcnZlc3RfcmVxdWVzdBi3gAQgASgLMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkhhcnZlc3RSZXF1ZXN0SAASPgoQaGFydmVzdF9yZXNwb25zZRi4gAQg",
-            "ASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLkhhcnZlc3RSZXNwb25zZUgAEkIKEmNv",
-            "bGxlY3Rpb25fcmVxdWVzdBi5gAQgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLkNv",
-            "bGxlY3Rpb25SZXF1ZXN0SAASRAoTY29sbGVjdGlvbl9yZXNwb25zZRjAgAQg",
-            "ASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3Rpb25SZXNwb25zZUgAElwK",
-            "IWJyb2FkX2Nhc3RfbXVsdGlfdXBfbGFuZF9yZXNwb25zZRjBgAQgASgLMi0u",
-            "Z2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdE11bHRpVXBMYW5kUmVzcG9uc2VI",
-            "ABJKChdzZWxmX25mdF9idWlsZHNfcmVxdWVzdBjDgAQgASgLMiUuZ2FtZU1l",
-            "c3NhZ2VDb3JlLlNlbGZOZnRCdWlsZHNSZXF1ZXN0SAASTAoYc2VsZl9uZnRf",
-            "YnVpbGRzX3Jlc3BvbnNlGMSABCABKAsyJi5nYW1lTWVzc2FnZUNvcmUuU2Vs",
-            "Zk5mdEJ1aWxkc1Jlc3BvbnNlSAASZAolYnJvYWRfY2FzdF9zZWxmX2J1aWxk",
-            "X3VwZGF0ZV9yZXNwb25zZRjFgAQgASgLMjEuZ2FtZU1lc3NhZ2VDb3JlLkJy",
-            "b2FkQ2FzdFNlbGZCdWlsZFVwZGF0ZVJlc3BvbnNlSAASagooYnJvYWRfY2Fz",
-            "dF9zZWxmX2J1aWxkX3JlY3ljbGluZ19yZXNwb25zZRjHgAQgASgLMjQuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFNlbGZCdWlsZFJlY3ljbGluZ1Jlc3Bv",
-            "bnNlSAASRQoUbWludF9iYXR0ZXJ5X3JlcXVlc3QYyYAEIAEoCzIjLmdhbWVN",
-            "ZXNzYWdlQ29yZS5NaW50QmF0dGVyeVJlcXVlc3RIABJHChVtaW50X2JhdHRl",
-            "cnlfcmVzcG9uc2UY0IAEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5NaW50QmF0",
-            "dGVyeVJlc3BvbnNlSAASRwoVcXVlcnlfZ3JhbmFyeV9yZXF1ZXN0GNGABCAB",
-            "KAsyJC5nYW1lTWVzc2FnZUNvcmUuUXVlcnlHcmFuYXJ5UmVxdWVzdEgAEkkK",
-            "FnF1ZXJ5X2dyYW5hcnlfcmVzcG9uc2UY0oAEIAEoCzIlLmdhbWVNZXNzYWdl",
-            "Q29yZS5RdWVyeUdyYW5hcnlSZXNwb25zZUgAEksKF2dyYW5hcnlfY29sbGVj",
-            "dF9yZXF1ZXN0GNOABCABKAsyJi5nYW1lTWVzc2FnZUNvcmUuR3JhbmFyeUNv",
-            "bGxlY3RSZXF1ZXN0SAASTQoYZ3JhbmFyeV9jb2xsZWN0X3Jlc3BvbnNlGNSA",
-            "BCABKAsyJy5nYW1lTWVzc2FnZUNvcmUuR3JhbmFyeUNvbGxlY3RSZXNwb25z",
-            "ZUgAEl8KImJyb2FkX2Nhc3RfZ3JhbmFyeV91cGRhdGVfcmVzcG9uc2UY1YAE",
-            "IAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RHcmFuYXJ5VXBkYXRl",
-            "UmVzcG9uc2VIABJgCiNicm9hZF9jYXN0X3VwX2dyYW5hcnlfaXRlbV9yZXNw",
-            "b25zZRjXgAQgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFVwR3Jh",
-            "bmFyeUl0ZW1SZXNwb25zZUgAEkUKFHF1ZXJ5X3BsYXllcl9yZXF1ZXN0GIGA",
-            "CCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuUXVlcnlQbGF5ZXJSZXF1ZXN0SAAS",
-            "RwoVcXVlcnlfcGxheWVyX3Jlc3BvbnNlGIKACCABKAsyJC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuUXVlcnlQbGF5ZXJSZXNwb25zZUgAEkcKFWNyZWF0ZV9wbGF5ZXJf",
-            "cmVxdWVzdBiDgAggASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLkNyZWF0ZVBsYXll",
-            "clJlcXVlc3RIABJJChZjcmVhdGVfcGxheWVyX3Jlc3BvbnNlGISACCABKAsy",
-            "JS5nYW1lTWVzc2FnZUNvcmUuQ3JlYXRlUGxheWVyUmVzcG9uc2VIABI/ChFl",
-            "bnRlcl9tYXBfcmVxdWVzdBiBgAwgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLkVu",
-            "dGVyTWFwUmVxdWVzdEgAEkEKEmVudGVyX21hcF9yZXNwb25zZRiCgAwgASgL",
-            "MiEuZ2FtZU1lc3NhZ2VDb3JlLkVudGVyTWFwUmVzcG9uc2VIABJUChx1cGRh",
-            "dGVfc2VsZl9sb2NhdGlvbl9yZXF1ZXN0GIOADCABKAsyKi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVXBkYXRlU2VsZkxvY2F0aW9uUmVxdWVzdEgAElYKHXVwZGF0ZV9z",
-            "ZWxmX2xvY2F0aW9uX3Jlc3BvbnNlGISADCABKAsyKy5nYW1lTWVzc2FnZUNv",
-            "cmUuVXBkYXRlU2VsZkxvY2F0aW9uUmVzcG9uc2VIABI/ChF1c2Vfc2tpbGxf",
-            "cmVxdWVzdBiFgAwgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLlVzZVNraWxsUmVx",
-            "dWVzdEgAEkEKEnVzZV9za2lsbF9yZXNwb25zZRiGgAwgASgLMiEuZ2FtZU1l",
-            "c3NhZ2VDb3JlLlVzZVNraWxsUmVzcG9uc2VIABJJChZyZXNwYXduX3BsYXll",
-            "cl9yZXF1ZXN0GImADCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuUmVzcGF3blBs",
-            "YXllclJlcXVlc3RIABJLChdyZXNwYXduX3BsYXllcl9yZXNwb25zZRiQgAwg",
-            "ASgLMiYuZ2FtZU1lc3NhZ2VDb3JlLlJlc3Bhd25QbGF5ZXJSZXNwb25zZUgA",
-            "EmIKJGJyb2FkX2Nhc3RfaW5pdF9tYXBfZWxlbWVudF9yZXNwb25zZRiRgAwg",
-            "ASgLMjAuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEluaXRNYXBFbGVtZW50",
-            "UmVzcG9uc2VIABJkCiVicm9hZF9jYXN0X21hcF9lbnRpdHlfdXBkYXRlX3Jl",
-            "c3BvbnNlGJKADCABKAsyMS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0TWFw",
-            "RW50aXR5VXBkYXRlUmVzcG9uc2VIABJfCiJicm9hZF9jYXN0X2VudGl0eV9k",
-            "ZXN0cm95X3Jlc3BvbnNlGJOADCABKAsyLy5nYW1lTWVzc2FnZUNvcmUuQnJv",
-            "YWRDYXN0RW50aXR5RGVzdHJveVJlc3BvbnNlSAASWQofYnJvYWRfY2FzdF9l",
-            "bnRpdHlfbW92ZV9yZXNwb25zZRiUgAwgASgLMiwuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkJyb2FkQ2FzdEVudGl0eU1vdmVSZXNwb25zZUgAEl0KIWJyb2FkX2Nhc3Rf",
-            "ZW50aXR5X2NvbWJhdF9yZXNwb25zZRiVgAwgASgLMi4uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlSAASXwoiYnJvYWRf",
-            "Y2FzdF9yZXNwYXduX3BsYXllcl9yZXNwb25zZRiWgAwgASgLMi8uZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXJSZXNwb25zZUgAEj4K",
-            "EHRlbGVwb3J0X3JlcXVlc3QYl4AMIAEoCzIgLmdhbWVNZXNzYWdlQ29yZS5U",
-            "ZWxlcG9ydFJlcXVlc3RIABJAChF0ZWxlcG9ydF9yZXNwb25zZRiYgAwgASgL",
-            "MiEuZ2FtZU1lc3NhZ2VDb3JlLlRlbGVwb3J0UmVzcG9uc2VIABJsCilicm9h",
-            "ZF9jYXN0X2VudGl0eV9wcm9maWxlX3VwZGF0ZV9yZXNwb25zZRiZgAwgASgL",
-            "MjUuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRh",
-            "dGVSZXNwb25zZUgAEl0KIWJyb2FkX2Nhc3RfbW9uc3Rlcl9kZWF0aF9yZXNw",
-            "b25zZRihgAwgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdE1vbnN0",
-            "ZXJEZWF0aFJlc3BvbnNlSAASagooYnJvYWRfY2FzdF9lbnRpdHlfYXZhdGFy",
-            "X3VwZGF0ZV9yZXNwb25zZRiigAwgASgLMjQuZ2FtZU1lc3NhZ2VDb3JlLkJy",
-            "b2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0ZVJlc3BvbnNlSAAScwotYnJvYWRf",
-            "Y2FzdF9lbnRpdHlfYmF0dGxlX2RhdGFfdXBkYXRlX3Jlc3BvbnNlGKOADCAB",
-            "KAsyOC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0",
-            "YVVwZGF0ZVJlc3BvbnNlSAAScQosYnJvYWRfY2FzdF9lbnRpdHlfYnVpbGRf",
-            "ZGF0YV91cGRhdGVfcmVzcG9uc2UYpYAMIAEoCzI3LmdhbWVNZXNzYWdlQ29y",
-            "ZS5Ccm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRhdGVSZXNwb25zZUgAElYK",
-            "HXBsYXllcl9hY3Rpb25fY29sbGVjdF9yZXF1ZXN0GKeADCABKAsyKy5nYW1l",
-            "TWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ29sbGVjdFJlcXVlc3RIABJYCh5w",
-            "bGF5ZXJfYWN0aW9uX2NvbGxlY3RfcmVzcG9uc2UYqYAMIAEoCzIsLmdhbWVN",
-            "ZXNzYWdlQ29yZS5QbGF5ZXJBY3Rpb25Db2xsZWN0UmVzcG9uc2VIABJsCili",
-            "cm9hZF9jYXN0X3BsYXllcl9hY3Rpb25fY29sbGVjdF9yZXNwb25zZRixgAwg",
-            "ASgLMjUuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFBsYXllckFjdGlvbkNv",
-            "bGxlY3RSZXNwb25zZUgAEk8KGXNjZW5lX2Rlc3RydWN0aW9uX3JlcXVlc3QY",
-            "s4AMIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5TY2VuZURlc3RydWN0aW9uUmVx",
-            "dWVzdEgAElEKGnNjZW5lX2Rlc3RydWN0aW9uX3Jlc3BvbnNlGLSADCABKAsy",
-            "KS5nYW1lTWVzc2FnZUNvcmUuU2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlSAAS",
-            "ZQolYnJvYWRfY2FzdF9zY2VuZV9kZXN0cnVjdGlvbl9yZXNwb25zZRi1gAwg",
-            "ASgLMjIuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFNjZW5lRGVzdHJ1Y3Rp",
-            "b25SZXNwb25zZUgAElAKGnBsYXllcl9hY3Rpb25fY2hhdF9yZXF1ZXN0GLeA",
-            "DCABKAsyKC5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ2hhdFJlcXVl",
-            "c3RIABJSChtwbGF5ZXJfYWN0aW9uX2NoYXRfcmVzcG9uc2UYuIAMIAEoCzIp",
-            "LmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBY3Rpb25DaGF0UmVzcG9uc2VIABJm",
-            "CiZicm9hZF9jYXN0X3BsYXllcl9hY3Rpb25fY2hhdF9yZXNwb25zZRi5gAwg",
-            "ASgLMjIuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFBsYXllckFjdGlvbkNo",
-            "YXRSZXNwb25zZUgAEkYKFWdldF9ob21lX2RhdGFfcmVxdWVzdBjBgAwgASgL",
-            "MiMuZ2FtZU1lc3NhZ2VDb3JlLkdldEhvbWVEYXRhUmVxdWVzdEgAEkgKFmdl",
-            "dF9ob21lX2RhdGFfcmVzcG9uc2UYwoAMIAEoCzIkLmdhbWVNZXNzYWdlQ29y",
-            "ZS5HZXRIb21lRGF0YVJlc3BvbnNlSAASTgoZcXVlcnlfU2VydmVyX3RpbWVf",
-            "cmVxdWVzdBjDgAwgASgLMicuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5U2VydmVy",
-            "VGltZVJlcXVlc3RIABJQChpxdWVyeV9TZXJ2ZXJfdGltZV9yZXNwb25zZRjE",
-            "gAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5U2VydmVyVGltZVJlc3Bv",
-            "bnNlSAASXwoiYnJvYWRfY2FzdF9jaGFuZ2Vfc2VydmljZV9yZXNwb25zZRjF",
-            "gAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdENoYW5nZVNlcnZp",
-            "Y2VSZXNwb25zZUgAElYKHWhvbWVfcmVzb3VyY2Vfb3BlcmF0ZV9yZXF1ZXN0",
-            "GMeADCABKAsyKy5nYW1lTWVzc2FnZUNvcmUuSG9tZVJlc291cmNlT3BlcmF0",
-            "ZVJlcXVlc3RIABJYCh5ob21lX3Jlc291cmNlX29wZXJhdGVfcmVzcG9uc2UY",
-            "yIAMIAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5Ib21lUmVzb3VyY2VPcGVyYXRl",
-            "UmVzcG9uc2VIABJpCihicm9hZF9jYXN0X2hvbWVfZGF0YV9pbml0X2JhdGNo",
-            "X3Jlc3BvbnNlGMmADCABKAsyMy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0",
-            "SG9tZURhdGFJbml0QmF0Y2hSZXNwb25zZUgAEkEKEnNlbGZfdGFza3NfcmVx",
-            "dWVzdBiBgBAgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlNlbGZUYXNrc1JlcXVl",
-            "c3RIABJDChNzZWxmX3Rhc2tzX3Jlc3BvbnNlGIKAECABKAsyIi5nYW1lTWVz",
-            "c2FnZUNvcmUuU2VsZlRhc2tzUmVzcG9uc2VIABJiCiRicm9hZF9jYXN0X3Vw",
-            "ZGF0ZV90YXNrX2xpc3RfcmVzcG9uc2UYg4AQIAEoCzIwLmdhbWVNZXNzYWdl",
-            "Q29yZS5Ccm9hZENhc3RVcGRhdGVUYXNrTGlzdFJlc3BvbnNlSAASQwoTYWNj",
-            "ZXB0X3Rhc2tfcmVxdWVzdBiEgBAgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLkFj",
-            "Y2VwdFRhc2tSZXF1ZXN0SAASRQoUYWNjZXB0X3Rhc2tfcmVzcG9uc2UYhYAQ",
-            "IAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5BY2NlcHRUYXNrUmVzcG9uc2VIABJN",
-            "ChhhYmFuZG9ubWVudF90YXNrX3JlcXVlc3QYhoAQIAEoCzInLmdhbWVNZXNz",
-            "YWdlQ29yZS5BYmFuZG9ubWVudFRhc2tSZXF1ZXN0SAASTwoZYWJhbmRvbm1l",
-            "bnRfdGFza19yZXNwb25zZRiHgBAgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLkFi",
-            "YW5kb25tZW50VGFza1Jlc3BvbnNlSAASQwoTdGFza19yZXdhcmRfcmVxdWVz",
-            "dBiIgBAgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tSZXdhcmRSZXF1ZXN0",
-            "SAASRQoUdGFza19yZXdhcmRfcmVzcG9uc2UYiYAQIAEoCzIjLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrUmV3YXJkUmVzcG9uc2VIABJMChh0YXNrX2xpc3RfcmV3",
-            "YXJkX3JlcXVlc3QYkIAQIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlz",
-            "dFJld2FyZFJlcXVlc3RIABJOChl0YXNrX2xpc3RfcmV3YXJkX3Jlc3BvbnNl",
-            "GJGAECABKAsyJy5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RSZXdhcmRSZXNw",
-            "b25zZUgAElYKHXVwZ3JhZGVfdGFza19wcm9ncmVzc19yZXF1ZXN0GJKAECAB",
-            "KAsyKy5nYW1lTWVzc2FnZUNvcmUuVXBncmFkZVRhc2tQcm9ncmVzc1JlcXVl",
-            "c3RIABJYCh51cGdyYWRlX3Rhc2tfcHJvZ3Jlc3NfcmVzcG9uc2UYk4AQIAEo",
-            "CzIsLmdhbWVNZXNzYWdlQ29yZS5VcGdyYWRlVGFza1Byb2dyZXNzUmVzcG9u",
-            "c2VIABJZCh9icm9hZF9jYXN0X3Rhc2tfcmV3YXJkX3Jlc3BvbnNlGJSAECAB",
-            "KAsyLC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0VGFza1Jld2FyZFJlc3Bv",
-            "bnNlSAASTwoZc2VuZF9jaGF0X21lc3NhZ2VfcmVxdWVzdBiBgMQCIAEoCzIn",
-            "LmdhbWVNZXNzYWdlQ29yZS5TZW5kQ2hhdE1lc3NhZ2VSZXF1ZXN0SAASUQoa",
-            "c2VuZF9jaGF0X21lc3NhZ2VfcmVzcG9uc2UYgoDEAiABKAsyKC5nYW1lTWVz",
-            "c2FnZUNvcmUuU2VuZENoYXRNZXNzYWdlUmVzcG9uc2VIABJeCiFicm9hZF9j",
-            "YXN0X2NoYXRfbWVzc2FnZXNfcmVzcG9uc2UYg4DEAiABKAsyLi5nYW1lTWVz",
-            "c2FnZUNvcmUuQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9uc2VIABJpCidi",
-            "cm9hZF9jYXN0X3JlbW92ZV9jaGF0X21lc3NhZ2VfcmVzcG9uc2UYhIDEAiAB",
-            "KAsyMy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3Nh",
-            "Z2VSZXNwb25zZUgAEmUKJWJyb2FkX2Nhc3RfdXBkYXRlX2NoYXRfc3RhdGVf",
-            "cmVzcG9uc2UYhYDEAiABKAsyMS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0",
-            "VXBkYXRlQ2hhdFN0YXRlUmVzcG9uc2VIABI2CgxwaW5nX3JlcXVlc3QYgYAY",
-            "IAEoCzIcLmdhbWVNZXNzYWdlQ29yZS5QaW5nUmVxdWVzdEgAEjgKDXBpbmdf",
-            "cmVzcG9uc2UYgoAYIAEoCzIdLmdhbWVNZXNzYWdlQ29yZS5QaW5nUmVzcG9u",
-            "c2VIAEIJCgdwYXlsb2FkIkYKGEJyb2FkQ2FzdFRpY2tPdXRSZXNwb25zZRIq",
-            "CgRraW5kGAEgASgOMhwuZ2FtZU1lc3NhZ2VDb3JlLlRpY2tPdXRUeXBlIhAK",
-            "Dkl0ZW1HZXRSZXF1ZXN0IhEKD0l0ZW1HZXRSZXNwb25zZSJBChlCcm9hZENh",
-            "c3RJbml0SXRlbVJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkl0ZW0iLgoOSXRlbVVzZVJlcXVlc3QSDgoGaXRlbUlkGAEgASgJ",
-            "EgwKBGFyZ3MYAiABKAkiEQoPSXRlbVVzZVJlc3BvbnNlIi8KD0l0ZW1Ecm9w",
-            "UmVxdWVzdBIPCgdpdGVtX2lkGAEgASgJEgsKA251bRgCIAEoBSISChBJdGVt",
-            "RHJvcFJlc3BvbnNlIjsKE1VwZGF0ZUF2YXRhclJlcXVlc3QSDgoGaXRlbUlk",
-            "GAEgASgJEhQKDGlzQXBwZWFyYW5jZRgCIAEoCCIWChRVcGRhdGVBdmF0YXJS",
-            "ZXNwb25zZSImChNVbmxvYWRBdmF0YXJSZXF1ZXN0Eg8KB2l0ZW1faWQYASAB",
-            "KAkiFgoUVW5sb2FkQXZhdGFyUmVzcG9uc2UiQAoYQnJvYWRDYXN0SXRlbUFk",
-            "ZFJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1lc3NhZ2VDb3JlLkl0",
-            "ZW0iQwobQnJvYWRDYXN0SXRlbVVwZGF0ZVJlc3BvbnNlEiQKBWl0ZW1zGAEg",
-            "AygLMhUuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW0iQAoYQnJvYWRDYXN0SXRlbURl",
-            "bFJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1lc3NhZ2VDb3JlLkl0",
-            "ZW0iSwofQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3RSZXNwb25zZRIoCgVzbG90",
-            "cxgBIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5JdGVtU2xvdCIUChJHZXRJdGVt",
-            "U2xvdFJlcXVlc3QiPwoTR2V0SXRlbVNsb3RSZXNwb25zZRIoCgVzbG90cxgB",
-            "IAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5JdGVtU2xvdCJLChZVcGdyYWRlSXRl",
-            "bVNsb3RSZXF1ZXN0EjEKCHBvc2l0aW9uGAEgASgOMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkF2YXRhclBvc2l0aW9uIkMKF1VwZ3JhZGVJdGVtU2xvdFJlc3BvbnNl",
-            "EigKBXNsb3RzGAEgAygLMhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1TbG90ItYB",
-            "ChNTaWduaW5QbGF5ZXJSZXF1ZXN0Eg8KB3VzZXJfaWQYASABKAMSDQoFdG9r",
-            "ZW4YAiABKAkSEwoLY2xpZW50X3RpbWUYAyABKAMSEQoJcmVjb25uZWN0GAQg",
-            "ASgIEigKB29zX3R5cGUYBSABKA4yFy5nYW1lTWVzc2FnZUNvcmUuT1NUeXBl",
-            "Ei8KCHBsYXRmb3JtGAYgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXRmb3Jt",
-            "VHlwZRIcChRzY2VuZV9zZXJ2aWNlX2FwcF9pZBgHIAEoCSKgAQoUU2lnbmlu",
-            "UGxheWVyUmVzcG9uc2USJwoGcGxheWVyGAEgASgLMhcuZ2FtZU1lc3NhZ2VD",
-            "b3JlLlBsYXllchITCgtzZXJ2ZXJfdGltZRgCIAEoAxITCgtjbGllbnRfdGlt",
-            "ZRgDIAEoAxIcChRzY2VuZV9zZXJ2aWNlX2FwcF9pZBgEIAEoCRIXCg9sYXN0",
-            "X2xvZ2luX3RpbWUYBSABKAMiFgoUU2lnbk91dFBsYXllclJlcXVlc3QiFwoV",
-            "U2lnbk91dFBsYXllclJlc3BvbnNlIowBCiRCcm9hZENhc3RFbnRpdHlQcm9m",
-            "aWxlVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhkuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkVudGl0eUlkEjYKCHByb2ZpbGVzGAIgAygLMiQuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkVudGl0eVByb2ZpbGVVcGRhdGUivAEKHUJyb2FkQ2FzdE1v",
-            "bnN0ZXJEZWF0aFJlc3BvbnNlEg4KBm1hcF9pZBgBIAEoBRIRCglraWxsZXJf",
-            "aWQYAiABKAMSEgoKbW9uc3Rlcl9pZBgDIAEoAxILCgNjaWQYBCABKAUSJQoD",
-            "cG9zGAUgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSMAoJZHJvcF9s",
-            "aXN0GAYgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbyJrCidC",
-            "cm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRlUmVzcG9uc2USLAoJZW50",
-            "aXR5X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhIKCmlz",
-            "SW5CYXR0bGUYAiABKAgiGwoZVXBncmFkZVBsYXllckxldmVsUmVxdWVzdCJA",
-            "ChpVcGdyYWRlUGxheWVyTGV2ZWxSZXNwb25zZRIRCgljdXJfbGV2ZWwYASAB",
-            "KAUSDwoHY3VyX2V4cBgCIAEoAyITChFRdWVyeUxhbmRzUmVxdWVzdCIUChJR",
-            "dWVyeUxhbmRzUmVzcG9uc2UiRQoZQnJvYWRDYXN0SW5pdExhbmRSZXNwb25z",
-            "ZRIoCgVsYW5kcxgBIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5MYW5kRGF0YSJa",
-            "CgxCdWlsZFJlcXVlc3QSDQoFbmZ0SWQYASABKAkSKgoIcG9zaXRpb24YAiAB",
-            "KAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIPCgdsYW5kSWRzGAMgAygF",
-            "IjkKDUJ1aWxkUmVzcG9uc2USKAoFYnVpbGQYASABKAsyGS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuTmZ0QnVpbGQiMgoQUmVjeWNsaW5nUmVxdWVzdBIPCgdidWlsZElk",
-            "GAEgASgDEg0KBW5mdElkGAIgASgJIhMKEVJlY3ljbGluZ1Jlc3BvbnNlIj0K",
-            "DkNoYXJnZWRSZXF1ZXN0Eg8KB2J1aWxkSWQYASABKAMSDQoFbmZ0SWQYAiAB",
-            "KAkSCwoDbnVtGAMgASgFIhEKD0NoYXJnZWRSZXNwb25zZSIwCg5IYXJ2ZXN0",
-            "UmVxdWVzdBIPCgdidWlsZElkGAEgASgDEg0KBW5mdElkGAIgASgJIhEKD0hh",
-            "cnZlc3RSZXNwb25zZSIzChFDb2xsZWN0aW9uUmVxdWVzdBIPCgdidWlsZElk",
-            "GAEgASgDEg0KBW5mdElkGAIgASgJIhQKEkNvbGxlY3Rpb25SZXNwb25zZSJI",
-            "ChxCcm9hZENhc3RNdWx0aVVwTGFuZFJlc3BvbnNlEigKBWxhbmRzGAEgAygL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLkxhbmREYXRhIhYKFFNlbGZOZnRCdWlsZHNS",
-            "ZXF1ZXN0IkIKFVNlbGZOZnRCdWlsZHNSZXNwb25zZRIpCgZidWlsZHMYASAD",
-            "KAsyGS5nYW1lTWVzc2FnZUNvcmUuTmZ0QnVpbGQiTAogQnJvYWRDYXN0U2Vs",
-            "ZkJ1aWxkVXBkYXRlUmVzcG9uc2USKAoFYnVpbGQYASABKAsyGS5nYW1lTWVz",
-            "c2FnZUNvcmUuTmZ0QnVpbGQiVgojQnJvYWRDYXN0U2VsZkJ1aWxkUmVjeWNs",
-            "aW5nUmVzcG9uc2USDwoHYnVpbGRJZBgBIAEoAxIPCgdmcm9tTmZ0GAIgASgJ",
-            "Eg0KBW93bmVyGAMgASgDIjYKEk1pbnRCYXR0ZXJ5UmVxdWVzdBIPCgdtaW50",
-            "TnVtGAEgASgFEg8KB2dpZnROdW0YAiABKAUiFQoTTWludEJhdHRlcnlSZXNw",
-            "b25zZSIVChNRdWVyeUdyYW5hcnlSZXF1ZXN0IkQKFFF1ZXJ5R3JhbmFyeVJl",
-            "c3BvbnNlEiwKBWl0ZW1zGAEgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1C",
-            "YXNlSW5mbyIXChVHcmFuYXJ5Q29sbGVjdFJlcXVlc3QiRgoWR3JhbmFyeUNv",
-            "bGxlY3RSZXNwb25zZRIsCgVpdGVtcxgBIAMoCzIdLmdhbWVNZXNzYWdlQ29y",
-            "ZS5JdGVtQmFzZUluZm8iTgoeQnJvYWRDYXN0R3JhbmFyeVVwZGF0ZVJlc3Bv",
-            "bnNlEiwKBWl0ZW1zGAEgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNl",
-            "SW5mbyJOCh5Ccm9hZENhc3RVcEdyYW5hcnlJdGVtUmVzcG9uc2USLAoFaXRl",
-            "bXMYASABKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvIiMKElF1",
-            "ZXJ5UGxheWVyUmVxdWVzdBINCgV0b2tlbhgBIAEoCSJGChNRdWVyeVBsYXll",
-            "clJlc3BvbnNlEi8KBnBsYXllchgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5Q",
-            "bGF5ZXJCYXNlRGF0YSLyAQoTQ3JlYXRlUGxheWVyUmVxdWVzdBINCgV0b2tl",
-            "bhgBIAEoCRIRCgluaWNrX25hbWUYAiABKAkSDwoHcm9sZV9pZBgDIAEoBRIO",
-            "CgZnZW5kZXIYBCABKAkSDAoEaWNvbhgFIAEoCRIvCgdmZWF0dXJlGAYgASgL",
-            "Mh4uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckZlYXR1cmUSKAoHb3NfdHlwZRgH",
-            "IAEoDjIXLmdhbWVNZXNzYWdlQ29yZS5PU1R5cGUSLwoIcGxhdGZvcm0YCCAB",
-            "KA4yHS5nYW1lTWVzc2FnZUNvcmUuUGxhdGZvcm1UeXBlIkcKFENyZWF0ZVBs",
-            "YXllclJlc3BvbnNlEi8KBnBsYXllchgBIAEoCzIfLmdhbWVNZXNzYWdlQ29y",
-            "ZS5QbGF5ZXJCYXNlRGF0YSIRCg9FbnRlck1hcFJlcXVlc3QifwoQRW50ZXJN",
-            "YXBSZXNwb25zZRIjCgJtZRgBIAEoCzIXLmdhbWVNZXNzYWdlQ29yZS5QbGF5",
-            "ZXISMQoIbG9jYXRpb24YAiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5",
-            "TG9jYXRpb24SEwoLcmVsaXZlX3RpbWUYAyABKAUiTgoZVXBkYXRlU2VsZkxv",
-            "Y2F0aW9uUmVxdWVzdBIxCghtb3ZlbWVudBgBIAEoCzIfLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlNb3ZlbWVudCJPChpVcGRhdGVTZWxmTG9jYXRpb25SZXNw",
-            "b25zZRIxCghtb3ZlbWVudBgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRp",
-            "dHlNb3ZlbWVudCKQAgoPVXNlU2tpbGxSZXF1ZXN0EhAKCHNraWxsX2lkGAEg",
-            "ASgFEiwKA2RpchgCIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2Nh",
-            "dGlvbhI2Cg1mcm9tX2xvY2F0aW9uGAMgASgLMh8uZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkVudGl0eUxvY2F0aW9uEiwKCXRhcmdldF9pZBgEIAEoCzIZLmdhbWVNZXNz",
-            "YWdlQ29yZS5FbnRpdHlJZBIQCghpc19zdGFydBgFIAEoCBJFCg9ob21lQ29s",
-            "bGVjdEluZm8YBiABKAsyLC5nYW1lTWVzc2FnZUNvcmUuVXNlQ29sbGVjdFJl",
-            "c291cmNlU2tpbGxJbmZvIhIKEFVzZVNraWxsUmVzcG9uc2UiUgoUUmVzcGF3",
-            "blBsYXllclJlcXVlc3QSOgoNcmVzcGF3bl9wb2ludBgBIAEoDjIjLmdhbWVN",
-            "ZXNzYWdlQ29yZS5QbGF5ZXJSZXNwYXduUG9pbnQiewoVUmVzcGF3blBsYXll",
-            "clJlc3BvbnNlEg8KB3VzZXJfaWQYASABKAMSDgoGY3VyX2hwGAIgASgFEg4K",
-            "BmFjdGl2ZRgDIAEoCBIxCghsb2NhdGlvbhgEIAEoCzIfLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlMb2NhdGlvbiKXAQoeQnJvYWRDYXN0UmVzcGF3blBsYXll",
-            "clJlc3BvbnNlEg8KB3VzZXJfaWQYASABKAMSDgoGY3VyX2hwGAIgASgFEg4K",
-            "BmFjdGl2ZRgDIAEoCBIxCghsb2NhdGlvbhgEIAEoCzIfLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlMb2NhdGlvbhIRCglyZXZpdmVfY2QYBSABKAMiHAoaUGxh",
-            "eWVyQWN0aW9uQ29sbGVjdFJlcXVlc3QiHQobUGxheWVyQWN0aW9uQ29sbGVj",
-            "dFJlc3BvbnNlIjcKJEJyb2FkQ2FzdFBsYXllckFjdGlvbkNvbGxlY3RSZXNw",
-            "b25zZRIPCgd1c2VyX2lkGAEgASgDIicKF1BsYXllckFjdGlvbkNoYXRSZXF1",
-            "ZXN0EgwKBHNob3cYASABKAgiGgoYUGxheWVyQWN0aW9uQ2hhdFJlc3BvbnNl",
-            "IkIKIUJyb2FkQ2FzdFBsYXllckFjdGlvbkNoYXRSZXNwb25zZRIPCgd1c2Vy",
-            "X2lkGAEgASgDEgwKBHNob3cYAiABKAgiLgoSR2V0SG9tZURhdGFSZXF1ZXN0",
-            "EhgKEHJlcV9kYXRhX3VzZXJfaWQYASABKAMiWgoTR2V0SG9tZURhdGFSZXNw",
-            "b25zZRIVCg1vd25lcl91c2VyX2lkGAEgASgDEhIKCm93bmVyX25hbWUYAiAB",
-            "KAkSGAoQc29pbERhdGFBbGxDb3VudBgDIAEoBSKAAQoiQnJvYWRDYXN0SG9t",
-            "ZURhdGFJbml0QmF0Y2hSZXNwb25zZRI0Cgxzb2lsRGF0YUxpc3QYASADKAsy",
-            "Hi5nYW1lTWVzc2FnZUNvcmUuUHJveHlTb2lsRGF0YRIVCg1vd25lcl91c2Vy",
-            "X2lkGAIgASgDEg0KBWZpbmFsGAMgASgIIqwBCh9Ccm9hZENhc3RJbml0TWFw",
-            "RWxlbWVudFJlc3BvbnNlEjMKBmVudGl0eRgBIAMoCzIjLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlXaXRoTG9jYXRpb24SRQoUZGVzdHJ1Y3Rpb25fZWxlbWVu",
-            "dHMYAiADKAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rpb25FbGVtZW50",
-            "RGF0YRINCgVmaW5hbBgDIAEoCCLXAQogQnJvYWRDYXN0TWFwRW50aXR5VXBk",
-            "YXRlUmVzcG9uc2USOQoMZW50aXR5X2FkZGVkGAEgAygLMiMuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkVudGl0eVdpdGhMb2NhdGlvbhIxCg5lbnRpdHlfcmVtb3ZlZBgC",
-            "IAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBJFChRkZXN0cnVjdGlv",
-            "bl9lbGVtZW50cxgDIAMoCzInLmdhbWVNZXNzYWdlQ29yZS5EZXN0cnVjdGlv",
-            "bkVsZW1lbnREYXRhIk0KG0Jyb2FkQ2FzdEVudGl0eU1vdmVSZXNwb25zZRIu",
-            "CgVtb3ZlcxgBIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlbWVu",
-            "dCJNCh5Ccm9hZENhc3RFbnRpdHlEZXN0cm95UmVzcG9uc2USKwoIZW50aXRp",
-            "ZXMYASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQimAMKHUJyb2Fk",
-            "Q2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlEjEKBXN0YXRlGAEgASgOMiIuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkVudGl0eUNvbWJhdFN0YXRlEhAKCHNraWxsX2lkGAIg",
-            "ASgFEhMKC2NvbWJvX2luZGV4GAMgASgFEi4KC2Zyb21fZW50aXR5GAQgASgL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC3RhcmdldF9saXN0GAUg",
-            "AygDEiwKA2RpchgGIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2Nh",
-            "dGlvbhI2Cg1mcm9tX2xvY2F0aW9uGAcgASgLMh8uZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkVudGl0eUxvY2F0aW9uEhEKCWN1cl9zdGFtcBgIIAEoAxIuCgd0YXJnZXRz",
-            "GAkgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eURhbWFnZRIvCgZmbHll",
-            "cnMYCiADKAsyHy5nYW1lTWVzc2FnZUNvcmUuU2tpbGxGbHllckRhdGEiOwoP",
-            "VGVsZXBvcnRSZXF1ZXN0EigKBnRvX3BvcxgJIAEoCzIYLmdhbWVNZXNzYWdl",
-            "Q29yZS5WZWN0b3IzIhIKEFRlbGVwb3J0UmVzcG9uc2UigwEKI0Jyb2FkQ2Fz",
-            "dEVudGl0eUF2YXRhclVwZGF0ZVJlc3BvbnNlEiwKCWVudGl0eV9pZBgBIAEo",
-            "CzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIuCgdhdmF0YXJzGAIgAygL",
-            "Mh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckF2YXRhciL+AQomQnJvYWRDYXN0",
-            "RW50aXR5QnVpbGREYXRhVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEg",
-            "ASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC2VsZWN0cmljRW5k",
-            "GAIgASgFEhYKDmhhcnZlc3RTdGFydEF0GAMgASgFEhEKCWhhcnZlc3RBdBgE",
-            "IAEoBRIYChBoYXJ2ZXN0SXRlbUNvdW50GAUgASgFEhkKEWNvbGxlY3Rpb25T",
-            "dGFydEF0GAYgASgFEhQKDGNvbGxlY3Rpb25BdBgHIAEoBRIbChNjb2xsZWN0",
-            "aW9uSXRlbUNvdW50GAggASgFIiYKF1NjZW5lRGVzdHJ1Y3Rpb25SZXF1ZXN0",
-            "EgsKA2lkcxgBIAMoAyIaChhTY2VuZURlc3RydWN0aW9uUmVzcG9uc2Uiagoh",
-            "QnJvYWRDYXN0U2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlEkUKFGRlc3RydWN0",
-            "aW9uX2VsZW1lbnRzGAEgAygLMicuZ2FtZU1lc3NhZ2VDb3JlLkRlc3RydWN0",
-            "aW9uRWxlbWVudERhdGEiLQoWUXVlcnlTZXJ2ZXJUaW1lUmVxdWVzdBITCgtj",
-            "bGllbnRfdGltZRgBIAEoAyJDChdRdWVyeVNlcnZlclRpbWVSZXNwb25zZRIT",
-            "CgtjbGllbnRfdGltZRgBIAEoAxITCgtzeXN0ZW1fdGltZRgCIAEoAyKbAQoe",
-            "QnJvYWRDYXN0Q2hhbmdlU2VydmljZVJlc3BvbnNlEi0KB3NlclR5cGUYASAB",
-            "KA4yHC5nYW1lTWVzc2FnZUNvcmUuU2VydmljZVR5cGUSOAoKc2VyU3ViVHlw",
-            "ZRgCIAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5TY2VuZVNlcnZpY2VTdWJUeXBl",
-            "EhAKCHNlck93bmVyGAMgASgDImIKGkhvbWVSZXNvdXJjZU9wZXJhdGVSZXF1",
-            "ZXN0EkQKD29wZXJhdGVJbmZvTGlzdBgBIAMoCzIrLmdhbWVNZXNzYWdlQ29y",
-            "ZS5Db2xsZWN0UmVzb3VyY2VPcGVyYXRlSW5mbyJnChtIb21lUmVzb3VyY2VP",
-            "cGVyYXRlUmVzcG9uc2USSAoRb3BlcmF0ZVJlc3VsdExpc3QYASADKAsyLS5n",
-            "YW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJlc291cmNlT3BlcmF0ZVJlc3VsdCIS",
-            "ChBTZWxmVGFza3NSZXF1ZXN0Ij8KEVNlbGZUYXNrc1Jlc3BvbnNlEioKBXRh",
-            "c2tzGAEgASgLMhsuZ2FtZU1lc3NhZ2VDb3JlLlBsYXllclRhc2sigQEKH0Jy",
-            "b2FkQ2FzdFVwZGF0ZVRhc2tMaXN0UmVzcG9uc2USKwoEa2luZBgBIAEoDjId",
-            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSMQoOdGFza19saXN0X2lu",
-            "Zm8YAiABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiQAoRQWNjZXB0",
-            "VGFza1JlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5U",
-            "YXNrTGlzdFR5cGUiRwoSQWNjZXB0VGFza1Jlc3BvbnNlEjEKDnRhc2tfbGlz",
-            "dF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkUKFkFi",
-            "YW5kb25tZW50VGFza1JlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrTGlzdFR5cGUiTAoXQWJhbmRvbm1lbnRUYXNrUmVzcG9u",
-            "c2USMQoOdGFza19saXN0X2luZm8YASABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
-            "VGFza0xpc3QiSgoRVGFza1Jld2FyZFJlcXVlc3QSNQoOdGFza19saXN0X2tp",
-            "bmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlIkcKElRh",
-            "c2tSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdh",
-            "bWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJEChVUYXNrTGlzdFJld2FyZFJlcXVl",
-            "c3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5",
-            "cGUiSwoWVGFza0xpc3RSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5m",
-            "bxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCK5AgoaVXBncmFk",
-            "ZVRhc2tQcm9ncmVzc1JlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4y",
-            "HS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEi4KBWl0ZW1zGAIgAygL",
-            "Mh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtEjYKA3BvcxgDIAEo",
-            "CzIpLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24S",
-            "NwoJdXNlUmVjaXBlGAQgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRp",
-            "b25Vc2VSZWNpcGUSQwoPY3JhZnRTa2lsbExldmVsGAUgASgLMiouZ2FtZU1l",
-            "c3NhZ2VDb3JlLlRhc2tPcHRpb25DcmFmdFNraWxsTGV2ZWwiHQobVXBncmFk",
-            "ZVRhc2tQcm9ncmVzc1Jlc3BvbnNlIrkBChtCcm9hZENhc3RUYXNrUmV3YXJk",
-            "UmVzcG9uc2USGwoTaXNfdGFza19saXN0X3Jld2FyZBgBIAEoCBI1Cg50YXNr",
-            "X2xpc3Rfa2luZBgCIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5",
-            "cGUSEgoKcmV3YXJkX2V4cBgDIAEoBRIyCgtyZXdhcmRfaXRlbRgEIAMoCzId",
-            "LmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8iegoWU2VuZENoYXRNZXNz",
-            "YWdlUmVxdWVzdBIzCgljaGF0X3R5cGUYASABKA4yIC5nYW1lTWVzc2FnZUNv",
-            "cmUuQ2hhdENoYW5uZWxUeXBlEg8KB2NvbnRlbnQYAiABKAkSGgoScmVjZWl2",
-            "ZXJfcGxheWVyX2lkGAMgASgDIikKF1NlbmRDaGF0TWVzc2FnZVJlc3BvbnNl",
-            "Eg4KBm1zZ19pZBgBIAEoAyJqCh1Ccm9hZENhc3RDaGF0TWVzc2FnZXNSZXNw",
-            "b25zZRIuCghtZXNzYWdlcxgBIAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5DaGF0",
-            "TWVzc2FnZRIZChFoaXN0b3JpY2FsX3JlY29yZBgCIAEoCCI1CiJCcm9hZENh",
-            "c3RSZW1vdmVDaGF0TWVzc2FnZVJlc3BvbnNlEg8KB21zZ19pZHMYASADKAMi",
-            "UgogQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlUmVzcG9uc2USLgoKY2hhdF9z",
-            "dGF0ZRgBIAEoDjIaLmdhbWVNZXNzYWdlQ29yZS5DaGF0U3RhdGUiDQoLUGlu",
-            "Z1JlcXVlc3QiDgoMUGluZ1Jlc3BvbnNlYgZwcm90bzM="));
+            "c2VydmljZS5wcm90bxoKaG9tZS5wcm90bxoMdGFsZW50LnByb3RvIsFOCghF",
+            "bnZlbG9wZRIrCgR0eXBlGAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLkVudmVs",
+            "b3BlVHlwZRIOCgZzZXFfaWQYAiABKAUSEgoKZXJyb3JfY29kZRgDIAEoBRIV",
+            "Cg1lcnJvcl9tZXNzYWdlGAQgASgJElMKHGJyb2FkX2Nhc3RfdGlja19vdXRf",
+            "cmVzcG9uc2UYmbMCIAEoCzIpLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RU",
+            "aWNrT3V0UmVzcG9uc2VIABI9ChBpdGVtX2dldF9yZXF1ZXN0GIGABCABKAsy",
+            "Hy5nYW1lTWVzc2FnZUNvcmUuSXRlbUdldFJlcXVlc3RIABI/ChFpdGVtX2dl",
+            "dF9yZXNwb25zZRiCgAQgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1HZXRS",
+            "ZXNwb25zZUgAEj0KEGl0ZW1fdXNlX3JlcXVlc3QYg4AEIAEoCzIfLmdhbWVN",
+            "ZXNzYWdlQ29yZS5JdGVtVXNlUmVxdWVzdEgAEj8KEWl0ZW1fdXNlX3Jlc3Bv",
+            "bnNlGISABCABKAsyIC5nYW1lTWVzc2FnZUNvcmUuSXRlbVVzZVJlc3BvbnNl",
+            "SAASPwoRaXRlbV9kcm9wX3JlcXVlc3QYhYAEIAEoCzIgLmdhbWVNZXNzYWdl",
+            "Q29yZS5JdGVtRHJvcFJlcXVlc3RIABJBChJpdGVtX2Ryb3BfcmVzcG9uc2UY",
+            "hoAEIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5JdGVtRHJvcFJlc3BvbnNlSAAS",
+            "RwoVdXBkYXRlX2F2YXRhcl9yZXF1ZXN0GIeABCABKAsyJC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVXBkYXRlQXZhdGFyUmVxdWVzdEgAEkkKFnVwZGF0ZV9hdmF0YXJf",
+            "cmVzcG9uc2UYiIAEIAEoCzIlLmdhbWVNZXNzYWdlQ29yZS5VcGRhdGVBdmF0",
+            "YXJSZXNwb25zZUgAEkcKFXVubG9hZF9hdmF0YXJfcmVxdWVzdBiJgAQgASgL",
+            "MiQuZ2FtZU1lc3NhZ2VDb3JlLlVubG9hZEF2YXRhclJlcXVlc3RIABJJChZ1",
+            "bmxvYWRfYXZhdGFyX3Jlc3BvbnNlGJCABCABKAsyJS5nYW1lTWVzc2FnZUNv",
+            "cmUuVW5sb2FkQXZhdGFyUmVzcG9uc2VIABJTChxicm9hZF9jYXN0X2l0ZW1f",
+            "YWRkX3Jlc3BvbnNlGJGABCABKAsyKS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRD",
+            "YXN0SXRlbUFkZFJlc3BvbnNlSAASWQofYnJvYWRfY2FzdF9pdGVtX3VwZGF0",
+            "ZV9yZXNwb25zZRiSgAQgASgLMiwuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
+            "dEl0ZW1VcGRhdGVSZXNwb25zZUgAElMKHGJyb2FkX2Nhc3RfaXRlbV9kZWxf",
+            "cmVzcG9uc2UYk4AEIAEoCzIpLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJ",
+            "dGVtRGVsUmVzcG9uc2VIABJiCiRicm9hZF9jYXN0X3VwZGF0ZV9pdGVtX3Ns",
+            "b3RfcmVzcG9uc2UYlIAEIAEoCzIwLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENh",
+            "c3RVcGRhdGVJdGVtU2xvdFJlc3BvbnNlSAASRgoVZ2V0X2l0ZW1fc2xvdF9y",
+            "ZXF1ZXN0GJWABCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuR2V0SXRlbVNsb3RS",
+            "ZXF1ZXN0SAASSAoWZ2V0X2l0ZW1fc2xvdF9yZXNwb25zZRiWgAQgASgLMiQu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkdldEl0ZW1TbG90UmVzcG9uc2VIABJOChl1cGdy",
+            "YWRlX2l0ZW1fc2xvdF9yZXF1ZXN0GJeABCABKAsyJy5nYW1lTWVzc2FnZUNv",
+            "cmUuVXBncmFkZUl0ZW1TbG90UmVxdWVzdEgAElAKGnVwZ3JhZGVfaXRlbV9z",
+            "bG90X3Jlc3BvbnNlGJiABCABKAsyKC5nYW1lTWVzc2FnZUNvcmUuVXBncmFk",
+            "ZUl0ZW1TbG90UmVzcG9uc2VIABJHChVzaWduaW5fcGxheWVyX3JlcXVlc3QY",
+            "mYAEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5TaWduaW5QbGF5ZXJSZXF1ZXN0",
+            "SAASSQoWc2lnbmluX3BsYXllcl9yZXNwb25zZRiggAQgASgLMiUuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlNpZ25pblBsYXllclJlc3BvbnNlSAASSgoXc2lnbl9vdXRf",
+            "cGxheWVyX3JlcXVlc3QYoYAEIAEoCzIlLmdhbWVNZXNzYWdlQ29yZS5TaWdu",
+            "T3V0UGxheWVyUmVxdWVzdEgAEkwKGHNpZ25fb3V0X3BsYXllcl9yZXNwb25z",
+            "ZRiigAQgASgLMiYuZ2FtZU1lc3NhZ2VDb3JlLlNpZ25PdXRQbGF5ZXJSZXNw",
+            "b25zZUgAElQKHHVwZ3JhZGVfcGxheWVyX2xldmVsX3JlcXVlc3QYo4AEIAEo",
+            "CzIqLmdhbWVNZXNzYWdlQ29yZS5VcGdyYWRlUGxheWVyTGV2ZWxSZXF1ZXN0",
+            "SAASVgoddXBncmFkZV9wbGF5ZXJfbGV2ZWxfcmVzcG9uc2UYpIAEIAEoCzIr",
+            "LmdhbWVNZXNzYWdlQ29yZS5VcGdyYWRlUGxheWVyTGV2ZWxSZXNwb25zZUgA",
+            "EkMKE3F1ZXJ5X2xhbmRzX3JlcXVlc3QYpYAEIAEoCzIiLmdhbWVNZXNzYWdl",
+            "Q29yZS5RdWVyeUxhbmRzUmVxdWVzdEgAEkUKFHF1ZXJ5X2xhbmRzX3Jlc3Bv",
+            "bnNlGKaABCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuUXVlcnlMYW5kc1Jlc3Bv",
+            "bnNlSAASVQodYnJvYWRfY2FzdF9pbml0X2xhbmRfcmVzcG9uc2UYp4AEIAEo",
+            "CzIqLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJbml0TGFuZFJlc3BvbnNl",
+            "SAASVQodYnJvYWRfY2FzdF9pbml0X2l0ZW1fcmVzcG9uc2UYqYAEIAEoCzIq",
+            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RJbml0SXRlbVJlc3BvbnNlSAAS",
+            "OAoNYnVpbGRfcmVxdWVzdBixgAQgASgLMh0uZ2FtZU1lc3NhZ2VDb3JlLkJ1",
+            "aWxkUmVxdWVzdEgAEjoKDmJ1aWxkX3Jlc3BvbnNlGLKABCABKAsyHi5nYW1l",
+            "TWVzc2FnZUNvcmUuQnVpbGRSZXNwb25zZUgAEkAKEXJlY3ljbGluZ19yZXF1",
+            "ZXN0GLOABCABKAsyIS5nYW1lTWVzc2FnZUNvcmUuUmVjeWNsaW5nUmVxdWVz",
+            "dEgAEkIKEnJlY3ljbGluZ19yZXNwb25zZRi0gAQgASgLMiIuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLlJlY3ljbGluZ1Jlc3BvbnNlSAASPAoPY2hhcmdlZF9yZXF1ZXN0",
+            "GLWABCABKAsyHy5nYW1lTWVzc2FnZUNvcmUuQ2hhcmdlZFJlcXVlc3RIABI+",
+            "ChBjaGFyZ2VkX3Jlc3BvbnNlGLaABCABKAsyIC5nYW1lTWVzc2FnZUNvcmUu",
+            "Q2hhcmdlZFJlc3BvbnNlSAASPAoPaGFydmVzdF9yZXF1ZXN0GLeABCABKAsy",
+            "Hy5nYW1lTWVzc2FnZUNvcmUuSGFydmVzdFJlcXVlc3RIABI+ChBoYXJ2ZXN0",
+            "X3Jlc3BvbnNlGLiABCABKAsyIC5nYW1lTWVzc2FnZUNvcmUuSGFydmVzdFJl",
+            "c3BvbnNlSAASQgoSY29sbGVjdGlvbl9yZXF1ZXN0GLmABCABKAsyIi5nYW1l",
+            "TWVzc2FnZUNvcmUuQ29sbGVjdGlvblJlcXVlc3RIABJEChNjb2xsZWN0aW9u",
+            "X3Jlc3BvbnNlGMCABCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdGlv",
+            "blJlc3BvbnNlSAASXAohYnJvYWRfY2FzdF9tdWx0aV91cF9sYW5kX3Jlc3Bv",
+            "bnNlGMGABCABKAsyLS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0TXVsdGlV",
+            "cExhbmRSZXNwb25zZUgAEkoKF3NlbGZfbmZ0X2J1aWxkc19yZXF1ZXN0GMOA",
+            "BCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuU2VsZk5mdEJ1aWxkc1JlcXVlc3RI",
+            "ABJMChhzZWxmX25mdF9idWlsZHNfcmVzcG9uc2UYxIAEIAEoCzImLmdhbWVN",
+            "ZXNzYWdlQ29yZS5TZWxmTmZ0QnVpbGRzUmVzcG9uc2VIABJkCiVicm9hZF9j",
+            "YXN0X3NlbGZfYnVpbGRfdXBkYXRlX3Jlc3BvbnNlGMWABCABKAsyMS5nYW1l",
+            "TWVzc2FnZUNvcmUuQnJvYWRDYXN0U2VsZkJ1aWxkVXBkYXRlUmVzcG9uc2VI",
+            "ABJqCihicm9hZF9jYXN0X3NlbGZfYnVpbGRfcmVjeWNsaW5nX3Jlc3BvbnNl",
+            "GMeABCABKAsyNC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0U2VsZkJ1aWxk",
+            "UmVjeWNsaW5nUmVzcG9uc2VIABJFChRtaW50X2JhdHRlcnlfcmVxdWVzdBjJ",
+            "gAQgASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLk1pbnRCYXR0ZXJ5UmVxdWVzdEgA",
+            "EkcKFW1pbnRfYmF0dGVyeV9yZXNwb25zZRjQgAQgASgLMiQuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLk1pbnRCYXR0ZXJ5UmVzcG9uc2VIABJHChVxdWVyeV9ncmFuYXJ5",
+            "X3JlcXVlc3QY0YAEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5RdWVyeUdyYW5h",
+            "cnlSZXF1ZXN0SAASSQoWcXVlcnlfZ3JhbmFyeV9yZXNwb25zZRjSgAQgASgL",
+            "MiUuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5R3JhbmFyeVJlc3BvbnNlSAASSwoX",
+            "Z3JhbmFyeV9jb2xsZWN0X3JlcXVlc3QY04AEIAEoCzImLmdhbWVNZXNzYWdl",
+            "Q29yZS5HcmFuYXJ5Q29sbGVjdFJlcXVlc3RIABJNChhncmFuYXJ5X2NvbGxl",
+            "Y3RfcmVzcG9uc2UY1IAEIAEoCzInLmdhbWVNZXNzYWdlQ29yZS5HcmFuYXJ5",
+            "Q29sbGVjdFJlc3BvbnNlSAASXwoiYnJvYWRfY2FzdF9ncmFuYXJ5X3VwZGF0",
+            "ZV9yZXNwb25zZRjVgAQgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
+            "dEdyYW5hcnlVcGRhdGVSZXNwb25zZUgAEmAKI2Jyb2FkX2Nhc3RfdXBfZ3Jh",
+            "bmFyeV9pdGVtX3Jlc3BvbnNlGNeABCABKAsyLy5nYW1lTWVzc2FnZUNvcmUu",
+            "QnJvYWRDYXN0VXBHcmFuYXJ5SXRlbVJlc3BvbnNlSAASUgobdXBncmFkZV90",
+            "YWxlbnRfbm9kZV9yZXF1ZXN0GNmABCABKAsyKS5nYW1lTWVzc2FnZUNvcmUu",
+            "VXBncmFkZVRhbGVudE5vZGVSZXF1ZXN0SAASVAocdXBncmFkZV90YWxlbnRf",
+            "bm9kZV9yZXNwb25zZRjggAQgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlVwZ3Jh",
+            "ZGVUYWxlbnROb2RlUmVzcG9uc2VIABJMChhxdWVyeV90YWxlbnRfZXhwX3Jl",
+            "cXVlc3QY4YAEIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVRhbGVudEV4",
+            "cFJlcXVlc3RIABJOChlxdWVyeV90YWxlbnRfZXhwX3Jlc3BvbnNlGOKABCAB",
+            "KAsyJy5nYW1lTWVzc2FnZUNvcmUuUXVlcnlUYWxlbnRFeHBSZXNwb25zZUgA",
+            "ElwKIWJyb2FkX2Nhc3RfdXBfdGFsZW50X2V4cF9yZXNwb25zZRjjgAQgASgL",
+            "Mi0uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFVwVGFsZW50RXhwUmVzcG9u",
+            "c2VIABJFChRxdWVyeV9wbGF5ZXJfcmVxdWVzdBiBgAggASgLMiMuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlF1ZXJ5UGxheWVyUmVxdWVzdEgAEkcKFXF1ZXJ5X3BsYXll",
+            "cl9yZXNwb25zZRiCgAggASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5UGxh",
+            "eWVyUmVzcG9uc2VIABJHChVjcmVhdGVfcGxheWVyX3JlcXVlc3QYg4AIIAEo",
+            "CzIkLmdhbWVNZXNzYWdlQ29yZS5DcmVhdGVQbGF5ZXJSZXF1ZXN0SAASSQoW",
+            "Y3JlYXRlX3BsYXllcl9yZXNwb25zZRiEgAggASgLMiUuZ2FtZU1lc3NhZ2VD",
+            "b3JlLkNyZWF0ZVBsYXllclJlc3BvbnNlSAASPwoRZW50ZXJfbWFwX3JlcXVl",
+            "c3QYgYAMIAEoCzIgLmdhbWVNZXNzYWdlQ29yZS5FbnRlck1hcFJlcXVlc3RI",
+            "ABJBChJlbnRlcl9tYXBfcmVzcG9uc2UYgoAMIAEoCzIhLmdhbWVNZXNzYWdl",
+            "Q29yZS5FbnRlck1hcFJlc3BvbnNlSAASVAocdXBkYXRlX3NlbGZfbG9jYXRp",
+            "b25fcmVxdWVzdBiDgAwgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlVwZGF0ZVNl",
+            "bGZMb2NhdGlvblJlcXVlc3RIABJWCh11cGRhdGVfc2VsZl9sb2NhdGlvbl9y",
+            "ZXNwb25zZRiEgAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLlVwZGF0ZVNlbGZM",
+            "b2NhdGlvblJlc3BvbnNlSAASPwoRdXNlX3NraWxsX3JlcXVlc3QYhYAMIAEo",
+            "CzIgLmdhbWVNZXNzYWdlQ29yZS5Vc2VTa2lsbFJlcXVlc3RIABJBChJ1c2Vf",
+            "c2tpbGxfcmVzcG9uc2UYhoAMIAEoCzIhLmdhbWVNZXNzYWdlQ29yZS5Vc2VT",
+            "a2lsbFJlc3BvbnNlSAASSQoWcmVzcGF3bl9wbGF5ZXJfcmVxdWVzdBiJgAwg",
+            "ASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLlJlc3Bhd25QbGF5ZXJSZXF1ZXN0SAAS",
+            "SwoXcmVzcGF3bl9wbGF5ZXJfcmVzcG9uc2UYkIAMIAEoCzImLmdhbWVNZXNz",
+            "YWdlQ29yZS5SZXNwYXduUGxheWVyUmVzcG9uc2VIABJiCiRicm9hZF9jYXN0",
+            "X2luaXRfbWFwX2VsZW1lbnRfcmVzcG9uc2UYkYAMIAEoCzIwLmdhbWVNZXNz",
+            "YWdlQ29yZS5Ccm9hZENhc3RJbml0TWFwRWxlbWVudFJlc3BvbnNlSAASZAol",
+            "YnJvYWRfY2FzdF9tYXBfZW50aXR5X3VwZGF0ZV9yZXNwb25zZRiSgAwgASgL",
+            "MjEuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZVJl",
+            "c3BvbnNlSAASXwoiYnJvYWRfY2FzdF9lbnRpdHlfZGVzdHJveV9yZXNwb25z",
+            "ZRiTgAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eURl",
+            "c3Ryb3lSZXNwb25zZUgAElkKH2Jyb2FkX2Nhc3RfZW50aXR5X21vdmVfcmVz",
+            "cG9uc2UYlIAMIAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRp",
+            "dHlNb3ZlUmVzcG9uc2VIABJdCiFicm9hZF9jYXN0X2VudGl0eV9jb21iYXRf",
+            "cmVzcG9uc2UYlYAMIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RF",
+            "bnRpdHlDb21iYXRSZXNwb25zZUgAEl8KImJyb2FkX2Nhc3RfcmVzcGF3bl9w",
+            "bGF5ZXJfcmVzcG9uc2UYloAMIAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9h",
+            "ZENhc3RSZXNwYXduUGxheWVyUmVzcG9uc2VIABI+ChB0ZWxlcG9ydF9yZXF1",
+            "ZXN0GJeADCABKAsyIC5nYW1lTWVzc2FnZUNvcmUuVGVsZXBvcnRSZXF1ZXN0",
+            "SAASQAoRdGVsZXBvcnRfcmVzcG9uc2UYmIAMIAEoCzIhLmdhbWVNZXNzYWdl",
+            "Q29yZS5UZWxlcG9ydFJlc3BvbnNlSAASbAopYnJvYWRfY2FzdF9lbnRpdHlf",
+            "cHJvZmlsZV91cGRhdGVfcmVzcG9uc2UYmYAMIAEoCzI1LmdhbWVNZXNzYWdl",
+            "Q29yZS5Ccm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlUmVzcG9uc2VIABJd",
+            "CiFicm9hZF9jYXN0X21vbnN0ZXJfZGVhdGhfcmVzcG9uc2UYoYAMIAEoCzIu",
+            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RNb25zdGVyRGVhdGhSZXNwb25z",
+            "ZUgAEmoKKGJyb2FkX2Nhc3RfZW50aXR5X2F2YXRhcl91cGRhdGVfcmVzcG9u",
+            "c2UYooAMIAEoCzI0LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlB",
+            "dmF0YXJVcGRhdGVSZXNwb25zZUgAEnMKLWJyb2FkX2Nhc3RfZW50aXR5X2Jh",
+            "dHRsZV9kYXRhX3VwZGF0ZV9yZXNwb25zZRijgAwgASgLMjguZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkJyb2FkQ2FzdEVudGl0eUJhdHRsZURhdGFVcGRhdGVSZXNwb25z",
+            "ZUgAEnEKLGJyb2FkX2Nhc3RfZW50aXR5X2J1aWxkX2RhdGFfdXBkYXRlX3Jl",
+            "c3BvbnNlGKWADCABKAsyNy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50",
+            "aXR5QnVpbGREYXRhVXBkYXRlUmVzcG9uc2VIABJWCh1wbGF5ZXJfYWN0aW9u",
+            "X2NvbGxlY3RfcmVxdWVzdBingAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLlBs",
+            "YXllckFjdGlvbkNvbGxlY3RSZXF1ZXN0SAASWAoecGxheWVyX2FjdGlvbl9j",
+            "b2xsZWN0X3Jlc3BvbnNlGKmADCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuUGxh",
+            "eWVyQWN0aW9uQ29sbGVjdFJlc3BvbnNlSAASbAopYnJvYWRfY2FzdF9wbGF5",
+            "ZXJfYWN0aW9uX2NvbGxlY3RfcmVzcG9uc2UYsYAMIAEoCzI1LmdhbWVNZXNz",
+            "YWdlQ29yZS5Ccm9hZENhc3RQbGF5ZXJBY3Rpb25Db2xsZWN0UmVzcG9uc2VI",
+            "ABJPChlzY2VuZV9kZXN0cnVjdGlvbl9yZXF1ZXN0GLOADCABKAsyKC5nYW1l",
+            "TWVzc2FnZUNvcmUuU2NlbmVEZXN0cnVjdGlvblJlcXVlc3RIABJRChpzY2Vu",
+            "ZV9kZXN0cnVjdGlvbl9yZXNwb25zZRi0gAwgASgLMikuZ2FtZU1lc3NhZ2VD",
+            "b3JlLlNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25zZUgAEmUKJWJyb2FkX2Nhc3Rf",
+            "c2NlbmVfZGVzdHJ1Y3Rpb25fcmVzcG9uc2UYtYAMIAEoCzIyLmdhbWVNZXNz",
+            "YWdlQ29yZS5Ccm9hZENhc3RTY2VuZURlc3RydWN0aW9uUmVzcG9uc2VIABJQ",
+            "ChpwbGF5ZXJfYWN0aW9uX2NoYXRfcmVxdWVzdBi3gAwgASgLMiguZ2FtZU1l",
+            "c3NhZ2VDb3JlLlBsYXllckFjdGlvbkNoYXRSZXF1ZXN0SAASUgobcGxheWVy",
+            "X2FjdGlvbl9jaGF0X3Jlc3BvbnNlGLiADCABKAsyKS5nYW1lTWVzc2FnZUNv",
+            "cmUuUGxheWVyQWN0aW9uQ2hhdFJlc3BvbnNlSAASZgomYnJvYWRfY2FzdF9w",
+            "bGF5ZXJfYWN0aW9uX2NoYXRfcmVzcG9uc2UYuYAMIAEoCzIyLmdhbWVNZXNz",
+            "YWdlQ29yZS5Ccm9hZENhc3RQbGF5ZXJBY3Rpb25DaGF0UmVzcG9uc2VIABJG",
+            "ChVnZXRfaG9tZV9kYXRhX3JlcXVlc3QYwYAMIAEoCzIjLmdhbWVNZXNzYWdl",
+            "Q29yZS5HZXRIb21lRGF0YVJlcXVlc3RIABJIChZnZXRfaG9tZV9kYXRhX3Jl",
+            "c3BvbnNlGMKADCABKAsyJC5nYW1lTWVzc2FnZUNvcmUuR2V0SG9tZURhdGFS",
+            "ZXNwb25zZUgAEk4KGXF1ZXJ5X1NlcnZlcl90aW1lX3JlcXVlc3QYw4AMIAEo",
+            "CzInLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVNlcnZlclRpbWVSZXF1ZXN0SAAS",
+            "UAoacXVlcnlfU2VydmVyX3RpbWVfcmVzcG9uc2UYxIAMIAEoCzIoLmdhbWVN",
+            "ZXNzYWdlQ29yZS5RdWVyeVNlcnZlclRpbWVSZXNwb25zZUgAEl8KImJyb2Fk",
+            "X2Nhc3RfY2hhbmdlX3NlcnZpY2VfcmVzcG9uc2UYxYAMIAEoCzIvLmdhbWVN",
+            "ZXNzYWdlQ29yZS5Ccm9hZENhc3RDaGFuZ2VTZXJ2aWNlUmVzcG9uc2VIABJp",
+            "Cihicm9hZF9jYXN0X2hvbWVfZGF0YV9pbml0X2JhdGNoX3Jlc3BvbnNlGMmA",
+            "DCABKAsyMy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0SG9tZURhdGFJbml0",
+            "QmF0Y2hSZXNwb25zZUgAEmQKJWJyb2FkX2Nhc3RfaG9tZV9za2lsbF9yZXN1",
+            "bHRfcmVzcG9uc2UY0YAMIAEoCzIxLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENh",
+            "c3RIb21lU2tpbGxSZXN1bHRSZXNwb25zZUgAEk4KGXF1ZXJ5X3RhbGVudF90",
+            "cmVlX3JlcXVlc3QY04AMIAEoCzInLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVRh",
+            "bGVudFRyZWVSZXF1ZXN0SAASUAoacXVlcnlfdGFsZW50X3RyZWVfcmVzcG9u",
+            "c2UY1IAMIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVRhbGVudFRyZWVS",
+            "ZXNwb25zZUgAEmYKJmJyb2FkX2Nhc3RfdGFsZW50X3RyZWVfdXBkYXRlX3Jl",
+            "c3BvbnNlGNWADCABKAsyMi5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0VGFs",
+            "ZW50VHJlZVVwZGF0ZVJlc3BvbnNlSAASQQoSc2VsZl90YXNrc19yZXF1ZXN0",
+            "GIGAECABKAsyIS5nYW1lTWVzc2FnZUNvcmUuU2VsZlRhc2tzUmVxdWVzdEgA",
+            "EkMKE3NlbGZfdGFza3NfcmVzcG9uc2UYgoAQIAEoCzIiLmdhbWVNZXNzYWdl",
+            "Q29yZS5TZWxmVGFza3NSZXNwb25zZUgAEmIKJGJyb2FkX2Nhc3RfdXBkYXRl",
+            "X3Rhc2tfbGlzdF9yZXNwb25zZRiDgBAgASgLMjAuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkJyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0UmVzcG9uc2VIABJDChNhY2NlcHRf",
+            "dGFza19yZXF1ZXN0GISAECABKAsyIi5nYW1lTWVzc2FnZUNvcmUuQWNjZXB0",
+            "VGFza1JlcXVlc3RIABJFChRhY2NlcHRfdGFza19yZXNwb25zZRiFgBAgASgL",
+            "MiMuZ2FtZU1lc3NhZ2VDb3JlLkFjY2VwdFRhc2tSZXNwb25zZUgAEk0KGGFi",
+            "YW5kb25tZW50X3Rhc2tfcmVxdWVzdBiGgBAgASgLMicuZ2FtZU1lc3NhZ2VD",
+            "b3JlLkFiYW5kb25tZW50VGFza1JlcXVlc3RIABJPChlhYmFuZG9ubWVudF90",
+            "YXNrX3Jlc3BvbnNlGIeAECABKAsyKC5nYW1lTWVzc2FnZUNvcmUuQWJhbmRv",
+            "bm1lbnRUYXNrUmVzcG9uc2VIABJDChN0YXNrX3Jld2FyZF9yZXF1ZXN0GIiA",
+            "ECABKAsyIi5nYW1lTWVzc2FnZUNvcmUuVGFza1Jld2FyZFJlcXVlc3RIABJF",
+            "ChR0YXNrX3Jld2FyZF9yZXNwb25zZRiJgBAgASgLMiMuZ2FtZU1lc3NhZ2VD",
+            "b3JlLlRhc2tSZXdhcmRSZXNwb25zZUgAEkwKGHRhc2tfbGlzdF9yZXdhcmRf",
+            "cmVxdWVzdBiQgBAgASgLMiYuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0UmV3",
+            "YXJkUmVxdWVzdEgAEk4KGXRhc2tfbGlzdF9yZXdhcmRfcmVzcG9uc2UYkYAQ",
+            "IAEoCzInLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFJld2FyZFJlc3BvbnNl",
+            "SAASVgoddXBncmFkZV90YXNrX3Byb2dyZXNzX3JlcXVlc3QYkoAQIAEoCzIr",
+            "LmdhbWVNZXNzYWdlQ29yZS5VcGdyYWRlVGFza1Byb2dyZXNzUmVxdWVzdEgA",
+            "ElgKHnVwZ3JhZGVfdGFza19wcm9ncmVzc19yZXNwb25zZRiTgBAgASgLMiwu",
+            "Z2FtZU1lc3NhZ2VDb3JlLlVwZ3JhZGVUYXNrUHJvZ3Jlc3NSZXNwb25zZUgA",
+            "ElkKH2Jyb2FkX2Nhc3RfdGFza19yZXdhcmRfcmVzcG9uc2UYlIAQIAEoCzIs",
+            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2VI",
+            "ABJPChlzZW5kX2NoYXRfbWVzc2FnZV9yZXF1ZXN0GIGAxAIgASgLMicuZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlNlbmRDaGF0TWVzc2FnZVJlcXVlc3RIABJRChpzZW5k",
+            "X2NoYXRfbWVzc2FnZV9yZXNwb25zZRiCgMQCIAEoCzIoLmdhbWVNZXNzYWdl",
+            "Q29yZS5TZW5kQ2hhdE1lc3NhZ2VSZXNwb25zZUgAEl4KIWJyb2FkX2Nhc3Rf",
+            "Y2hhdF9tZXNzYWdlc19yZXNwb25zZRiDgMQCIAEoCzIuLmdhbWVNZXNzYWdl",
+            "Q29yZS5Ccm9hZENhc3RDaGF0TWVzc2FnZXNSZXNwb25zZUgAEmkKJ2Jyb2Fk",
+            "X2Nhc3RfcmVtb3ZlX2NoYXRfbWVzc2FnZV9yZXNwb25zZRiEgMQCIAEoCzIz",
+            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZVJl",
+            "c3BvbnNlSAASZQolYnJvYWRfY2FzdF91cGRhdGVfY2hhdF9zdGF0ZV9yZXNw",
+            "b25zZRiFgMQCIAEoCzIxLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RVcGRh",
+            "dGVDaGF0U3RhdGVSZXNwb25zZUgAEjYKDHBpbmdfcmVxdWVzdBiBgBggASgL",
+            "MhwuZ2FtZU1lc3NhZ2VDb3JlLlBpbmdSZXF1ZXN0SAASOAoNcGluZ19yZXNw",
+            "b25zZRiCgBggASgLMh0uZ2FtZU1lc3NhZ2VDb3JlLlBpbmdSZXNwb25zZUgA",
+            "QgkKB3BheWxvYWQiRgoYQnJvYWRDYXN0VGlja091dFJlc3BvbnNlEioKBGtp",
+            "bmQYASABKA4yHC5nYW1lTWVzc2FnZUNvcmUuVGlja091dFR5cGUiEAoOSXRl",
+            "bUdldFJlcXVlc3QiEQoPSXRlbUdldFJlc3BvbnNlIkEKGUJyb2FkQ2FzdElu",
+            "aXRJdGVtUmVzcG9uc2USJAoFaXRlbXMYASADKAsyFS5nYW1lTWVzc2FnZUNv",
+            "cmUuSXRlbSIuCg5JdGVtVXNlUmVxdWVzdBIOCgZpdGVtSWQYASABKAkSDAoE",
+            "YXJncxgCIAEoCSIRCg9JdGVtVXNlUmVzcG9uc2UiLwoPSXRlbURyb3BSZXF1",
+            "ZXN0Eg8KB2l0ZW1faWQYASABKAkSCwoDbnVtGAIgASgFIhIKEEl0ZW1Ecm9w",
+            "UmVzcG9uc2UiOwoTVXBkYXRlQXZhdGFyUmVxdWVzdBIOCgZpdGVtSWQYASAB",
+            "KAkSFAoMaXNBcHBlYXJhbmNlGAIgASgIIhYKFFVwZGF0ZUF2YXRhclJlc3Bv",
+            "bnNlIiYKE1VubG9hZEF2YXRhclJlcXVlc3QSDwoHaXRlbV9pZBgBIAEoCSIW",
+            "ChRVbmxvYWRBdmF0YXJSZXNwb25zZSJAChhCcm9hZENhc3RJdGVtQWRkUmVz",
+            "cG9uc2USJAoFaXRlbXMYASADKAsyFS5nYW1lTWVzc2FnZUNvcmUuSXRlbSJD",
+            "ChtCcm9hZENhc3RJdGVtVXBkYXRlUmVzcG9uc2USJAoFaXRlbXMYASADKAsy",
+            "FS5nYW1lTWVzc2FnZUNvcmUuSXRlbSJAChhCcm9hZENhc3RJdGVtRGVsUmVz",
+            "cG9uc2USJAoFaXRlbXMYASADKAsyFS5nYW1lTWVzc2FnZUNvcmUuSXRlbSJL",
+            "Ch9Ccm9hZENhc3RVcGRhdGVJdGVtU2xvdFJlc3BvbnNlEigKBXNsb3RzGAEg",
+            "AygLMhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1TbG90IhQKEkdldEl0ZW1TbG90",
+            "UmVxdWVzdCI/ChNHZXRJdGVtU2xvdFJlc3BvbnNlEigKBXNsb3RzGAEgAygL",
+            "MhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1TbG90IksKFlVwZ3JhZGVJdGVtU2xv",
+            "dFJlcXVlc3QSMQoIcG9zaXRpb24YASABKA4yHy5nYW1lTWVzc2FnZUNvcmUu",
+            "QXZhdGFyUG9zaXRpb24iQwoXVXBncmFkZUl0ZW1TbG90UmVzcG9uc2USKAoF",
+            "c2xvdHMYASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuSXRlbVNsb3Qi1gEKE1Np",
+            "Z25pblBsYXllclJlcXVlc3QSDwoHdXNlcl9pZBgBIAEoAxINCgV0b2tlbhgC",
+            "IAEoCRITCgtjbGllbnRfdGltZRgDIAEoAxIRCglyZWNvbm5lY3QYBCABKAgS",
+            "KAoHb3NfdHlwZRgFIAEoDjIXLmdhbWVNZXNzYWdlQ29yZS5PU1R5cGUSLwoI",
+            "cGxhdGZvcm0YBiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuUGxhdGZvcm1UeXBl",
+            "EhwKFHNjZW5lX3NlcnZpY2VfYXBwX2lkGAcgASgJIqABChRTaWduaW5QbGF5",
+            "ZXJSZXNwb25zZRInCgZwbGF5ZXIYASABKAsyFy5nYW1lTWVzc2FnZUNvcmUu",
+            "UGxheWVyEhMKC3NlcnZlcl90aW1lGAIgASgDEhMKC2NsaWVudF90aW1lGAMg",
+            "ASgDEhwKFHNjZW5lX3NlcnZpY2VfYXBwX2lkGAQgASgJEhcKD2xhc3RfbG9n",
+            "aW5fdGltZRgFIAEoAyIWChRTaWduT3V0UGxheWVyUmVxdWVzdCIXChVTaWdu",
+            "T3V0UGxheWVyUmVzcG9uc2UijAEKJEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVV",
+            "cGRhdGVSZXNwb25zZRIsCgllbnRpdHlfaWQYASABKAsyGS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5SWQSNgoIcHJvZmlsZXMYAiADKAsyJC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5UHJvZmlsZVVwZGF0ZSK8AQodQnJvYWRDYXN0TW9uc3Rl",
+            "ckRlYXRoUmVzcG9uc2USDgoGbWFwX2lkGAEgASgFEhEKCWtpbGxlcl9pZBgC",
+            "IAEoAxISCgptb25zdGVyX2lkGAMgASgDEgsKA2NpZBgEIAEoBRIlCgNwb3MY",
+            "BSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIwCglkcm9wX2xpc3QY",
+            "BiADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvImsKJ0Jyb2Fk",
+            "Q2FzdEVudGl0eUJhdHRsZURhdGFVcGRhdGVSZXNwb25zZRIsCgllbnRpdHlf",
+            "aWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSEgoKaXNJbkJh",
+            "dHRsZRgCIAEoCCIbChlVcGdyYWRlUGxheWVyTGV2ZWxSZXF1ZXN0IkAKGlVw",
+            "Z3JhZGVQbGF5ZXJMZXZlbFJlc3BvbnNlEhEKCWN1cl9sZXZlbBgBIAEoBRIP",
+            "CgdjdXJfZXhwGAIgASgDIhMKEVF1ZXJ5TGFuZHNSZXF1ZXN0IhQKElF1ZXJ5",
+            "TGFuZHNSZXNwb25zZSJFChlCcm9hZENhc3RJbml0TGFuZFJlc3BvbnNlEigK",
+            "BWxhbmRzGAEgAygLMhkuZ2FtZU1lc3NhZ2VDb3JlLkxhbmREYXRhIloKDEJ1",
+            "aWxkUmVxdWVzdBINCgVuZnRJZBgBIAEoCRIqCghwb3NpdGlvbhgCIAEoCzIY",
+            "LmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEg8KB2xhbmRJZHMYAyADKAUiOQoN",
+            "QnVpbGRSZXNwb25zZRIoCgVidWlsZBgBIAEoCzIZLmdhbWVNZXNzYWdlQ29y",
+            "ZS5OZnRCdWlsZCIyChBSZWN5Y2xpbmdSZXF1ZXN0Eg8KB2J1aWxkSWQYASAB",
+            "KAMSDQoFbmZ0SWQYAiABKAkiEwoRUmVjeWNsaW5nUmVzcG9uc2UiPQoOQ2hh",
+            "cmdlZFJlcXVlc3QSDwoHYnVpbGRJZBgBIAEoAxINCgVuZnRJZBgCIAEoCRIL",
+            "CgNudW0YAyABKAUiEQoPQ2hhcmdlZFJlc3BvbnNlIjAKDkhhcnZlc3RSZXF1",
+            "ZXN0Eg8KB2J1aWxkSWQYASABKAMSDQoFbmZ0SWQYAiABKAkiEQoPSGFydmVz",
+            "dFJlc3BvbnNlIjMKEUNvbGxlY3Rpb25SZXF1ZXN0Eg8KB2J1aWxkSWQYASAB",
+            "KAMSDQoFbmZ0SWQYAiABKAkiFAoSQ29sbGVjdGlvblJlc3BvbnNlIkgKHEJy",
+            "b2FkQ2FzdE11bHRpVXBMYW5kUmVzcG9uc2USKAoFbGFuZHMYASADKAsyGS5n",
+            "YW1lTWVzc2FnZUNvcmUuTGFuZERhdGEiFgoUU2VsZk5mdEJ1aWxkc1JlcXVl",
+            "c3QiQgoVU2VsZk5mdEJ1aWxkc1Jlc3BvbnNlEikKBmJ1aWxkcxgBIAMoCzIZ",
+            "LmdhbWVNZXNzYWdlQ29yZS5OZnRCdWlsZCJMCiBCcm9hZENhc3RTZWxmQnVp",
+            "bGRVcGRhdGVSZXNwb25zZRIoCgVidWlsZBgBIAEoCzIZLmdhbWVNZXNzYWdl",
+            "Q29yZS5OZnRCdWlsZCJWCiNCcm9hZENhc3RTZWxmQnVpbGRSZWN5Y2xpbmdS",
+            "ZXNwb25zZRIPCgdidWlsZElkGAEgASgDEg8KB2Zyb21OZnQYAiABKAkSDQoF",
+            "b3duZXIYAyABKAMiNgoSTWludEJhdHRlcnlSZXF1ZXN0Eg8KB21pbnROdW0Y",
+            "ASABKAUSDwoHZ2lmdE51bRgCIAEoBSIVChNNaW50QmF0dGVyeVJlc3BvbnNl",
+            "IhUKE1F1ZXJ5R3JhbmFyeVJlcXVlc3QiRAoUUXVlcnlHcmFuYXJ5UmVzcG9u",
+            "c2USLAoFaXRlbXMYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJ",
+            "bmZvIhcKFUdyYW5hcnlDb2xsZWN0UmVxdWVzdCJGChZHcmFuYXJ5Q29sbGVj",
+            "dFJlc3BvbnNlEiwKBWl0ZW1zGAEgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0",
+            "ZW1CYXNlSW5mbyJOCh5Ccm9hZENhc3RHcmFuYXJ5VXBkYXRlUmVzcG9uc2US",
+            "LAoFaXRlbXMYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZv",
+            "Ik4KHkJyb2FkQ2FzdFVwR3JhbmFyeUl0ZW1SZXNwb25zZRIsCgVpdGVtcxgB",
+            "IAEoCzIdLmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8iVQoYVXBncmFk",
+            "ZVRhbGVudE5vZGVSZXF1ZXN0EikKBHR5cGUYASABKA4yGy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVGFsZW50VHlwZRIOCgZub2RlSWQYAiABKAUiGwoZVXBncmFkZVRh",
+            "bGVudE5vZGVSZXNwb25zZSIXChVRdWVyeVRhbGVudEV4cFJlcXVlc3QiRQoW",
+            "UXVlcnlUYWxlbnRFeHBSZXNwb25zZRIrCgdleHBEYXRhGAEgAygLMhouZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlRhbGVudEV4cCJOChxCcm9hZENhc3RVcFRhbGVudEV4",
+            "cFJlc3BvbnNlEi4KCnVwZGF0ZUV4cHMYASADKAsyGi5nYW1lTWVzc2FnZUNv",
+            "cmUuVGFsZW50RXhwIiMKElF1ZXJ5UGxheWVyUmVxdWVzdBINCgV0b2tlbhgB",
+            "IAEoCSJGChNRdWVyeVBsYXllclJlc3BvbnNlEi8KBnBsYXllchgBIAEoCzIf",
+            "LmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJCYXNlRGF0YSLyAQoTQ3JlYXRlUGxh",
+            "eWVyUmVxdWVzdBINCgV0b2tlbhgBIAEoCRIRCgluaWNrX25hbWUYAiABKAkS",
+            "DwoHcm9sZV9pZBgDIAEoBRIOCgZnZW5kZXIYBCABKAkSDAoEaWNvbhgFIAEo",
+            "CRIvCgdmZWF0dXJlGAYgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckZl",
+            "YXR1cmUSKAoHb3NfdHlwZRgHIAEoDjIXLmdhbWVNZXNzYWdlQ29yZS5PU1R5",
+            "cGUSLwoIcGxhdGZvcm0YCCABKA4yHS5nYW1lTWVzc2FnZUNvcmUuUGxhdGZv",
+            "cm1UeXBlIkcKFENyZWF0ZVBsYXllclJlc3BvbnNlEi8KBnBsYXllchgBIAEo",
+            "CzIfLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJCYXNlRGF0YSIRCg9FbnRlck1h",
+            "cFJlcXVlc3QifwoQRW50ZXJNYXBSZXNwb25zZRIjCgJtZRgBIAEoCzIXLmdh",
+            "bWVNZXNzYWdlQ29yZS5QbGF5ZXISMQoIbG9jYXRpb24YAiABKAsyHy5nYW1l",
+            "TWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24SEwoLcmVsaXZlX3RpbWUYAyAB",
+            "KAUiTgoZVXBkYXRlU2VsZkxvY2F0aW9uUmVxdWVzdBIxCghtb3ZlbWVudBgB",
+            "IAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlbWVudCJPChpVcGRh",
+            "dGVTZWxmTG9jYXRpb25SZXNwb25zZRIxCghtb3ZlbWVudBgBIAEoCzIfLmdh",
+            "bWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlbWVudCKQAgoPVXNlU2tpbGxSZXF1",
+            "ZXN0EhAKCHNraWxsX2lkGAEgASgFEiwKA2RpchgCIAEoCzIfLmdhbWVNZXNz",
+            "YWdlQ29yZS5FbnRpdHlMb2NhdGlvbhI2Cg1mcm9tX2xvY2F0aW9uGAMgASgL",
+            "Mh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUxvY2F0aW9uEiwKCXRhcmdldF9p",
+            "ZBgEIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIQCghpc19zdGFy",
+            "dBgFIAEoCBJFCg9ob21lQ29sbGVjdEluZm8YBiABKAsyLC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVXNlQ29sbGVjdFJlc291cmNlU2tpbGxJbmZvIhIKEFVzZVNraWxs",
+            "UmVzcG9uc2UiUgoUUmVzcGF3blBsYXllclJlcXVlc3QSOgoNcmVzcGF3bl9w",
+            "b2ludBgBIAEoDjIjLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJSZXNwYXduUG9p",
+            "bnQiewoVUmVzcGF3blBsYXllclJlc3BvbnNlEg8KB3VzZXJfaWQYASABKAMS",
+            "DgoGY3VyX2hwGAIgASgFEg4KBmFjdGl2ZRgDIAEoCBIxCghsb2NhdGlvbhgE",
+            "IAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbiKXAQoeQnJv",
+            "YWRDYXN0UmVzcGF3blBsYXllclJlc3BvbnNlEg8KB3VzZXJfaWQYASABKAMS",
+            "DgoGY3VyX2hwGAIgASgFEg4KBmFjdGl2ZRgDIAEoCBIxCghsb2NhdGlvbhgE",
+            "IAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhIRCglyZXZp",
+            "dmVfY2QYBSABKAMiHAoaUGxheWVyQWN0aW9uQ29sbGVjdFJlcXVlc3QiHQob",
+            "UGxheWVyQWN0aW9uQ29sbGVjdFJlc3BvbnNlIjcKJEJyb2FkQ2FzdFBsYXll",
+            "ckFjdGlvbkNvbGxlY3RSZXNwb25zZRIPCgd1c2VyX2lkGAEgASgDIicKF1Bs",
+            "YXllckFjdGlvbkNoYXRSZXF1ZXN0EgwKBHNob3cYASABKAgiGgoYUGxheWVy",
+            "QWN0aW9uQ2hhdFJlc3BvbnNlIkIKIUJyb2FkQ2FzdFBsYXllckFjdGlvbkNo",
+            "YXRSZXNwb25zZRIPCgd1c2VyX2lkGAEgASgDEgwKBHNob3cYAiABKAgiLgoS",
+            "R2V0SG9tZURhdGFSZXF1ZXN0EhgKEHJlcV9kYXRhX3VzZXJfaWQYASABKAMi",
+            "WgoTR2V0SG9tZURhdGFSZXNwb25zZRIVCg1vd25lcl91c2VyX2lkGAEgASgD",
+            "EhIKCm93bmVyX25hbWUYAiABKAkSGAoQc29pbERhdGFBbGxDb3VudBgDIAEo",
+            "BSKAAQoiQnJvYWRDYXN0SG9tZURhdGFJbml0QmF0Y2hSZXNwb25zZRI0Cgxz",
+            "b2lsRGF0YUxpc3QYASADKAsyHi5nYW1lTWVzc2FnZUNvcmUuUHJveHlTb2ls",
+            "RGF0YRIVCg1vd25lcl91c2VyX2lkGAIgASgDEg0KBWZpbmFsGAMgASgIIqgB",
+            "CiBCcm9hZENhc3RIb21lU2tpbGxSZXN1bHRSZXNwb25zZRIUCgxhY3Rpb25V",
+            "c2VySWQYASABKAMSDwoHc2tpbGxJZBgCIAEoBRITCgtjb3N0SXRlbUNpZBgD",
+            "IAEoBRJIChFvcGVyYXRlUmVzdWx0TGlzdBgEIAMoCzItLmdhbWVNZXNzYWdl",
+            "Q29yZS5Db2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0IqwBCh9Ccm9hZENh",
+            "c3RJbml0TWFwRWxlbWVudFJlc3BvbnNlEjMKBmVudGl0eRgBIAMoCzIjLmdh",
+            "bWVNZXNzYWdlQ29yZS5FbnRpdHlXaXRoTG9jYXRpb24SRQoUZGVzdHJ1Y3Rp",
+            "b25fZWxlbWVudHMYAiADKAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rp",
+            "b25FbGVtZW50RGF0YRINCgVmaW5hbBgDIAEoCCLXAQogQnJvYWRDYXN0TWFw",
+            "RW50aXR5VXBkYXRlUmVzcG9uc2USOQoMZW50aXR5X2FkZGVkGAEgAygLMiMu",
+            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eVdpdGhMb2NhdGlvbhIxCg5lbnRpdHlf",
+            "cmVtb3ZlZBgCIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBJFChRk",
+            "ZXN0cnVjdGlvbl9lbGVtZW50cxgDIAMoCzInLmdhbWVNZXNzYWdlQ29yZS5E",
+            "ZXN0cnVjdGlvbkVsZW1lbnREYXRhIk0KG0Jyb2FkQ2FzdEVudGl0eU1vdmVS",
+            "ZXNwb25zZRIuCgVtb3ZlcxgBIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRp",
+            "dHlNb3ZlbWVudCJNCh5Ccm9hZENhc3RFbnRpdHlEZXN0cm95UmVzcG9uc2US",
+            "KwoIZW50aXRpZXMYASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQi",
+            "mAMKHUJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlEjEKBXN0YXRlGAEg",
+            "ASgOMiIuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUNvbWJhdFN0YXRlEhAKCHNr",
+            "aWxsX2lkGAIgASgFEhMKC2NvbWJvX2luZGV4GAMgASgFEi4KC2Zyb21fZW50",
+            "aXR5GAQgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC3Rhcmdl",
+            "dF9saXN0GAUgAygDEiwKA2RpchgGIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5F",
+            "bnRpdHlMb2NhdGlvbhI2Cg1mcm9tX2xvY2F0aW9uGAcgASgLMh8uZ2FtZU1l",
+            "c3NhZ2VDb3JlLkVudGl0eUxvY2F0aW9uEhEKCWN1cl9zdGFtcBgIIAEoAxIu",
+            "Cgd0YXJnZXRzGAkgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eURhbWFn",
+            "ZRIvCgZmbHllcnMYCiADKAsyHy5nYW1lTWVzc2FnZUNvcmUuU2tpbGxGbHll",
+            "ckRhdGEiOwoPVGVsZXBvcnRSZXF1ZXN0EigKBnRvX3BvcxgJIAEoCzIYLmdh",
+            "bWVNZXNzYWdlQ29yZS5WZWN0b3IzIhIKEFRlbGVwb3J0UmVzcG9uc2UigwEK",
+            "I0Jyb2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0ZVJlc3BvbnNlEiwKCWVudGl0",
+            "eV9pZBgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIuCgdhdmF0",
+            "YXJzGAIgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckF2YXRhciL+AQom",
+            "QnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRlUmVzcG9uc2USLAoJZW50",
+            "aXR5X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC2Vs",
+            "ZWN0cmljRW5kGAIgASgFEhYKDmhhcnZlc3RTdGFydEF0GAMgASgFEhEKCWhh",
+            "cnZlc3RBdBgEIAEoBRIYChBoYXJ2ZXN0SXRlbUNvdW50GAUgASgFEhkKEWNv",
+            "bGxlY3Rpb25TdGFydEF0GAYgASgFEhQKDGNvbGxlY3Rpb25BdBgHIAEoBRIb",
+            "ChNjb2xsZWN0aW9uSXRlbUNvdW50GAggASgFIiYKF1NjZW5lRGVzdHJ1Y3Rp",
+            "b25SZXF1ZXN0EgsKA2lkcxgBIAMoAyIaChhTY2VuZURlc3RydWN0aW9uUmVz",
+            "cG9uc2UiagohQnJvYWRDYXN0U2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlEkUK",
+            "FGRlc3RydWN0aW9uX2VsZW1lbnRzGAEgAygLMicuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkRlc3RydWN0aW9uRWxlbWVudERhdGEiLQoWUXVlcnlTZXJ2ZXJUaW1lUmVx",
+            "dWVzdBITCgtjbGllbnRfdGltZRgBIAEoAyJDChdRdWVyeVNlcnZlclRpbWVS",
+            "ZXNwb25zZRITCgtjbGllbnRfdGltZRgBIAEoAxITCgtzeXN0ZW1fdGltZRgC",
+            "IAEoAyKbAQoeQnJvYWRDYXN0Q2hhbmdlU2VydmljZVJlc3BvbnNlEi0KB3Nl",
+            "clR5cGUYASABKA4yHC5nYW1lTWVzc2FnZUNvcmUuU2VydmljZVR5cGUSOAoK",
+            "c2VyU3ViVHlwZRgCIAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5TY2VuZVNlcnZp",
+            "Y2VTdWJUeXBlEhAKCHNlck93bmVyGAMgASgDIhgKFlF1ZXJ5VGFsZW50VHJl",
+            "ZVJlcXVlc3QidQoXUXVlcnlUYWxlbnRUcmVlUmVzcG9uc2USLwoJbGV2ZWxE",
+            "YXRhGAEgAygLMhwuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudExldmVsEikKBHRy",
+            "ZWUYAiADKAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHJlZSKIAQohQnJv",
+            "YWRDYXN0VGFsZW50VHJlZVVwZGF0ZVJlc3BvbnNlEi8KCWxldmVsRGF0YRgB",
+            "IAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRMZXZlbBIyCgd1cFRyZWVz",
+            "GAIgAygLMiEuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudFRyZWVVcGRhdGUiEgoQ",
+            "U2VsZlRhc2tzUmVxdWVzdCI/ChFTZWxmVGFza3NSZXNwb25zZRIqCgV0YXNr",
+            "cxgBIAEoCzIbLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJUYXNrIoEBCh9Ccm9h",
+            "ZENhc3RVcGRhdGVUYXNrTGlzdFJlc3BvbnNlEisKBGtpbmQYASABKA4yHS5n",
+            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEjEKDnRhc2tfbGlzdF9pbmZv",
+            "GAIgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkAKEUFjY2VwdFRh",
+            "c2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFz",
+            "a0xpc3RUeXBlIkcKEkFjY2VwdFRhc2tSZXNwb25zZRIxCg50YXNrX2xpc3Rf",
+            "aW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJFChZBYmFu",
+            "ZG9ubWVudFRhc2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVGFza0xpc3RUeXBlIkwKF0FiYW5kb25tZW50VGFza1Jlc3BvbnNl",
+            "EjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRh",
+            "c2tMaXN0IkoKEVRhc2tSZXdhcmRSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5k",
+            "GAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZSJHChJUYXNr",
+            "UmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsyGS5nYW1l",
+            "TWVzc2FnZUNvcmUuVGFza0xpc3QiRAoVVGFza0xpc3RSZXdhcmRSZXF1ZXN0",
+            "EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBl",
+            "IksKFlRhc2tMaXN0UmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8Y",
+            "ASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiuQIKGlVwZ3JhZGVU",
+            "YXNrUHJvZ3Jlc3NSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5kGAEgASgOMh0u",
+            "Z2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIuCgVpdGVtcxgCIAMoCzIf",
+            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbRI2CgNwb3MYAyABKAsy",
+            "KS5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblRhcmdldFBvc2l0aW9uEjcK",
+            "CXVzZVJlY2lwZRgEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9u",
+            "VXNlUmVjaXBlEkMKD2NyYWZ0U2tpbGxMZXZlbBgFIAEoCzIqLmdhbWVNZXNz",
+            "YWdlQ29yZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVsIh0KG1VwZ3JhZGVU",
+            "YXNrUHJvZ3Jlc3NSZXNwb25zZSK5AQobQnJvYWRDYXN0VGFza1Jld2FyZFJl",
+            "c3BvbnNlEhsKE2lzX3Rhc2tfbGlzdF9yZXdhcmQYASABKAgSNQoOdGFza19s",
+            "aXN0X2tpbmQYAiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBl",
+            "EhIKCnJld2FyZF9leHAYAyABKAUSMgoLcmV3YXJkX2l0ZW0YBCADKAsyHS5n",
+            "YW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvInoKFlNlbmRDaGF0TWVzc2Fn",
+            "ZVJlcXVlc3QSMwoJY2hhdF90eXBlGAEgASgOMiAuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkNoYXRDaGFubmVsVHlwZRIPCgdjb250ZW50GAIgASgJEhoKEnJlY2VpdmVy",
+            "X3BsYXllcl9pZBgDIAEoAyIpChdTZW5kQ2hhdE1lc3NhZ2VSZXNwb25zZRIO",
+            "CgZtc2dfaWQYASABKAMiagodQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9u",
+            "c2USLgoIbWVzc2FnZXMYASADKAsyHC5nYW1lTWVzc2FnZUNvcmUuQ2hhdE1l",
+            "c3NhZ2USGQoRaGlzdG9yaWNhbF9yZWNvcmQYAiABKAgiNQoiQnJvYWRDYXN0",
+            "UmVtb3ZlQ2hhdE1lc3NhZ2VSZXNwb25zZRIPCgdtc2dfaWRzGAEgAygDIlIK",
+            "IEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZVJlc3BvbnNlEi4KCmNoYXRfc3Rh",
+            "dGUYASABKA4yGi5nYW1lTWVzc2FnZUNvcmUuQ2hhdFN0YXRlIg0KC1BpbmdS",
+            "ZXF1ZXN0Ig4KDFBpbmdSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "HomeResourceOperateRequest", "HomeResourceOperateResponse", "BroadCastHomeDataInitBatchResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "UpgradeTalentNodeRequest", "UpgradeTalentNodeResponse", "QueryTalentExpRequest", "QueryTalentExpResponse", "BroadCastUpTalentExpResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "BroadCastHomeDataInitBatchResponse", "BroadCastHomeSkillResultResponse", "QueryTalentTreeRequest", "QueryTalentTreeResponse", "BroadCastTalentTreeUpdateResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTickOutResponse), global::GameMessageCore.BroadCastTickOutResponse.Parser, new[]{ "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetRequest), global::GameMessageCore.ItemGetRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetResponse), global::GameMessageCore.ItemGetResponse.Parser, null, null, null, null, null),
@@ -500,6 +526,11 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.GranaryCollectResponse), global::GameMessageCore.GranaryCollectResponse.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastGranaryUpdateResponse), global::GameMessageCore.BroadCastGranaryUpdateResponse.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastUpGranaryItemResponse), global::GameMessageCore.BroadCastUpGranaryItemResponse.Parser, new[]{ "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UpgradeTalentNodeRequest), global::GameMessageCore.UpgradeTalentNodeRequest.Parser, new[]{ "Type", "NodeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UpgradeTalentNodeResponse), global::GameMessageCore.UpgradeTalentNodeResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentExpRequest), global::GameMessageCore.QueryTalentExpRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentExpResponse), global::GameMessageCore.QueryTalentExpResponse.Parser, new[]{ "ExpData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastUpTalentExpResponse), global::GameMessageCore.BroadCastUpTalentExpResponse.Parser, new[]{ "UpdateExps" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryPlayerRequest), global::GameMessageCore.QueryPlayerRequest.Parser, new[]{ "Token" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryPlayerResponse), global::GameMessageCore.QueryPlayerResponse.Parser, new[]{ "Player" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CreatePlayerRequest), global::GameMessageCore.CreatePlayerRequest.Parser, new[]{ "Token", "NickName", "RoleId", "Gender", "Icon", "Feature", "OsType", "Platform" }, null, null, null, null),
@@ -522,6 +553,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.GetHomeDataRequest), global::GameMessageCore.GetHomeDataRequest.Parser, new[]{ "ReqDataUserId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.GetHomeDataResponse), global::GameMessageCore.GetHomeDataResponse.Parser, new[]{ "OwnerUserId", "OwnerName", "SoilDataAllCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastHomeDataInitBatchResponse), global::GameMessageCore.BroadCastHomeDataInitBatchResponse.Parser, new[]{ "SoilDataList", "OwnerUserId", "Final" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastHomeSkillResultResponse), global::GameMessageCore.BroadCastHomeSkillResultResponse.Parser, new[]{ "ActionUserId", "SkillId", "CostItemCid", "OperateResultList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastInitMapElementResponse), global::GameMessageCore.BroadCastInitMapElementResponse.Parser, new[]{ "Entity", "DestructionElements", "Final" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastMapEntityUpdateResponse), global::GameMessageCore.BroadCastMapEntityUpdateResponse.Parser, new[]{ "EntityAdded", "EntityRemoved", "DestructionElements" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastEntityMoveResponse), global::GameMessageCore.BroadCastEntityMoveResponse.Parser, new[]{ "Moves" }, null, null, null, null),
@@ -537,8 +569,9 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryServerTimeRequest), global::GameMessageCore.QueryServerTimeRequest.Parser, new[]{ "ClientTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryServerTimeResponse), global::GameMessageCore.QueryServerTimeResponse.Parser, new[]{ "ClientTime", "SystemTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastChangeServiceResponse), global::GameMessageCore.BroadCastChangeServiceResponse.Parser, new[]{ "SerType", "SerSubType", "SerOwner" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeResourceOperateRequest), global::GameMessageCore.HomeResourceOperateRequest.Parser, new[]{ "OperateInfoList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeResourceOperateResponse), global::GameMessageCore.HomeResourceOperateResponse.Parser, new[]{ "OperateResultList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentTreeRequest), global::GameMessageCore.QueryTalentTreeRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.QueryTalentTreeResponse), global::GameMessageCore.QueryTalentTreeResponse.Parser, new[]{ "LevelData", "Tree" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTalentTreeUpdateResponse), global::GameMessageCore.BroadCastTalentTreeUpdateResponse.Parser, new[]{ "LevelData", "UpTrees" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksRequest), global::GameMessageCore.SelfTasksRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SelfTasksResponse), global::GameMessageCore.SelfTasksResponse.Parser, new[]{ "Tasks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastUpdateTaskListResponse), global::GameMessageCore.BroadCastUpdateTaskListResponse.Parser, new[]{ "Kind", "TaskListInfo" }, null, null, null, null),
@@ -764,6 +797,21 @@ namespace GameMessageCore {
         case PayloadOneofCase.BroadCastUpGranaryItemResponse:
           BroadCastUpGranaryItemResponse = other.BroadCastUpGranaryItemResponse.Clone();
           break;
+        case PayloadOneofCase.UpgradeTalentNodeRequest:
+          UpgradeTalentNodeRequest = other.UpgradeTalentNodeRequest.Clone();
+          break;
+        case PayloadOneofCase.UpgradeTalentNodeResponse:
+          UpgradeTalentNodeResponse = other.UpgradeTalentNodeResponse.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentExpRequest:
+          QueryTalentExpRequest = other.QueryTalentExpRequest.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentExpResponse:
+          QueryTalentExpResponse = other.QueryTalentExpResponse.Clone();
+          break;
+        case PayloadOneofCase.BroadCastUpTalentExpResponse:
+          BroadCastUpTalentExpResponse = other.BroadCastUpTalentExpResponse.Clone();
+          break;
         case PayloadOneofCase.QueryPlayerRequest:
           QueryPlayerRequest = other.QueryPlayerRequest.Clone();
           break;
@@ -881,14 +929,20 @@ namespace GameMessageCore {
         case PayloadOneofCase.BroadCastChangeServiceResponse:
           BroadCastChangeServiceResponse = other.BroadCastChangeServiceResponse.Clone();
           break;
-        case PayloadOneofCase.HomeResourceOperateRequest:
-          HomeResourceOperateRequest = other.HomeResourceOperateRequest.Clone();
-          break;
-        case PayloadOneofCase.HomeResourceOperateResponse:
-          HomeResourceOperateResponse = other.HomeResourceOperateResponse.Clone();
-          break;
         case PayloadOneofCase.BroadCastHomeDataInitBatchResponse:
           BroadCastHomeDataInitBatchResponse = other.BroadCastHomeDataInitBatchResponse.Clone();
+          break;
+        case PayloadOneofCase.BroadCastHomeSkillResultResponse:
+          BroadCastHomeSkillResultResponse = other.BroadCastHomeSkillResultResponse.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentTreeRequest:
+          QueryTalentTreeRequest = other.QueryTalentTreeRequest.Clone();
+          break;
+        case PayloadOneofCase.QueryTalentTreeResponse:
+          QueryTalentTreeResponse = other.QueryTalentTreeResponse.Clone();
+          break;
+        case PayloadOneofCase.BroadCastTalentTreeUpdateResponse:
+          BroadCastTalentTreeUpdateResponse = other.BroadCastTalentTreeUpdateResponse.Clone();
           break;
         case PayloadOneofCase.SelfTasksRequest:
           SelfTasksRequest = other.SelfTasksRequest.Clone();
@@ -1639,6 +1693,66 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "upgrade_talent_node_request" field.</summary>
+    public const int UpgradeTalentNodeRequestFieldNumber = 65625;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.UpgradeTalentNodeRequest UpgradeTalentNodeRequest {
+      get { return payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest ? (global::GameMessageCore.UpgradeTalentNodeRequest) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UpgradeTalentNodeRequest;
+      }
+    }
+
+    /// <summary>Field number for the "upgrade_talent_node_response" field.</summary>
+    public const int UpgradeTalentNodeResponseFieldNumber = 65632;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.UpgradeTalentNodeResponse UpgradeTalentNodeResponse {
+      get { return payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse ? (global::GameMessageCore.UpgradeTalentNodeResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UpgradeTalentNodeResponse;
+      }
+    }
+
+    /// <summary>Field number for the "query_talent_exp_request" field.</summary>
+    public const int QueryTalentExpRequestFieldNumber = 65633;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentExpRequest QueryTalentExpRequest {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentExpRequest ? (global::GameMessageCore.QueryTalentExpRequest) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentExpRequest;
+      }
+    }
+
+    /// <summary>Field number for the "query_talent_exp_response" field.</summary>
+    public const int QueryTalentExpResponseFieldNumber = 65634;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentExpResponse QueryTalentExpResponse {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentExpResponse ? (global::GameMessageCore.QueryTalentExpResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentExpResponse;
+      }
+    }
+
+    /// <summary>Field number for the "broad_cast_up_talent_exp_response" field.</summary>
+    public const int BroadCastUpTalentExpResponseFieldNumber = 65635;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.BroadCastUpTalentExpResponse BroadCastUpTalentExpResponse {
+      get { return payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse ? (global::GameMessageCore.BroadCastUpTalentExpResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BroadCastUpTalentExpResponse;
+      }
+    }
+
     /// <summary>Field number for the "query_player_request" field.</summary>
     public const int QueryPlayerRequestFieldNumber = 131073;
     /// <summary>
@@ -2113,30 +2227,6 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "home_resource_operate_request" field.</summary>
-    public const int HomeResourceOperateRequestFieldNumber = 196679;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.HomeResourceOperateRequest HomeResourceOperateRequest {
-      get { return payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest ? (global::GameMessageCore.HomeResourceOperateRequest) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.HomeResourceOperateRequest;
-      }
-    }
-
-    /// <summary>Field number for the "home_resource_operate_response" field.</summary>
-    public const int HomeResourceOperateResponseFieldNumber = 196680;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.HomeResourceOperateResponse HomeResourceOperateResponse {
-      get { return payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse ? (global::GameMessageCore.HomeResourceOperateResponse) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.HomeResourceOperateResponse;
-      }
-    }
-
     /// <summary>Field number for the "broad_cast_home_data_init_batch_response" field.</summary>
     public const int BroadCastHomeDataInitBatchResponseFieldNumber = 196681;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2146,6 +2236,54 @@ namespace GameMessageCore {
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BroadCastHomeDataInitBatchResponse;
+      }
+    }
+
+    /// <summary>Field number for the "broad_cast_home_skill_result_response" field.</summary>
+    public const int BroadCastHomeSkillResultResponseFieldNumber = 196689;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.BroadCastHomeSkillResultResponse BroadCastHomeSkillResultResponse {
+      get { return payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse ? (global::GameMessageCore.BroadCastHomeSkillResultResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BroadCastHomeSkillResultResponse;
+      }
+    }
+
+    /// <summary>Field number for the "query_talent_tree_request" field.</summary>
+    public const int QueryTalentTreeRequestFieldNumber = 196691;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentTreeRequest QueryTalentTreeRequest {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest ? (global::GameMessageCore.QueryTalentTreeRequest) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentTreeRequest;
+      }
+    }
+
+    /// <summary>Field number for the "query_talent_tree_response" field.</summary>
+    public const int QueryTalentTreeResponseFieldNumber = 196692;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.QueryTalentTreeResponse QueryTalentTreeResponse {
+      get { return payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse ? (global::GameMessageCore.QueryTalentTreeResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QueryTalentTreeResponse;
+      }
+    }
+
+    /// <summary>Field number for the "broad_cast_talent_tree_update_response" field.</summary>
+    public const int BroadCastTalentTreeUpdateResponseFieldNumber = 196693;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.BroadCastTalentTreeUpdateResponse BroadCastTalentTreeUpdateResponse {
+      get { return payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse ? (global::GameMessageCore.BroadCastTalentTreeUpdateResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BroadCastTalentTreeUpdateResponse;
       }
     }
 
@@ -2466,6 +2604,11 @@ namespace GameMessageCore {
       GranaryCollectResponse = 65620,
       BroadCastGranaryUpdateResponse = 65621,
       BroadCastUpGranaryItemResponse = 65623,
+      UpgradeTalentNodeRequest = 65625,
+      UpgradeTalentNodeResponse = 65632,
+      QueryTalentExpRequest = 65633,
+      QueryTalentExpResponse = 65634,
+      BroadCastUpTalentExpResponse = 65635,
       QueryPlayerRequest = 131073,
       QueryPlayerResponse = 131074,
       CreatePlayerRequest = 131075,
@@ -2505,9 +2648,11 @@ namespace GameMessageCore {
       QueryServerTimeRequest = 196675,
       QueryServerTimeResponse = 196676,
       BroadCastChangeServiceResponse = 196677,
-      HomeResourceOperateRequest = 196679,
-      HomeResourceOperateResponse = 196680,
       BroadCastHomeDataInitBatchResponse = 196681,
+      BroadCastHomeSkillResultResponse = 196689,
+      QueryTalentTreeRequest = 196691,
+      QueryTalentTreeResponse = 196692,
+      BroadCastTalentTreeUpdateResponse = 196693,
       SelfTasksRequest = 262145,
       SelfTasksResponse = 262146,
       BroadCastUpdateTaskListResponse = 262147,
@@ -2615,6 +2760,11 @@ namespace GameMessageCore {
       if (!object.Equals(GranaryCollectResponse, other.GranaryCollectResponse)) return false;
       if (!object.Equals(BroadCastGranaryUpdateResponse, other.BroadCastGranaryUpdateResponse)) return false;
       if (!object.Equals(BroadCastUpGranaryItemResponse, other.BroadCastUpGranaryItemResponse)) return false;
+      if (!object.Equals(UpgradeTalentNodeRequest, other.UpgradeTalentNodeRequest)) return false;
+      if (!object.Equals(UpgradeTalentNodeResponse, other.UpgradeTalentNodeResponse)) return false;
+      if (!object.Equals(QueryTalentExpRequest, other.QueryTalentExpRequest)) return false;
+      if (!object.Equals(QueryTalentExpResponse, other.QueryTalentExpResponse)) return false;
+      if (!object.Equals(BroadCastUpTalentExpResponse, other.BroadCastUpTalentExpResponse)) return false;
       if (!object.Equals(QueryPlayerRequest, other.QueryPlayerRequest)) return false;
       if (!object.Equals(QueryPlayerResponse, other.QueryPlayerResponse)) return false;
       if (!object.Equals(CreatePlayerRequest, other.CreatePlayerRequest)) return false;
@@ -2654,9 +2804,11 @@ namespace GameMessageCore {
       if (!object.Equals(QueryServerTimeRequest, other.QueryServerTimeRequest)) return false;
       if (!object.Equals(QueryServerTimeResponse, other.QueryServerTimeResponse)) return false;
       if (!object.Equals(BroadCastChangeServiceResponse, other.BroadCastChangeServiceResponse)) return false;
-      if (!object.Equals(HomeResourceOperateRequest, other.HomeResourceOperateRequest)) return false;
-      if (!object.Equals(HomeResourceOperateResponse, other.HomeResourceOperateResponse)) return false;
       if (!object.Equals(BroadCastHomeDataInitBatchResponse, other.BroadCastHomeDataInitBatchResponse)) return false;
+      if (!object.Equals(BroadCastHomeSkillResultResponse, other.BroadCastHomeSkillResultResponse)) return false;
+      if (!object.Equals(QueryTalentTreeRequest, other.QueryTalentTreeRequest)) return false;
+      if (!object.Equals(QueryTalentTreeResponse, other.QueryTalentTreeResponse)) return false;
+      if (!object.Equals(BroadCastTalentTreeUpdateResponse, other.BroadCastTalentTreeUpdateResponse)) return false;
       if (!object.Equals(SelfTasksRequest, other.SelfTasksRequest)) return false;
       if (!object.Equals(SelfTasksResponse, other.SelfTasksResponse)) return false;
       if (!object.Equals(BroadCastUpdateTaskListResponse, other.BroadCastUpdateTaskListResponse)) return false;
@@ -2742,6 +2894,11 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.GranaryCollectResponse) hash ^= GranaryCollectResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastGranaryUpdateResponse) hash ^= BroadCastGranaryUpdateResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastUpGranaryItemResponse) hash ^= BroadCastUpGranaryItemResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) hash ^= UpgradeTalentNodeRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) hash ^= UpgradeTalentNodeResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) hash ^= QueryTalentExpRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) hash ^= QueryTalentExpResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) hash ^= BroadCastUpTalentExpResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) hash ^= QueryPlayerRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryPlayerResponse) hash ^= QueryPlayerResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.CreatePlayerRequest) hash ^= CreatePlayerRequest.GetHashCode();
@@ -2781,9 +2938,11 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.QueryServerTimeRequest) hash ^= QueryServerTimeRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryServerTimeResponse) hash ^= QueryServerTimeResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastChangeServiceResponse) hash ^= BroadCastChangeServiceResponse.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) hash ^= HomeResourceOperateRequest.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) hash ^= HomeResourceOperateResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) hash ^= BroadCastHomeDataInitBatchResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) hash ^= BroadCastHomeSkillResultResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) hash ^= QueryTalentTreeRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) hash ^= QueryTalentTreeResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) hash ^= BroadCastTalentTreeUpdateResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) hash ^= SelfTasksRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksResponse) hash ^= SelfTasksResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastUpdateTaskListResponse) hash ^= BroadCastUpdateTaskListResponse.GetHashCode();
@@ -3048,6 +3207,26 @@ namespace GameMessageCore {
         output.WriteRawTag(186, 133, 32);
         output.WriteMessage(BroadCastUpGranaryItemResponse);
       }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
+        output.WriteRawTag(202, 133, 32);
+        output.WriteMessage(UpgradeTalentNodeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
+        output.WriteRawTag(130, 134, 32);
+        output.WriteMessage(UpgradeTalentNodeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) {
+        output.WriteRawTag(138, 134, 32);
+        output.WriteMessage(QueryTalentExpRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) {
+        output.WriteRawTag(146, 134, 32);
+        output.WriteMessage(QueryTalentExpResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) {
+        output.WriteRawTag(154, 134, 32);
+        output.WriteMessage(BroadCastUpTalentExpResponse);
+      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         output.WriteRawTag(138, 128, 64);
         output.WriteMessage(QueryPlayerRequest);
@@ -3204,17 +3383,25 @@ namespace GameMessageCore {
         output.WriteRawTag(170, 132, 96);
         output.WriteMessage(BroadCastChangeServiceResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) {
-        output.WriteRawTag(186, 132, 96);
-        output.WriteMessage(HomeResourceOperateRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) {
-        output.WriteRawTag(194, 132, 96);
-        output.WriteMessage(HomeResourceOperateResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         output.WriteRawTag(202, 132, 96);
         output.WriteMessage(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) {
+        output.WriteRawTag(138, 133, 96);
+        output.WriteMessage(BroadCastHomeSkillResultResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) {
+        output.WriteRawTag(154, 133, 96);
+        output.WriteMessage(QueryTalentTreeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) {
+        output.WriteRawTag(162, 133, 96);
+        output.WriteMessage(QueryTalentTreeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) {
+        output.WriteRawTag(170, 133, 96);
+        output.WriteMessage(BroadCastTalentTreeUpdateResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -3534,6 +3721,26 @@ namespace GameMessageCore {
         output.WriteRawTag(186, 133, 32);
         output.WriteMessage(BroadCastUpGranaryItemResponse);
       }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
+        output.WriteRawTag(202, 133, 32);
+        output.WriteMessage(UpgradeTalentNodeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
+        output.WriteRawTag(130, 134, 32);
+        output.WriteMessage(UpgradeTalentNodeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) {
+        output.WriteRawTag(138, 134, 32);
+        output.WriteMessage(QueryTalentExpRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) {
+        output.WriteRawTag(146, 134, 32);
+        output.WriteMessage(QueryTalentExpResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) {
+        output.WriteRawTag(154, 134, 32);
+        output.WriteMessage(BroadCastUpTalentExpResponse);
+      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         output.WriteRawTag(138, 128, 64);
         output.WriteMessage(QueryPlayerRequest);
@@ -3690,17 +3897,25 @@ namespace GameMessageCore {
         output.WriteRawTag(170, 132, 96);
         output.WriteMessage(BroadCastChangeServiceResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) {
-        output.WriteRawTag(186, 132, 96);
-        output.WriteMessage(HomeResourceOperateRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) {
-        output.WriteRawTag(194, 132, 96);
-        output.WriteMessage(HomeResourceOperateResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         output.WriteRawTag(202, 132, 96);
         output.WriteMessage(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) {
+        output.WriteRawTag(138, 133, 96);
+        output.WriteMessage(BroadCastHomeSkillResultResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) {
+        output.WriteRawTag(154, 133, 96);
+        output.WriteMessage(QueryTalentTreeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) {
+        output.WriteRawTag(162, 133, 96);
+        output.WriteMessage(QueryTalentTreeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) {
+        output.WriteRawTag(170, 133, 96);
+        output.WriteMessage(BroadCastTalentTreeUpdateResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -3964,6 +4179,21 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastUpGranaryItemResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastUpGranaryItemResponse);
       }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(UpgradeTalentNodeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(UpgradeTalentNodeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentExpRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentExpResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastUpTalentExpResponse);
+      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryPlayerRequest);
       }
@@ -4081,14 +4311,20 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastChangeServiceResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastChangeServiceResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(HomeResourceOperateRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(HomeResourceOperateResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastHomeDataInitBatchResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastHomeSkillResultResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentTreeRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryTalentTreeResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastTalentTreeUpdateResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         size += 4 + pb::CodedOutputStream.ComputeMessageSize(SelfTasksRequest);
@@ -4490,6 +4726,36 @@ namespace GameMessageCore {
           }
           BroadCastUpGranaryItemResponse.MergeFrom(other.BroadCastUpGranaryItemResponse);
           break;
+        case PayloadOneofCase.UpgradeTalentNodeRequest:
+          if (UpgradeTalentNodeRequest == null) {
+            UpgradeTalentNodeRequest = new global::GameMessageCore.UpgradeTalentNodeRequest();
+          }
+          UpgradeTalentNodeRequest.MergeFrom(other.UpgradeTalentNodeRequest);
+          break;
+        case PayloadOneofCase.UpgradeTalentNodeResponse:
+          if (UpgradeTalentNodeResponse == null) {
+            UpgradeTalentNodeResponse = new global::GameMessageCore.UpgradeTalentNodeResponse();
+          }
+          UpgradeTalentNodeResponse.MergeFrom(other.UpgradeTalentNodeResponse);
+          break;
+        case PayloadOneofCase.QueryTalentExpRequest:
+          if (QueryTalentExpRequest == null) {
+            QueryTalentExpRequest = new global::GameMessageCore.QueryTalentExpRequest();
+          }
+          QueryTalentExpRequest.MergeFrom(other.QueryTalentExpRequest);
+          break;
+        case PayloadOneofCase.QueryTalentExpResponse:
+          if (QueryTalentExpResponse == null) {
+            QueryTalentExpResponse = new global::GameMessageCore.QueryTalentExpResponse();
+          }
+          QueryTalentExpResponse.MergeFrom(other.QueryTalentExpResponse);
+          break;
+        case PayloadOneofCase.BroadCastUpTalentExpResponse:
+          if (BroadCastUpTalentExpResponse == null) {
+            BroadCastUpTalentExpResponse = new global::GameMessageCore.BroadCastUpTalentExpResponse();
+          }
+          BroadCastUpTalentExpResponse.MergeFrom(other.BroadCastUpTalentExpResponse);
+          break;
         case PayloadOneofCase.QueryPlayerRequest:
           if (QueryPlayerRequest == null) {
             QueryPlayerRequest = new global::GameMessageCore.QueryPlayerRequest();
@@ -4724,23 +4990,35 @@ namespace GameMessageCore {
           }
           BroadCastChangeServiceResponse.MergeFrom(other.BroadCastChangeServiceResponse);
           break;
-        case PayloadOneofCase.HomeResourceOperateRequest:
-          if (HomeResourceOperateRequest == null) {
-            HomeResourceOperateRequest = new global::GameMessageCore.HomeResourceOperateRequest();
-          }
-          HomeResourceOperateRequest.MergeFrom(other.HomeResourceOperateRequest);
-          break;
-        case PayloadOneofCase.HomeResourceOperateResponse:
-          if (HomeResourceOperateResponse == null) {
-            HomeResourceOperateResponse = new global::GameMessageCore.HomeResourceOperateResponse();
-          }
-          HomeResourceOperateResponse.MergeFrom(other.HomeResourceOperateResponse);
-          break;
         case PayloadOneofCase.BroadCastHomeDataInitBatchResponse:
           if (BroadCastHomeDataInitBatchResponse == null) {
             BroadCastHomeDataInitBatchResponse = new global::GameMessageCore.BroadCastHomeDataInitBatchResponse();
           }
           BroadCastHomeDataInitBatchResponse.MergeFrom(other.BroadCastHomeDataInitBatchResponse);
+          break;
+        case PayloadOneofCase.BroadCastHomeSkillResultResponse:
+          if (BroadCastHomeSkillResultResponse == null) {
+            BroadCastHomeSkillResultResponse = new global::GameMessageCore.BroadCastHomeSkillResultResponse();
+          }
+          BroadCastHomeSkillResultResponse.MergeFrom(other.BroadCastHomeSkillResultResponse);
+          break;
+        case PayloadOneofCase.QueryTalentTreeRequest:
+          if (QueryTalentTreeRequest == null) {
+            QueryTalentTreeRequest = new global::GameMessageCore.QueryTalentTreeRequest();
+          }
+          QueryTalentTreeRequest.MergeFrom(other.QueryTalentTreeRequest);
+          break;
+        case PayloadOneofCase.QueryTalentTreeResponse:
+          if (QueryTalentTreeResponse == null) {
+            QueryTalentTreeResponse = new global::GameMessageCore.QueryTalentTreeResponse();
+          }
+          QueryTalentTreeResponse.MergeFrom(other.QueryTalentTreeResponse);
+          break;
+        case PayloadOneofCase.BroadCastTalentTreeUpdateResponse:
+          if (BroadCastTalentTreeUpdateResponse == null) {
+            BroadCastTalentTreeUpdateResponse = new global::GameMessageCore.BroadCastTalentTreeUpdateResponse();
+          }
+          BroadCastTalentTreeUpdateResponse.MergeFrom(other.BroadCastTalentTreeUpdateResponse);
           break;
         case PayloadOneofCase.SelfTasksRequest:
           if (SelfTasksRequest == null) {
@@ -5369,6 +5647,51 @@ namespace GameMessageCore {
             BroadCastUpGranaryItemResponse = subBuilder;
             break;
           }
+          case 525002: {
+            global::GameMessageCore.UpgradeTalentNodeRequest subBuilder = new global::GameMessageCore.UpgradeTalentNodeRequest();
+            if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
+              subBuilder.MergeFrom(UpgradeTalentNodeRequest);
+            }
+            input.ReadMessage(subBuilder);
+            UpgradeTalentNodeRequest = subBuilder;
+            break;
+          }
+          case 525058: {
+            global::GameMessageCore.UpgradeTalentNodeResponse subBuilder = new global::GameMessageCore.UpgradeTalentNodeResponse();
+            if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
+              subBuilder.MergeFrom(UpgradeTalentNodeResponse);
+            }
+            input.ReadMessage(subBuilder);
+            UpgradeTalentNodeResponse = subBuilder;
+            break;
+          }
+          case 525066: {
+            global::GameMessageCore.QueryTalentExpRequest subBuilder = new global::GameMessageCore.QueryTalentExpRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) {
+              subBuilder.MergeFrom(QueryTalentExpRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentExpRequest = subBuilder;
+            break;
+          }
+          case 525074: {
+            global::GameMessageCore.QueryTalentExpResponse subBuilder = new global::GameMessageCore.QueryTalentExpResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) {
+              subBuilder.MergeFrom(QueryTalentExpResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentExpResponse = subBuilder;
+            break;
+          }
+          case 525082: {
+            global::GameMessageCore.BroadCastUpTalentExpResponse subBuilder = new global::GameMessageCore.BroadCastUpTalentExpResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) {
+              subBuilder.MergeFrom(BroadCastUpTalentExpResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastUpTalentExpResponse = subBuilder;
+            break;
+          }
           case 1048586: {
             global::GameMessageCore.QueryPlayerRequest subBuilder = new global::GameMessageCore.QueryPlayerRequest();
             if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -5720,24 +6043,6 @@ namespace GameMessageCore {
             BroadCastChangeServiceResponse = subBuilder;
             break;
           }
-          case 1573434: {
-            global::GameMessageCore.HomeResourceOperateRequest subBuilder = new global::GameMessageCore.HomeResourceOperateRequest();
-            if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) {
-              subBuilder.MergeFrom(HomeResourceOperateRequest);
-            }
-            input.ReadMessage(subBuilder);
-            HomeResourceOperateRequest = subBuilder;
-            break;
-          }
-          case 1573442: {
-            global::GameMessageCore.HomeResourceOperateResponse subBuilder = new global::GameMessageCore.HomeResourceOperateResponse();
-            if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) {
-              subBuilder.MergeFrom(HomeResourceOperateResponse);
-            }
-            input.ReadMessage(subBuilder);
-            HomeResourceOperateResponse = subBuilder;
-            break;
-          }
           case 1573450: {
             global::GameMessageCore.BroadCastHomeDataInitBatchResponse subBuilder = new global::GameMessageCore.BroadCastHomeDataInitBatchResponse();
             if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
@@ -5745,6 +6050,42 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastHomeDataInitBatchResponse = subBuilder;
+            break;
+          }
+          case 1573514: {
+            global::GameMessageCore.BroadCastHomeSkillResultResponse subBuilder = new global::GameMessageCore.BroadCastHomeSkillResultResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) {
+              subBuilder.MergeFrom(BroadCastHomeSkillResultResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastHomeSkillResultResponse = subBuilder;
+            break;
+          }
+          case 1573530: {
+            global::GameMessageCore.QueryTalentTreeRequest subBuilder = new global::GameMessageCore.QueryTalentTreeRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) {
+              subBuilder.MergeFrom(QueryTalentTreeRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentTreeRequest = subBuilder;
+            break;
+          }
+          case 1573538: {
+            global::GameMessageCore.QueryTalentTreeResponse subBuilder = new global::GameMessageCore.QueryTalentTreeResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) {
+              subBuilder.MergeFrom(QueryTalentTreeResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentTreeResponse = subBuilder;
+            break;
+          }
+          case 1573546: {
+            global::GameMessageCore.BroadCastTalentTreeUpdateResponse subBuilder = new global::GameMessageCore.BroadCastTalentTreeUpdateResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) {
+              subBuilder.MergeFrom(BroadCastTalentTreeUpdateResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastTalentTreeUpdateResponse = subBuilder;
             break;
           }
           case 2097162: {
@@ -6435,6 +6776,51 @@ namespace GameMessageCore {
             BroadCastUpGranaryItemResponse = subBuilder;
             break;
           }
+          case 525002: {
+            global::GameMessageCore.UpgradeTalentNodeRequest subBuilder = new global::GameMessageCore.UpgradeTalentNodeRequest();
+            if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeRequest) {
+              subBuilder.MergeFrom(UpgradeTalentNodeRequest);
+            }
+            input.ReadMessage(subBuilder);
+            UpgradeTalentNodeRequest = subBuilder;
+            break;
+          }
+          case 525058: {
+            global::GameMessageCore.UpgradeTalentNodeResponse subBuilder = new global::GameMessageCore.UpgradeTalentNodeResponse();
+            if (payloadCase_ == PayloadOneofCase.UpgradeTalentNodeResponse) {
+              subBuilder.MergeFrom(UpgradeTalentNodeResponse);
+            }
+            input.ReadMessage(subBuilder);
+            UpgradeTalentNodeResponse = subBuilder;
+            break;
+          }
+          case 525066: {
+            global::GameMessageCore.QueryTalentExpRequest subBuilder = new global::GameMessageCore.QueryTalentExpRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentExpRequest) {
+              subBuilder.MergeFrom(QueryTalentExpRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentExpRequest = subBuilder;
+            break;
+          }
+          case 525074: {
+            global::GameMessageCore.QueryTalentExpResponse subBuilder = new global::GameMessageCore.QueryTalentExpResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentExpResponse) {
+              subBuilder.MergeFrom(QueryTalentExpResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentExpResponse = subBuilder;
+            break;
+          }
+          case 525082: {
+            global::GameMessageCore.BroadCastUpTalentExpResponse subBuilder = new global::GameMessageCore.BroadCastUpTalentExpResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastUpTalentExpResponse) {
+              subBuilder.MergeFrom(BroadCastUpTalentExpResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastUpTalentExpResponse = subBuilder;
+            break;
+          }
           case 1048586: {
             global::GameMessageCore.QueryPlayerRequest subBuilder = new global::GameMessageCore.QueryPlayerRequest();
             if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -6786,24 +7172,6 @@ namespace GameMessageCore {
             BroadCastChangeServiceResponse = subBuilder;
             break;
           }
-          case 1573434: {
-            global::GameMessageCore.HomeResourceOperateRequest subBuilder = new global::GameMessageCore.HomeResourceOperateRequest();
-            if (payloadCase_ == PayloadOneofCase.HomeResourceOperateRequest) {
-              subBuilder.MergeFrom(HomeResourceOperateRequest);
-            }
-            input.ReadMessage(subBuilder);
-            HomeResourceOperateRequest = subBuilder;
-            break;
-          }
-          case 1573442: {
-            global::GameMessageCore.HomeResourceOperateResponse subBuilder = new global::GameMessageCore.HomeResourceOperateResponse();
-            if (payloadCase_ == PayloadOneofCase.HomeResourceOperateResponse) {
-              subBuilder.MergeFrom(HomeResourceOperateResponse);
-            }
-            input.ReadMessage(subBuilder);
-            HomeResourceOperateResponse = subBuilder;
-            break;
-          }
           case 1573450: {
             global::GameMessageCore.BroadCastHomeDataInitBatchResponse subBuilder = new global::GameMessageCore.BroadCastHomeDataInitBatchResponse();
             if (payloadCase_ == PayloadOneofCase.BroadCastHomeDataInitBatchResponse) {
@@ -6811,6 +7179,42 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastHomeDataInitBatchResponse = subBuilder;
+            break;
+          }
+          case 1573514: {
+            global::GameMessageCore.BroadCastHomeSkillResultResponse subBuilder = new global::GameMessageCore.BroadCastHomeSkillResultResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastHomeSkillResultResponse) {
+              subBuilder.MergeFrom(BroadCastHomeSkillResultResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastHomeSkillResultResponse = subBuilder;
+            break;
+          }
+          case 1573530: {
+            global::GameMessageCore.QueryTalentTreeRequest subBuilder = new global::GameMessageCore.QueryTalentTreeRequest();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentTreeRequest) {
+              subBuilder.MergeFrom(QueryTalentTreeRequest);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentTreeRequest = subBuilder;
+            break;
+          }
+          case 1573538: {
+            global::GameMessageCore.QueryTalentTreeResponse subBuilder = new global::GameMessageCore.QueryTalentTreeResponse();
+            if (payloadCase_ == PayloadOneofCase.QueryTalentTreeResponse) {
+              subBuilder.MergeFrom(QueryTalentTreeResponse);
+            }
+            input.ReadMessage(subBuilder);
+            QueryTalentTreeResponse = subBuilder;
+            break;
+          }
+          case 1573546: {
+            global::GameMessageCore.BroadCastTalentTreeUpdateResponse subBuilder = new global::GameMessageCore.BroadCastTalentTreeUpdateResponse();
+            if (payloadCase_ == PayloadOneofCase.BroadCastTalentTreeUpdateResponse) {
+              subBuilder.MergeFrom(BroadCastTalentTreeUpdateResponse);
+            }
+            input.ReadMessage(subBuilder);
+            BroadCastTalentTreeUpdateResponse = subBuilder;
             break;
           }
           case 2097162: {
@@ -17758,6 +18162,895 @@ namespace GameMessageCore {
   }
 
   /// <summary>
+  /// 天赋树相关
+  /// </summary>
+  public sealed partial class UpgradeTalentNodeRequest : pb::IMessage<UpgradeTalentNodeRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UpgradeTalentNodeRequest> _parser = new pb::MessageParser<UpgradeTalentNodeRequest>(() => new UpgradeTalentNodeRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UpgradeTalentNodeRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[56]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeRequest(UpgradeTalentNodeRequest other) : this() {
+      type_ = other.type_;
+      nodeId_ = other.nodeId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeRequest Clone() {
+      return new UpgradeTalentNodeRequest(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.TalentType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "nodeId" field.</summary>
+    public const int NodeIdFieldNumber = 2;
+    private int nodeId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int NodeId {
+      get { return nodeId_; }
+      set {
+        nodeId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UpgradeTalentNodeRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UpgradeTalentNodeRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      if (NodeId != other.NodeId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
+      if (NodeId != 0) hash ^= NodeId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (NodeId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(NodeId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (NodeId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(NodeId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (NodeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NodeId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UpgradeTalentNodeRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != global::GameMessageCore.TalentType.Unknown) {
+        Type = other.Type;
+      }
+      if (other.NodeId != 0) {
+        NodeId = other.NodeId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Type = (global::GameMessageCore.TalentType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            NodeId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::GameMessageCore.TalentType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            NodeId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class UpgradeTalentNodeResponse : pb::IMessage<UpgradeTalentNodeResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UpgradeTalentNodeResponse> _parser = new pb::MessageParser<UpgradeTalentNodeResponse>(() => new UpgradeTalentNodeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UpgradeTalentNodeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[57]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeResponse(UpgradeTalentNodeResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpgradeTalentNodeResponse Clone() {
+      return new UpgradeTalentNodeResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UpgradeTalentNodeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UpgradeTalentNodeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UpgradeTalentNodeResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class QueryTalentExpRequest : pb::IMessage<QueryTalentExpRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryTalentExpRequest> _parser = new pb::MessageParser<QueryTalentExpRequest>(() => new QueryTalentExpRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryTalentExpRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[58]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpRequest(QueryTalentExpRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpRequest Clone() {
+      return new QueryTalentExpRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryTalentExpRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryTalentExpRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryTalentExpRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class QueryTalentExpResponse : pb::IMessage<QueryTalentExpResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryTalentExpResponse> _parser = new pb::MessageParser<QueryTalentExpResponse>(() => new QueryTalentExpResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryTalentExpResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[59]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpResponse(QueryTalentExpResponse other) : this() {
+      expData_ = other.expData_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentExpResponse Clone() {
+      return new QueryTalentExpResponse(this);
+    }
+
+    /// <summary>Field number for the "expData" field.</summary>
+    public const int ExpDataFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentExp> _repeated_expData_codec
+        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.TalentExp.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentExp> expData_ = new pbc::RepeatedField<global::GameMessageCore.TalentExp>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentExp> ExpData {
+      get { return expData_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryTalentExpResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryTalentExpResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!expData_.Equals(other.expData_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= expData_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      expData_.WriteTo(output, _repeated_expData_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      expData_.WriteTo(ref output, _repeated_expData_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += expData_.CalculateSize(_repeated_expData_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryTalentExpResponse other) {
+      if (other == null) {
+        return;
+      }
+      expData_.Add(other.expData_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            expData_.AddEntriesFrom(input, _repeated_expData_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            expData_.AddEntriesFrom(ref input, _repeated_expData_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class BroadCastUpTalentExpResponse : pb::IMessage<BroadCastUpTalentExpResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<BroadCastUpTalentExpResponse> _parser = new pb::MessageParser<BroadCastUpTalentExpResponse>(() => new BroadCastUpTalentExpResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<BroadCastUpTalentExpResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[60]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastUpTalentExpResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastUpTalentExpResponse(BroadCastUpTalentExpResponse other) : this() {
+      updateExps_ = other.updateExps_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastUpTalentExpResponse Clone() {
+      return new BroadCastUpTalentExpResponse(this);
+    }
+
+    /// <summary>Field number for the "updateExps" field.</summary>
+    public const int UpdateExpsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentExp> _repeated_updateExps_codec
+        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.TalentExp.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentExp> updateExps_ = new pbc::RepeatedField<global::GameMessageCore.TalentExp>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentExp> UpdateExps {
+      get { return updateExps_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as BroadCastUpTalentExpResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(BroadCastUpTalentExpResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!updateExps_.Equals(other.updateExps_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= updateExps_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      updateExps_.WriteTo(output, _repeated_updateExps_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      updateExps_.WriteTo(ref output, _repeated_updateExps_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += updateExps_.CalculateSize(_repeated_updateExps_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(BroadCastUpTalentExpResponse other) {
+      if (other == null) {
+        return;
+      }
+      updateExps_.Add(other.updateExps_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            updateExps_.AddEntriesFrom(input, _repeated_updateExps_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            updateExps_.AddEntriesFrom(ref input, _repeated_updateExps_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
   /// </summary>
   public sealed partial class QueryPlayerRequest : pb::IMessage<QueryPlayerRequest>
@@ -17774,7 +19067,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[56]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17963,7 +19256,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[57]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18164,7 +19457,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[58]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18642,7 +19935,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[59]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18846,7 +20139,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[60]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18998,7 +20291,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[61]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19285,7 +20578,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[62]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19483,7 +20776,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[63]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19681,7 +20974,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[64]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20109,7 +21402,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[65]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20261,7 +21554,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[66]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20450,7 +21743,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[67]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20759,7 +22052,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[68]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21105,7 +22398,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[69]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21257,7 +22550,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[70]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21409,7 +22702,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[71]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21598,7 +22891,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[72]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21787,7 +23080,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[73]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21939,7 +23232,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[74]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22165,7 +23458,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[75]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22354,7 +23647,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[76]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22617,7 +23910,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[77]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22855,6 +24148,307 @@ namespace GameMessageCore {
 
   }
 
+  /// <summary>
+  ///释放家园技能结果
+  /// </summary>
+  public sealed partial class BroadCastHomeSkillResultResponse : pb::IMessage<BroadCastHomeSkillResultResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<BroadCastHomeSkillResultResponse> _parser = new pb::MessageParser<BroadCastHomeSkillResultResponse>(() => new BroadCastHomeSkillResultResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<BroadCastHomeSkillResultResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[83]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastHomeSkillResultResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastHomeSkillResultResponse(BroadCastHomeSkillResultResponse other) : this() {
+      actionUserId_ = other.actionUserId_;
+      skillId_ = other.skillId_;
+      costItemCid_ = other.costItemCid_;
+      operateResultList_ = other.operateResultList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BroadCastHomeSkillResultResponse Clone() {
+      return new BroadCastHomeSkillResultResponse(this);
+    }
+
+    /// <summary>Field number for the "actionUserId" field.</summary>
+    public const int ActionUserIdFieldNumber = 1;
+    private long actionUserId_;
+    /// <summary>
+    ///释放技能的用户id
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ActionUserId {
+      get { return actionUserId_; }
+      set {
+        actionUserId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "skillId" field.</summary>
+    public const int SkillIdFieldNumber = 2;
+    private int skillId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SkillId {
+      get { return skillId_; }
+      set {
+        skillId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "costItemCid" field.</summary>
+    public const int CostItemCidFieldNumber = 3;
+    private int costItemCid_;
+    /// <summary>
+    ///消耗道具的cid 比如种子 肥料
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CostItemCid {
+      get { return costItemCid_; }
+      set {
+        costItemCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "operateResultList" field.</summary>
+    public const int OperateResultListFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::GameMessageCore.CollectResourceOperateResult> _repeated_operateResultList_codec
+        = pb::FieldCodec.ForMessage(34, global::GameMessageCore.CollectResourceOperateResult.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult> operateResultList_ = new pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult>();
+    /// <summary>
+    ///每个家园对象的操作结果
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult> OperateResultList {
+      get { return operateResultList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as BroadCastHomeSkillResultResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(BroadCastHomeSkillResultResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ActionUserId != other.ActionUserId) return false;
+      if (SkillId != other.SkillId) return false;
+      if (CostItemCid != other.CostItemCid) return false;
+      if(!operateResultList_.Equals(other.operateResultList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ActionUserId != 0L) hash ^= ActionUserId.GetHashCode();
+      if (SkillId != 0) hash ^= SkillId.GetHashCode();
+      if (CostItemCid != 0) hash ^= CostItemCid.GetHashCode();
+      hash ^= operateResultList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ActionUserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(ActionUserId);
+      }
+      if (SkillId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SkillId);
+      }
+      if (CostItemCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(CostItemCid);
+      }
+      operateResultList_.WriteTo(output, _repeated_operateResultList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ActionUserId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(ActionUserId);
+      }
+      if (SkillId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SkillId);
+      }
+      if (CostItemCid != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(CostItemCid);
+      }
+      operateResultList_.WriteTo(ref output, _repeated_operateResultList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ActionUserId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ActionUserId);
+      }
+      if (SkillId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkillId);
+      }
+      if (CostItemCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CostItemCid);
+      }
+      size += operateResultList_.CalculateSize(_repeated_operateResultList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(BroadCastHomeSkillResultResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ActionUserId != 0L) {
+        ActionUserId = other.ActionUserId;
+      }
+      if (other.SkillId != 0) {
+        SkillId = other.SkillId;
+      }
+      if (other.CostItemCid != 0) {
+        CostItemCid = other.CostItemCid;
+      }
+      operateResultList_.Add(other.operateResultList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ActionUserId = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            SkillId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            CostItemCid = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            operateResultList_.AddEntriesFrom(input, _repeated_operateResultList_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ActionUserId = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            SkillId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            CostItemCid = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            operateResultList_.AddEntriesFrom(ref input, _repeated_operateResultList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class BroadCastInitMapElementResponse : pb::IMessage<BroadCastInitMapElementResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -22869,7 +24463,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[78]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[84]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23119,7 +24713,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[79]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[85]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23358,7 +24952,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[80]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[86]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23536,7 +25130,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[81]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[87]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23717,7 +25311,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[82]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[88]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24265,7 +25859,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[83]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[89]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24463,7 +26057,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[84]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[90]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24615,7 +26209,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[85]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[91]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24845,7 +26439,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[86]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[92]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25326,7 +26920,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[87]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[93]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25506,7 +27100,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[88]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[94]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25658,7 +27252,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[89]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[95]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25836,7 +27430,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[90]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[96]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26025,7 +27619,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[91]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[97]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26251,7 +27845,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[92]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[98]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26500,21 +28094,21 @@ namespace GameMessageCore {
 
   }
 
-  public sealed partial class HomeResourceOperateRequest : pb::IMessage<HomeResourceOperateRequest>
+  public sealed partial class QueryTalentTreeRequest : pb::IMessage<QueryTalentTreeRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<HomeResourceOperateRequest> _parser = new pb::MessageParser<HomeResourceOperateRequest>(() => new HomeResourceOperateRequest());
+    private static readonly pb::MessageParser<QueryTalentTreeRequest> _parser = new pb::MessageParser<QueryTalentTreeRequest>(() => new QueryTalentTreeRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<HomeResourceOperateRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<QueryTalentTreeRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[93]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[99]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26525,7 +28119,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateRequest() {
+    public QueryTalentTreeRequest() {
       OnConstruction();
     }
 
@@ -26533,44 +28127,31 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateRequest(HomeResourceOperateRequest other) : this() {
-      operateInfoList_ = other.operateInfoList_.Clone();
+    public QueryTalentTreeRequest(QueryTalentTreeRequest other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateRequest Clone() {
-      return new HomeResourceOperateRequest(this);
-    }
-
-    /// <summary>Field number for the "operateInfoList" field.</summary>
-    public const int OperateInfoListFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::GameMessageCore.CollectResourceOperateInfo> _repeated_operateInfoList_codec
-        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.CollectResourceOperateInfo.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateInfo> operateInfoList_ = new pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateInfo> OperateInfoList {
-      get { return operateInfoList_; }
+    public QueryTalentTreeRequest Clone() {
+      return new QueryTalentTreeRequest(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as HomeResourceOperateRequest);
+      return Equals(other as QueryTalentTreeRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(HomeResourceOperateRequest other) {
+    public bool Equals(QueryTalentTreeRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!operateInfoList_.Equals(other.operateInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -26578,7 +28159,6 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= operateInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -26597,7 +28177,6 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      operateInfoList_.WriteTo(output, _repeated_operateInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -26608,7 +28187,6 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      operateInfoList_.WriteTo(ref output, _repeated_operateInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -26619,7 +28197,6 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += operateInfoList_.CalculateSize(_repeated_operateInfoList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -26628,11 +28205,198 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(HomeResourceOperateRequest other) {
+    public void MergeFrom(QueryTalentTreeRequest other) {
       if (other == null) {
         return;
       }
-      operateInfoList_.Add(other.operateInfoList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class QueryTalentTreeResponse : pb::IMessage<QueryTalentTreeResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryTalentTreeResponse> _parser = new pb::MessageParser<QueryTalentTreeResponse>(() => new QueryTalentTreeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryTalentTreeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[100]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentTreeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentTreeResponse(QueryTalentTreeResponse other) : this() {
+      levelData_ = other.levelData_.Clone();
+      tree_ = other.tree_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryTalentTreeResponse Clone() {
+      return new QueryTalentTreeResponse(this);
+    }
+
+    /// <summary>Field number for the "levelData" field.</summary>
+    public const int LevelDataFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentLevel> _repeated_levelData_codec
+        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.TalentLevel.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentLevel> levelData_ = new pbc::RepeatedField<global::GameMessageCore.TalentLevel>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentLevel> LevelData {
+      get { return levelData_; }
+    }
+
+    /// <summary>Field number for the "tree" field.</summary>
+    public const int TreeFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentTree> _repeated_tree_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.TalentTree.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentTree> tree_ = new pbc::RepeatedField<global::GameMessageCore.TalentTree>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentTree> Tree {
+      get { return tree_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryTalentTreeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryTalentTreeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!levelData_.Equals(other.levelData_)) return false;
+      if(!tree_.Equals(other.tree_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= levelData_.GetHashCode();
+      hash ^= tree_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      levelData_.WriteTo(output, _repeated_levelData_codec);
+      tree_.WriteTo(output, _repeated_tree_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      levelData_.WriteTo(ref output, _repeated_levelData_codec);
+      tree_.WriteTo(ref output, _repeated_tree_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += levelData_.CalculateSize(_repeated_levelData_codec);
+      size += tree_.CalculateSize(_repeated_tree_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryTalentTreeResponse other) {
+      if (other == null) {
+        return;
+      }
+      levelData_.Add(other.levelData_);
+      tree_.Add(other.tree_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -26649,7 +28413,11 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            operateInfoList_.AddEntriesFrom(input, _repeated_operateInfoList_codec);
+            levelData_.AddEntriesFrom(input, _repeated_levelData_codec);
+            break;
+          }
+          case 18: {
+            tree_.AddEntriesFrom(input, _repeated_tree_codec);
             break;
           }
         }
@@ -26668,7 +28436,11 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            operateInfoList_.AddEntriesFrom(ref input, _repeated_operateInfoList_codec);
+            levelData_.AddEntriesFrom(ref input, _repeated_levelData_codec);
+            break;
+          }
+          case 18: {
+            tree_.AddEntriesFrom(ref input, _repeated_tree_codec);
             break;
           }
         }
@@ -26678,21 +28450,21 @@ namespace GameMessageCore {
 
   }
 
-  public sealed partial class HomeResourceOperateResponse : pb::IMessage<HomeResourceOperateResponse>
+  public sealed partial class BroadCastTalentTreeUpdateResponse : pb::IMessage<BroadCastTalentTreeUpdateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<HomeResourceOperateResponse> _parser = new pb::MessageParser<HomeResourceOperateResponse>(() => new HomeResourceOperateResponse());
+    private static readonly pb::MessageParser<BroadCastTalentTreeUpdateResponse> _parser = new pb::MessageParser<BroadCastTalentTreeUpdateResponse>(() => new BroadCastTalentTreeUpdateResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<HomeResourceOperateResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<BroadCastTalentTreeUpdateResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[94]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[101]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26703,7 +28475,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateResponse() {
+    public BroadCastTalentTreeUpdateResponse() {
       OnConstruction();
     }
 
@@ -26711,44 +28483,57 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateResponse(HomeResourceOperateResponse other) : this() {
-      operateResultList_ = other.operateResultList_.Clone();
+    public BroadCastTalentTreeUpdateResponse(BroadCastTalentTreeUpdateResponse other) : this() {
+      levelData_ = other.levelData_.Clone();
+      upTrees_ = other.upTrees_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HomeResourceOperateResponse Clone() {
-      return new HomeResourceOperateResponse(this);
+    public BroadCastTalentTreeUpdateResponse Clone() {
+      return new BroadCastTalentTreeUpdateResponse(this);
     }
 
-    /// <summary>Field number for the "operateResultList" field.</summary>
-    public const int OperateResultListFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::GameMessageCore.CollectResourceOperateResult> _repeated_operateResultList_codec
-        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.CollectResourceOperateResult.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult> operateResultList_ = new pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult>();
+    /// <summary>Field number for the "levelData" field.</summary>
+    public const int LevelDataFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentLevel> _repeated_levelData_codec
+        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.TalentLevel.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentLevel> levelData_ = new pbc::RepeatedField<global::GameMessageCore.TalentLevel>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.CollectResourceOperateResult> OperateResultList {
-      get { return operateResultList_; }
+    public pbc::RepeatedField<global::GameMessageCore.TalentLevel> LevelData {
+      get { return levelData_; }
+    }
+
+    /// <summary>Field number for the "upTrees" field.</summary>
+    public const int UpTreesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.TalentTreeUpdate> _repeated_upTrees_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.TalentTreeUpdate.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate> upTrees_ = new pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.TalentTreeUpdate> UpTrees {
+      get { return upTrees_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as HomeResourceOperateResponse);
+      return Equals(other as BroadCastTalentTreeUpdateResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(HomeResourceOperateResponse other) {
+    public bool Equals(BroadCastTalentTreeUpdateResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!operateResultList_.Equals(other.operateResultList_)) return false;
+      if(!levelData_.Equals(other.levelData_)) return false;
+      if(!upTrees_.Equals(other.upTrees_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -26756,7 +28541,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= operateResultList_.GetHashCode();
+      hash ^= levelData_.GetHashCode();
+      hash ^= upTrees_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -26775,7 +28561,8 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      operateResultList_.WriteTo(output, _repeated_operateResultList_codec);
+      levelData_.WriteTo(output, _repeated_levelData_codec);
+      upTrees_.WriteTo(output, _repeated_upTrees_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -26786,7 +28573,8 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      operateResultList_.WriteTo(ref output, _repeated_operateResultList_codec);
+      levelData_.WriteTo(ref output, _repeated_levelData_codec);
+      upTrees_.WriteTo(ref output, _repeated_upTrees_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -26797,7 +28585,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += operateResultList_.CalculateSize(_repeated_operateResultList_codec);
+      size += levelData_.CalculateSize(_repeated_levelData_codec);
+      size += upTrees_.CalculateSize(_repeated_upTrees_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -26806,11 +28595,12 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(HomeResourceOperateResponse other) {
+    public void MergeFrom(BroadCastTalentTreeUpdateResponse other) {
       if (other == null) {
         return;
       }
-      operateResultList_.Add(other.operateResultList_);
+      levelData_.Add(other.levelData_);
+      upTrees_.Add(other.upTrees_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -26827,7 +28617,11 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            operateResultList_.AddEntriesFrom(input, _repeated_operateResultList_codec);
+            levelData_.AddEntriesFrom(input, _repeated_levelData_codec);
+            break;
+          }
+          case 18: {
+            upTrees_.AddEntriesFrom(input, _repeated_upTrees_codec);
             break;
           }
         }
@@ -26846,7 +28640,11 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            operateResultList_.AddEntriesFrom(ref input, _repeated_operateResultList_codec);
+            levelData_.AddEntriesFrom(ref input, _repeated_levelData_codec);
+            break;
+          }
+          case 18: {
+            upTrees_.AddEntriesFrom(ref input, _repeated_upTrees_codec);
             break;
           }
         }
@@ -26870,7 +28668,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[95]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[102]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27022,7 +28820,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[96]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[103]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27226,7 +29024,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[97]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[104]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27464,7 +29262,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[98]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[105]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27653,7 +29451,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[99]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[106]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27854,7 +29652,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[100]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[107]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28046,7 +29844,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[101]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[108]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28247,7 +30045,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[102]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[109]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28436,7 +30234,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[103]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[110]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28637,7 +30435,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[104]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[111]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28826,7 +30624,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[105]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[112]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29024,7 +30822,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[106]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[113]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29389,7 +31187,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[107]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[114]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29541,7 +31339,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[108]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[115]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29830,7 +31628,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[109]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[116]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30097,7 +31895,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[110]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[117]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30289,7 +32087,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[111]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[118]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30504,7 +32302,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[112]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[119]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30684,7 +32482,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[113]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[120]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30876,7 +32674,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[114]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[121]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31028,7 +32826,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[115]; }
+      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[122]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

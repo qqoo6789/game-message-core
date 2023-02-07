@@ -138,12 +138,11 @@ message Envelope {
     QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
     QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
     BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
-    HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
-    HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
     BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049; 
-    QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030051;
-    QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030052;
-    BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030053;
+    BroadCastHomeSkillResultResponse        broad_cast_home_skill_result_response         = 0x030051;
+    QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030053;
+    QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030054;
+    BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030055;
  
 
 
@@ -492,6 +491,18 @@ message BroadCastHomeDataInitBatchResponse
   bool          final = 3;
 }
 
+//释放家园技能结果
+message BroadCastHomeSkillResultResponse
+{
+  //释放技能的用户id
+  int64        actionUserId = 1;
+  int32        skillId = 2;
+  //消耗道具的cid 比如种子 肥料
+  int32        costItemCid = 3;
+  //每个家园对象的操作结果
+  repeated CollectResourceOperateResult operateResultList = 4;
+}
+
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体
@@ -589,14 +600,6 @@ message BroadCastChangeServiceResponse{
   int64               serOwner   = 3;  
 }
 
-message HomeResourceOperateRequest
-{
-  repeated CollectResourceOperateInfo operateInfoList = 1;
-}
-message HomeResourceOperateResponse
-{
-  repeated CollectResourceOperateResult operateResultList = 1;
-}
 
 
 message QueryTalentTreeRequest{}        

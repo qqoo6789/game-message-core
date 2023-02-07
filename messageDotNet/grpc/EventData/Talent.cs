@@ -26,6 +26,8 @@ public class UpdateTalentEvent
 public class AddTalentExpEvent
 { // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
+    public string SceneServiceAppId;
+    public int MapId;
     public long UserId;
     public GrpcTalentExp[] AddExps;
 

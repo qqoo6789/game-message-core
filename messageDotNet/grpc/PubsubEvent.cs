@@ -101,6 +101,11 @@ public static class SubscriptionEvent
     /// </summary>
     public const string UPDATE_TALENT = "EventTopicUpdateTalent";
 
+    /// <summary>
+    /// add  user talent tree exp event
+    /// </summary>
+    public const string ADD_TALENT_EXP = "EventTopicAddTalentExp";
+
 
 
 }

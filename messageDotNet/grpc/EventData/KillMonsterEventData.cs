@@ -12,7 +12,6 @@ public class KillMonsterEventData : EventDataBase
     public int MonsterCid;
     public string MonsterName;
     public GrpcItemBaseInfo[] DropList;
-    public int Exp;
 
     public string ToJson()
     {

@@ -13,5 +13,4 @@ type KillMonsterEventData struct {
 	MonsterCid        int32                        `json:"monsterCid"`
 	MonsterName       string                       `json:"monsterName"`
 	DropList          []base_data.GrpcItemBaseInfo `json:"dropList"`
-	Exp               int32                        `json:"exp"`
 }

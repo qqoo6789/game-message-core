@@ -39,10 +39,10 @@ namespace GameMessageCore {
             "TWVzc2FnZUNvcmUuVGFsZW50VHlwZRItCghhZGROb2RlcxgCIAMoCzIbLmdh",
             "bWVNZXNzYWdlQ29yZS5UYWxlbnROb2RlEjAKC3VwZGF0ZU5vZGVzGAMgAygL",
             "MhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudE5vZGUSEwoLcmVtb3ZlTm9kZXMY",
-            "BCADKAUqPAoKVGFsZW50VHlwZRIVChFUYWxlbnRUeXBlVW5rbm93bhAAEgsK",
-            "B0Zhcm1pbmcQARIKCgZCYXR0bGUQAipBCg9UYWxlbnRHYWluc1R5cGUSDwoL",
-            "QWN0aXZlU2tpbGwQABIQCgxQYXNzaXZlU2tpbGwQARILCgdSZWNpcGVzEAJi",
-            "BnByb3RvMw=="));
+            "BCADKAUqSAoKVGFsZW50VHlwZRIVChFUYWxlbnRUeXBlVW5rbm93bhAAEgsK",
+            "B0Zhcm1pbmcQARIKCgZCYXR0bGUQAhIKCgZHYXRoZXIQAypBCg9UYWxlbnRH",
+            "YWluc1R5cGUSDwoLQWN0aXZlU2tpbGwQABIQCgxQYXNzaXZlU2tpbGwQARIL",
+            "CgdSZWNpcGVzEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TalentType), typeof(global::GameMessageCore.TalentGainsType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -63,8 +63,18 @@ namespace GameMessageCore {
   /// </summary>
   public enum TalentType {
     [pbr::OriginalName("TalentTypeUnknown")] Unknown = 0,
+    /// <summary>
+    /// 农业种植
+    /// </summary>
     [pbr::OriginalName("Farming")] Farming = 1,
+    /// <summary>
+    /// 战斗
+    /// </summary>
     [pbr::OriginalName("Battle")] Battle = 2,
+    /// <summary>
+    /// 采集|收集
+    /// </summary>
+    [pbr::OriginalName("Gather")] Gather = 3,
   }
 
   /// <summary>

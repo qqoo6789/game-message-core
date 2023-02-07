@@ -2,6 +2,11 @@ package base_data
 
 import "game-message-core/proto"
 
+type GrpcTalentExp struct {
+	TalentType proto.TalentType `json:"talentType"`
+	Exp        int64            `json:"exp"`
+}
+
 type GrpcTalentLevel struct {
 	TalentType proto.TalentType `json:"talentType"`
 	Level      uint32           `json:"level"`

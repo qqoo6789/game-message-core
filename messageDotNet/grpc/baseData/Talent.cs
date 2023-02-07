@@ -3,6 +3,19 @@ using UnityEngine;
 
 
 [Serializable]
+public class GrpcTalentExp
+{
+    public GameMessageCore.TalentType TalentType;
+    public long Exp;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+
+[Serializable]
 public class GrpcTalentLevel
 {
     public GameMessageCore.TalentType TalentType;

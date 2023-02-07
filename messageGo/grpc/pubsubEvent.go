@@ -37,4 +37,5 @@ const (
 
 	// update user talent data event
 	SubscriptionEventUpdateTalent SubscriptionEvent = "EventTopicUpdateTalent"
+	SubscriptionEventAddTalentExp SubscriptionEvent = "EventTopicAddTalentExp"
 )

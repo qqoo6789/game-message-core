@@ -6,8 +6,12 @@ option go_package = "./messageGo/proto";
 // 天赋类型
 enum TalentType {
     TalentTypeUnknown = 0;
+    // 农业种植
     Farming = 1;
+    // 战斗
     Battle = 2;
+    // 采集|收集
+    Gather = 3;
 }
 
 // 天赋收益

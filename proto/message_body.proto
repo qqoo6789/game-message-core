@@ -58,8 +58,7 @@ message Envelope {
     SigninPlayerResponse              signin_player_response                = 0x010020;
     SignOutPlayerRequest              sign_out_player_request               = 0x010021;
     SignOutPlayerResponse             sign_out_player_response              = 0x010022;
-    UpgradePlayerLevelRequest         upgrade_player_level_request          = 0x010023;
-    UpgradePlayerLevelResponse        upgrade_player_level_response         = 0x010024;
+
     QueryLandsRequest                 query_lands_request                   = 0x010025;
     QueryLandsResponse                query_lands_response                  = 0x010026;
     BroadCastInitLandResponse         broad_cast_init_land_response         = 0x010027;
@@ -292,14 +291,7 @@ message BroadCastEntityBattleDataUpdateResponse {
   EntityId    entity_id = 1;
   bool        isInBattle = 2;
 }
-
-message  UpgradePlayerLevelRequest{}
-message  UpgradePlayerLevelResponse{
-  int32  cur_level = 1;
-  int64  cur_exp   = 2;
-}
-
-
+ 
 // 占地相关
 message QueryLandsRequest{}
 message QueryLandsResponse{}

@@ -37,13 +37,19 @@ message UseCollectResourceSkillInfo{
   int32 costItemCid = 2;
 }
 
+//土地进度信息
+message HomeSoilProgressInfo{
+  uint64 id = 1;
+  CollectResourceProgressResult progressInfo = 2;
+}
+
 //家园某个采集资源操作结果
 message CollectResourceOperateResult{
-  CollectResourceBaseInfo targetInfo = 2;
+  CollectResourceBaseInfo targetInfo = 1;
   //修改进度结果 不影响操作执行 仅仅表示进度的变化
-  CollectResourceProgressResult progressResult = 3;
+  CollectResourceProgressResult progressResult = 2;
   //动作执行结果
-  CollectResourceExecuteResult executeResult = 4;
+  CollectResourceExecuteResult executeResult = 3;
 }
 
 message CollectResourceProgressResult

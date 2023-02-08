@@ -372,101 +372,103 @@ namespace GameMessageCore {
             "R2V0SG9tZURhdGFSZXF1ZXN0EhgKEHJlcV9kYXRhX3VzZXJfaWQYASABKAMi",
             "WgoTR2V0SG9tZURhdGFSZXNwb25zZRIVCg1vd25lcl91c2VyX2lkGAEgASgD",
             "EhIKCm93bmVyX25hbWUYAiABKAkSGAoQc29pbERhdGFBbGxDb3VudBgDIAEo",
-            "BSKAAQoiQnJvYWRDYXN0SG9tZURhdGFJbml0QmF0Y2hSZXNwb25zZRI0Cgxz",
+            "BSLBAQoiQnJvYWRDYXN0SG9tZURhdGFJbml0QmF0Y2hSZXNwb25zZRI0Cgxz",
             "b2lsRGF0YUxpc3QYASADKAsyHi5nYW1lTWVzc2FnZUNvcmUuUHJveHlTb2ls",
-            "RGF0YRIVCg1vd25lcl91c2VyX2lkGAIgASgDEg0KBWZpbmFsGAMgASgIIqgB",
-            "CiBCcm9hZENhc3RIb21lU2tpbGxSZXN1bHRSZXNwb25zZRIUCgxhY3Rpb25V",
-            "c2VySWQYASABKAMSDwoHc2tpbGxJZBgCIAEoBRITCgtjb3N0SXRlbUNpZBgD",
-            "IAEoBRJIChFvcGVyYXRlUmVzdWx0TGlzdBgEIAMoCzItLmdhbWVNZXNzYWdl",
-            "Q29yZS5Db2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0IqwBCh9Ccm9hZENh",
-            "c3RJbml0TWFwRWxlbWVudFJlc3BvbnNlEjMKBmVudGl0eRgBIAMoCzIjLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlXaXRoTG9jYXRpb24SRQoUZGVzdHJ1Y3Rp",
-            "b25fZWxlbWVudHMYAiADKAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rp",
-            "b25FbGVtZW50RGF0YRINCgVmaW5hbBgDIAEoCCLXAQogQnJvYWRDYXN0TWFw",
-            "RW50aXR5VXBkYXRlUmVzcG9uc2USOQoMZW50aXR5X2FkZGVkGAEgAygLMiMu",
-            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eVdpdGhMb2NhdGlvbhIxCg5lbnRpdHlf",
-            "cmVtb3ZlZBgCIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBJFChRk",
-            "ZXN0cnVjdGlvbl9lbGVtZW50cxgDIAMoCzInLmdhbWVNZXNzYWdlQ29yZS5E",
-            "ZXN0cnVjdGlvbkVsZW1lbnREYXRhIk0KG0Jyb2FkQ2FzdEVudGl0eU1vdmVS",
-            "ZXNwb25zZRIuCgVtb3ZlcxgBIAMoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRp",
-            "dHlNb3ZlbWVudCJNCh5Ccm9hZENhc3RFbnRpdHlEZXN0cm95UmVzcG9uc2US",
-            "KwoIZW50aXRpZXMYASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQi",
-            "mAMKHUJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNlEjEKBXN0YXRlGAEg",
-            "ASgOMiIuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUNvbWJhdFN0YXRlEhAKCHNr",
-            "aWxsX2lkGAIgASgFEhMKC2NvbWJvX2luZGV4GAMgASgFEi4KC2Zyb21fZW50",
-            "aXR5GAQgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC3Rhcmdl",
-            "dF9saXN0GAUgAygDEiwKA2RpchgGIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5F",
-            "bnRpdHlMb2NhdGlvbhI2Cg1mcm9tX2xvY2F0aW9uGAcgASgLMh8uZ2FtZU1l",
-            "c3NhZ2VDb3JlLkVudGl0eUxvY2F0aW9uEhEKCWN1cl9zdGFtcBgIIAEoAxIu",
-            "Cgd0YXJnZXRzGAkgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eURhbWFn",
-            "ZRIvCgZmbHllcnMYCiADKAsyHy5nYW1lTWVzc2FnZUNvcmUuU2tpbGxGbHll",
-            "ckRhdGEiOwoPVGVsZXBvcnRSZXF1ZXN0EigKBnRvX3BvcxgJIAEoCzIYLmdh",
-            "bWVNZXNzYWdlQ29yZS5WZWN0b3IzIhIKEFRlbGVwb3J0UmVzcG9uc2UigwEK",
-            "I0Jyb2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0ZVJlc3BvbnNlEiwKCWVudGl0",
-            "eV9pZBgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIuCgdhdmF0",
-            "YXJzGAIgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckF2YXRhciL+AQom",
-            "QnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRlUmVzcG9uc2USLAoJZW50",
-            "aXR5X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhMKC2Vs",
-            "ZWN0cmljRW5kGAIgASgFEhYKDmhhcnZlc3RTdGFydEF0GAMgASgFEhEKCWhh",
-            "cnZlc3RBdBgEIAEoBRIYChBoYXJ2ZXN0SXRlbUNvdW50GAUgASgFEhkKEWNv",
-            "bGxlY3Rpb25TdGFydEF0GAYgASgFEhQKDGNvbGxlY3Rpb25BdBgHIAEoBRIb",
-            "ChNjb2xsZWN0aW9uSXRlbUNvdW50GAggASgFIiYKF1NjZW5lRGVzdHJ1Y3Rp",
-            "b25SZXF1ZXN0EgsKA2lkcxgBIAMoAyIaChhTY2VuZURlc3RydWN0aW9uUmVz",
-            "cG9uc2UiagohQnJvYWRDYXN0U2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlEkUK",
-            "FGRlc3RydWN0aW9uX2VsZW1lbnRzGAEgAygLMicuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkRlc3RydWN0aW9uRWxlbWVudERhdGEiLQoWUXVlcnlTZXJ2ZXJUaW1lUmVx",
-            "dWVzdBITCgtjbGllbnRfdGltZRgBIAEoAyJDChdRdWVyeVNlcnZlclRpbWVS",
-            "ZXNwb25zZRITCgtjbGllbnRfdGltZRgBIAEoAxITCgtzeXN0ZW1fdGltZRgC",
-            "IAEoAyKbAQoeQnJvYWRDYXN0Q2hhbmdlU2VydmljZVJlc3BvbnNlEi0KB3Nl",
-            "clR5cGUYASABKA4yHC5nYW1lTWVzc2FnZUNvcmUuU2VydmljZVR5cGUSOAoK",
-            "c2VyU3ViVHlwZRgCIAEoDjIkLmdhbWVNZXNzYWdlQ29yZS5TY2VuZVNlcnZp",
-            "Y2VTdWJUeXBlEhAKCHNlck93bmVyGAMgASgDIhgKFlF1ZXJ5VGFsZW50VHJl",
-            "ZVJlcXVlc3QidQoXUXVlcnlUYWxlbnRUcmVlUmVzcG9uc2USLwoJbGV2ZWxE",
-            "YXRhGAEgAygLMhwuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudExldmVsEikKBHRy",
-            "ZWUYAiADKAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHJlZSKIAQohQnJv",
-            "YWRDYXN0VGFsZW50VHJlZVVwZGF0ZVJlc3BvbnNlEi8KCWxldmVsRGF0YRgB",
-            "IAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRMZXZlbBIyCgd1cFRyZWVz",
-            "GAIgAygLMiEuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudFRyZWVVcGRhdGUiEgoQ",
-            "U2VsZlRhc2tzUmVxdWVzdCI/ChFTZWxmVGFza3NSZXNwb25zZRIqCgV0YXNr",
-            "cxgBIAEoCzIbLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJUYXNrIoEBCh9Ccm9h",
-            "ZENhc3RVcGRhdGVUYXNrTGlzdFJlc3BvbnNlEisKBGtpbmQYASABKA4yHS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEjEKDnRhc2tfbGlzdF9pbmZv",
-            "GAIgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkAKEUFjY2VwdFRh",
-            "c2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFz",
-            "a0xpc3RUeXBlIkcKEkFjY2VwdFRhc2tSZXNwb25zZRIxCg50YXNrX2xpc3Rf",
-            "aW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJFChZBYmFu",
-            "ZG9ubWVudFRhc2tSZXF1ZXN0EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVGFza0xpc3RUeXBlIkwKF0FiYW5kb25tZW50VGFza1Jlc3BvbnNl",
-            "EjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlRh",
-            "c2tMaXN0IkoKEVRhc2tSZXdhcmRSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5k",
-            "GAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZSJHChJUYXNr",
-            "UmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsyGS5nYW1l",
-            "TWVzc2FnZUNvcmUuVGFza0xpc3QiRAoVVGFza0xpc3RSZXdhcmRSZXF1ZXN0",
-            "EisKBGtpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBl",
-            "IksKFlRhc2tMaXN0UmV3YXJkUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8Y",
-            "ASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiuQIKGlVwZ3JhZGVU",
-            "YXNrUHJvZ3Jlc3NSZXF1ZXN0EjUKDnRhc2tfbGlzdF9raW5kGAEgASgOMh0u",
-            "Z2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIuCgVpdGVtcxgCIAMoCzIf",
-            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbRI2CgNwb3MYAyABKAsy",
-            "KS5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblRhcmdldFBvc2l0aW9uEjcK",
-            "CXVzZVJlY2lwZRgEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9u",
-            "VXNlUmVjaXBlEkMKD2NyYWZ0U2tpbGxMZXZlbBgFIAEoCzIqLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVsIh0KG1VwZ3JhZGVU",
-            "YXNrUHJvZ3Jlc3NSZXNwb25zZSK5AQobQnJvYWRDYXN0VGFza1Jld2FyZFJl",
-            "c3BvbnNlEhsKE2lzX3Rhc2tfbGlzdF9yZXdhcmQYASABKAgSNQoOdGFza19s",
-            "aXN0X2tpbmQYAiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBl",
-            "EhIKCnJld2FyZF9leHAYAyABKAUSMgoLcmV3YXJkX2l0ZW0YBCADKAsyHS5n",
-            "YW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvInoKFlNlbmRDaGF0TWVzc2Fn",
-            "ZVJlcXVlc3QSMwoJY2hhdF90eXBlGAEgASgOMiAuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkNoYXRDaGFubmVsVHlwZRIPCgdjb250ZW50GAIgASgJEhoKEnJlY2VpdmVy",
-            "X3BsYXllcl9pZBgDIAEoAyIpChdTZW5kQ2hhdE1lc3NhZ2VSZXNwb25zZRIO",
-            "CgZtc2dfaWQYASABKAMiagodQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9u",
-            "c2USLgoIbWVzc2FnZXMYASADKAsyHC5nYW1lTWVzc2FnZUNvcmUuQ2hhdE1l",
-            "c3NhZ2USGQoRaGlzdG9yaWNhbF9yZWNvcmQYAiABKAgiNQoiQnJvYWRDYXN0",
-            "UmVtb3ZlQ2hhdE1lc3NhZ2VSZXNwb25zZRIPCgdtc2dfaWRzGAEgAygDIlIK",
-            "IEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZVJlc3BvbnNlEi4KCmNoYXRfc3Rh",
-            "dGUYASABKA4yGi5nYW1lTWVzc2FnZUNvcmUuQ2hhdFN0YXRlIg0KC1BpbmdS",
-            "ZXF1ZXN0Ig4KDFBpbmdSZXNwb25zZWIGcHJvdG8z"));
+            "RGF0YRI/ChBzb2lsUHJvZ3Jlc3NMaXN0GAIgAygLMiUuZ2FtZU1lc3NhZ2VD",
+            "b3JlLkhvbWVTb2lsUHJvZ3Jlc3NJbmZvEhUKDW93bmVyX3VzZXJfaWQYAyAB",
+            "KAMSDQoFZmluYWwYBCABKAgiqAEKIEJyb2FkQ2FzdEhvbWVTa2lsbFJlc3Vs",
+            "dFJlc3BvbnNlEhQKDGFjdGlvblVzZXJJZBgBIAEoAxIPCgdza2lsbElkGAIg",
+            "ASgFEhMKC2Nvc3RJdGVtQ2lkGAMgASgFEkgKEW9wZXJhdGVSZXN1bHRMaXN0",
+            "GAQgAygLMi0uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZU9wZXJh",
+            "dGVSZXN1bHQirAEKH0Jyb2FkQ2FzdEluaXRNYXBFbGVtZW50UmVzcG9uc2US",
+            "MwoGZW50aXR5GAEgAygLMiMuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eVdpdGhM",
+            "b2NhdGlvbhJFChRkZXN0cnVjdGlvbl9lbGVtZW50cxgCIAMoCzInLmdhbWVN",
+            "ZXNzYWdlQ29yZS5EZXN0cnVjdGlvbkVsZW1lbnREYXRhEg0KBWZpbmFsGAMg",
+            "ASgIItcBCiBCcm9hZENhc3RNYXBFbnRpdHlVcGRhdGVSZXNwb25zZRI5Cgxl",
+            "bnRpdHlfYWRkZWQYASADKAsyIy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5V2l0",
+            "aExvY2F0aW9uEjEKDmVudGl0eV9yZW1vdmVkGAIgAygLMhkuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkVudGl0eUlkEkUKFGRlc3RydWN0aW9uX2VsZW1lbnRzGAMgAygL",
+            "MicuZ2FtZU1lc3NhZ2VDb3JlLkRlc3RydWN0aW9uRWxlbWVudERhdGEiTQob",
+            "QnJvYWRDYXN0RW50aXR5TW92ZVJlc3BvbnNlEi4KBW1vdmVzGAEgAygLMh8u",
+            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eU1vdmVtZW50Ik0KHkJyb2FkQ2FzdEVu",
+            "dGl0eURlc3Ryb3lSZXNwb25zZRIrCghlbnRpdGllcxgBIAMoCzIZLmdhbWVN",
+            "ZXNzYWdlQ29yZS5FbnRpdHlJZCKYAwodQnJvYWRDYXN0RW50aXR5Q29tYmF0",
+            "UmVzcG9uc2USMQoFc3RhdGUYASABKA4yIi5nYW1lTWVzc2FnZUNvcmUuRW50",
+            "aXR5Q29tYmF0U3RhdGUSEAoIc2tpbGxfaWQYAiABKAUSEwoLY29tYm9faW5k",
+            "ZXgYAyABKAUSLgoLZnJvbV9lbnRpdHkYBCABKAsyGS5nYW1lTWVzc2FnZUNv",
+            "cmUuRW50aXR5SWQSEwoLdGFyZ2V0X2xpc3QYBSADKAMSLAoDZGlyGAYgASgL",
+            "Mh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUxvY2F0aW9uEjYKDWZyb21fbG9j",
+            "YXRpb24YByABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24S",
+            "EQoJY3VyX3N0YW1wGAggASgDEi4KB3RhcmdldHMYCSADKAsyHS5nYW1lTWVz",
+            "c2FnZUNvcmUuRW50aXR5RGFtYWdlEi8KBmZseWVycxgKIAMoCzIfLmdhbWVN",
+            "ZXNzYWdlQ29yZS5Ta2lsbEZseWVyRGF0YSI7Cg9UZWxlcG9ydFJlcXVlc3QS",
+            "KAoGdG9fcG9zGAkgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiEgoQ",
+            "VGVsZXBvcnRSZXNwb25zZSKDAQojQnJvYWRDYXN0RW50aXR5QXZhdGFyVXBk",
+            "YXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VD",
+            "b3JlLkVudGl0eUlkEi4KB2F2YXRhcnMYAiADKAsyHS5nYW1lTWVzc2FnZUNv",
+            "cmUuUGxheWVyQXZhdGFyIv4BCiZCcm9hZENhc3RFbnRpdHlCdWlsZERhdGFV",
+            "cGRhdGVSZXNwb25zZRIsCgllbnRpdHlfaWQYASABKAsyGS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5SWQSEwoLZWxlY3RyaWNFbmQYAiABKAUSFgoOaGFydmVz",
+            "dFN0YXJ0QXQYAyABKAUSEQoJaGFydmVzdEF0GAQgASgFEhgKEGhhcnZlc3RJ",
+            "dGVtQ291bnQYBSABKAUSGQoRY29sbGVjdGlvblN0YXJ0QXQYBiABKAUSFAoM",
+            "Y29sbGVjdGlvbkF0GAcgASgFEhsKE2NvbGxlY3Rpb25JdGVtQ291bnQYCCAB",
+            "KAUiJgoXU2NlbmVEZXN0cnVjdGlvblJlcXVlc3QSCwoDaWRzGAEgAygDIhoK",
+            "GFNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25zZSJqCiFCcm9hZENhc3RTY2VuZURl",
+            "c3RydWN0aW9uUmVzcG9uc2USRQoUZGVzdHJ1Y3Rpb25fZWxlbWVudHMYASAD",
+            "KAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rpb25FbGVtZW50RGF0YSIt",
+            "ChZRdWVyeVNlcnZlclRpbWVSZXF1ZXN0EhMKC2NsaWVudF90aW1lGAEgASgD",
+            "IkMKF1F1ZXJ5U2VydmVyVGltZVJlc3BvbnNlEhMKC2NsaWVudF90aW1lGAEg",
+            "ASgDEhMKC3N5c3RlbV90aW1lGAIgASgDIpsBCh5Ccm9hZENhc3RDaGFuZ2VT",
+            "ZXJ2aWNlUmVzcG9uc2USLQoHc2VyVHlwZRgBIAEoDjIcLmdhbWVNZXNzYWdl",
+            "Q29yZS5TZXJ2aWNlVHlwZRI4CgpzZXJTdWJUeXBlGAIgASgOMiQuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlNjZW5lU2VydmljZVN1YlR5cGUSEAoIc2VyT3duZXIYAyAB",
+            "KAMiGAoWUXVlcnlUYWxlbnRUcmVlUmVxdWVzdCJ1ChdRdWVyeVRhbGVudFRy",
+            "ZWVSZXNwb25zZRIvCglsZXZlbERhdGEYASADKAsyHC5nYW1lTWVzc2FnZUNv",
+            "cmUuVGFsZW50TGV2ZWwSKQoEdHJlZRgCIAMoCzIbLmdhbWVNZXNzYWdlQ29y",
+            "ZS5UYWxlbnRUcmVlIogBCiFCcm9hZENhc3RUYWxlbnRUcmVlVXBkYXRlUmVz",
+            "cG9uc2USLwoJbGV2ZWxEYXRhGAEgAygLMhwuZ2FtZU1lc3NhZ2VDb3JlLlRh",
+            "bGVudExldmVsEjIKB3VwVHJlZXMYAiADKAsyIS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFsZW50VHJlZVVwZGF0ZSISChBTZWxmVGFza3NSZXF1ZXN0Ij8KEVNlbGZU",
+            "YXNrc1Jlc3BvbnNlEioKBXRhc2tzGAEgASgLMhsuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlBsYXllclRhc2sigQEKH0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0UmVzcG9u",
+            "c2USKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5",
+            "cGUSMQoOdGFza19saXN0X2luZm8YAiABKAsyGS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza0xpc3QiQAoRQWNjZXB0VGFza1JlcXVlc3QSKwoEa2luZBgBIAEoDjId",
+            "LmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiRwoSQWNjZXB0VGFza1Jl",
+            "c3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgLMhkuZ2FtZU1lc3NhZ2VD",
+            "b3JlLlRhc2tMaXN0IkUKFkFiYW5kb25tZW50VGFza1JlcXVlc3QSKwoEa2lu",
+            "ZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiTAoXQWJh",
+            "bmRvbm1lbnRUYXNrUmVzcG9uc2USMQoOdGFza19saXN0X2luZm8YASABKAsy",
+            "GS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiSgoRVGFza1Jld2FyZFJlcXVl",
+            "c3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza0xpc3RUeXBlIkcKElRhc2tSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xp",
+            "c3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdCJEChVU",
+            "YXNrTGlzdFJld2FyZFJlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNz",
+            "YWdlQ29yZS5UYXNrTGlzdFR5cGUiSwoWVGFza0xpc3RSZXdhcmRSZXNwb25z",
+            "ZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5U",
+            "YXNrTGlzdCK5AgoaVXBncmFkZVRhc2tQcm9ncmVzc1JlcXVlc3QSNQoOdGFz",
+            "a19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RU",
+            "eXBlEi4KBWl0ZW1zGAIgAygLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRp",
+            "b25JdGVtEjYKA3BvcxgDIAEoCzIpLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0",
+            "aW9uVGFyZ2V0UG9zaXRpb24SNwoJdXNlUmVjaXBlGAQgASgLMiQuZ2FtZU1l",
+            "c3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNpcGUSQwoPY3JhZnRTa2lsbExl",
+            "dmVsGAUgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25DcmFmdFNr",
+            "aWxsTGV2ZWwiHQobVXBncmFkZVRhc2tQcm9ncmVzc1Jlc3BvbnNlIrkBChtC",
+            "cm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2USGwoTaXNfdGFza19saXN0X3Jl",
+            "d2FyZBgBIAEoCBI1Cg50YXNrX2xpc3Rfa2luZBgCIAEoDjIdLmdhbWVNZXNz",
+            "YWdlQ29yZS5UYXNrTGlzdFR5cGUSEgoKcmV3YXJkX2V4cBgDIAEoBRIyCgty",
+            "ZXdhcmRfaXRlbRgEIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5JdGVtQmFzZUlu",
+            "Zm8iegoWU2VuZENoYXRNZXNzYWdlUmVxdWVzdBIzCgljaGF0X3R5cGUYASAB",
+            "KA4yIC5nYW1lTWVzc2FnZUNvcmUuQ2hhdENoYW5uZWxUeXBlEg8KB2NvbnRl",
+            "bnQYAiABKAkSGgoScmVjZWl2ZXJfcGxheWVyX2lkGAMgASgDIikKF1NlbmRD",
+            "aGF0TWVzc2FnZVJlc3BvbnNlEg4KBm1zZ19pZBgBIAEoAyJqCh1Ccm9hZENh",
+            "c3RDaGF0TWVzc2FnZXNSZXNwb25zZRIuCghtZXNzYWdlcxgBIAMoCzIcLmdh",
+            "bWVNZXNzYWdlQ29yZS5DaGF0TWVzc2FnZRIZChFoaXN0b3JpY2FsX3JlY29y",
+            "ZBgCIAEoCCI1CiJCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZVJlc3BvbnNl",
+            "Eg8KB21zZ19pZHMYASADKAMiUgogQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRl",
+            "UmVzcG9uc2USLgoKY2hhdF9zdGF0ZRgBIAEoDjIaLmdhbWVNZXNzYWdlQ29y",
+            "ZS5DaGF0U3RhdGUiDQoLUGluZ1JlcXVlc3QiDgoMUGluZ1Jlc3BvbnNlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -552,7 +554,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastPlayerActionChatResponse), global::GameMessageCore.BroadCastPlayerActionChatResponse.Parser, new[]{ "UserId", "Show" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.GetHomeDataRequest), global::GameMessageCore.GetHomeDataRequest.Parser, new[]{ "ReqDataUserId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.GetHomeDataResponse), global::GameMessageCore.GetHomeDataResponse.Parser, new[]{ "OwnerUserId", "OwnerName", "SoilDataAllCount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastHomeDataInitBatchResponse), global::GameMessageCore.BroadCastHomeDataInitBatchResponse.Parser, new[]{ "SoilDataList", "OwnerUserId", "Final" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastHomeDataInitBatchResponse), global::GameMessageCore.BroadCastHomeDataInitBatchResponse.Parser, new[]{ "SoilDataList", "SoilProgressList", "OwnerUserId", "Final" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastHomeSkillResultResponse), global::GameMessageCore.BroadCastHomeSkillResultResponse.Parser, new[]{ "ActionUserId", "SkillId", "CostItemCid", "OperateResultList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastInitMapElementResponse), global::GameMessageCore.BroadCastInitMapElementResponse.Parser, new[]{ "Entity", "DestructionElements", "Final" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastMapEntityUpdateResponse), global::GameMessageCore.BroadCastMapEntityUpdateResponse.Parser, new[]{ "EntityAdded", "EntityRemoved", "DestructionElements" }, null, null, null, null),
@@ -23931,6 +23933,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BroadCastHomeDataInitBatchResponse(BroadCastHomeDataInitBatchResponse other) : this() {
       soilDataList_ = other.soilDataList_.Clone();
+      soilProgressList_ = other.soilProgressList_.Clone();
       ownerUserId_ = other.ownerUserId_;
       final_ = other.final_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -23953,8 +23956,22 @@ namespace GameMessageCore {
       get { return soilDataList_; }
     }
 
+    /// <summary>Field number for the "soilProgressList" field.</summary>
+    public const int SoilProgressListFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.HomeSoilProgressInfo> _repeated_soilProgressList_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.HomeSoilProgressInfo.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.HomeSoilProgressInfo> soilProgressList_ = new pbc::RepeatedField<global::GameMessageCore.HomeSoilProgressInfo>();
+    /// <summary>
+    ///有进度的才会有
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.HomeSoilProgressInfo> SoilProgressList {
+      get { return soilProgressList_; }
+    }
+
     /// <summary>Field number for the "owner_user_id" field.</summary>
-    public const int OwnerUserIdFieldNumber = 2;
+    public const int OwnerUserIdFieldNumber = 3;
     private long ownerUserId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -23966,7 +23983,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "final" field.</summary>
-    public const int FinalFieldNumber = 3;
+    public const int FinalFieldNumber = 4;
     private bool final_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -23993,6 +24010,7 @@ namespace GameMessageCore {
         return true;
       }
       if(!soilDataList_.Equals(other.soilDataList_)) return false;
+      if(!soilProgressList_.Equals(other.soilProgressList_)) return false;
       if (OwnerUserId != other.OwnerUserId) return false;
       if (Final != other.Final) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -24003,6 +24021,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= soilDataList_.GetHashCode();
+      hash ^= soilProgressList_.GetHashCode();
       if (OwnerUserId != 0L) hash ^= OwnerUserId.GetHashCode();
       if (Final != false) hash ^= Final.GetHashCode();
       if (_unknownFields != null) {
@@ -24024,12 +24043,13 @@ namespace GameMessageCore {
       output.WriteRawMessage(this);
     #else
       soilDataList_.WriteTo(output, _repeated_soilDataList_codec);
+      soilProgressList_.WriteTo(output, _repeated_soilProgressList_codec);
       if (OwnerUserId != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(OwnerUserId);
       }
       if (Final != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteBool(Final);
       }
       if (_unknownFields != null) {
@@ -24043,12 +24063,13 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       soilDataList_.WriteTo(ref output, _repeated_soilDataList_codec);
+      soilProgressList_.WriteTo(ref output, _repeated_soilProgressList_codec);
       if (OwnerUserId != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(OwnerUserId);
       }
       if (Final != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteBool(Final);
       }
       if (_unknownFields != null) {
@@ -24062,6 +24083,7 @@ namespace GameMessageCore {
     public int CalculateSize() {
       int size = 0;
       size += soilDataList_.CalculateSize(_repeated_soilDataList_codec);
+      size += soilProgressList_.CalculateSize(_repeated_soilProgressList_codec);
       if (OwnerUserId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(OwnerUserId);
       }
@@ -24081,6 +24103,7 @@ namespace GameMessageCore {
         return;
       }
       soilDataList_.Add(other.soilDataList_);
+      soilProgressList_.Add(other.soilProgressList_);
       if (other.OwnerUserId != 0L) {
         OwnerUserId = other.OwnerUserId;
       }
@@ -24106,11 +24129,15 @@ namespace GameMessageCore {
             soilDataList_.AddEntriesFrom(input, _repeated_soilDataList_codec);
             break;
           }
-          case 16: {
-            OwnerUserId = input.ReadInt64();
+          case 18: {
+            soilProgressList_.AddEntriesFrom(input, _repeated_soilProgressList_codec);
             break;
           }
           case 24: {
+            OwnerUserId = input.ReadInt64();
+            break;
+          }
+          case 32: {
             Final = input.ReadBool();
             break;
           }
@@ -24133,11 +24160,15 @@ namespace GameMessageCore {
             soilDataList_.AddEntriesFrom(ref input, _repeated_soilDataList_codec);
             break;
           }
-          case 16: {
-            OwnerUserId = input.ReadInt64();
+          case 18: {
+            soilProgressList_.AddEntriesFrom(ref input, _repeated_soilProgressList_codec);
             break;
           }
           case 24: {
+            OwnerUserId = input.ReadInt64();
+            break;
+          }
+          case 32: {
             Final = input.ReadBool();
             break;
           }

@@ -487,8 +487,10 @@ message GetHomeDataResponse{
 message BroadCastHomeDataInitBatchResponse
 {
   repeated ProxySoilData soilDataList = 1;
-  int64         owner_user_id = 2;
-  bool          final = 3;
+  //有进度的才会有
+  repeated HomeSoilProgressInfo soilProgressList = 2;
+  int64         owner_user_id = 3;
+  bool          final = 4;
 }
 
 //释放家园技能结果

@@ -5,8 +5,6 @@ using UnityEngine;
 [Serializable]
 public class GrpcEntityProfile
 {
-    public int Lv;
-    public long Exp;
     public int Att;
     public int AttSpeed;
     public int Def;
@@ -32,9 +30,7 @@ public class GrpcEntityProfile
         {
             return;
         }
-
-        Lv = profile.Lv;
-        Exp = profile.Exp;
+        
         Att = profile.Att;
         AttSpeed = profile.AttSpeed;
         Def = profile.Def;
@@ -54,8 +50,6 @@ public class GrpcEntityProfile
     {
         return new GameMessageCore.EntityProfile()
         {
-            Lv = Lv,
-            Exp = Exp,
             Att = Att,
             AttSpeed = AttSpeed,
             Def = Def,

@@ -5,9 +5,7 @@ option go_package = "./messageGo/proto";
 
 message EntityProfile {
   // 等级
-  int32 lv = 1;
-  // 经验值
-  int64 exp = 2;
+  int32 UnKnown = 1;
   // 攻击力
   int32 att = 3;
   // 攻击速率
@@ -45,9 +43,7 @@ message EntityProfileUpdate {
 
 
 enum EntityProfileField {
-  EntityProfileFieldUnKnown = 0;
-  EntityProfileFieldLv = 1;
-  EntityProfileFieldExp = 2;
+  EntityProfileFieldUnKnown = 0; 
   EntityProfileFieldAtt = 3;
   EntityProfileFieldAttSpeed = 4;
   EntityProfileFieldDef = 5;

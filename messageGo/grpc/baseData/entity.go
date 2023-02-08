@@ -6,8 +6,6 @@ import (
 
 // 对应 proto.EntityProfile
 type GrpcEntityProfile struct {
-	Lv         int32   `json:"lv"`
-	Exp        int64   `json:"exp"`
 	Att        int32   `json:"att"`
 	AttSpeed   int32   `json:"attSpeed"`
 	Def        int32   `json:"def"`
@@ -27,8 +25,6 @@ func (p *GrpcEntityProfile) Set(profile *proto.EntityProfile) {
 	if profile == nil {
 		return
 	}
-	p.Lv = profile.Lv
-	p.Exp = profile.Exp
 	p.Att = profile.Att
 	p.AttSpeed = profile.AttSpeed
 	p.Def = profile.Def
@@ -46,8 +42,6 @@ func (p *GrpcEntityProfile) Set(profile *proto.EntityProfile) {
 
 func (p *GrpcEntityProfile) ToProtoData() *proto.EntityProfile {
 	return &proto.EntityProfile{
-		Lv:         p.Lv,
-		Exp:        p.Exp,
 		Att:        p.Att,
 		AttSpeed:   p.AttSpeed,
 		Def:        p.Def,

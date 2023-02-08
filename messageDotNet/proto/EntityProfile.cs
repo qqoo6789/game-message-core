@@ -24,38 +24,37 @@ namespace GameMessageCore {
     static EntityProfileReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNlbnRpdHlQcm9maWxlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUikwIKDUVu",
-            "dGl0eVByb2ZpbGUSCgoCbHYYASABKAUSCwoDZXhwGAIgASgDEgsKA2F0dBgD",
-            "IAEoBRIRCglhdHRfc3BlZWQYBCABKAUSCwoDZGVmGAUgASgFEhIKCmhwX2N1",
-            "cnJlbnQYBiABKAUSEAoIaHBfbGltaXQYByABKAUSEQoJY3JpdF9yYXRlGAgg",
-            "ASgFEhAKCGNyaXRfZG1nGAkgASgFEhAKCGhpdF9yYXRlGAogASgFEhEKCW1p",
-            "c3NfcmF0ZRgLIAEoBRISCgptb3ZlX3NwZWVkGAwgASgCEhAKCHB1c2hfZG1n",
-            "GA0gASgFEhEKCXB1c2hfZGlzdBgOIAEoBRITCgtocF9yZWNvdmVyeRgVIAEo",
-            "BSKNAQoTRW50aXR5UHJvZmlsZVVwZGF0ZRIyCgVmaWVsZBgBIAEoDjIjLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlQcm9maWxlRmllbGQSEQoJY3VyX3ZhbHVl",
-            "GAIgASgFEhUKDWN1cl92YWx1ZV9zdHIYAyABKAkSGAoQdXNlX3N0cmluZ192",
-            "YWx1ZRgEIAEoCCqfBAoSRW50aXR5UHJvZmlsZUZpZWxkEh0KGUVudGl0eVBy",
-            "b2ZpbGVGaWVsZFVuS25vd24QABIYChRFbnRpdHlQcm9maWxlRmllbGRMdhAB",
-            "EhkKFUVudGl0eVByb2ZpbGVGaWVsZEV4cBACEhkKFUVudGl0eVByb2ZpbGVG",
-            "aWVsZEF0dBADEh4KGkVudGl0eVByb2ZpbGVGaWVsZEF0dFNwZWVkEAQSGQoV",
-            "RW50aXR5UHJvZmlsZUZpZWxkRGVmEAUSHQoZRW50aXR5UHJvZmlsZUZpZWxk",
-            "SHBMaW1pdBAGEh4KGkVudGl0eVByb2ZpbGVGaWVsZENyaXRSYXRlEAcSIAoc",
-            "RW50aXR5UHJvZmlsZUZpZWxkQ3JpdERhbWFnZRAIEh0KGUVudGl0eVByb2Zp",
-            "bGVGaWVsZEhpdFJhdGUQCRIeChpFbnRpdHlQcm9maWxlRmllbGRNaXNzUmF0",
-            "ZRAKEh8KG0VudGl0eVByb2ZpbGVGaWVsZE1vdmVTcGVlZBALEh0KGUVudGl0",
-            "eVByb2ZpbGVGaWVsZFB1c2hEbWcQDBIeChpFbnRpdHlQcm9maWxlRmllbGRQ",
-            "dXNoRGlzdBANEh8KG0VudGl0eVByb2ZpbGVGaWVsZEhwQ3VycmVudBAOEhwK",
-            "GEVudGl0eVByb2ZpbGVGaWVsZFJlbmFtZRAPEiAKHEVudGl0eVByb2ZpbGVG",
-            "aWVsZEhwUmVjb3ZlcnkQECruAQobRW50aXR5UHJvZmlsZVVwZGF0ZVRyaWdn",
-            "ZXJzEiYKIkVudGl0eVByb2ZpbGVVcGRhdGVUcmlnZ2Vyc1VuS25vd24QABIn",
-            "CiNFbnRpdHlQcm9maWxlVXBkYXRlVHJpZ2dlcnNCZUF0dGFjaxABEisKJ0Vu",
-            "dGl0eVByb2ZpbGVVcGRhdGVUcmlnZ2Vyc1VzQ29uc3VtYWJsZRACEiwKKEVu",
-            "dGl0eVByb2ZpbGVVcGRhdGVUcmlnZ2Vyc0F1dG9SZWNvdmVySHAQAxIjCh9F",
-            "bnRpdHlQcm9maWxlVXBkYXRlVHJpZ2dlcnNCdWZmEARiBnByb3RvMw=="));
+            "ChNlbnRpdHlQcm9maWxlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiiwIKDUVu",
+            "dGl0eVByb2ZpbGUSDwoHVW5Lbm93bhgBIAEoBRILCgNhdHQYAyABKAUSEQoJ",
+            "YXR0X3NwZWVkGAQgASgFEgsKA2RlZhgFIAEoBRISCgpocF9jdXJyZW50GAYg",
+            "ASgFEhAKCGhwX2xpbWl0GAcgASgFEhEKCWNyaXRfcmF0ZRgIIAEoBRIQCghj",
+            "cml0X2RtZxgJIAEoBRIQCghoaXRfcmF0ZRgKIAEoBRIRCgltaXNzX3JhdGUY",
+            "CyABKAUSEgoKbW92ZV9zcGVlZBgMIAEoAhIQCghwdXNoX2RtZxgNIAEoBRIR",
+            "CglwdXNoX2Rpc3QYDiABKAUSEwoLaHBfcmVjb3ZlcnkYFSABKAUijQEKE0Vu",
+            "dGl0eVByb2ZpbGVVcGRhdGUSMgoFZmllbGQYASABKA4yIy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5UHJvZmlsZUZpZWxkEhEKCWN1cl92YWx1ZRgCIAEoBRIV",
+            "Cg1jdXJfdmFsdWVfc3RyGAMgASgJEhgKEHVzZV9zdHJpbmdfdmFsdWUYBCAB",
+            "KAgq6gMKEkVudGl0eVByb2ZpbGVGaWVsZBIdChlFbnRpdHlQcm9maWxlRmll",
+            "bGRVbktub3duEAASGQoVRW50aXR5UHJvZmlsZUZpZWxkQXR0EAMSHgoaRW50",
+            "aXR5UHJvZmlsZUZpZWxkQXR0U3BlZWQQBBIZChVFbnRpdHlQcm9maWxlRmll",
+            "bGREZWYQBRIdChlFbnRpdHlQcm9maWxlRmllbGRIcExpbWl0EAYSHgoaRW50",
+            "aXR5UHJvZmlsZUZpZWxkQ3JpdFJhdGUQBxIgChxFbnRpdHlQcm9maWxlRmll",
+            "bGRDcml0RGFtYWdlEAgSHQoZRW50aXR5UHJvZmlsZUZpZWxkSGl0UmF0ZRAJ",
+            "Eh4KGkVudGl0eVByb2ZpbGVGaWVsZE1pc3NSYXRlEAoSHwobRW50aXR5UHJv",
+            "ZmlsZUZpZWxkTW92ZVNwZWVkEAsSHQoZRW50aXR5UHJvZmlsZUZpZWxkUHVz",
+            "aERtZxAMEh4KGkVudGl0eVByb2ZpbGVGaWVsZFB1c2hEaXN0EA0SHwobRW50",
+            "aXR5UHJvZmlsZUZpZWxkSHBDdXJyZW50EA4SHAoYRW50aXR5UHJvZmlsZUZp",
+            "ZWxkUmVuYW1lEA8SIAocRW50aXR5UHJvZmlsZUZpZWxkSHBSZWNvdmVyeRAQ",
+            "Ku4BChtFbnRpdHlQcm9maWxlVXBkYXRlVHJpZ2dlcnMSJgoiRW50aXR5UHJv",
+            "ZmlsZVVwZGF0ZVRyaWdnZXJzVW5Lbm93bhAAEicKI0VudGl0eVByb2ZpbGVV",
+            "cGRhdGVUcmlnZ2Vyc0JlQXR0YWNrEAESKwonRW50aXR5UHJvZmlsZVVwZGF0",
+            "ZVRyaWdnZXJzVXNDb25zdW1hYmxlEAISLAooRW50aXR5UHJvZmlsZVVwZGF0",
+            "ZVRyaWdnZXJzQXV0b1JlY292ZXJIcBADEiMKH0VudGl0eVByb2ZpbGVVcGRh",
+            "dGVUcmlnZ2Vyc0J1ZmYQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityProfileField), typeof(global::GameMessageCore.EntityProfileUpdateTriggers), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityProfile), global::GameMessageCore.EntityProfile.Parser, new[]{ "Lv", "Exp", "Att", "AttSpeed", "Def", "HpCurrent", "HpLimit", "CritRate", "CritDmg", "HitRate", "MissRate", "MoveSpeed", "PushDmg", "PushDist", "HpRecovery" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityProfile), global::GameMessageCore.EntityProfile.Parser, new[]{ "UnKnown", "Att", "AttSpeed", "Def", "HpCurrent", "HpLimit", "CritRate", "CritDmg", "HitRate", "MissRate", "MoveSpeed", "PushDmg", "PushDist", "HpRecovery" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityProfileUpdate), global::GameMessageCore.EntityProfileUpdate.Parser, new[]{ "Field", "CurValue", "CurValueStr", "UseStringValue" }, null, null, null, null)
           }));
     }
@@ -65,8 +64,6 @@ namespace GameMessageCore {
   #region Enums
   public enum EntityProfileField {
     [pbr::OriginalName("EntityProfileFieldUnKnown")] UnKnown = 0,
-    [pbr::OriginalName("EntityProfileFieldLv")] Lv = 1,
-    [pbr::OriginalName("EntityProfileFieldExp")] Exp = 2,
     [pbr::OriginalName("EntityProfileFieldAtt")] Att = 3,
     [pbr::OriginalName("EntityProfileFieldAttSpeed")] AttSpeed = 4,
     [pbr::OriginalName("EntityProfileFieldDef")] Def = 5,
@@ -128,8 +125,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EntityProfile(EntityProfile other) : this() {
-      lv_ = other.lv_;
-      exp_ = other.exp_;
+      unKnown_ = other.unKnown_;
       att_ = other.att_;
       attSpeed_ = other.attSpeed_;
       def_ = other.def_;
@@ -152,33 +148,18 @@ namespace GameMessageCore {
       return new EntityProfile(this);
     }
 
-    /// <summary>Field number for the "lv" field.</summary>
-    public const int LvFieldNumber = 1;
-    private int lv_;
+    /// <summary>Field number for the "UnKnown" field.</summary>
+    public const int UnKnownFieldNumber = 1;
+    private int unKnown_;
     /// <summary>
     /// 等级
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Lv {
-      get { return lv_; }
+    public int UnKnown {
+      get { return unKnown_; }
       set {
-        lv_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "exp" field.</summary>
-    public const int ExpFieldNumber = 2;
-    private long exp_;
-    /// <summary>
-    /// 经验值
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Exp {
-      get { return exp_; }
-      set {
-        exp_ = value;
+        unKnown_ = value;
       }
     }
 
@@ -392,8 +373,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Lv != other.Lv) return false;
-      if (Exp != other.Exp) return false;
+      if (UnKnown != other.UnKnown) return false;
       if (Att != other.Att) return false;
       if (AttSpeed != other.AttSpeed) return false;
       if (Def != other.Def) return false;
@@ -414,8 +394,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Lv != 0) hash ^= Lv.GetHashCode();
-      if (Exp != 0L) hash ^= Exp.GetHashCode();
+      if (UnKnown != 0) hash ^= UnKnown.GetHashCode();
       if (Att != 0) hash ^= Att.GetHashCode();
       if (AttSpeed != 0) hash ^= AttSpeed.GetHashCode();
       if (Def != 0) hash ^= Def.GetHashCode();
@@ -447,13 +426,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Lv != 0) {
+      if (UnKnown != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Lv);
-      }
-      if (Exp != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Exp);
+        output.WriteInt32(UnKnown);
       }
       if (Att != 0) {
         output.WriteRawTag(24);
@@ -517,13 +492,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Lv != 0) {
+      if (UnKnown != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Lv);
-      }
-      if (Exp != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Exp);
+        output.WriteInt32(UnKnown);
       }
       if (Att != 0) {
         output.WriteRawTag(24);
@@ -587,11 +558,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Lv != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Lv);
-      }
-      if (Exp != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Exp);
+      if (UnKnown != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UnKnown);
       }
       if (Att != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Att);
@@ -644,11 +612,8 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Lv != 0) {
-        Lv = other.Lv;
-      }
-      if (other.Exp != 0L) {
-        Exp = other.Exp;
+      if (other.UnKnown != 0) {
+        UnKnown = other.UnKnown;
       }
       if (other.Att != 0) {
         Att = other.Att;
@@ -705,11 +670,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Lv = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Exp = input.ReadInt64();
+            UnKnown = input.ReadInt32();
             break;
           }
           case 24: {
@@ -780,11 +741,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Lv = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Exp = input.ReadInt64();
+            UnKnown = input.ReadInt32();
             break;
           }
           case 24: {

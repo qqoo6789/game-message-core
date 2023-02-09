@@ -41,20 +41,20 @@ namespace GameMessageCore {
             "ZmZlY3QYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0InYK",
             "DlNraWxsRmx5ZXJEYXRhEikKBnRhcmdldBgBIAEoCzIZLmdhbWVNZXNzYWdl",
             "Q29yZS5FbnRpdHlJZBISCgpkZXN0X3N0YW1wGAIgASgDEiUKA2RpchgDIAEo",
-            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzKscBChFFbnRpdHlDb21iYXRT",
+            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzKsQBChFFbnRpdHlDb21iYXRT",
             "dGF0ZRIcChhFbnRpdHlDb21iYXRTdGF0ZVVua25vd24QABIaChZFbnRpdHlD",
             "b21iYXRTdGF0ZUJlZ2luEAESGAoURW50aXR5Q29tYmF0U3RhdGVFbmQQAhIg",
             "ChxFbnRpdHlDb21iYXRTdGF0ZUludGVycnVwdGVkEAMSGwoXRW50aXR5Q29t",
-            "YmF0U3RhdGVGbHlIaXQQBBIfChtFbnRpdHlDb21iYXRTdGF0ZVF1aWNrQmVn",
-            "aW4QBSqMAgoORGFtYWdlRWZmZWN0SWQSGQoVRGFtYWdlRWZmZWN0SWRVbmtu",
-            "b3duEAASFwoSRGFtYWdlRWZmZWN0SWQxMDAxEOkHEhcKEkRhbWFnZUVmZmVj",
-            "dElkMTAwMhDqBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDMQ6wcSFwoSRGFtYWdl",
-            "RWZmZWN0SWQxMDA0EOwHEhcKEkRhbWFnZUVmZmVjdElkMTAwNRDtBxIXChJE",
-            "YW1hZ2VFZmZlY3RJZDEwMDYQ7gcSFwoSRGFtYWdlRWZmZWN0SWQxMDA3EO8H",
-            "EhcKEkRhbWFnZUVmZmVjdElkMTAwOBDwBxIXChJEYW1hZ2VFZmZlY3RJZDEw",
-            "MDkQ8QcqYwoLRGFtYWdlU3RhdGUSFQoRRGFtYWdlU3RhdGVOb3JtYWwQABIT",
-            "Cg9EYW1hZ2VTdGF0ZUNyaXQQARITCg9EYW1hZ2VTdGF0ZU1pc3MQAxITCg9E",
-            "YW1hZ2VTdGF0ZUZhbGwQBGIGcHJvdG8z"));
+            "YmF0U3RhdGVGbHlIaXQQBBIcChhFbnRpdHlDb21iYXRTdGF0ZVRyaWdnZXIQ",
+            "BSqMAgoORGFtYWdlRWZmZWN0SWQSGQoVRGFtYWdlRWZmZWN0SWRVbmtub3du",
+            "EAASFwoSRGFtYWdlRWZmZWN0SWQxMDAxEOkHEhcKEkRhbWFnZUVmZmVjdElk",
+            "MTAwMhDqBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDMQ6wcSFwoSRGFtYWdlRWZm",
+            "ZWN0SWQxMDA0EOwHEhcKEkRhbWFnZUVmZmVjdElkMTAwNRDtBxIXChJEYW1h",
+            "Z2VFZmZlY3RJZDEwMDYQ7gcSFwoSRGFtYWdlRWZmZWN0SWQxMDA3EO8HEhcK",
+            "EkRhbWFnZUVmZmVjdElkMTAwOBDwBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDkQ",
+            "8QcqYwoLRGFtYWdlU3RhdGUSFQoRRGFtYWdlU3RhdGVOb3JtYWwQABITCg9E",
+            "YW1hZ2VTdGF0ZUNyaXQQARITCg9EYW1hZ2VTdGF0ZU1pc3MQAxITCg9EYW1h",
+            "Z2VTdGF0ZUZhbGwQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -88,9 +88,9 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("EntityCombatStateFlyHit")] FlyHit = 4,
     /// <summary>
-    ///快速施法
+    ///触发施法
     /// </summary>
-    [pbr::OriginalName("EntityCombatStateQuickBegin")] QuickBegin = 5,
+    [pbr::OriginalName("EntityCombatStateTrigger")] Trigger = 5,
   }
 
   public enum DamageEffectId {

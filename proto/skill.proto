@@ -17,8 +17,8 @@ enum EntityCombatState {
   EntityCombatStateInterrupted = 3;
   //飞行物打中目标时
   EntityCombatStateFlyHit = 4;
-  //快速施法
-  EntityCombatStateQuickBegin = 5;
+  //触发施法
+  EntityCombatStateTrigger = 5;
 }
 
 //-------------------------------

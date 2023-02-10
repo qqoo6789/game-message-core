@@ -23,6 +23,7 @@ message ProxySoilData
     bool sowingValid = 6;
     int32 manureCid = 7;
     bool manureValid = 8;
+    int32 extraWateringNum = 9;
 }
 
 message CollectResourceBaseInfo{
@@ -63,6 +64,8 @@ message CollectResourceProgressResult
 message CollectResourceExecuteResult
 {
     //道具有效  在播种和施肥时候专精不够时候 会返回false
-    bool itemValid=2;
+    bool itemValid=1;
+    //额外浇水次数
+    int32 ExtraWateringNum = 2;
     repeated ItemBaseInfo dropList = 3;
 }

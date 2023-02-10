@@ -24,40 +24,41 @@ namespace GameMessageCore {
     static HomeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8irQEK",
+            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8ixwEK",
             "DVByb3h5U29pbERhdGESCgoCaWQYASABKAQSEgoKc29pbFN0YXR1cxgCIAEo",
             "BRIYChBzdGF0dXNTdGFydFN0YW1wGAMgASgDEhQKDGdyb3dpbmdTdGFnZRgE",
             "IAEoBRIPCgdzZWVkQ2lkGAUgASgFEhMKC3Nvd2luZ1ZhbGlkGAYgASgIEhEK",
-            "CW1hbnVyZUNpZBgHIAEoBRITCgttYW51cmVWYWxpZBgIIAEoCCJZChdDb2xs",
-            "ZWN0UmVzb3VyY2VCYXNlSW5mbxIKCgJpZBgBIAEoBBIyCgR0eXBlGAIgASgO",
-            "MiQuZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVR5cGUibQobVXNl",
-            "Q29sbGVjdFJlc291cmNlU2tpbGxJbmZvEjkKB3RhcmdldHMYASADKAsyKC5n",
-            "YW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJlc291cmNlQmFzZUluZm8SEwoLY29z",
-            "dEl0ZW1DaWQYAiABKAUiaAoUSG9tZVNvaWxQcm9ncmVzc0luZm8SCgoCaWQY",
-            "ASABKAQSRAoMcHJvZ3Jlc3NJbmZvGAIgASgLMi4uZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkNvbGxlY3RSZXNvdXJjZVByb2dyZXNzUmVzdWx0IuoBChxDb2xsZWN0UmVz",
-            "b3VyY2VPcGVyYXRlUmVzdWx0EjwKCnRhcmdldEluZm8YASABKAsyKC5nYW1l",
-            "TWVzc2FnZUNvcmUuQ29sbGVjdFJlc291cmNlQmFzZUluZm8SRgoOcHJvZ3Jl",
-            "c3NSZXN1bHQYAiABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJlc291",
-            "cmNlUHJvZ3Jlc3NSZXN1bHQSRAoNZXhlY3V0ZVJlc3VsdBgDIAEoCzItLmdh",
-            "bWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVzdWx0IlEK",
-            "HUNvbGxlY3RSZXNvdXJjZVByb2dyZXNzUmVzdWx0EhUKDXRvdGFsUHJvZ3Jl",
-            "c3MYASABKAUSGQoRcHJvZ3Jlc3NGdWxsU3RhbXAYAiABKAMiYgocQ29sbGVj",
-            "dFJlc291cmNlRXhlY3V0ZVJlc3VsdBIRCglpdGVtVmFsaWQYAiABKAgSLwoI",
-            "ZHJvcExpc3QYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZv",
-            "KmQKE0NvbGxlY3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlw",
-            "ZVVua25vd24QABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhv",
-            "bWVSZXNvdXJjZRACYgZwcm90bzM="));
+            "CW1hbnVyZUNpZBgHIAEoBRITCgttYW51cmVWYWxpZBgIIAEoCBIYChBleHRy",
+            "YVdhdGVyaW5nTnVtGAkgASgFIlkKF0NvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
+            "EgoKAmlkGAEgASgEEjIKBHR5cGUYAiABKA4yJC5nYW1lTWVzc2FnZUNvcmUu",
+            "Q29sbGVjdFJlc291cmNlVHlwZSJtChtVc2VDb2xsZWN0UmVzb3VyY2VTa2ls",
+            "bEluZm8SOQoHdGFyZ2V0cxgBIAMoCzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xs",
+            "ZWN0UmVzb3VyY2VCYXNlSW5mbxITCgtjb3N0SXRlbUNpZBgCIAEoBSJoChRI",
+            "b21lU29pbFByb2dyZXNzSW5mbxIKCgJpZBgBIAEoBBJECgxwcm9ncmVzc0lu",
+            "Zm8YAiABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJlc291cmNlUHJv",
+            "Z3Jlc3NSZXN1bHQi6gEKHENvbGxlY3RSZXNvdXJjZU9wZXJhdGVSZXN1bHQS",
+            "PAoKdGFyZ2V0SW5mbxgBIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0",
+            "UmVzb3VyY2VCYXNlSW5mbxJGCg5wcm9ncmVzc1Jlc3VsdBgCIAEoCzIuLmdh",
+            "bWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdBJE",
+            "Cg1leGVjdXRlUmVzdWx0GAMgASgLMi0uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxl",
+            "Y3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQiUQodQ29sbGVjdFJlc291cmNlUHJv",
+            "Z3Jlc3NSZXN1bHQSFQoNdG90YWxQcm9ncmVzcxgBIAEoBRIZChFwcm9ncmVz",
+            "c0Z1bGxTdGFtcBgCIAEoAyJ8ChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVz",
+            "dWx0EhEKCWl0ZW1WYWxpZBgBIAEoCBIYChBFeHRyYVdhdGVyaW5nTnVtGAIg",
+            "ASgFEi8KCGRyb3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1C",
+            "YXNlSW5mbypkChNDb2xsZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNv",
+            "dXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQ",
+            "ARIQCgxIb21lUmVzb3VyY2UQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "DropList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -121,6 +122,7 @@ namespace GameMessageCore {
       sowingValid_ = other.sowingValid_;
       manureCid_ = other.manureCid_;
       manureValid_ = other.manureValid_;
+      extraWateringNum_ = other.extraWateringNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -226,6 +228,18 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "extraWateringNum" field.</summary>
+    public const int ExtraWateringNumFieldNumber = 9;
+    private int extraWateringNum_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ExtraWateringNum {
+      get { return extraWateringNum_; }
+      set {
+        extraWateringNum_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -249,6 +263,7 @@ namespace GameMessageCore {
       if (SowingValid != other.SowingValid) return false;
       if (ManureCid != other.ManureCid) return false;
       if (ManureValid != other.ManureValid) return false;
+      if (ExtraWateringNum != other.ExtraWateringNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -264,6 +279,7 @@ namespace GameMessageCore {
       if (SowingValid != false) hash ^= SowingValid.GetHashCode();
       if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
       if (ManureValid != false) hash ^= ManureValid.GetHashCode();
+      if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -314,6 +330,10 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteBool(ManureValid);
       }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ExtraWateringNum);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -356,6 +376,10 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteBool(ManureValid);
       }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ExtraWateringNum);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -389,6 +413,9 @@ namespace GameMessageCore {
       }
       if (ManureValid != false) {
         size += 1 + 1;
+      }
+      if (ExtraWateringNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExtraWateringNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -425,6 +452,9 @@ namespace GameMessageCore {
       }
       if (other.ManureValid != false) {
         ManureValid = other.ManureValid;
+      }
+      if (other.ExtraWateringNum != 0) {
+        ExtraWateringNum = other.ExtraWateringNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -473,6 +503,10 @@ namespace GameMessageCore {
             ManureValid = input.ReadBool();
             break;
           }
+          case 72: {
+            ExtraWateringNum = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -518,6 +552,10 @@ namespace GameMessageCore {
           }
           case 64: {
             ManureValid = input.ReadBool();
+            break;
+          }
+          case 72: {
+            ExtraWateringNum = input.ReadInt32();
             break;
           }
         }
@@ -1778,6 +1816,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CollectResourceExecuteResult(CollectResourceExecuteResult other) : this() {
       itemValid_ = other.itemValid_;
+      extraWateringNum_ = other.extraWateringNum_;
       dropList_ = other.dropList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1789,7 +1828,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "itemValid" field.</summary>
-    public const int ItemValidFieldNumber = 2;
+    public const int ItemValidFieldNumber = 1;
     private bool itemValid_;
     /// <summary>
     ///道具有效  在播种和施肥时候专精不够时候 会返回false
@@ -1800,6 +1839,21 @@ namespace GameMessageCore {
       get { return itemValid_; }
       set {
         itemValid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ExtraWateringNum" field.</summary>
+    public const int ExtraWateringNumFieldNumber = 2;
+    private int extraWateringNum_;
+    /// <summary>
+    ///额外浇水次数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ExtraWateringNum {
+      get { return extraWateringNum_; }
+      set {
+        extraWateringNum_ = value;
       }
     }
 
@@ -1830,6 +1884,7 @@ namespace GameMessageCore {
         return true;
       }
       if (ItemValid != other.ItemValid) return false;
+      if (ExtraWateringNum != other.ExtraWateringNum) return false;
       if(!dropList_.Equals(other.dropList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1839,6 +1894,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (ItemValid != false) hash ^= ItemValid.GetHashCode();
+      if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
       hash ^= dropList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1859,8 +1915,12 @@ namespace GameMessageCore {
       output.WriteRawMessage(this);
     #else
       if (ItemValid != false) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteBool(ItemValid);
+      }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ExtraWateringNum);
       }
       dropList_.WriteTo(output, _repeated_dropList_codec);
       if (_unknownFields != null) {
@@ -1874,8 +1934,12 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ItemValid != false) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteBool(ItemValid);
+      }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ExtraWateringNum);
       }
       dropList_.WriteTo(ref output, _repeated_dropList_codec);
       if (_unknownFields != null) {
@@ -1890,6 +1954,9 @@ namespace GameMessageCore {
       int size = 0;
       if (ItemValid != false) {
         size += 1 + 1;
+      }
+      if (ExtraWateringNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExtraWateringNum);
       }
       size += dropList_.CalculateSize(_repeated_dropList_codec);
       if (_unknownFields != null) {
@@ -1907,6 +1974,9 @@ namespace GameMessageCore {
       if (other.ItemValid != false) {
         ItemValid = other.ItemValid;
       }
+      if (other.ExtraWateringNum != 0) {
+        ExtraWateringNum = other.ExtraWateringNum;
+      }
       dropList_.Add(other.dropList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1923,8 +1993,12 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 16: {
+          case 8: {
             ItemValid = input.ReadBool();
+            break;
+          }
+          case 16: {
+            ExtraWateringNum = input.ReadInt32();
             break;
           }
           case 26: {
@@ -1946,8 +2020,12 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 16: {
+          case 8: {
             ItemValid = input.ReadBool();
+            break;
+          }
+          case 16: {
+            ExtraWateringNum = input.ReadInt32();
             break;
           }
           case 26: {

@@ -8,8 +8,7 @@ type ServiceData struct {
 	ServiceType     proto.ServiceType         `json:"serviceType"`
 	SceneSerSubType proto.SceneServiceSubType `json:"sceneSerSubType"`
 	Owner           int64                     `json:"owner"`
-	Host            string                    `json:"host"`
-	Port            int32                     `json:"port"`
+	Url             string                    `json:"url"`
 	MapId           int32                     `json:"mapId"`
 	Online          int32                     `json:"online"`
 	MaxOnline       int32                     `json:"maxOnline"`

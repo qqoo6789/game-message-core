@@ -9,8 +9,7 @@ public class ServiceData
     public GameMessageCore.ServiceType ServiceType;
     public GameMessageCore.SceneServiceSubType SceneSerSubType;
     public long Owner;
-    public string Host;
-    public int Port;
+    public string Url;
     public int MapId;
     public int Online;
     public int MaxOnline;

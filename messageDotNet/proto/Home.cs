@@ -24,33 +24,40 @@ namespace GameMessageCore {
     static HomeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8ixwEK",
-            "DVByb3h5U29pbERhdGESCgoCaWQYASABKAQSEgoKc29pbFN0YXR1cxgCIAEo",
-            "BRIYChBzdGF0dXNTdGFydFN0YW1wGAMgASgDEhQKDGdyb3dpbmdTdGFnZRgE",
-            "IAEoBRIPCgdzZWVkQ2lkGAUgASgFEhMKC3Nvd2luZ1ZhbGlkGAYgASgIEhEK",
-            "CW1hbnVyZUNpZBgHIAEoBRITCgttYW51cmVWYWxpZBgIIAEoCBIYChBleHRy",
-            "YVdhdGVyaW5nTnVtGAkgASgFIlkKF0NvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
-            "EgoKAmlkGAEgASgEEjIKBHR5cGUYAiABKA4yJC5nYW1lTWVzc2FnZUNvcmUu",
-            "Q29sbGVjdFJlc291cmNlVHlwZSJtChtVc2VDb2xsZWN0UmVzb3VyY2VTa2ls",
-            "bEluZm8SOQoHdGFyZ2V0cxgBIAMoCzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xs",
-            "ZWN0UmVzb3VyY2VCYXNlSW5mbxITCgtjb3N0SXRlbUNpZBgCIAEoBSJoChRI",
-            "b21lU29pbFByb2dyZXNzSW5mbxIKCgJpZBgBIAEoBBJECgxwcm9ncmVzc0lu",
-            "Zm8YAiABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJlc291cmNlUHJv",
-            "Z3Jlc3NSZXN1bHQi6gEKHENvbGxlY3RSZXNvdXJjZU9wZXJhdGVSZXN1bHQS",
-            "PAoKdGFyZ2V0SW5mbxgBIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0",
-            "UmVzb3VyY2VCYXNlSW5mbxJGCg5wcm9ncmVzc1Jlc3VsdBgCIAEoCzIuLmdh",
-            "bWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdBJE",
-            "Cg1leGVjdXRlUmVzdWx0GAMgASgLMi0uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxl",
-            "Y3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQiUQodQ29sbGVjdFJlc291cmNlUHJv",
-            "Z3Jlc3NSZXN1bHQSFQoNdG90YWxQcm9ncmVzcxgBIAEoBRIZChFwcm9ncmVz",
-            "c0Z1bGxTdGFtcBgCIAEoAyJ8ChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVz",
-            "dWx0EhEKCWl0ZW1WYWxpZBgBIAEoCBIYChBFeHRyYVdhdGVyaW5nTnVtGAIg",
-            "ASgFEi8KCGRyb3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1C",
-            "YXNlSW5mbypkChNDb2xsZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNv",
-            "dXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQ",
-            "ARIQCgxIb21lUmVzb3VyY2UQAmIGcHJvdG8z"));
+            "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8aDHZl",
+            "Y3Rvci5wcm90byLHAQoNUHJveHlTb2lsRGF0YRIKCgJpZBgBIAEoBBISCgpz",
+            "b2lsU3RhdHVzGAIgASgFEhgKEHN0YXR1c1N0YXJ0U3RhbXAYAyABKAMSFAoM",
+            "Z3Jvd2luZ1N0YWdlGAQgASgFEg8KB3NlZWRDaWQYBSABKAUSEwoLc293aW5n",
+            "VmFsaWQYBiABKAgSEQoJbWFudXJlQ2lkGAcgASgFEhMKC21hbnVyZVZhbGlk",
+            "GAggASgIEhgKEGV4dHJhV2F0ZXJpbmdOdW0YCSABKAUiWQoXQ29sbGVjdFJl",
+            "c291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgCIAEoDjIkLmdh",
+            "bWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIm0KG1VzZUNvbGxl",
+            "Y3RSZXNvdXJjZVNraWxsSW5mbxI5Cgd0YXJnZXRzGAEgAygLMiguZ2FtZU1l",
+            "c3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEhMKC2Nvc3RJdGVt",
+            "Q2lkGAIgASgFImgKFEhvbWVTb2lsUHJvZ3Jlc3NJbmZvEgoKAmlkGAEgASgE",
+            "EkQKDHByb2dyZXNzSW5mbxgCIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xs",
+            "ZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdCLqAQocQ29sbGVjdFJlc291cmNl",
+            "T3BlcmF0ZVJlc3VsdBI8Cgp0YXJnZXRJbmZvGAEgASgLMiguZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEkYKDnByb2dyZXNzUmVz",
+            "dWx0GAIgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVBy",
+            "b2dyZXNzUmVzdWx0EkQKDWV4ZWN1dGVSZXN1bHQYAyABKAsyLS5nYW1lTWVz",
+            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlRXhlY3V0ZVJlc3VsdCJRCh1Db2xs",
+            "ZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdBIVCg10b3RhbFByb2dyZXNzGAEg",
+            "ASgFEhkKEXByb2dyZXNzRnVsbFN0YW1wGAIgASgDInwKHENvbGxlY3RSZXNv",
+            "dXJjZUV4ZWN1dGVSZXN1bHQSEQoJaXRlbVZhbGlkGAEgASgIEhgKEEV4dHJh",
+            "V2F0ZXJpbmdOdW0YAiABKAUSLwoIZHJvcExpc3QYAyADKAsyHS5nYW1lTWVz",
+            "c2FnZUNvcmUuSXRlbUJhc2VJbmZvIq8BCg9Qcm94eUFuaW1hbERhdGESDgoG",
+            "YW5pbUlkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgFEhcKD2hhcnZl",
+            "c3RQcm9ncmVzcxgDIAEoBRITCgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0Rl",
+            "YWQYBSABKAgSNgoLcHJvZHVjdERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNv",
+            "cmUuUHJveHlQcm9kdWN0RGF0YSJiChBQcm94eVByb2R1Y3REYXRhEhEKCXBy",
+            "b2R1Y3RJZBgBIAEoBRIPCgdpdGVtQ2lkGAIgASgFEioKCHBvc2l0aW9uGAMg",
+            "ASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMqZAoTQ29sbGVjdFJlc291",
+            "cmNlVHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5rbm93bhAAEhsKF0Nv",
+            "bGxlY3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9tZVJlc291cmNlEAJiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
@@ -58,7 +65,9 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "Position" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2030,6 +2039,661 @@ namespace GameMessageCore {
           }
           case 26: {
             dropList_.AddEntriesFrom(ref input, _repeated_dropList_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ProxyAnimalData : pb::IMessage<ProxyAnimalData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProxyAnimalData> _parser = new pb::MessageParser<ProxyAnimalData>(() => new ProxyAnimalData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProxyAnimalData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyAnimalData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyAnimalData(ProxyAnimalData other) : this() {
+      animId_ = other.animId_;
+      hungerProgress_ = other.hungerProgress_;
+      harvestProgress_ = other.harvestProgress_;
+      isComforted_ = other.isComforted_;
+      isDead_ = other.isDead_;
+      productData_ = other.productData_ != null ? other.productData_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyAnimalData Clone() {
+      return new ProxyAnimalData(this);
+    }
+
+    /// <summary>Field number for the "animId" field.</summary>
+    public const int AnimIdFieldNumber = 1;
+    private ulong animId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong AnimId {
+      get { return animId_; }
+      set {
+        animId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hungerProgress" field.</summary>
+    public const int HungerProgressFieldNumber = 2;
+    private int hungerProgress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HungerProgress {
+      get { return hungerProgress_; }
+      set {
+        hungerProgress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "harvestProgress" field.</summary>
+    public const int HarvestProgressFieldNumber = 3;
+    private int harvestProgress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HarvestProgress {
+      get { return harvestProgress_; }
+      set {
+        harvestProgress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isComforted" field.</summary>
+    public const int IsComfortedFieldNumber = 4;
+    private bool isComforted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsComforted {
+      get { return isComforted_; }
+      set {
+        isComforted_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isDead" field.</summary>
+    public const int IsDeadFieldNumber = 5;
+    private bool isDead_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsDead {
+      get { return isDead_; }
+      set {
+        isDead_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "productData" field.</summary>
+    public const int ProductDataFieldNumber = 6;
+    private global::GameMessageCore.ProxyProductData productData_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.ProxyProductData ProductData {
+      get { return productData_; }
+      set {
+        productData_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProxyAnimalData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProxyAnimalData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AnimId != other.AnimId) return false;
+      if (HungerProgress != other.HungerProgress) return false;
+      if (HarvestProgress != other.HarvestProgress) return false;
+      if (IsComforted != other.IsComforted) return false;
+      if (IsDead != other.IsDead) return false;
+      if (!object.Equals(ProductData, other.ProductData)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AnimId != 0UL) hash ^= AnimId.GetHashCode();
+      if (HungerProgress != 0) hash ^= HungerProgress.GetHashCode();
+      if (HarvestProgress != 0) hash ^= HarvestProgress.GetHashCode();
+      if (IsComforted != false) hash ^= IsComforted.GetHashCode();
+      if (IsDead != false) hash ^= IsDead.GetHashCode();
+      if (productData_ != null) hash ^= ProductData.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (AnimId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(AnimId);
+      }
+      if (HungerProgress != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(HungerProgress);
+      }
+      if (HarvestProgress != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(HarvestProgress);
+      }
+      if (IsComforted != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsComforted);
+      }
+      if (IsDead != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsDead);
+      }
+      if (productData_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ProductData);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AnimId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(AnimId);
+      }
+      if (HungerProgress != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(HungerProgress);
+      }
+      if (HarvestProgress != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(HarvestProgress);
+      }
+      if (IsComforted != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsComforted);
+      }
+      if (IsDead != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsDead);
+      }
+      if (productData_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ProductData);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (AnimId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimId);
+      }
+      if (HungerProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HungerProgress);
+      }
+      if (HarvestProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestProgress);
+      }
+      if (IsComforted != false) {
+        size += 1 + 1;
+      }
+      if (IsDead != false) {
+        size += 1 + 1;
+      }
+      if (productData_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductData);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProxyAnimalData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AnimId != 0UL) {
+        AnimId = other.AnimId;
+      }
+      if (other.HungerProgress != 0) {
+        HungerProgress = other.HungerProgress;
+      }
+      if (other.HarvestProgress != 0) {
+        HarvestProgress = other.HarvestProgress;
+      }
+      if (other.IsComforted != false) {
+        IsComforted = other.IsComforted;
+      }
+      if (other.IsDead != false) {
+        IsDead = other.IsDead;
+      }
+      if (other.productData_ != null) {
+        if (productData_ == null) {
+          ProductData = new global::GameMessageCore.ProxyProductData();
+        }
+        ProductData.MergeFrom(other.ProductData);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AnimId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            HungerProgress = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            HarvestProgress = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            IsComforted = input.ReadBool();
+            break;
+          }
+          case 40: {
+            IsDead = input.ReadBool();
+            break;
+          }
+          case 50: {
+            if (productData_ == null) {
+              ProductData = new global::GameMessageCore.ProxyProductData();
+            }
+            input.ReadMessage(ProductData);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            AnimId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            HungerProgress = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            HarvestProgress = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            IsComforted = input.ReadBool();
+            break;
+          }
+          case 40: {
+            IsDead = input.ReadBool();
+            break;
+          }
+          case 50: {
+            if (productData_ == null) {
+              ProductData = new global::GameMessageCore.ProxyProductData();
+            }
+            input.ReadMessage(ProductData);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ProxyProductData : pb::IMessage<ProxyProductData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProxyProductData> _parser = new pb::MessageParser<ProxyProductData>(() => new ProxyProductData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProxyProductData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyProductData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyProductData(ProxyProductData other) : this() {
+      productId_ = other.productId_;
+      itemCid_ = other.itemCid_;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxyProductData Clone() {
+      return new ProxyProductData(this);
+    }
+
+    /// <summary>Field number for the "productId" field.</summary>
+    public const int ProductIdFieldNumber = 1;
+    private int productId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ProductId {
+      get { return productId_; }
+      set {
+        productId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "itemCid" field.</summary>
+    public const int ItemCidFieldNumber = 2;
+    private int itemCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ItemCid {
+      get { return itemCid_; }
+      set {
+        itemCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 3;
+    private global::GameMessageCore.Vector3 position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.Vector3 Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProxyProductData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProxyProductData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ProductId != other.ProductId) return false;
+      if (ItemCid != other.ItemCid) return false;
+      if (!object.Equals(Position, other.Position)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ProductId != 0) hash ^= ProductId.GetHashCode();
+      if (ItemCid != 0) hash ^= ItemCid.GetHashCode();
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ProductId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ProductId);
+      }
+      if (ItemCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ItemCid);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Position);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ProductId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ProductId);
+      }
+      if (ItemCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ItemCid);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Position);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ProductId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProductId);
+      }
+      if (ItemCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemCid);
+      }
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProxyProductData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ProductId != 0) {
+        ProductId = other.ProductId;
+      }
+      if (other.ItemCid != 0) {
+        ItemCid = other.ItemCid;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::GameMessageCore.Vector3();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ProductId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ItemCid = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (position_ == null) {
+              Position = new global::GameMessageCore.Vector3();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ProductId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ItemCid = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (position_ == null) {
+              Position = new global::GameMessageCore.Vector3();
+            }
+            input.ReadMessage(Position);
             break;
           }
         }

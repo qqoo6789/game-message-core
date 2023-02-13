@@ -3,6 +3,8 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 import "item.proto";
+import "vector.proto";
+
 
 enum CollectResourceType
 {
@@ -68,4 +70,21 @@ message CollectResourceExecuteResult
     //额外浇水次数
     int32 ExtraWateringNum = 2;
     repeated ItemBaseInfo dropList = 3;
+}
+
+message ProxyAnimalData
+{
+  uint64 animId = 1;
+  int32 hungerProgress  = 2;
+  int32 harvestProgress = 3;
+  bool isComforted = 4;
+  bool isDead = 5;
+  ProxyProductData productData = 6;
+}
+
+message ProxyProductData
+{
+  int32 productId = 1;
+  int32 itemCid =2;
+  Vector3 position = 3;
 }

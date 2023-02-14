@@ -3,6 +3,8 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 
+import "entityProfile.proto";
+
 enum NFTType{
   NFTTypeUnknown = 0;
   NFTTypeConsumable = 1;
@@ -79,47 +81,11 @@ message AvatarAttribute{
   string rarity = 1;
   // 耐久度
   int32 durability = 2;
-  // 属性增量
+  // 属性数据
   repeated AttributeData data = 3;
 }
 
-
-// 装备属性Type
-enum AttributeType {
-  AttributeTypeUnknown = 0;
-  // HP limit
-  AttributeTypeHpLimit = 1;
-  // HP Recovery
-  AttributeTypeHpRecovery = 2;
-  // 增加普通攻击
-  AttributeTypeAtt = 3;
-  // 增加普通攻击速度
-  AttributeTypeAttSpeed = 4;
-  // 增加普通防御
-  AttributeTypeDef = 5;
-  // 增加暴击率
-  AttributeTypeCrit = 6;
-  // 增加暴击伤害
-  AttributeTypeCritDmg = 7;
-  // 增加命中率
-  AttributeTypeHitRate = 8;
-  // 增加闪避率
-  AttributeTypeMissRate = 9;
-  // 移动速度
-  AttributeTypeMoveSpeed= 10;
-
-  // 挂载的技能ID
-  AttributeTypeSkillId= 99;
-}
-
-
-// 属性字段增量数据 1v1
-message AttributeData{
-  // type
-  AttributeType type = 1;
-  // 增量数值
-  int32 value = 2;
-}
+ 
 
 // 玩家装备位置
 enum AvatarPosition {
@@ -156,6 +122,21 @@ enum AvatarPosition {
   AvatarPositionAppearanceWeapon = 17;
 }
 
+message NftMetadata{
+  string                  name = 1;
+  string                  description = 2;
+  string                  image = 3;
+  string                  backGroundColor = 4;
+  repeated AttributeData  attributes = 5;
+}
+
+message NftData{
+  string      network = 1;
+  string      tokenId = 2;
+  bool        isMelandAi = 3;
+  NftMetadata metadata = 4;
+}
+
 // 道具
 message Item {
   ItemType        itemType = 1;
@@ -171,8 +152,6 @@ message Item {
   // nft 过期时间
   int32           nftTimeOutSec = 12; 
 }
-
-
 
 message ItemBaseInfo {
   int32       cid = 1;
@@ -191,22 +170,3 @@ message PlayerAvatar {
   AvatarAttribute attribute = 3;
 }
 
-message NftData{
-  string      network = 1;
-  string      tokenId = 2;
-  bool        isMelandAi = 3;
-  NftMetadata metadata = 4;
-}
-
-message NftMetadata{
-  string                name = 1;
-  string                description = 2;
-  string                image = 3;
-  string                backGroundColor = 4;
-  repeated NftAttribute attributes = 5;
-}
-
-message NftAttribute{
-  string  traitType = 1;
-  string  value = 2;
-}

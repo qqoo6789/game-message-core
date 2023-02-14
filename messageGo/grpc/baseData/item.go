@@ -2,28 +2,6 @@ package base_data
 
 import "game-message-core/proto"
 
-// 属性字段增量数据 1v1
-type GrpcAttributeData struct {
-	// type
-	Type proto.AttributeType `json:"type"`
-	// 增量数值
-	Value int32 `json:"value"`
-}
-
-func (p *GrpcAttributeData) Set(attr *proto.AttributeData) {
-	if attr == nil {
-		return
-	}
-	p.Type = attr.Type
-	p.Value = attr.Value
-}
-func (p *GrpcAttributeData) ToProtoData() *proto.AttributeData {
-	return &proto.AttributeData{
-		Type:  p.Type,
-		Value: p.Value,
-	}
-}
-
 type GrpcAvatarAttribute struct {
 	// 稀有度 unique,  mythic, epic, rare, common
 	Rarity string `json:"rarity"`

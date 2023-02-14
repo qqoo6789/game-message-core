@@ -5,56 +5,23 @@ import (
 )
 
 // 对应 proto.EntityProfile
-type GrpcEntityProfile struct {
-	Att        int32   `json:"att"`
-	AttSpeed   int32   `json:"attSpeed"`
-	Def        int32   `json:"def"`
-	HpCurrent  int32   `json:"hpCurrent"`
-	HpLimit    int32   `json:"hpLimit"`
-	CritRate   int32   `json:"critRate"`
-	CritDmg    int32   `json:"critDmg"`
-	HitRate    int32   `json:"hitRate"`
-	MissRate   int32   `json:"missRate"`
-	MoveSpeed  float32 `json:"moveSpeed"`
-	PushDmg    int32   `json:"pushDmg"`
-	PushDist   int32   `json:"pushDist"`
-	HpRecovery int32   `json:"hpRecovery"`
+type GrpcAttributeData struct {
+	Id    int32 `json:"id"`
+	Value int32 `json:"value"`
 }
 
-func (p *GrpcEntityProfile) Set(profile *proto.EntityProfile) {
-	if profile == nil {
+func (p *GrpcAttributeData) Set(attr *proto.AttributeData) {
+	if attr == nil {
 		return
 	}
-	p.Att = profile.Att
-	p.AttSpeed = profile.AttSpeed
-	p.Def = profile.Def
-	p.HpCurrent = profile.HpCurrent
-	p.HpLimit = profile.HpLimit
-	p.CritRate = profile.CritRate
-	p.CritDmg = profile.CritDmg
-	p.HitRate = profile.HitRate
-	p.MissRate = profile.MissRate
-	p.MoveSpeed = profile.MoveSpeed
-	p.PushDmg = profile.PushDmg
-	p.PushDist = profile.PushDist
-	p.HpRecovery = profile.HpRecovery
+	p.Id = attr.Id
+	p.Value = attr.Value
 }
 
-func (p *GrpcEntityProfile) ToProtoData() *proto.EntityProfile {
-	return &proto.EntityProfile{
-		Att:        p.Att,
-		AttSpeed:   p.AttSpeed,
-		Def:        p.Def,
-		HpCurrent:  p.HpCurrent,
-		HpLimit:    p.HpLimit,
-		CritRate:   p.CritRate,
-		CritDmg:    p.CritDmg,
-		HitRate:    p.HitRate,
-		MissRate:   p.MissRate,
-		MoveSpeed:  p.MoveSpeed,
-		PushDmg:    p.PushDmg,
-		PushDist:   p.PushDist,
-		HpRecovery: p.HpRecovery,
+func (p *GrpcAttributeData) ToProtoData() *proto.AttributeData {
+	return &proto.AttributeData{
+		Id:    p.Id,
+		Value: p.Value,
 	}
 }
 

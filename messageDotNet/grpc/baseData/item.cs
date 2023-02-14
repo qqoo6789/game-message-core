@@ -2,40 +2,6 @@ using System;
 using UnityEngine;
 
 
-// 属性字段增量数据 1v1
-[Serializable]
-public class GrpcAttributeData
-{
-    // type
-    public GameMessageCore.AttributeType Type;
-    // 增量数值
-    public int Value;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
-    public void Set(GameMessageCore.AttributeData attr)
-    {
-        if (attr == null)
-        {
-            return;
-        }
-        Type = attr.Type;
-        Value = attr.Value;
-    }
-
-    public GameMessageCore.AttributeData ToProtoData()
-    {
-        return new GameMessageCore.AttributeData()
-        {
-            Type = Type,
-            Value = Value,
-        };
-    }
-}
-
 [Serializable]
 public class GrpcAvatarAttribute
 {

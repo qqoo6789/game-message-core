@@ -12,7 +12,7 @@ public class UpdateUsedAvatarInput
     public long MsgVersion;
     public long UserId;
     public GrpcPlayerAvatar[] UsingAvatars;
-    public GrpcEntityProfile CurProfile;
+    public GrpcAttributeData[] CurProfile;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -40,8 +40,7 @@ public class UpdateUserProfileInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public long UserId;
-
-    public GrpcEntityProfile CurProfile;
+    public GrpcAttributeData[] CurProfile;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -81,7 +80,7 @@ public class GetUserDataOutput
     public bool Success;
     public string ErrMsg;
     public GrpcPlayerBaseData BaseData;
-    public GrpcEntityProfile Profile;
+    public GrpcAttributeData[] Profile;
     public GrpcPlayerFeature Feature;
     public string SkillEffectData;
     public int MapId;

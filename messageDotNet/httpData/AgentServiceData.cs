@@ -9,8 +9,7 @@ public class AgentServiceResp
 {
     public int ErrorCode;//TODO: NEED USE GLOBAL ERROR CODE
     public string ErrorMessage;
-    public string Host;
-    public int Port;
+    public string Url;
     public int Online;
     public int MaxOnline;
     public long CreatedAt;

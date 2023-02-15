@@ -54,6 +54,7 @@ message Player {
   Vector3               dir = 7;
   //实体cd数据
   EntityCD              entity_cd = 8;      
+  string                skillEffectData = 9; //技能特效数据
   // repeated bian.proto.EntityBuff buff_list = 28;
 }
 
@@ -64,6 +65,7 @@ message Monster {
   EntityProfile profile = 4;
   Vector3       position = 5;
   Vector3       dir = 6;    // 方向（朝向）
+  string        skillEffectData = 7; //技能特效数据
 }
 
 message Npc {

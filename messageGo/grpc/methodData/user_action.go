@@ -39,6 +39,7 @@ type GetUserDataOutput struct {
 	BaseData   base_data.GrpcPlayerBaseData `json:"baseData"`
 	Profile    base_data.GrpcEntityProfile  `json:"profile"`
 	Feature    base_data.GrpcPlayerFeature  `json:"feature"`
+	SkillEffectData string  				`json:"skillEffectData"`
 	MapId      int32                        `json:"mapId"`
 	Pos        base_data.GrpcVector3        `json:"pos"`
 	Dir        base_data.GrpcVector3        `json:"dir"`

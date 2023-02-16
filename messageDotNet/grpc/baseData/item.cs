@@ -5,7 +5,7 @@ using UnityEngine;
 [Serializable]
 public class GrpcAvatarAttribute
 {
-    public GameMessageCore.AvatarAttributeType Position;
+    public GameMessageCore.AvatarPosition Position;
     // 稀有度 unique,  mythic, epic, rare, common
     public string Rarity;
     // cid

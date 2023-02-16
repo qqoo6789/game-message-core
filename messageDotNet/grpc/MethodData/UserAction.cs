@@ -86,7 +86,7 @@ public class GetUserDataOutput
     public int MapId;
     public GrpcVector3 Pos;
     public GrpcVector3 Dir;
-    public GrpcAttributeData[] Avatars;
+    public GrpcAvatarAttribute[] Avatars;
     public GrpcTalentData TalentData;
 
     public string ToJson()

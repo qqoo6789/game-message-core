@@ -33,15 +33,15 @@ type GetUserDataInput struct {
 	UserId     int64 `json:"userId"`
 }
 type GetUserDataOutput struct {
-	MsgVersion int64                         `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
-	Success    bool                          `json:"success"`
-	ErrMsg     string                        `json:"errMsg"`
-	BaseData   base_data.GrpcPlayerBaseData  `json:"baseData"`
-	Profile    []base_data.GrpcAttributeData `json:"profile"`
-	Feature    base_data.GrpcPlayerFeature   `json:"feature"`
-	MapId      int32                         `json:"mapId"`
-	Pos        base_data.GrpcVector3         `json:"pos"`
-	Dir        base_data.GrpcVector3         `json:"dir"`
-	Avatars    []base_data.GrpcAttributeData `json:"avatars"`
-	TalentData base_data.GrpcTalentData      `json:"talentData"`
+	MsgVersion int64                           `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	Success    bool                            `json:"success"`
+	ErrMsg     string                          `json:"errMsg"`
+	BaseData   base_data.GrpcPlayerBaseData    `json:"baseData"`
+	Profile    []base_data.GrpcAttributeData   `json:"profile"`
+	Feature    base_data.GrpcPlayerFeature     `json:"feature"`
+	MapId      int32                           `json:"mapId"`
+	Pos        base_data.GrpcVector3           `json:"pos"`
+	Dir        base_data.GrpcVector3           `json:"dir"`
+	Avatars    []base_data.GrpcAvatarAttribute `json:"avatars"`
+	TalentData base_data.GrpcTalentData        `json:"talentData"`
 }

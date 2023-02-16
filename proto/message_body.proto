@@ -543,7 +543,7 @@ message BroadCastEntityAvatarUpdateResponse {
   // 变化的entity id
   EntityId              entity_id = 1;
   // 变化后的 avatar 装备列表
-  repeated PlayerAvatar avatars = 2;
+  repeated AvatarAttribute avatars = 2;
 }
 message BroadCastEntityBuildDataUpdateResponse {
   // 变化的entity id

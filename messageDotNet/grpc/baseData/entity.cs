@@ -7,6 +7,7 @@ public class GrpcAttributeData
 {
     public int Id;
     public int Value;
+    public GameMessageCore.AttributeDisplayType DisplayType;
 
     public string ToJson()
     {
@@ -22,6 +23,7 @@ public class GrpcAttributeData
 
         Id = attr.Id;
         Value = attr.Value;
+        DisplayType = attr.DisplayType;
     }
 
     public GameMessageCore.AttributeData ToProtoData()
@@ -30,6 +32,7 @@ public class GrpcAttributeData
         {
             Id = Id,
             Value = Value,
+            DisplayType = DisplayType,
         };
     }
 }

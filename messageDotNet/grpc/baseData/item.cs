@@ -7,8 +7,8 @@ public class GrpcAvatarAttribute
 {
     // 稀有度 unique,  mythic, epic, rare, common
     public string Rarity;
-    // 耐久度
-    public int Durability;
+    // cid
+    public int ObjectId;
     // 属性增量
     public GrpcAttributeData[] Data;
 
@@ -25,7 +25,7 @@ public class GrpcAvatarAttribute
         }
 
         Rarity = attr.Rarity;
-        Durability = attr.Durability;
+        ObjectId = attr.ObjectId;
         Data = new GrpcAttributeData[attr.Data.Count];
         for (int i = 0; i < attr.Data.Count; i++)
         {
@@ -40,7 +40,7 @@ public class GrpcAvatarAttribute
         GameMessageCore.AvatarAttribute attribute = new()
         {
             Rarity = Rarity,
-            Durability = Durability,
+            ObjectId = ObjectId,
         };
         foreach (GrpcAttributeData at in Data)
         {
@@ -50,51 +50,6 @@ public class GrpcAvatarAttribute
     }
 
 }
-
-// 对应 proto.PlayerAvatar
-[Serializable]
-public class GrpcPlayerAvatar
-{
-    // 装备位置
-    public GameMessageCore.AvatarPosition Position;
-    // 装备的物品 id
-    public int ObjectId;
-    // 属性
-    public GrpcAvatarAttribute Attribute;
-
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
-
-    public void Set(GameMessageCore.PlayerAvatar pa)
-    {
-        if (pa == null)
-        {
-            return;
-        }
-
-        Position = pa.Position;
-        ObjectId = pa.ObjectId;
-        Attribute = new GrpcAvatarAttribute();
-        Attribute.Set(pa.Attribute);
-    }
-
-    public GameMessageCore.PlayerAvatar ToProtoData()
-    {
-
-        return new GameMessageCore.PlayerAvatar()
-        {
-            Position = Position,
-            ObjectId = ObjectId,
-            Attribute = Attribute.ToProtoData(),
-        };
-    }
-
-}
-
 
 [Serializable]
 public class GrpcItemBaseInfo

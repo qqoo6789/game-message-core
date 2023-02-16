@@ -11,11 +11,12 @@ public class UserUseNFTEvent
     public long UserId;
     public string NftId;
     public int Cid;
-    public GameMessageCore.NFTType NftType;
+    public GameMessageCore.NftTraitType NftType;
     public int Num;
     public GrpcNFTConsumableInfo ConsumableData;
-    public int X;
-    public int Y;
+    public float X;
+    public float Y;
+    public float Y;
 
     public string ToJson()
     {

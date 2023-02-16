@@ -11,7 +11,7 @@ public class UpdateUsedAvatarInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public long UserId;
-    public GrpcPlayerAvatar[] UsingAvatars;
+    public GrpcAvatarAttribute[] UsingAvatars;
     public GrpcAttributeData[] CurProfile;
     public string ToJson()
     {
@@ -86,7 +86,7 @@ public class GetUserDataOutput
     public int MapId;
     public GrpcVector3 Pos;
     public GrpcVector3 Dir;
-    public GrpcPlayerAvatar[] Avatars;
+    public GrpcAttributeData[] Avatars;
     public GrpcTalentData TalentData;
 
     public string ToJson()

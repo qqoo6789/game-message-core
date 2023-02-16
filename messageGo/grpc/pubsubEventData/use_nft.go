@@ -10,9 +10,10 @@ type UserUseNFTEvent struct {
 	UserId         int64                            `json:"userId"`
 	NftId          string                           `json:"nftId"`
 	Cid            int32                            `json:"cid"`
-	NftType        proto.NFTType                    `json:"nftType"`
+	NftType        proto.NftTraitType               `json:"nftType"`
 	Num            int32                            `json:"num"`
 	ConsumableData *base_data.GrpcNFTConsumableInfo `json:"consumableData"`
-	X              int32                            `json:"x"`
-	Z              int32                            `json:"z"`
+	X              float32                          `json:"x"`
+	y              float32                          `json:"y"`
+	Z              float32                          `json:"z"`
 }

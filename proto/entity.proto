@@ -45,13 +45,13 @@ message DestructionElementData
 }
 
 message Player {
-  PlayerBaseData          base_data = 1;
-  repeated AttributeData  profile = 2;  // 玩家属性
-  repeated PlayerAvatar   avatars = 3;   // 玩家 avatar
-  bool                    active = 4;  
-  int32                   map_id = 5;
-  Vector3                 position = 6; 
-  Vector3                 dir = 7;
+  PlayerBaseData            base_data = 1;
+  repeated AttributeData    profile = 2;  // 玩家属性
+  repeated AvatarAttribute  avatars = 3;   // 玩家 avatar
+  bool                      active = 4;  
+  int32                     map_id = 5;
+  Vector3                   position = 6; 
+  Vector3                   dir = 7;
   //实体cd数据
   EntityCD              entity_cd = 8;      
   string                skillEffectData = 9; //技能特效数据

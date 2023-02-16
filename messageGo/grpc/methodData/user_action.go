@@ -6,10 +6,10 @@ import (
 
 // 更新玩家使用的装备
 type UpdateUsedAvatarInput struct {
-	MsgVersion   int64                         `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
-	UserId       int64                         `json:"userId"`
-	UsingAvatars []base_data.GrpcPlayerAvatar  `json:"usingAvatars"`
-	CurProfile   []base_data.GrpcAttributeData `json:"curProfile"`
+	MsgVersion   int64                           `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	UserId       int64                           `json:"userId"`
+	UsingAvatars []base_data.GrpcAvatarAttribute `json:"usingAvatars"`
+	CurProfile   []base_data.GrpcAttributeData   `json:"curProfile"`
 }
 type UpdateUsedAvatarOutput struct {
 	MsgVersion int64 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
@@ -42,6 +42,6 @@ type GetUserDataOutput struct {
 	MapId      int32                         `json:"mapId"`
 	Pos        base_data.GrpcVector3         `json:"pos"`
 	Dir        base_data.GrpcVector3         `json:"dir"`
-	Avatars    []base_data.GrpcPlayerAvatar  `json:"avatars"`
+	Avatars    []base_data.GrpcAttributeData `json:"avatars"`
 	TalentData base_data.GrpcTalentData      `json:"talentData"`
 }

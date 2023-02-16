@@ -6,8 +6,9 @@ import (
 
 // 对应 proto.EntityProfile
 type GrpcAttributeData struct {
-	Id    int32 `json:"id"`
-	Value int32 `json:"value"`
+	Id          int32                      `json:"id"`
+	Value       int32                      `json:"value"`
+	DisplayType proto.AttributeDisplayType `json:"displayType"`
 }
 
 func (p *GrpcAttributeData) Set(attr *proto.AttributeData) {

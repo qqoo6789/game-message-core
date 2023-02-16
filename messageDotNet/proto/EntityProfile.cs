@@ -24,17 +24,34 @@ namespace GameMessageCore {
     static EntityProfileReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNlbnRpdHlQcm9maWxlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiKgoNQXR0",
-            "cmlidXRlRGF0YRIKCgJpZBgBIAEoBRINCgV2YWx1ZRgCIAEoBWIGcHJvdG8z"));
+            "ChNlbnRpdHlQcm9maWxlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiZgoNQXR0",
+            "cmlidXRlRGF0YRIKCgJpZBgBIAEoBRINCgV2YWx1ZRgCIAEoBRI6CgtkaXNw",
+            "bGF5VHlwZRgDIAEoDjIlLmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVEaXNw",
+            "bGF5VHlwZSo3ChRBdHRyaWJ1dGVEaXNwbGF5VHlwZRIKCgZOdW1iZXIQABIT",
+            "Cg9Cb29zdFBlcmNlbnRhZ2UQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AttributeData), global::GameMessageCore.AttributeData.Parser, new[]{ "Id", "Value" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.AttributeDisplayType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AttributeData), global::GameMessageCore.AttributeData.Parser, new[]{ "Id", "Value", "DisplayType" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum AttributeDisplayType {
+    /// <summary>
+    /// 整数
+    /// </summary>
+    [pbr::OriginalName("Number")] Number = 0,
+    /// <summary>
+    /// 百分比
+    /// </summary>
+    [pbr::OriginalName("BoostPercentage")] BoostPercentage = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class AttributeData : pb::IMessage<AttributeData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -72,6 +89,7 @@ namespace GameMessageCore {
     public AttributeData(AttributeData other) : this() {
       id_ = other.id_;
       value_ = other.value_;
+      displayType_ = other.displayType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,6 +129,21 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "displayType" field.</summary>
+    public const int DisplayTypeFieldNumber = 3;
+    private global::GameMessageCore.AttributeDisplayType displayType_ = global::GameMessageCore.AttributeDisplayType.Number;
+    /// <summary>
+    /// 数据类型
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.AttributeDisplayType DisplayType {
+      get { return displayType_; }
+      set {
+        displayType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -128,6 +161,7 @@ namespace GameMessageCore {
       }
       if (Id != other.Id) return false;
       if (Value != other.Value) return false;
+      if (DisplayType != other.DisplayType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -137,6 +171,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Value != 0) hash ^= Value.GetHashCode();
+      if (DisplayType != global::GameMessageCore.AttributeDisplayType.Number) hash ^= DisplayType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -163,6 +198,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(Value);
       }
+      if (DisplayType != global::GameMessageCore.AttributeDisplayType.Number) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) DisplayType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -181,6 +220,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(Value);
       }
+      if (DisplayType != global::GameMessageCore.AttributeDisplayType.Number) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) DisplayType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -196,6 +239,9 @@ namespace GameMessageCore {
       }
       if (Value != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Value);
+      }
+      if (DisplayType != global::GameMessageCore.AttributeDisplayType.Number) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DisplayType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -214,6 +260,9 @@ namespace GameMessageCore {
       }
       if (other.Value != 0) {
         Value = other.Value;
+      }
+      if (other.DisplayType != global::GameMessageCore.AttributeDisplayType.Number) {
+        DisplayType = other.DisplayType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -238,6 +287,10 @@ namespace GameMessageCore {
             Value = input.ReadInt32();
             break;
           }
+          case 24: {
+            DisplayType = (global::GameMessageCore.AttributeDisplayType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -259,6 +312,10 @@ namespace GameMessageCore {
           }
           case 16: {
             Value = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            DisplayType = (global::GameMessageCore.AttributeDisplayType) input.ReadEnum();
             break;
           }
         }

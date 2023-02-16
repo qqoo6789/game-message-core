@@ -3,10 +3,20 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 
+
+enum AttributeDisplayType {
+  // 整数
+  Number = 0; 
+  // 百分比
+  BoostPercentage = 1; 
+}
+
 message AttributeData {
   // 属性id
   int32 id = 1;
   // 数值
   int32 value = 2;
+  // 数据类型
+  AttributeDisplayType displayType = 3;
 }
  

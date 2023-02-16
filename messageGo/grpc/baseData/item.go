@@ -3,6 +3,7 @@ package base_data
 import "game-message-core/proto"
 
 type GrpcAvatarAttribute struct {
+	Position proto.AvatarPosition `json:"position"`
 	// 稀有度 unique,  mythic, epic, rare, common
 	Rarity string `json:"rarity"`
 	// cid

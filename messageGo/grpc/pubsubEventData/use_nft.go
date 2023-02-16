@@ -14,6 +14,6 @@ type UserUseNFTEvent struct {
 	Num            int32                            `json:"num"`
 	ConsumableData *base_data.GrpcNFTConsumableInfo `json:"consumableData"`
 	X              float32                          `json:"x"`
-	y              float32                          `json:"y"`
+	Y              float32                          `json:"y"`
 	Z              float32                          `json:"z"`
 }

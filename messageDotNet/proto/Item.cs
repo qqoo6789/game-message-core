@@ -24,198 +24,66 @@ namespace GameMessageCore {
     static ItemReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgppdGVtLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUicAoRTkZUQ29uc3VtYWJs",
-            "ZUluZm8SDwoHcXVhbGl0eRgBIAEoCRI7Cg9jb25zdW1hYmxlX3R5cGUYAiAB",
-            "KA4yIi5nYW1lTWVzc2FnZUNvcmUuTkZUQ29uc3VtYWJsZVR5cGUSDQoFdmFs",
-            "dWUYAyABKAUiMQoITmZ0U2tpbGwSEAoIc2tpbGxfaWQYASABKAUSEwoLc2tp",
-            "bGxfbGV2ZWwYAiABKAUieQoPTmZ0VGhpcmROZnRJbmZvEgwKBG5hbWUYASAB",
-            "KAkSDwoHcmVzX3VybBgCIAEoCRIMCgRkZXNjGAMgASgJEhQKDHRpbWVfb3V0",
-            "X3NlYxgEIAEoBRIRCgl0b2tlbl91cmwYBSABKAkSEAoIdG9rZW5faWQYBiAB",
-            "KAkiaQoPTmZ0V2VhcmFibGVJbmZvEg0KBXRva2VuGAEgASgJEhIKCm9iamVj",
-            "dF9jaWQYAiABKAUSMwoPd2VhcmFibGVfcmFyaXR5GAMgASgOMhouZ2FtZU1l",
-            "c3NhZ2VDb3JlLk5GVFJhcml0eSJjCg9BdmF0YXJBdHRyaWJ1dGUSDgoGcmFy",
-            "aXR5GAEgASgJEhIKCmR1cmFiaWxpdHkYAiABKAUSLAoEZGF0YRgDIAMoCzIe",
-            "LmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVEYXRhIkwKDUF0dHJpYnV0ZURh",
-            "dGESLAoEdHlwZRgBIAEoDjIeLmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVU",
-            "eXBlEg0KBXZhbHVlGAIgASgFIvgBCgRJdGVtEisKCGl0ZW1UeXBlGAEgASgO",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1UeXBlEgoKAmlkGAIgASgJEhIKCm9i",
-            "amVjdF9jaWQYAyABKAUSCwoDbnVtGAQgASgFEg4KBnVzZXJJZBgFIAEoAxIy",
-            "CglhdmF0YXJQb3MYCSABKA4yHy5nYW1lTWVzc2FnZUNvcmUuQXZhdGFyUG9z",
-            "aXRpb24SEAoIbmZ0VXNpbmcYCiABKAgSKQoHbmZ0RGF0YRgLIAEoCzIYLmdh",
-            "bWVNZXNzYWdlQ29yZS5OZnREYXRhEhUKDW5mdFRpbWVPdXRTZWMYDCABKAUi",
-            "OQoMSXRlbUJhc2VJbmZvEgsKA2NpZBgBIAEoBRILCgNudW0YAiABKAUSDwoH",
-            "cXVhbGl0eRgDIAEoBSKJAQoMUGxheWVyQXZhdGFyEjEKCHBvc2l0aW9uGAEg",
-            "ASgOMh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhEKCW9iamVj",
-            "dF9pZBgCIAEoBRIzCglhdHRyaWJ1dGUYAyABKAsyIC5nYW1lTWVzc2FnZUNv",
-            "cmUuQXZhdGFyQXR0cmlidXRlIm8KB05mdERhdGESDwoHbmV0d29yaxgBIAEo",
-            "CRIPCgd0b2tlbklkGAIgASgJEhIKCmlzTWVsYW5kQWkYAyABKAgSLgoIbWV0",
-            "YWRhdGEYBCABKAsyHC5nYW1lTWVzc2FnZUNvcmUuTmZ0TWV0YWRhdGEiiwEK",
-            "C05mdE1ldGFkYXRhEgwKBG5hbWUYASABKAkSEwoLZGVzY3JpcHRpb24YAiAB",
-            "KAkSDQoFaW1hZ2UYAyABKAkSFwoPYmFja0dyb3VuZENvbG9yGAQgASgJEjEK",
-            "CmF0dHJpYnV0ZXMYBSADKAsyHS5nYW1lTWVzc2FnZUNvcmUuTmZ0QXR0cmli",
-            "dXRlIjAKDE5mdEF0dHJpYnV0ZRIRCgl0cmFpdFR5cGUYASABKAkSDQoFdmFs",
-            "dWUYAiABKAkqnAEKB05GVFR5cGUSEgoOTkZUVHlwZVVua25vd24QABIVChFO",
-            "RlRUeXBlQ29uc3VtYWJsZRABEhQKEE5GVFR5cGVFcXVpcG1lbnQQAhITCg9O",
-            "RlRUeXBlTWF0ZXJpYWwQAxIUChBORlRUeXBlUGxhY2VhYmxlEAQSEAoMTkZU",
-            "VHlwZVRoaXJkEAUSEwoPTkZUVHlwZVdlYXJhYmxlEAYqhgEKCU5GVFJhcml0",
-            "eRIUChBORlRSYXJpdHlVbmtub3duEAASEwoPTkZUUmFyaXR5Q29tbW9uEAES",
-            "EQoNTkZUUmFyaXR5UmFyZRACEhEKDU5GVFJhcml0eUVwaWMQAxITCg9ORlRS",
-            "YXJpdHlNeXRoaWMQBBITCg9ORlRSYXJpdHlVbmlxdWUQBSqUAQoRTkZUQ29u",
-            "c3VtYWJsZVR5cGUSHgoaTkZUQ29uc3VtYWJsZVR5cGVSZXN0b3JlSFAQABIg",
-            "ChxORlRDb25zdW1hYmxlVHlwZUxlYXJuUmVjaXBlEAESHAoYTkZUQ29uc3Vt",
-            "YWJsZVR5cGVBZGRCdWZmEAISHwobTkZUQ29uc3VtYWJsZVR5cGVPY2N1cHlM",
-            "YW5kEAMqLQoISXRlbVR5cGUSEAoMSXRlbVR5cGVHYW1lEAASDwoLSXRlbVR5",
-            "cGVORlQQASrDAgoNQXR0cmlidXRlVHlwZRIYChRBdHRyaWJ1dGVUeXBlVW5r",
-            "bm93bhAAEhgKFEF0dHJpYnV0ZVR5cGVIcExpbWl0EAESGwoXQXR0cmlidXRl",
-            "VHlwZUhwUmVjb3ZlcnkQAhIUChBBdHRyaWJ1dGVUeXBlQXR0EAMSGQoVQXR0",
-            "cmlidXRlVHlwZUF0dFNwZWVkEAQSFAoQQXR0cmlidXRlVHlwZURlZhAFEhUK",
-            "EUF0dHJpYnV0ZVR5cGVDcml0EAYSGAoUQXR0cmlidXRlVHlwZUNyaXREbWcQ",
-            "BxIYChRBdHRyaWJ1dGVUeXBlSGl0UmF0ZRAIEhkKFUF0dHJpYnV0ZVR5cGVN",
-            "aXNzUmF0ZRAJEhoKFkF0dHJpYnV0ZVR5cGVNb3ZlU3BlZWQQChIYChRBdHRy",
-            "aWJ1dGVUeXBlU2tpbGxJZBBjKr4DCg5BdmF0YXJQb3NpdGlvbhIWChJBdmF0",
-            "YXJQb3NpdGlvbk5vbmUQABIWChJBdmF0YXJQb3NpdGlvbkhlYWQQARIWChJB",
-            "dmF0YXJQb3NpdGlvbkNvYXQQAhIWChJBdmF0YXJQb3NpdGlvblBhbnQQAxIW",
-            "ChJBdmF0YXJQb3NpdGlvblNob2UQBBIWChJBdmF0YXJQb3NpdGlvbkhhbmQQ",
-            "BRIbChdBdmF0YXJQb3NpdGlvbkFjY2Vzc29yeRAGEhgKFEF2YXRhclBvc2l0",
-            "aW9uV2VhcG9uEAcSFwoTQXBwZWFyYW5jZVBvc09mZnNldBAKEiAKHEF2YXRh",
-            "clBvc2l0aW9uQXBwZWFyYW5jZUhlYWQQCxIgChxBdmF0YXJQb3NpdGlvbkFw",
-            "cGVhcmFuY2VDb2F0EAwSIAocQXZhdGFyUG9zaXRpb25BcHBlYXJhbmNlUGFu",
-            "dBANEiAKHEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZVNob2UQDhIgChxBdmF0",
-            "YXJQb3NpdGlvbkFwcGVhcmFuY2VIYW5kEA8SIgoeQXZhdGFyUG9zaXRpb25B",
-            "cHBlYXJhbmNlV2VhcG9uEBFiBnByb3RvMw=="));
+            "CgppdGVtLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaE2VudGl0eVByb2ZpbGUu",
+            "cHJvdG8icAoRTkZUQ29uc3VtYWJsZUluZm8SDwoHcXVhbGl0eRgBIAEoCRI7",
+            "Cg9jb25zdW1hYmxlX3R5cGUYAiABKA4yIi5nYW1lTWVzc2FnZUNvcmUuTkZU",
+            "Q29uc3VtYWJsZVR5cGUSDQoFdmFsdWUYAyABKAUiRQoMTmZ0VHJhaXREYXRh",
+            "EhMKC2Rpc3BsYXlUeXBlGAEgASgJEhEKCVRyYWl0VHlwZRgCIAEoCRINCgV2",
+            "YWx1ZRgDIAEoCSLrAQoLTmZ0TWV0YWRhdGESDAoEbmFtZRgBIAEoCRITCgtk",
+            "ZXNjcmlwdGlvbhgCIAEoCRINCgVpbWFnZRgDIAEoCRIXCg9iYWNrR3JvdW5k",
+            "Q29sb3IYBCABKAkSKwoEdHlwZRgFIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5O",
+            "ZnRUcmFpdFR5cGUSMAoJdHJhaXREYXRhGAYgAygLMh0uZ2FtZU1lc3NhZ2VD",
+            "b3JlLk5mdFRyYWl0RGF0YRIyCgphdHRyaWJ1dGVzGAcgAygLMh4uZ2FtZU1l",
+            "c3NhZ2VDb3JlLkF0dHJpYnV0ZURhdGEibwoHTmZ0RGF0YRIPCgduZXR3b3Jr",
+            "GAEgASgJEg8KB3Rva2VuSWQYAiABKAkSEgoKaXNNZWxhbmRBaRgDIAEoCBIu",
+            "CghtZXRhZGF0YRgEIAEoCzIcLmdhbWVNZXNzYWdlQ29yZS5OZnRNZXRhZGF0",
+            "YSL4AQoESXRlbRIrCghpdGVtVHlwZRgBIAEoDjIZLmdhbWVNZXNzYWdlQ29y",
+            "ZS5JdGVtVHlwZRIKCgJpZBgCIAEoCRISCgpvYmplY3RfY2lkGAMgASgFEgsK",
+            "A251bRgEIAEoBRIOCgZ1c2VySWQYBSABKAMSMgoJYXZhdGFyUG9zGAkgASgO",
+            "Mh8uZ2FtZU1lc3NhZ2VDb3JlLkF2YXRhclBvc2l0aW9uEhAKCG5mdFVzaW5n",
+            "GAogASgIEikKB25mdERhdGEYCyABKAsyGC5nYW1lTWVzc2FnZUNvcmUuTmZ0",
+            "RGF0YRIVCg1uZnRUaW1lT3V0U2VjGAwgASgFIjkKDEl0ZW1CYXNlSW5mbxIL",
+            "CgNjaWQYASABKAUSCwoDbnVtGAIgASgFEg8KB3F1YWxpdHkYAyABKAUilAEK",
+            "D0F2YXRhckF0dHJpYnV0ZRIxCghwb3NpdGlvbhgBIAEoDjIfLmdhbWVNZXNz",
+            "YWdlQ29yZS5BdmF0YXJQb3NpdGlvbhIQCghvYmplY3RJZBgCIAEoBRIOCgZy",
+            "YXJpdHkYAyABKAkSLAoEZGF0YRgEIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5B",
+            "dHRyaWJ1dGVEYXRhKr4DCg5BdmF0YXJQb3NpdGlvbhIWChJBdmF0YXJQb3Np",
+            "dGlvbk5vbmUQABIWChJBdmF0YXJQb3NpdGlvbkhlYWQQARIWChJBdmF0YXJQ",
+            "b3NpdGlvbkNvYXQQAhIWChJBdmF0YXJQb3NpdGlvblBhbnQQAxIWChJBdmF0",
+            "YXJQb3NpdGlvblNob2UQBBIWChJBdmF0YXJQb3NpdGlvbkhhbmQQBRIbChdB",
+            "dmF0YXJQb3NpdGlvbkFjY2Vzc29yeRAGEhgKFEF2YXRhclBvc2l0aW9uV2Vh",
+            "cG9uEAcSFwoTQXBwZWFyYW5jZVBvc09mZnNldBAKEiAKHEF2YXRhclBvc2l0",
+            "aW9uQXBwZWFyYW5jZUhlYWQQCxIgChxBdmF0YXJQb3NpdGlvbkFwcGVhcmFu",
+            "Y2VDb2F0EAwSIAocQXZhdGFyUG9zaXRpb25BcHBlYXJhbmNlUGFudBANEiAK",
+            "HEF2YXRhclBvc2l0aW9uQXBwZWFyYW5jZVNob2UQDhIgChxBdmF0YXJQb3Np",
+            "dGlvbkFwcGVhcmFuY2VIYW5kEA8SIgoeQXZhdGFyUG9zaXRpb25BcHBlYXJh",
+            "bmNlV2VhcG9uEBEqLQoISXRlbVR5cGUSEAoMSXRlbVR5cGVHYW1lEAASDwoL",
+            "SXRlbVR5cGVORlQQASqUAQoRTkZUQ29uc3VtYWJsZVR5cGUSHgoaTkZUQ29u",
+            "c3VtYWJsZVR5cGVSZXN0b3JlSFAQABIgChxORlRDb25zdW1hYmxlVHlwZUxl",
+            "YXJuUmVjaXBlEAESHAoYTkZUQ29uc3VtYWJsZVR5cGVBZGRCdWZmEAISHwob",
+            "TkZUQ29uc3VtYWJsZVR5cGVPY2N1cHlMYW5kEAMq9QEKDE5mdFRyYWl0VHlw",
+            "ZRIXChNOZnRUcmFpdFR5cGVVbmtub3duEAASDQoJSGVhZEFybW9yEAESDgoK",
+            "Q2hlc3RBcm1vchACEg4KCkhhbmRzQXJtb3IQAxINCglMZWdzQXJtb3IQBBIN",
+            "CglGZWV0QXJtb3IQBRIJCgVTd29yZBAGEgcKA0JvdxAHEgoKBkRhZ2dlchAI",
+            "EgkKBVNwZWFyEAkSDgoKQ29uc3VtYWJsZRAKEgwKCE1hdGVyaWFsEAsSDgoK",
+            "TXlzdGVyeUJveBAMEg0KCVBsYWNlYWJsZRANEgkKBVRoaXJkEA4SDAoIV2Vh",
+            "cmFibGUQD2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.NFTType), typeof(global::GameMessageCore.NFTRarity), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.AttributeType), typeof(global::GameMessageCore.AvatarPosition), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::GameMessageCore.EntityProfileReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.AvatarPosition), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.NftTraitType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NFTConsumableInfo), global::GameMessageCore.NFTConsumableInfo.Parser, new[]{ "Quality", "ConsumableType", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftSkill), global::GameMessageCore.NftSkill.Parser, new[]{ "SkillId", "SkillLevel" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftThirdNftInfo), global::GameMessageCore.NftThirdNftInfo.Parser, new[]{ "Name", "ResUrl", "Desc", "TimeOutSec", "TokenUrl", "TokenId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftWearableInfo), global::GameMessageCore.NftWearableInfo.Parser, new[]{ "Token", "ObjectCid", "WearableRarity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AvatarAttribute), global::GameMessageCore.AvatarAttribute.Parser, new[]{ "Rarity", "Durability", "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AttributeData), global::GameMessageCore.AttributeData.Parser, new[]{ "Type", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftTraitData), global::GameMessageCore.NftTraitData.Parser, new[]{ "DisplayType", "TraitType", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftMetadata), global::GameMessageCore.NftMetadata.Parser, new[]{ "Name", "Description", "Image", "BackGroundColor", "Type", "TraitData", "Attributes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftData), global::GameMessageCore.NftData.Parser, new[]{ "Network", "TokenId", "IsMelandAi", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Item), global::GameMessageCore.Item.Parser, new[]{ "ItemType", "Id", "ObjectCid", "Num", "UserId", "AvatarPos", "NftUsing", "NftData", "NftTimeOutSec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemBaseInfo), global::GameMessageCore.ItemBaseInfo.Parser, new[]{ "Cid", "Num", "Quality" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerAvatar), global::GameMessageCore.PlayerAvatar.Parser, new[]{ "Position", "ObjectId", "Attribute" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftData), global::GameMessageCore.NftData.Parser, new[]{ "Network", "TokenId", "IsMelandAi", "Metadata" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftMetadata), global::GameMessageCore.NftMetadata.Parser, new[]{ "Name", "Description", "Image", "BackGroundColor", "Attributes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftAttribute), global::GameMessageCore.NftAttribute.Parser, new[]{ "TraitType", "Value" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AvatarAttribute), global::GameMessageCore.AvatarAttribute.Parser, new[]{ "Position", "ObjectId", "Rarity", "Data" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
-  public enum NFTType {
-    [pbr::OriginalName("NFTTypeUnknown")] Unknown = 0,
-    [pbr::OriginalName("NFTTypeConsumable")] Consumable = 1,
-    [pbr::OriginalName("NFTTypeEquipment")] Equipment = 2,
-    [pbr::OriginalName("NFTTypeMaterial")] Material = 3,
-    [pbr::OriginalName("NFTTypePlaceable")] Placeable = 4,
-    [pbr::OriginalName("NFTTypeThird")] Third = 5,
-    [pbr::OriginalName("NFTTypeWearable")] Wearable = 6,
-  }
-
-  /// <summary>
-  /// NFT品质
-  /// </summary>
-  public enum NFTRarity {
-    /// <summary>
-    /// 无
-    /// </summary>
-    [pbr::OriginalName("NFTRarityUnknown")] Unknown = 0,
-    /// <summary>
-    /// 普通 common
-    /// </summary>
-    [pbr::OriginalName("NFTRarityCommon")] Common = 1,
-    /// <summary>
-    /// 稀有 rare
-    /// </summary>
-    [pbr::OriginalName("NFTRarityRare")] Rare = 2,
-    /// <summary>
-    /// 史诗 epic
-    /// </summary>
-    [pbr::OriginalName("NFTRarityEpic")] Epic = 3,
-    /// <summary>
-    /// 神话 mythic
-    /// </summary>
-    [pbr::OriginalName("NFTRarityMythic")] Mythic = 4,
-    /// <summary>
-    /// 唯一 unique
-    /// </summary>
-    [pbr::OriginalName("NFTRarityUnique")] Unique = 5,
-  }
-
-  /// <summary>
-  /// 消耗品作用类型
-  /// </summary>
-  public enum NFTConsumableType {
-    [pbr::OriginalName("NFTConsumableTypeRestoreHP")] RestoreHp = 0,
-    [pbr::OriginalName("NFTConsumableTypeLearnRecipe")] LearnRecipe = 1,
-    [pbr::OriginalName("NFTConsumableTypeAddBuff")] AddBuff = 2,
-    [pbr::OriginalName("NFTConsumableTypeOccupyLand")] OccupyLand = 3,
-  }
-
-  public enum ItemType {
-    /// <summary>
-    /// 游戏道具
-    /// </summary>
-    [pbr::OriginalName("ItemTypeGame")] Game = 0,
-    /// <summary>
-    /// 放置类NFT
-    /// </summary>
-    [pbr::OriginalName("ItemTypeNFT")] Nft = 1,
-  }
-
-  /// <summary>
-  /// 装备属性Type
-  /// </summary>
-  public enum AttributeType {
-    [pbr::OriginalName("AttributeTypeUnknown")] Unknown = 0,
-    /// <summary>
-    /// HP limit
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeHpLimit")] HpLimit = 1,
-    /// <summary>
-    /// HP Recovery
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeHpRecovery")] HpRecovery = 2,
-    /// <summary>
-    /// 增加普通攻击
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeAtt")] Att = 3,
-    /// <summary>
-    /// 增加普通攻击速度
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeAttSpeed")] AttSpeed = 4,
-    /// <summary>
-    /// 增加普通防御
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeDef")] Def = 5,
-    /// <summary>
-    /// 增加暴击率
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeCrit")] Crit = 6,
-    /// <summary>
-    /// 增加暴击伤害
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeCritDmg")] CritDmg = 7,
-    /// <summary>
-    /// 增加命中率
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeHitRate")] HitRate = 8,
-    /// <summary>
-    /// 增加闪避率
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeMissRate")] MissRate = 9,
-    /// <summary>
-    /// 移动速度
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeMoveSpeed")] MoveSpeed = 10,
-    /// <summary>
-    /// 挂载的技能ID
-    /// </summary>
-    [pbr::OriginalName("AttributeTypeSkillId")] SkillId = 99,
-  }
-
   /// <summary>
   /// 玩家装备位置
   /// </summary>
@@ -280,6 +148,91 @@ namespace GameMessageCore {
     /// 时装武器
     /// </summary>
     [pbr::OriginalName("AvatarPositionAppearanceWeapon")] AppearanceWeapon = 17,
+  }
+
+  public enum ItemType {
+    /// <summary>
+    /// 游戏道具
+    /// </summary>
+    [pbr::OriginalName("ItemTypeGame")] Game = 0,
+    /// <summary>
+    /// 放置类NFT
+    /// </summary>
+    [pbr::OriginalName("ItemTypeNFT")] Nft = 1,
+  }
+
+  /// <summary>
+  /// 消耗品作用类型
+  /// </summary>
+  public enum NFTConsumableType {
+    [pbr::OriginalName("NFTConsumableTypeRestoreHP")] RestoreHp = 0,
+    [pbr::OriginalName("NFTConsumableTypeLearnRecipe")] LearnRecipe = 1,
+    [pbr::OriginalName("NFTConsumableTypeAddBuff")] AddBuff = 2,
+    [pbr::OriginalName("NFTConsumableTypeOccupyLand")] OccupyLand = 3,
+  }
+
+  public enum NftTraitType {
+    [pbr::OriginalName("NftTraitTypeUnknown")] Unknown = 0,
+    /// <summary>
+    /// "Head Armor" 头部装备
+    /// </summary>
+    [pbr::OriginalName("HeadArmor")] HeadArmor = 1,
+    /// <summary>
+    /// "Chest Armor" 胸部装备
+    /// </summary>
+    [pbr::OriginalName("ChestArmor")] ChestArmor = 2,
+    /// <summary>
+    /// "Hands Armor" 手部装备
+    /// </summary>
+    [pbr::OriginalName("HandsArmor")] HandsArmor = 3,
+    /// <summary>
+    /// "Legs Armor" 腿部装备
+    /// </summary>
+    [pbr::OriginalName("LegsArmor")] LegsArmor = 4,
+    /// <summary>
+    /// "Feet Armor" 脚部装备
+    /// </summary>
+    [pbr::OriginalName("FeetArmor")] FeetArmor = 5,
+    /// <summary>
+    /// "Sword" 剑
+    /// </summary>
+    [pbr::OriginalName("Sword")] Sword = 6,
+    /// <summary>
+    /// "Bow"  弓
+    /// </summary>
+    [pbr::OriginalName("Bow")] Bow = 7,
+    /// <summary>
+    /// "Dagger" 匕首
+    /// </summary>
+    [pbr::OriginalName("Dagger")] Dagger = 8,
+    /// <summary>
+    /// "Spear"枪
+    /// </summary>
+    [pbr::OriginalName("Spear")] Spear = 9,
+    /// <summary>
+    /// "Consumable" 消耗品
+    /// </summary>
+    [pbr::OriginalName("Consumable")] Consumable = 10,
+    /// <summary>
+    /// "Material" 材料
+    /// </summary>
+    [pbr::OriginalName("Material")] Material = 11,
+    /// <summary>
+    /// "MysteryBox" 神秘宝箱
+    /// </summary>
+    [pbr::OriginalName("MysteryBox")] MysteryBox = 12,
+    /// <summary>
+    /// "Placeable" 可放置
+    /// </summary>
+    [pbr::OriginalName("Placeable")] Placeable = 13,
+    /// <summary>
+    /// "Third" 第三方
+    /// </summary>
+    [pbr::OriginalName("Third")] Third = 14,
+    /// <summary>
+    /// "Wearable" 可穿戴
+    /// </summary>
+    [pbr::OriginalName("Wearable")] Wearable = 15,
   }
 
   #endregion
@@ -551,16 +504,16 @@ namespace GameMessageCore {
 
   }
 
-  public sealed partial class NftSkill : pb::IMessage<NftSkill>
+  public sealed partial class NftTraitData : pb::IMessage<NftTraitData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<NftSkill> _parser = new pb::MessageParser<NftSkill>(() => new NftSkill());
+    private static readonly pb::MessageParser<NftTraitData> _parser = new pb::MessageParser<NftTraitData>(() => new NftTraitData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftSkill> Parser { get { return _parser; } }
+    public static pb::MessageParser<NftTraitData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -576,7 +529,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftSkill() {
+    public NftTraitData() {
       OnConstruction();
     }
 
@@ -584,1215 +537,72 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftSkill(NftSkill other) : this() {
-      skillId_ = other.skillId_;
-      skillLevel_ = other.skillLevel_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftSkill Clone() {
-      return new NftSkill(this);
-    }
-
-    /// <summary>Field number for the "skill_id" field.</summary>
-    public const int SkillIdFieldNumber = 1;
-    private int skillId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SkillId {
-      get { return skillId_; }
-      set {
-        skillId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "skill_level" field.</summary>
-    public const int SkillLevelFieldNumber = 2;
-    private int skillLevel_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SkillLevel {
-      get { return skillLevel_; }
-      set {
-        skillLevel_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftSkill);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftSkill other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (SkillId != other.SkillId) return false;
-      if (SkillLevel != other.SkillLevel) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (SkillId != 0) hash ^= SkillId.GetHashCode();
-      if (SkillLevel != 0) hash ^= SkillLevel.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (SkillId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(SkillId);
-      }
-      if (SkillLevel != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(SkillLevel);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SkillId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(SkillId);
-      }
-      if (SkillLevel != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(SkillLevel);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (SkillId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkillId);
-      }
-      if (SkillLevel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkillLevel);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftSkill other) {
-      if (other == null) {
-        return;
-      }
-      if (other.SkillId != 0) {
-        SkillId = other.SkillId;
-      }
-      if (other.SkillLevel != 0) {
-        SkillLevel = other.SkillLevel;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            SkillId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            SkillLevel = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            SkillId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            SkillLevel = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 第三方NFT道具信息
-  /// </summary>
-  public sealed partial class NftThirdNftInfo : pb::IMessage<NftThirdNftInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<NftThirdNftInfo> _parser = new pb::MessageParser<NftThirdNftInfo>(() => new NftThirdNftInfo());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftThirdNftInfo> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftThirdNftInfo() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftThirdNftInfo(NftThirdNftInfo other) : this() {
-      name_ = other.name_;
-      resUrl_ = other.resUrl_;
-      desc_ = other.desc_;
-      timeOutSec_ = other.timeOutSec_;
-      tokenUrl_ = other.tokenUrl_;
-      tokenId_ = other.tokenId_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftThirdNftInfo Clone() {
-      return new NftThirdNftInfo(this);
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "res_url" field.</summary>
-    public const int ResUrlFieldNumber = 2;
-    private string resUrl_ = "";
-    /// <summary>
-    /// 显示资源URL
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ResUrl {
-      get { return resUrl_; }
-      set {
-        resUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "desc" field.</summary>
-    public const int DescFieldNumber = 3;
-    private string desc_ = "";
-    /// <summary>
-    /// 描述信息
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Desc {
-      get { return desc_; }
-      set {
-        desc_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "time_out_sec" field.</summary>
-    public const int TimeOutSecFieldNumber = 4;
-    private int timeOutSec_;
-    /// <summary>
-    /// 放置过期时间
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TimeOutSec {
-      get { return timeOutSec_; }
-      set {
-        timeOutSec_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "token_url" field.</summary>
-    public const int TokenUrlFieldNumber = 5;
-    private string tokenUrl_ = "";
-    /// <summary>
-    /// token (address)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TokenUrl {
-      get { return tokenUrl_; }
-      set {
-        tokenUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "token_id" field.</summary>
-    public const int TokenIdFieldNumber = 6;
-    private string tokenId_ = "";
-    /// <summary>
-    /// token Id
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TokenId {
-      get { return tokenId_; }
-      set {
-        tokenId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftThirdNftInfo);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftThirdNftInfo other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Name != other.Name) return false;
-      if (ResUrl != other.ResUrl) return false;
-      if (Desc != other.Desc) return false;
-      if (TimeOutSec != other.TimeOutSec) return false;
-      if (TokenUrl != other.TokenUrl) return false;
-      if (TokenId != other.TokenId) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (ResUrl.Length != 0) hash ^= ResUrl.GetHashCode();
-      if (Desc.Length != 0) hash ^= Desc.GetHashCode();
-      if (TimeOutSec != 0) hash ^= TimeOutSec.GetHashCode();
-      if (TokenUrl.Length != 0) hash ^= TokenUrl.GetHashCode();
-      if (TokenId.Length != 0) hash ^= TokenId.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (ResUrl.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ResUrl);
-      }
-      if (Desc.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Desc);
-      }
-      if (TimeOutSec != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TimeOutSec);
-      }
-      if (TokenUrl.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(TokenUrl);
-      }
-      if (TokenId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(TokenId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (ResUrl.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ResUrl);
-      }
-      if (Desc.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Desc);
-      }
-      if (TimeOutSec != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TimeOutSec);
-      }
-      if (TokenUrl.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(TokenUrl);
-      }
-      if (TokenId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(TokenId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (ResUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ResUrl);
-      }
-      if (Desc.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Desc);
-      }
-      if (TimeOutSec != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimeOutSec);
-      }
-      if (TokenUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenUrl);
-      }
-      if (TokenId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenId);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftThirdNftInfo other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.ResUrl.Length != 0) {
-        ResUrl = other.ResUrl;
-      }
-      if (other.Desc.Length != 0) {
-        Desc = other.Desc;
-      }
-      if (other.TimeOutSec != 0) {
-        TimeOutSec = other.TimeOutSec;
-      }
-      if (other.TokenUrl.Length != 0) {
-        TokenUrl = other.TokenUrl;
-      }
-      if (other.TokenId.Length != 0) {
-        TokenId = other.TokenId;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            ResUrl = input.ReadString();
-            break;
-          }
-          case 26: {
-            Desc = input.ReadString();
-            break;
-          }
-          case 32: {
-            TimeOutSec = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            TokenUrl = input.ReadString();
-            break;
-          }
-          case 50: {
-            TokenId = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            ResUrl = input.ReadString();
-            break;
-          }
-          case 26: {
-            Desc = input.ReadString();
-            break;
-          }
-          case 32: {
-            TimeOutSec = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            TokenUrl = input.ReadString();
-            break;
-          }
-          case 50: {
-            TokenId = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 装备类NFT道具信息
-  /// </summary>
-  public sealed partial class NftWearableInfo : pb::IMessage<NftWearableInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<NftWearableInfo> _parser = new pb::MessageParser<NftWearableInfo>(() => new NftWearableInfo());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftWearableInfo> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftWearableInfo() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftWearableInfo(NftWearableInfo other) : this() {
-      token_ = other.token_;
-      objectCid_ = other.objectCid_;
-      wearableRarity_ = other.wearableRarity_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftWearableInfo Clone() {
-      return new NftWearableInfo(this);
-    }
-
-    /// <summary>Field number for the "token" field.</summary>
-    public const int TokenFieldNumber = 1;
-    private string token_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Token {
-      get { return token_; }
-      set {
-        token_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "object_cid" field.</summary>
-    public const int ObjectCidFieldNumber = 2;
-    private int objectCid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ObjectCid {
-      get { return objectCid_; }
-      set {
-        objectCid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "wearable_rarity" field.</summary>
-    public const int WearableRarityFieldNumber = 3;
-    private global::GameMessageCore.NFTRarity wearableRarity_ = global::GameMessageCore.NFTRarity.Unknown;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.NFTRarity WearableRarity {
-      get { return wearableRarity_; }
-      set {
-        wearableRarity_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftWearableInfo);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftWearableInfo other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Token != other.Token) return false;
-      if (ObjectCid != other.ObjectCid) return false;
-      if (WearableRarity != other.WearableRarity) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Token.Length != 0) hash ^= Token.GetHashCode();
-      if (ObjectCid != 0) hash ^= ObjectCid.GetHashCode();
-      if (WearableRarity != global::GameMessageCore.NFTRarity.Unknown) hash ^= WearableRarity.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Token.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Token);
-      }
-      if (ObjectCid != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(ObjectCid);
-      }
-      if (WearableRarity != global::GameMessageCore.NFTRarity.Unknown) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) WearableRarity);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Token.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Token);
-      }
-      if (ObjectCid != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(ObjectCid);
-      }
-      if (WearableRarity != global::GameMessageCore.NFTRarity.Unknown) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) WearableRarity);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Token.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
-      }
-      if (ObjectCid != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectCid);
-      }
-      if (WearableRarity != global::GameMessageCore.NFTRarity.Unknown) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) WearableRarity);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftWearableInfo other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Token.Length != 0) {
-        Token = other.Token;
-      }
-      if (other.ObjectCid != 0) {
-        ObjectCid = other.ObjectCid;
-      }
-      if (other.WearableRarity != global::GameMessageCore.NFTRarity.Unknown) {
-        WearableRarity = other.WearableRarity;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Token = input.ReadString();
-            break;
-          }
-          case 16: {
-            ObjectCid = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            WearableRarity = (global::GameMessageCore.NFTRarity) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Token = input.ReadString();
-            break;
-          }
-          case 16: {
-            ObjectCid = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            WearableRarity = (global::GameMessageCore.NFTRarity) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 装备属性(保存的是增量-实际数据 = 增量 + 配置数据)
-  /// </summary>
-  public sealed partial class AvatarAttribute : pb::IMessage<AvatarAttribute>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AvatarAttribute> _parser = new pb::MessageParser<AvatarAttribute>(() => new AvatarAttribute());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<AvatarAttribute> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AvatarAttribute() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AvatarAttribute(AvatarAttribute other) : this() {
-      rarity_ = other.rarity_;
-      durability_ = other.durability_;
-      data_ = other.data_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AvatarAttribute Clone() {
-      return new AvatarAttribute(this);
-    }
-
-    /// <summary>Field number for the "rarity" field.</summary>
-    public const int RarityFieldNumber = 1;
-    private string rarity_ = "";
-    /// <summary>
-    /// 稀有度 unique,  mythic, epic, rare, common
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Rarity {
-      get { return rarity_; }
-      set {
-        rarity_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "durability" field.</summary>
-    public const int DurabilityFieldNumber = 2;
-    private int durability_;
-    /// <summary>
-    /// 耐久度
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Durability {
-      get { return durability_; }
-      set {
-        durability_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "data" field.</summary>
-    public const int DataFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_data_codec
-        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.AttributeData.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> data_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
-    /// <summary>
-    /// 属性增量
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Data {
-      get { return data_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as AvatarAttribute);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(AvatarAttribute other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Rarity != other.Rarity) return false;
-      if (Durability != other.Durability) return false;
-      if(!data_.Equals(other.data_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Rarity.Length != 0) hash ^= Rarity.GetHashCode();
-      if (Durability != 0) hash ^= Durability.GetHashCode();
-      hash ^= data_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Rarity.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Rarity);
-      }
-      if (Durability != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Durability);
-      }
-      data_.WriteTo(output, _repeated_data_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Rarity.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Rarity);
-      }
-      if (Durability != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Durability);
-      }
-      data_.WriteTo(ref output, _repeated_data_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Rarity.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Rarity);
-      }
-      if (Durability != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Durability);
-      }
-      size += data_.CalculateSize(_repeated_data_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(AvatarAttribute other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Rarity.Length != 0) {
-        Rarity = other.Rarity;
-      }
-      if (other.Durability != 0) {
-        Durability = other.Durability;
-      }
-      data_.Add(other.data_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Rarity = input.ReadString();
-            break;
-          }
-          case 16: {
-            Durability = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            data_.AddEntriesFrom(input, _repeated_data_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Rarity = input.ReadString();
-            break;
-          }
-          case 16: {
-            Durability = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            data_.AddEntriesFrom(ref input, _repeated_data_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 属性字段增量数据 1v1
-  /// </summary>
-  public sealed partial class AttributeData : pb::IMessage<AttributeData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AttributeData> _parser = new pb::MessageParser<AttributeData>(() => new AttributeData());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<AttributeData> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AttributeData() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AttributeData(AttributeData other) : this() {
-      type_ = other.type_;
+    public NftTraitData(NftTraitData other) : this() {
+      displayType_ = other.displayType_;
+      traitType_ = other.traitType_;
       value_ = other.value_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AttributeData Clone() {
-      return new AttributeData(this);
+    public NftTraitData Clone() {
+      return new NftTraitData(this);
     }
 
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 1;
-    private global::GameMessageCore.AttributeType type_ = global::GameMessageCore.AttributeType.Unknown;
-    /// <summary>
-    /// type
-    /// </summary>
+    /// <summary>Field number for the "displayType" field.</summary>
+    public const int DisplayTypeFieldNumber = 1;
+    private string displayType_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.AttributeType Type {
-      get { return type_; }
+    public string DisplayType {
+      get { return displayType_; }
       set {
-        type_ = value;
+        displayType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "TraitType" field.</summary>
+    public const int TraitTypeFieldNumber = 2;
+    private string traitType_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TraitType {
+      get { return traitType_; }
+      set {
+        traitType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 2;
-    private int value_;
-    /// <summary>
-    /// 增量数值
-    /// </summary>
+    public const int ValueFieldNumber = 3;
+    private string value_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Value {
+    public string Value {
       get { return value_; }
       set {
-        value_ = value;
+        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as AttributeData);
+      return Equals(other as NftTraitData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(AttributeData other) {
+    public bool Equals(NftTraitData other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Type != other.Type) return false;
+      if (DisplayType != other.DisplayType) return false;
+      if (TraitType != other.TraitType) return false;
       if (Value != other.Value) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1801,8 +611,9 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != global::GameMessageCore.AttributeType.Unknown) hash ^= Type.GetHashCode();
-      if (Value != 0) hash ^= Value.GetHashCode();
+      if (DisplayType.Length != 0) hash ^= DisplayType.GetHashCode();
+      if (TraitType.Length != 0) hash ^= TraitType.GetHashCode();
+      if (Value.Length != 0) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1821,13 +632,17 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != global::GameMessageCore.AttributeType.Unknown) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Type);
+      if (DisplayType.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(DisplayType);
       }
-      if (Value != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Value);
+      if (TraitType.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TraitType);
+      }
+      if (Value.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Value);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1839,13 +654,17 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != global::GameMessageCore.AttributeType.Unknown) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Type);
+      if (DisplayType.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(DisplayType);
       }
-      if (Value != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Value);
+      if (TraitType.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TraitType);
+      }
+      if (Value.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Value);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1857,11 +676,14 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != global::GameMessageCore.AttributeType.Unknown) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      if (DisplayType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DisplayType);
       }
-      if (Value != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Value);
+      if (TraitType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TraitType);
+      }
+      if (Value.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1871,14 +693,17 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(AttributeData other) {
+    public void MergeFrom(NftTraitData other) {
       if (other == null) {
         return;
       }
-      if (other.Type != global::GameMessageCore.AttributeType.Unknown) {
-        Type = other.Type;
+      if (other.DisplayType.Length != 0) {
+        DisplayType = other.DisplayType;
       }
-      if (other.Value != 0) {
+      if (other.TraitType.Length != 0) {
+        TraitType = other.TraitType;
+      }
+      if (other.Value.Length != 0) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1896,12 +721,16 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Type = (global::GameMessageCore.AttributeType) input.ReadEnum();
+          case 10: {
+            DisplayType = input.ReadString();
             break;
           }
-          case 16: {
-            Value = input.ReadInt32();
+          case 18: {
+            TraitType = input.ReadString();
+            break;
+          }
+          case 26: {
+            Value = input.ReadString();
             break;
           }
         }
@@ -1919,12 +748,720 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Type = (global::GameMessageCore.AttributeType) input.ReadEnum();
+          case 10: {
+            DisplayType = input.ReadString();
             break;
           }
-          case 16: {
-            Value = input.ReadInt32();
+          case 18: {
+            TraitType = input.ReadString();
+            break;
+          }
+          case 26: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class NftMetadata : pb::IMessage<NftMetadata>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<NftMetadata> _parser = new pb::MessageParser<NftMetadata>(() => new NftMetadata());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<NftMetadata> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftMetadata() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftMetadata(NftMetadata other) : this() {
+      name_ = other.name_;
+      description_ = other.description_;
+      image_ = other.image_;
+      backGroundColor_ = other.backGroundColor_;
+      type_ = other.type_;
+      traitData_ = other.traitData_.Clone();
+      attributes_ = other.attributes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftMetadata Clone() {
+      return new NftMetadata(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "image" field.</summary>
+    public const int ImageFieldNumber = 3;
+    private string image_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Image {
+      get { return image_; }
+      set {
+        image_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "backGroundColor" field.</summary>
+    public const int BackGroundColorFieldNumber = 4;
+    private string backGroundColor_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BackGroundColor {
+      get { return backGroundColor_; }
+      set {
+        backGroundColor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 5;
+    private global::GameMessageCore.NftTraitType type_ = global::GameMessageCore.NftTraitType.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.NftTraitType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "traitData" field.</summary>
+    public const int TraitDataFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::GameMessageCore.NftTraitData> _repeated_traitData_codec
+        = pb::FieldCodec.ForMessage(50, global::GameMessageCore.NftTraitData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.NftTraitData> traitData_ = new pbc::RepeatedField<global::GameMessageCore.NftTraitData>();
+    /// <summary>
+    /// nft trait数据 (不包含角色的属性数据)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.NftTraitData> TraitData {
+      get { return traitData_; }
+    }
+
+    /// <summary>Field number for the "attributes" field.</summary>
+    public const int AttributesFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_attributes_codec
+        = pb::FieldCodec.ForMessage(58, global::GameMessageCore.AttributeData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> attributes_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
+    /// <summary>
+    /// 属性数据
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Attributes {
+      get { return attributes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as NftMetadata);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(NftMetadata other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
+      if (Image != other.Image) return false;
+      if (BackGroundColor != other.BackGroundColor) return false;
+      if (Type != other.Type) return false;
+      if(!traitData_.Equals(other.traitData_)) return false;
+      if(!attributes_.Equals(other.attributes_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (Image.Length != 0) hash ^= Image.GetHashCode();
+      if (BackGroundColor.Length != 0) hash ^= BackGroundColor.GetHashCode();
+      if (Type != global::GameMessageCore.NftTraitType.Unknown) hash ^= Type.GetHashCode();
+      hash ^= traitData_.GetHashCode();
+      hash ^= attributes_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      if (Image.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Image);
+      }
+      if (BackGroundColor.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(BackGroundColor);
+      }
+      if (Type != global::GameMessageCore.NftTraitType.Unknown) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Type);
+      }
+      traitData_.WriteTo(output, _repeated_traitData_codec);
+      attributes_.WriteTo(output, _repeated_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      if (Image.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Image);
+      }
+      if (BackGroundColor.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(BackGroundColor);
+      }
+      if (Type != global::GameMessageCore.NftTraitType.Unknown) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Type);
+      }
+      traitData_.WriteTo(ref output, _repeated_traitData_codec);
+      attributes_.WriteTo(ref output, _repeated_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (Image.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Image);
+      }
+      if (BackGroundColor.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BackGroundColor);
+      }
+      if (Type != global::GameMessageCore.NftTraitType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      size += traitData_.CalculateSize(_repeated_traitData_codec);
+      size += attributes_.CalculateSize(_repeated_attributes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(NftMetadata other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.Image.Length != 0) {
+        Image = other.Image;
+      }
+      if (other.BackGroundColor.Length != 0) {
+        BackGroundColor = other.BackGroundColor;
+      }
+      if (other.Type != global::GameMessageCore.NftTraitType.Unknown) {
+        Type = other.Type;
+      }
+      traitData_.Add(other.traitData_);
+      attributes_.Add(other.attributes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            Image = input.ReadString();
+            break;
+          }
+          case 34: {
+            BackGroundColor = input.ReadString();
+            break;
+          }
+          case 40: {
+            Type = (global::GameMessageCore.NftTraitType) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            traitData_.AddEntriesFrom(input, _repeated_traitData_codec);
+            break;
+          }
+          case 58: {
+            attributes_.AddEntriesFrom(input, _repeated_attributes_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            Image = input.ReadString();
+            break;
+          }
+          case 34: {
+            BackGroundColor = input.ReadString();
+            break;
+          }
+          case 40: {
+            Type = (global::GameMessageCore.NftTraitType) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            traitData_.AddEntriesFrom(ref input, _repeated_traitData_codec);
+            break;
+          }
+          case 58: {
+            attributes_.AddEntriesFrom(ref input, _repeated_attributes_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class NftData : pb::IMessage<NftData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<NftData> _parser = new pb::MessageParser<NftData>(() => new NftData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<NftData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftData(NftData other) : this() {
+      network_ = other.network_;
+      tokenId_ = other.tokenId_;
+      isMelandAi_ = other.isMelandAi_;
+      metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NftData Clone() {
+      return new NftData(this);
+    }
+
+    /// <summary>Field number for the "network" field.</summary>
+    public const int NetworkFieldNumber = 1;
+    private string network_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Network {
+      get { return network_; }
+      set {
+        network_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "tokenId" field.</summary>
+    public const int TokenIdFieldNumber = 2;
+    private string tokenId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TokenId {
+      get { return tokenId_; }
+      set {
+        tokenId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "isMelandAi" field.</summary>
+    public const int IsMelandAiFieldNumber = 3;
+    private bool isMelandAi_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsMelandAi {
+      get { return isMelandAi_; }
+      set {
+        isMelandAi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "metadata" field.</summary>
+    public const int MetadataFieldNumber = 4;
+    private global::GameMessageCore.NftMetadata metadata_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.NftMetadata Metadata {
+      get { return metadata_; }
+      set {
+        metadata_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as NftData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(NftData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Network != other.Network) return false;
+      if (TokenId != other.TokenId) return false;
+      if (IsMelandAi != other.IsMelandAi) return false;
+      if (!object.Equals(Metadata, other.Metadata)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Network.Length != 0) hash ^= Network.GetHashCode();
+      if (TokenId.Length != 0) hash ^= TokenId.GetHashCode();
+      if (IsMelandAi != false) hash ^= IsMelandAi.GetHashCode();
+      if (metadata_ != null) hash ^= Metadata.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Network.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Network);
+      }
+      if (TokenId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TokenId);
+      }
+      if (IsMelandAi != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsMelandAi);
+      }
+      if (metadata_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Metadata);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Network.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Network);
+      }
+      if (TokenId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TokenId);
+      }
+      if (IsMelandAi != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsMelandAi);
+      }
+      if (metadata_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Metadata);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Network.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Network);
+      }
+      if (TokenId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenId);
+      }
+      if (IsMelandAi != false) {
+        size += 1 + 1;
+      }
+      if (metadata_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(NftData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Network.Length != 0) {
+        Network = other.Network;
+      }
+      if (other.TokenId.Length != 0) {
+        TokenId = other.TokenId;
+      }
+      if (other.IsMelandAi != false) {
+        IsMelandAi = other.IsMelandAi;
+      }
+      if (other.metadata_ != null) {
+        if (metadata_ == null) {
+          Metadata = new global::GameMessageCore.NftMetadata();
+        }
+        Metadata.MergeFrom(other.Metadata);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Network = input.ReadString();
+            break;
+          }
+          case 18: {
+            TokenId = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsMelandAi = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (metadata_ == null) {
+              Metadata = new global::GameMessageCore.NftMetadata();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Network = input.ReadString();
+            break;
+          }
+          case 18: {
+            TokenId = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsMelandAi = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (metadata_ == null) {
+              Metadata = new global::GameMessageCore.NftMetadata();
+            }
+            input.ReadMessage(Metadata);
             break;
           }
         }
@@ -1951,7 +1488,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[6]; }
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2457,7 +1994,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[7]; }
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2709,21 +2246,21 @@ namespace GameMessageCore {
   /// <summary>
   /// 玩家装备
   /// </summary>
-  public sealed partial class PlayerAvatar : pb::IMessage<PlayerAvatar>
+  public sealed partial class AvatarAttribute : pb::IMessage<AvatarAttribute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<PlayerAvatar> _parser = new pb::MessageParser<PlayerAvatar>(() => new PlayerAvatar());
+    private static readonly pb::MessageParser<AvatarAttribute> _parser = new pb::MessageParser<AvatarAttribute>(() => new AvatarAttribute());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PlayerAvatar> Parser { get { return _parser; } }
+    public static pb::MessageParser<AvatarAttribute> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[8]; }
+      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2734,7 +2271,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerAvatar() {
+    public AvatarAttribute() {
       OnConstruction();
     }
 
@@ -2742,17 +2279,18 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerAvatar(PlayerAvatar other) : this() {
+    public AvatarAttribute(AvatarAttribute other) : this() {
       position_ = other.position_;
       objectId_ = other.objectId_;
-      attribute_ = other.attribute_ != null ? other.attribute_.Clone() : null;
+      rarity_ = other.rarity_;
+      data_ = other.data_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerAvatar Clone() {
-      return new PlayerAvatar(this);
+    public AvatarAttribute Clone() {
+      return new AvatarAttribute(this);
     }
 
     /// <summary>Field number for the "position" field.</summary>
@@ -2770,7 +2308,7 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "object_id" field.</summary>
+    /// <summary>Field number for the "objectId" field.</summary>
     public const int ObjectIdFieldNumber = 2;
     private int objectId_;
     /// <summary>
@@ -2785,30 +2323,41 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "attribute" field.</summary>
-    public const int AttributeFieldNumber = 3;
-    private global::GameMessageCore.AvatarAttribute attribute_;
+    /// <summary>Field number for the "rarity" field.</summary>
+    public const int RarityFieldNumber = 3;
+    private string rarity_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Rarity {
+      get { return rarity_; }
+      set {
+        rarity_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_data_codec
+        = pb::FieldCodec.ForMessage(34, global::GameMessageCore.AttributeData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> data_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
     /// <summary>
     /// 属性
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.AvatarAttribute Attribute {
-      get { return attribute_; }
-      set {
-        attribute_ = value;
-      }
+    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Data {
+      get { return data_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as PlayerAvatar);
+      return Equals(other as AvatarAttribute);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PlayerAvatar other) {
+    public bool Equals(AvatarAttribute other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2817,7 +2366,8 @@ namespace GameMessageCore {
       }
       if (Position != other.Position) return false;
       if (ObjectId != other.ObjectId) return false;
-      if (!object.Equals(Attribute, other.Attribute)) return false;
+      if (Rarity != other.Rarity) return false;
+      if(!data_.Equals(other.data_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2827,7 +2377,8 @@ namespace GameMessageCore {
       int hash = 1;
       if (Position != global::GameMessageCore.AvatarPosition.None) hash ^= Position.GetHashCode();
       if (ObjectId != 0) hash ^= ObjectId.GetHashCode();
-      if (attribute_ != null) hash ^= Attribute.GetHashCode();
+      if (Rarity.Length != 0) hash ^= Rarity.GetHashCode();
+      hash ^= data_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2854,10 +2405,11 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(ObjectId);
       }
-      if (attribute_ != null) {
+      if (Rarity.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Attribute);
+        output.WriteString(Rarity);
       }
+      data_.WriteTo(output, _repeated_data_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2876,10 +2428,11 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(ObjectId);
       }
-      if (attribute_ != null) {
+      if (Rarity.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Attribute);
+        output.WriteString(Rarity);
       }
+      data_.WriteTo(ref output, _repeated_data_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2896,9 +2449,10 @@ namespace GameMessageCore {
       if (ObjectId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ObjectId);
       }
-      if (attribute_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Attribute);
+      if (Rarity.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Rarity);
       }
+      size += data_.CalculateSize(_repeated_data_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2907,7 +2461,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PlayerAvatar other) {
+    public void MergeFrom(AvatarAttribute other) {
       if (other == null) {
         return;
       }
@@ -2917,12 +2471,10 @@ namespace GameMessageCore {
       if (other.ObjectId != 0) {
         ObjectId = other.ObjectId;
       }
-      if (other.attribute_ != null) {
-        if (attribute_ == null) {
-          Attribute = new global::GameMessageCore.AvatarAttribute();
-        }
-        Attribute.MergeFrom(other.Attribute);
+      if (other.Rarity.Length != 0) {
+        Rarity = other.Rarity;
       }
+      data_.Add(other.data_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2947,10 +2499,11 @@ namespace GameMessageCore {
             break;
           }
           case 26: {
-            if (attribute_ == null) {
-              Attribute = new global::GameMessageCore.AvatarAttribute();
-            }
-            input.ReadMessage(Attribute);
+            Rarity = input.ReadString();
+            break;
+          }
+          case 34: {
+            data_.AddEntriesFrom(input, _repeated_data_codec);
             break;
           }
         }
@@ -2977,871 +2530,11 @@ namespace GameMessageCore {
             break;
           }
           case 26: {
-            if (attribute_ == null) {
-              Attribute = new global::GameMessageCore.AvatarAttribute();
-            }
-            input.ReadMessage(Attribute);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class NftData : pb::IMessage<NftData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<NftData> _parser = new pb::MessageParser<NftData>(() => new NftData());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftData> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftData() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftData(NftData other) : this() {
-      network_ = other.network_;
-      tokenId_ = other.tokenId_;
-      isMelandAi_ = other.isMelandAi_;
-      metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftData Clone() {
-      return new NftData(this);
-    }
-
-    /// <summary>Field number for the "network" field.</summary>
-    public const int NetworkFieldNumber = 1;
-    private string network_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Network {
-      get { return network_; }
-      set {
-        network_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "tokenId" field.</summary>
-    public const int TokenIdFieldNumber = 2;
-    private string tokenId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TokenId {
-      get { return tokenId_; }
-      set {
-        tokenId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "isMelandAi" field.</summary>
-    public const int IsMelandAiFieldNumber = 3;
-    private bool isMelandAi_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsMelandAi {
-      get { return isMelandAi_; }
-      set {
-        isMelandAi_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "metadata" field.</summary>
-    public const int MetadataFieldNumber = 4;
-    private global::GameMessageCore.NftMetadata metadata_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.NftMetadata Metadata {
-      get { return metadata_; }
-      set {
-        metadata_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftData);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftData other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Network != other.Network) return false;
-      if (TokenId != other.TokenId) return false;
-      if (IsMelandAi != other.IsMelandAi) return false;
-      if (!object.Equals(Metadata, other.Metadata)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Network.Length != 0) hash ^= Network.GetHashCode();
-      if (TokenId.Length != 0) hash ^= TokenId.GetHashCode();
-      if (IsMelandAi != false) hash ^= IsMelandAi.GetHashCode();
-      if (metadata_ != null) hash ^= Metadata.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Network.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Network);
-      }
-      if (TokenId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(TokenId);
-      }
-      if (IsMelandAi != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsMelandAi);
-      }
-      if (metadata_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Metadata);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Network.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Network);
-      }
-      if (TokenId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(TokenId);
-      }
-      if (IsMelandAi != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsMelandAi);
-      }
-      if (metadata_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Metadata);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Network.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Network);
-      }
-      if (TokenId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenId);
-      }
-      if (IsMelandAi != false) {
-        size += 1 + 1;
-      }
-      if (metadata_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftData other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Network.Length != 0) {
-        Network = other.Network;
-      }
-      if (other.TokenId.Length != 0) {
-        TokenId = other.TokenId;
-      }
-      if (other.IsMelandAi != false) {
-        IsMelandAi = other.IsMelandAi;
-      }
-      if (other.metadata_ != null) {
-        if (metadata_ == null) {
-          Metadata = new global::GameMessageCore.NftMetadata();
-        }
-        Metadata.MergeFrom(other.Metadata);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Network = input.ReadString();
-            break;
-          }
-          case 18: {
-            TokenId = input.ReadString();
-            break;
-          }
-          case 24: {
-            IsMelandAi = input.ReadBool();
+            Rarity = input.ReadString();
             break;
           }
           case 34: {
-            if (metadata_ == null) {
-              Metadata = new global::GameMessageCore.NftMetadata();
-            }
-            input.ReadMessage(Metadata);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Network = input.ReadString();
-            break;
-          }
-          case 18: {
-            TokenId = input.ReadString();
-            break;
-          }
-          case 24: {
-            IsMelandAi = input.ReadBool();
-            break;
-          }
-          case 34: {
-            if (metadata_ == null) {
-              Metadata = new global::GameMessageCore.NftMetadata();
-            }
-            input.ReadMessage(Metadata);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class NftMetadata : pb::IMessage<NftMetadata>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<NftMetadata> _parser = new pb::MessageParser<NftMetadata>(() => new NftMetadata());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftMetadata> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[10]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftMetadata() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftMetadata(NftMetadata other) : this() {
-      name_ = other.name_;
-      description_ = other.description_;
-      image_ = other.image_;
-      backGroundColor_ = other.backGroundColor_;
-      attributes_ = other.attributes_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftMetadata Clone() {
-      return new NftMetadata(this);
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "description" field.</summary>
-    public const int DescriptionFieldNumber = 2;
-    private string description_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Description {
-      get { return description_; }
-      set {
-        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "image" field.</summary>
-    public const int ImageFieldNumber = 3;
-    private string image_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Image {
-      get { return image_; }
-      set {
-        image_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "backGroundColor" field.</summary>
-    public const int BackGroundColorFieldNumber = 4;
-    private string backGroundColor_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string BackGroundColor {
-      get { return backGroundColor_; }
-      set {
-        backGroundColor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "attributes" field.</summary>
-    public const int AttributesFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::GameMessageCore.NftAttribute> _repeated_attributes_codec
-        = pb::FieldCodec.ForMessage(42, global::GameMessageCore.NftAttribute.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.NftAttribute> attributes_ = new pbc::RepeatedField<global::GameMessageCore.NftAttribute>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.NftAttribute> Attributes {
-      get { return attributes_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftMetadata);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftMetadata other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Name != other.Name) return false;
-      if (Description != other.Description) return false;
-      if (Image != other.Image) return false;
-      if (BackGroundColor != other.BackGroundColor) return false;
-      if(!attributes_.Equals(other.attributes_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Description.Length != 0) hash ^= Description.GetHashCode();
-      if (Image.Length != 0) hash ^= Image.GetHashCode();
-      if (BackGroundColor.Length != 0) hash ^= BackGroundColor.GetHashCode();
-      hash ^= attributes_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Description);
-      }
-      if (Image.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Image);
-      }
-      if (BackGroundColor.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(BackGroundColor);
-      }
-      attributes_.WriteTo(output, _repeated_attributes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Description);
-      }
-      if (Image.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Image);
-      }
-      if (BackGroundColor.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(BackGroundColor);
-      }
-      attributes_.WriteTo(ref output, _repeated_attributes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Description.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
-      }
-      if (Image.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Image);
-      }
-      if (BackGroundColor.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BackGroundColor);
-      }
-      size += attributes_.CalculateSize(_repeated_attributes_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftMetadata other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Description.Length != 0) {
-        Description = other.Description;
-      }
-      if (other.Image.Length != 0) {
-        Image = other.Image;
-      }
-      if (other.BackGroundColor.Length != 0) {
-        BackGroundColor = other.BackGroundColor;
-      }
-      attributes_.Add(other.attributes_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            Description = input.ReadString();
-            break;
-          }
-          case 26: {
-            Image = input.ReadString();
-            break;
-          }
-          case 34: {
-            BackGroundColor = input.ReadString();
-            break;
-          }
-          case 42: {
-            attributes_.AddEntriesFrom(input, _repeated_attributes_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            Description = input.ReadString();
-            break;
-          }
-          case 26: {
-            Image = input.ReadString();
-            break;
-          }
-          case 34: {
-            BackGroundColor = input.ReadString();
-            break;
-          }
-          case 42: {
-            attributes_.AddEntriesFrom(ref input, _repeated_attributes_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class NftAttribute : pb::IMessage<NftAttribute>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<NftAttribute> _parser = new pb::MessageParser<NftAttribute>(() => new NftAttribute());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<NftAttribute> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.ItemReflection.Descriptor.MessageTypes[11]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftAttribute() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftAttribute(NftAttribute other) : this() {
-      traitType_ = other.traitType_;
-      value_ = other.value_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public NftAttribute Clone() {
-      return new NftAttribute(this);
-    }
-
-    /// <summary>Field number for the "traitType" field.</summary>
-    public const int TraitTypeFieldNumber = 1;
-    private string traitType_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TraitType {
-      get { return traitType_; }
-      set {
-        traitType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 2;
-    private string value_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Value {
-      get { return value_; }
-      set {
-        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as NftAttribute);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(NftAttribute other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (TraitType != other.TraitType) return false;
-      if (Value != other.Value) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (TraitType.Length != 0) hash ^= TraitType.GetHashCode();
-      if (Value.Length != 0) hash ^= Value.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (TraitType.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TraitType);
-      }
-      if (Value.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TraitType.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TraitType);
-      }
-      if (Value.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (TraitType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TraitType);
-      }
-      if (Value.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(NftAttribute other) {
-      if (other == null) {
-        return;
-      }
-      if (other.TraitType.Length != 0) {
-        TraitType = other.TraitType;
-      }
-      if (other.Value.Length != 0) {
-        Value = other.Value;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            TraitType = input.ReadString();
-            break;
-          }
-          case 18: {
-            Value = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TraitType = input.ReadString();
-            break;
-          }
-          case 18: {
-            Value = input.ReadString();
+            data_.AddEntriesFrom(ref input, _repeated_data_codec);
             break;
           }
         }

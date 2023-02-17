@@ -2,47 +2,14 @@ using System;
 using UnityEngine;
 
 
-// 属性字段增量数据 1v1
-[Serializable]
-public class GrpcAttributeData
-{
-    // type
-    public GameMessageCore.AttributeType Type;
-    // 增量数值
-    public int Value;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
-    public void Set(GameMessageCore.AttributeData attr)
-    {
-        if (attr == null)
-        {
-            return;
-        }
-        Type = attr.Type;
-        Value = attr.Value;
-    }
-
-    public GameMessageCore.AttributeData ToProtoData()
-    {
-        return new GameMessageCore.AttributeData()
-        {
-            Type = Type,
-            Value = Value,
-        };
-    }
-}
-
 [Serializable]
 public class GrpcAvatarAttribute
 {
+    public GameMessageCore.AvatarPosition Position;
     // 稀有度 unique,  mythic, epic, rare, common
     public string Rarity;
-    // 耐久度
-    public int Durability;
+    // cid
+    public int ObjectId;
     // 属性增量
     public GrpcAttributeData[] Data;
 
@@ -58,8 +25,9 @@ public class GrpcAvatarAttribute
             return;
         }
 
+        Position = attr.Position;
         Rarity = attr.Rarity;
-        Durability = attr.Durability;
+        ObjectId = attr.ObjectId;
         Data = new GrpcAttributeData[attr.Data.Count];
         for (int i = 0; i < attr.Data.Count; i++)
         {
@@ -73,8 +41,9 @@ public class GrpcAvatarAttribute
     {
         GameMessageCore.AvatarAttribute attribute = new()
         {
+            Position = Position,
             Rarity = Rarity,
-            Durability = Durability,
+            ObjectId = ObjectId,
         };
         foreach (GrpcAttributeData at in Data)
         {
@@ -84,51 +53,6 @@ public class GrpcAvatarAttribute
     }
 
 }
-
-// 对应 proto.PlayerAvatar
-[Serializable]
-public class GrpcPlayerAvatar
-{
-    // 装备位置
-    public GameMessageCore.AvatarPosition Position;
-    // 装备的物品 id
-    public int ObjectId;
-    // 属性
-    public GrpcAvatarAttribute Attribute;
-
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
-
-    public void Set(GameMessageCore.PlayerAvatar pa)
-    {
-        if (pa == null)
-        {
-            return;
-        }
-
-        Position = pa.Position;
-        ObjectId = pa.ObjectId;
-        Attribute = new GrpcAvatarAttribute();
-        Attribute.Set(pa.Attribute);
-    }
-
-    public GameMessageCore.PlayerAvatar ToProtoData()
-    {
-
-        return new GameMessageCore.PlayerAvatar()
-        {
-            Position = Position,
-            ObjectId = ObjectId,
-            Attribute = Attribute.ToProtoData(),
-        };
-    }
-
-}
-
 
 [Serializable]
 public class GrpcItemBaseInfo

@@ -37,53 +37,53 @@ namespace GameMessageCore {
             "aWxkSAASIwoDbnBjGA0gASgLMhQuZ2FtZU1lc3NhZ2VDb3JlLk5wY0gAEi0K",
             "CHJlc291cmNlGA4gASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLlJlc291cmNlSABC",
             "CAoGZW50aXR5IjsKFkRlc3RydWN0aW9uRWxlbWVudERhdGESCgoCaWQYASAB",
-            "KAMSFQoNcmVzdG9yZV9zdGFtcBgCIAEoAyLXAgoGUGxheWVyEjIKCWJhc2Vf",
+            "KAMSFQoNcmVzdG9yZV9zdGFtcBgCIAEoAyLaAgoGUGxheWVyEjIKCWJhc2Vf",
             "ZGF0YRgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJCYXNlRGF0YRIv",
-            "Cgdwcm9maWxlGAIgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eVByb2Zp",
-            "bGUSLgoHYXZhdGFycxgDIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJB",
-            "dmF0YXISDgoGYWN0aXZlGAQgASgIEg4KBm1hcF9pZBgFIAEoBRIqCghwb3Np",
-            "dGlvbhgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2RpchgH",
-            "IAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiwKCWVudGl0eV9jZBgI",
-            "IAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlDRBIXCg9za2lsbEVmZmVj",
-            "dERhdGEYCSABKAkizwEKB01vbnN0ZXISCwoDY2lkGAEgASgFEgoKAmlkGAIg",
-            "ASgDEg4KBmFjdGl2ZRgDIAEoCBIvCgdwcm9maWxlGAQgASgLMh4uZ2FtZU1l",
-            "c3NhZ2VDb3JlLkVudGl0eVByb2ZpbGUSKgoIcG9zaXRpb24YBSABKAsyGC5n",
-            "YW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1lTWVz",
-            "c2FnZUNvcmUuVmVjdG9yMxIXCg9za2lsbEVmZmVjdERhdGEYByABKAkisgEK",
-            "A05wYxILCgNjaWQYASABKAUSCgoCaWQYAiABKAMSDgoGYWN0aXZlGAMgASgI",
-            "Ei8KB3Byb2ZpbGUYBCABKAsyHi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5UHJv",
-            "ZmlsZRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0",
-            "b3IzEiUKA2RpchgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzIqgD",
-            "CghOZnRCdWlsZBIKCgJpZBgBIAEoAxILCgNjaWQYAiABKAUSDwoHZnJvbU5m",
-            "dBgDIAEoCRINCgVvd25lchgEIAEoAxIPCgdsYW5kSWRzGAUgAygFEioKCHBv",
-            "c2l0aW9uGAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGly",
-            "GAcgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSEwoLZWxlY3RyaWNF",
-            "bmQYCCABKAUSFgoOaGFydmVzdFN0YXJ0QXQYCSABKAUSEQoJaGFydmVzdEF0",
-            "GAogASgFEhgKEGhhcnZlc3RJdGVtQ291bnQYCyABKAUSGQoRY29sbGVjdGlv",
-            "blN0YXJ0QXQYDCABKAUSFAoMY29sbGVjdGlvbkF0GA0gASgFEhsKE2NvbGxl",
-            "Y3Rpb25JdGVtQ291bnQYDiABKAUSLQolbGFuZFBsYWNlbWVudFBvd2VyWmVy",
-            "b0Nvb2xkb3duU3RhcnRBdBgPIAEoBRIoCiBsYW5kUGxhY2VtZW50UG93ZXJa",
-            "ZXJvQ29vbGRvd25BdBgQIAEoBSKkAQoIUmVzb3VyY2USDgoGYWN0aXZlGAEg",
-            "ASgIEioKCHBvc2l0aW9uGAIgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3Rv",
-            "cjMSJQoDZGlyGAMgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSNQoJ",
-            "cG9pbnRJbmZvGAQgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLlJlc291cmNlUG9p",
-            "bnRJbmZvIiwKEVJlc291cmNlUG9pbnRJbmZvEgoKAmlkGAEgASgEEgsKA2Np",
-            "ZBgCIAEoBSJSCg5FbnRpdHlNb3ZlU3RlcBIxCghsb2NhdGlvbhgBIAEoCzIf",
-            "LmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhINCgVzdGFtcBgCIAEo",
-            "AyL/AQoORW50aXR5TW92ZW1lbnQSKgoHdHlwZV9pZBgBIAEoCzIZLmdhbWVN",
-            "ZXNzYWdlQ29yZS5FbnRpdHlJZBI1CgxjdXJfbG9jYXRpb24YAiABKAsyHy5n",
-            "YW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoNZGVzdF9sb2NhdGlv",
-            "bhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlU3RlcBIrCgR0",
-            "eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVtZW50VHlwZRIlCgNE",
-            "aXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyJ6CghFbnRpdHlD",
-            "RBI1Cg1za2lsbF9jZF9saXN0GAEgAygLMh4uZ2FtZU1lc3NhZ2VDb3JlLkVu",
-            "dGl0eVNraWxsQ0QSNwoOZXh0ZW5kX2NkX2xpc3QYAiADKAsyHy5nYW1lTWVz",
-            "c2FnZUNvcmUuRW50aXR5RXh0ZW5kQ0QiLwoNRW50aXR5U2tpbGxDRBIQCghz",
-            "a2lsbF9pZBgBIAEoBRIMCgR0aW1lGAIgASgDIiwKDkVudGl0eUV4dGVuZENE",
-            "EgwKBHR5cGUYASABKAUSDAoEdGltZRgCIAEoAypoCgxNb3ZlbWVudFR5cGUS",
-            "FwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQKEE1vdmVtZW50VHlwZVdhbGsQ",
-            "ARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBNb3ZlbWVudFR5cGVJZGxlEANi",
-            "BnByb3RvMw=="));
+            "Cgdwcm9maWxlGAIgAygLMh4uZ2FtZU1lc3NhZ2VDb3JlLkF0dHJpYnV0ZURh",
+            "dGESMQoHYXZhdGFycxgDIAMoCzIgLmdhbWVNZXNzYWdlQ29yZS5BdmF0YXJB",
+            "dHRyaWJ1dGUSDgoGYWN0aXZlGAQgASgIEg4KBm1hcF9pZBgFIAEoBRIqCghw",
+            "b3NpdGlvbhgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2Rp",
+            "chgHIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEiwKCWVudGl0eV9j",
+            "ZBgIIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlDRBIXCg9za2lsbEVm",
+            "ZmVjdERhdGEYCSABKAkizwEKB01vbnN0ZXISCwoDY2lkGAEgASgFEgoKAmlk",
+            "GAIgASgDEg4KBmFjdGl2ZRgDIAEoCBIvCgdwcm9maWxlGAQgAygLMh4uZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLkF0dHJpYnV0ZURhdGESKgoIcG9zaXRpb24YBSABKAsy",
+            "GC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYBiABKAsyGC5nYW1l",
+            "TWVzc2FnZUNvcmUuVmVjdG9yMxIXCg9za2lsbEVmZmVjdERhdGEYByABKAki",
+            "sgEKA05wYxILCgNjaWQYASABKAUSCgoCaWQYAiABKAMSDgoGYWN0aXZlGAMg",
+            "ASgIEi8KB3Byb2ZpbGUYBCADKAsyHi5nYW1lTWVzc2FnZUNvcmUuQXR0cmli",
+            "dXRlRGF0YRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5W",
+            "ZWN0b3IzEiUKA2RpchgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3Iz",
+            "IqgDCghOZnRCdWlsZBIKCgJpZBgBIAEoAxILCgNjaWQYAiABKAUSDwoHZnJv",
+            "bU5mdBgDIAEoCRINCgVvd25lchgEIAEoAxIPCgdsYW5kSWRzGAUgAygFEioK",
+            "CHBvc2l0aW9uGAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoD",
+            "ZGlyGAcgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSEwoLZWxlY3Ry",
+            "aWNFbmQYCCABKAUSFgoOaGFydmVzdFN0YXJ0QXQYCSABKAUSEQoJaGFydmVz",
+            "dEF0GAogASgFEhgKEGhhcnZlc3RJdGVtQ291bnQYCyABKAUSGQoRY29sbGVj",
+            "dGlvblN0YXJ0QXQYDCABKAUSFAoMY29sbGVjdGlvbkF0GA0gASgFEhsKE2Nv",
+            "bGxlY3Rpb25JdGVtQ291bnQYDiABKAUSLQolbGFuZFBsYWNlbWVudFBvd2Vy",
+            "WmVyb0Nvb2xkb3duU3RhcnRBdBgPIAEoBRIoCiBsYW5kUGxhY2VtZW50UG93",
+            "ZXJaZXJvQ29vbGRvd25BdBgQIAEoBSKkAQoIUmVzb3VyY2USDgoGYWN0aXZl",
+            "GAEgASgIEioKCHBvc2l0aW9uGAIgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZl",
+            "Y3RvcjMSJQoDZGlyGAMgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMS",
+            "NQoJcG9pbnRJbmZvGAQgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLlJlc291cmNl",
+            "UG9pbnRJbmZvIiwKEVJlc291cmNlUG9pbnRJbmZvEgoKAmlkGAEgASgEEgsK",
+            "A2NpZBgCIAEoBSJSCg5FbnRpdHlNb3ZlU3RlcBIxCghsb2NhdGlvbhgBIAEo",
+            "CzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhINCgVzdGFtcBgC",
+            "IAEoAyL/AQoORW50aXR5TW92ZW1lbnQSKgoHdHlwZV9pZBgBIAEoCzIZLmdh",
+            "bWVNZXNzYWdlQ29yZS5FbnRpdHlJZBI1CgxjdXJfbG9jYXRpb24YAiABKAsy",
+            "Hy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoNZGVzdF9sb2Nh",
+            "dGlvbhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlU3RlcBIr",
+            "CgR0eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVtZW50VHlwZRIl",
+            "CgNEaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyJ6CghFbnRp",
+            "dHlDRBI1Cg1za2lsbF9jZF9saXN0GAEgAygLMh4uZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkVudGl0eVNraWxsQ0QSNwoOZXh0ZW5kX2NkX2xpc3QYAiADKAsyHy5nYW1l",
+            "TWVzc2FnZUNvcmUuRW50aXR5RXh0ZW5kQ0QiLwoNRW50aXR5U2tpbGxDRBIQ",
+            "Cghza2lsbF9pZBgBIAEoBRIMCgR0aW1lGAIgASgDIiwKDkVudGl0eUV4dGVu",
+            "ZENEEgwKBHR5cGUYASABKAUSDAoEdGltZRgCIAEoAypoCgxNb3ZlbWVudFR5",
+            "cGUSFwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQKEE1vdmVtZW50VHlwZVdh",
+            "bGsQARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBNb3ZlbWVudFR5cGVJZGxl",
+            "EANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1351,7 +1351,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Player(Player other) : this() {
       baseData_ = other.baseData_ != null ? other.baseData_.Clone() : null;
-      profile_ = other.profile_ != null ? other.profile_.Clone() : null;
+      profile_ = other.profile_.Clone();
       avatars_ = other.avatars_.Clone();
       active_ = other.active_;
       mapId_ = other.mapId_;
@@ -1382,30 +1382,29 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "profile" field.</summary>
     public const int ProfileFieldNumber = 2;
-    private global::GameMessageCore.EntityProfile profile_;
+    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_profile_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.AttributeData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> profile_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
     /// <summary>
     /// 玩家属性
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityProfile Profile {
+    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Profile {
       get { return profile_; }
-      set {
-        profile_ = value;
-      }
     }
 
     /// <summary>Field number for the "avatars" field.</summary>
     public const int AvatarsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::GameMessageCore.PlayerAvatar> _repeated_avatars_codec
-        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.PlayerAvatar.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.PlayerAvatar> avatars_ = new pbc::RepeatedField<global::GameMessageCore.PlayerAvatar>();
+    private static readonly pb::FieldCodec<global::GameMessageCore.AvatarAttribute> _repeated_avatars_codec
+        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.AvatarAttribute.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AvatarAttribute> avatars_ = new pbc::RepeatedField<global::GameMessageCore.AvatarAttribute>();
     /// <summary>
     /// 玩家 avatar
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.PlayerAvatar> Avatars {
+    public pbc::RepeatedField<global::GameMessageCore.AvatarAttribute> Avatars {
       get { return avatars_; }
     }
 
@@ -1503,7 +1502,7 @@ namespace GameMessageCore {
         return true;
       }
       if (!object.Equals(BaseData, other.BaseData)) return false;
-      if (!object.Equals(Profile, other.Profile)) return false;
+      if(!profile_.Equals(other.profile_)) return false;
       if(!avatars_.Equals(other.avatars_)) return false;
       if (Active != other.Active) return false;
       if (MapId != other.MapId) return false;
@@ -1519,7 +1518,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (baseData_ != null) hash ^= BaseData.GetHashCode();
-      if (profile_ != null) hash ^= Profile.GetHashCode();
+      hash ^= profile_.GetHashCode();
       hash ^= avatars_.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
       if (MapId != 0) hash ^= MapId.GetHashCode();
@@ -1549,10 +1548,7 @@ namespace GameMessageCore {
         output.WriteRawTag(10);
         output.WriteMessage(BaseData);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(output, _repeated_profile_codec);
       avatars_.WriteTo(output, _repeated_avatars_codec);
       if (Active != false) {
         output.WriteRawTag(32);
@@ -1592,10 +1588,7 @@ namespace GameMessageCore {
         output.WriteRawTag(10);
         output.WriteMessage(BaseData);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(ref output, _repeated_profile_codec);
       avatars_.WriteTo(ref output, _repeated_avatars_codec);
       if (Active != false) {
         output.WriteRawTag(32);
@@ -1634,9 +1627,7 @@ namespace GameMessageCore {
       if (baseData_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BaseData);
       }
-      if (profile_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
-      }
+      size += profile_.CalculateSize(_repeated_profile_codec);
       size += avatars_.CalculateSize(_repeated_avatars_codec);
       if (Active != false) {
         size += 1 + 1;
@@ -1674,12 +1665,7 @@ namespace GameMessageCore {
         }
         BaseData.MergeFrom(other.BaseData);
       }
-      if (other.profile_ != null) {
-        if (profile_ == null) {
-          Profile = new global::GameMessageCore.EntityProfile();
-        }
-        Profile.MergeFrom(other.Profile);
-      }
+      profile_.Add(other.profile_);
       avatars_.Add(other.avatars_);
       if (other.Active != false) {
         Active = other.Active;
@@ -1731,10 +1717,7 @@ namespace GameMessageCore {
             break;
           }
           case 18: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(input, _repeated_profile_codec);
             break;
           }
           case 26: {
@@ -1797,10 +1780,7 @@ namespace GameMessageCore {
             break;
           }
           case 18: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(ref input, _repeated_profile_codec);
             break;
           }
           case 26: {
@@ -1884,7 +1864,7 @@ namespace GameMessageCore {
       cid_ = other.cid_;
       id_ = other.id_;
       active_ = other.active_;
-      profile_ = other.profile_ != null ? other.profile_.Clone() : null;
+      profile_ = other.profile_.Clone();
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       skillEffectData_ = other.skillEffectData_;
@@ -1935,14 +1915,13 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "profile" field.</summary>
     public const int ProfileFieldNumber = 4;
-    private global::GameMessageCore.EntityProfile profile_;
+    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_profile_codec
+        = pb::FieldCodec.ForMessage(34, global::GameMessageCore.AttributeData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> profile_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityProfile Profile {
+    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Profile {
       get { return profile_; }
-      set {
-        profile_ = value;
-      }
     }
 
     /// <summary>Field number for the "position" field.</summary>
@@ -2005,7 +1984,7 @@ namespace GameMessageCore {
       if (Cid != other.Cid) return false;
       if (Id != other.Id) return false;
       if (Active != other.Active) return false;
-      if (!object.Equals(Profile, other.Profile)) return false;
+      if(!profile_.Equals(other.profile_)) return false;
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       if (SkillEffectData != other.SkillEffectData) return false;
@@ -2019,7 +1998,7 @@ namespace GameMessageCore {
       if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Id != 0L) hash ^= Id.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
-      if (profile_ != null) hash ^= Profile.GetHashCode();
+      hash ^= profile_.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (SkillEffectData.Length != 0) hash ^= SkillEffectData.GetHashCode();
@@ -2053,10 +2032,7 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(output, _repeated_profile_codec);
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -2091,10 +2067,7 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(ref output, _repeated_profile_codec);
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -2126,9 +2099,7 @@ namespace GameMessageCore {
       if (Active != false) {
         size += 1 + 1;
       }
-      if (profile_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
-      }
+      size += profile_.CalculateSize(_repeated_profile_codec);
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
@@ -2159,12 +2130,7 @@ namespace GameMessageCore {
       if (other.Active != false) {
         Active = other.Active;
       }
-      if (other.profile_ != null) {
-        if (profile_ == null) {
-          Profile = new global::GameMessageCore.EntityProfile();
-        }
-        Profile.MergeFrom(other.Profile);
-      }
+      profile_.Add(other.profile_);
       if (other.position_ != null) {
         if (position_ == null) {
           Position = new global::GameMessageCore.Vector3();
@@ -2208,10 +2174,7 @@ namespace GameMessageCore {
             break;
           }
           case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(input, _repeated_profile_codec);
             break;
           }
           case 42: {
@@ -2260,10 +2223,7 @@ namespace GameMessageCore {
             break;
           }
           case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(ref input, _repeated_profile_codec);
             break;
           }
           case 42: {
@@ -2328,7 +2288,7 @@ namespace GameMessageCore {
       cid_ = other.cid_;
       id_ = other.id_;
       active_ = other.active_;
-      profile_ = other.profile_ != null ? other.profile_.Clone() : null;
+      profile_ = other.profile_.Clone();
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -2378,14 +2338,13 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "profile" field.</summary>
     public const int ProfileFieldNumber = 4;
-    private global::GameMessageCore.EntityProfile profile_;
+    private static readonly pb::FieldCodec<global::GameMessageCore.AttributeData> _repeated_profile_codec
+        = pb::FieldCodec.ForMessage(34, global::GameMessageCore.AttributeData.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.AttributeData> profile_ = new pbc::RepeatedField<global::GameMessageCore.AttributeData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityProfile Profile {
+    public pbc::RepeatedField<global::GameMessageCore.AttributeData> Profile {
       get { return profile_; }
-      set {
-        profile_ = value;
-      }
     }
 
     /// <summary>Field number for the "position" field.</summary>
@@ -2433,7 +2392,7 @@ namespace GameMessageCore {
       if (Cid != other.Cid) return false;
       if (Id != other.Id) return false;
       if (Active != other.Active) return false;
-      if (!object.Equals(Profile, other.Profile)) return false;
+      if(!profile_.Equals(other.profile_)) return false;
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -2446,7 +2405,7 @@ namespace GameMessageCore {
       if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Id != 0L) hash ^= Id.GetHashCode();
       if (Active != false) hash ^= Active.GetHashCode();
-      if (profile_ != null) hash ^= Profile.GetHashCode();
+      hash ^= profile_.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (_unknownFields != null) {
@@ -2479,10 +2438,7 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(output, _repeated_profile_codec);
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -2513,10 +2469,7 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteBool(Active);
       }
-      if (profile_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Profile);
-      }
+      profile_.WriteTo(ref output, _repeated_profile_codec);
       if (position_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Position);
@@ -2544,9 +2497,7 @@ namespace GameMessageCore {
       if (Active != false) {
         size += 1 + 1;
       }
-      if (profile_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
-      }
+      size += profile_.CalculateSize(_repeated_profile_codec);
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
@@ -2574,12 +2525,7 @@ namespace GameMessageCore {
       if (other.Active != false) {
         Active = other.Active;
       }
-      if (other.profile_ != null) {
-        if (profile_ == null) {
-          Profile = new global::GameMessageCore.EntityProfile();
-        }
-        Profile.MergeFrom(other.Profile);
-      }
+      profile_.Add(other.profile_);
       if (other.position_ != null) {
         if (position_ == null) {
           Position = new global::GameMessageCore.Vector3();
@@ -2620,10 +2566,7 @@ namespace GameMessageCore {
             break;
           }
           case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(input, _repeated_profile_codec);
             break;
           }
           case 42: {
@@ -2668,10 +2611,7 @@ namespace GameMessageCore {
             break;
           }
           case 34: {
-            if (profile_ == null) {
-              Profile = new global::GameMessageCore.EntityProfile();
-            }
-            input.ReadMessage(Profile);
+            profile_.AddEntriesFrom(ref input, _repeated_profile_codec);
             break;
           }
           case 42: {

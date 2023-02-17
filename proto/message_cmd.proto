@@ -99,10 +99,10 @@ enum EnvelopeType {
     GetHomeData                     = 0x030041; 
     QueryServerTime                 = 0x030043;     // 客户端请求服务器时间
     BroadCastChangeService          = 0x030045;
-    HomeResourceOperate             = 0x030047;
     BroadCastHomeDataInitBatch      = 0x030049; 
-    QueryTalentTree                 = 0x030051;     // 查询天赋数据
-    BroadCastTalentTreeUpdate       = 0x030053;     // 广播更新天赋树数据
+    BroadCastHomeSkillResult        = 0x030051;
+    QueryTalentTree                 = 0x030053;     // 查询天赋数据
+    BroadCastTalentTreeUpdate       = 0x030055;     // 广播更新天赋树数据
 
 
 

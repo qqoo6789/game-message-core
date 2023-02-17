@@ -4,26 +4,6 @@ option go_package = "./messageGo/proto";
 
 import "item.proto";
 
-enum HomeAction {
-      HomeActionNone = 0;
-      // 锄头锄地
-      HomeActionHoeing = 2;
-      // 播种
-      HomeActionSowing = 4;
-      // 浇水
-      HomeActionWatering = 8;
-      // 施肥
-      HomeActionManure = 16;
-      // 收获收割
-      HomeActionHarvest = 32;
-      // 斧头砍树
-      HomeActionCut = 64;
-      // 镐子挖矿
-      HomeActionExcavate = 128;
-      // 铲除植物
-      Eradicate = 256;
-}
-
 enum CollectResourceType
 {
     CollectResourceTypeUnknown = 0;
@@ -50,16 +30,39 @@ message CollectResourceBaseInfo{
   CollectResourceType type = 2;
 }
 
-message CollectResourceOperateInfo{
-  CollectResourceBaseInfo baseInfo=1;
-  HomeAction   action = 2;
-  //可能是种子cid 也可能是装备cid
-  int32 toolCid = 3;
+//使用采集技能的信息
+message UseCollectResourceSkillInfo{
+  repeated CollectResourceBaseInfo targets=1;
+  //消耗道具的cid 比如种子 肥料
+  int32 costItemCid = 2;
 }
 
+//土地进度信息
+message HomeSoilProgressInfo{
+  uint64 id = 1;
+  CollectResourceProgressResult progressInfo = 2;
+}
+
+//家园某个采集资源操作结果
 message CollectResourceOperateResult{
-  CollectResourceOperateInfo operateInfo = 1;
-  //道具有效  在播种和施肥时候专精不够时候 会返回false
-  bool itemValid=2;
-  repeated ItemBaseInfo dropList = 3;
+  CollectResourceBaseInfo targetInfo = 1;
+  //修改进度结果 不影响操作执行 仅仅表示进度的变化
+  CollectResourceProgressResult progressResult = 2;
+  //动作执行结果
+  CollectResourceExecuteResult executeResult = 3;
+}
+
+message CollectResourceProgressResult
+{
+    //最新总进度值 适用于分段式的进度
+    int32 totalProgress = 1;
+    //进度充满时的时间戳 适用于浇水连续式的进度
+    int64 progressFullStamp = 2;
+}
+
+message CollectResourceExecuteResult
+{
+    //道具有效  在播种和施肥时候专精不够时候 会返回false
+    bool itemValid=2;
+    repeated ItemBaseInfo dropList = 3;
 }

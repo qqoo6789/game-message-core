@@ -2,7 +2,7 @@
  * @Author: alex
  * @Date: 2022-12-9 10:00
  * @Description: user 切换 scene service 需要的grpc calls 相关交换协议
- * @FilePath: game-message-core/messageDotNet/grpc/MethodData/ServiceChange.cs
+ * @FilePath: /meland-scene-server/Assets/Plugins/SharedCore/game-message-core/messageDotNet/grpc/MethodData/ServiceChange.cs
  */
 
 using System;
@@ -52,6 +52,7 @@ public class UserJoinServiceInput
     public GrpcVector3 UserPosition;
     public GrpcVector3 UserDir;
     public ServiceData FromSer;
+    public string SkillEffectData;
     public string ToJson()
     {
         return JsonUtility.ToJson(this);

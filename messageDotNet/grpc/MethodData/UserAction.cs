@@ -83,6 +83,7 @@ public class GetUserDataOutput
     public GrpcPlayerBaseData BaseData;
     public GrpcEntityProfile Profile;
     public GrpcPlayerFeature Feature;
+    public string SkillEffectData;
     public int MapId;
     public GrpcVector3 Pos;
     public GrpcVector3 Dir;

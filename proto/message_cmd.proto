@@ -103,7 +103,9 @@ enum EnvelopeType {
     BroadCastHomeSkillResult        = 0x030051;
     QueryTalentTree                 = 0x030053;     // 查询天赋数据
     BroadCastTalentTreeUpdate       = 0x030055;     // 广播更新天赋树数据
-
+    BroadCastAnimalSceneDataUpdate  = 0x030057;     // 广播更新动物场数据
+    BroadCastAnimalDeath            = 0x030059;     // 广播动物死亡
+    BroadCastAnimalAutoProduce      = 0x030061;     // 广播动物自动生产
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

@@ -96,3 +96,18 @@ message ProxyProductData
   int32 itemCid =2;
   Vector3 position = 3;
 }
+
+// 更新动物数据
+message AnimalUpdateData
+{
+  uint64 animId = 1;
+  int32 hungerProgress  = 2;
+}
+
+// 更新动物食盆数据
+message AnimalBowlUpdateData
+{
+  uint64 bowlId = 1;
+  int32 foodCid = 2;
+  int32 remainFoodCapacity = 3;
+}

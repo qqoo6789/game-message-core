@@ -143,6 +143,9 @@ message Envelope {
     QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030053;
     QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030054;
     BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030055;
+    BroadCastAnimalSceneDataUpdateResponse  broad_cast_animal_scene_data_update_response  = 0x030057;
+    BroadCastAnimalDeathResponse            broad_cast_animal_death_response              = 0x030059;
+    BroadCastAnimalAutoProduceResponse      broad_cast_animal_auto_produce_response       = 0x030061;
  
 
 
@@ -509,6 +512,23 @@ message BroadCastHomeSkillResultResponse
   int32        costItemCid = 3;
   //每个家园对象的操作结果
   repeated CollectResourceOperateResult operateResultList = 4;
+}
+
+message BroadCastAnimalSceneDataUpdateResponse
+{
+  AnimalUpdateData animalUpdateData = 1;
+  AnimalBowlUpdateData animalBowlUpdateData = 2;
+}
+
+message BroadCastAnimalDeathResponse
+{
+  uint64 animalId = 1;
+}
+
+message BroadCastAnimalAutoProduceResponse
+{
+  uint64 animalId = 1;
+  ProxyProductData productData = 2;
 }
 
 message BroadCastInitMapElementResponse {

@@ -54,10 +54,13 @@ namespace GameMessageCore {
             "BmFuaW1JZBgBIAEoBBIMCgRuYW1lGAIgASgJEgsKA2NpZBgDIAEoBRIUCgxm",
             "YXZvcmFiaWxpdHkYBCABKAUiYgoQUHJveHlQcm9kdWN0RGF0YRIRCglwcm9k",
             "dWN0SWQYASABKAUSDwoHaXRlbUNpZBgCIAEoBRIqCghwb3NpdGlvbhgDIAEo",
-            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzKmQKE0NvbGxlY3RSZXNvdXJj",
-            "ZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24QABIbChdDb2xs",
-            "ZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJjZRACYgZwcm90",
-            "bzM="));
+            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzIjoKEEFuaW1hbFVwZGF0ZURh",
+            "dGESDgoGYW5pbUlkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgFIlMK",
+            "FEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgBIAEoBBIPCgdmb29k",
+            "Q2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSpkChNDb2xs",
+            "ZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3du",
+            "EAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3Vy",
+            "Y2UQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +73,9 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimId", "Name", "Cid", "Favorability" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "Position" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalUpdateData), global::GameMessageCore.AnimalUpdateData.Parser, new[]{ "AnimId", "HungerProgress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalBowlUpdateData), global::GameMessageCore.AnimalBowlUpdateData.Parser, new[]{ "BowlId", "FoodCid", "RemainFoodCapacity" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2997,6 +3002,501 @@ namespace GameMessageCore {
               Position = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Position);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// 更新动物数据
+  /// </summary>
+  public sealed partial class AnimalUpdateData : pb::IMessage<AnimalUpdateData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AnimalUpdateData> _parser = new pb::MessageParser<AnimalUpdateData>(() => new AnimalUpdateData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AnimalUpdateData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalUpdateData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalUpdateData(AnimalUpdateData other) : this() {
+      animId_ = other.animId_;
+      hungerProgress_ = other.hungerProgress_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalUpdateData Clone() {
+      return new AnimalUpdateData(this);
+    }
+
+    /// <summary>Field number for the "animId" field.</summary>
+    public const int AnimIdFieldNumber = 1;
+    private ulong animId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong AnimId {
+      get { return animId_; }
+      set {
+        animId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hungerProgress" field.</summary>
+    public const int HungerProgressFieldNumber = 2;
+    private int hungerProgress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int HungerProgress {
+      get { return hungerProgress_; }
+      set {
+        hungerProgress_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AnimalUpdateData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AnimalUpdateData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AnimId != other.AnimId) return false;
+      if (HungerProgress != other.HungerProgress) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AnimId != 0UL) hash ^= AnimId.GetHashCode();
+      if (HungerProgress != 0) hash ^= HungerProgress.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (AnimId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(AnimId);
+      }
+      if (HungerProgress != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(HungerProgress);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AnimId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(AnimId);
+      }
+      if (HungerProgress != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(HungerProgress);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (AnimId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimId);
+      }
+      if (HungerProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HungerProgress);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AnimalUpdateData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AnimId != 0UL) {
+        AnimId = other.AnimId;
+      }
+      if (other.HungerProgress != 0) {
+        HungerProgress = other.HungerProgress;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AnimId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            HungerProgress = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            AnimId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            HungerProgress = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// 更新动物食盆数据
+  /// </summary>
+  public sealed partial class AnimalBowlUpdateData : pb::IMessage<AnimalBowlUpdateData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AnimalBowlUpdateData> _parser = new pb::MessageParser<AnimalBowlUpdateData>(() => new AnimalBowlUpdateData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AnimalBowlUpdateData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalBowlUpdateData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalBowlUpdateData(AnimalBowlUpdateData other) : this() {
+      bowlId_ = other.bowlId_;
+      foodCid_ = other.foodCid_;
+      remainFoodCapacity_ = other.remainFoodCapacity_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AnimalBowlUpdateData Clone() {
+      return new AnimalBowlUpdateData(this);
+    }
+
+    /// <summary>Field number for the "bowlId" field.</summary>
+    public const int BowlIdFieldNumber = 1;
+    private ulong bowlId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong BowlId {
+      get { return bowlId_; }
+      set {
+        bowlId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "foodCid" field.</summary>
+    public const int FoodCidFieldNumber = 2;
+    private int foodCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int FoodCid {
+      get { return foodCid_; }
+      set {
+        foodCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "remainFoodCapacity" field.</summary>
+    public const int RemainFoodCapacityFieldNumber = 3;
+    private int remainFoodCapacity_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RemainFoodCapacity {
+      get { return remainFoodCapacity_; }
+      set {
+        remainFoodCapacity_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AnimalBowlUpdateData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AnimalBowlUpdateData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BowlId != other.BowlId) return false;
+      if (FoodCid != other.FoodCid) return false;
+      if (RemainFoodCapacity != other.RemainFoodCapacity) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (BowlId != 0UL) hash ^= BowlId.GetHashCode();
+      if (FoodCid != 0) hash ^= FoodCid.GetHashCode();
+      if (RemainFoodCapacity != 0) hash ^= RemainFoodCapacity.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (BowlId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(BowlId);
+      }
+      if (FoodCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(FoodCid);
+      }
+      if (RemainFoodCapacity != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RemainFoodCapacity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BowlId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(BowlId);
+      }
+      if (FoodCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(FoodCid);
+      }
+      if (RemainFoodCapacity != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RemainFoodCapacity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (BowlId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(BowlId);
+      }
+      if (FoodCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FoodCid);
+      }
+      if (RemainFoodCapacity != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RemainFoodCapacity);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AnimalBowlUpdateData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.BowlId != 0UL) {
+        BowlId = other.BowlId;
+      }
+      if (other.FoodCid != 0) {
+        FoodCid = other.FoodCid;
+      }
+      if (other.RemainFoodCapacity != 0) {
+        RemainFoodCapacity = other.RemainFoodCapacity;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            BowlId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            FoodCid = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            RemainFoodCapacity = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BowlId = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            FoodCid = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            RemainFoodCapacity = input.ReadInt32();
             break;
           }
         }

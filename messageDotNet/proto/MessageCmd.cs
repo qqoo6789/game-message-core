@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKtcOCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKsUPCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -32,41 +32,44 @@ namespace GameMessageCore {
             "gAQSFgoQQnJvYWRDYXN0SXRlbURlbBCTgAQSHQoXQnJvYWRDYXN0VXBkYXRl",
             "SXRlbVNsb3QQlIAEEhEKC0dldEl0ZW1TbG90EJWABBIVCg9VcGdyYWRlSXRl",
             "bVNsb3QQl4AEEhIKDFNpZ25pblBsYXllchCZgAQSEwoNU2lnbk91dFBsYXll",
-            "chChgAQSGAoSVXBncmFkZVBsYXllckxldmVsEKOABBIQCgpRdWVyeUxhbmRz",
-            "EKWABBIXChFCcm9hZENhc3RJbml0TGFuZBCngAQSFwoRQnJvYWRDYXN0SW5p",
-            "dEl0ZW0QqYAEEgsKBUJ1aWxkELGABBIPCglSZWN5Y2xpbmcQs4AEEg0KB0No",
-            "YXJnZWQQtYAEEg0KB0hhcnZlc3QQt4AEEhAKCkNvbGxlY3Rpb24QuYAEEhoK",
-            "FEJyb2FkQ2FzdE11bHRpVXBMYW5kEMGABBITCg1TZWxmTmZ0QnVpbGRzEMOA",
-            "BBIeChhCcm9hZENhc3RTZWxmQnVpbGRVcGRhdGUQxYAEEiEKG0Jyb2FkQ2Fz",
-            "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhIK",
-            "DFF1ZXJ5R3JhbmFyeRDRgAQSFAoOR3JhbmFyeUNvbGxlY3QQ04AEEhwKFkJy",
-            "b2FkQ2FzdEdyYW5hcnlVcGRhdGUQ1YAEEhwKFkJyb2FkQ2FzdFVwR3JhbmFy",
-            "eUl0ZW0Q14AEEhEKC1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQbGF5ZXIQ",
-            "g4AIEg4KCEVudGVyTWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRpb24Qg4AM",
-            "Eg4KCFVzZVNraWxsEIWADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9h",
-            "ZENhc3RJbml0TWFwRWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5",
-            "VXBkYXRlEJKADBIcChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNC",
-            "cm9hZENhc3RFbnRpdHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21i",
-            "YXQQlYAMEhwKFkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVw",
-            "b3J0EJeADBIiChxCcm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJmADBIb",
-            "ChVCcm9hZENhc3RNb25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2FzdEVudGl0",
-            "eUF2YXRhclVwZGF0ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0",
-            "YVVwZGF0ZRCjgAwSJAoeQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRl",
-            "EKWADBIZChNQbGF5ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxCcm9hZENhc3RQ",
-            "bGF5ZXJBY3Rpb25Db2xsZWN0EKmADBIWChBTY2VuZURlc3RydWN0aW9uELOA",
-            "DBIfChlCcm9hZENhc3RTY2VuZURlc3RydWN0aW9uELWADBIWChBQbGF5ZXJB",
-            "Y3Rpb25DaGF0ELeADBIfChlCcm9hZENhc3RQbGF5ZXJBY3Rpb25DaGF0ELmA",
-            "DBIRCgtHZXRIb21lRGF0YRDBgAwSFQoPUXVlcnlTZXJ2ZXJUaW1lEMOADBIc",
-            "ChZCcm9hZENhc3RDaGFuZ2VTZXJ2aWNlEMWADBIZChNIb21lUmVzb3VyY2VP",
-            "cGVyYXRlEMeADBIgChpCcm9hZENhc3RIb21lRGF0YUluaXRCYXRjaBDJgAwS",
-            "DwoJU2VsZlRhc2tzEIGAEBIdChdCcm9hZENhc3RVcGRhdGVUYXNrTGlzdBCD",
-            "gBASEAoKQWNjZXB0VGFzaxCFgBASFQoPQWJhbmRvbm1lbnRUYXNrEIeAEBIQ",
-            "CgpUYXNrUmV3YXJkEImAEBIUCg5UYXNrTGlzdFJld2FyZBCRgBASGQoTVXBn",
-            "cmFkZVRhc2tQcm9ncmVzcxCTgBASGQoTQnJvYWRDYXN0VGFza1Jld2FyZBCV",
-            "gBASFQoPU2VuZENoYXRNZXNzYWdlEIGAFBIbChVCcm9hZENhc3RDaGF0TWVz",
-            "c2FnZXMQg4AUEiAKGkJyb2FkQ2FzdFJlbW92ZUNoYXRNZXNzYWdlEISAFBIe",
-            "ChhCcm9hZENhc3RVcGRhdGVDaGF0U3RhdGUQhYAUEgoKBFBpbmcQgYAYEh0K",
-            "F0Jyb2FkQ2FzdE1zZ0FnZ3JlZ2F0aW9uEIGAHGIGcHJvdG8z"));
+            "chChgAQSEAoKUXVlcnlMYW5kcxClgAQSFwoRQnJvYWRDYXN0SW5pdExhbmQQ",
+            "p4AEEhcKEUJyb2FkQ2FzdEluaXRJdGVtEKmABBILCgVCdWlsZBCxgAQSDwoJ",
+            "UmVjeWNsaW5nELOABBINCgdDaGFyZ2VkELWABBINCgdIYXJ2ZXN0ELeABBIQ",
+            "CgpDb2xsZWN0aW9uELmABBIaChRCcm9hZENhc3RNdWx0aVVwTGFuZBDBgAQS",
+            "EwoNU2VsZk5mdEJ1aWxkcxDDgAQSHgoYQnJvYWRDYXN0U2VsZkJ1aWxkVXBk",
+            "YXRlEMWABBIhChtCcm9hZENhc3RTZWxmQnVpbGRSZWN5Y2xpbmcQx4AEEhEK",
+            "C01pbnRCYXR0ZXJ5EMmABBISCgxRdWVyeUdyYW5hcnkQ0YAEEhQKDkdyYW5h",
+            "cnlDb2xsZWN0ENOABBIcChZCcm9hZENhc3RHcmFuYXJ5VXBkYXRlENWABBIc",
+            "ChZCcm9hZENhc3RVcEdyYW5hcnlJdGVtENeABBIXChFVcGdyYWRlVGFsZW50",
+            "Tm9kZRDZgAQSFAoOUXVlcnlUYWxlbnRFeHAQ4YAEEhoKFEJyb2FkQ2FzdFVw",
+            "VGFsZW50RXhwEOOABBIRCgtRdWVyeVBsYXllchCBgAgSEgoMQ3JlYXRlUGxh",
+            "eWVyEIOACBIOCghFbnRlck1hcBCBgAwSGAoSVXBkYXRlU2VsZkxvY2F0aW9u",
+            "EIOADBIOCghVc2VTa2lsbBCFgAwSEwoNUmVzcGF3blBsYXllchCJgAwSHQoX",
+            "QnJvYWRDYXN0SW5pdE1hcEVsZW1lbnQQkYAMEh4KGEJyb2FkQ2FzdE1hcEVu",
+            "dGl0eVVwZGF0ZRCSgAwSHAoWQnJvYWRDYXN0RW50aXR5RGVzdHJveRCTgAwS",
+            "GQoTQnJvYWRDYXN0RW50aXR5TW92ZRCUgAwSGwoVQnJvYWRDYXN0RW50aXR5",
+            "Q29tYmF0EJWADBIcChZCcm9hZENhc3RSZXNwYXduUGxheWVyEJaADBIOCghU",
+            "ZWxlcG9ydBCXgAwSIgocQnJvYWRDYXN0RW50aXR5UHJvZmlsZVVwZGF0ZRCZ",
+            "gAwSGwoVQnJvYWRDYXN0TW9uc3RlckRlYXRoEKGADBIhChtCcm9hZENhc3RF",
+            "bnRpdHlBdmF0YXJVcGRhdGUQooAMEiUKH0Jyb2FkQ2FzdEVudGl0eUJhdHRs",
+            "ZURhdGFVcGRhdGUQo4AMEiQKHkJyb2FkQ2FzdEVudGl0eUJ1aWxkRGF0YVVw",
+            "ZGF0ZRClgAwSGQoTUGxheWVyQWN0aW9uQ29sbGVjdBCngAwSIgocQnJvYWRD",
+            "YXN0UGxheWVyQWN0aW9uQ29sbGVjdBCpgAwSFgoQU2NlbmVEZXN0cnVjdGlv",
+            "bhCzgAwSHwoZQnJvYWRDYXN0U2NlbmVEZXN0cnVjdGlvbhC1gAwSFgoQUGxh",
+            "eWVyQWN0aW9uQ2hhdBC3gAwSHwoZQnJvYWRDYXN0UGxheWVyQWN0aW9uQ2hh",
+            "dBC5gAwSEQoLR2V0SG9tZURhdGEQwYAMEhUKD1F1ZXJ5U2VydmVyVGltZRDD",
+            "gAwSHAoWQnJvYWRDYXN0Q2hhbmdlU2VydmljZRDFgAwSIAoaQnJvYWRDYXN0",
+            "SG9tZURhdGFJbml0QmF0Y2gQyYAMEh4KGEJyb2FkQ2FzdEhvbWVTa2lsbFJl",
+            "c3VsdBDRgAwSFQoPUXVlcnlUYWxlbnRUcmVlENOADBIfChlCcm9hZENhc3RU",
+            "YWxlbnRUcmVlVXBkYXRlENWADBIPCglTZWxmVGFza3MQgYAQEh0KF0Jyb2Fk",
+            "Q2FzdFVwZGF0ZVRhc2tMaXN0EIOAEBIQCgpBY2NlcHRUYXNrEIWAEBIVCg9B",
+            "YmFuZG9ubWVudFRhc2sQh4AQEhAKClRhc2tSZXdhcmQQiYAQEhQKDlRhc2tM",
+            "aXN0UmV3YXJkEJGAEBIZChNVcGdyYWRlVGFza1Byb2dyZXNzEJOAEBIZChNC",
+            "cm9hZENhc3RUYXNrUmV3YXJkEJWAEBIVCg9TZW5kQ2hhdE1lc3NhZ2UQgYAU",
+            "EhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQSIAoaQnJvYWRDYXN0UmVt",
+            "b3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0",
+            "ZRCFgBQSCgoEUGluZxCBgBgSHQoXQnJvYWRDYXN0TXNnQWdncmVnYXRpb24Q",
+            "gYAcYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -124,10 +127,6 @@ namespace GameMessageCore {
     /// 角色退出游戏
     /// </summary>
     [pbr::OriginalName("SignOutPlayer")] SignOutPlayer = 65569,
-    /// <summary>
-    /// 手动点击升级
-    /// </summary>
-    [pbr::OriginalName("UpgradePlayerLevel")] UpgradePlayerLevel = 65571,
     /// <summary>
     /// 请求所有占地地块信息
     /// </summary>
@@ -197,6 +196,18 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("BroadCastUpGranaryItem")] BroadCastUpGranaryItem = 65623,
     /// <summary>
+    /// 解锁/升级 天赋节点
+    /// </summary>
+    [pbr::OriginalName("UpgradeTalentNode")] UpgradeTalentNode = 65625,
+    /// <summary>
+    /// 查询天赋经验
+    /// </summary>
+    [pbr::OriginalName("QueryTalentExp")] QueryTalentExp = 65633,
+    /// <summary>
+    /// 广播更新天赋经验
+    /// </summary>
+    [pbr::OriginalName("BroadCastUpTalentExp")] BroadCastUpTalentExp = 65635,
+    /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
@@ -232,8 +243,16 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("QueryServerTime")] QueryServerTime = 196675,
     [pbr::OriginalName("BroadCastChangeService")] BroadCastChangeService = 196677,
-    [pbr::OriginalName("HomeResourceOperate")] HomeResourceOperate = 196679,
     [pbr::OriginalName("BroadCastHomeDataInitBatch")] BroadCastHomeDataInitBatch = 196681,
+    [pbr::OriginalName("BroadCastHomeSkillResult")] BroadCastHomeSkillResult = 196689,
+    /// <summary>
+    /// 查询天赋数据
+    /// </summary>
+    [pbr::OriginalName("QueryTalentTree")] QueryTalentTree = 196691,
+    /// <summary>
+    /// 广播更新天赋树数据
+    /// </summary>
+    [pbr::OriginalName("BroadCastTalentTreeUpdate")] BroadCastTalentTreeUpdate = 196693,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

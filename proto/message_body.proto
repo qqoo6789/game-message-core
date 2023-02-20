@@ -492,6 +492,7 @@ message GetHomeDataResponse{
   int64         owner_user_id = 1;
   string        owner_name = 2;
   int32         soilDataAllCount = 3;
+  string        animBowlArr = 4;
 }
 message BroadCastHomeDataInitBatchResponse
 {

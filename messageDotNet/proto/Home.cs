@@ -57,10 +57,10 @@ namespace GameMessageCore {
             "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzIjoKEEFuaW1hbFVwZGF0ZURh",
             "dGESDgoGYW5pbUlkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgFIlMK",
             "FEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgBIAEoBBIPCgdmb29k",
-            "Q2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSpkChNDb2xs",
-            "ZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3du",
-            "EAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3Vy",
-            "Y2UQAmIGcHJvdG8z"));
+            "Q2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSqAAQoTQ29s",
+            "bGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5rbm93",
+            "bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9tZVJlc291",
+            "cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -92,6 +92,14 @@ namespace GameMessageCore {
     /// 采集资源
     /// </summary>
     [pbr::OriginalName("HomeResource")] HomeResource = 2,
+    /// <summary>
+    /// 动物食盆
+    /// </summary>
+    [pbr::OriginalName("AnimalBowl")] AnimalBowl = 4,
+    /// <summary>
+    /// 动物
+    /// </summary>
+    [pbr::OriginalName("Animal")] Animal = 8,
   }
 
   #endregion

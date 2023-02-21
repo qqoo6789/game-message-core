@@ -13,6 +13,10 @@ enum CollectResourceType
     CollectResourceTypeSoil = 1 ;
     // 采集资源
     HomeResource = 2;
+    // 动物食盆
+    AnimalBowl = 4;
+    // 动物
+    Animal = 8;
 }
 
 message ProxySoilData

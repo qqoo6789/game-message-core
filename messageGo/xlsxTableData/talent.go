@@ -36,6 +36,11 @@ func (p *TalentUpgradeData) GetRealUpgradeData(lv uint32) (*RealUpgradeData, err
 	return ud, nil
 }
 
+type TalentGainsData struct {
+	GainsType int32     `json:"gainsType"`
+	GainsArgs [][]int32 `json:"gainsArgs"`
+}
+
 // 掉落物配方.
 type TalentTreeRow struct {
 	NodeId      int32     `gorm:"primaryKey" json:"nodeId,int32"`
@@ -44,9 +49,11 @@ type TalentTreeRow struct {
 	Layer       int32     `json:"layer"`
 	LvLimit     int32     `json:"lvLimit"`
 	UpgradeJson string    `gorm:"type:text" json:"upgradeJson"`
+	GainsJson   string    `gorm:"type:text" json:"gainsJson"`
 	CreatedAt   time.Time `json:"createdAt"` // 过期判断条件
 
 	UpgradeData *TalentUpgradeData `gorm:"-" json:"-"`
+	GainsArgs   *TalentGainsData   `gorm:"-" json:"-"`
 }
 
 func (this *TalentTreeRow) SetUpgradeData(upData *TalentUpgradeData) error {
@@ -71,4 +78,28 @@ func (this *TalentTreeRow) GetUpgradeData() (*TalentUpgradeData, error) {
 	}
 	this.UpgradeData = upData
 	return this.UpgradeData, err
+}
+
+func (this *TalentTreeRow) SetGainsArgs(data *TalentGainsData) error {
+	bs, err := json.Marshal(data)
+	if err != nil {
+		return err
+	}
+	this.GainsJson = string(bs)
+	this.GainsArgs = data
+	return nil
+}
+
+func (this *TalentTreeRow) GetGainsArgs() (*TalentGainsData, error) {
+	if len(this.GainsJson) < 2 {
+		return nil, nil
+	}
+
+	data := &TalentGainsData{}
+	err := json.Unmarshal([]byte(this.GainsJson), data)
+	if err != nil {
+		return nil, err
+	}
+	this.GainsArgs = data
+	return this.GainsArgs, err
 }

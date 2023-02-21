@@ -37,7 +37,7 @@ namespace GameMessageCore {
             "Z2VDb3JlLk5mdEJ1aWxkSAASIwoDbnBjGA0gASgLMhQuZ2FtZU1lc3NhZ2VD",
             "b3JlLk5wY0gAEi0KCHJlc291cmNlGA4gASgLMhkuZ2FtZU1lc3NhZ2VDb3Jl",
             "LlJlc291cmNlSABCCAoGZW50aXR5IjsKFkRlc3RydWN0aW9uRWxlbWVudERh",
-            "dGESCgoCaWQYASABKAMSFQoNcmVzdG9yZV9zdGFtcBgCIAEoAyLaAgoGUGxh",
+            "dGESCgoCaWQYASABKAMSFQoNcmVzdG9yZV9zdGFtcBgCIAEoAyLtAgoGUGxh",
             "eWVyEjIKCWJhc2VfZGF0YRgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5QbGF5",
             "ZXJCYXNlRGF0YRIvCgdwcm9maWxlGAIgAygLMh4uZ2FtZU1lc3NhZ2VDb3Jl",
             "LkF0dHJpYnV0ZURhdGESMQoHYXZhdGFycxgDIAMoCzIgLmdhbWVNZXNzYWdl",
@@ -45,47 +45,48 @@ namespace GameMessageCore {
             "ZBgFIAEoBRIqCghwb3NpdGlvbhgGIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5W",
             "ZWN0b3IzEiUKA2RpchgHIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3Iz",
             "EiwKCWVudGl0eV9jZBgIIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlD",
-            "RBIXCg9za2lsbEVmZmVjdERhdGEYCSABKAkizwEKB01vbnN0ZXISCwoDY2lk",
-            "GAEgASgFEgoKAmlkGAIgASgDEg4KBmFjdGl2ZRgDIAEoCBIvCgdwcm9maWxl",
-            "GAQgAygLMh4uZ2FtZU1lc3NhZ2VDb3JlLkF0dHJpYnV0ZURhdGESKgoIcG9z",
-            "aXRpb24YBSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIY",
-            "BiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIXCg9za2lsbEVmZmVj",
-            "dERhdGEYByABKAkisgEKA05wYxILCgNjaWQYASABKAUSCgoCaWQYAiABKAMS",
-            "DgoGYWN0aXZlGAMgASgIEi8KB3Byb2ZpbGUYBCADKAsyHi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQXR0cmlidXRlRGF0YRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVN",
-            "ZXNzYWdlQ29yZS5WZWN0b3IzEiUKA2RpchgGIAEoCzIYLmdhbWVNZXNzYWdl",
-            "Q29yZS5WZWN0b3IzIqgDCghOZnRCdWlsZBIKCgJpZBgBIAEoAxILCgNjaWQY",
-            "AiABKAUSDwoHZnJvbU5mdBgDIAEoCRINCgVvd25lchgEIAEoAxIPCgdsYW5k",
-            "SWRzGAUgAygFEioKCHBvc2l0aW9uGAYgASgLMhguZ2FtZU1lc3NhZ2VDb3Jl",
-            "LlZlY3RvcjMSJQoDZGlyGAcgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3Rv",
-            "cjMSEwoLZWxlY3RyaWNFbmQYCCABKAUSFgoOaGFydmVzdFN0YXJ0QXQYCSAB",
-            "KAUSEQoJaGFydmVzdEF0GAogASgFEhgKEGhhcnZlc3RJdGVtQ291bnQYCyAB",
-            "KAUSGQoRY29sbGVjdGlvblN0YXJ0QXQYDCABKAUSFAoMY29sbGVjdGlvbkF0",
-            "GA0gASgFEhsKE2NvbGxlY3Rpb25JdGVtQ291bnQYDiABKAUSLQolbGFuZFBs",
-            "YWNlbWVudFBvd2VyWmVyb0Nvb2xkb3duU3RhcnRBdBgPIAEoBRIoCiBsYW5k",
-            "UGxhY2VtZW50UG93ZXJaZXJvQ29vbGRvd25BdBgQIAEoBSLqAQoIUmVzb3Vy",
-            "Y2USDgoGYWN0aXZlGAEgASgIEioKCHBvc2l0aW9uGAIgASgLMhguZ2FtZU1l",
-            "c3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGlyGAMgASgLMhguZ2FtZU1lc3NhZ2VD",
-            "b3JlLlZlY3RvcjMSNQoJcG9pbnRJbmZvGAQgASgLMiIuZ2FtZU1lc3NhZ2VD",
-            "b3JlLlJlc291cmNlUG9pbnRJbmZvEkQKDHByb2dyZXNzSW5mbxgFIAEoCzIu",
-            "LmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3Vs",
-            "dCIsChFSZXNvdXJjZVBvaW50SW5mbxIKCgJpZBgBIAEoBBILCgNjaWQYAiAB",
-            "KAUiUgoORW50aXR5TW92ZVN0ZXASMQoIbG9jYXRpb24YASABKAsyHy5nYW1l",
-            "TWVzc2FnZUNvcmUuRW50aXR5TG9jYXRpb24SDQoFc3RhbXAYAiABKAMi/wEK",
-            "DkVudGl0eU1vdmVtZW50EioKB3R5cGVfaWQYASABKAsyGS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuRW50aXR5SWQSNQoMY3VyX2xvY2F0aW9uGAIgASgLMh8uZ2FtZU1l",
-            "c3NhZ2VDb3JlLkVudGl0eU1vdmVTdGVwEjYKDWRlc3RfbG9jYXRpb24YAyAB",
-            "KAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASKwoEdHlwZRgF",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5Nb3ZlbWVudFR5cGUSJQoDRGlyGAYg",
-            "ASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiegoIRW50aXR5Q0QSNQoN",
-            "c2tpbGxfY2RfbGlzdBgBIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlT",
-            "a2lsbENEEjcKDmV4dGVuZF9jZF9saXN0GAIgAygLMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkVudGl0eUV4dGVuZENEIi8KDUVudGl0eVNraWxsQ0QSEAoIc2tpbGxf",
-            "aWQYASABKAUSDAoEdGltZRgCIAEoAyIsCg5FbnRpdHlFeHRlbmRDRBIMCgR0",
-            "eXBlGAEgASgFEgwKBHRpbWUYAiABKAMqaAoMTW92ZW1lbnRUeXBlEhcKE01v",
-            "dmVtZW50VHlwZVVua25vd24QABIUChBNb3ZlbWVudFR5cGVXYWxrEAESEwoP",
-            "TW92ZW1lbnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADYgZwcm90",
-            "bzM="));
+            "RBIXCg9za2lsbEVmZmVjdERhdGEYCSABKAkSEQoJaXNfYmF0dGxlGAogASgI",
+            "IvQBCgdNb25zdGVyEgsKA2NpZBgBIAEoBRIKCgJpZBgCIAEoAxIOCgZhY3Rp",
+            "dmUYAyABKAgSLwoHcHJvZmlsZRgEIAMoCzIeLmdhbWVNZXNzYWdlQ29yZS5B",
+            "dHRyaWJ1dGVEYXRhEioKCHBvc2l0aW9uGAUgASgLMhguZ2FtZU1lc3NhZ2VD",
+            "b3JlLlZlY3RvcjMSJQoDZGlyGAYgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZl",
+            "Y3RvcjMSFwoPc2tpbGxFZmZlY3REYXRhGAcgASgJEhEKCWlzX2JhdHRsZRgI",
+            "IAEoCBIQCghvd25lcl9pZBgJIAEoAyKyAQoDTnBjEgsKA2NpZBgBIAEoBRIK",
+            "CgJpZBgCIAEoAxIOCgZhY3RpdmUYAyABKAgSLwoHcHJvZmlsZRgEIAMoCzIe",
+            "LmdhbWVNZXNzYWdlQ29yZS5BdHRyaWJ1dGVEYXRhEioKCHBvc2l0aW9uGAUg",
+            "ASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSJQoDZGlyGAYgASgLMhgu",
+            "Z2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiqAMKCE5mdEJ1aWxkEgoKAmlkGAEg",
+            "ASgDEgsKA2NpZBgCIAEoBRIPCgdmcm9tTmZ0GAMgASgJEg0KBW93bmVyGAQg",
+            "ASgDEg8KB2xhbmRJZHMYBSADKAUSKgoIcG9zaXRpb24YBiABKAsyGC5nYW1l",
+            "TWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYByABKAsyGC5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVmVjdG9yMxITCgtlbGVjdHJpY0VuZBgIIAEoBRIWCg5oYXJ2ZXN0",
+            "U3RhcnRBdBgJIAEoBRIRCgloYXJ2ZXN0QXQYCiABKAUSGAoQaGFydmVzdEl0",
+            "ZW1Db3VudBgLIAEoBRIZChFjb2xsZWN0aW9uU3RhcnRBdBgMIAEoBRIUCgxj",
+            "b2xsZWN0aW9uQXQYDSABKAUSGwoTY29sbGVjdGlvbkl0ZW1Db3VudBgOIAEo",
+            "BRItCiVsYW5kUGxhY2VtZW50UG93ZXJaZXJvQ29vbGRvd25TdGFydEF0GA8g",
+            "ASgFEigKIGxhbmRQbGFjZW1lbnRQb3dlclplcm9Db29sZG93bkF0GBAgASgF",
+            "IuoBCghSZXNvdXJjZRIOCgZhY3RpdmUYASABKAgSKgoIcG9zaXRpb24YAiAB",
+            "KAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIlCgNkaXIYAyABKAsyGC5n",
+            "YW1lTWVzc2FnZUNvcmUuVmVjdG9yMxI1Cglwb2ludEluZm8YBCABKAsyIi5n",
+            "YW1lTWVzc2FnZUNvcmUuUmVzb3VyY2VQb2ludEluZm8SRAoMcHJvZ3Jlc3NJ",
+            "bmZvGAUgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVBy",
+            "b2dyZXNzUmVzdWx0IiwKEVJlc291cmNlUG9pbnRJbmZvEgoKAmlkGAEgASgE",
+            "EgsKA2NpZBgCIAEoBSJSCg5FbnRpdHlNb3ZlU3RlcBIxCghsb2NhdGlvbhgB",
+            "IAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhINCgVzdGFt",
+            "cBgCIAEoAyL/AQoORW50aXR5TW92ZW1lbnQSKgoHdHlwZV9pZBgBIAEoCzIZ",
+            "LmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBI1CgxjdXJfbG9jYXRpb24YAiAB",
+            "KAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZVN0ZXASNgoNZGVzdF9s",
+            "b2NhdGlvbhgDIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlNb3ZlU3Rl",
+            "cBIrCgR0eXBlGAUgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLk1vdmVtZW50VHlw",
+            "ZRIlCgNEaXIYBiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyJ6CghF",
+            "bnRpdHlDRBI1Cg1za2lsbF9jZF9saXN0GAEgAygLMh4uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkVudGl0eVNraWxsQ0QSNwoOZXh0ZW5kX2NkX2xpc3QYAiADKAsyHy5n",
+            "YW1lTWVzc2FnZUNvcmUuRW50aXR5RXh0ZW5kQ0QiLwoNRW50aXR5U2tpbGxD",
+            "RBIQCghza2lsbF9pZBgBIAEoBRIMCgR0aW1lGAIgASgDIiwKDkVudGl0eUV4",
+            "dGVuZENEEgwKBHR5cGUYASABKAUSDAoEdGltZRgCIAEoAypoCgxNb3ZlbWVu",
+            "dFR5cGUSFwoTTW92ZW1lbnRUeXBlVW5rbm93bhAAEhQKEE1vdmVtZW50VHlw",
+            "ZVdhbGsQARITCg9Nb3ZlbWVudFR5cGVSdW4QAhIUChBNb3ZlbWVudFR5cGVJ",
+            "ZGxlEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -93,8 +94,8 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityLocation), global::GameMessageCore.EntityLocation.Parser, new[]{ "MapId", "Loc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityWithLocation), global::GameMessageCore.EntityWithLocation.Parser, new[]{ "TypeId", "Player", "Monster", "Build", "Npc", "Resource" }, new[]{ "Entity" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DestructionElementData), global::GameMessageCore.DestructionElementData.Parser, new[]{ "Id", "RestoreStamp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Player), global::GameMessageCore.Player.Parser, new[]{ "BaseData", "Profile", "Avatars", "Active", "MapId", "Position", "Dir", "EntityCd", "SkillEffectData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir", "SkillEffectData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Player), global::GameMessageCore.Player.Parser, new[]{ "BaseData", "Profile", "Avatars", "Active", "MapId", "Position", "Dir", "EntityCd", "SkillEffectData", "IsBattle" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Monster), global::GameMessageCore.Monster.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir", "SkillEffectData", "IsBattle", "OwnerId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Npc), global::GameMessageCore.Npc.Parser, new[]{ "Cid", "Id", "Active", "Profile", "Position", "Dir" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftBuild), global::GameMessageCore.NftBuild.Parser, new[]{ "Id", "Cid", "FromNft", "Owner", "LandIds", "Position", "Dir", "ElectricEnd", "HarvestStartAt", "HarvestAt", "HarvestItemCount", "CollectionStartAt", "CollectionAt", "CollectionItemCount", "LandPlacementPowerZeroCooldownStartAt", "LandPlacementPowerZeroCooldownAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Resource), global::GameMessageCore.Resource.Parser, new[]{ "Active", "Position", "Dir", "PointInfo", "ProgressInfo" }, null, null, null, null),
@@ -1361,6 +1362,7 @@ namespace GameMessageCore {
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       entityCd_ = other.entityCd_ != null ? other.entityCd_.Clone() : null;
       skillEffectData_ = other.skillEffectData_;
+      isBattle_ = other.isBattle_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1488,6 +1490,21 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "is_battle" field.</summary>
+    public const int IsBattleFieldNumber = 10;
+    private bool isBattle_;
+    /// <summary>
+    ///战斗状态
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsBattle {
+      get { return isBattle_; }
+      set {
+        isBattle_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1512,6 +1529,7 @@ namespace GameMessageCore {
       if (!object.Equals(Dir, other.Dir)) return false;
       if (!object.Equals(EntityCd, other.EntityCd)) return false;
       if (SkillEffectData != other.SkillEffectData) return false;
+      if (IsBattle != other.IsBattle) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1528,6 +1546,7 @@ namespace GameMessageCore {
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (entityCd_ != null) hash ^= EntityCd.GetHashCode();
       if (SkillEffectData.Length != 0) hash ^= SkillEffectData.GetHashCode();
+      if (IsBattle != false) hash ^= IsBattle.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1576,6 +1595,10 @@ namespace GameMessageCore {
         output.WriteRawTag(74);
         output.WriteString(SkillEffectData);
       }
+      if (IsBattle != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(IsBattle);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1616,6 +1639,10 @@ namespace GameMessageCore {
         output.WriteRawTag(74);
         output.WriteString(SkillEffectData);
       }
+      if (IsBattle != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(IsBattle);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1648,6 +1675,9 @@ namespace GameMessageCore {
       }
       if (SkillEffectData.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SkillEffectData);
+      }
+      if (IsBattle != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1695,6 +1725,9 @@ namespace GameMessageCore {
       }
       if (other.SkillEffectData.Length != 0) {
         SkillEffectData = other.SkillEffectData;
+      }
+      if (other.IsBattle != false) {
+        IsBattle = other.IsBattle;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1757,6 +1790,10 @@ namespace GameMessageCore {
           }
           case 74: {
             SkillEffectData = input.ReadString();
+            break;
+          }
+          case 80: {
+            IsBattle = input.ReadBool();
             break;
           }
         }
@@ -1822,6 +1859,10 @@ namespace GameMessageCore {
             SkillEffectData = input.ReadString();
             break;
           }
+          case 80: {
+            IsBattle = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -1870,6 +1911,8 @@ namespace GameMessageCore {
       position_ = other.position_ != null ? other.position_.Clone() : null;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
       skillEffectData_ = other.skillEffectData_;
+      isBattle_ = other.isBattle_;
+      ownerId_ = other.ownerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1968,6 +2011,36 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "is_battle" field.</summary>
+    public const int IsBattleFieldNumber = 8;
+    private bool isBattle_;
+    /// <summary>
+    ///战斗状态
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsBattle {
+      get { return isBattle_; }
+      set {
+        isBattle_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "owner_id" field.</summary>
+    public const int OwnerIdFieldNumber = 9;
+    private long ownerId_;
+    /// <summary>
+    ///战斗所属者
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long OwnerId {
+      get { return ownerId_; }
+      set {
+        ownerId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1990,6 +2063,8 @@ namespace GameMessageCore {
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
       if (SkillEffectData != other.SkillEffectData) return false;
+      if (IsBattle != other.IsBattle) return false;
+      if (OwnerId != other.OwnerId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2004,6 +2079,8 @@ namespace GameMessageCore {
       if (position_ != null) hash ^= Position.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
       if (SkillEffectData.Length != 0) hash ^= SkillEffectData.GetHashCode();
+      if (IsBattle != false) hash ^= IsBattle.GetHashCode();
+      if (OwnerId != 0L) hash ^= OwnerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2047,6 +2124,14 @@ namespace GameMessageCore {
         output.WriteRawTag(58);
         output.WriteString(SkillEffectData);
       }
+      if (IsBattle != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(IsBattle);
+      }
+      if (OwnerId != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(OwnerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2082,6 +2167,14 @@ namespace GameMessageCore {
         output.WriteRawTag(58);
         output.WriteString(SkillEffectData);
       }
+      if (IsBattle != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(IsBattle);
+      }
+      if (OwnerId != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(OwnerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2110,6 +2203,12 @@ namespace GameMessageCore {
       }
       if (SkillEffectData.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SkillEffectData);
+      }
+      if (IsBattle != false) {
+        size += 1 + 1;
+      }
+      if (OwnerId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OwnerId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2147,6 +2246,12 @@ namespace GameMessageCore {
       }
       if (other.SkillEffectData.Length != 0) {
         SkillEffectData = other.SkillEffectData;
+      }
+      if (other.IsBattle != false) {
+        IsBattle = other.IsBattle;
+      }
+      if (other.OwnerId != 0L) {
+        OwnerId = other.OwnerId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2197,6 +2302,14 @@ namespace GameMessageCore {
             SkillEffectData = input.ReadString();
             break;
           }
+          case 64: {
+            IsBattle = input.ReadBool();
+            break;
+          }
+          case 72: {
+            OwnerId = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -2244,6 +2357,14 @@ namespace GameMessageCore {
           }
           case 58: {
             SkillEffectData = input.ReadString();
+            break;
+          }
+          case 64: {
+            IsBattle = input.ReadBool();
+            break;
+          }
+          case 72: {
+            OwnerId = input.ReadInt64();
             break;
           }
         }

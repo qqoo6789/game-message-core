@@ -35,22 +35,94 @@ type TaskRowOptionList struct {
 	Options []TaskRowOption `json:"options"`
 }
 
+type TaskLevelCondition struct {
+	TalentType proto.TalentType `json:"talentType"`
+	Level      int32            `json:"level"`
+}
+type TaskAcceptCondition struct {
+	ConditionLvs []TaskLevelCondition `json:"conditionLvs"`
+	PreTasks     []int32              `json:"preTasks"`
+}
+
+type TaskRewardExp struct {
+	TalentType proto.TalentType `json:"talentType"`
+	Exp        int32            `json:"exp"`
+}
+type TaskReward struct {
+	RewardId   int32           `json:"rewardId"`
+	RewardExps []TaskRewardExp `json:"rewardExps"`
+}
+
 type TaskTableRow struct {
-	UId                  uint   `gorm:"primaryKey;autoIncrement" json:"uid,string"`
-	Id                   int32  `json:"id"`
-	Level                int32  `json:"level"`
-	Name                 string `json:"name"`
-	SubSystem            string `json:"subSystem"`
-	RewardId             int32  `json:"rewardId"`
-	RewardExp            int32  `json:"rewardExp"`
-	Difficulty           int32  `json:"difficulty"`
-	DesignateOptionsJson string `gorm:"type:text" json:"designateOptionsJson"`
-	ChanceOptionsJson    string `gorm:"type:text" json:"chanceOptionsJson"`
+	Id                   int32     `gorm:"primaryKey" json:"id"`
+	Name                 string    `json:"name"`
+	ConditionJson        string    `gorm:"type:text" json:"conditionJson"`
+	RewardJson           string    `gorm:"type:text" json:"rewardJson"`
+	DesignateOptionsJson string    `gorm:"type:text" json:"designateOptionsJson"`
+	ChanceOptionsJson    string    `gorm:"type:text" json:"chanceOptionsJson"`
+	CreatedAt            time.Time `json:"createdAt"` // 过期判断条件,
 
-	CreatedAt time.Time `json:"createdAt"` // 过期判断条件,
+	DesignateOptions *TaskRowOptionList   `gorm:"-" json:"-"`
+	ChanceOptions    *TaskRowOptionList   `gorm:"-" json:"-"`
+	AcceptCondition  *TaskAcceptCondition `gorm:"-" json:"-"`
+	RewardData       *TaskReward          `gorm:"-" json:"-"`
+}
 
-	DesignateOptions *TaskRowOptionList `gorm:"-" json:"-"`
-	ChanceOptions    *TaskRowOptionList `gorm:"-" json:"-"`
+func (p *TaskTableRow) SetReward(reward *TaskReward) error {
+	if reward == nil {
+		p.RewardData = nil
+		p.RewardJson = ""
+		return nil
+	}
+
+	bs, err := json.Marshal(reward)
+	if err != nil {
+		return err
+	}
+	p.RewardData = reward
+	p.RewardJson = string(bs)
+	return nil
+}
+
+func (p *TaskTableRow) GetReward() (*TaskReward, error) {
+	if p.RewardData == nil && len(p.RewardJson) > 2 {
+		data := &TaskReward{}
+		err := json.Unmarshal([]byte(p.RewardJson), data)
+		if err != nil {
+			return nil, err
+		}
+		p.RewardData = data
+	}
+	return p.RewardData, nil
+}
+
+func (p *TaskTableRow) SetAcceptCondition(condition *TaskAcceptCondition) error {
+	if condition == nil {
+		p.AcceptCondition = nil
+		p.ConditionJson = ""
+		return nil
+	}
+
+	bs, err := json.Marshal(condition)
+	if err != nil {
+		return err
+	}
+
+	p.AcceptCondition = condition
+	p.ConditionJson = string(bs)
+	return nil
+}
+
+func (p *TaskTableRow) GetAcceptCondition() (*TaskAcceptCondition, error) {
+	if p.AcceptCondition == nil && len(p.ConditionJson) > 2 {
+		data := &TaskAcceptCondition{}
+		err := json.Unmarshal([]byte(p.ConditionJson), data)
+		if err != nil {
+			return nil, err
+		}
+		p.AcceptCondition = data
+	}
+	return p.AcceptCondition, nil
 }
 
 func (p *TaskTableRow) SetDesignateOptions(designateOptions *TaskRowOptionList) error {

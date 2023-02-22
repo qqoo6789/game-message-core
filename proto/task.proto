@@ -2,6 +2,8 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
+import "talent.proto";
+
  
 
 enum TaskOptionType{
@@ -110,60 +112,55 @@ message TaskOptionCnf {
 
 message TaskOption {
   // 配置
-  TaskOptionCnf option_cnf = 1;
+  TaskOptionCnf optionCnf = 1;
   // 进度
-  int32 rate = 2;
+  int32         rate = 2;
 }
 
 // 任务
 message Task {
   // 任务 ID
-  int32     task_id = 1;
+  int32           taskId = 1;
+  // 专精类型
+  TalentType      talentKind = 2; 
   // 任务类型
-  TaskOptionType  task_kind = 2;
+  TaskOptionType  taskKind = 3;
   // 任务的接取时间
-  int64     created_at_sec = 3;
+  int64           createdSec = 4;
   // 子项信息
-  repeated  TaskOption options = 4;
+  repeated  TaskOption  options = 5;
+}
+
+// 用户已接任务
+message NormalTaskData {
+  repeated  int32  finishTasks = 1;
+  repeated  Task   curTasks    = 2;
 }
 
 enum TaskListType {
   TaskListTypeUnknown = 0;
   // 每日任务
-  TaskListTypeDaily = 1;
+  Daily = 1;
   // 悬赏任务
-  TaskListTypeRewarded = 2;
-  // 主线任务(引导任务)
-  TaskListTypeGuide = 3;
+  Rewarded = 2; 
 }
 
 message TaskList{
   // task list id
-  int32 id = 1;
+  int32         id = 1;
   // task list type
-  TaskListType kind = 2;
+  TaskListType  kind = 2;
+  // 专精类型
+  TalentType    talentKind = 3; 
   // 任务链是否可以在接取
-  bool can_receive = 3;
+  bool          canReceive = 4;
   // 任务链是否正在进行
-  bool doing  = 4;
+  bool          doing  = 5;
   // 进度
-  int32 rate = 5;
+  int32         rate = 6;
   // current task
-  Task cur_task = 6;
+  Task          cur_task = 7;
   // 任务奖励的领取进度(0, 1, 2)
-  int32  receive_reward = 7;
+  int32         receiveReward = 8;
 }
-
-
-// 用户已接任务列表
-message PlayerTask {
-  repeated  TaskList task_lists = 1;
-}
-
-
-
-
-
-
-
 

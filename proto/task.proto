@@ -114,14 +114,10 @@ message TaskOption {
 message Task {
   // 任务 ID
   int32           taskId = 1;
-  // 专精类型
-  TalentType      talentKind = 2;
-  // 任务类型
-  TaskOptionType  taskKind = 3;
   // 任务的接取时间
-  int64           createdSec = 4;
+  int64           createdSec = 2;
   // 子项信息
-  repeated  TaskOption  options = 5;
+  repeated  TaskOption  options = 3;
 }
 
 // 用户已接任务

@@ -118,6 +118,7 @@ enum EnvelopeType {
     TaskListReward                  = 0x040015;     // 获取任务链奖励
     UpgradeTaskProgress             = 0x040017;     // 上报更新任务进度
     BroadCastTaskReward             = 0x040019;     // 推送获取的任务奖励
+    BroadCastTaskListReward         = 0x040021;     // 推送获取的任务链奖励
 
     
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************

@@ -166,6 +166,7 @@ message Envelope {
     UpgradeTaskProgressRequest        upgrade_task_progress_request         = 0x040017;
     UpgradeTaskProgressResponse       upgrade_task_progress_response        = 0x040018;
     BroadCastTaskRewardResponse       broad_cast_task_reward_response       = 0x040019;
+    BroadCastTaskListRewardResponse   broad_cast_task_list_reward_response  = 0x040021;
 
 
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
@@ -709,11 +710,16 @@ message  UpgradeTaskProgressResponse{
 }
 // 推送获取的任务奖励
 message BroadCastTaskRewardResponse{
-  // 任务链类型, 当TaskListType == Unknown 时表示领取玩家normal任务的奖励
   TaskListType              taskListKind = 1;
   int32                     taskId = 2;
   repeated  TalentExp       talentExps = 3;
   repeated  ItemBaseInfo    items = 4;
+}
+// 推送获取的任务链奖励
+message BroadCastTaskListRewardResponse{
+  TaskListType              taskListKind = 1;  
+  repeated  TalentExp       talentExps = 2;
+  repeated  ItemBaseInfo    items = 3;
 }
 
 

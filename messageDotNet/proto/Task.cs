@@ -60,19 +60,18 @@ namespace GameMessageCore {
             "EhIKCmNyZWF0ZWRTZWMYAiABKAMSLAoHb3B0aW9ucxgDIAMoCzIbLmdhbWVN",
             "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uIk4KDk5vcm1hbFRhc2tEYXRhEhMKC2Zp",
             "bmlzaFRhc2tzGAEgAygFEicKCGN1clRhc2tzGAIgAygLMhUuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2si5QEKCFRhc2tMaXN0EgoKAmlkGAEgASgFEisKBGtpbmQY",
+            "Z2VDb3JlLlRhc2siwgEKCFRhc2tMaXN0EgoKAmlkGAEgASgFEisKBGtpbmQY",
             "AiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEi8KCnRhbGVu",
-            "dEtpbmQYAyABKA4yGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHlwZRISCgpj",
-            "YW5SZWNlaXZlGAQgASgIEg0KBWRvaW5nGAUgASgIEgwKBHJhdGUYBiABKAUS",
-            "JwoIY3VyX3Rhc2sYByABKAsyFS5nYW1lTWVzc2FnZUNvcmUuVGFzaxIVCg1y",
-            "ZWNlaXZlUmV3YXJkGAggASgFKu8BCg5UYXNrT3B0aW9uVHlwZRIZChVVbmtu",
-            "b3duVGFza09wdGlvblR5cGUQABIOCgpIYW5kSW5JdGVtEAESCwoHVXNlSXRl",
-            "bRACEgsKB0dldEl0ZW0QAxIPCgtLaWxsTW9uc3RlchAEEg0KCVVzZVJlY2lw",
-            "ZRAJEhIKDlJlY2lwZVVzZUNvdW50EAoSDQoJVGFza0NvdW50EAsSFQoRVGFz",
-            "a0xpc3RUeXBlQ291bnQQDBISCg5UYXJnZXRQb3NpdGlvbhANEhIKDlRhbGVu",
-            "dFRhcmdldEx2EA4SFgoSVGFsZW50VGFyZ2V0Tm9kZUxWEA8qQAoMVGFza0xp",
-            "c3RUeXBlEhcKE1Rhc2tMaXN0VHlwZVVua25vd24QABIJCgVEYWlseRABEgwK",
-            "CFJld2FyZGVkEAJiBnByb3RvMw=="));
+            "dEtpbmQYAyABKA4yGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHlwZRIMCgRy",
+            "YXRlGAYgASgFEicKCGN1cl90YXNrGAcgASgLMhUuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlRhc2sSFQoNcmVjZWl2ZVJld2FyZBgIIAEoBSrvAQoOVGFza09wdGlvblR5",
+            "cGUSGQoVVW5rbm93blRhc2tPcHRpb25UeXBlEAASDgoKSGFuZEluSXRlbRAB",
+            "EgsKB1VzZUl0ZW0QAhILCgdHZXRJdGVtEAMSDwoLS2lsbE1vbnN0ZXIQBBIN",
+            "CglVc2VSZWNpcGUQCRISCg5SZWNpcGVVc2VDb3VudBAKEg0KCVRhc2tDb3Vu",
+            "dBALEhUKEVRhc2tMaXN0VHlwZUNvdW50EAwSEgoOVGFyZ2V0UG9zaXRpb24Q",
+            "DRISCg5UYWxlbnRUYXJnZXRMdhAOEhYKElRhbGVudFRhcmdldE5vZGVMVhAP",
+            "KkAKDFRhc2tMaXN0VHlwZRIXChNUYXNrTGlzdFR5cGVVbmtub3duEAASCQoF",
+            "RGFpbHkQARIMCghSZXdhcmRlZBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -88,7 +87,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOption), global::GameMessageCore.TaskOption.Parser, new[]{ "OptionCnf", "Rate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Task), global::GameMessageCore.Task.Parser, new[]{ "TaskId", "CreatedSec", "Options" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NormalTaskData), global::GameMessageCore.NormalTaskData.Parser, new[]{ "FinishTasks", "CurTasks" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskList), global::GameMessageCore.TaskList.Parser, new[]{ "Id", "Kind", "TalentKind", "CanReceive", "Doing", "Rate", "CurTask", "ReceiveReward" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskList), global::GameMessageCore.TaskList.Parser, new[]{ "Id", "Kind", "TalentKind", "Rate", "CurTask", "ReceiveReward" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3699,8 +3698,6 @@ namespace GameMessageCore {
       id_ = other.id_;
       kind_ = other.kind_;
       talentKind_ = other.talentKind_;
-      canReceive_ = other.canReceive_;
-      doing_ = other.doing_;
       rate_ = other.rate_;
       curTask_ = other.curTask_ != null ? other.curTask_.Clone() : null;
       receiveReward_ = other.receiveReward_;
@@ -3755,36 +3752,6 @@ namespace GameMessageCore {
       get { return talentKind_; }
       set {
         talentKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "canReceive" field.</summary>
-    public const int CanReceiveFieldNumber = 4;
-    private bool canReceive_;
-    /// <summary>
-    /// 任务链是否可以在接取
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool CanReceive {
-      get { return canReceive_; }
-      set {
-        canReceive_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "doing" field.</summary>
-    public const int DoingFieldNumber = 5;
-    private bool doing_;
-    /// <summary>
-    /// 任务链是否正在进行
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Doing {
-      get { return doing_; }
-      set {
-        doing_ = value;
       }
     }
 
@@ -3851,8 +3818,6 @@ namespace GameMessageCore {
       if (Id != other.Id) return false;
       if (Kind != other.Kind) return false;
       if (TalentKind != other.TalentKind) return false;
-      if (CanReceive != other.CanReceive) return false;
-      if (Doing != other.Doing) return false;
       if (Rate != other.Rate) return false;
       if (!object.Equals(CurTask, other.CurTask)) return false;
       if (ReceiveReward != other.ReceiveReward) return false;
@@ -3866,8 +3831,6 @@ namespace GameMessageCore {
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Kind != global::GameMessageCore.TaskListType.Unknown) hash ^= Kind.GetHashCode();
       if (TalentKind != global::GameMessageCore.TalentType.Unknown) hash ^= TalentKind.GetHashCode();
-      if (CanReceive != false) hash ^= CanReceive.GetHashCode();
-      if (Doing != false) hash ^= Doing.GetHashCode();
       if (Rate != 0) hash ^= Rate.GetHashCode();
       if (curTask_ != null) hash ^= CurTask.GetHashCode();
       if (ReceiveReward != 0) hash ^= ReceiveReward.GetHashCode();
@@ -3900,14 +3863,6 @@ namespace GameMessageCore {
       if (TalentKind != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(24);
         output.WriteEnum((int) TalentKind);
-      }
-      if (CanReceive != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(CanReceive);
-      }
-      if (Doing != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(Doing);
       }
       if (Rate != 0) {
         output.WriteRawTag(48);
@@ -3943,14 +3898,6 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteEnum((int) TalentKind);
       }
-      if (CanReceive != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(CanReceive);
-      }
-      if (Doing != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(Doing);
-      }
       if (Rate != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(Rate);
@@ -3982,12 +3929,6 @@ namespace GameMessageCore {
       if (TalentKind != global::GameMessageCore.TalentType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TalentKind);
       }
-      if (CanReceive != false) {
-        size += 1 + 1;
-      }
-      if (Doing != false) {
-        size += 1 + 1;
-      }
       if (Rate != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rate);
       }
@@ -4017,12 +3958,6 @@ namespace GameMessageCore {
       }
       if (other.TalentKind != global::GameMessageCore.TalentType.Unknown) {
         TalentKind = other.TalentKind;
-      }
-      if (other.CanReceive != false) {
-        CanReceive = other.CanReceive;
-      }
-      if (other.Doing != false) {
-        Doing = other.Doing;
       }
       if (other.Rate != 0) {
         Rate = other.Rate;
@@ -4061,14 +3996,6 @@ namespace GameMessageCore {
           }
           case 24: {
             TalentKind = (global::GameMessageCore.TalentType) input.ReadEnum();
-            break;
-          }
-          case 32: {
-            CanReceive = input.ReadBool();
-            break;
-          }
-          case 40: {
-            Doing = input.ReadBool();
             break;
           }
           case 48: {
@@ -4111,14 +4038,6 @@ namespace GameMessageCore {
           }
           case 24: {
             TalentKind = (global::GameMessageCore.TalentType) input.ReadEnum();
-            break;
-          }
-          case 32: {
-            CanReceive = input.ReadBool();
-            break;
-          }
-          case 40: {
-            Doing = input.ReadBool();
             break;
           }
           case 48: {

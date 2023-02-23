@@ -16,24 +16,22 @@ enum TaskOptionType{
   GetItem = 3;
   // 杀死若干数量的指定怪物
   KillMonster = 4; 
-  //角色达到某等级
-  UserLevel = 5;
-  //指定插槽达到某等级
-  TargetSlotLevel = 6;
+  // 指定专精等级达到多少级
+  TalentTargetLv = 5;
+  // 指定专精节点升级到多少级
+  TalentTargetNodeLV = 6;
   //指定数量插槽都达到某等级
-  SlotLevelCount = 7;
-  //指定合成技能达到某等级
-  CraftSkillLevel = 8;
+  SlotLevelCount = 7; 
   //使用指定的配方合成
-  UseRecipe = 9; 
+  UseRecipe = 8; 
   //累计合成多少次
-  RecipeUseCount = 10;
+  RecipeUseCount = 9;
   //完成若干指定任务链的任务
-  TaskCount = 11;
+  TaskCount = 10;
   //完成若干次的指定类型任务链
-  TaskListTypeCount = 12;
+  TaskListTypeCount = 11;
   //到达指定坐标点指定半径范围内的区域
-  TargetPosition = 13;
+  TargetPosition = 12;
 }
 
 
@@ -46,18 +44,16 @@ message TaskOptionKillMonster {
   int32           monCid = 1;
   int32           num = 2;
 }
-message TaskOptionTargetSlotLevel{
-  int32           slotPos = 1;
+// 指定专精等级达到多少级
+message TaskOptionTalentTargetLv{
+  TalentType      slotPos = 1;
   int32           level   = 2;
 }
-message TaskOptionSlotLevelCount{
-  int32           slotLevel = 1;
-  int32           slotCount = 2;
-}
-message TaskOptionCraftSkillLevel{
-  int32           skillId = 1;
+// 指定专精节点升级到多少级
+message TaskOptionTalentTargetNodeLV{
+  int32           nodeId  = 1;
   int32           level   = 2;
-}
+} 
 message TaskOptionUseRecipe{
   int32           recipeId = 1;
   int32           times = 2;
@@ -91,12 +87,10 @@ message TaskOptionCnf {
     TaskOptionItem                    getItem = 14;
     // 杀死若干数量的指定怪物     
     TaskOptionKillMonster             killMonster = 15;
-    // 指定插槽达到某等级 
-    TaskOptionTargetSlotLevel         targetSlotLevel = 16;
-    // 指定数量插槽都达到某等级
-    TaskOptionSlotLevelCount          slotLevelCount = 17;
-    // 指定合成技能达到某等级
-    TaskOptionCraftSkillLevel         craftSkillLevel = 18;
+    // 指定专精等级达到多少级 
+    TaskOptionTalentTargetLv          talentLevel = 16;
+    // 指定专精节点升级到多少级
+    TaskOptionTalentTargetNodeLV      nodeLevel = 17; 
     // 使用指定的配方合成
     TaskOptionUseRecipe               useRecipe = 19;
     // 累计合成多少次

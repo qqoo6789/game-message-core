@@ -463,33 +463,32 @@ namespace GameMessageCore {
             "dGEiTAoVVGFza0xpc3RSZXdhcmRSZXF1ZXN0EjMKDHRhc2tMaXN0S2luZBgB",
             "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiSQoWVGFza0xp",
             "c3RSZXdhcmRSZXNwb25zZRIvCgx0YXNrTGlzdEluZm8YASABKAsyGS5nYW1l",
-            "TWVzc2FnZUNvcmUuVGFza0xpc3QixwIKGlVwZ3JhZGVUYXNrUHJvZ3Jlc3NS",
+            "TWVzc2FnZUNvcmUuVGFza0xpc3QiggIKGlVwZ3JhZGVUYXNrUHJvZ3Jlc3NS",
             "ZXF1ZXN0EjMKDHRhc2tMaXN0S2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29y",
             "ZS5UYXNrTGlzdFR5cGUSDgoGdGFza0lkGAIgASgFEi4KBWl0ZW1zGAMgAygL",
             "Mh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtEjYKA3BvcxgEIAEo",
             "CzIpLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24S",
             "NwoJdXNlUmVjaXBlGAUgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRp",
-            "b25Vc2VSZWNpcGUSQwoPY3JhZnRTa2lsbExldmVsGAYgASgLMiouZ2FtZU1l",
-            "c3NhZ2VDb3JlLlRhc2tPcHRpb25DcmFmdFNraWxsTGV2ZWwiHQobVXBncmFk",
-            "ZVRhc2tQcm9ncmVzc1Jlc3BvbnNlIsABChtCcm9hZENhc3RUYXNrUmV3YXJk",
-            "UmVzcG9uc2USMwoMdGFza0xpc3RLaW5kGAEgASgOMh0uZ2FtZU1lc3NhZ2VD",
-            "b3JlLlRhc2tMaXN0VHlwZRIOCgZ0YXNrSWQYAiABKAUSLgoKdGFsZW50RXhw",
-            "cxgDIAMoCzIaLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRFeHASLAoFaXRlbXMY",
-            "BCADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvIrQBCh9Ccm9h",
-            "ZENhc3RUYXNrTGlzdFJld2FyZFJlc3BvbnNlEjMKDHRhc2tMaXN0S2luZBgB",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSLgoKdGFsZW50",
-            "RXhwcxgCIAMoCzIaLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRFeHASLAoFaXRl",
-            "bXMYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvInoKFlNl",
-            "bmRDaGF0TWVzc2FnZVJlcXVlc3QSMwoJY2hhdF90eXBlGAEgASgOMiAuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkNoYXRDaGFubmVsVHlwZRIPCgdjb250ZW50GAIgASgJ",
-            "EhoKEnJlY2VpdmVyX3BsYXllcl9pZBgDIAEoAyIpChdTZW5kQ2hhdE1lc3Nh",
-            "Z2VSZXNwb25zZRIOCgZtc2dfaWQYASABKAMiagodQnJvYWRDYXN0Q2hhdE1l",
-            "c3NhZ2VzUmVzcG9uc2USLgoIbWVzc2FnZXMYASADKAsyHC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQ2hhdE1lc3NhZ2USGQoRaGlzdG9yaWNhbF9yZWNvcmQYAiABKAgi",
-            "NQoiQnJvYWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2VSZXNwb25zZRIPCgdtc2df",
-            "aWRzGAEgAygDIlIKIEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0ZVJlc3BvbnNl",
-            "Ei4KCmNoYXRfc3RhdGUYASABKA4yGi5nYW1lTWVzc2FnZUNvcmUuQ2hhdFN0",
-            "YXRlIg0KC1BpbmdSZXF1ZXN0Ig4KDFBpbmdSZXNwb25zZWIGcHJvdG8z"));
+            "b25Vc2VSZWNpcGUiHQobVXBncmFkZVRhc2tQcm9ncmVzc1Jlc3BvbnNlIsAB",
+            "ChtCcm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2USMwoMdGFza0xpc3RLaW5k",
+            "GAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRIOCgZ0YXNr",
+            "SWQYAiABKAUSLgoKdGFsZW50RXhwcxgDIAMoCzIaLmdhbWVNZXNzYWdlQ29y",
+            "ZS5UYWxlbnRFeHASLAoFaXRlbXMYBCADKAsyHS5nYW1lTWVzc2FnZUNvcmUu",
+            "SXRlbUJhc2VJbmZvIrQBCh9Ccm9hZENhc3RUYXNrTGlzdFJld2FyZFJlc3Bv",
+            "bnNlEjMKDHRhc2tMaXN0S2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5U",
+            "YXNrTGlzdFR5cGUSLgoKdGFsZW50RXhwcxgCIAMoCzIaLmdhbWVNZXNzYWdl",
+            "Q29yZS5UYWxlbnRFeHASLAoFaXRlbXMYAyADKAsyHS5nYW1lTWVzc2FnZUNv",
+            "cmUuSXRlbUJhc2VJbmZvInoKFlNlbmRDaGF0TWVzc2FnZVJlcXVlc3QSMwoJ",
+            "Y2hhdF90eXBlGAEgASgOMiAuZ2FtZU1lc3NhZ2VDb3JlLkNoYXRDaGFubmVs",
+            "VHlwZRIPCgdjb250ZW50GAIgASgJEhoKEnJlY2VpdmVyX3BsYXllcl9pZBgD",
+            "IAEoAyIpChdTZW5kQ2hhdE1lc3NhZ2VSZXNwb25zZRIOCgZtc2dfaWQYASAB",
+            "KAMiagodQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9uc2USLgoIbWVzc2Fn",
+            "ZXMYASADKAsyHC5nYW1lTWVzc2FnZUNvcmUuQ2hhdE1lc3NhZ2USGQoRaGlz",
+            "dG9yaWNhbF9yZWNvcmQYAiABKAgiNQoiQnJvYWRDYXN0UmVtb3ZlQ2hhdE1l",
+            "c3NhZ2VSZXNwb25zZRIPCgdtc2dfaWRzGAEgAygDIlIKIEJyb2FkQ2FzdFVw",
+            "ZGF0ZUNoYXRTdGF0ZVJlc3BvbnNlEi4KCmNoYXRfc3RhdGUYASABKA4yGi5n",
+            "YW1lTWVzc2FnZUNvcmUuQ2hhdFN0YXRlIg0KC1BpbmdSZXF1ZXN0Ig4KDFBp",
+            "bmdSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -609,7 +608,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskRewardResponse), global::GameMessageCore.TaskRewardResponse.Parser, new[]{ "TaskListKind", "TaskId", "TaskListInfo", "NormalTasks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskListRewardRequest), global::GameMessageCore.TaskListRewardRequest.Parser, new[]{ "TaskListKind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskListRewardResponse), global::GameMessageCore.TaskListRewardResponse.Parser, new[]{ "TaskListInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UpgradeTaskProgressRequest), global::GameMessageCore.UpgradeTaskProgressRequest.Parser, new[]{ "TaskListKind", "TaskId", "Items", "Pos", "UseRecipe", "CraftSkillLevel" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UpgradeTaskProgressRequest), global::GameMessageCore.UpgradeTaskProgressRequest.Parser, new[]{ "TaskListKind", "TaskId", "Items", "Pos", "UseRecipe" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UpgradeTaskProgressResponse), global::GameMessageCore.UpgradeTaskProgressResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTaskRewardResponse), global::GameMessageCore.BroadCastTaskRewardResponse.Parser, new[]{ "TaskListKind", "TaskId", "TalentExps", "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTaskListRewardResponse), global::GameMessageCore.BroadCastTaskListRewardResponse.Parser, new[]{ "TaskListKind", "TalentExps", "Items" }, null, null, null, null),
@@ -31935,7 +31934,6 @@ namespace GameMessageCore {
       items_ = other.items_.Clone();
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       useRecipe_ = other.useRecipe_ != null ? other.useRecipe_.Clone() : null;
-      craftSkillLevel_ = other.craftSkillLevel_ != null ? other.craftSkillLevel_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -32016,21 +32014,6 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "craftSkillLevel" field.</summary>
-    public const int CraftSkillLevelFieldNumber = 6;
-    private global::GameMessageCore.TaskOptionCraftSkillLevel craftSkillLevel_;
-    /// <summary>
-    /// 指定合成技能达到某等级
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskOptionCraftSkillLevel CraftSkillLevel {
-      get { return craftSkillLevel_; }
-      set {
-        craftSkillLevel_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -32051,7 +32034,6 @@ namespace GameMessageCore {
       if(!items_.Equals(other.items_)) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (!object.Equals(UseRecipe, other.UseRecipe)) return false;
-      if (!object.Equals(CraftSkillLevel, other.CraftSkillLevel)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -32064,7 +32046,6 @@ namespace GameMessageCore {
       hash ^= items_.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (useRecipe_ != null) hash ^= UseRecipe.GetHashCode();
-      if (craftSkillLevel_ != null) hash ^= CraftSkillLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -32100,10 +32081,6 @@ namespace GameMessageCore {
         output.WriteRawTag(42);
         output.WriteMessage(UseRecipe);
       }
-      if (craftSkillLevel_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(CraftSkillLevel);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -32131,10 +32108,6 @@ namespace GameMessageCore {
         output.WriteRawTag(42);
         output.WriteMessage(UseRecipe);
       }
-      if (craftSkillLevel_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(CraftSkillLevel);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -32157,9 +32130,6 @@ namespace GameMessageCore {
       }
       if (useRecipe_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UseRecipe);
-      }
-      if (craftSkillLevel_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CraftSkillLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -32191,12 +32161,6 @@ namespace GameMessageCore {
           UseRecipe = new global::GameMessageCore.TaskOptionUseRecipe();
         }
         UseRecipe.MergeFrom(other.UseRecipe);
-      }
-      if (other.craftSkillLevel_ != null) {
-        if (craftSkillLevel_ == null) {
-          CraftSkillLevel = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-        }
-        CraftSkillLevel.MergeFrom(other.CraftSkillLevel);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -32239,13 +32203,6 @@ namespace GameMessageCore {
             input.ReadMessage(UseRecipe);
             break;
           }
-          case 50: {
-            if (craftSkillLevel_ == null) {
-              CraftSkillLevel = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-            }
-            input.ReadMessage(CraftSkillLevel);
-            break;
-          }
         }
       }
     #endif
@@ -32285,13 +32242,6 @@ namespace GameMessageCore {
               UseRecipe = new global::GameMessageCore.TaskOptionUseRecipe();
             }
             input.ReadMessage(UseRecipe);
-            break;
-          }
-          case 50: {
-            if (craftSkillLevel_ == null) {
-              CraftSkillLevel = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-            }
-            input.ReadMessage(CraftSkillLevel);
             break;
           }
         }

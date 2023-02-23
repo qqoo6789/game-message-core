@@ -651,6 +651,7 @@ message  AcceptTaskResponse{
 // 领取任务链任务
 message  AcceptTaskListRequest{
   TaskListType      taskListKind = 1;
+  TalentType        talentKind = 2;
 }
 message  AcceptTaskListResponse{
   TaskList          taskListInfo = 1;
@@ -666,7 +667,7 @@ message  AbandonTaskResponse{
 
 // 放弃任务链的任务(任务有保护时间)
 message  AbandonTaskListRequest{
-  TaskListType      taskListKind = 1;
+  TaskListType      taskListKind = 1; 
 }
 message  AbandonTaskListResponse{
   TaskList          taskListInfo = 1;

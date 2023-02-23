@@ -670,7 +670,7 @@ message  AbandonTaskListRequest{
   TaskListType      taskListKind = 1; 
 }
 message  AbandonTaskListResponse{
-  TaskList          taskListInfo = 1;
+  TaskListType      taskListKind = 1; 
 }
 
 // 获取任务奖励

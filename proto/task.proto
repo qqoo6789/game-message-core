@@ -16,22 +16,21 @@ enum TaskOptionType{
   GetItem = 3;
   // 杀死若干数量的指定怪物
   KillMonster = 4; 
-  // 指定专精等级达到多少级
-  TalentTargetLv = 5;
-  // 指定专精节点升级到多少级
-  TalentTargetNodeLV = 6;
-  //指定数量插槽都达到某等级
-  SlotLevelCount = 7; 
+  
   //使用指定的配方合成
-  UseRecipe = 8; 
+  UseRecipe = 9; 
   //累计合成多少次
-  RecipeUseCount = 9;
+  RecipeUseCount = 10;
   //完成若干指定任务链的任务
-  TaskCount = 10;
+  TaskCount = 11;
   //完成若干次的指定类型任务链
-  TaskListTypeCount = 11;
+  TaskListTypeCount = 12;
   //到达指定坐标点指定半径范围内的区域
-  TargetPosition = 12;
+  TargetPosition = 13;
+  // 指定专精等级达到多少级
+  TalentTargetLv = 14;
+  // 指定专精节点升级到多少级
+  TalentTargetNodeLV = 15;
 }
 
 

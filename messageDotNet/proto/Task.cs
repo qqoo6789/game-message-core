@@ -67,15 +67,14 @@ namespace GameMessageCore {
             "dFR5cGUSLwoKdGFsZW50S2luZBgDIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5U",
             "YWxlbnRUeXBlEhIKCmNhblJlY2VpdmUYBCABKAgSDQoFZG9pbmcYBSABKAgS",
             "DAoEcmF0ZRgGIAEoBRInCghjdXJfdGFzaxgHIAEoCzIVLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrEhUKDXJlY2VpdmVSZXdhcmQYCCABKAUqgwIKDlRhc2tPcHRp",
+            "Q29yZS5UYXNrEhUKDXJlY2VpdmVSZXdhcmQYCCABKAUq7wEKDlRhc2tPcHRp",
             "b25UeXBlEhkKFVVua25vd25UYXNrT3B0aW9uVHlwZRAAEg4KCkhhbmRJbkl0",
             "ZW0QARILCgdVc2VJdGVtEAISCwoHR2V0SXRlbRADEg8KC0tpbGxNb25zdGVy",
-            "EAQSEgoOVGFsZW50VGFyZ2V0THYQBRIWChJUYWxlbnRUYXJnZXROb2RlTFYQ",
-            "BhISCg5TbG90TGV2ZWxDb3VudBAHEg0KCVVzZVJlY2lwZRAIEhIKDlJlY2lw",
-            "ZVVzZUNvdW50EAkSDQoJVGFza0NvdW50EAoSFQoRVGFza0xpc3RUeXBlQ291",
-            "bnQQCxISCg5UYXJnZXRQb3NpdGlvbhAMKkAKDFRhc2tMaXN0VHlwZRIXChNU",
-            "YXNrTGlzdFR5cGVVbmtub3duEAASCQoFRGFpbHkQARIMCghSZXdhcmRlZBAC",
-            "YgZwcm90bzM="));
+            "EAQSDQoJVXNlUmVjaXBlEAkSEgoOUmVjaXBlVXNlQ291bnQQChINCglUYXNr",
+            "Q291bnQQCxIVChFUYXNrTGlzdFR5cGVDb3VudBAMEhIKDlRhcmdldFBvc2l0",
+            "aW9uEA0SEgoOVGFsZW50VGFyZ2V0THYQDhIWChJUYWxlbnRUYXJnZXROb2Rl",
+            "TFYQDypACgxUYXNrTGlzdFR5cGUSFwoTVGFza0xpc3RUeXBlVW5rbm93bhAA",
+            "EgkKBURhaWx5EAESDAoIUmV3YXJkZWQQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -117,37 +116,33 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("KillMonster")] KillMonster = 4,
     /// <summary>
-    /// 指定专精等级达到多少级
-    /// </summary>
-    [pbr::OriginalName("TalentTargetLv")] TalentTargetLv = 5,
-    /// <summary>
-    /// 指定专精节点升级到多少级
-    /// </summary>
-    [pbr::OriginalName("TalentTargetNodeLV")] TalentTargetNodeLv = 6,
-    /// <summary>
-    ///指定数量插槽都达到某等级
-    /// </summary>
-    [pbr::OriginalName("SlotLevelCount")] SlotLevelCount = 7,
-    /// <summary>
     ///使用指定的配方合成
     /// </summary>
-    [pbr::OriginalName("UseRecipe")] UseRecipe = 8,
+    [pbr::OriginalName("UseRecipe")] UseRecipe = 9,
     /// <summary>
     ///累计合成多少次
     /// </summary>
-    [pbr::OriginalName("RecipeUseCount")] RecipeUseCount = 9,
+    [pbr::OriginalName("RecipeUseCount")] RecipeUseCount = 10,
     /// <summary>
     ///完成若干指定任务链的任务
     /// </summary>
-    [pbr::OriginalName("TaskCount")] TaskCount = 10,
+    [pbr::OriginalName("TaskCount")] TaskCount = 11,
     /// <summary>
     ///完成若干次的指定类型任务链
     /// </summary>
-    [pbr::OriginalName("TaskListTypeCount")] TaskListTypeCount = 11,
+    [pbr::OriginalName("TaskListTypeCount")] TaskListTypeCount = 12,
     /// <summary>
     ///到达指定坐标点指定半径范围内的区域
     /// </summary>
-    [pbr::OriginalName("TargetPosition")] TargetPosition = 12,
+    [pbr::OriginalName("TargetPosition")] TargetPosition = 13,
+    /// <summary>
+    /// 指定专精等级达到多少级
+    /// </summary>
+    [pbr::OriginalName("TalentTargetLv")] TalentTargetLv = 14,
+    /// <summary>
+    /// 指定专精节点升级到多少级
+    /// </summary>
+    [pbr::OriginalName("TalentTargetNodeLV")] TalentTargetNodeLv = 15,
   }
 
   public enum TaskListType {

@@ -141,10 +141,6 @@ message TaskList{
   TaskListType  kind = 2;
   // 专精类型
   TalentType    talentKind = 3; 
-  // 任务链是否可以在接取
-  bool          canReceive = 4;
-  // 任务链是否正在进行
-  bool          doing  = 5;
   // 进度
   int32         rate = 6;
   // current task

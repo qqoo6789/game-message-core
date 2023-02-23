@@ -45,7 +45,7 @@ message TaskOptionKillMonster {
 }
 // 指定专精等级达到多少级
 message TaskOptionTalentTargetLv{
-  TalentType      slotPos = 1;
+  TalentType      kind = 1;
   int32           level   = 2;
 }
 // 指定专精节点升级到多少级

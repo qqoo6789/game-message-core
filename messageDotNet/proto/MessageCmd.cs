@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuoPCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKokQCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -67,10 +67,10 @@ namespace GameMessageCore {
             "EQoLQWJhbmRvblRhc2sQiYAQEhUKD0FiYW5kb25UYXNrTGlzdBCRgBASEAoK",
             "VGFza1Jld2FyZBCTgBASFAoOVGFza0xpc3RSZXdhcmQQlYAQEhkKE1VwZ3Jh",
             "ZGVUYXNrUHJvZ3Jlc3MQl4AQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQmYAQ",
-            "EhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3Nh",
-            "Z2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoY",
-            "QnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJv",
-            "dG8z"));
+            "Eh0KF0Jyb2FkQ2FzdFRhc2tMaXN0UmV3YXJkEKGAEBIVCg9TZW5kQ2hhdE1l",
+            "c3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQSIAoaQnJv",
+            "YWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2FzdFVwZGF0",
+            "ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCBgBhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -298,6 +298,10 @@ namespace GameMessageCore {
     /// 推送获取的任务奖励
     /// </summary>
     [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262169,
+    /// <summary>
+    /// 推送获取的任务链奖励
+    /// </summary>
+    [pbr::OriginalName("BroadCastTaskListReward")] BroadCastTaskListReward = 262177,
     /// <summary>
     ///chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
     /// </summary>

@@ -67,10 +67,11 @@ namespace GameMessageCore {
             "CglGZWV0QXJtb3IQBRIJCgVTd29yZBAGEgcKA0JvdxAHEgoKBkRhZ2dlchAI",
             "EgkKBVNwZWFyEAkSDgoKQ29uc3VtYWJsZRAKEgwKCE1hdGVyaWFsEAsSDgoK",
             "TXlzdGVyeUJveBAMEg0KCVBsYWNlYWJsZRANEgkKBVRoaXJkEA4SDAoIV2Vh",
-            "cmFibGUQD2IGcHJvdG8z"));
+            "cmFibGUQDyo3CghEcm9wVHlwZRITCg9Ecm9wVHlwZVVua25vd24QABIWChJE",
+            "cm9wVHlwZUhvbWVBbmltYWwQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityProfileReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.AvatarPosition), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.NftTraitType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.AvatarPosition), typeof(global::GameMessageCore.ItemType), typeof(global::GameMessageCore.NFTConsumableType), typeof(global::GameMessageCore.NftTraitType), typeof(global::GameMessageCore.DropType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NFTConsumableInfo), global::GameMessageCore.NFTConsumableInfo.Parser, new[]{ "Quality", "ConsumableType", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftTraitData), global::GameMessageCore.NftTraitData.Parser, new[]{ "DisplayType", "TraitType", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NftMetadata), global::GameMessageCore.NftMetadata.Parser, new[]{ "Name", "Description", "Image", "BackGroundColor", "Type", "TraitData", "Attributes" }, null, null, null, null),
@@ -233,6 +234,14 @@ namespace GameMessageCore {
     /// "Wearable" 可穿戴
     /// </summary>
     [pbr::OriginalName("Wearable")] Wearable = 15,
+  }
+
+  public enum DropType {
+    [pbr::OriginalName("DropTypeUnknown")] Unknown = 0,
+    /// <summary>
+    /// 畜牧动物
+    /// </summary>
+    [pbr::OriginalName("DropTypeHomeAnimal")] HomeAnimal = 1,
   }
 
   #endregion

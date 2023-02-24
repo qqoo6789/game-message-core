@@ -99,7 +99,8 @@ message ProxyProductData
   int64 productId = 1;
   int32 itemCid =2;
   int32 itemNum = 3;
-  Vector3 position = 4;
+  int32 quality = 4;
+  Vector3 position = 5;
 }
 
 // 更新动物数据

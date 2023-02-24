@@ -106,6 +106,7 @@ enum EnvelopeType {
     BroadCastAnimalSceneDataUpdate  = 0x030057;     // 广播更新动物场数据
     BroadCastAnimalDeath            = 0x030059;     // 广播动物死亡
     BroadCastAnimalAutoProduce      = 0x030061;     // 广播动物自动生产
+    BroadCastPickupDrop             = 0x030063;     // 广播拾取掉落物
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

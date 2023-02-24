@@ -52,16 +52,16 @@ namespace GameMessageCore {
             "YWQYBSABKAgSNgoLcHJvZHVjdERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNv",
             "cmUuUHJveHlQcm9kdWN0RGF0YSJWChNQcm94eUFuaW1hbEJhc2VEYXRhEg4K",
             "BmFuaW1JZBgBIAEoBBIMCgRuYW1lGAIgASgJEgsKA2NpZBgDIAEoBRIUCgxm",
-            "YXZvcmFiaWxpdHkYBCABKAUicwoQUHJveHlQcm9kdWN0RGF0YRIRCglwcm9k",
-            "dWN0SWQYASABKAMSDwoHaXRlbUNpZBgCIAEoBRIPCgdpdGVtTnVtGAMgASgF",
-            "EioKCHBvc2l0aW9uGAQgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMi",
-            "OgoQQW5pbWFsVXBkYXRlRGF0YRIOCgZhbmltSWQYASABKAQSFgoOaHVuZ2Vy",
-            "UHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93bFVwZGF0ZURhdGESDgoGYm93",
-            "bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUSGgoScmVtYWluRm9vZENhcGFj",
-            "aXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RS",
-            "ZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVjdFJlc291cmNlVHlwZVNv",
-            "aWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpBbmltYWxCb3dsEAQSCgoGQW5p",
-            "bWFsEAhiBnByb3RvMw=="));
+            "YXZvcmFiaWxpdHkYBCABKAUihAEKEFByb3h5UHJvZHVjdERhdGESEQoJcHJv",
+            "ZHVjdElkGAEgASgDEg8KB2l0ZW1DaWQYAiABKAUSDwoHaXRlbU51bRgDIAEo",
+            "BRIPCgdxdWFsaXR5GAQgASgFEioKCHBvc2l0aW9uGAUgASgLMhguZ2FtZU1l",
+            "c3NhZ2VDb3JlLlZlY3RvcjMiOgoQQW5pbWFsVXBkYXRlRGF0YRIOCgZhbmlt",
+            "SWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93",
+            "bFVwZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUS",
+            "GgoScmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3Vy",
+            "Y2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29s",
+            "bGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpB",
+            "bmltYWxCb3dsEAQSCgoGQW5pbWFsEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +74,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimId", "Name", "Cid", "Favorability" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "ItemNum", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "ItemNum", "Quality", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalUpdateData), global::GameMessageCore.AnimalUpdateData.Parser, new[]{ "AnimId", "HungerProgress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalBowlUpdateData), global::GameMessageCore.AnimalBowlUpdateData.Parser, new[]{ "BowlId", "FoodCid", "RemainFoodCapacity" }, null, null, null, null)
           }));
@@ -2785,6 +2785,7 @@ namespace GameMessageCore {
       productId_ = other.productId_;
       itemCid_ = other.itemCid_;
       itemNum_ = other.itemNum_;
+      quality_ = other.quality_;
       position_ = other.position_ != null ? other.position_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2831,8 +2832,20 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "quality" field.</summary>
+    public const int QualityFieldNumber = 4;
+    private int quality_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Quality {
+      get { return quality_; }
+      set {
+        quality_ = value;
+      }
+    }
+
     /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 4;
+    public const int PositionFieldNumber = 5;
     private global::GameMessageCore.Vector3 position_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2861,6 +2874,7 @@ namespace GameMessageCore {
       if (ProductId != other.ProductId) return false;
       if (ItemCid != other.ItemCid) return false;
       if (ItemNum != other.ItemNum) return false;
+      if (Quality != other.Quality) return false;
       if (!object.Equals(Position, other.Position)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2872,6 +2886,7 @@ namespace GameMessageCore {
       if (ProductId != 0L) hash ^= ProductId.GetHashCode();
       if (ItemCid != 0) hash ^= ItemCid.GetHashCode();
       if (ItemNum != 0) hash ^= ItemNum.GetHashCode();
+      if (Quality != 0) hash ^= Quality.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2903,8 +2918,12 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt32(ItemNum);
       }
+      if (Quality != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Quality);
+      }
       if (position_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteMessage(Position);
       }
       if (_unknownFields != null) {
@@ -2929,8 +2948,12 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt32(ItemNum);
       }
+      if (Quality != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Quality);
+      }
       if (position_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteMessage(Position);
       }
       if (_unknownFields != null) {
@@ -2951,6 +2974,9 @@ namespace GameMessageCore {
       }
       if (ItemNum != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemNum);
+      }
+      if (Quality != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Quality);
       }
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
@@ -2975,6 +3001,9 @@ namespace GameMessageCore {
       }
       if (other.ItemNum != 0) {
         ItemNum = other.ItemNum;
+      }
+      if (other.Quality != 0) {
+        Quality = other.Quality;
       }
       if (other.position_ != null) {
         if (position_ == null) {
@@ -3009,7 +3038,11 @@ namespace GameMessageCore {
             ItemNum = input.ReadInt32();
             break;
           }
-          case 34: {
+          case 32: {
+            Quality = input.ReadInt32();
+            break;
+          }
+          case 42: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }
@@ -3043,7 +3076,11 @@ namespace GameMessageCore {
             ItemNum = input.ReadInt32();
             break;
           }
-          case 34: {
+          case 32: {
+            Quality = input.ReadInt32();
+            break;
+          }
+          case 42: {
             if (position_ == null) {
               Position = new global::GameMessageCore.Vector3();
             }

@@ -146,6 +146,7 @@ message Envelope {
     BroadCastAnimalSceneDataUpdateResponse  broad_cast_animal_scene_data_update_response  = 0x030057;
     BroadCastAnimalDeathResponse            broad_cast_animal_death_response              = 0x030059;
     BroadCastAnimalAutoProduceResponse      broad_cast_animal_auto_produce_response       = 0x030061;
+    BroadCastPickupDropResponse             broad_cast_pickup_drop_response               = 0x030063;
  
 
 
@@ -530,6 +531,17 @@ message BroadCastAnimalAutoProduceResponse
 {
   uint64 animalId = 1;
   ProxyProductData productData = 2;
+}
+
+message BroadCastPickupDropResponse
+{
+  int64 toPlayerId = 1;
+  int64 dropId = 2;
+  DropType dropType = 3;
+  repeated ItemBaseInfo dropList = 4;
+  oneof extraInfo {
+    uint64 animalId = 10;
+ }
 }
 
 message BroadCastInitMapElementResponse {

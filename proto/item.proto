@@ -98,6 +98,12 @@ enum NftTraitType{
   Wearable = 15;
 }
 
+enum DropType{
+  DropTypeUnknown = 0;
+  // 畜牧动物
+  DropTypeHomeAnimal = 1;
+}
+
 message NftTraitData{
   string displayType = 1;
   string TraitType = 2;

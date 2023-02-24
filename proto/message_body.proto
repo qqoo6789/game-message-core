@@ -535,7 +535,7 @@ message BroadCastAnimalAutoProduceResponse
 
 message BroadCastPickupDropResponse
 {
-  int64 toPlayerId = 1;
+  int64 pickPlayerId = 1;
   int64 dropId = 2;
   DropType dropType = 3;
   repeated ItemBaseInfo dropList = 4;

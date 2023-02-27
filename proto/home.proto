@@ -91,7 +91,6 @@ message ProxyAnimalBaseData
   uint64 animId = 1;
   string name = 2;
   int32 cid = 3;
-  int32 favorability = 4;
 }
 
 message ProxyProductData

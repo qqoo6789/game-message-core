@@ -14,5 +14,6 @@ func TableModels() []interface{} {
 		SceneAreaRow{},
 		TalentTreeRow{},
 		EntityAttributeRow{},
+		ItemEatableRow{},
 	}
 }

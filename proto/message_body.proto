@@ -161,12 +161,10 @@ message Envelope {
     AbandonTaskListResponse           abandon_task_list_response            = 0x040012;
     TaskRewardRequest                 task_reward_request                   = 0x040013;
     TaskRewardResponse                task_reward_response                  = 0x040014;
-    TaskListRewardRequest             task_list_reward_request              = 0x040015;
-    TaskListRewardResponse            task_list_reward_response             = 0x040016;
-    UpgradeTaskProgressRequest        upgrade_task_progress_request         = 0x040017;
-    UpgradeTaskProgressResponse       upgrade_task_progress_response        = 0x040018;
-    BroadCastTaskRewardResponse       broad_cast_task_reward_response       = 0x040019;
-    BroadCastTaskListRewardResponse   broad_cast_task_list_reward_response  = 0x040021;
+    UpgradeTaskProgressRequest        upgrade_task_progress_request         = 0x040015;
+    UpgradeTaskProgressResponse       upgrade_task_progress_response        = 0x040016;
+    BroadCastTaskRewardResponse       broad_cast_task_reward_response       = 0x040017;
+    BroadCastTaskListRewardResponse   broad_cast_task_list_reward_response  = 0x040019;
 
 
     //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
@@ -685,15 +683,7 @@ message  TaskRewardResponse{
   TaskList          taskListInfo  = 3;
   NormalTaskData    normalTasks   = 4;
 }
-
-// 获取任务链奖励
-message  TaskListRewardRequest{
-  TaskListType      taskListKind = 1;
-}
-message  TaskListRewardResponse{
-  TaskList          taskListInfo = 1;
-}
-
+ 
 message  UpgradeTaskProgressRequest{
   // 任务链类型, 当TaskListType == Unknown 时表示领取玩家normal任务的奖励
   TaskListType              taskListKind = 1;

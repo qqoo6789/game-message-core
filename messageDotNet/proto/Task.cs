@@ -24,76 +24,70 @@ namespace GameMessageCore {
     static TaskReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgp0YXNrLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUiPQoOVGFza09wdGlvbkl0",
-            "ZW0SDwoHaXRlbUNpZBgBIAEoBRILCgNudW0YAiABKAUSDQoFbmZ0SWQYAyAB",
-            "KAkiNAoVVGFza09wdGlvbktpbGxNb25zdGVyEg4KBm1vbkNpZBgBIAEoBRIL",
-            "CgNudW0YAiABKAUiOwoZVGFza09wdGlvblRhcmdldFNsb3RMZXZlbBIPCgdz",
-            "bG90UG9zGAEgASgFEg0KBWxldmVsGAIgASgFIkAKGFRhc2tPcHRpb25TbG90",
-            "TGV2ZWxDb3VudBIRCglzbG90TGV2ZWwYASABKAUSEQoJc2xvdENvdW50GAIg",
-            "ASgFIjsKGVRhc2tPcHRpb25DcmFmdFNraWxsTGV2ZWwSDwoHc2tpbGxJZBgB",
-            "IAEoBRINCgVsZXZlbBgCIAEoBSI2ChNUYXNrT3B0aW9uVXNlUmVjaXBlEhAK",
-            "CHJlY2lwZUlkGAEgASgFEg0KBXRpbWVzGAIgASgFIlcKGVRhc2tPcHRpb25G",
-            "aW5pc2hUYXNrQ291bnQSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrTGlzdFR5cGUSDQoFY291bnQYAiABKAUiWwodVGFza09wdGlvbkZp",
-            "bmlzaFRhc2tMaXN0Q291bnQSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrTGlzdFR5cGUSDQoFY291bnQYAiABKAUiTwoYVGFza09wdGlv",
-            "blRhcmdldFBvc2l0aW9uEgkKAXgYASABKAUSCQoBeRgCIAEoBRIJCgF6GAMg",
-            "ASgFEhIKCmRpc3RPZmZzZXQYBCABKAUivAYKDVRhc2tPcHRpb25DbmYSLQoE",
-            "a2luZBgBIAEoDjIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVHlwZRIT",
-            "Cgl1c2VyTGV2ZWwYCyABKAVIABI1CgpoYW5kSW5JdGVtGAwgASgLMh8uZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtSAASMgoHdXNlSXRlbRgNIAEo",
-            "CzIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbUgAEjIKB2dldEl0",
-            "ZW0YDiABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbkl0ZW1IABI9",
-            "CgtraWxsTW9uc3RlchgPIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0",
-            "aW9uS2lsbE1vbnN0ZXJIABJFCg90YXJnZXRTbG90TGV2ZWwYECABKAsyKi5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza09wdGlvblRhcmdldFNsb3RMZXZlbEgAEkMK",
-            "DnNsb3RMZXZlbENvdW50GBEgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
-            "cHRpb25TbG90TGV2ZWxDb3VudEgAEkUKD2NyYWZ0U2tpbGxMZXZlbBgSIAEo",
-            "CzIqLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uQ3JhZnRTa2lsbExldmVs",
-            "SAASOQoJdXNlUmVjaXBlGBMgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
-            "cHRpb25Vc2VSZWNpcGVIABIYCg5SZWNpcGVVc2VDb3VudBgUIAEoBUgAEkUK",
-            "D0ZpbmlzaFRhc2tDb3VudBgVIAEoCzIqLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
-            "T3B0aW9uRmluaXNoVGFza0NvdW50SAASTQoTRmluaXNoVGFza0xpc3RDb3Vu",
-            "dBgWIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uRmluaXNoVGFz",
-            "a0xpc3RDb3VudEgAEkMKDlRhcmdldFBvc2l0aW9uGBcgASgLMikuZ2FtZU1l",
-            "c3NhZ2VDb3JlLlRhc2tPcHRpb25UYXJnZXRQb3NpdGlvbkgAQgYKBGRhdGEi",
-            "TgoKVGFza09wdGlvbhIyCgpvcHRpb25fY25mGAEgASgLMh4uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tPcHRpb25DbmYSDAoEcmF0ZRgCIAEoBSKRAQoEVGFzaxIP",
-            "Cgd0YXNrX2lkGAEgASgFEjIKCXRhc2tfa2luZBgCIAEoDjIfLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrT3B0aW9uVHlwZRIWCg5jcmVhdGVkX2F0X3NlYxgDIAEo",
-            "AxIsCgdvcHRpb25zGAQgAygLMhsuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRp",
-            "b24itgEKCFRhc2tMaXN0EgoKAmlkGAEgASgFEisKBGtpbmQYAiABKA4yHS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEhMKC2Nhbl9yZWNlaXZlGAMg",
-            "ASgIEg0KBWRvaW5nGAQgASgIEgwKBHJhdGUYBSABKAUSJwoIY3VyX3Rhc2sY",
-            "BiABKAsyFS5nYW1lTWVzc2FnZUNvcmUuVGFzaxIWCg5yZWNlaXZlX3Jld2Fy",
-            "ZBgHIAEoBSI7CgpQbGF5ZXJUYXNrEi0KCnRhc2tfbGlzdHMYASADKAsyGS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3QqkAIKDlRhc2tPcHRpb25UeXBlEhkK",
-            "FVVua25vd25UYXNrT3B0aW9uVHlwZRAAEg4KCkhhbmRJbkl0ZW0QARILCgdV",
-            "c2VJdGVtEAISCwoHR2V0SXRlbRADEg8KC0tpbGxNb25zdGVyEAQSDQoJVXNl",
-            "ckxldmVsEAUSEwoPVGFyZ2V0U2xvdExldmVsEAYSEgoOU2xvdExldmVsQ291",
-            "bnQQBxITCg9DcmFmdFNraWxsTGV2ZWwQCBINCglVc2VSZWNpcGUQCRISCg5S",
-            "ZWNpcGVVc2VDb3VudBAKEg0KCVRhc2tDb3VudBALEhUKEVRhc2tMaXN0VHlw",
-            "ZUNvdW50EAwSEgoOVGFyZ2V0UG9zaXRpb24QDSpvCgxUYXNrTGlzdFR5cGUS",
-            "FwoTVGFza0xpc3RUeXBlVW5rbm93bhAAEhUKEVRhc2tMaXN0VHlwZURhaWx5",
-            "EAESGAoUVGFza0xpc3RUeXBlUmV3YXJkZWQQAhIVChFUYXNrTGlzdFR5cGVH",
-            "dWlkZRADYgZwcm90bzM="));
+            "Cgp0YXNrLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaDHRhbGVudC5wcm90byI9",
+            "Cg5UYXNrT3B0aW9uSXRlbRIPCgdpdGVtQ2lkGAEgASgFEgsKA251bRgCIAEo",
+            "BRINCgVuZnRJZBgDIAEoCSI0ChVUYXNrT3B0aW9uS2lsbE1vbnN0ZXISDgoG",
+            "bW9uQ2lkGAEgASgFEgsKA251bRgCIAEoBSJUChhUYXNrT3B0aW9uVGFsZW50",
+            "VGFyZ2V0THYSKQoEa2luZBgBIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5UYWxl",
+            "bnRUeXBlEg0KBWxldmVsGAIgASgFIj0KHFRhc2tPcHRpb25UYWxlbnRUYXJn",
+            "ZXROb2RlTFYSDgoGbm9kZUlkGAEgASgFEg0KBWxldmVsGAIgASgFIjYKE1Rh",
+            "c2tPcHRpb25Vc2VSZWNpcGUSEAoIcmVjaXBlSWQYASABKAUSDQoFdGltZXMY",
+            "AiABKAUiVwoZVGFza09wdGlvbkZpbmlzaFRhc2tDb3VudBIrCgRraW5kGAEg",
+            "ASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRINCgVjb3VudBgC",
+            "IAEoBSJbCh1UYXNrT3B0aW9uRmluaXNoVGFza0xpc3RDb3VudBIrCgRraW5k",
+            "GAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRINCgVjb3Vu",
+            "dBgCIAEoBSJPChhUYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24SCQoBeBgBIAEo",
+            "BRIJCgF5GAIgASgFEgkKAXoYAyABKAUSEgoKZGlzdE9mZnNldBgEIAEoBSLv",
+            "BQoNVGFza09wdGlvbkNuZhItCgRraW5kGAEgASgOMh8uZ2FtZU1lc3NhZ2VD",
+            "b3JlLlRhc2tPcHRpb25UeXBlEhMKCXVzZXJMZXZlbBgLIAEoBUgAEjUKCmhh",
+            "bmRJbkl0ZW0YDCABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbkl0",
+            "ZW1IABIyCgd1c2VJdGVtGA0gASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
+            "cHRpb25JdGVtSAASMgoHZ2V0SXRlbRgOIAEoCzIfLmdhbWVNZXNzYWdlQ29y",
+            "ZS5UYXNrT3B0aW9uSXRlbUgAEj0KC2tpbGxNb25zdGVyGA8gASgLMiYuZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25LaWxsTW9uc3RlckgAEkAKC3RhbGVu",
+            "dExldmVsGBAgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25UYWxl",
+            "bnRUYXJnZXRMdkgAEkIKCW5vZGVMZXZlbBgRIAEoCzItLmdhbWVNZXNzYWdl",
+            "Q29yZS5UYXNrT3B0aW9uVGFsZW50VGFyZ2V0Tm9kZUxWSAASOQoJdXNlUmVj",
+            "aXBlGBMgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNp",
+            "cGVIABIYCg5SZWNpcGVVc2VDb3VudBgUIAEoBUgAEkUKD0ZpbmlzaFRhc2tD",
+            "b3VudBgVIAEoCzIqLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uRmluaXNo",
+            "VGFza0NvdW50SAASTQoTRmluaXNoVGFza0xpc3RDb3VudBgWIAEoCzIuLmdh",
+            "bWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uRmluaXNoVGFza0xpc3RDb3VudEgA",
+            "EkMKDlRhcmdldFBvc2l0aW9uGBcgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRh",
+            "c2tPcHRpb25UYXJnZXRQb3NpdGlvbkgAQgYKBGRhdGEiTQoKVGFza09wdGlv",
+            "bhIxCglvcHRpb25DbmYYASABKAsyHi5nYW1lTWVzc2FnZUNvcmUuVGFza09w",
+            "dGlvbkNuZhIMCgRyYXRlGAIgASgFIlgKBFRhc2sSDgoGdGFza0lkGAEgASgF",
+            "EhIKCmNyZWF0ZWRTZWMYAiABKAMSLAoHb3B0aW9ucxgDIAMoCzIbLmdhbWVN",
+            "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uIk4KDk5vcm1hbFRhc2tEYXRhEhMKC2Zp",
+            "bmlzaFRhc2tzGAEgAygFEicKCGN1clRhc2tzGAIgAygLMhUuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLlRhc2siwgEKCFRhc2tMaXN0EgoKAmlkGAEgASgFEisKBGtpbmQY",
+            "AiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEi8KCnRhbGVu",
+            "dEtpbmQYAyABKA4yGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHlwZRIMCgRy",
+            "YXRlGAYgASgFEicKCGN1cl90YXNrGAcgASgLMhUuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlRhc2sSFQoNcmVjZWl2ZVJld2FyZBgIIAEoBSrvAQoOVGFza09wdGlvblR5",
+            "cGUSGQoVVW5rbm93blRhc2tPcHRpb25UeXBlEAASDgoKSGFuZEluSXRlbRAB",
+            "EgsKB1VzZUl0ZW0QAhILCgdHZXRJdGVtEAMSDwoLS2lsbE1vbnN0ZXIQBBIN",
+            "CglVc2VSZWNpcGUQCRISCg5SZWNpcGVVc2VDb3VudBAKEg0KCVRhc2tDb3Vu",
+            "dBALEhUKEVRhc2tMaXN0VHlwZUNvdW50EAwSEgoOVGFyZ2V0UG9zaXRpb24Q",
+            "DRISCg5UYWxlbnRUYXJnZXRMdhAOEhYKElRhbGVudFRhcmdldE5vZGVMVhAP",
+            "KkAKDFRhc2tMaXN0VHlwZRIXChNUYXNrTGlzdFR5cGVVbmtub3duEAASCQoF",
+            "RGFpbHkQARIMCghSZXdhcmRlZBACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionItem), global::GameMessageCore.TaskOptionItem.Parser, new[]{ "ItemCid", "Num", "NftId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionKillMonster), global::GameMessageCore.TaskOptionKillMonster.Parser, new[]{ "MonCid", "Num" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTargetSlotLevel), global::GameMessageCore.TaskOptionTargetSlotLevel.Parser, new[]{ "SlotPos", "Level" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionSlotLevelCount), global::GameMessageCore.TaskOptionSlotLevelCount.Parser, new[]{ "SlotLevel", "SlotCount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCraftSkillLevel), global::GameMessageCore.TaskOptionCraftSkillLevel.Parser, new[]{ "SkillId", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTalentTargetLv), global::GameMessageCore.TaskOptionTalentTargetLv.Parser, new[]{ "Kind", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTalentTargetNodeLV), global::GameMessageCore.TaskOptionTalentTargetNodeLV.Parser, new[]{ "NodeId", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionUseRecipe), global::GameMessageCore.TaskOptionUseRecipe.Parser, new[]{ "RecipeId", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionFinishTaskCount), global::GameMessageCore.TaskOptionFinishTaskCount.Parser, new[]{ "Kind", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionFinishTaskListCount), global::GameMessageCore.TaskOptionFinishTaskListCount.Parser, new[]{ "Kind", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTargetPosition), global::GameMessageCore.TaskOptionTargetPosition.Parser, new[]{ "X", "Y", "Z", "DistOffset" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCnf), global::GameMessageCore.TaskOptionCnf.Parser, new[]{ "Kind", "UserLevel", "HandInItem", "UseItem", "GetItem", "KillMonster", "TargetSlotLevel", "SlotLevelCount", "CraftSkillLevel", "UseRecipe", "RecipeUseCount", "FinishTaskCount", "FinishTaskListCount", "TargetPosition" }, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCnf), global::GameMessageCore.TaskOptionCnf.Parser, new[]{ "Kind", "UserLevel", "HandInItem", "UseItem", "GetItem", "KillMonster", "TalentLevel", "NodeLevel", "UseRecipe", "RecipeUseCount", "FinishTaskCount", "FinishTaskListCount", "TargetPosition" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOption), global::GameMessageCore.TaskOption.Parser, new[]{ "OptionCnf", "Rate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Task), global::GameMessageCore.Task.Parser, new[]{ "TaskId", "TaskKind", "CreatedAtSec", "Options" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskList), global::GameMessageCore.TaskList.Parser, new[]{ "Id", "Kind", "CanReceive", "Doing", "Rate", "CurTask", "ReceiveReward" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerTask), global::GameMessageCore.PlayerTask.Parser, new[]{ "TaskLists" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Task), global::GameMessageCore.Task.Parser, new[]{ "TaskId", "CreatedSec", "Options" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NormalTaskData), global::GameMessageCore.NormalTaskData.Parser, new[]{ "FinishTasks", "CurTasks" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskList), global::GameMessageCore.TaskList.Parser, new[]{ "Id", "Kind", "TalentKind", "Rate", "CurTask", "ReceiveReward" }, null, null, null, null)
           }));
     }
     #endregion
@@ -119,22 +113,6 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("KillMonster")] KillMonster = 4,
     /// <summary>
-    ///角色达到某等级
-    /// </summary>
-    [pbr::OriginalName("UserLevel")] UserLevel = 5,
-    /// <summary>
-    ///指定插槽达到某等级
-    /// </summary>
-    [pbr::OriginalName("TargetSlotLevel")] TargetSlotLevel = 6,
-    /// <summary>
-    ///指定数量插槽都达到某等级
-    /// </summary>
-    [pbr::OriginalName("SlotLevelCount")] SlotLevelCount = 7,
-    /// <summary>
-    ///指定合成技能达到某等级
-    /// </summary>
-    [pbr::OriginalName("CraftSkillLevel")] CraftSkillLevel = 8,
-    /// <summary>
     ///使用指定的配方合成
     /// </summary>
     [pbr::OriginalName("UseRecipe")] UseRecipe = 9,
@@ -154,6 +132,14 @@ namespace GameMessageCore {
     ///到达指定坐标点指定半径范围内的区域
     /// </summary>
     [pbr::OriginalName("TargetPosition")] TargetPosition = 13,
+    /// <summary>
+    /// 指定专精等级达到多少级
+    /// </summary>
+    [pbr::OriginalName("TalentTargetLv")] TalentTargetLv = 14,
+    /// <summary>
+    /// 指定专精节点升级到多少级
+    /// </summary>
+    [pbr::OriginalName("TalentTargetNodeLV")] TalentTargetNodeLv = 15,
   }
 
   public enum TaskListType {
@@ -161,15 +147,11 @@ namespace GameMessageCore {
     /// <summary>
     /// 每日任务
     /// </summary>
-    [pbr::OriginalName("TaskListTypeDaily")] Daily = 1,
+    [pbr::OriginalName("Daily")] Daily = 1,
     /// <summary>
     /// 悬赏任务
     /// </summary>
-    [pbr::OriginalName("TaskListTypeRewarded")] Rewarded = 2,
-    /// <summary>
-    /// 主线任务(引导任务)
-    /// </summary>
-    [pbr::OriginalName("TaskListTypeGuide")] Guide = 3,
+    [pbr::OriginalName("Rewarded")] Rewarded = 2,
   }
 
   #endregion
@@ -667,16 +649,19 @@ namespace GameMessageCore {
 
   }
 
-  public sealed partial class TaskOptionTargetSlotLevel : pb::IMessage<TaskOptionTargetSlotLevel>
+  /// <summary>
+  /// 指定专精等级达到多少级
+  /// </summary>
+  public sealed partial class TaskOptionTalentTargetLv : pb::IMessage<TaskOptionTalentTargetLv>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<TaskOptionTargetSlotLevel> _parser = new pb::MessageParser<TaskOptionTargetSlotLevel>(() => new TaskOptionTargetSlotLevel());
+    private static readonly pb::MessageParser<TaskOptionTalentTargetLv> _parser = new pb::MessageParser<TaskOptionTalentTargetLv>(() => new TaskOptionTalentTargetLv());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TaskOptionTargetSlotLevel> Parser { get { return _parser; } }
+    public static pb::MessageParser<TaskOptionTalentTargetLv> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -692,7 +677,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionTargetSlotLevel() {
+    public TaskOptionTalentTargetLv() {
       OnConstruction();
     }
 
@@ -700,27 +685,27 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionTargetSlotLevel(TaskOptionTargetSlotLevel other) : this() {
-      slotPos_ = other.slotPos_;
+    public TaskOptionTalentTargetLv(TaskOptionTalentTargetLv other) : this() {
+      kind_ = other.kind_;
       level_ = other.level_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionTargetSlotLevel Clone() {
-      return new TaskOptionTargetSlotLevel(this);
+    public TaskOptionTalentTargetLv Clone() {
+      return new TaskOptionTalentTargetLv(this);
     }
 
-    /// <summary>Field number for the "slotPos" field.</summary>
-    public const int SlotPosFieldNumber = 1;
-    private int slotPos_;
+    /// <summary>Field number for the "kind" field.</summary>
+    public const int KindFieldNumber = 1;
+    private global::GameMessageCore.TalentType kind_ = global::GameMessageCore.TalentType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SlotPos {
-      get { return slotPos_; }
+    public global::GameMessageCore.TalentType Kind {
+      get { return kind_; }
       set {
-        slotPos_ = value;
+        kind_ = value;
       }
     }
 
@@ -739,19 +724,19 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as TaskOptionTargetSlotLevel);
+      return Equals(other as TaskOptionTalentTargetLv);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TaskOptionTargetSlotLevel other) {
+    public bool Equals(TaskOptionTalentTargetLv other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (SlotPos != other.SlotPos) return false;
+      if (Kind != other.Kind) return false;
       if (Level != other.Level) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -760,7 +745,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (SlotPos != 0) hash ^= SlotPos.GetHashCode();
+      if (Kind != global::GameMessageCore.TalentType.Unknown) hash ^= Kind.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -780,9 +765,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (SlotPos != 0) {
+      if (Kind != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
-        output.WriteInt32(SlotPos);
+        output.WriteEnum((int) Kind);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -798,9 +783,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SlotPos != 0) {
+      if (Kind != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
-        output.WriteInt32(SlotPos);
+        output.WriteEnum((int) Kind);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -816,8 +801,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (SlotPos != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SlotPos);
+      if (Kind != global::GameMessageCore.TalentType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Kind);
       }
       if (Level != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
@@ -830,12 +815,12 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TaskOptionTargetSlotLevel other) {
+    public void MergeFrom(TaskOptionTalentTargetLv other) {
       if (other == null) {
         return;
       }
-      if (other.SlotPos != 0) {
-        SlotPos = other.SlotPos;
+      if (other.Kind != global::GameMessageCore.TalentType.Unknown) {
+        Kind = other.Kind;
       }
       if (other.Level != 0) {
         Level = other.Level;
@@ -856,7 +841,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            SlotPos = input.ReadInt32();
+            Kind = (global::GameMessageCore.TalentType) input.ReadEnum();
             break;
           }
           case 16: {
@@ -879,7 +864,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            SlotPos = input.ReadInt32();
+            Kind = (global::GameMessageCore.TalentType) input.ReadEnum();
             break;
           }
           case 16: {
@@ -893,16 +878,19 @@ namespace GameMessageCore {
 
   }
 
-  public sealed partial class TaskOptionSlotLevelCount : pb::IMessage<TaskOptionSlotLevelCount>
+  /// <summary>
+  /// 指定专精节点升级到多少级
+  /// </summary>
+  public sealed partial class TaskOptionTalentTargetNodeLV : pb::IMessage<TaskOptionTalentTargetNodeLV>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<TaskOptionSlotLevelCount> _parser = new pb::MessageParser<TaskOptionSlotLevelCount>(() => new TaskOptionSlotLevelCount());
+    private static readonly pb::MessageParser<TaskOptionTalentTargetNodeLV> _parser = new pb::MessageParser<TaskOptionTalentTargetNodeLV>(() => new TaskOptionTalentTargetNodeLV());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TaskOptionSlotLevelCount> Parser { get { return _parser; } }
+    public static pb::MessageParser<TaskOptionTalentTargetNodeLV> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -918,7 +906,7 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionSlotLevelCount() {
+    public TaskOptionTalentTargetNodeLV() {
       OnConstruction();
     }
 
@@ -926,253 +914,27 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionSlotLevelCount(TaskOptionSlotLevelCount other) : this() {
-      slotLevel_ = other.slotLevel_;
-      slotCount_ = other.slotCount_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionSlotLevelCount Clone() {
-      return new TaskOptionSlotLevelCount(this);
-    }
-
-    /// <summary>Field number for the "slotLevel" field.</summary>
-    public const int SlotLevelFieldNumber = 1;
-    private int slotLevel_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SlotLevel {
-      get { return slotLevel_; }
-      set {
-        slotLevel_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "slotCount" field.</summary>
-    public const int SlotCountFieldNumber = 2;
-    private int slotCount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SlotCount {
-      get { return slotCount_; }
-      set {
-        slotCount_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as TaskOptionSlotLevelCount);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TaskOptionSlotLevelCount other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (SlotLevel != other.SlotLevel) return false;
-      if (SlotCount != other.SlotCount) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (SlotLevel != 0) hash ^= SlotLevel.GetHashCode();
-      if (SlotCount != 0) hash ^= SlotCount.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (SlotLevel != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(SlotLevel);
-      }
-      if (SlotCount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(SlotCount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SlotLevel != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(SlotLevel);
-      }
-      if (SlotCount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(SlotCount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (SlotLevel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SlotLevel);
-      }
-      if (SlotCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SlotCount);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TaskOptionSlotLevelCount other) {
-      if (other == null) {
-        return;
-      }
-      if (other.SlotLevel != 0) {
-        SlotLevel = other.SlotLevel;
-      }
-      if (other.SlotCount != 0) {
-        SlotCount = other.SlotCount;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            SlotLevel = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            SlotCount = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            SlotLevel = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            SlotCount = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class TaskOptionCraftSkillLevel : pb::IMessage<TaskOptionCraftSkillLevel>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<TaskOptionCraftSkillLevel> _parser = new pb::MessageParser<TaskOptionCraftSkillLevel>(() => new TaskOptionCraftSkillLevel());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TaskOptionCraftSkillLevel> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionCraftSkillLevel() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionCraftSkillLevel(TaskOptionCraftSkillLevel other) : this() {
-      skillId_ = other.skillId_;
+    public TaskOptionTalentTargetNodeLV(TaskOptionTalentTargetNodeLV other) : this() {
+      nodeId_ = other.nodeId_;
       level_ = other.level_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TaskOptionCraftSkillLevel Clone() {
-      return new TaskOptionCraftSkillLevel(this);
+    public TaskOptionTalentTargetNodeLV Clone() {
+      return new TaskOptionTalentTargetNodeLV(this);
     }
 
-    /// <summary>Field number for the "skillId" field.</summary>
-    public const int SkillIdFieldNumber = 1;
-    private int skillId_;
+    /// <summary>Field number for the "nodeId" field.</summary>
+    public const int NodeIdFieldNumber = 1;
+    private int nodeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SkillId {
-      get { return skillId_; }
+    public int NodeId {
+      get { return nodeId_; }
       set {
-        skillId_ = value;
+        nodeId_ = value;
       }
     }
 
@@ -1191,19 +953,19 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as TaskOptionCraftSkillLevel);
+      return Equals(other as TaskOptionTalentTargetNodeLV);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TaskOptionCraftSkillLevel other) {
+    public bool Equals(TaskOptionTalentTargetNodeLV other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (SkillId != other.SkillId) return false;
+      if (NodeId != other.NodeId) return false;
       if (Level != other.Level) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1212,7 +974,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (SkillId != 0) hash ^= SkillId.GetHashCode();
+      if (NodeId != 0) hash ^= NodeId.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1232,9 +994,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (SkillId != 0) {
+      if (NodeId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(SkillId);
+        output.WriteInt32(NodeId);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -1250,9 +1012,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SkillId != 0) {
+      if (NodeId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(SkillId);
+        output.WriteInt32(NodeId);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -1268,8 +1030,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (SkillId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkillId);
+      if (NodeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NodeId);
       }
       if (Level != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
@@ -1282,12 +1044,12 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TaskOptionCraftSkillLevel other) {
+    public void MergeFrom(TaskOptionTalentTargetNodeLV other) {
       if (other == null) {
         return;
       }
-      if (other.SkillId != 0) {
-        SkillId = other.SkillId;
+      if (other.NodeId != 0) {
+        NodeId = other.NodeId;
       }
       if (other.Level != 0) {
         Level = other.Level;
@@ -1308,7 +1070,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            SkillId = input.ReadInt32();
+            NodeId = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1331,7 +1093,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            SkillId = input.ReadInt32();
+            NodeId = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1359,7 +1121,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[5]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1585,7 +1347,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[6]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1811,7 +1573,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[7]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2037,7 +1799,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[8]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2337,7 +2099,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[9]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2374,14 +2136,11 @@ namespace GameMessageCore {
         case DataOneofCase.KillMonster:
           KillMonster = other.KillMonster.Clone();
           break;
-        case DataOneofCase.TargetSlotLevel:
-          TargetSlotLevel = other.TargetSlotLevel.Clone();
+        case DataOneofCase.TalentLevel:
+          TalentLevel = other.TalentLevel.Clone();
           break;
-        case DataOneofCase.SlotLevelCount:
-          SlotLevelCount = other.SlotLevelCount.Clone();
-          break;
-        case DataOneofCase.CraftSkillLevel:
-          CraftSkillLevel = other.CraftSkillLevel.Clone();
+        case DataOneofCase.NodeLevel:
+          NodeLevel = other.NodeLevel.Clone();
           break;
         case DataOneofCase.UseRecipe:
           UseRecipe = other.UseRecipe.Clone();
@@ -2496,48 +2255,33 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "targetSlotLevel" field.</summary>
-    public const int TargetSlotLevelFieldNumber = 16;
+    /// <summary>Field number for the "talentLevel" field.</summary>
+    public const int TalentLevelFieldNumber = 16;
     /// <summary>
-    /// 指定插槽达到某等级 
+    /// 指定专精等级达到多少级 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskOptionTargetSlotLevel TargetSlotLevel {
-      get { return dataCase_ == DataOneofCase.TargetSlotLevel ? (global::GameMessageCore.TaskOptionTargetSlotLevel) data_ : null; }
+    public global::GameMessageCore.TaskOptionTalentTargetLv TalentLevel {
+      get { return dataCase_ == DataOneofCase.TalentLevel ? (global::GameMessageCore.TaskOptionTalentTargetLv) data_ : null; }
       set {
         data_ = value;
-        dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.TargetSlotLevel;
+        dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.TalentLevel;
       }
     }
 
-    /// <summary>Field number for the "slotLevelCount" field.</summary>
-    public const int SlotLevelCountFieldNumber = 17;
+    /// <summary>Field number for the "nodeLevel" field.</summary>
+    public const int NodeLevelFieldNumber = 17;
     /// <summary>
-    /// 指定数量插槽都达到某等级
+    /// 指定专精节点升级到多少级
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskOptionSlotLevelCount SlotLevelCount {
-      get { return dataCase_ == DataOneofCase.SlotLevelCount ? (global::GameMessageCore.TaskOptionSlotLevelCount) data_ : null; }
+    public global::GameMessageCore.TaskOptionTalentTargetNodeLV NodeLevel {
+      get { return dataCase_ == DataOneofCase.NodeLevel ? (global::GameMessageCore.TaskOptionTalentTargetNodeLV) data_ : null; }
       set {
         data_ = value;
-        dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.SlotLevelCount;
-      }
-    }
-
-    /// <summary>Field number for the "craftSkillLevel" field.</summary>
-    public const int CraftSkillLevelFieldNumber = 18;
-    /// <summary>
-    /// 指定合成技能达到某等级
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskOptionCraftSkillLevel CraftSkillLevel {
-      get { return dataCase_ == DataOneofCase.CraftSkillLevel ? (global::GameMessageCore.TaskOptionCraftSkillLevel) data_ : null; }
-      set {
-        data_ = value;
-        dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.CraftSkillLevel;
+        dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.NodeLevel;
       }
     }
 
@@ -2625,9 +2369,8 @@ namespace GameMessageCore {
       UseItem = 13,
       GetItem = 14,
       KillMonster = 15,
-      TargetSlotLevel = 16,
-      SlotLevelCount = 17,
-      CraftSkillLevel = 18,
+      TalentLevel = 16,
+      NodeLevel = 17,
       UseRecipe = 19,
       RecipeUseCount = 20,
       FinishTaskCount = 21,
@@ -2669,9 +2412,8 @@ namespace GameMessageCore {
       if (!object.Equals(UseItem, other.UseItem)) return false;
       if (!object.Equals(GetItem, other.GetItem)) return false;
       if (!object.Equals(KillMonster, other.KillMonster)) return false;
-      if (!object.Equals(TargetSlotLevel, other.TargetSlotLevel)) return false;
-      if (!object.Equals(SlotLevelCount, other.SlotLevelCount)) return false;
-      if (!object.Equals(CraftSkillLevel, other.CraftSkillLevel)) return false;
+      if (!object.Equals(TalentLevel, other.TalentLevel)) return false;
+      if (!object.Equals(NodeLevel, other.NodeLevel)) return false;
       if (!object.Equals(UseRecipe, other.UseRecipe)) return false;
       if (RecipeUseCount != other.RecipeUseCount) return false;
       if (!object.Equals(FinishTaskCount, other.FinishTaskCount)) return false;
@@ -2691,9 +2433,8 @@ namespace GameMessageCore {
       if (dataCase_ == DataOneofCase.UseItem) hash ^= UseItem.GetHashCode();
       if (dataCase_ == DataOneofCase.GetItem) hash ^= GetItem.GetHashCode();
       if (dataCase_ == DataOneofCase.KillMonster) hash ^= KillMonster.GetHashCode();
-      if (dataCase_ == DataOneofCase.TargetSlotLevel) hash ^= TargetSlotLevel.GetHashCode();
-      if (dataCase_ == DataOneofCase.SlotLevelCount) hash ^= SlotLevelCount.GetHashCode();
-      if (dataCase_ == DataOneofCase.CraftSkillLevel) hash ^= CraftSkillLevel.GetHashCode();
+      if (dataCase_ == DataOneofCase.TalentLevel) hash ^= TalentLevel.GetHashCode();
+      if (dataCase_ == DataOneofCase.NodeLevel) hash ^= NodeLevel.GetHashCode();
       if (dataCase_ == DataOneofCase.UseRecipe) hash ^= UseRecipe.GetHashCode();
       if (dataCase_ == DataOneofCase.RecipeUseCount) hash ^= RecipeUseCount.GetHashCode();
       if (dataCase_ == DataOneofCase.FinishTaskCount) hash ^= FinishTaskCount.GetHashCode();
@@ -2742,17 +2483,13 @@ namespace GameMessageCore {
         output.WriteRawTag(122);
         output.WriteMessage(KillMonster);
       }
-      if (dataCase_ == DataOneofCase.TargetSlotLevel) {
+      if (dataCase_ == DataOneofCase.TalentLevel) {
         output.WriteRawTag(130, 1);
-        output.WriteMessage(TargetSlotLevel);
+        output.WriteMessage(TalentLevel);
       }
-      if (dataCase_ == DataOneofCase.SlotLevelCount) {
+      if (dataCase_ == DataOneofCase.NodeLevel) {
         output.WriteRawTag(138, 1);
-        output.WriteMessage(SlotLevelCount);
-      }
-      if (dataCase_ == DataOneofCase.CraftSkillLevel) {
-        output.WriteRawTag(146, 1);
-        output.WriteMessage(CraftSkillLevel);
+        output.WriteMessage(NodeLevel);
       }
       if (dataCase_ == DataOneofCase.UseRecipe) {
         output.WriteRawTag(154, 1);
@@ -2808,17 +2545,13 @@ namespace GameMessageCore {
         output.WriteRawTag(122);
         output.WriteMessage(KillMonster);
       }
-      if (dataCase_ == DataOneofCase.TargetSlotLevel) {
+      if (dataCase_ == DataOneofCase.TalentLevel) {
         output.WriteRawTag(130, 1);
-        output.WriteMessage(TargetSlotLevel);
+        output.WriteMessage(TalentLevel);
       }
-      if (dataCase_ == DataOneofCase.SlotLevelCount) {
+      if (dataCase_ == DataOneofCase.NodeLevel) {
         output.WriteRawTag(138, 1);
-        output.WriteMessage(SlotLevelCount);
-      }
-      if (dataCase_ == DataOneofCase.CraftSkillLevel) {
-        output.WriteRawTag(146, 1);
-        output.WriteMessage(CraftSkillLevel);
+        output.WriteMessage(NodeLevel);
       }
       if (dataCase_ == DataOneofCase.UseRecipe) {
         output.WriteRawTag(154, 1);
@@ -2868,14 +2601,11 @@ namespace GameMessageCore {
       if (dataCase_ == DataOneofCase.KillMonster) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(KillMonster);
       }
-      if (dataCase_ == DataOneofCase.TargetSlotLevel) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TargetSlotLevel);
+      if (dataCase_ == DataOneofCase.TalentLevel) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TalentLevel);
       }
-      if (dataCase_ == DataOneofCase.SlotLevelCount) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SlotLevelCount);
-      }
-      if (dataCase_ == DataOneofCase.CraftSkillLevel) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CraftSkillLevel);
+      if (dataCase_ == DataOneofCase.NodeLevel) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(NodeLevel);
       }
       if (dataCase_ == DataOneofCase.UseRecipe) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(UseRecipe);
@@ -2935,23 +2665,17 @@ namespace GameMessageCore {
           }
           KillMonster.MergeFrom(other.KillMonster);
           break;
-        case DataOneofCase.TargetSlotLevel:
-          if (TargetSlotLevel == null) {
-            TargetSlotLevel = new global::GameMessageCore.TaskOptionTargetSlotLevel();
+        case DataOneofCase.TalentLevel:
+          if (TalentLevel == null) {
+            TalentLevel = new global::GameMessageCore.TaskOptionTalentTargetLv();
           }
-          TargetSlotLevel.MergeFrom(other.TargetSlotLevel);
+          TalentLevel.MergeFrom(other.TalentLevel);
           break;
-        case DataOneofCase.SlotLevelCount:
-          if (SlotLevelCount == null) {
-            SlotLevelCount = new global::GameMessageCore.TaskOptionSlotLevelCount();
+        case DataOneofCase.NodeLevel:
+          if (NodeLevel == null) {
+            NodeLevel = new global::GameMessageCore.TaskOptionTalentTargetNodeLV();
           }
-          SlotLevelCount.MergeFrom(other.SlotLevelCount);
-          break;
-        case DataOneofCase.CraftSkillLevel:
-          if (CraftSkillLevel == null) {
-            CraftSkillLevel = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-          }
-          CraftSkillLevel.MergeFrom(other.CraftSkillLevel);
+          NodeLevel.MergeFrom(other.NodeLevel);
           break;
         case DataOneofCase.UseRecipe:
           if (UseRecipe == null) {
@@ -3042,30 +2766,21 @@ namespace GameMessageCore {
             break;
           }
           case 130: {
-            global::GameMessageCore.TaskOptionTargetSlotLevel subBuilder = new global::GameMessageCore.TaskOptionTargetSlotLevel();
-            if (dataCase_ == DataOneofCase.TargetSlotLevel) {
-              subBuilder.MergeFrom(TargetSlotLevel);
+            global::GameMessageCore.TaskOptionTalentTargetLv subBuilder = new global::GameMessageCore.TaskOptionTalentTargetLv();
+            if (dataCase_ == DataOneofCase.TalentLevel) {
+              subBuilder.MergeFrom(TalentLevel);
             }
             input.ReadMessage(subBuilder);
-            TargetSlotLevel = subBuilder;
+            TalentLevel = subBuilder;
             break;
           }
           case 138: {
-            global::GameMessageCore.TaskOptionSlotLevelCount subBuilder = new global::GameMessageCore.TaskOptionSlotLevelCount();
-            if (dataCase_ == DataOneofCase.SlotLevelCount) {
-              subBuilder.MergeFrom(SlotLevelCount);
+            global::GameMessageCore.TaskOptionTalentTargetNodeLV subBuilder = new global::GameMessageCore.TaskOptionTalentTargetNodeLV();
+            if (dataCase_ == DataOneofCase.NodeLevel) {
+              subBuilder.MergeFrom(NodeLevel);
             }
             input.ReadMessage(subBuilder);
-            SlotLevelCount = subBuilder;
-            break;
-          }
-          case 146: {
-            global::GameMessageCore.TaskOptionCraftSkillLevel subBuilder = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-            if (dataCase_ == DataOneofCase.CraftSkillLevel) {
-              subBuilder.MergeFrom(CraftSkillLevel);
-            }
-            input.ReadMessage(subBuilder);
-            CraftSkillLevel = subBuilder;
+            NodeLevel = subBuilder;
             break;
           }
           case 154: {
@@ -3168,30 +2883,21 @@ namespace GameMessageCore {
             break;
           }
           case 130: {
-            global::GameMessageCore.TaskOptionTargetSlotLevel subBuilder = new global::GameMessageCore.TaskOptionTargetSlotLevel();
-            if (dataCase_ == DataOneofCase.TargetSlotLevel) {
-              subBuilder.MergeFrom(TargetSlotLevel);
+            global::GameMessageCore.TaskOptionTalentTargetLv subBuilder = new global::GameMessageCore.TaskOptionTalentTargetLv();
+            if (dataCase_ == DataOneofCase.TalentLevel) {
+              subBuilder.MergeFrom(TalentLevel);
             }
             input.ReadMessage(subBuilder);
-            TargetSlotLevel = subBuilder;
+            TalentLevel = subBuilder;
             break;
           }
           case 138: {
-            global::GameMessageCore.TaskOptionSlotLevelCount subBuilder = new global::GameMessageCore.TaskOptionSlotLevelCount();
-            if (dataCase_ == DataOneofCase.SlotLevelCount) {
-              subBuilder.MergeFrom(SlotLevelCount);
+            global::GameMessageCore.TaskOptionTalentTargetNodeLV subBuilder = new global::GameMessageCore.TaskOptionTalentTargetNodeLV();
+            if (dataCase_ == DataOneofCase.NodeLevel) {
+              subBuilder.MergeFrom(NodeLevel);
             }
             input.ReadMessage(subBuilder);
-            SlotLevelCount = subBuilder;
-            break;
-          }
-          case 146: {
-            global::GameMessageCore.TaskOptionCraftSkillLevel subBuilder = new global::GameMessageCore.TaskOptionCraftSkillLevel();
-            if (dataCase_ == DataOneofCase.CraftSkillLevel) {
-              subBuilder.MergeFrom(CraftSkillLevel);
-            }
-            input.ReadMessage(subBuilder);
-            CraftSkillLevel = subBuilder;
+            NodeLevel = subBuilder;
             break;
           }
           case 154: {
@@ -3255,7 +2961,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[10]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3286,7 +2992,7 @@ namespace GameMessageCore {
       return new TaskOption(this);
     }
 
-    /// <summary>Field number for the "option_cnf" field.</summary>
+    /// <summary>Field number for the "optionCnf" field.</summary>
     public const int OptionCnfFieldNumber = 1;
     private global::GameMessageCore.TaskOptionCnf optionCnf_;
     /// <summary>
@@ -3499,7 +3205,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[11]; }
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3520,8 +3226,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Task(Task other) : this() {
       taskId_ = other.taskId_;
-      taskKind_ = other.taskKind_;
-      createdAtSec_ = other.createdAtSec_;
+      createdSec_ = other.createdSec_;
       options_ = other.options_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3532,7 +3237,7 @@ namespace GameMessageCore {
       return new Task(this);
     }
 
-    /// <summary>Field number for the "task_id" field.</summary>
+    /// <summary>Field number for the "taskId" field.</summary>
     public const int TaskIdFieldNumber = 1;
     private int taskId_;
     /// <summary>
@@ -3547,40 +3252,25 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "task_kind" field.</summary>
-    public const int TaskKindFieldNumber = 2;
-    private global::GameMessageCore.TaskOptionType taskKind_ = global::GameMessageCore.TaskOptionType.UnknownTaskOptionType;
-    /// <summary>
-    /// 任务类型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.TaskOptionType TaskKind {
-      get { return taskKind_; }
-      set {
-        taskKind_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "created_at_sec" field.</summary>
-    public const int CreatedAtSecFieldNumber = 3;
-    private long createdAtSec_;
+    /// <summary>Field number for the "createdSec" field.</summary>
+    public const int CreatedSecFieldNumber = 2;
+    private long createdSec_;
     /// <summary>
     /// 任务的接取时间
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long CreatedAtSec {
-      get { return createdAtSec_; }
+    public long CreatedSec {
+      get { return createdSec_; }
       set {
-        createdAtSec_ = value;
+        createdSec_ = value;
       }
     }
 
     /// <summary>Field number for the "options" field.</summary>
-    public const int OptionsFieldNumber = 4;
+    public const int OptionsFieldNumber = 3;
     private static readonly pb::FieldCodec<global::GameMessageCore.TaskOption> _repeated_options_codec
-        = pb::FieldCodec.ForMessage(34, global::GameMessageCore.TaskOption.Parser);
+        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.TaskOption.Parser);
     private readonly pbc::RepeatedField<global::GameMessageCore.TaskOption> options_ = new pbc::RepeatedField<global::GameMessageCore.TaskOption>();
     /// <summary>
     /// 子项信息
@@ -3607,8 +3297,7 @@ namespace GameMessageCore {
         return true;
       }
       if (TaskId != other.TaskId) return false;
-      if (TaskKind != other.TaskKind) return false;
-      if (CreatedAtSec != other.CreatedAtSec) return false;
+      if (CreatedSec != other.CreatedSec) return false;
       if(!options_.Equals(other.options_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3618,8 +3307,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (TaskId != 0) hash ^= TaskId.GetHashCode();
-      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) hash ^= TaskKind.GetHashCode();
-      if (CreatedAtSec != 0L) hash ^= CreatedAtSec.GetHashCode();
+      if (CreatedSec != 0L) hash ^= CreatedSec.GetHashCode();
       hash ^= options_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3643,13 +3331,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
+      if (CreatedSec != 0L) {
         output.WriteRawTag(16);
-        output.WriteEnum((int) TaskKind);
-      }
-      if (CreatedAtSec != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(CreatedAtSec);
+        output.WriteInt64(CreatedSec);
       }
       options_.WriteTo(output, _repeated_options_codec);
       if (_unknownFields != null) {
@@ -3666,13 +3350,9 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
+      if (CreatedSec != 0L) {
         output.WriteRawTag(16);
-        output.WriteEnum((int) TaskKind);
-      }
-      if (CreatedAtSec != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(CreatedAtSec);
+        output.WriteInt64(CreatedSec);
       }
       options_.WriteTo(ref output, _repeated_options_codec);
       if (_unknownFields != null) {
@@ -3688,11 +3368,8 @@ namespace GameMessageCore {
       if (TaskId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TaskId);
       }
-      if (TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TaskKind);
-      }
-      if (CreatedAtSec != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreatedAtSec);
+      if (CreatedSec != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreatedSec);
       }
       size += options_.CalculateSize(_repeated_options_codec);
       if (_unknownFields != null) {
@@ -3710,11 +3387,8 @@ namespace GameMessageCore {
       if (other.TaskId != 0) {
         TaskId = other.TaskId;
       }
-      if (other.TaskKind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
-        TaskKind = other.TaskKind;
-      }
-      if (other.CreatedAtSec != 0L) {
-        CreatedAtSec = other.CreatedAtSec;
+      if (other.CreatedSec != 0L) {
+        CreatedSec = other.CreatedSec;
       }
       options_.Add(other.options_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3737,14 +3411,10 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            TaskKind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
+            CreatedSec = input.ReadInt64();
             break;
           }
-          case 24: {
-            CreatedAtSec = input.ReadInt64();
-            break;
-          }
-          case 34: {
+          case 26: {
             options_.AddEntriesFrom(input, _repeated_options_codec);
             break;
           }
@@ -3768,15 +3438,220 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            TaskKind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
+            CreatedSec = input.ReadInt64();
             break;
           }
-          case 24: {
-            CreatedAtSec = input.ReadInt64();
-            break;
-          }
-          case 34: {
+          case 26: {
             options_.AddEntriesFrom(ref input, _repeated_options_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// 用户已接任务
+  /// </summary>
+  public sealed partial class NormalTaskData : pb::IMessage<NormalTaskData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<NormalTaskData> _parser = new pb::MessageParser<NormalTaskData>(() => new NormalTaskData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<NormalTaskData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NormalTaskData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NormalTaskData(NormalTaskData other) : this() {
+      finishTasks_ = other.finishTasks_.Clone();
+      curTasks_ = other.curTasks_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NormalTaskData Clone() {
+      return new NormalTaskData(this);
+    }
+
+    /// <summary>Field number for the "finishTasks" field.</summary>
+    public const int FinishTasksFieldNumber = 1;
+    private static readonly pb::FieldCodec<int> _repeated_finishTasks_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> finishTasks_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> FinishTasks {
+      get { return finishTasks_; }
+    }
+
+    /// <summary>Field number for the "curTasks" field.</summary>
+    public const int CurTasksFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::GameMessageCore.Task> _repeated_curTasks_codec
+        = pb::FieldCodec.ForMessage(18, global::GameMessageCore.Task.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.Task> curTasks_ = new pbc::RepeatedField<global::GameMessageCore.Task>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.Task> CurTasks {
+      get { return curTasks_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as NormalTaskData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(NormalTaskData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!finishTasks_.Equals(other.finishTasks_)) return false;
+      if(!curTasks_.Equals(other.curTasks_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= finishTasks_.GetHashCode();
+      hash ^= curTasks_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      finishTasks_.WriteTo(output, _repeated_finishTasks_codec);
+      curTasks_.WriteTo(output, _repeated_curTasks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      finishTasks_.WriteTo(ref output, _repeated_finishTasks_codec);
+      curTasks_.WriteTo(ref output, _repeated_curTasks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += finishTasks_.CalculateSize(_repeated_finishTasks_codec);
+      size += curTasks_.CalculateSize(_repeated_curTasks_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(NormalTaskData other) {
+      if (other == null) {
+        return;
+      }
+      finishTasks_.Add(other.finishTasks_);
+      curTasks_.Add(other.curTasks_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            finishTasks_.AddEntriesFrom(input, _repeated_finishTasks_codec);
+            break;
+          }
+          case 18: {
+            curTasks_.AddEntriesFrom(input, _repeated_curTasks_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            finishTasks_.AddEntriesFrom(ref input, _repeated_finishTasks_codec);
+            break;
+          }
+          case 18: {
+            curTasks_.AddEntriesFrom(ref input, _repeated_curTasks_codec);
             break;
           }
         }
@@ -3822,8 +3697,7 @@ namespace GameMessageCore {
     public TaskList(TaskList other) : this() {
       id_ = other.id_;
       kind_ = other.kind_;
-      canReceive_ = other.canReceive_;
-      doing_ = other.doing_;
+      talentKind_ = other.talentKind_;
       rate_ = other.rate_;
       curTask_ = other.curTask_ != null ? other.curTask_.Clone() : null;
       receiveReward_ = other.receiveReward_;
@@ -3866,38 +3740,23 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "can_receive" field.</summary>
-    public const int CanReceiveFieldNumber = 3;
-    private bool canReceive_;
+    /// <summary>Field number for the "talentKind" field.</summary>
+    public const int TalentKindFieldNumber = 3;
+    private global::GameMessageCore.TalentType talentKind_ = global::GameMessageCore.TalentType.Unknown;
     /// <summary>
-    /// 任务链是否可以在接取
+    /// 专精类型
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool CanReceive {
-      get { return canReceive_; }
+    public global::GameMessageCore.TalentType TalentKind {
+      get { return talentKind_; }
       set {
-        canReceive_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "doing" field.</summary>
-    public const int DoingFieldNumber = 4;
-    private bool doing_;
-    /// <summary>
-    /// 任务链是否正在进行
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Doing {
-      get { return doing_; }
-      set {
-        doing_ = value;
+        talentKind_ = value;
       }
     }
 
     /// <summary>Field number for the "rate" field.</summary>
-    public const int RateFieldNumber = 5;
+    public const int RateFieldNumber = 6;
     private int rate_;
     /// <summary>
     /// 进度
@@ -3912,7 +3771,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "cur_task" field.</summary>
-    public const int CurTaskFieldNumber = 6;
+    public const int CurTaskFieldNumber = 7;
     private global::GameMessageCore.Task curTask_;
     /// <summary>
     /// current task
@@ -3926,8 +3785,8 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "receive_reward" field.</summary>
-    public const int ReceiveRewardFieldNumber = 7;
+    /// <summary>Field number for the "receiveReward" field.</summary>
+    public const int ReceiveRewardFieldNumber = 8;
     private int receiveReward_;
     /// <summary>
     /// 任务奖励的领取进度(0, 1, 2)
@@ -3958,8 +3817,7 @@ namespace GameMessageCore {
       }
       if (Id != other.Id) return false;
       if (Kind != other.Kind) return false;
-      if (CanReceive != other.CanReceive) return false;
-      if (Doing != other.Doing) return false;
+      if (TalentKind != other.TalentKind) return false;
       if (Rate != other.Rate) return false;
       if (!object.Equals(CurTask, other.CurTask)) return false;
       if (ReceiveReward != other.ReceiveReward) return false;
@@ -3972,8 +3830,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Kind != global::GameMessageCore.TaskListType.Unknown) hash ^= Kind.GetHashCode();
-      if (CanReceive != false) hash ^= CanReceive.GetHashCode();
-      if (Doing != false) hash ^= Doing.GetHashCode();
+      if (TalentKind != global::GameMessageCore.TalentType.Unknown) hash ^= TalentKind.GetHashCode();
       if (Rate != 0) hash ^= Rate.GetHashCode();
       if (curTask_ != null) hash ^= CurTask.GetHashCode();
       if (ReceiveReward != 0) hash ^= ReceiveReward.GetHashCode();
@@ -4003,24 +3860,20 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteEnum((int) Kind);
       }
-      if (CanReceive != false) {
+      if (TalentKind != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(24);
-        output.WriteBool(CanReceive);
-      }
-      if (Doing != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(Doing);
+        output.WriteEnum((int) TalentKind);
       }
       if (Rate != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(Rate);
       }
       if (curTask_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(CurTask);
       }
       if (ReceiveReward != 0) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt32(ReceiveReward);
       }
       if (_unknownFields != null) {
@@ -4041,24 +3894,20 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteEnum((int) Kind);
       }
-      if (CanReceive != false) {
+      if (TalentKind != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(24);
-        output.WriteBool(CanReceive);
-      }
-      if (Doing != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(Doing);
+        output.WriteEnum((int) TalentKind);
       }
       if (Rate != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(Rate);
       }
       if (curTask_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteMessage(CurTask);
       }
       if (ReceiveReward != 0) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt32(ReceiveReward);
       }
       if (_unknownFields != null) {
@@ -4077,11 +3926,8 @@ namespace GameMessageCore {
       if (Kind != global::GameMessageCore.TaskListType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Kind);
       }
-      if (CanReceive != false) {
-        size += 1 + 1;
-      }
-      if (Doing != false) {
-        size += 1 + 1;
+      if (TalentKind != global::GameMessageCore.TalentType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TalentKind);
       }
       if (Rate != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rate);
@@ -4110,11 +3956,8 @@ namespace GameMessageCore {
       if (other.Kind != global::GameMessageCore.TaskListType.Unknown) {
         Kind = other.Kind;
       }
-      if (other.CanReceive != false) {
-        CanReceive = other.CanReceive;
-      }
-      if (other.Doing != false) {
-        Doing = other.Doing;
+      if (other.TalentKind != global::GameMessageCore.TalentType.Unknown) {
+        TalentKind = other.TalentKind;
       }
       if (other.Rate != 0) {
         Rate = other.Rate;
@@ -4152,25 +3995,21 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            CanReceive = input.ReadBool();
+            TalentKind = (global::GameMessageCore.TalentType) input.ReadEnum();
             break;
           }
-          case 32: {
-            Doing = input.ReadBool();
-            break;
-          }
-          case 40: {
+          case 48: {
             Rate = input.ReadInt32();
             break;
           }
-          case 50: {
+          case 58: {
             if (curTask_ == null) {
               CurTask = new global::GameMessageCore.Task();
             }
             input.ReadMessage(CurTask);
             break;
           }
-          case 56: {
+          case 64: {
             ReceiveReward = input.ReadInt32();
             break;
           }
@@ -4198,207 +4037,22 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            CanReceive = input.ReadBool();
+            TalentKind = (global::GameMessageCore.TalentType) input.ReadEnum();
             break;
           }
-          case 32: {
-            Doing = input.ReadBool();
-            break;
-          }
-          case 40: {
+          case 48: {
             Rate = input.ReadInt32();
             break;
           }
-          case 50: {
+          case 58: {
             if (curTask_ == null) {
               CurTask = new global::GameMessageCore.Task();
             }
             input.ReadMessage(CurTask);
             break;
           }
-          case 56: {
+          case 64: {
             ReceiveReward = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// 用户已接任务列表
-  /// </summary>
-  public sealed partial class PlayerTask : pb::IMessage<PlayerTask>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<PlayerTask> _parser = new pb::MessageParser<PlayerTask>(() => new PlayerTask());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PlayerTask> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.TaskReflection.Descriptor.MessageTypes[13]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerTask() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerTask(PlayerTask other) : this() {
-      taskLists_ = other.taskLists_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerTask Clone() {
-      return new PlayerTask(this);
-    }
-
-    /// <summary>Field number for the "task_lists" field.</summary>
-    public const int TaskListsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::GameMessageCore.TaskList> _repeated_taskLists_codec
-        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.TaskList.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.TaskList> taskLists_ = new pbc::RepeatedField<global::GameMessageCore.TaskList>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.TaskList> TaskLists {
-      get { return taskLists_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as PlayerTask);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PlayerTask other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!taskLists_.Equals(other.taskLists_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= taskLists_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      taskLists_.WriteTo(output, _repeated_taskLists_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      taskLists_.WriteTo(ref output, _repeated_taskLists_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += taskLists_.CalculateSize(_repeated_taskLists_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PlayerTask other) {
-      if (other == null) {
-        return;
-      }
-      taskLists_.Add(other.taskLists_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            taskLists_.AddEntriesFrom(input, _repeated_taskLists_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            taskLists_.AddEntriesFrom(ref input, _repeated_taskLists_codec);
             break;
           }
         }

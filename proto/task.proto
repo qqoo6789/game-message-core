@@ -2,6 +2,8 @@ syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
 
+import "talent.proto";
+
  
 
 enum TaskOptionType{
@@ -14,14 +16,7 @@ enum TaskOptionType{
   GetItem = 3;
   // 杀死若干数量的指定怪物
   KillMonster = 4; 
-  //角色达到某等级
-  UserLevel = 5;
-  //指定插槽达到某等级
-  TargetSlotLevel = 6;
-  //指定数量插槽都达到某等级
-  SlotLevelCount = 7;
-  //指定合成技能达到某等级
-  CraftSkillLevel = 8;
+  
   //使用指定的配方合成
   UseRecipe = 9; 
   //累计合成多少次
@@ -32,6 +27,10 @@ enum TaskOptionType{
   TaskListTypeCount = 12;
   //到达指定坐标点指定半径范围内的区域
   TargetPosition = 13;
+  // 指定专精等级达到多少级
+  TalentTargetLv = 14;
+  // 指定专精节点升级到多少级
+  TalentTargetNodeLV = 15;
 }
 
 
@@ -44,18 +43,16 @@ message TaskOptionKillMonster {
   int32           monCid = 1;
   int32           num = 2;
 }
-message TaskOptionTargetSlotLevel{
-  int32           slotPos = 1;
+// 指定专精等级达到多少级
+message TaskOptionTalentTargetLv{
+  TalentType      kind = 1;
   int32           level   = 2;
 }
-message TaskOptionSlotLevelCount{
-  int32           slotLevel = 1;
-  int32           slotCount = 2;
-}
-message TaskOptionCraftSkillLevel{
-  int32           skillId = 1;
+// 指定专精节点升级到多少级
+message TaskOptionTalentTargetNodeLV{
+  int32           nodeId  = 1;
   int32           level   = 2;
-}
+} 
 message TaskOptionUseRecipe{
   int32           recipeId = 1;
   int32           times = 2;
@@ -89,12 +86,10 @@ message TaskOptionCnf {
     TaskOptionItem                    getItem = 14;
     // 杀死若干数量的指定怪物     
     TaskOptionKillMonster             killMonster = 15;
-    // 指定插槽达到某等级 
-    TaskOptionTargetSlotLevel         targetSlotLevel = 16;
-    // 指定数量插槽都达到某等级
-    TaskOptionSlotLevelCount          slotLevelCount = 17;
-    // 指定合成技能达到某等级
-    TaskOptionCraftSkillLevel         craftSkillLevel = 18;
+    // 指定专精等级达到多少级 
+    TaskOptionTalentTargetLv          talentLevel = 16;
+    // 指定专精节点升级到多少级
+    TaskOptionTalentTargetNodeLV      nodeLevel = 17; 
     // 使用指定的配方合成
     TaskOptionUseRecipe               useRecipe = 19;
     // 累计合成多少次
@@ -110,60 +105,47 @@ message TaskOptionCnf {
 
 message TaskOption {
   // 配置
-  TaskOptionCnf option_cnf = 1;
+  TaskOptionCnf optionCnf = 1;
   // 进度
-  int32 rate = 2;
+  int32         rate = 2;
 }
 
 // 任务
 message Task {
   // 任务 ID
-  int32     task_id = 1;
-  // 任务类型
-  TaskOptionType  task_kind = 2;
+  int32           taskId = 1;
   // 任务的接取时间
-  int64     created_at_sec = 3;
+  int64           createdSec = 2;
   // 子项信息
-  repeated  TaskOption options = 4;
+  repeated  TaskOption  options = 3;
+}
+
+// 用户已接任务
+message NormalTaskData {
+  repeated  int32  finishTasks = 1;
+  repeated  Task   curTasks    = 2;
 }
 
 enum TaskListType {
   TaskListTypeUnknown = 0;
   // 每日任务
-  TaskListTypeDaily = 1;
+  Daily = 1;
   // 悬赏任务
-  TaskListTypeRewarded = 2;
-  // 主线任务(引导任务)
-  TaskListTypeGuide = 3;
+  Rewarded = 2; 
 }
 
 message TaskList{
   // task list id
-  int32 id = 1;
+  int32         id = 1;
   // task list type
-  TaskListType kind = 2;
-  // 任务链是否可以在接取
-  bool can_receive = 3;
-  // 任务链是否正在进行
-  bool doing  = 4;
+  TaskListType  kind = 2;
+  // 专精类型
+  TalentType    talentKind = 3; 
   // 进度
-  int32 rate = 5;
+  int32         rate = 6;
   // current task
-  Task cur_task = 6;
+  Task          cur_task = 7;
   // 任务奖励的领取进度(0, 1, 2)
-  int32  receive_reward = 7;
+  int32         receiveReward = 8;
 }
-
-
-// 用户已接任务列表
-message PlayerTask {
-  repeated  TaskList task_lists = 1;
-}
-
-
-
-
-
-
-
 

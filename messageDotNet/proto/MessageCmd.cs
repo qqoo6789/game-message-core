@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKqYPCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvMPCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -61,14 +61,16 @@ namespace GameMessageCore {
             "gAwSHAoWQnJvYWRDYXN0Q2hhbmdlU2VydmljZRDFgAwSIAoaQnJvYWRDYXN0",
             "SG9tZURhdGFJbml0QmF0Y2gQyYAMEh4KGEJyb2FkQ2FzdEhvbWVTa2lsbFJl",
             "c3VsdBDRgAwSFQoPUXVlcnlUYWxlbnRUcmVlENOADBIfChlCcm9hZENhc3RU",
-            "YWxlbnRUcmVlVXBkYXRlENWADBIPCglTZWxmVGFza3MQgYAQEh0KF0Jyb2Fk",
-            "Q2FzdFVwZGF0ZVRhc2tMaXN0EIOAEBIQCgpBY2NlcHRUYXNrEIWAEBIVCg9B",
-            "YmFuZG9ubWVudFRhc2sQh4AQEhAKClRhc2tSZXdhcmQQiYAQEhQKDlRhc2tM",
-            "aXN0UmV3YXJkEJGAEBIZChNVcGdyYWRlVGFza1Byb2dyZXNzEJOAEBIZChNC",
-            "cm9hZENhc3RUYXNrUmV3YXJkEJWAEBIVCg9TZW5kQ2hhdE1lc3NhZ2UQgYAU",
-            "EhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQSIAoaQnJvYWRDYXN0UmVt",
-            "b3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2FzdFVwZGF0ZUNoYXRTdGF0",
-            "ZRCFgBQSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+            "YWxlbnRUcmVlVXBkYXRlENWADBIPCglTZWxmVGFza3MQgYAQEhkKE0Jyb2Fk",
+            "Q2FzdFVwZGF0ZVRhc2sQg4AQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0",
+            "EISAEBIQCgpBY2NlcHRUYXNrEIWAEBIUCg5BY2NlcHRUYXNrTGlzdBCHgBAS",
+            "EQoLQWJhbmRvblRhc2sQiYAQEhUKD0FiYW5kb25UYXNrTGlzdBCRgBASEAoK",
+            "VGFza1Jld2FyZBCTgBASGQoTVXBncmFkZVRhc2tQcm9ncmVzcxCVgBASGQoT",
+            "QnJvYWRDYXN0VGFza1Jld2FyZBCXgBASHQoXQnJvYWRDYXN0VGFza0xpc3RS",
+            "ZXdhcmQQmYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0",
+            "Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2Fn",
+            "ZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5n",
+            "EIGAGGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -257,33 +259,45 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("SelfTasks")] SelfTasks = 262145,
     /// <summary>
+    /// 任务  进度更新(推送)
+    /// </summary>
+    [pbr::OriginalName("BroadCastUpdateTask")] BroadCastUpdateTask = 262147,
+    /// <summary>
     /// 任务链进度更新(推送)
     /// </summary>
-    [pbr::OriginalName("BroadCastUpdateTaskList")] BroadCastUpdateTaskList = 262147,
+    [pbr::OriginalName("BroadCastUpdateTaskList")] BroadCastUpdateTaskList = 262148,
     /// <summary>
     /// 领取任务
     /// </summary>
     [pbr::OriginalName("AcceptTask")] AcceptTask = 262149,
     /// <summary>
+    /// 领取任务链任务
+    /// </summary>
+    [pbr::OriginalName("AcceptTaskList")] AcceptTaskList = 262151,
+    /// <summary>
     /// 放弃任务(任务有保护时间)
     /// </summary>
-    [pbr::OriginalName("AbandonmentTask")] AbandonmentTask = 262151,
+    [pbr::OriginalName("AbandonTask")] AbandonTask = 262153,
+    /// <summary>
+    /// 放弃任务链的任务(任务有保护时间)
+    /// </summary>
+    [pbr::OriginalName("AbandonTaskList")] AbandonTaskList = 262161,
     /// <summary>
     /// 获取任务奖励(附带提交任务功能)
     /// </summary>
-    [pbr::OriginalName("TaskReward")] TaskReward = 262153,
-    /// <summary>
-    /// 获取任务链奖励
-    /// </summary>
-    [pbr::OriginalName("TaskListReward")] TaskListReward = 262161,
+    [pbr::OriginalName("TaskReward")] TaskReward = 262163,
     /// <summary>
     /// 上报更新任务进度
     /// </summary>
-    [pbr::OriginalName("UpgradeTaskProgress")] UpgradeTaskProgress = 262163,
+    [pbr::OriginalName("UpgradeTaskProgress")] UpgradeTaskProgress = 262165,
     /// <summary>
     /// 推送获取的任务奖励
     /// </summary>
-    [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262165,
+    [pbr::OriginalName("BroadCastTaskReward")] BroadCastTaskReward = 262167,
+    /// <summary>
+    /// 推送获取的任务链奖励
+    /// </summary>
+    [pbr::OriginalName("BroadCastTaskListReward")] BroadCastTaskListReward = 262169,
     /// <summary>
     ///chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
     /// </summary>

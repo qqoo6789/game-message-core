@@ -15,25 +15,47 @@ type TaskListTableTaskPool struct {
 	Param     []TaskPoolParam `json:"param"`
 }
 
-type TaskListTableTaskSequence struct {
-	Sequence []int32 `json:"sequence"`
+type TaskListTableRow struct {
+	Id            int32     `gorm:"primaryKey" json:"id"`
+	System        int32     `json:"system"`
+	TalentType    int32     `json:"talentType"`
+	Level         int32     `json:"level"`
+	TaskPoolJson  string    `gorm:"type:text" json:"taskPoolJson"`
+	RewardJson    string    `gorm:"type:text" json:"rewardJson"`
+	ProgressReset bool      `json:"progressReset"`
+	NeedMELD      int32     `json:"needMELD"`
+	CreatedAt     time.Time `json:"createdAt"` // 过期判断条件,
+
+	TaskPool   *TaskListTableTaskPool `gorm:"-" json:"-"`
+	RewardData *TaskReward            `gorm:"-" json:"-"`
 }
 
-type TaskListTableRow struct {
-	UId              uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
-	Id               int32     `json:"id"`
-	Level            int32     `json:"level"`
-	System           int32     `json:"system"`
-	TaskPoolJson     string    `gorm:"type:text" json:"taskPoolJson"`
-	TaskSequenceJson string    `gorm:"type:text" json:"taskSequenceJson"`
-	RewardId         int32     `json:"rewardId"`
-	RewardExp        int32     `json:"rewardExp"`
-	ProgressReset    bool      `json:"progressReset"`
-	NeedMELD         int32     `json:"needMELD"`
-	CreatedAt        time.Time `json:"createdAt"` // 过期判断条件,
+func (p *TaskListTableRow) SetReward(reward *TaskReward) error {
+	if reward == nil {
+		p.RewardData = nil
+		p.RewardJson = ""
+		return nil
+	}
 
-	TaskPool     *TaskListTableTaskPool     `gorm:"-" json:"-"`
-	TaskSequence *TaskListTableTaskSequence `gorm:"-" json:"-"`
+	bs, err := json.Marshal(reward)
+	if err != nil {
+		return err
+	}
+	p.RewardData = reward
+	p.RewardJson = string(bs)
+	return nil
+}
+
+func (p *TaskListTableRow) GetReward() (*TaskReward, error) {
+	if p.RewardData == nil && len(p.RewardJson) > 2 {
+		data := &TaskReward{}
+		err := json.Unmarshal([]byte(p.RewardJson), data)
+		if err != nil {
+			return nil, err
+		}
+		p.RewardData = data
+	}
+	return p.RewardData, nil
 }
 
 func (p *TaskListTableRow) SetTaskPool(taskPool *TaskListTableTaskPool) error {
@@ -65,42 +87,12 @@ func (p *TaskListTableRow) GetTaskPool() (*TaskListTableTaskPool, error) {
 	return p.TaskPool, nil
 }
 
-func (p *TaskListTableRow) SetSequence(taskSequence *TaskListTableTaskSequence) error {
-	if taskSequence == nil {
-		p.TaskSequenceJson = ""
-		p.TaskSequence = nil
-		return nil
-	}
-	bs, err := json.Marshal(taskSequence)
-	if err != nil {
-		return err
-	}
-	p.TaskSequenceJson = string(bs)
-	p.TaskSequence = taskSequence
-	return err
-}
-
-func (p *TaskListTableRow) GetSequence() (*TaskListTableTaskSequence, error) {
-	if p.TaskSequence == nil && len(p.TaskSequenceJson) > 2 {
-		taskSequence := &TaskListTableTaskSequence{}
-		err := json.Unmarshal([]byte(p.TaskSequenceJson), taskSequence)
-		if err != nil {
-			return nil, err
-		}
-
-		p.TaskSequence = taskSequence
-	}
-	return p.TaskSequence, nil
-}
 func (p *TaskListTableRow) Check() error {
 	taskPoolExist := false
 	taskSequenceExist := false
 
 	if p.TaskPool != nil && len(p.TaskPool.Param) > 0 {
 		taskPoolExist = true
-	}
-	if p.TaskSequence != nil && len(p.TaskSequence.Sequence) > 0 {
-		taskSequenceExist = true
 	}
 	if !taskPoolExist && !taskSequenceExist {
 		return fmt.Errorf("task list [%d] task list is empty", p.Id)

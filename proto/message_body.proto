@@ -416,6 +416,7 @@ message BroadCastUpdateAnimalListResponse{
   repeated   uint64               removeAnimals = 3;
 }
 message FreedAnimalRequest{
+  repeated   uint64  animalId = 1;
 }
 message FreedAnimalResponse{
   repeated   uint64  animalId = 1;

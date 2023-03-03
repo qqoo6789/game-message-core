@@ -51,3 +51,30 @@ public class MultiUpdateAnimalBaseDataOutput
     }
 
 }
+
+/// <summary>
+///  GetUserAnimalList  world to main service
+/// </summary>
+[Serializable]
+public class GetUserAnimalListInput
+{
+    public long UserId;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class GetUserAnimalListOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public long UserId;
+    public GrpcAnimalBaseData[] Animals;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+}

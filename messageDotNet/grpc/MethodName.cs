@@ -50,6 +50,10 @@ public static class MainServiceAction
     /// 批量存储animal基础信息
     /// </summary>
     public const string UPDATE_ANIMAL_BASE_DATA = "MainServiceActionMultiUpdateAnimalBaseData";
+    /// <summary>
+    /// 查询玩家animal列表信息(主要是大世界抓捕时使用)
+    /// </summary>
+    public const string GET_USER_ANIMAL_LIST = "MainServiceActionGetUserAnimalList";
 
 }
 

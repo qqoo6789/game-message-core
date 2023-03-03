@@ -24,3 +24,14 @@ type MultiUpdateAnimalBaseDataOutput struct {
 	Success bool   `json:"success"`
 	ErrMsg  string `json:"errMsg"`
 }
+
+//  GetUserAnimalList  world to main service
+type GetUserAnimalListInput struct {
+	UserId int64 `json:"userId"`
+}
+type GetUserAnimalListOutput struct {
+	Success bool                           `json:"success"`
+	ErrMsg  string                         `json:"errMsg"`
+	UserId int64 `json:"userId"`
+	Animals []base_data.GrpcAnimalBaseData `json:"animals"`
+}

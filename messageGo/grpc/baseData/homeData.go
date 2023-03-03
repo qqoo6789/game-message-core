@@ -10,8 +10,9 @@ type GrpcAnimalBaseData struct {
 
 // home data
 type GrpcHomeData struct {
-	SoilJson     string               `json:"soilJson"`
-	ResourceJson string               `json:"resourceJson"`
-	AnimalJson   string               `json:"animalJson"`
-	AnimalList   []GrpcAnimalBaseData `json:"animalList"`
+	SoilJson        string               `json:"soilJson"`
+	ResourceJson    string               `json:"resourceJson"`
+	AnimalJson      string               `json:"animalJson"`
+	AnimalSceneJson string               `json:"animalSceneJson"`
+	AnimalList      []GrpcAnimalBaseData `json:"animalList"`
 }

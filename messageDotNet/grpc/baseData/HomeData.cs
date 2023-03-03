@@ -25,6 +25,7 @@ public class GrpcHomeData
     public string SoilJson;
     public string ResourceJson;
     public string AnimalJson;
+    public string AnimalSceneJson;
     public GrpcAnimalBaseData[] AnimalList;
 
     public string ToJson()

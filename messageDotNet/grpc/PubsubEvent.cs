@@ -107,6 +107,17 @@ public static class SubscriptionEvent
     public const string ADD_TALENT_EXP = "EventTopicAddTalentExp";
 
 
+    /// <summary>
+    /// freed animal event
+    /// </summary>
+    public const string FREED_ANIMAL = "EventTopicFreedAnimal";
+
+    /// <summary>
+    /// Capture Animal event
+    /// </summary>
+    public const string CAPTURE_ANIMAL = "EventTopicCaptureAnimal";
+
+
 
 }
 

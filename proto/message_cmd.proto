@@ -66,8 +66,12 @@ enum EnvelopeType {
     UpgradeTalentNode               = 0x010059;     // 解锁/升级 天赋节点
     QueryTalentExp                  = 0x010061;     // 查询天赋经验
     BroadCastUpTalentExp            = 0x010063;     // 广播更新天赋经验
+    QueryAnimalList                 = 0x010065;     // 请求Animal列表
+    BroadCastUpdateAnimalList       = 0x010067;     // 广播批量更新Animal列表(add | update | remove)
+    FreedAnimal                     = 0x010069;     // 释放Animal
 
-
+    
+ 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayer                     = 0x020001;
@@ -108,6 +112,8 @@ enum EnvelopeType {
     BroadCastAnimalAutoProduce      = 0x030061;     // 广播动物自动生产
     BroadCastPickupDrop             = 0x030063;     // 广播拾取掉落物
     AnimalSpecialAction             = 0x030065;     // 请求动物特殊行为
+    CaptureAnimal                   = 0x030067;     // 抓捕Animal(同步可能释放一个 Animal) to scene service
+
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************

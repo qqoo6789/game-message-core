@@ -92,6 +92,11 @@ message Envelope {
     QueryTalentExpResponse            query_talent_exp_response             = 0x010062;
     BroadCastUpTalentExpResponse      broad_cast_up_talent_exp_response     = 0x010063;
 
+    QueryAnimalListRequest            query_animal_list_request              = 0x010065;
+    QueryAnimalListResponse           query_animal_list_response             = 0x010066;
+    BroadCastUpdateAnimalListResponse broad_cast_update_animal_list_response = 0x010067;
+    FreedAnimalRequest                freed_animal_request                   = 0x010069;
+    FreedAnimalResponse               freed_animal_response                  = 0x010070;
 
 
 
@@ -149,6 +154,9 @@ message Envelope {
     BroadCastPickupDropResponse             broad_cast_pickup_drop_response               = 0x030063;
     AnimalSpecialActionRequest              animal_special_action_request                 = 0x030065;
     AnimalSpecialActionResponse             animal_special_action_response                = 0x030066;
+    CaptureAnimalRequest                    capture_animal_request                        = 0x030067;
+    CaptureAnimalResponse                   capture_animal_response                       = 0x030068;
+
  
 
 
@@ -396,6 +404,22 @@ message BroadCastUpTalentExpResponse{
    repeated TalentExp      updateExps = 1;
 } 
 
+// 家园动物相关
+message QueryAnimalListRequest{
+}
+message QueryAnimalListResponse{
+  repeated   ProxyAnimalBaseData  animals = 1;
+}
+message BroadCastUpdateAnimalListResponse{
+  repeated   ProxyAnimalBaseData  addAnimals = 1;
+  repeated   ProxyAnimalBaseData  updateAnimals = 2;
+  repeated   uint64               removeAnimals = 3;
+}
+message FreedAnimalRequest{
+}
+message FreedAnimalResponse{
+  repeated   uint64  animalId = 1;
+}
 
 
 
@@ -546,18 +570,6 @@ message BroadCastPickupDropResponse
  }
 }
 
-message AnimalSpecialActionRequest
-{
-  uint64 animalId = 1;
-  AnimalSpecialActionType actionType = 2;
-}
-
-message AnimalSpecialActionResponse
-{
-  uint64 animalId = 1;
-  AnimalSpecialActionType actionType = 2;
-}
-
 message BroadCastInitMapElementResponse {
   // 视野内新增的实体列表
   repeated EntityWithLocation entity = 1; //实体
@@ -666,6 +678,24 @@ message BroadCastTalentTreeUpdateResponse{
   repeated TalentLevel      levelData = 1;
   repeated TalentTreeUpdate upTrees = 2;
 }      
+
+message AnimalSpecialActionRequest
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
+}
+message AnimalSpecialActionResponse
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
+}
+
+// 抓捕Animal(同步可能释放一个 Animal) to scene service
+message CaptureAnimalRequest{
+  repeated uint64              freedAnimalIds = 1; 
+  repeated ProxyAnimalBaseData captrueAnimals = 2;
+}        
+message CaptureAnimalResponse{}  
 
 
 

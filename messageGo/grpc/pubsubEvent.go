@@ -38,4 +38,8 @@ const (
 	// update user talent data event
 	SubscriptionEventUpdateTalent SubscriptionEvent = "EventTopicUpdateTalent"
 	SubscriptionEventAddTalentExp SubscriptionEvent = "EventTopicAddTalentExp"
+
+	// Capture & FREED Animal Event
+	SubscriptionEventFreedAnimal   SubscriptionEvent = "EventTopicFreedAnimal"
+	SubscriptionEventCaptureAnimal SubscriptionEvent = "EventTopicCaptureAnimal"
 )

@@ -14,3 +14,13 @@ type MainServiceActionGetHomeDataOutput struct {
 	UserId  int64                  `json:"userId"`
 	Data    base_data.GrpcHomeData `json:"data"`
 }
+
+// call main service save animal list data
+type MultiUpdateAnimalBaseDataInput struct {
+	UserId  int64                          `json:"userId"`
+	Animals []base_data.GrpcAnimalBaseData `json:"animals"`
+}
+type MultiUpdateAnimalBaseDataOutput struct {
+	Success bool   `json:"success"`
+	ErrMsg  string `json:"errMsg"`
+}

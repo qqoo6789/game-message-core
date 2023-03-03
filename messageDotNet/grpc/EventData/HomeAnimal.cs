@@ -19,6 +19,8 @@ public class FreedAnimalEvent
 public class CaptureAnimalEvent
 {
     public long MsgVersion;
+    public string ServiceAppId;
+    public int MapId;
     public long UserId;
     public GrpcAnimalBaseData FreedAnimal;
     public GrpcAnimalBaseData CaptureAnimal;

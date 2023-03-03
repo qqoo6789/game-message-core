@@ -61,10 +61,12 @@ namespace GameMessageCore {
             "GgoScmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3Vy",
             "Y2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29s",
             "bGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpB",
-            "bmltYWxCb3dsEAQSCgoGQW5pbWFsEAhiBnByb3RvMw=="));
+            "bmltYWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lhbEFjdGlv",
+            "blR5cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3duEAASJQoh",
+            "QW5pbWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
@@ -101,6 +103,14 @@ namespace GameMessageCore {
     /// 动物
     /// </summary>
     [pbr::OriginalName("Animal")] Animal = 8,
+  }
+
+  public enum AnimalSpecialActionType {
+    [pbr::OriginalName("AnimalSpecialActionTypeUnknown")] Unknown = 0,
+    /// <summary>
+    /// 触摸死亡动物
+    /// </summary>
+    [pbr::OriginalName("AnimalSpecialActionTypeTouchDeath")] TouchDeath = 1,
   }
 
   #endregion

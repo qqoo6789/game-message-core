@@ -79,6 +79,53 @@ func (CollectResourceType) EnumDescriptor() ([]byte, []int) {
 	return file_home_proto_rawDescGZIP(), []int{0}
 }
 
+type AnimalSpecialActionType int32
+
+const (
+	AnimalSpecialActionType_AnimalSpecialActionTypeUnknown AnimalSpecialActionType = 0
+	// 触摸死亡动物
+	AnimalSpecialActionType_AnimalSpecialActionTypeTouchDeath AnimalSpecialActionType = 1
+)
+
+// Enum value maps for AnimalSpecialActionType.
+var (
+	AnimalSpecialActionType_name = map[int32]string{
+		0: "AnimalSpecialActionTypeUnknown",
+		1: "AnimalSpecialActionTypeTouchDeath",
+	}
+	AnimalSpecialActionType_value = map[string]int32{
+		"AnimalSpecialActionTypeUnknown":    0,
+		"AnimalSpecialActionTypeTouchDeath": 1,
+	}
+)
+
+func (x AnimalSpecialActionType) Enum() *AnimalSpecialActionType {
+	p := new(AnimalSpecialActionType)
+	*p = x
+	return p
+}
+
+func (x AnimalSpecialActionType) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (AnimalSpecialActionType) Descriptor() protoreflect.EnumDescriptor {
+	return file_home_proto_enumTypes[1].Descriptor()
+}
+
+func (AnimalSpecialActionType) Type() protoreflect.EnumType {
+	return &file_home_proto_enumTypes[1]
+}
+
+func (x AnimalSpecialActionType) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use AnimalSpecialActionType.Descriptor instead.
+func (AnimalSpecialActionType) EnumDescriptor() ([]byte, []int) {
+	return file_home_proto_rawDescGZIP(), []int{1}
+}
+
 type ProxySoilData struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -1042,9 +1089,15 @@ var file_home_proto_rawDesc = []byte{
 	0x65, 0x54, 0x79, 0x70, 0x65, 0x53, 0x6f, 0x69, 0x6c, 0x10, 0x01, 0x12, 0x10, 0x0a, 0x0c, 0x48,
 	0x6f, 0x6d, 0x65, 0x52, 0x65, 0x73, 0x6f, 0x75, 0x72, 0x63, 0x65, 0x10, 0x02, 0x12, 0x0e, 0x0a,
 	0x0a, 0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x42, 0x6f, 0x77, 0x6c, 0x10, 0x04, 0x12, 0x0a, 0x0a,
-	0x06, 0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x10, 0x08, 0x42, 0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d,
-	0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x47, 0x6f, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06,
-	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x06, 0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x10, 0x08, 0x2a, 0x64, 0x0a, 0x17, 0x41, 0x6e, 0x69,
+	0x6d, 0x61, 0x6c, 0x53, 0x70, 0x65, 0x63, 0x69, 0x61, 0x6c, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e,
+	0x54, 0x79, 0x70, 0x65, 0x12, 0x22, 0x0a, 0x1e, 0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x53, 0x70,
+	0x65, 0x63, 0x69, 0x61, 0x6c, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x54, 0x79, 0x70, 0x65, 0x55,
+	0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e, 0x10, 0x00, 0x12, 0x25, 0x0a, 0x21, 0x41, 0x6e, 0x69, 0x6d,
+	0x61, 0x6c, 0x53, 0x70, 0x65, 0x63, 0x69, 0x61, 0x6c, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x54,
+	0x79, 0x70, 0x65, 0x54, 0x6f, 0x75, 0x63, 0x68, 0x44, 0x65, 0x61, 0x74, 0x68, 0x10, 0x01, 0x42,
+	0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x47, 0x6f, 0x2f, 0x70,
+	0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -1059,35 +1112,36 @@ func file_home_proto_rawDescGZIP() []byte {
 	return file_home_proto_rawDescData
 }
 
-var file_home_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_home_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_home_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
 var file_home_proto_goTypes = []interface{}{
 	(CollectResourceType)(0),              // 0: gameMessageCore.CollectResourceType
-	(*ProxySoilData)(nil),                 // 1: gameMessageCore.ProxySoilData
-	(*CollectResourceBaseInfo)(nil),       // 2: gameMessageCore.CollectResourceBaseInfo
-	(*UseCollectResourceSkillInfo)(nil),   // 3: gameMessageCore.UseCollectResourceSkillInfo
-	(*HomeSoilProgressInfo)(nil),          // 4: gameMessageCore.HomeSoilProgressInfo
-	(*CollectResourceOperateResult)(nil),  // 5: gameMessageCore.CollectResourceOperateResult
-	(*CollectResourceProgressResult)(nil), // 6: gameMessageCore.CollectResourceProgressResult
-	(*CollectResourceExecuteResult)(nil),  // 7: gameMessageCore.CollectResourceExecuteResult
-	(*ProxyAnimalData)(nil),               // 8: gameMessageCore.ProxyAnimalData
-	(*ProxyAnimalBaseData)(nil),           // 9: gameMessageCore.ProxyAnimalBaseData
-	(*ProxyProductData)(nil),              // 10: gameMessageCore.ProxyProductData
-	(*AnimalUpdateData)(nil),              // 11: gameMessageCore.AnimalUpdateData
-	(*AnimalBowlUpdateData)(nil),          // 12: gameMessageCore.AnimalBowlUpdateData
-	(*ItemBaseInfo)(nil),                  // 13: gameMessageCore.ItemBaseInfo
-	(*Vector3)(nil),                       // 14: gameMessageCore.Vector3
+	(AnimalSpecialActionType)(0),          // 1: gameMessageCore.AnimalSpecialActionType
+	(*ProxySoilData)(nil),                 // 2: gameMessageCore.ProxySoilData
+	(*CollectResourceBaseInfo)(nil),       // 3: gameMessageCore.CollectResourceBaseInfo
+	(*UseCollectResourceSkillInfo)(nil),   // 4: gameMessageCore.UseCollectResourceSkillInfo
+	(*HomeSoilProgressInfo)(nil),          // 5: gameMessageCore.HomeSoilProgressInfo
+	(*CollectResourceOperateResult)(nil),  // 6: gameMessageCore.CollectResourceOperateResult
+	(*CollectResourceProgressResult)(nil), // 7: gameMessageCore.CollectResourceProgressResult
+	(*CollectResourceExecuteResult)(nil),  // 8: gameMessageCore.CollectResourceExecuteResult
+	(*ProxyAnimalData)(nil),               // 9: gameMessageCore.ProxyAnimalData
+	(*ProxyAnimalBaseData)(nil),           // 10: gameMessageCore.ProxyAnimalBaseData
+	(*ProxyProductData)(nil),              // 11: gameMessageCore.ProxyProductData
+	(*AnimalUpdateData)(nil),              // 12: gameMessageCore.AnimalUpdateData
+	(*AnimalBowlUpdateData)(nil),          // 13: gameMessageCore.AnimalBowlUpdateData
+	(*ItemBaseInfo)(nil),                  // 14: gameMessageCore.ItemBaseInfo
+	(*Vector3)(nil),                       // 15: gameMessageCore.Vector3
 }
 var file_home_proto_depIdxs = []int32{
 	0,  // 0: gameMessageCore.CollectResourceBaseInfo.type:type_name -> gameMessageCore.CollectResourceType
-	2,  // 1: gameMessageCore.UseCollectResourceSkillInfo.targets:type_name -> gameMessageCore.CollectResourceBaseInfo
-	6,  // 2: gameMessageCore.HomeSoilProgressInfo.progressInfo:type_name -> gameMessageCore.CollectResourceProgressResult
-	2,  // 3: gameMessageCore.CollectResourceOperateResult.targetInfo:type_name -> gameMessageCore.CollectResourceBaseInfo
-	6,  // 4: gameMessageCore.CollectResourceOperateResult.progressResult:type_name -> gameMessageCore.CollectResourceProgressResult
-	7,  // 5: gameMessageCore.CollectResourceOperateResult.executeResult:type_name -> gameMessageCore.CollectResourceExecuteResult
-	13, // 6: gameMessageCore.CollectResourceExecuteResult.dropList:type_name -> gameMessageCore.ItemBaseInfo
-	10, // 7: gameMessageCore.ProxyAnimalData.productData:type_name -> gameMessageCore.ProxyProductData
-	14, // 8: gameMessageCore.ProxyProductData.position:type_name -> gameMessageCore.Vector3
+	3,  // 1: gameMessageCore.UseCollectResourceSkillInfo.targets:type_name -> gameMessageCore.CollectResourceBaseInfo
+	7,  // 2: gameMessageCore.HomeSoilProgressInfo.progressInfo:type_name -> gameMessageCore.CollectResourceProgressResult
+	3,  // 3: gameMessageCore.CollectResourceOperateResult.targetInfo:type_name -> gameMessageCore.CollectResourceBaseInfo
+	7,  // 4: gameMessageCore.CollectResourceOperateResult.progressResult:type_name -> gameMessageCore.CollectResourceProgressResult
+	8,  // 5: gameMessageCore.CollectResourceOperateResult.executeResult:type_name -> gameMessageCore.CollectResourceExecuteResult
+	14, // 6: gameMessageCore.CollectResourceExecuteResult.dropList:type_name -> gameMessageCore.ItemBaseInfo
+	11, // 7: gameMessageCore.ProxyAnimalData.productData:type_name -> gameMessageCore.ProxyProductData
+	15, // 8: gameMessageCore.ProxyProductData.position:type_name -> gameMessageCore.Vector3
 	9,  // [9:9] is the sub-list for method output_type
 	9,  // [9:9] is the sub-list for method input_type
 	9,  // [9:9] is the sub-list for extension type_name
@@ -1253,7 +1307,7 @@ func file_home_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_home_proto_rawDesc,
-			NumEnums:      1,
+			NumEnums:      2,
 			NumMessages:   12,
 			NumExtensions: 0,
 			NumServices:   0,

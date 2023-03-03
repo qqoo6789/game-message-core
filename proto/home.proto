@@ -19,6 +19,13 @@ enum CollectResourceType
     Animal = 8;
 }
 
+enum AnimalSpecialActionType
+{
+  AnimalSpecialActionTypeUnknown = 0;
+  // 触摸死亡动物
+  AnimalSpecialActionTypeTouchDeath = 1;
+}
+
 message ProxySoilData
 {
     uint64 id = 1;

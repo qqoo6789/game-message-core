@@ -147,6 +147,8 @@ message Envelope {
     BroadCastAnimalDeathResponse            broad_cast_animal_death_response              = 0x030059;
     BroadCastAnimalAutoProduceResponse      broad_cast_animal_auto_produce_response       = 0x030061;
     BroadCastPickupDropResponse             broad_cast_pickup_drop_response               = 0x030063;
+    AnimalSpecialActionRequest              animal_special_action_request                 = 0x030065;
+    AnimalSpecialActionResponse             animal_special_action_response                = 0x030066;
  
 
 
@@ -542,6 +544,18 @@ message BroadCastPickupDropResponse
   oneof extraInfo {
     uint64 animalId = 10;
  }
+}
+
+message AnimalSpecialActionRequest
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
+}
+
+message AnimalSpecialActionResponse
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
 }
 
 message BroadCastInitMapElementResponse {

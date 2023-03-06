@@ -57,7 +57,7 @@ message Player {
   EntityCD              entity_cd = 8;      
   string                skillEffectData = 9; //技能特效数据
   bool                  is_battle = 10;     //战斗状态
-  // repeated bian.proto.EntityBuff buff_list = 28;
+  PlayerTempData        tempData=11;      //玩家需要同步的临时数据
 }
 
 message Monster {
@@ -168,4 +168,9 @@ message EntitySkillCD {
 message EntityExtendCD {
   int32 type = 1; //扩展类型
   int64 time = 2; //到期时间
+}
+
+//玩家需要同步的临时数据
+message PlayerTempData{
+  string equipFoodItem=1;      //手持食物
 }

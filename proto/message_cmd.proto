@@ -103,6 +103,8 @@ enum EnvelopeType {
     BroadCastHomeSkillResult        = 0x030051;
     QueryTalentTree                 = 0x030053;     // 查询天赋数据
     BroadCastTalentTreeUpdate       = 0x030055;     // 广播更新天赋树数据
+    UpdateEquipFoodItem             = 0x030056;     // 更新装备食物数据
+    BroadCastEquipFoodItemUpdate    = 0x030057;     // 广播更新装备食物数据
 
 
 

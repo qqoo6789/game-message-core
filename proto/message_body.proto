@@ -143,6 +143,9 @@ message Envelope {
     QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030053;
     QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030054;
     BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030055;
+    UpdateEquipFoodItemRequest              update_equip_food_item_request                = 0x030056;
+    UpdateEquipFoodItemResponse             update_equip_food_item_response               = 0x030057;
+    BroadCastEquipFoodItemUpdateResponse    broad_cast_equip_food_item_update_response    = 0x030058;
  
 
 
@@ -739,6 +742,18 @@ message BroadCastUpdateChatStateResponse{
   ChatState       chat_state = 1;
 }
 
+message BroadCastEquipFoodItemUpdateResponse{
+  string itemId = 1;
+  int64 playerId = 2;
+}
+
+message UpdateEquipFoodItemRequest{
+  string itemId = 1;
+}
+
+message UpdateEquipFoodItemResponse{
+  string itemId = 1;
+}
 
 
 //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************

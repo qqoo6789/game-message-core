@@ -1,4 +1,17 @@
 
+public enum EventExpire : uint
+{
+    EVENT_EXPIRE_DEFAULT = 0,
+    EVENT_EXPIRE_SEC_5 = 1 * 5,
+    EVENT_EXPIRE_SEC_30 = 1 * 30,
+    EVENT_EXPIRE_MIN_1 = EVENT_EXPIRE_SEC_30 * 2,
+    EVENT_EXPIRE_HOUR_1 = EVENT_EXPIRE_MIN_1 * 60,
+    EVENT_EXPIRE_HOUR_12 = EVENT_EXPIRE_HOUR_1 * 12,
+    EVENT_EXPIRE_DAY = EVENT_EXPIRE_HOUR_1 * 24,
+    EVENT_EXPIRE_WEEK = EVENT_EXPIRE_DAY * 7,
+}
+
+
 /// <summary>
 /// MELAND service pubsub event topic name 
 /// </summary>
@@ -77,14 +90,6 @@ public static class SubscriptionEvent
     /// task list finish event
     /// </summary>
     public const string TASK_LIST_FINISH = "EventTopicTaskListFinish";
-    /// <summary>
-    /// slot level update event
-    /// </summary>
-    public const string SLOT_LEVEL_UPGRADE = "EventTopicSlotLevelUpgrade";
-    /// <summary>
-    /// user level update event
-    /// </summary>
-    public const string USER_LEVEL_UPGRADE = "EventTopicUserLevelUpgrade";
 
     public const string TICK_OUT_PLAYER = "EventTopicTickOutPlayer";
     /// <summary>

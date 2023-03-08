@@ -15,8 +15,10 @@ enum EntityType {
   EntityTypeNpc = 4;
   // 资源
   EntityTypeResource = 5;
+  // 家园动物
+  EntityTypeHomeAnimal = 6;
   // 公共类型最大值  
-  EntityTypeMax = 6;
+  EntityTypeMax = 7;
   // 客户端专用，主角
   MainPlayer = 999; 
 }

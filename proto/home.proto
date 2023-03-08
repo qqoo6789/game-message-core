@@ -3,6 +3,8 @@ package gameMessageCore;
 option go_package = "./messageGo/proto";
 
 import "item.proto";
+import "vector.proto";
+
 
 enum CollectResourceType
 {
@@ -11,6 +13,17 @@ enum CollectResourceType
     CollectResourceTypeSoil = 1 ;
     // 采集资源
     HomeResource = 2;
+    // 动物食盆
+    AnimalBowl = 4;
+    // 动物
+    Animal = 8;
+}
+
+enum AnimalSpecialActionType
+{
+  AnimalSpecialActionTypeUnknown = 0;
+  // 触摸死亡动物
+  AnimalSpecialActionTypeTouchDeath = 1;
 }
 
 message ProxySoilData
@@ -68,4 +81,46 @@ message CollectResourceExecuteResult
     //额外浇水次数
     int32 ExtraWateringNum = 2;
     repeated ItemBaseInfo dropList = 3;
+}
+
+message ProxyAnimalData
+{
+  uint64 animId = 1;
+  int32 hungerProgress  = 2;
+  int32 harvestProgress = 3;
+  bool isComforted = 4;
+  bool isDead = 5;
+  ProxyProductData productData = 6;
+}
+
+message ProxyAnimalBaseData
+{
+  uint64 animId = 1;
+  string name = 2;
+  int32 cid = 3;
+  int32 favorability = 4;
+}
+
+message ProxyProductData
+{
+  int64 productId = 1;
+  int32 itemCid =2;
+  int32 itemNum = 3;
+  int32 quality = 4;
+  Vector3 position = 5;
+}
+
+// 更新动物数据
+message AnimalUpdateData
+{
+  uint64 animId = 1;
+  int32 hungerProgress  = 2;
+}
+
+// 更新动物食盆数据
+message AnimalBowlUpdateData
+{
+  uint64 bowlId = 1;
+  int32 foodCid = 2;
+  int32 remainFoodCapacity = 3;
 }

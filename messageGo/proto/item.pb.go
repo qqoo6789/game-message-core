@@ -325,6 +325,53 @@ func (NftTraitType) EnumDescriptor() ([]byte, []int) {
 	return file_item_proto_rawDescGZIP(), []int{3}
 }
 
+type DropType int32
+
+const (
+	DropType_DropTypeUnknown DropType = 0
+	// 畜牧动物
+	DropType_DropTypeHomeAnimal DropType = 1
+)
+
+// Enum value maps for DropType.
+var (
+	DropType_name = map[int32]string{
+		0: "DropTypeUnknown",
+		1: "DropTypeHomeAnimal",
+	}
+	DropType_value = map[string]int32{
+		"DropTypeUnknown":    0,
+		"DropTypeHomeAnimal": 1,
+	}
+)
+
+func (x DropType) Enum() *DropType {
+	p := new(DropType)
+	*p = x
+	return p
+}
+
+func (x DropType) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (DropType) Descriptor() protoreflect.EnumDescriptor {
+	return file_item_proto_enumTypes[4].Descriptor()
+}
+
+func (DropType) Type() protoreflect.EnumType {
+	return &file_item_proto_enumTypes[4]
+}
+
+func (x DropType) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use DropType.Descriptor instead.
+func (DropType) EnumDescriptor() ([]byte, []int) {
+	return file_item_proto_rawDescGZIP(), []int{4}
+}
+
 // 消耗品
 type NFTConsumableInfo struct {
 	state         protoimpl.MessageState
@@ -1016,9 +1063,13 @@ var file_item_proto_rawDesc = []byte{
 	0x65, 0x72, 0x69, 0x61, 0x6c, 0x10, 0x0b, 0x12, 0x0e, 0x0a, 0x0a, 0x4d, 0x79, 0x73, 0x74, 0x65,
 	0x72, 0x79, 0x42, 0x6f, 0x78, 0x10, 0x0c, 0x12, 0x0d, 0x0a, 0x09, 0x50, 0x6c, 0x61, 0x63, 0x65,
 	0x61, 0x62, 0x6c, 0x65, 0x10, 0x0d, 0x12, 0x09, 0x0a, 0x05, 0x54, 0x68, 0x69, 0x72, 0x64, 0x10,
-	0x0e, 0x12, 0x0c, 0x0a, 0x08, 0x57, 0x65, 0x61, 0x72, 0x61, 0x62, 0x6c, 0x65, 0x10, 0x0f, 0x42,
-	0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x47, 0x6f, 0x2f, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x0e, 0x12, 0x0c, 0x0a, 0x08, 0x57, 0x65, 0x61, 0x72, 0x61, 0x62, 0x6c, 0x65, 0x10, 0x0f, 0x2a,
+	0x37, 0x0a, 0x08, 0x44, 0x72, 0x6f, 0x70, 0x54, 0x79, 0x70, 0x65, 0x12, 0x13, 0x0a, 0x0f, 0x44,
+	0x72, 0x6f, 0x70, 0x54, 0x79, 0x70, 0x65, 0x55, 0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e, 0x10, 0x00,
+	0x12, 0x16, 0x0a, 0x12, 0x44, 0x72, 0x6f, 0x70, 0x54, 0x79, 0x70, 0x65, 0x48, 0x6f, 0x6d, 0x65,
+	0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x10, 0x01, 0x42, 0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d, 0x65,
+	0x73, 0x73, 0x61, 0x67, 0x65, 0x47, 0x6f, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70,
+	0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -1033,33 +1084,34 @@ func file_item_proto_rawDescGZIP() []byte {
 	return file_item_proto_rawDescData
 }
 
-var file_item_proto_enumTypes = make([]protoimpl.EnumInfo, 4)
+var file_item_proto_enumTypes = make([]protoimpl.EnumInfo, 5)
 var file_item_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_item_proto_goTypes = []interface{}{
 	(AvatarPosition)(0),       // 0: gameMessageCore.AvatarPosition
 	(ItemType)(0),             // 1: gameMessageCore.ItemType
 	(NFTConsumableType)(0),    // 2: gameMessageCore.NFTConsumableType
 	(NftTraitType)(0),         // 3: gameMessageCore.NftTraitType
-	(*NFTConsumableInfo)(nil), // 4: gameMessageCore.NFTConsumableInfo
-	(*NftTraitData)(nil),      // 5: gameMessageCore.NftTraitData
-	(*NftMetadata)(nil),       // 6: gameMessageCore.NftMetadata
-	(*NftData)(nil),           // 7: gameMessageCore.NftData
-	(*Item)(nil),              // 8: gameMessageCore.Item
-	(*ItemBaseInfo)(nil),      // 9: gameMessageCore.ItemBaseInfo
-	(*AvatarAttribute)(nil),   // 10: gameMessageCore.AvatarAttribute
-	(*AttributeData)(nil),     // 11: gameMessageCore.AttributeData
+	(DropType)(0),             // 4: gameMessageCore.DropType
+	(*NFTConsumableInfo)(nil), // 5: gameMessageCore.NFTConsumableInfo
+	(*NftTraitData)(nil),      // 6: gameMessageCore.NftTraitData
+	(*NftMetadata)(nil),       // 7: gameMessageCore.NftMetadata
+	(*NftData)(nil),           // 8: gameMessageCore.NftData
+	(*Item)(nil),              // 9: gameMessageCore.Item
+	(*ItemBaseInfo)(nil),      // 10: gameMessageCore.ItemBaseInfo
+	(*AvatarAttribute)(nil),   // 11: gameMessageCore.AvatarAttribute
+	(*AttributeData)(nil),     // 12: gameMessageCore.AttributeData
 }
 var file_item_proto_depIdxs = []int32{
 	2,  // 0: gameMessageCore.NFTConsumableInfo.consumable_type:type_name -> gameMessageCore.NFTConsumableType
 	3,  // 1: gameMessageCore.NftMetadata.type:type_name -> gameMessageCore.NftTraitType
-	5,  // 2: gameMessageCore.NftMetadata.traitData:type_name -> gameMessageCore.NftTraitData
-	11, // 3: gameMessageCore.NftMetadata.attributes:type_name -> gameMessageCore.AttributeData
-	6,  // 4: gameMessageCore.NftData.metadata:type_name -> gameMessageCore.NftMetadata
+	6,  // 2: gameMessageCore.NftMetadata.traitData:type_name -> gameMessageCore.NftTraitData
+	12, // 3: gameMessageCore.NftMetadata.attributes:type_name -> gameMessageCore.AttributeData
+	7,  // 4: gameMessageCore.NftData.metadata:type_name -> gameMessageCore.NftMetadata
 	1,  // 5: gameMessageCore.Item.itemType:type_name -> gameMessageCore.ItemType
 	0,  // 6: gameMessageCore.Item.avatarPos:type_name -> gameMessageCore.AvatarPosition
-	7,  // 7: gameMessageCore.Item.nftData:type_name -> gameMessageCore.NftData
+	8,  // 7: gameMessageCore.Item.nftData:type_name -> gameMessageCore.NftData
 	0,  // 8: gameMessageCore.AvatarAttribute.position:type_name -> gameMessageCore.AvatarPosition
-	11, // 9: gameMessageCore.AvatarAttribute.data:type_name -> gameMessageCore.AttributeData
+	12, // 9: gameMessageCore.AvatarAttribute.data:type_name -> gameMessageCore.AttributeData
 	10, // [10:10] is the sub-list for method output_type
 	10, // [10:10] is the sub-list for method input_type
 	10, // [10:10] is the sub-list for extension type_name
@@ -1164,7 +1216,7 @@ func file_item_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_item_proto_rawDesc,
-			NumEnums:      4,
+			NumEnums:      5,
 			NumMessages:   7,
 			NumExtensions: 0,
 			NumServices:   0,

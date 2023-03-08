@@ -24,12 +24,12 @@ namespace GameMessageCore {
     static EntityTypeDefineReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqswEK",
+            "ChZlbnRpdHlUeXBlRGVmaW5lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqzQEK",
             "CkVudGl0eVR5cGUSEQoNRW50aXR5VHlwZUFsbBAAEhQKEEVudGl0eVR5cGVQ",
             "bGF5ZXIQARIVChFFbnRpdHlUeXBlTW9uc3RlchACEhYKEkVudGl0eVR5cGVO",
             "ZnRCdWlsZBADEhEKDUVudGl0eVR5cGVOcGMQBBIWChJFbnRpdHlUeXBlUmVz",
-            "b3VyY2UQBRIRCg1FbnRpdHlUeXBlTWF4EAYSDwoKTWFpblBsYXllchDnB2IG",
-            "cHJvdG8z"));
+            "b3VyY2UQBRIYChRFbnRpdHlUeXBlSG9tZUFuaW1hbBAGEhEKDUVudGl0eVR5",
+            "cGVNYXgQBxIPCgpNYWluUGxheWVyEOcHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityType), }, null, null));
@@ -61,9 +61,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("EntityTypeResource")] Resource = 5,
     /// <summary>
+    /// 家园动物
+    /// </summary>
+    [pbr::OriginalName("EntityTypeHomeAnimal")] HomeAnimal = 6,
+    /// <summary>
     /// 公共类型最大值  
     /// </summary>
-    [pbr::OriginalName("EntityTypeMax")] Max = 6,
+    [pbr::OriginalName("EntityTypeMax")] Max = 7,
     /// <summary>
     /// 客户端专用，主角
     /// </summary>

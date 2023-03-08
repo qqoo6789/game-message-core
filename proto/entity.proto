@@ -34,6 +34,7 @@ message EntityWithLocation {
     NftBuild      build = 12;
     Npc           npc = 13;
     Resource      resource = 14;
+    HomeAnimal    homeAnimal = 15;
   }
 }
 
@@ -117,6 +118,14 @@ message Resource {
   ResourcePointInfo pointInfo = 4;
   //采集进度信息 没有任何进度信息为null
   CollectResourceProgressResult progressInfo = 5;
+}
+
+message HomeAnimal
+{
+  Vector3       position = 2;
+  Vector3       dir = 3;    // 方向（朝向）
+  ProxyAnimalBaseData animalBaseData = 4;
+  ProxyAnimalData animalDetailData = 5;
 }
 
 message ResourcePointInfo

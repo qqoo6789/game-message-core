@@ -92,6 +92,11 @@ message Envelope {
     QueryTalentExpResponse            query_talent_exp_response             = 0x010062;
     BroadCastUpTalentExpResponse      broad_cast_up_talent_exp_response     = 0x010063;
 
+    QueryAnimalListRequest            query_animal_list_request              = 0x010065;
+    QueryAnimalListResponse           query_animal_list_response             = 0x010066;
+    BroadCastUpdateAnimalListResponse broad_cast_update_animal_list_response = 0x010067;
+    FreedAnimalRequest                freed_animal_request                   = 0x010069;
+    FreedAnimalResponse               freed_animal_response                  = 0x010070;
 
 
 
@@ -143,6 +148,15 @@ message Envelope {
     QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030053;
     QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030054;
     BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030055;
+    BroadCastAnimalSceneDataUpdateResponse  broad_cast_animal_scene_data_update_response  = 0x030057;
+    BroadCastAnimalDeathResponse            broad_cast_animal_death_response              = 0x030059;
+    BroadCastAnimalAutoProduceResponse      broad_cast_animal_auto_produce_response       = 0x030061;
+    BroadCastPickupDropResponse             broad_cast_pickup_drop_response               = 0x030063;
+    AnimalSpecialActionRequest              animal_special_action_request                 = 0x030065;
+    AnimalSpecialActionResponse             animal_special_action_response                = 0x030066;
+    CaptureAnimalRequest                    capture_animal_request                        = 0x030067;
+    CaptureAnimalResponse                   capture_animal_response                       = 0x030068;
+
  
 
 
@@ -390,6 +404,23 @@ message BroadCastUpTalentExpResponse{
    repeated TalentExp      updateExps = 1;
 } 
 
+// 家园动物相关
+message QueryAnimalListRequest{
+}
+message QueryAnimalListResponse{
+  repeated   ProxyAnimalBaseData  animals = 1;
+}
+message BroadCastUpdateAnimalListResponse{
+  repeated   ProxyAnimalBaseData  addAnimals = 1;
+  repeated   ProxyAnimalBaseData  updateAnimals = 2;
+  repeated   uint64               removeAnimals = 3;
+}
+message FreedAnimalRequest{
+  repeated   uint64  animalId = 1;
+}
+message FreedAnimalResponse{
+  repeated   uint64  animalId = 1;
+}
 
 
 
@@ -489,6 +520,7 @@ message GetHomeDataResponse{
   int64         owner_user_id = 1;
   string        owner_name = 2;
   int32         soilDataAllCount = 3;
+  string        animBowlArr = 4;
 }
 message BroadCastHomeDataInitBatchResponse
 {
@@ -509,6 +541,34 @@ message BroadCastHomeSkillResultResponse
   int32        costItemCid = 3;
   //每个家园对象的操作结果
   repeated CollectResourceOperateResult operateResultList = 4;
+}
+
+message BroadCastAnimalSceneDataUpdateResponse
+{
+  AnimalUpdateData animalUpdateData = 1;
+  AnimalBowlUpdateData animalBowlUpdateData = 2;
+}
+
+message BroadCastAnimalDeathResponse
+{
+  uint64 animalId = 1;
+}
+
+message BroadCastAnimalAutoProduceResponse
+{
+  uint64 animalId = 1;
+  ProxyProductData productData = 2;
+}
+
+message BroadCastPickupDropResponse
+{
+  int64 pickPlayerId = 1;
+  int64 dropId = 2;
+  DropType dropType = 3;
+  repeated ItemBaseInfo dropList = 4;
+  oneof extraInfo {
+    uint64 animalId = 10;
+ }
 }
 
 message BroadCastInitMapElementResponse {
@@ -619,6 +679,24 @@ message BroadCastTalentTreeUpdateResponse{
   repeated TalentLevel      levelData = 1;
   repeated TalentTreeUpdate upTrees = 2;
 }      
+
+message AnimalSpecialActionRequest
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
+}
+message AnimalSpecialActionResponse
+{
+  uint64 animalId = 1;
+  AnimalSpecialActionType actionType = 2;
+}
+
+// 抓捕Animal(同步可能释放一个 Animal) to scene service
+message CaptureAnimalRequest{
+  repeated uint64              freedAnimalIds = 1; 
+  repeated ProxyAnimalBaseData captrueAnimals = 2;
+}        
+message CaptureAnimalResponse{}  
 
 
 

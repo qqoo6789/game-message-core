@@ -178,7 +178,8 @@ message Envelope {
     //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     PingRequest                       ping_request                          = 0x060001;
     PingResponse                      ping_response                         = 0x060002;
-    
+    //   协议 : 0x07ZZZZ  广播合并 协议 ************************************
+    BroadCastMsgAggregationResponse   broadCast_msg_aggregation_response  = 0x070001;
 
     //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
 
@@ -744,6 +745,11 @@ message BroadCastUpdateChatStateResponse{
 //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
 message PingRequest {}
 message PingResponse {}
+//   协议 : 0x07ZZZZ  广播合并 协议 ************************************
+message BroadCastMsgAggregationResponse {
+    repeated Envelope message_list = 1;
+}
+
 
 //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
 

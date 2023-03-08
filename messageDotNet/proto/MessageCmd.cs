@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvMPCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpIQCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -70,7 +70,7 @@ namespace GameMessageCore {
             "ZXdhcmQQmYAQEhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0",
             "Q2hhdE1lc3NhZ2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2Fn",
             "ZRCEgBQSHgoYQnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5n",
-            "EIGAGGIGcHJvdG8z"));
+            "EIGAGBIdChdCcm9hZENhc3RNc2dBZ2dyZWdhdGlvbhCBgBxiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -312,6 +312,10 @@ namespace GameMessageCore {
     ///getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("Ping")] Ping = 393217,
+    /// <summary>
+    ///协议 : 0x07ZZZZ  广播合并 协议 ************************************
+    /// </summary>
+    [pbr::OriginalName("BroadCastMsgAggregation")] BroadCastMsgAggregation = 458753,
   }
 
   #endregion

@@ -462,6 +462,7 @@ message UpdateSelfLocationRequest {
 }
 message UpdateSelfLocationResponse {
   EntityMovement  movement = 1;
+  float          speed = 2;
 }
 message UseSkillRequest {
   // 使用的技能 id

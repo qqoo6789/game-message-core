@@ -26,28 +26,28 @@ namespace GameMessageCore {
           string.Concat(
             "Cgx0YWxlbnQucHJvdG8SD2dhbWVNZXNzYWdlQ29yZSJYCglUYWxlbnRFeHAS",
             "KQoEdHlwZRgBIAEoDjIbLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRUeXBlEg4K",
-            "BmN1ckV4cBgCIAEoBRIQCgh0b3RhbEV4cBgDIAEoBSJHCgtUYWxlbnRMZXZl",
+            "BmN1ckV4cBgCIAEoBRIQCgh0b3RhbEV4cBgDIAEoBSJcCgtUYWxlbnRMZXZl",
             "bBIpCgR0eXBlGAEgASgOMhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudFR5cGUS",
-            "DQoFbGV2ZWwYAiABKAUiKwoKVGFsZW50Tm9kZRIOCgZub2RlSWQYASABKAUS",
-            "DQoFbGV2ZWwYAiABKAUiaQoKVGFsZW50VHJlZRIpCgR0eXBlGAEgASgOMhsu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlRhbGVudFR5cGUSMAoLdW5sb2NrTm9kZXMYAiAD",
-            "KAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50Tm9kZSKVAQoKVGFsZW50RGF0",
-            "YRIrCgdleHBEYXRhGAEgAygLMhouZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudEV4",
-            "cBIvCglsZXZlbERhdGEYAiADKAsyHC5nYW1lTWVzc2FnZUNvcmUuVGFsZW50",
-            "TGV2ZWwSKQoEdHJlZRgDIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRU",
-            "cmVlIrMBChBUYWxlbnRUcmVlVXBkYXRlEikKBHR5cGUYASABKA4yGy5nYW1l",
-            "TWVzc2FnZUNvcmUuVGFsZW50VHlwZRItCghhZGROb2RlcxgCIAMoCzIbLmdh",
-            "bWVNZXNzYWdlQ29yZS5UYWxlbnROb2RlEjAKC3VwZGF0ZU5vZGVzGAMgAygL",
-            "MhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudE5vZGUSEwoLcmVtb3ZlTm9kZXMY",
-            "BCADKAUqSAoKVGFsZW50VHlwZRIVChFUYWxlbnRUeXBlVW5rbm93bhAAEgsK",
-            "B0Zhcm1pbmcQARIKCgZCYXR0bGUQAhIKCgZHYXRoZXIQAypBCg9UYWxlbnRH",
-            "YWluc1R5cGUSDwoLQWN0aXZlU2tpbGwQABIQCgxQYXNzaXZlU2tpbGwQARIL",
-            "CgdSZWNpcGVzEAJiBnByb3RvMw=="));
+            "DQoFbGV2ZWwYAiABKAUSEwoLbWFzdGVyTGV2ZWwYAyABKAUiKwoKVGFsZW50",
+            "Tm9kZRIOCgZub2RlSWQYASABKAUSDQoFbGV2ZWwYAiABKAUiaQoKVGFsZW50",
+            "VHJlZRIpCgR0eXBlGAEgASgOMhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudFR5",
+            "cGUSMAoLdW5sb2NrTm9kZXMYAiADKAsyGy5nYW1lTWVzc2FnZUNvcmUuVGFs",
+            "ZW50Tm9kZSKVAQoKVGFsZW50RGF0YRIrCgdleHBEYXRhGAEgAygLMhouZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLlRhbGVudEV4cBIvCglsZXZlbERhdGEYAiADKAsyHC5n",
+            "YW1lTWVzc2FnZUNvcmUuVGFsZW50TGV2ZWwSKQoEdHJlZRgDIAMoCzIbLmdh",
+            "bWVNZXNzYWdlQ29yZS5UYWxlbnRUcmVlIrMBChBUYWxlbnRUcmVlVXBkYXRl",
+            "EikKBHR5cGUYASABKA4yGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHlwZRIt",
+            "CghhZGROb2RlcxgCIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnROb2Rl",
+            "EjAKC3VwZGF0ZU5vZGVzGAMgAygLMhsuZ2FtZU1lc3NhZ2VDb3JlLlRhbGVu",
+            "dE5vZGUSEwoLcmVtb3ZlTm9kZXMYBCADKAUqSAoKVGFsZW50VHlwZRIVChFU",
+            "YWxlbnRUeXBlVW5rbm93bhAAEgsKB0Zhcm1pbmcQARIKCgZCYXR0bGUQAhIK",
+            "CgZHYXRoZXIQAypBCg9UYWxlbnRHYWluc1R5cGUSDwoLQWN0aXZlU2tpbGwQ",
+            "ABIQCgxQYXNzaXZlU2tpbGwQARILCgdSZWNpcGVzEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TalentType), typeof(global::GameMessageCore.TalentGainsType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentExp), global::GameMessageCore.TalentExp.Parser, new[]{ "Type", "CurExp", "TotalExp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentLevel), global::GameMessageCore.TalentLevel.Parser, new[]{ "Type", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentLevel), global::GameMessageCore.TalentLevel.Parser, new[]{ "Type", "Level", "MasterLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentNode), global::GameMessageCore.TalentNode.Parser, new[]{ "NodeId", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentTree), global::GameMessageCore.TalentTree.Parser, new[]{ "Type", "UnlockNodes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentData), global::GameMessageCore.TalentData.Parser, new[]{ "ExpData", "LevelData", "Tree" }, null, null, null, null),
@@ -403,6 +403,7 @@ namespace GameMessageCore {
     public TalentLevel(TalentLevel other) : this() {
       type_ = other.type_;
       level_ = other.level_;
+      masterLevel_ = other.masterLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -436,6 +437,18 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "masterLevel" field.</summary>
+    public const int MasterLevelFieldNumber = 3;
+    private int masterLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MasterLevel {
+      get { return masterLevel_; }
+      set {
+        masterLevel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -453,6 +466,7 @@ namespace GameMessageCore {
       }
       if (Type != other.Type) return false;
       if (Level != other.Level) return false;
+      if (MasterLevel != other.MasterLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -462,6 +476,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
+      if (MasterLevel != 0) hash ^= MasterLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -488,6 +503,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(Level);
       }
+      if (MasterLevel != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(MasterLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -506,6 +525,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(Level);
       }
+      if (MasterLevel != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(MasterLevel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -521,6 +544,9 @@ namespace GameMessageCore {
       }
       if (Level != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
+      }
+      if (MasterLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MasterLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -539,6 +565,9 @@ namespace GameMessageCore {
       }
       if (other.Level != 0) {
         Level = other.Level;
+      }
+      if (other.MasterLevel != 0) {
+        MasterLevel = other.MasterLevel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -563,6 +592,10 @@ namespace GameMessageCore {
             Level = input.ReadInt32();
             break;
           }
+          case 24: {
+            MasterLevel = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -584,6 +617,10 @@ namespace GameMessageCore {
           }
           case 16: {
             Level = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            MasterLevel = input.ReadInt32();
             break;
           }
         }

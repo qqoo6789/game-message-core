@@ -1,0 +1,10 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+ 
+enum RewardType {
+    RewardTypeUnknow = 0;
+    Normal = 1; 
+    RateRandom = 2;
+}

@@ -32,6 +32,7 @@ type RewardTimeList struct {
 type RewardTableRow struct {
 	UId             uint      `gorm:"primaryKey;autoIncrement" json:"uid,string"`
 	RewardId        int32     `json:"rewardId"`
+	RewardType      uint32    `json:"rewardType"`
 	RewardTimesJson string    `gorm:"type:text" json:"rewardTimesJson"`
 	RewardItemJson  string    `gorm:"type:text" json:"rewardItemJson"`
 	CreatedAt       time.Time `json:"createdAt"` // 过期判断条件

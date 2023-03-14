@@ -113,6 +113,7 @@ enum EnvelopeType {
     BroadCastPickupDrop             = 0x030063;     // 广播拾取掉落物
     AnimalSpecialAction             = 0x030065;     // 请求动物特殊行为
     CaptureAnimal                   = 0x030067;     // 抓捕Animal(同步可能释放一个 Animal) to scene service
+    BroadCastEntityMoveSpeed        = 0x030069;     // 实体速度
 
 
 

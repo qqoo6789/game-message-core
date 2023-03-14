@@ -8,8 +8,9 @@ type GrpcTalentExp struct {
 }
 
 type GrpcTalentLevel struct {
-	TalentType proto.TalentType `json:"talentType"`
-	Level      uint32           `json:"level"`
+	TalentType  proto.TalentType `json:"talentType"`
+	Level       uint32           `json:"level"`
+	MasterLevel uint32           `json:"masterLevel"`
 }
 
 type GrpcTalentNodeData struct {

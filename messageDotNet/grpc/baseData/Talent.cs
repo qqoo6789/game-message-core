@@ -20,6 +20,7 @@ public class GrpcTalentLevel
 {
     public GameMessageCore.TalentType TalentType;
     public int Level;
+    public int MasterLevel;
 
     public string ToJson()
     {
@@ -31,6 +32,7 @@ public class GrpcTalentLevel
         {
             Type = TalentType,
             Level = Level,
+            MasterLevel = MasterLevel,
         };
     }
 }

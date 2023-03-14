@@ -36,6 +36,7 @@ message TalentExp {
 message TalentLevel{
     TalentType  type = 1;
     int32       level = 2;
+    int32       masterLevel = 3;
 }
 
 message TalentNode{

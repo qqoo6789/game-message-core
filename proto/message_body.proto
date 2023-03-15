@@ -156,6 +156,7 @@ message Envelope {
     AnimalSpecialActionResponse             animal_special_action_response                = 0x030066;
     CaptureAnimalRequest                    capture_animal_request                        = 0x030067;
     CaptureAnimalResponse                   capture_animal_response                       = 0x030068;
+    BroadCastEntityMoveSpeedResponse        broad_cast_entity_move_speed_response         = 0x030069;
 
  
 
@@ -462,6 +463,7 @@ message UpdateSelfLocationRequest {
 }
 message UpdateSelfLocationResponse {
   EntityMovement  movement = 1;
+  float          speed = 2;
 }
 message UseSkillRequest {
   // 使用的技能 id
@@ -587,6 +589,9 @@ message BroadCastMapEntityUpdateResponse{
 }
 message BroadCastEntityMoveResponse{
   repeated EntityMovement     moves = 1;
+}
+message BroadCastEntityMoveSpeedResponse{
+  float  speed = 1;
 }
 message BroadCastEntityDestroyResponse{
     // 销毁的 实体列表

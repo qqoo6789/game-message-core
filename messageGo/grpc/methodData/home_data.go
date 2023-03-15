@@ -32,6 +32,17 @@ type GetUserAnimalListInput struct {
 type GetUserAnimalListOutput struct {
 	Success bool                           `json:"success"`
 	ErrMsg  string                         `json:"errMsg"`
-	UserId int64 `json:"userId"`
+	UserId  int64                          `json:"userId"`
 	Animals []base_data.GrpcAnimalBaseData `json:"animals"`
+}
+
+//  capture animal  scene world to main service
+type CaptureAnimalInput struct {
+	UserId        int64                        `json:"userId"`
+	FreedAnimalId int64                        `json:"freedAnimalId"`
+	CaptureAnimal base_data.GrpcAnimalBaseData `json:"animals"`
+}
+type CaptureAnimalOutput struct {
+	Success bool   `json:"success"`
+	ErrMsg  string `json:"errMsg"`
 }

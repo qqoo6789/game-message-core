@@ -78,3 +78,31 @@ public class GetUserAnimalListOutput
     }
 
 }
+
+/// <summary>
+///  GetUserAnimalList  world to main service
+/// </summary>
+[Serializable]
+public class CaptureAnimalInput
+{
+    public long UserId;
+    public long FreedAnimalId;
+    public GrpcAnimalBaseData Animal;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class CaptureAnimalOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+
+

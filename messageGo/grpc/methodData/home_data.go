@@ -40,7 +40,7 @@ type GetUserAnimalListOutput struct {
 type CaptureAnimalInput struct {
 	UserId        int64                        `json:"userId"`
 	FreedAnimalId int64                        `json:"freedAnimalId"`
-	CaptureAnimal base_data.GrpcAnimalBaseData `json:"animals"`
+	CaptureAnimal base_data.GrpcAnimalBaseData `json:"animal"`
 }
 type CaptureAnimalOutput struct {
 	Success bool   `json:"success"`

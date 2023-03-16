@@ -297,6 +297,19 @@ namespace GameMessageCore {
     /// 抓捕Animal(同步可能释放一个 Animal) to scene service
     /// </summary>
     [pbr::OriginalName("CaptureAnimal")] CaptureAnimal = 196711,
+    [pbr::OriginalName("BroadCastEntityCaptureDataUpdate")] BroadCastEntityCaptureDataUpdate = 196713,
+    /// <summary>
+    /// 客户端请求退出捕获状态
+    /// </summary>
+    [pbr::OriginalName("ExitCapture")] ExitCapture = 196721,
+    /// <summary>
+    /// 实体蓄力状态请求
+    /// </summary>
+    [pbr::OriginalName("EntityAccumulateStatus")] EntityAccumulateStatus = 196722,
+    /// <summary>
+    /// 实体蓄力状态广播
+    /// </summary>
+    [pbr::OriginalName("BroadCastEntityAccumulateStatus")] BroadCastEntityAccumulateStatus = 196723,
     /// <summary>
     /// 实体速度
     /// </summary>

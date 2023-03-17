@@ -89,42 +89,46 @@ const (
 	EnvelopeType_QueryPlayer  EnvelopeType = 131073
 	EnvelopeType_CreatePlayer EnvelopeType = 131075
 	//sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
-	EnvelopeType_EnterMap                        EnvelopeType = 196609
-	EnvelopeType_UpdateSelfLocation              EnvelopeType = 196611
-	EnvelopeType_UseSkill                        EnvelopeType = 196613
-	EnvelopeType_RespawnPlayer                   EnvelopeType = 196617
-	EnvelopeType_BroadCastInitMapElement         EnvelopeType = 196625
-	EnvelopeType_BroadCastMapEntityUpdate        EnvelopeType = 196626
-	EnvelopeType_BroadCastEntityDestroy          EnvelopeType = 196627
-	EnvelopeType_BroadCastEntityMove             EnvelopeType = 196628
-	EnvelopeType_BroadCastEntityCombat           EnvelopeType = 196629
-	EnvelopeType_BroadCastRespawnPlayer          EnvelopeType = 196630
-	EnvelopeType_Teleport                        EnvelopeType = 196631
-	EnvelopeType_BroadCastEntityProfileUpdate    EnvelopeType = 196633
-	EnvelopeType_BroadCastMonsterDeath           EnvelopeType = 196641
-	EnvelopeType_BroadCastEntityAvatarUpdate     EnvelopeType = 196642
-	EnvelopeType_BroadCastEntityBattleDataUpdate EnvelopeType = 196643
-	EnvelopeType_BroadCastEntityBuildDataUpdate  EnvelopeType = 196645
-	EnvelopeType_PlayerActionCollect             EnvelopeType = 196647
-	EnvelopeType_BroadCastPlayerActionCollect    EnvelopeType = 196649
-	EnvelopeType_SceneDestruction                EnvelopeType = 196659
-	EnvelopeType_BroadCastSceneDestruction       EnvelopeType = 196661
-	EnvelopeType_PlayerActionChat                EnvelopeType = 196663
-	EnvelopeType_BroadCastPlayerActionChat       EnvelopeType = 196665
-	EnvelopeType_GetHomeData                     EnvelopeType = 196673
-	EnvelopeType_QueryServerTime                 EnvelopeType = 196675 // 客户端请求服务器时间
-	EnvelopeType_BroadCastChangeService          EnvelopeType = 196677
-	EnvelopeType_BroadCastHomeDataInitBatch      EnvelopeType = 196681
-	EnvelopeType_BroadCastHomeSkillResult        EnvelopeType = 196689
-	EnvelopeType_QueryTalentTree                 EnvelopeType = 196691 // 查询天赋数据
-	EnvelopeType_BroadCastTalentTreeUpdate       EnvelopeType = 196693 // 广播更新天赋树数据
-	EnvelopeType_BroadCastAnimalSceneDataUpdate  EnvelopeType = 196695 // 广播更新动物场数据
-	EnvelopeType_BroadCastAnimalDeath            EnvelopeType = 196697 // 广播动物死亡
-	EnvelopeType_BroadCastAnimalAutoProduce      EnvelopeType = 196705 // 广播动物自动生产
-	EnvelopeType_BroadCastPickupDrop             EnvelopeType = 196707 // 广播拾取掉落物
-	EnvelopeType_AnimalSpecialAction             EnvelopeType = 196709 // 请求动物特殊行为
-	EnvelopeType_CaptureAnimal                   EnvelopeType = 196711 // 抓捕Animal(同步可能释放一个 Animal) to scene service
-	EnvelopeType_BroadCastEntityMoveSpeed        EnvelopeType = 196713 // 实体速度
+	EnvelopeType_EnterMap                         EnvelopeType = 196609
+	EnvelopeType_UpdateSelfLocation               EnvelopeType = 196611
+	EnvelopeType_UseSkill                         EnvelopeType = 196613
+	EnvelopeType_RespawnPlayer                    EnvelopeType = 196617
+	EnvelopeType_BroadCastInitMapElement          EnvelopeType = 196625
+	EnvelopeType_BroadCastMapEntityUpdate         EnvelopeType = 196626
+	EnvelopeType_BroadCastEntityDestroy           EnvelopeType = 196627
+	EnvelopeType_BroadCastEntityMove              EnvelopeType = 196628
+	EnvelopeType_BroadCastEntityCombat            EnvelopeType = 196629
+	EnvelopeType_BroadCastRespawnPlayer           EnvelopeType = 196630
+	EnvelopeType_Teleport                         EnvelopeType = 196631
+	EnvelopeType_BroadCastEntityProfileUpdate     EnvelopeType = 196633
+	EnvelopeType_BroadCastMonsterDeath            EnvelopeType = 196641
+	EnvelopeType_BroadCastEntityAvatarUpdate      EnvelopeType = 196642
+	EnvelopeType_BroadCastEntityBattleDataUpdate  EnvelopeType = 196643
+	EnvelopeType_BroadCastEntityBuildDataUpdate   EnvelopeType = 196645
+	EnvelopeType_PlayerActionCollect              EnvelopeType = 196647
+	EnvelopeType_BroadCastPlayerActionCollect     EnvelopeType = 196649
+	EnvelopeType_SceneDestruction                 EnvelopeType = 196659
+	EnvelopeType_BroadCastSceneDestruction        EnvelopeType = 196661
+	EnvelopeType_PlayerActionChat                 EnvelopeType = 196663
+	EnvelopeType_BroadCastPlayerActionChat        EnvelopeType = 196665
+	EnvelopeType_GetHomeData                      EnvelopeType = 196673
+	EnvelopeType_QueryServerTime                  EnvelopeType = 196675 // 客户端请求服务器时间
+	EnvelopeType_BroadCastChangeService           EnvelopeType = 196677
+	EnvelopeType_BroadCastHomeDataInitBatch       EnvelopeType = 196681
+	EnvelopeType_BroadCastHomeSkillResult         EnvelopeType = 196689
+	EnvelopeType_QueryTalentTree                  EnvelopeType = 196691 // 查询天赋数据
+	EnvelopeType_BroadCastTalentTreeUpdate        EnvelopeType = 196693 // 广播更新天赋树数据
+	EnvelopeType_BroadCastAnimalSceneDataUpdate   EnvelopeType = 196695 // 广播更新动物场数据
+	EnvelopeType_BroadCastAnimalDeath             EnvelopeType = 196697 // 广播动物死亡
+	EnvelopeType_BroadCastAnimalAutoProduce       EnvelopeType = 196705 // 广播动物自动生产
+	EnvelopeType_BroadCastPickupDrop              EnvelopeType = 196707 // 广播拾取掉落物
+	EnvelopeType_AnimalSpecialAction              EnvelopeType = 196709 // 请求动物特殊行为
+	EnvelopeType_CaptureAnimal                    EnvelopeType = 196711 // 抓捕Animal(同步可能释放一个 Animal) to scene service
+	EnvelopeType_BroadCastEntityMoveSpeed         EnvelopeType = 196713 // 实体速度
+	EnvelopeType_BroadCastEntityCaptureDataUpdate EnvelopeType = 196720
+	EnvelopeType_ExitCapture                      EnvelopeType = 196721 // 客户端请求退出捕获状态
+	EnvelopeType_EntityAccumulateStatus           EnvelopeType = 196722 // 实体蓄力状态请求
+	EnvelopeType_BroadCastEntityAccumulateStatus  EnvelopeType = 196723 // 实体蓄力状态广播
 	//taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 	EnvelopeType_SelfTasks               EnvelopeType = 262145 // 查询玩家已接的任务列表（进行中状态）
 	EnvelopeType_BroadCastUpdateTask     EnvelopeType = 262147 // 任务  进度更新(推送)
@@ -227,6 +231,10 @@ var (
 		196709: "AnimalSpecialAction",
 		196711: "CaptureAnimal",
 		196713: "BroadCastEntityMoveSpeed",
+		196720: "BroadCastEntityCaptureDataUpdate",
+		196721: "ExitCapture",
+		196722: "EntityAccumulateStatus",
+		196723: "BroadCastEntityAccumulateStatus",
 		262145: "SelfTasks",
 		262147: "BroadCastUpdateTask",
 		262148: "BroadCastUpdateTaskList",
@@ -246,99 +254,103 @@ var (
 		458753: "BroadCastMsgAggregation",
 	}
 	EnvelopeType_value = map[string]int32{
-		"Unknown":                         0,
-		"BroadCastTickOut":                39321,
-		"ItemGet":                         65537,
-		"ItemUse":                         65539,
-		"ItemDrop":                        65541,
-		"UpdateAvatar":                    65543,
-		"UnloadAvatar":                    65545,
-		"BroadCastItemAdd":                65553,
-		"BroadCastItemUpdate":             65554,
-		"BroadCastItemDel":                65555,
-		"BroadCastUpdateItemSlot":         65556,
-		"GetItemSlot":                     65557,
-		"UpgradeItemSlot":                 65559,
-		"SigninPlayer":                    65561,
-		"SignOutPlayer":                   65569,
-		"QueryLands":                      65573,
-		"BroadCastInitLand":               65575,
-		"BroadCastInitItem":               65577,
-		"Build":                           65585,
-		"Recycling":                       65587,
-		"Charged":                         65589,
-		"Harvest":                         65591,
-		"Collection":                      65593,
-		"BroadCastMultiUpLand":            65601,
-		"SelfNftBuilds":                   65603,
-		"BroadCastSelfBuildUpdate":        65605,
-		"BroadCastSelfBuildRecycling":     65607,
-		"MintBattery":                     65609,
-		"QueryGranary":                    65617,
-		"GranaryCollect":                  65619,
-		"BroadCastGranaryUpdate":          65621,
-		"BroadCastUpGranaryItem":          65623,
-		"UpgradeTalentNode":               65625,
-		"QueryTalentExp":                  65633,
-		"BroadCastUpTalentExp":            65635,
-		"QueryAnimalList":                 65637,
-		"BroadCastUpdateAnimalList":       65639,
-		"FreedAnimal":                     65641,
-		"QueryPlayer":                     131073,
-		"CreatePlayer":                    131075,
-		"EnterMap":                        196609,
-		"UpdateSelfLocation":              196611,
-		"UseSkill":                        196613,
-		"RespawnPlayer":                   196617,
-		"BroadCastInitMapElement":         196625,
-		"BroadCastMapEntityUpdate":        196626,
-		"BroadCastEntityDestroy":          196627,
-		"BroadCastEntityMove":             196628,
-		"BroadCastEntityCombat":           196629,
-		"BroadCastRespawnPlayer":          196630,
-		"Teleport":                        196631,
-		"BroadCastEntityProfileUpdate":    196633,
-		"BroadCastMonsterDeath":           196641,
-		"BroadCastEntityAvatarUpdate":     196642,
-		"BroadCastEntityBattleDataUpdate": 196643,
-		"BroadCastEntityBuildDataUpdate":  196645,
-		"PlayerActionCollect":             196647,
-		"BroadCastPlayerActionCollect":    196649,
-		"SceneDestruction":                196659,
-		"BroadCastSceneDestruction":       196661,
-		"PlayerActionChat":                196663,
-		"BroadCastPlayerActionChat":       196665,
-		"GetHomeData":                     196673,
-		"QueryServerTime":                 196675,
-		"BroadCastChangeService":          196677,
-		"BroadCastHomeDataInitBatch":      196681,
-		"BroadCastHomeSkillResult":        196689,
-		"QueryTalentTree":                 196691,
-		"BroadCastTalentTreeUpdate":       196693,
-		"BroadCastAnimalSceneDataUpdate":  196695,
-		"BroadCastAnimalDeath":            196697,
-		"BroadCastAnimalAutoProduce":      196705,
-		"BroadCastPickupDrop":             196707,
-		"AnimalSpecialAction":             196709,
-		"CaptureAnimal":                   196711,
-		"BroadCastEntityMoveSpeed":        196713,
-		"SelfTasks":                       262145,
-		"BroadCastUpdateTask":             262147,
-		"BroadCastUpdateTaskList":         262148,
-		"AcceptTask":                      262149,
-		"AcceptTaskList":                  262151,
-		"AbandonTask":                     262153,
-		"AbandonTaskList":                 262161,
-		"TaskReward":                      262163,
-		"UpgradeTaskProgress":             262165,
-		"BroadCastTaskReward":             262167,
-		"BroadCastTaskListReward":         262169,
-		"SendChatMessage":                 327681,
-		"BroadCastChatMessages":           327683,
-		"BroadCastRemoveChatMessage":      327684,
-		"BroadCastUpdateChatState":        327685,
-		"Ping":                            393217,
-		"BroadCastMsgAggregation":         458753,
+		"Unknown":                          0,
+		"BroadCastTickOut":                 39321,
+		"ItemGet":                          65537,
+		"ItemUse":                          65539,
+		"ItemDrop":                         65541,
+		"UpdateAvatar":                     65543,
+		"UnloadAvatar":                     65545,
+		"BroadCastItemAdd":                 65553,
+		"BroadCastItemUpdate":              65554,
+		"BroadCastItemDel":                 65555,
+		"BroadCastUpdateItemSlot":          65556,
+		"GetItemSlot":                      65557,
+		"UpgradeItemSlot":                  65559,
+		"SigninPlayer":                     65561,
+		"SignOutPlayer":                    65569,
+		"QueryLands":                       65573,
+		"BroadCastInitLand":                65575,
+		"BroadCastInitItem":                65577,
+		"Build":                            65585,
+		"Recycling":                        65587,
+		"Charged":                          65589,
+		"Harvest":                          65591,
+		"Collection":                       65593,
+		"BroadCastMultiUpLand":             65601,
+		"SelfNftBuilds":                    65603,
+		"BroadCastSelfBuildUpdate":         65605,
+		"BroadCastSelfBuildRecycling":      65607,
+		"MintBattery":                      65609,
+		"QueryGranary":                     65617,
+		"GranaryCollect":                   65619,
+		"BroadCastGranaryUpdate":           65621,
+		"BroadCastUpGranaryItem":           65623,
+		"UpgradeTalentNode":                65625,
+		"QueryTalentExp":                   65633,
+		"BroadCastUpTalentExp":             65635,
+		"QueryAnimalList":                  65637,
+		"BroadCastUpdateAnimalList":        65639,
+		"FreedAnimal":                      65641,
+		"QueryPlayer":                      131073,
+		"CreatePlayer":                     131075,
+		"EnterMap":                         196609,
+		"UpdateSelfLocation":               196611,
+		"UseSkill":                         196613,
+		"RespawnPlayer":                    196617,
+		"BroadCastInitMapElement":          196625,
+		"BroadCastMapEntityUpdate":         196626,
+		"BroadCastEntityDestroy":           196627,
+		"BroadCastEntityMove":              196628,
+		"BroadCastEntityCombat":            196629,
+		"BroadCastRespawnPlayer":           196630,
+		"Teleport":                         196631,
+		"BroadCastEntityProfileUpdate":     196633,
+		"BroadCastMonsterDeath":            196641,
+		"BroadCastEntityAvatarUpdate":      196642,
+		"BroadCastEntityBattleDataUpdate":  196643,
+		"BroadCastEntityBuildDataUpdate":   196645,
+		"PlayerActionCollect":              196647,
+		"BroadCastPlayerActionCollect":     196649,
+		"SceneDestruction":                 196659,
+		"BroadCastSceneDestruction":        196661,
+		"PlayerActionChat":                 196663,
+		"BroadCastPlayerActionChat":        196665,
+		"GetHomeData":                      196673,
+		"QueryServerTime":                  196675,
+		"BroadCastChangeService":           196677,
+		"BroadCastHomeDataInitBatch":       196681,
+		"BroadCastHomeSkillResult":         196689,
+		"QueryTalentTree":                  196691,
+		"BroadCastTalentTreeUpdate":        196693,
+		"BroadCastAnimalSceneDataUpdate":   196695,
+		"BroadCastAnimalDeath":             196697,
+		"BroadCastAnimalAutoProduce":       196705,
+		"BroadCastPickupDrop":              196707,
+		"AnimalSpecialAction":              196709,
+		"CaptureAnimal":                    196711,
+		"BroadCastEntityMoveSpeed":         196713,
+		"BroadCastEntityCaptureDataUpdate": 196720,
+		"ExitCapture":                      196721,
+		"EntityAccumulateStatus":           196722,
+		"BroadCastEntityAccumulateStatus":  196723,
+		"SelfTasks":                        262145,
+		"BroadCastUpdateTask":              262147,
+		"BroadCastUpdateTaskList":          262148,
+		"AcceptTask":                       262149,
+		"AcceptTaskList":                   262151,
+		"AbandonTask":                      262153,
+		"AbandonTaskList":                  262161,
+		"TaskReward":                       262163,
+		"UpgradeTaskProgress":              262165,
+		"BroadCastTaskReward":              262167,
+		"BroadCastTaskListReward":          262169,
+		"SendChatMessage":                  327681,
+		"BroadCastChatMessages":            327683,
+		"BroadCastRemoveChatMessage":       327684,
+		"BroadCastUpdateChatState":         327685,
+		"Ping":                             393217,
+		"BroadCastMsgAggregation":          458753,
 	}
 )
 
@@ -374,7 +386,7 @@ var File_message_cmd_proto protoreflect.FileDescriptor
 var file_message_cmd_proto_rawDesc = []byte{
 	0x0a, 0x11, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6d, 0x64, 0x2e, 0x70, 0x72,
 	0x6f, 0x74, 0x6f, 0x12, 0x0f, 0x67, 0x61, 0x6d, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x43, 0x6f, 0x72, 0x65, 0x2a, 0xac, 0x12, 0x0a, 0x0c, 0x45, 0x6e, 0x76, 0x65, 0x6c, 0x6f, 0x70,
+	0x43, 0x6f, 0x72, 0x65, 0x2a, 0xac, 0x13, 0x0a, 0x0c, 0x45, 0x6e, 0x76, 0x65, 0x6c, 0x6f, 0x70,
 	0x65, 0x54, 0x79, 0x70, 0x65, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x6e, 0x6b, 0x6e, 0x6f, 0x77, 0x6e,
 	0x10, 0x00, 0x12, 0x16, 0x0a, 0x10, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x54,
 	0x69, 0x63, 0x6b, 0x4f, 0x75, 0x74, 0x10, 0x99, 0xb3, 0x02, 0x12, 0x0d, 0x0a, 0x07, 0x49, 0x74,
@@ -494,7 +506,15 @@ var file_message_cmd_proto_rawDesc = []byte{
 	0x63, 0x74, 0x69, 0x6f, 0x6e, 0x10, 0xe5, 0x80, 0x0c, 0x12, 0x13, 0x0a, 0x0d, 0x43, 0x61, 0x70,
 	0x74, 0x75, 0x72, 0x65, 0x41, 0x6e, 0x69, 0x6d, 0x61, 0x6c, 0x10, 0xe7, 0x80, 0x0c, 0x12, 0x1e,
 	0x0a, 0x18, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x45, 0x6e, 0x74, 0x69, 0x74,
-	0x79, 0x4d, 0x6f, 0x76, 0x65, 0x53, 0x70, 0x65, 0x65, 0x64, 0x10, 0xe9, 0x80, 0x0c, 0x12, 0x0f,
+	0x79, 0x4d, 0x6f, 0x76, 0x65, 0x53, 0x70, 0x65, 0x65, 0x64, 0x10, 0xe9, 0x80, 0x0c, 0x12, 0x26,
+	0x0a, 0x20, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x45, 0x6e, 0x74, 0x69, 0x74,
+	0x79, 0x43, 0x61, 0x70, 0x74, 0x75, 0x72, 0x65, 0x44, 0x61, 0x74, 0x61, 0x55, 0x70, 0x64, 0x61,
+	0x74, 0x65, 0x10, 0xf0, 0x80, 0x0c, 0x12, 0x11, 0x0a, 0x0b, 0x45, 0x78, 0x69, 0x74, 0x43, 0x61,
+	0x70, 0x74, 0x75, 0x72, 0x65, 0x10, 0xf1, 0x80, 0x0c, 0x12, 0x1c, 0x0a, 0x16, 0x45, 0x6e, 0x74,
+	0x69, 0x74, 0x79, 0x41, 0x63, 0x63, 0x75, 0x6d, 0x75, 0x6c, 0x61, 0x74, 0x65, 0x53, 0x74, 0x61,
+	0x74, 0x75, 0x73, 0x10, 0xf2, 0x80, 0x0c, 0x12, 0x25, 0x0a, 0x1f, 0x42, 0x72, 0x6f, 0x61, 0x64,
+	0x43, 0x61, 0x73, 0x74, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x41, 0x63, 0x63, 0x75, 0x6d, 0x75,
+	0x6c, 0x61, 0x74, 0x65, 0x53, 0x74, 0x61, 0x74, 0x75, 0x73, 0x10, 0xf3, 0x80, 0x0c, 0x12, 0x0f,
 	0x0a, 0x09, 0x53, 0x65, 0x6c, 0x66, 0x54, 0x61, 0x73, 0x6b, 0x73, 0x10, 0x81, 0x80, 0x10, 0x12,
 	0x19, 0x0a, 0x13, 0x42, 0x72, 0x6f, 0x61, 0x64, 0x43, 0x61, 0x73, 0x74, 0x55, 0x70, 0x64, 0x61,
 	0x74, 0x65, 0x54, 0x61, 0x73, 0x6b, 0x10, 0x83, 0x80, 0x10, 0x12, 0x1d, 0x0a, 0x17, 0x42, 0x72,

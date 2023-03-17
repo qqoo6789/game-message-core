@@ -19,6 +19,7 @@ const (
 	MainServiceActionGetHomeData MainServiceAction = "MainServiceActionGetHomeData"
 	MultiUpdateAnimalBaseData    MainServiceAction = "MainServiceActionMultiUpdateAnimalBaseData"
 	GetUserAnimalList            MainServiceAction = "MainServiceActionGetUserAnimalList"
+	CaptureAnimal                MainServiceAction = "MainServiceActionCaptureAnimal"
 )
 
 type ProtoMessageAction string

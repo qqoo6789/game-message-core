@@ -54,6 +54,12 @@ public static class MainServiceAction
     /// 查询玩家animal列表信息(主要是大世界抓捕时使用)
     /// </summary>
     public const string GET_USER_ANIMAL_LIST = "MainServiceActionGetUserAnimalList";
+    /// <summary>
+    /// 抓捕到动物(主要是大世界抓捕时使用)
+    /// </summary>
+    public const string CAPTURE_ANIMAL = "MainServiceActionCaptureAnimal";
+
+
 
 }
 

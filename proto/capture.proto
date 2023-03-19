@@ -33,6 +33,8 @@ enum CaptureFailReason {
   CaptureFailReasonTimeout = 6;
   // item数量不足
   CaptureFailReasonLackOfItem = 7;
+  // 意外关联错误
+  CaptureFailCorrelationError = 8;
 }
 
 message CaptureData {

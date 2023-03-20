@@ -99,6 +99,8 @@ message ProxyAnimalBaseData
   string name = 2;
   int32 cid = 3;
   int32 favorability = 4;
+  uint64 createMs = 5;
+  uint64 updateMs = 6;
 }
 
 message ProxyProductData

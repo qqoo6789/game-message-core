@@ -32,14 +32,14 @@ namespace GameMessageCore {
             "ZUNvcmUuQ2FwdHVyZVN0YXR1cyqRAQoNQ2FwdHVyZVN0YXR1cxIYChRDYXB0",
             "dXJlU3RhdHVzVW5rbm93bhAAEhYKEkNhcHR1cmVTdGF0dXNTdGFydBABEhcK",
             "E0NhcHR1cmVTdGF0dXNVcGRhdGUQAhIbChdDYXB0dXJlU3RhdHVzRW5kU3Vj",
-            "Y2VzcxADEhgKFENhcHR1cmVTdGF0dXNFbmRGYWlsEAQqrwIKEUNhcHR1cmVG",
+            "Y2VzcxADEhgKFENhcHR1cmVTdGF0dXNFbmRGYWlsEAQqtQIKEUNhcHR1cmVG",
             "YWlsUmVhc29uEhwKGENhcHR1cmVGYWlsUmVhc29uVW5rbm93bhAAEhsKF0Nh",
             "cHR1cmVGYWlsUmVhc29uR2l2ZXVwEAESHAoYQ2FwdHVyZUZhaWxSZWFzb25S",
             "b2xlRGllEAISHwobQ2FwdHVyZUZhaWxSZWFzb25Nb25zdGVyRGllEAMSIAoc",
             "Q2FwdHVyZUZhaWxSZWFzb25GYXJEaXN0YW5jZRAEEh4KGkNhcHR1cmVGYWls",
             "UmVhc29uUm9wZUJyZWFrEAUSHAoYQ2FwdHVyZUZhaWxSZWFzb25UaW1lb3V0",
-            "EAYSHwobQ2FwdHVyZUZhaWxSZWFzb25MYWNrT2ZJdGVtEAcSHwobQ2FwdHVy",
-            "ZUZhaWxDb3JyZWxhdGlvbkVycm9yEAhiBnByb3RvMw=="));
+            "EAYSHwobQ2FwdHVyZUZhaWxSZWFzb25MYWNrT2ZJdGVtEAcSJQohQ2FwdHVy",
+            "ZUZhaWxSZWFzb25Db3JyZWxhdGlvbkVycm9yEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CaptureStatus), typeof(global::GameMessageCore.CaptureFailReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -109,7 +109,7 @@ namespace GameMessageCore {
     /// <summary>
     /// 意外关联错误
     /// </summary>
-    [pbr::OriginalName("CaptureFailCorrelationError")] CaptureFailCorrelationError = 8,
+    [pbr::OriginalName("CaptureFailReasonCorrelationError")] CorrelationError = 8,
   }
 
   #endregion

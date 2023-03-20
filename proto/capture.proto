@@ -34,7 +34,7 @@ enum CaptureFailReason {
   // item数量不足
   CaptureFailReasonLackOfItem = 7;
   // 意外关联错误
-  CaptureFailCorrelationError = 8;
+  CaptureFailReasonCorrelationError = 8;
 }
 
 message CaptureData {

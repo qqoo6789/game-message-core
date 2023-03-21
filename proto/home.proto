@@ -85,7 +85,7 @@ message CollectResourceExecuteResult
 
 message ProxyAnimalData
 {
-  uint64 animId = 1;
+  uint64 animalId = 1;
   int32 hungerProgress  = 2;
   int32 harvestProgress = 3;
   bool isComforted = 4;
@@ -95,7 +95,7 @@ message ProxyAnimalData
 
 message ProxyAnimalBaseData
 {
-  uint64 animId = 1;
+  uint64 animalId = 1;
   string name = 2;
   int32 cid = 3;
   int32 favorability = 4;
@@ -113,7 +113,7 @@ message ProxyProductData
 // 更新动物数据
 message AnimalUpdateData
 {
-  uint64 animId = 1;
+  uint64 animalId = 1;
   int32 hungerProgress  = 2;
 }
 

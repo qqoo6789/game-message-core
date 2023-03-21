@@ -8,6 +8,7 @@ import "entityProfile.proto";
 import "player.proto";
 import "item.proto";
 import "home.proto";
+import "capture.proto";
 
 
 /// ************************* entity data ***************************************************
@@ -59,6 +60,8 @@ message Player {
   string                skillEffectData = 9; //技能特效数据
   bool                  is_battle = 10;     //战斗状态
   // repeated bian.proto.EntityBuff buff_list = 28;
+  CaptureData             capture_data = 11;  //捕获数据
+
 }
 
 message Monster {
@@ -71,6 +74,7 @@ message Monster {
   string                  skillEffectData = 7; //技能特效数据
   bool                    is_battle = 8;     //战斗状态
   int64                   owner_id = 9;       //战斗所属者
+  CaptureData             capture_data = 10;  //捕获数据
 }
 
 message Npc {

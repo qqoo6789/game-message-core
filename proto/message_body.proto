@@ -18,6 +18,7 @@ import "land.proto";
 import "service.proto";
 import "home.proto";
 import "talent.proto";
+import "capture.proto";
 
 
 
@@ -157,9 +158,12 @@ message Envelope {
     CaptureAnimalRequest                    capture_animal_request                        = 0x030067;
     CaptureAnimalResponse                   capture_animal_response                       = 0x030068;
     BroadCastEntityMoveSpeedResponse        broad_cast_entity_move_speed_response         = 0x030069;
-
- 
-
+    BroadCastEntityCaptureDataUpdateResponse  broad_cast_entity_capture_data_update_response  = 0x030070;
+    ExitCaptureRequest                      exit_capture_request                          = 0x030071;
+    ExitCaptureResponse                     exit_capture_response                         = 0x030072;
+    EntityAccumulateStatusRequest           entity_accumulate_status_request              = 0x030073;
+    EntityAccumulateStatusResponse          entity_accumulate_status_response             = 0x030074;
+    BroadCastEntityAccumulateStatusResponse broad_cast_entity_accumulate_status_response  = 0x030075;
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -312,6 +316,18 @@ message BroadCastEntityBattleDataUpdateResponse {
   int64       owner_id = 3;
 }
  
+
+
+message BroadCastEntityCaptureDataUpdateResponse {
+   CaptureStatus status   = 1;
+   int64      from_id     = 2;
+   int64      to_id       = 3;
+   CaptureData capture_data_from = 4;
+   CaptureData capture_data_to   = 5;
+   CaptureFailReason failReason  = 6;
+}
+
+
 // 占地相关
 message QueryLandsRequest{}
 message QueryLandsResponse{}
@@ -375,6 +391,25 @@ message MintBatteryRequest{
   int32          giftNum = 2;
 }
 message MintBatteryResponse{ }
+
+message ExitCaptureRequest{ 
+   CaptureFailReason failReason  = 1;
+}
+message ExitCaptureResponse{ 
+}
+message EntityAccumulateStatusRequest{ 
+   int32 skillId = 1;        // 技能id
+   bool  isStart = 2;        // 蓄力开始 or 结束
+   float accumulateTime = 3; // 蓄力时间
+}
+message EntityAccumulateStatusResponse{ 
+}
+message BroadCastEntityAccumulateStatusResponse{ 
+   int32 skillId = 1;        // 技能id
+   bool  isStart = 2;        // 蓄力开始 or 结束
+   float accumulateTime = 3; // 蓄力时间
+   int64 entityId = 4;       // 蓄力实体
+}
 
 message QueryGranaryRequest{}
 message QueryGranaryResponse{
@@ -465,6 +500,14 @@ message UpdateSelfLocationResponse {
   EntityMovement  movement = 1;
   float          speed = 2;
 }
+
+//使用技能扣除道具
+message UseSkillCostItem{
+  int32     cid = 1;
+  string    nftId = 2;
+  int32     num = 3;
+}
+
 message UseSkillRequest {
   // 使用的技能 id
   int32           skill_id = 1;
@@ -474,10 +517,14 @@ message UseSkillRequest {
   EntityLocation  from_location = 3;
   // 技能指定使用的目标
   EntityId        target_id = 4;
-  //是技能开始还是停止 有些持续需要手动停止
-  bool            is_start = 5;
+  // 使用技能状态
+  UseSkillState skill_state = 5;
   //家园采集信息
   UseCollectResourceSkillInfo homeCollectInfo = 6;
+  // 蓄力技能蓄力时间 s
+  float   accu_time   = 7; 
+  // 技能消耗道具
+  UseSkillCostItem  costItem     = 8;
 }
 message UseSkillResponse {
 } 
@@ -618,6 +665,8 @@ message BroadCastEntityCombatResponse{
   repeated EntityDamage targets = 9;
   // 产生的所有技能飞行物
   repeated SkillFlyerData flyers= 10;
+  // 技能使用道具
+  UseSkillCostItem costItem = 11;
 }
 
 message TeleportRequest {

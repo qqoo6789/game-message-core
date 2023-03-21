@@ -93,4 +93,13 @@ message SkillFlyerData{
   EntityId target = 1;
   int64 dest_stamp  = 2;
   Vector3 dir = 3;
+  Vector3 toPos = 4;
+  int32  itemCid = 5;
+}
+
+enum UseSkillState{
+  // 主动开始技能
+  Start = 0;
+  // 主动结束技能
+  Stop = 1;
 }

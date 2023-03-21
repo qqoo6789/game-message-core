@@ -38,31 +38,33 @@ namespace GameMessageCore {
             "Z2VfdmFsdWUYDSABKAsyGy5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRGF0YUgA",
             "QgYKBGRhdGEiegoMRW50aXR5RGFtYWdlEikKBmVudGl0eRgBIAEoCzIZLmdh",
             "bWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIQCghza2lsbF9pZBgCIAEoBRItCgZl",
-            "ZmZlY3QYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0InYK",
-            "DlNraWxsRmx5ZXJEYXRhEikKBnRhcmdldBgBIAEoCzIZLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlJZBISCgpkZXN0X3N0YW1wGAIgASgDEiUKA2RpchgDIAEo",
-            "CzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzKsQBChFFbnRpdHlDb21iYXRT",
-            "dGF0ZRIcChhFbnRpdHlDb21iYXRTdGF0ZVVua25vd24QABIaChZFbnRpdHlD",
-            "b21iYXRTdGF0ZUJlZ2luEAESGAoURW50aXR5Q29tYmF0U3RhdGVFbmQQAhIg",
-            "ChxFbnRpdHlDb21iYXRTdGF0ZUludGVycnVwdGVkEAMSGwoXRW50aXR5Q29t",
-            "YmF0U3RhdGVGbHlIaXQQBBIcChhFbnRpdHlDb21iYXRTdGF0ZVRyaWdnZXIQ",
-            "BSqMAgoORGFtYWdlRWZmZWN0SWQSGQoVRGFtYWdlRWZmZWN0SWRVbmtub3du",
-            "EAASFwoSRGFtYWdlRWZmZWN0SWQxMDAxEOkHEhcKEkRhbWFnZUVmZmVjdElk",
-            "MTAwMhDqBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDMQ6wcSFwoSRGFtYWdlRWZm",
-            "ZWN0SWQxMDA0EOwHEhcKEkRhbWFnZUVmZmVjdElkMTAwNRDtBxIXChJEYW1h",
-            "Z2VFZmZlY3RJZDEwMDYQ7gcSFwoSRGFtYWdlRWZmZWN0SWQxMDA3EO8HEhcK",
-            "EkRhbWFnZUVmZmVjdElkMTAwOBDwBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDkQ",
-            "8QcqYwoLRGFtYWdlU3RhdGUSFQoRRGFtYWdlU3RhdGVOb3JtYWwQABITCg9E",
-            "YW1hZ2VTdGF0ZUNyaXQQARITCg9EYW1hZ2VTdGF0ZU1pc3MQAxITCg9EYW1h",
-            "Z2VTdGF0ZUZhbGwQBGIGcHJvdG8z"));
+            "ZmZlY3QYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0IrAB",
+            "Cg5Ta2lsbEZseWVyRGF0YRIpCgZ0YXJnZXQYASABKAsyGS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5SWQSEgoKZGVzdF9zdGFtcBgCIAEoAxIlCgNkaXIYAyAB",
+            "KAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxInCgV0b1BvcxgEIAEoCzIY",
+            "LmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEg8KB2l0ZW1DaWQYBSABKAUqxAEK",
+            "EUVudGl0eUNvbWJhdFN0YXRlEhwKGEVudGl0eUNvbWJhdFN0YXRlVW5rbm93",
+            "bhAAEhoKFkVudGl0eUNvbWJhdFN0YXRlQmVnaW4QARIYChRFbnRpdHlDb21i",
+            "YXRTdGF0ZUVuZBACEiAKHEVudGl0eUNvbWJhdFN0YXRlSW50ZXJydXB0ZWQQ",
+            "AxIbChdFbnRpdHlDb21iYXRTdGF0ZUZseUhpdBAEEhwKGEVudGl0eUNvbWJh",
+            "dFN0YXRlVHJpZ2dlchAFKowCCg5EYW1hZ2VFZmZlY3RJZBIZChVEYW1hZ2VF",
+            "ZmZlY3RJZFVua25vd24QABIXChJEYW1hZ2VFZmZlY3RJZDEwMDEQ6QcSFwoS",
+            "RGFtYWdlRWZmZWN0SWQxMDAyEOoHEhcKEkRhbWFnZUVmZmVjdElkMTAwMxDr",
+            "BxIXChJEYW1hZ2VFZmZlY3RJZDEwMDQQ7AcSFwoSRGFtYWdlRWZmZWN0SWQx",
+            "MDA1EO0HEhcKEkRhbWFnZUVmZmVjdElkMTAwNhDuBxIXChJEYW1hZ2VFZmZl",
+            "Y3RJZDEwMDcQ7wcSFwoSRGFtYWdlRWZmZWN0SWQxMDA4EPAHEhcKEkRhbWFn",
+            "ZUVmZmVjdElkMTAwORDxBypjCgtEYW1hZ2VTdGF0ZRIVChFEYW1hZ2VTdGF0",
+            "ZU5vcm1hbBAAEhMKD0RhbWFnZVN0YXRlQ3JpdBABEhMKD0RhbWFnZVN0YXRl",
+            "TWlzcxADEhMKD0RhbWFnZVN0YXRlRmFsbBAEKiQKDVVzZVNraWxsU3RhdGUS",
+            "CQoFU3RhcnQQABIICgRTdG9wEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), typeof(global::GameMessageCore.UseSkillState), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageData), global::GameMessageCore.DamageData.Parser, new[]{ "DmgState", "CurrentInt", "DeltaInt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageEffectBeatBack), global::GameMessageCore.DamageEffectBeatBack.Parser, new[]{ "CurLoc", "BackToPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageEffect), global::GameMessageCore.DamageEffect.Parser, new[]{ "EffectType", "ExpiredAt", "IntValue", "StrValue", "BeatBackValue", "DamageValue" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityDamage), global::GameMessageCore.EntityDamage.Parser, new[]{ "Entity", "SkillId", "Effect" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SkillFlyerData), global::GameMessageCore.SkillFlyerData.Parser, new[]{ "Target", "DestStamp", "Dir" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SkillFlyerData), global::GameMessageCore.SkillFlyerData.Parser, new[]{ "Target", "DestStamp", "Dir", "ToPos", "ItemCid" }, null, null, null, null)
           }));
     }
     #endregion
@@ -150,6 +152,17 @@ namespace GameMessageCore {
     /// 掉落伤害
     /// </summary>
     [pbr::OriginalName("DamageStateFall")] Fall = 4,
+  }
+
+  public enum UseSkillState {
+    /// <summary>
+    /// 主动开始技能
+    /// </summary>
+    [pbr::OriginalName("Start")] Start = 0,
+    /// <summary>
+    /// 主动结束技能
+    /// </summary>
+    [pbr::OriginalName("Stop")] Stop = 1,
   }
 
   #endregion
@@ -1411,6 +1424,8 @@ namespace GameMessageCore {
       target_ = other.target_ != null ? other.target_.Clone() : null;
       destStamp_ = other.destStamp_;
       dir_ = other.dir_ != null ? other.dir_.Clone() : null;
+      toPos_ = other.toPos_ != null ? other.toPos_.Clone() : null;
+      itemCid_ = other.itemCid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1456,6 +1471,30 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "toPos" field.</summary>
+    public const int ToPosFieldNumber = 4;
+    private global::GameMessageCore.Vector3 toPos_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.Vector3 ToPos {
+      get { return toPos_; }
+      set {
+        toPos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "itemCid" field.</summary>
+    public const int ItemCidFieldNumber = 5;
+    private int itemCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ItemCid {
+      get { return itemCid_; }
+      set {
+        itemCid_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1474,6 +1513,8 @@ namespace GameMessageCore {
       if (!object.Equals(Target, other.Target)) return false;
       if (DestStamp != other.DestStamp) return false;
       if (!object.Equals(Dir, other.Dir)) return false;
+      if (!object.Equals(ToPos, other.ToPos)) return false;
+      if (ItemCid != other.ItemCid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1484,6 +1525,8 @@ namespace GameMessageCore {
       if (target_ != null) hash ^= Target.GetHashCode();
       if (DestStamp != 0L) hash ^= DestStamp.GetHashCode();
       if (dir_ != null) hash ^= Dir.GetHashCode();
+      if (toPos_ != null) hash ^= ToPos.GetHashCode();
+      if (ItemCid != 0) hash ^= ItemCid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1514,6 +1557,14 @@ namespace GameMessageCore {
         output.WriteRawTag(26);
         output.WriteMessage(Dir);
       }
+      if (toPos_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ToPos);
+      }
+      if (ItemCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ItemCid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1536,6 +1587,14 @@ namespace GameMessageCore {
         output.WriteRawTag(26);
         output.WriteMessage(Dir);
       }
+      if (toPos_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ToPos);
+      }
+      if (ItemCid != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ItemCid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1554,6 +1613,12 @@ namespace GameMessageCore {
       }
       if (dir_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Dir);
+      }
+      if (toPos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ToPos);
+      }
+      if (ItemCid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemCid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1581,6 +1646,15 @@ namespace GameMessageCore {
           Dir = new global::GameMessageCore.Vector3();
         }
         Dir.MergeFrom(other.Dir);
+      }
+      if (other.toPos_ != null) {
+        if (toPos_ == null) {
+          ToPos = new global::GameMessageCore.Vector3();
+        }
+        ToPos.MergeFrom(other.ToPos);
+      }
+      if (other.ItemCid != 0) {
+        ItemCid = other.ItemCid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1615,6 +1689,17 @@ namespace GameMessageCore {
             input.ReadMessage(Dir);
             break;
           }
+          case 34: {
+            if (toPos_ == null) {
+              ToPos = new global::GameMessageCore.Vector3();
+            }
+            input.ReadMessage(ToPos);
+            break;
+          }
+          case 40: {
+            ItemCid = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1646,6 +1731,17 @@ namespace GameMessageCore {
               Dir = new global::GameMessageCore.Vector3();
             }
             input.ReadMessage(Dir);
+            break;
+          }
+          case 34: {
+            if (toPos_ == null) {
+              ToPos = new global::GameMessageCore.Vector3();
+            }
+            input.ReadMessage(ToPos);
+            break;
+          }
+          case 40: {
+            ItemCid = input.ReadInt32();
             break;
           }
         }

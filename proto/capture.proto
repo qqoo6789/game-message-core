@@ -1,0 +1,49 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+// 捕获状态
+enum CaptureStatus {
+  CaptureStatusUnknown = 0;
+  // 进入捕获
+  CaptureStatusStart = 1;
+  // 更新捕获信息
+  CaptureStatusUpdate = 2;
+  // 成功结束
+  CaptureStatusEndSuccess = 3;
+  // 失败结束
+  CaptureStatusEndFail = 4;
+}
+
+// 失败原因
+enum CaptureFailReason {
+  CaptureFailReasonUnknown = 0;
+  // 主动放弃
+  CaptureFailReasonGiveup = 1;
+  // 我方意外死亡
+  CaptureFailReasonRoleDie = 2;
+  // 怪物意外死亡
+  CaptureFailReasonMonsterDie = 3;
+  // 距离太远
+  CaptureFailReasonFarDistance = 4;
+  // 绳子磨损断开
+  CaptureFailReasonRopeBreak = 5;
+  // 捕获超时
+  CaptureFailReasonTimeout = 6;
+  // item数量不足
+  CaptureFailReasonLackOfItem = 7;
+  // 意外关联错误
+  CaptureFailReasonCorrelationError = 8;
+}
+
+message CaptureData {
+  int64       capture_id = 1;    //捕获对象
+  int64       capture_at = 2; // 捕获开始时间
+  int32       progress = 3;  // 捕获进度
+  int32       rope_cur_hp   = 4;  // 捕获绳当前hp
+  int32       rope_max_hp   = 5;  // 捕获绳最大hp
+  float       capture_cur_hp   = 6;  // 捕获当前hp
+  float       capture_max_hp   = 7;  // 捕获最大hp
+  CaptureStatus status         = 8;
+}

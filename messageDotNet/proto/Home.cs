@@ -46,24 +46,25 @@ namespace GameMessageCore {
             "ASgFEhkKEXByb2dyZXNzRnVsbFN0YW1wGAIgASgDInwKHENvbGxlY3RSZXNv",
             "dXJjZUV4ZWN1dGVSZXN1bHQSEQoJaXRlbVZhbGlkGAEgASgIEhgKEEV4dHJh",
             "V2F0ZXJpbmdOdW0YAiABKAUSLwoIZHJvcExpc3QYAyADKAsyHS5nYW1lTWVz",
-            "c2FnZUNvcmUuSXRlbUJhc2VJbmZvIq8BCg9Qcm94eUFuaW1hbERhdGESDgoG",
-            "YW5pbUlkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgFEhcKD2hhcnZl",
-            "c3RQcm9ncmVzcxgDIAEoBRITCgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0Rl",
-            "YWQYBSABKAgSNgoLcHJvZHVjdERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNv",
-            "cmUuUHJveHlQcm9kdWN0RGF0YSJWChNQcm94eUFuaW1hbEJhc2VEYXRhEg4K",
-            "BmFuaW1JZBgBIAEoBBIMCgRuYW1lGAIgASgJEgsKA2NpZBgDIAEoBRIUCgxm",
-            "YXZvcmFiaWxpdHkYBCABKAUihAEKEFByb3h5UHJvZHVjdERhdGESEQoJcHJv",
-            "ZHVjdElkGAEgASgDEg8KB2l0ZW1DaWQYAiABKAUSDwoHaXRlbU51bRgDIAEo",
-            "BRIPCgdxdWFsaXR5GAQgASgFEioKCHBvc2l0aW9uGAUgASgLMhguZ2FtZU1l",
-            "c3NhZ2VDb3JlLlZlY3RvcjMiOgoQQW5pbWFsVXBkYXRlRGF0YRIOCgZhbmlt",
-            "SWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93",
-            "bFVwZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUS",
-            "GgoScmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3Vy",
-            "Y2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29s",
-            "bGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpB",
-            "bmltYWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lhbEFjdGlv",
-            "blR5cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3duEAASJQoh",
-            "QW5pbWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnByb3RvMw=="));
+            "c2FnZUNvcmUuSXRlbUJhc2VJbmZvIrEBCg9Qcm94eUFuaW1hbERhdGESEAoI",
+            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUSFwoPaGFy",
+            "dmVzdFByb2dyZXNzGAMgASgFEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
+            "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
+            "Q29yZS5Qcm94eVByb2R1Y3REYXRhIlgKE1Byb3h5QW5pbWFsQmFzZURhdGES",
+            "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
+            "FAoMZmF2b3JhYmlsaXR5GAQgASgFIoQBChBQcm94eVByb2R1Y3REYXRhEhEK",
+            "CXByb2R1Y3RJZBgBIAEoAxIPCgdpdGVtQ2lkGAIgASgFEg8KB2l0ZW1OdW0Y",
+            "AyABKAUSDwoHcXVhbGl0eRgEIAEoBRIqCghwb3NpdGlvbhgFIAEoCzIYLmdh",
+            "bWVNZXNzYWdlQ29yZS5WZWN0b3IzIjwKEEFuaW1hbFVwZGF0ZURhdGESEAoI",
+            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5p",
+            "bWFsQm93bFVwZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQY",
+            "AiABKAUSGgoScmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0",
+            "UmVzb3VyY2VUeXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAAS",
+            "GwoXQ29sbGVjdFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQ",
+            "AhIOCgpBbmltYWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lh",
+            "bEFjdGlvblR5cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3du",
+            "EAASJQohQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,10 +75,10 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimId", "Name", "Cid", "Favorability" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimalId", "Name", "Cid", "Favorability" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "ItemNum", "Quality", "Position" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalUpdateData), global::GameMessageCore.AnimalUpdateData.Parser, new[]{ "AnimId", "HungerProgress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalUpdateData), global::GameMessageCore.AnimalUpdateData.Parser, new[]{ "AnimalId", "HungerProgress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalBowlUpdateData), global::GameMessageCore.AnimalBowlUpdateData.Parser, new[]{ "BowlId", "FoodCid", "RemainFoodCapacity" }, null, null, null, null)
           }));
     }
@@ -2109,7 +2110,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProxyAnimalData(ProxyAnimalData other) : this() {
-      animId_ = other.animId_;
+      animalId_ = other.animalId_;
       hungerProgress_ = other.hungerProgress_;
       harvestProgress_ = other.harvestProgress_;
       isComforted_ = other.isComforted_;
@@ -2124,15 +2125,15 @@ namespace GameMessageCore {
       return new ProxyAnimalData(this);
     }
 
-    /// <summary>Field number for the "animId" field.</summary>
-    public const int AnimIdFieldNumber = 1;
-    private ulong animId_;
+    /// <summary>Field number for the "animalId" field.</summary>
+    public const int AnimalIdFieldNumber = 1;
+    private ulong animalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong AnimId {
-      get { return animId_; }
+    public ulong AnimalId {
+      get { return animalId_; }
       set {
-        animId_ = value;
+        animalId_ = value;
       }
     }
 
@@ -2211,7 +2212,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (AnimId != other.AnimId) return false;
+      if (AnimalId != other.AnimalId) return false;
       if (HungerProgress != other.HungerProgress) return false;
       if (HarvestProgress != other.HarvestProgress) return false;
       if (IsComforted != other.IsComforted) return false;
@@ -2224,7 +2225,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (AnimId != 0UL) hash ^= AnimId.GetHashCode();
+      if (AnimalId != 0UL) hash ^= AnimalId.GetHashCode();
       if (HungerProgress != 0) hash ^= HungerProgress.GetHashCode();
       if (HarvestProgress != 0) hash ^= HarvestProgress.GetHashCode();
       if (IsComforted != false) hash ^= IsComforted.GetHashCode();
@@ -2248,9 +2249,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (HungerProgress != 0) {
         output.WriteRawTag(16);
@@ -2282,9 +2283,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (HungerProgress != 0) {
         output.WriteRawTag(16);
@@ -2316,8 +2317,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (AnimId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimId);
+      if (AnimalId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimalId);
       }
       if (HungerProgress != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HungerProgress);
@@ -2346,8 +2347,8 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.AnimId != 0UL) {
-        AnimId = other.AnimId;
+      if (other.AnimalId != 0UL) {
+        AnimalId = other.AnimalId;
       }
       if (other.HungerProgress != 0) {
         HungerProgress = other.HungerProgress;
@@ -2383,7 +2384,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 16: {
@@ -2425,7 +2426,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 16: {
@@ -2492,7 +2493,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProxyAnimalBaseData(ProxyAnimalBaseData other) : this() {
-      animId_ = other.animId_;
+      animalId_ = other.animalId_;
       name_ = other.name_;
       cid_ = other.cid_;
       favorability_ = other.favorability_;
@@ -2505,15 +2506,15 @@ namespace GameMessageCore {
       return new ProxyAnimalBaseData(this);
     }
 
-    /// <summary>Field number for the "animId" field.</summary>
-    public const int AnimIdFieldNumber = 1;
-    private ulong animId_;
+    /// <summary>Field number for the "animalId" field.</summary>
+    public const int AnimalIdFieldNumber = 1;
+    private ulong animalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong AnimId {
-      get { return animId_; }
+    public ulong AnimalId {
+      get { return animalId_; }
       set {
-        animId_ = value;
+        animalId_ = value;
       }
     }
 
@@ -2568,7 +2569,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (AnimId != other.AnimId) return false;
+      if (AnimalId != other.AnimalId) return false;
       if (Name != other.Name) return false;
       if (Cid != other.Cid) return false;
       if (Favorability != other.Favorability) return false;
@@ -2579,7 +2580,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (AnimId != 0UL) hash ^= AnimId.GetHashCode();
+      if (AnimalId != 0UL) hash ^= AnimalId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Favorability != 0) hash ^= Favorability.GetHashCode();
@@ -2601,9 +2602,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -2627,9 +2628,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -2653,8 +2654,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (AnimId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimId);
+      if (AnimalId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimalId);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -2677,8 +2678,8 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.AnimId != 0UL) {
-        AnimId = other.AnimId;
+      if (other.AnimalId != 0UL) {
+        AnimalId = other.AnimalId;
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
@@ -2705,7 +2706,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -2736,7 +2737,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 18: {
@@ -3141,7 +3142,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AnimalUpdateData(AnimalUpdateData other) : this() {
-      animId_ = other.animId_;
+      animalId_ = other.animalId_;
       hungerProgress_ = other.hungerProgress_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3152,15 +3153,15 @@ namespace GameMessageCore {
       return new AnimalUpdateData(this);
     }
 
-    /// <summary>Field number for the "animId" field.</summary>
-    public const int AnimIdFieldNumber = 1;
-    private ulong animId_;
+    /// <summary>Field number for the "animalId" field.</summary>
+    public const int AnimalIdFieldNumber = 1;
+    private ulong animalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong AnimId {
-      get { return animId_; }
+    public ulong AnimalId {
+      get { return animalId_; }
       set {
-        animId_ = value;
+        animalId_ = value;
       }
     }
 
@@ -3191,7 +3192,7 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (AnimId != other.AnimId) return false;
+      if (AnimalId != other.AnimalId) return false;
       if (HungerProgress != other.HungerProgress) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3200,7 +3201,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (AnimId != 0UL) hash ^= AnimId.GetHashCode();
+      if (AnimalId != 0UL) hash ^= AnimalId.GetHashCode();
       if (HungerProgress != 0) hash ^= HungerProgress.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3220,9 +3221,9 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (HungerProgress != 0) {
         output.WriteRawTag(16);
@@ -3238,9 +3239,9 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (AnimId != 0UL) {
+      if (AnimalId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(AnimId);
+        output.WriteUInt64(AnimalId);
       }
       if (HungerProgress != 0) {
         output.WriteRawTag(16);
@@ -3256,8 +3257,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (AnimId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimId);
+      if (AnimalId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimalId);
       }
       if (HungerProgress != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HungerProgress);
@@ -3274,8 +3275,8 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.AnimId != 0UL) {
-        AnimId = other.AnimId;
+      if (other.AnimalId != 0UL) {
+        AnimalId = other.AnimalId;
       }
       if (other.HungerProgress != 0) {
         HungerProgress = other.HungerProgress;
@@ -3296,7 +3297,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 16: {
@@ -3319,7 +3320,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            AnimId = input.ReadUInt64();
+            AnimalId = input.ReadUInt64();
             break;
           }
           case 16: {

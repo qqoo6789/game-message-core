@@ -61,7 +61,7 @@ func (p *GrpcItemBaseInfo) ToProtoData() *proto.ItemBaseInfo {
 // 消耗品
 type GrpcNFTConsumableInfo struct {
 	Quality        string                  `json:"quality"`
-	ConsumableType proto.NFTConsumableType `json:"consumable"`
+	ConsumableType proto.NFTConsumableType `json:"consumableType"`
 	Value          int32                   `json:"value"`
 }
 

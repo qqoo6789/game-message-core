@@ -79,10 +79,6 @@ public static class SubscriptionEvent
     /// </summary>
     public const string NFT_BUILD_REMOVE = "EventTopicNftBuildRemove";
     /// <summary>
-    /// task reward event
-    /// </summary>
-    public const string TASK_REWARD = "EventTopicUserTaskReward";
-    /// <summary>
     /// task finish event
     /// </summary>
     public const string TASK_FINISH = "EventTopicTaskFinish";

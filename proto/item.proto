@@ -120,6 +120,8 @@ message NftMetadata{
   repeated NftTraitData   traitData = 6;              
   // 属性数据
   repeated AttributeData  attributes = 7;
+  // 创建时间 秒
+  int64                   createSec = 8;
 }
 
 message NftData{

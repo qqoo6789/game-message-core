@@ -52,8 +52,8 @@ namespace GameMessageCore {
             "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
             "Q29yZS5Qcm94eVByb2R1Y3REYXRhInwKE1Byb3h5QW5pbWFsQmFzZURhdGES",
             "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
-            "FAoMZmF2b3JhYmlsaXR5GAQgASgFEhAKCGNyZWF0ZU1zGAUgASgEEhAKCHVw",
-            "ZGF0ZU1zGAYgASgEIoQBChBQcm94eVByb2R1Y3REYXRhEhEKCXByb2R1Y3RJ",
+            "FAoMZmF2b3JhYmlsaXR5GAQgASgFEhAKCGNyZWF0ZU1zGAUgASgDEhAKCHVw",
+            "ZGF0ZU1zGAYgASgDIoQBChBQcm94eVByb2R1Y3REYXRhEhEKCXByb2R1Y3RJ",
             "ZBgBIAEoAxIPCgdpdGVtQ2lkGAIgASgFEg8KB2l0ZW1OdW0YAyABKAUSDwoH",
             "cXVhbGl0eRgEIAEoBRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdl",
             "Q29yZS5WZWN0b3IzIjwKEEFuaW1hbFVwZGF0ZURhdGESEAoIYW5pbWFsSWQY",
@@ -2558,10 +2558,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "createMs" field.</summary>
     public const int CreateMsFieldNumber = 5;
-    private ulong createMs_;
+    private long createMs_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong CreateMs {
+    public long CreateMs {
       get { return createMs_; }
       set {
         createMs_ = value;
@@ -2570,10 +2570,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "updateMs" field.</summary>
     public const int UpdateMsFieldNumber = 6;
-    private ulong updateMs_;
+    private long updateMs_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong UpdateMs {
+    public long UpdateMs {
       get { return updateMs_; }
       set {
         updateMs_ = value;
@@ -2612,8 +2612,8 @@ namespace GameMessageCore {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Cid != 0) hash ^= Cid.GetHashCode();
       if (Favorability != 0) hash ^= Favorability.GetHashCode();
-      if (CreateMs != 0UL) hash ^= CreateMs.GetHashCode();
-      if (UpdateMs != 0UL) hash ^= UpdateMs.GetHashCode();
+      if (CreateMs != 0L) hash ^= CreateMs.GetHashCode();
+      if (UpdateMs != 0L) hash ^= UpdateMs.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2648,13 +2648,13 @@ namespace GameMessageCore {
         output.WriteRawTag(32);
         output.WriteInt32(Favorability);
       }
-      if (CreateMs != 0UL) {
+      if (CreateMs != 0L) {
         output.WriteRawTag(40);
-        output.WriteUInt64(CreateMs);
+        output.WriteInt64(CreateMs);
       }
-      if (UpdateMs != 0UL) {
+      if (UpdateMs != 0L) {
         output.WriteRawTag(48);
-        output.WriteUInt64(UpdateMs);
+        output.WriteInt64(UpdateMs);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2682,13 +2682,13 @@ namespace GameMessageCore {
         output.WriteRawTag(32);
         output.WriteInt32(Favorability);
       }
-      if (CreateMs != 0UL) {
+      if (CreateMs != 0L) {
         output.WriteRawTag(40);
-        output.WriteUInt64(CreateMs);
+        output.WriteInt64(CreateMs);
       }
-      if (UpdateMs != 0UL) {
+      if (UpdateMs != 0L) {
         output.WriteRawTag(48);
-        output.WriteUInt64(UpdateMs);
+        output.WriteInt64(UpdateMs);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2712,11 +2712,11 @@ namespace GameMessageCore {
       if (Favorability != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Favorability);
       }
-      if (CreateMs != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CreateMs);
+      if (CreateMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreateMs);
       }
-      if (UpdateMs != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UpdateMs);
+      if (UpdateMs != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UpdateMs);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2742,10 +2742,10 @@ namespace GameMessageCore {
       if (other.Favorability != 0) {
         Favorability = other.Favorability;
       }
-      if (other.CreateMs != 0UL) {
+      if (other.CreateMs != 0L) {
         CreateMs = other.CreateMs;
       }
-      if (other.UpdateMs != 0UL) {
+      if (other.UpdateMs != 0L) {
         UpdateMs = other.UpdateMs;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2780,11 +2780,11 @@ namespace GameMessageCore {
             break;
           }
           case 40: {
-            CreateMs = input.ReadUInt64();
+            CreateMs = input.ReadInt64();
             break;
           }
           case 48: {
-            UpdateMs = input.ReadUInt64();
+            UpdateMs = input.ReadInt64();
             break;
           }
         }
@@ -2819,11 +2819,11 @@ namespace GameMessageCore {
             break;
           }
           case 40: {
-            CreateMs = input.ReadUInt64();
+            CreateMs = input.ReadInt64();
             break;
           }
           case 48: {
-            UpdateMs = input.ReadUInt64();
+            UpdateMs = input.ReadInt64();
             break;
           }
         }

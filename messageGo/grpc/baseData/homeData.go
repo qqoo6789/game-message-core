@@ -6,6 +6,8 @@ type GrpcAnimalBaseData struct {
 	Name         string `json:"name"`
 	Cid          int32  `json:"cid"`
 	Favorability int32  `json:"favorability"`
+	CreateMs     uint64 `json:"createMs"`
+	UpdateMs     uint64 `json:"updateMs"`
 }
 
 // home data

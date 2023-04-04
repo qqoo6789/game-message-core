@@ -10,6 +10,8 @@ public class GrpcAnimalBaseData
     public string Name;
     public int Cid;
     public int Favorability;
+    public long CreateMs;
+    public long UpdateMs;
 
     public string ToJson()
     {

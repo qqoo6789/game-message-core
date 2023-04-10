@@ -29,6 +29,7 @@ public class GrpcHomeData
     public string AnimalJson;
     public string AnimalSceneJson;
     public GrpcAnimalBaseData[] AnimalList;
+    public bool UseDefaultData;
 
     public string ToJson()
     {

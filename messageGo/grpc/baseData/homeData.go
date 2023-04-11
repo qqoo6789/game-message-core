@@ -17,4 +17,5 @@ type GrpcHomeData struct {
 	AnimalJson      string               `json:"animalJson"`
 	AnimalSceneJson string               `json:"animalSceneJson"`
 	AnimalList      []GrpcAnimalBaseData `json:"animalList"`
+	UseDefaultData  bool                 `json:"useDefaultData"`
 }

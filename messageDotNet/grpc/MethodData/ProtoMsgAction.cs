@@ -82,9 +82,7 @@ public class MultipleBroadCastToClientInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public string ServiceAppId;
-    public long[] UserList;
-    public int MsgId;
-    public byte[] MsgBody;
+    public MultiClientMsgData[] MsgDataList;
 
     public string ToJson()
     {

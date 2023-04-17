@@ -1,5 +1,9 @@
 package methodData
 
+import (
+	base_data "game-message-core/grpc/baseData"
+)
+
 // agent service forward client message request
 type PullClientMessageInput struct {
 	MsgVersion     int64  `json:"msgVersion"`     // 消息版本号 值为毫秒时间戳
@@ -35,11 +39,9 @@ type BroadCastToClientOutput struct {
 
 // other service multiple broadcast proto message to client request
 type MultipleBroadCastToClientInput struct {
-	MsgVersion   int64   `json:"msgVersion"`   // 消息版本号 值为毫秒时间戳
-	ServiceAppId string  `json:"serviceAppId"` // 网关 appId
-	UserList     []int64 `json:"userList"`     //
-	MsgId        int32   `json:"msgId"`
-	MsgBody      []byte  `json:"msgBody"` // proto message marshal bytes
+	MsgVersion   int64                          `json:"msgVersion"`   // 消息版本号 值为毫秒时间戳
+	ServiceAppId string                         `json:"serviceAppId"` // from service app id
+	MsgDataList  []base_data.MultiClientMsgData `json:"msgDataList"`
 }
 
 // other service multiple broadcast proto message to client response

@@ -28,7 +28,7 @@ message EntityLocation {
 
 message EntityWithLocation {
   EntityId      type_id = 1; 
-
+  bool          isLock = 2; //是否锁定
   oneof entity {
     Player        player = 10;
     Monster       monster = 11;

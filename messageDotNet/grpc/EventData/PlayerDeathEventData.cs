@@ -9,8 +9,4 @@ public class PlayerDeathEventData : EventDataBase
     public int KillerType;
     public long KillerId;
     public string KillerName;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }

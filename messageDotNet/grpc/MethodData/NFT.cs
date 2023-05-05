@@ -2,11 +2,37 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class TakeNftData
+public class GrpcNftBaseData
 {
     public string NftId;
     public int ItemCid;
     public int Num;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+/// <summary>
+/// call mainService User use nft
+/// </summary>
+[Serializable]
+public class MainServiceActionUseNftInput
+{
+    public long UserId;
+    public GrpcNftBaseData Nft;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class MainServiceActionUseNftOutput
+{
+    public bool Success;
+    public string FailedMsg;
+
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -20,7 +46,7 @@ public class TakeNftData
 public class MainServiceActionTakeNftInput
 {
     public long UserId;
-    public TakeNftData[] TakeNfts;
+    public GrpcNftBaseData[] TakeNfts;
 
     public string ToJson()
     {

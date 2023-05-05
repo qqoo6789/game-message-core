@@ -4,16 +4,26 @@ import (
 	base_data "game-message-core/grpc/baseData"
 )
 
-type TakeNftData struct {
+type GrpcNftBaseData struct {
 	NftId   string `json:"nftId"`
 	ItemCid int32  `json:"itemCid"`
 	Num     int32  `json:"num"`
 }
 
+// call mainService User use nft
+type MainServiceActionUseNftInput struct {
+	UserId int64           `json:"userId"`
+	Nft    GrpcNftBaseData `json:"nft"`
+}
+type MainServiceActionUseNftOutput struct {
+	Success   bool   `json:"success"`
+	FailedMsg string `json:"failedMsg"`
+}
+
 // 通知mainService 扣除User nft input
 type MainServiceActionTakeNftInput struct {
-	UserId   int64         `json:"userId"`
-	TakeNfts []TakeNftData `json:"takeNfts"`
+	UserId   int64             `json:"userId"`
+	TakeNfts []GrpcNftBaseData `json:"takeNfts"`
 }
 type MainServiceActionTakeNftOutput struct {
 	Success   bool   `json:"success"`

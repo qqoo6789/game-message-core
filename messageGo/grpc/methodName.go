@@ -13,6 +13,7 @@ const (
 type MainServiceAction string
 
 const (
+	MainServiceActionUseNFT      MainServiceAction = "MainServiceActionUseNFT"
 	MainServiceActionMintNFT     MainServiceAction = "MainServiceActionMintNFT"
 	MainServiceActionTakeNFT     MainServiceAction = "MainServiceActionTakeNFT"
 	MainServiceActionGetAllBuild MainServiceAction = "MainServiceActionGetAllBuild"

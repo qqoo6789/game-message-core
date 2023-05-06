@@ -93,10 +93,6 @@ public static class SubscriptionEvent
 
     public const string TICK_OUT_PLAYER = "EventTopicTickOutPlayer";
     /// <summary>
-    /// user level update event
-    /// </summary>
-    public const string SAVE_HOME_DATA = "EventTopicSaveHomeData";
-    /// <summary>
     /// home Granary Stockpile Event
     /// </summary>
     public const string GRANARY_STOCKPILE = "EventTopicGranaryStockpile";

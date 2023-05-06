@@ -13,14 +13,17 @@ const (
 type MainServiceAction string
 
 const (
-	MainServiceActionUseNFT      MainServiceAction = "MainServiceActionUseNFT"
-	MainServiceActionMintNFT     MainServiceAction = "MainServiceActionMintNFT"
-	MainServiceActionTakeNFT     MainServiceAction = "MainServiceActionTakeNFT"
-	MainServiceActionGetAllBuild MainServiceAction = "MainServiceActionGetAllBuild"
-	MainServiceActionGetHomeData MainServiceAction = "MainServiceActionGetHomeData"
-	MultiUpdateAnimalBaseData    MainServiceAction = "MainServiceActionMultiUpdateAnimalBaseData"
-	GetUserAnimalList            MainServiceAction = "MainServiceActionGetUserAnimalList"
-	CaptureAnimal                MainServiceAction = "MainServiceActionCaptureAnimal"
+	MainServiceActionUseNFT             MainServiceAction = "MainServiceActionUseNFT"
+	MainServiceActionMintNFT            MainServiceAction = "MainServiceActionMintNFT"
+	MainServiceActionTakeNFT            MainServiceAction = "MainServiceActionTakeNFT"
+	MainServiceActionGetAllBuild        MainServiceAction = "MainServiceActionGetAllBuild"
+	MainServiceActionGetHomeData        MainServiceAction = "MainServiceActionGetHomeData"
+	MainServiceActionSaveHomeData       MainServiceAction = "MainServiceActionSaveHomeData"
+	MainServiceActionUpHomeLastSaveTime MainServiceAction = "MainServiceActionUpHomeLastSaveTime"
+
+	MultiUpdateAnimalBaseData MainServiceAction = "MainServiceActionMultiUpdateAnimalBaseData"
+	GetUserAnimalList         MainServiceAction = "MainServiceActionGetUserAnimalList"
+	CaptureAnimal             MainServiceAction = "MainServiceActionCaptureAnimal"
 )
 
 type ProtoMessageAction string

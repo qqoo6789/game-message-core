@@ -46,10 +46,20 @@ public static class MainServiceAction
     /// 获取所有建造物数据 for main service
     /// </summary>
     public const string GET_ALL_BUILD = "MainServiceActionGetAllBuild";
+
     /// <summary>
     /// 查询玩家家园数据
     /// </summary>
     public const string GET_HOME_DATA = "MainServiceActionGetHomeData";
+    /// <summary>
+    /// 保存玩家家园数据
+    /// </summary>
+    public const string SAVE_HOME_DATA = "MainServiceActionSaveHomeData";
+    /// <summary>
+    /// 更新家园数据最后一次存储时间
+    /// </summary>
+    public const string UP_HOME_LAST_SAVE_TIME = "MainServiceActionUpHomeLastSaveTime";
+
     /// <summary>
     /// 批量存储animal基础信息
     /// </summary>
@@ -62,8 +72,6 @@ public static class MainServiceAction
     /// 抓捕到动物(主要是大世界抓捕时使用)
     /// </summary>
     public const string CAPTURE_ANIMAL = "MainServiceActionCaptureAnimal";
-
-
 
 }
 

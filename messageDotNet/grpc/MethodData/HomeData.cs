@@ -2,6 +2,54 @@ using System;
 using UnityEngine;
 
 /// <summary>
+/// call main service save user home data
+/// </summary>
+[Serializable]
+public class MainServiceActionSaveHomeDataInput
+{
+    public long UserId;
+    public GrpcHomeData Data;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class MainServiceActionSaveHomeDataOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+/// <summary>
+/// call main service update  user home data last save time
+/// </summary>
+[Serializable]
+public class MainServiceActionUpHomeLastSaveTimeInput
+{
+    public long UserId;
+    public long LastSaveMs;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class MainServiceActionUpHomeLastSaveTimeOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+/// <summary>
 /// select user home data for main service
 /// </summary>
 [Serializable]

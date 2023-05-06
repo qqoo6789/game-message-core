@@ -46,7 +46,6 @@ const (
 
 	SubscriptionEventTickOutPlayer SubscriptionEvent = "EventTopicTickOutPlayer"
 
-	SubscriptionEventSaveHomeData SubscriptionEvent = "EventTopicSaveHomeData"
 	// home Granary Stockpile Event
 	SubscriptionEventGranaryStockpile SubscriptionEvent = "EventTopicGranaryStockpile"
 

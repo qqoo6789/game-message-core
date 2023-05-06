@@ -24,6 +24,7 @@ public class GrpcAnimalBaseData
 [Serializable]
 public class GrpcHomeData
 {
+    public long LastSaveMs;
     public string SoilJson;
     public string ResourceJson;
     public string AnimalJson;

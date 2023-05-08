@@ -29,6 +29,8 @@ const (
 	SubscriptionEventKillMonster    SubscriptionEvent = "EventTopicKillMonster"
 	SubscriptionEventPlayerDeath    SubscriptionEvent = "EventTopicPlayerDeath"
 	SubscriptionEventUseNFT         SubscriptionEvent = "EventTopicUseNFT"
+	SubscriptionEventGetNft         SubscriptionEvent = "EventTopicGetNFT"
+
 	SubscriptionEventUserEnterGame  SubscriptionEvent = "EventTopicUserEnterGame"
 	SubscriptionEventUserLeaveGame  SubscriptionEvent = "EventTopicUserLeaveGame"
 	SubscriptionEventTaskFinish     SubscriptionEvent = "EventTopicTaskFinish"

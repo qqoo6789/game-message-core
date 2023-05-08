@@ -58,6 +58,10 @@ public static class SubscriptionEvent
     /// </summary>
     public const string USE_NFT = "EventTopicUseNFT";
     /// <summary>
+    /// get NFT event
+    /// </summary>
+    public const string GET_NFT = "EventTopicGetNFT";
+    /// <summary>
     /// user enter game event
     /// </summary>
     public const string USER_ENTER_GAME = "EventTopicUserEnterGame";

@@ -130,6 +130,7 @@ message HomeAnimal
   Vector3       dir = 3;    // 方向（朝向）
   ProxyAnimalBaseData animalBaseData = 4;
   ProxyAnimalData animalDetailData = 5;
+  repeated AttributeData  profile = 6;
 }
 
 message ResourcePointInfo

@@ -4,6 +4,26 @@ import (
 	base_data "game-message-core/grpc/baseData"
 )
 
+// call main service save user home data
+type MainServiceActionSaveHomeDataInput struct {
+	UserId int64                  `json:"userId"`
+	Data   base_data.GrpcHomeData `json:"data"`
+}
+type MainServiceActionSaveHomeDataOutput struct {
+	Success bool   `json:"success"`
+	ErrMsg  string `json:"errMsg"`
+}
+
+// call main service update  user home data last save time
+type MainServiceActionUpHomeLastSaveTimeInput struct {
+	UserId     int64 `json:"userId"`
+	LastSaveMs int64 `json:"lastSaveMs"`
+}
+type MainServiceActionUpHomeLastSaveTimeOutput struct {
+	Success bool   `json:"success"`
+	ErrMsg  string `json:"errMsg"`
+}
+
 // call main service get user home data
 type MainServiceActionGetHomeDataInput struct {
 	UserId int64 `json:"userId"`

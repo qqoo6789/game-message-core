@@ -12,6 +12,7 @@ type GrpcAnimalBaseData struct {
 
 // home data
 type GrpcHomeData struct {
+	LastSaveMs      int64                `json:"lastSaveMs"`
 	SoilJson        string               `json:"soilJson"`
 	ResourceJson    string               `json:"resourceJson"`
 	AnimalJson      string               `json:"animalJson"`

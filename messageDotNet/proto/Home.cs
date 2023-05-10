@@ -41,30 +41,31 @@ namespace GameMessageCore {
             "Z2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEkYKDnByb2dyZXNzUmVz",
             "dWx0GAIgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVBy",
             "b2dyZXNzUmVzdWx0EkQKDWV4ZWN1dGVSZXN1bHQYAyABKAsyLS5nYW1lTWVz",
-            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlRXhlY3V0ZVJlc3VsdCJRCh1Db2xs",
+            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlRXhlY3V0ZVJlc3VsdCJqCh1Db2xs",
             "ZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdBIVCg10b3RhbFByb2dyZXNzGAEg",
-            "ASgFEhkKEXByb2dyZXNzRnVsbFN0YW1wGAIgASgDInwKHENvbGxlY3RSZXNv",
-            "dXJjZUV4ZWN1dGVSZXN1bHQSEQoJaXRlbVZhbGlkGAEgASgIEhgKEEV4dHJh",
-            "V2F0ZXJpbmdOdW0YAiABKAUSLwoIZHJvcExpc3QYAyADKAsyHS5nYW1lTWVz",
-            "c2FnZUNvcmUuSXRlbUJhc2VJbmZvIrEBCg9Qcm94eUFuaW1hbERhdGESEAoI",
-            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUSFwoPaGFy",
-            "dmVzdFByb2dyZXNzGAMgASgFEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
-            "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
-            "Q29yZS5Qcm94eVByb2R1Y3REYXRhInwKE1Byb3h5QW5pbWFsQmFzZURhdGES",
-            "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
-            "FAoMZmF2b3JhYmlsaXR5GAQgASgFEhAKCGNyZWF0ZU1zGAUgASgDEhAKCHVw",
-            "ZGF0ZU1zGAYgASgDIoQBChBQcm94eVByb2R1Y3REYXRhEhEKCXByb2R1Y3RJ",
-            "ZBgBIAEoAxIPCgdpdGVtQ2lkGAIgASgFEg8KB2l0ZW1OdW0YAyABKAUSDwoH",
-            "cXVhbGl0eRgEIAEoBRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdl",
-            "Q29yZS5WZWN0b3IzIjwKEEFuaW1hbFVwZGF0ZURhdGESEAoIYW5pbWFsSWQY",
-            "ASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93bFVw",
-            "ZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUSGgoS",
-            "cmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3VyY2VU",
-            "eXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVj",
-            "dFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpBbmlt",
-            "YWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lhbEFjdGlvblR5",
-            "cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3duEAASJQohQW5p",
-            "bWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnByb3RvMw=="));
+            "ASgFEhkKEXByb2dyZXNzRnVsbFN0YW1wGAIgASgDEhcKD3Byb2dyZXNzT3du",
+            "ZXJJZBgDIAEoAyJ8ChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVzdWx0EhEK",
+            "CWl0ZW1WYWxpZBgBIAEoCBIYChBFeHRyYVdhdGVyaW5nTnVtGAIgASgFEi8K",
+            "CGRyb3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5m",
+            "byKxAQoPUHJveHlBbmltYWxEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1",
+            "bmdlclByb2dyZXNzGAIgASgFEhcKD2hhcnZlc3RQcm9ncmVzcxgDIAEoBRIT",
+            "Cgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0RlYWQYBSABKAgSNgoLcHJvZHVj",
+            "dERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNvcmUuUHJveHlQcm9kdWN0RGF0",
+            "YSJ8ChNQcm94eUFuaW1hbEJhc2VEYXRhEhAKCGFuaW1hbElkGAEgASgEEgwK",
+            "BG5hbWUYAiABKAkSCwoDY2lkGAMgASgFEhQKDGZhdm9yYWJpbGl0eRgEIAEo",
+            "BRIQCghjcmVhdGVNcxgFIAEoAxIQCgh1cGRhdGVNcxgGIAEoAyKEAQoQUHJv",
+            "eHlQcm9kdWN0RGF0YRIRCglwcm9kdWN0SWQYASABKAMSDwoHaXRlbUNpZBgC",
+            "IAEoBRIPCgdpdGVtTnVtGAMgASgFEg8KB3F1YWxpdHkYBCABKAUSKgoIcG9z",
+            "aXRpb24YBSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyI8ChBBbmlt",
+            "YWxVcGRhdGVEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1bmdlclByb2dy",
+            "ZXNzGAIgASgFIlMKFEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgB",
+            "IAEoBBIPCgdmb29kQ2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgD",
+            "IAEoBSqAAQoTQ29sbGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3Vy",
+            "Y2VUeXBlVW5rbm93bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAES",
+            "EAoMSG9tZVJlc291cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAI",
+            "KmQKF0FuaW1hbFNwZWNpYWxBY3Rpb25UeXBlEiIKHkFuaW1hbFNwZWNpYWxB",
+            "Y3Rpb25UeXBlVW5rbm93bhAAEiUKIUFuaW1hbFNwZWNpYWxBY3Rpb25UeXBl",
+            "VG91Y2hEZWF0aBABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -73,7 +74,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp", "ProgressOwnerId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimalId", "Name", "Cid", "Favorability", "CreateMs", "UpdateMs" }, null, null, null, null),
@@ -1622,6 +1623,7 @@ namespace GameMessageCore {
     public CollectResourceProgressResult(CollectResourceProgressResult other) : this() {
       totalProgress_ = other.totalProgress_;
       progressFullStamp_ = other.progressFullStamp_;
+      progressOwnerId_ = other.progressOwnerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1661,6 +1663,21 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "progressOwnerId" field.</summary>
+    public const int ProgressOwnerIdFieldNumber = 3;
+    private long progressOwnerId_;
+    /// <summary>
+    ///进度归属玩家id
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ProgressOwnerId {
+      get { return progressOwnerId_; }
+      set {
+        progressOwnerId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1678,6 +1695,7 @@ namespace GameMessageCore {
       }
       if (TotalProgress != other.TotalProgress) return false;
       if (ProgressFullStamp != other.ProgressFullStamp) return false;
+      if (ProgressOwnerId != other.ProgressOwnerId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1687,6 +1705,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (TotalProgress != 0) hash ^= TotalProgress.GetHashCode();
       if (ProgressFullStamp != 0L) hash ^= ProgressFullStamp.GetHashCode();
+      if (ProgressOwnerId != 0L) hash ^= ProgressOwnerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1713,6 +1732,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt64(ProgressFullStamp);
       }
+      if (ProgressOwnerId != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ProgressOwnerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1731,6 +1754,10 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt64(ProgressFullStamp);
       }
+      if (ProgressOwnerId != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ProgressOwnerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1746,6 +1773,9 @@ namespace GameMessageCore {
       }
       if (ProgressFullStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ProgressFullStamp);
+      }
+      if (ProgressOwnerId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ProgressOwnerId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1764,6 +1794,9 @@ namespace GameMessageCore {
       }
       if (other.ProgressFullStamp != 0L) {
         ProgressFullStamp = other.ProgressFullStamp;
+      }
+      if (other.ProgressOwnerId != 0L) {
+        ProgressOwnerId = other.ProgressOwnerId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1788,6 +1821,10 @@ namespace GameMessageCore {
             ProgressFullStamp = input.ReadInt64();
             break;
           }
+          case 24: {
+            ProgressOwnerId = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -1809,6 +1846,10 @@ namespace GameMessageCore {
           }
           case 16: {
             ProgressFullStamp = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            ProgressOwnerId = input.ReadInt64();
             break;
           }
         }

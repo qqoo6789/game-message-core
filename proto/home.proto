@@ -72,6 +72,8 @@ message CollectResourceProgressResult
     int32 totalProgress = 1;
     //进度充满时的时间戳 适用于浇水连续式的进度
     int64 progressFullStamp = 2;
+    //进度归属玩家id
+    int64 progressOwnerId=3;
 }
 
 message CollectResourceExecuteResult

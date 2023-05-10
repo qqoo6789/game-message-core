@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 /// <summary>
 /// 玩家数据保持到main server, event json 交互数据结构
@@ -13,9 +12,4 @@ public class SavePlayerEventData : EventDataBase
     public float DirX;
     public float DirY;
     public float DirZ;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }

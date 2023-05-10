@@ -42,7 +42,15 @@ namespace ProtoBuf.Runtime
             }
             return destination;
         }
-
+        /// <summary>
+        /// 把envelope 编码为（包长+包内容）字节数组
+        /// </summary>
+        /// <param name="envelope">协议对象</param>
+        public static void EncodeToBytes(GameMessageCore.Envelope envelope, int packetLength, byte[] msgBody)
+        {
+            Span<byte> envelopBytes = new(msgBody, 0, packetLength);
+            envelope.WriteTo(envelopBytes);
+        }
         /// <summary>
         /// 解码协议数据 内容部分（不包括头长） 
         /// </summary>

@@ -2,7 +2,7 @@
  * @Author: xiang huan
  * @Date: 2023-04-23 20:38:52
  * @Description: 自定义引用集合
- * @FilePath: /meland-scene-server/Assets/Plugins/SharedCore/game-message-core/messageDotNet/custom/CustomReferenceCollection.cs
+ * @FilePath: /meland-unity/Assets/Plugins/SharedCore/game-message-core/messageDotNet/custom/CustomReferenceCollection.cs
  * 
  */
 
@@ -38,18 +38,7 @@ public class CustomReferenceCollection
         {
             throw new Exception("Custom Type is invalid.");
         }
-
-        UsingReferenceCount++;
-        AcquireReferenceCount++;
-        lock (_references)
-        {
-            if (_references.Count > 0)
-            {
-                return (T)_references.Dequeue();
-            }
-        }
-        AddReferenceCount++;
-        return new T();
+        return Acquire() as T;
     }
     public object Acquire()
     {
@@ -68,10 +57,14 @@ public class CustomReferenceCollection
 
     public void Release(object reference)
     {
-        if (reference is ICustomReference customReference)
+        lock (reference)
         {
-            customReference.Clear();
+            if (reference is ICustomReference customReference)
+            {
+                customReference.Clear();
+            }
         }
+
         lock (_references)
         {
             _references.Enqueue(reference);
@@ -86,15 +79,7 @@ public class CustomReferenceCollection
         {
             throw new Exception("Custom Type is invalid.");
         }
-
-        lock (_references)
-        {
-            AddReferenceCount += count;
-            while (count-- > 0)
-            {
-                _references.Enqueue(new T());
-            }
-        }
+        Add(count);
     }
 
     public void Add(int count)

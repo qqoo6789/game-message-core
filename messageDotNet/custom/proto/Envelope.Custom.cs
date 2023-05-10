@@ -19,7 +19,7 @@ namespace GameMessageCore
             reference.ErrorCode = errCode;
             reference.ErrorMessage = errMsg;
 
-            string name = type.ToString() + suffix.ToString();
+            string name = type.ToString() + suffix;
             reference._payloadInfo = reference.GetType().GetProperty(name);
             reference._payloadInfo.SetValue(reference, payload);
             reference.SeqId = 0;

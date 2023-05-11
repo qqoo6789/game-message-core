@@ -25,19 +25,19 @@ type StartServiceOutput struct {
 	SerInfo base_data.ServiceData `json:"serInfo"`
 }
 
-// // user请求进入目标scene service request（预进入阶段）
-// type ApplyEnterServiceInput struct {
-// 	ApplyUser    int64                 `json:"applyUser"`
-// 	CurHp        int32                 `json:"curHp"`
-// 	UserPosition base_data.GrpcVector3 `json:"userPosition"`
-// 	UserDir      base_data.GrpcVector3 `json:"userDir"`
-// 	FromSer      base_data.ServiceData `json:"fromSer"`
-// }
-// type ApplyEnterServiceOutput struct {
-// 	UserId  int64  `json:"userId"`
-// 	Success bool   `json:"success"`
-// 	ErrMsg  string `json:"errMsg"`
-// }
+// user请求进入目标scene service request（预进入阶段）
+type ApplyEnterServiceInput struct {
+	ApplyUser    int64                 `json:"applyUser"`
+	CurHp        int32                 `json:"curHp"`
+	UserPosition base_data.GrpcVector3 `json:"userPosition"`
+	UserDir      base_data.GrpcVector3 `json:"userDir"`
+	FromSer      base_data.ServiceData `json:"fromSer"`
+}
+type ApplyEnterServiceOutput struct {
+	UserId  int64  `json:"userId"`
+	Success bool   `json:"success"`
+	ErrMsg  string `json:"errMsg"`
+}
 
 // user正式进入目标scene service request（正式进入阶段）
 type JoinServiceInput struct {

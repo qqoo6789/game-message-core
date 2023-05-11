@@ -36,34 +36,34 @@ public class StartServiceOutput
 }
 
 
-// /// <summary>
-// /// user请求进入目标scene service request（预进入阶段）
-// /// </summary>
-// [Serializable]
-// public class ApplyEnterServiceInput
-// {
-//     public long ApplyUser;
-//     public int CurHp;
-//     public GrpcVector3 UserPosition;
-//     public GrpcVector3 UserDir;
-//     public ServiceData FromSer;
-//     public string ToJson()
-//     {
-//         return JsonUtility.ToJson(this);
-//     }
-// }
-// [Serializable]
-// public class ApplyEnterServiceOutput
-// {
-//     public long UserId;
-//     public bool Success;
-//     public string ErrMsg;
+/// <summary>
+/// user请求进入目标scene service request（预进入阶段）
+/// </summary>
+[Serializable]
+public class ApplyEnterServiceInput
+{
+    public long ApplyUser;
+    public int CurHp;
+    public GrpcVector3 UserPosition;
+    public GrpcVector3 UserDir;
+    public ServiceData FromSer;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class ApplyEnterServiceOutput
+{
+    public long UserId;
+    public bool Success;
+    public string ErrMsg;
 
-//     public string ToJson()
-//     {
-//         return JsonUtility.ToJson(this);
-//     }
-// }
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
 
 
 /// <summary>

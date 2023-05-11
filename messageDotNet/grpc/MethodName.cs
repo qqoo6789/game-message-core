@@ -118,10 +118,10 @@ public static class UserAction
 /// </summary>
 public static class ChangeServiceAction
 {
-    // /// <summary>
-    // /// user请求进入目标scene service（预进入阶段）
-    // /// </summary>
-    // public const string APPLY_ENTER_SERVICE = "ChangeServiceActionApplyEnterService";
+    /// <summary>
+    /// user请求进入目标scene service（预进入阶段）
+    /// </summary>
+    public const string APPLY_ENTER_SERVICE = "ChangeServiceActionApplyEnterService";
     /// <summary>
     /// user正式进入目标scene service（正式进入阶段）
     /// </summary>

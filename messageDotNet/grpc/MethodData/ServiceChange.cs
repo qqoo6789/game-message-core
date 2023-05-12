@@ -9,10 +9,38 @@ using System;
 using UnityEngine;
 
 /// <summary>
+/// 向manager service 请求启动服务 request
+/// </summary>
+[Serializable]
+public class StartServiceInput
+{
+    public GameMessageCore.ServiceType ServiceType;
+    public GameMessageCore.SceneServiceSubType SceneSerSubType;
+    public long OwnerId;
+    public int MapId;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class StartServiceOutput
+{
+    public bool Success;
+    public string ErrMsg;
+    public ServiceData SerInfo;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+
+/// <summary>
 /// user请求进入目标scene service request（预进入阶段）
 /// </summary>
 [Serializable]
-public class UserApplyEnterServiceInput
+public class ApplyEnterServiceInput
 {
     public long ApplyUser;
     public int CurHp;
@@ -24,12 +52,10 @@ public class UserApplyEnterServiceInput
         return JsonUtility.ToJson(this);
     }
 }
-/// <summary>
-/// user 请求进入目标scene service  response （预进入阶段）
-/// </summary>
 [Serializable]
-public class UserApplyEnterServiceOutput
+public class ApplyEnterServiceOutput
 {
+    public long UserId;
     public bool Success;
     public string ErrMsg;
 
@@ -39,11 +65,12 @@ public class UserApplyEnterServiceOutput
     }
 }
 
+
 /// <summary>
 /// user正式进入目标scene service request（正式进入阶段）
 /// </summary>
 [Serializable]
-public class UserJoinServiceInput
+public class JoinServiceInput
 {
     public long UserId;
     public string UserAgentAppId;
@@ -58,12 +85,10 @@ public class UserJoinServiceInput
         return JsonUtility.ToJson(this);
     }
 }
-/// <summary>
-/// user正式进入目标scene service request（正式进入阶段）
-/// </summary>
 [Serializable]
-public class UserJoinServiceOutput
+public class JoinServiceOutput
 {
+    public long UserId;
     public bool Success;
     public string ErrMsg;
 

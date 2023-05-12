@@ -135,127 +135,127 @@ namespace GameMessageCore {
             "ZUFuaW1hbExpc3RSZXNwb25zZUgAEkUKFGZyZWVkX2FuaW1hbF9yZXF1ZXN0",
             "GOmABCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuRnJlZWRBbmltYWxSZXF1ZXN0",
             "SAASRwoVZnJlZWRfYW5pbWFsX3Jlc3BvbnNlGPCABCABKAsyJC5nYW1lTWVz",
-            "c2FnZUNvcmUuRnJlZWRBbmltYWxSZXNwb25zZUgAEksKF2VudGl0eV9kaWFs",
-            "b2d1ZV9yZXF1ZXN0GPGABCABKAsyJi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5",
-            "RGlhbG9ndWVSZXF1ZXN0SAASTQoYZW50aXR5X2RpYWxvZ3VlX3Jlc3BvbnNl",
-            "GPKABCABKAsyJy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5RGlhbG9ndWVSZXNw",
-            "b25zZUgAEkUKFHF1ZXJ5X3BsYXllcl9yZXF1ZXN0GIGACCABKAsyIy5nYW1l",
-            "TWVzc2FnZUNvcmUuUXVlcnlQbGF5ZXJSZXF1ZXN0SAASRwoVcXVlcnlfcGxh",
-            "eWVyX3Jlc3BvbnNlGIKACCABKAsyJC5nYW1lTWVzc2FnZUNvcmUuUXVlcnlQ",
-            "bGF5ZXJSZXNwb25zZUgAEkcKFWNyZWF0ZV9wbGF5ZXJfcmVxdWVzdBiDgAgg",
-            "ASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLkNyZWF0ZVBsYXllclJlcXVlc3RIABJJ",
-            "ChZjcmVhdGVfcGxheWVyX3Jlc3BvbnNlGISACCABKAsyJS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQ3JlYXRlUGxheWVyUmVzcG9uc2VIABI/ChFlbnRlcl9tYXBfcmVx",
-            "dWVzdBiBgAwgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLkVudGVyTWFwUmVxdWVz",
-            "dEgAEkEKEmVudGVyX21hcF9yZXNwb25zZRiCgAwgASgLMiEuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkVudGVyTWFwUmVzcG9uc2VIABJUChx1cGRhdGVfc2VsZl9sb2Nh",
-            "dGlvbl9yZXF1ZXN0GIOADCABKAsyKi5nYW1lTWVzc2FnZUNvcmUuVXBkYXRl",
-            "U2VsZkxvY2F0aW9uUmVxdWVzdEgAElYKHXVwZGF0ZV9zZWxmX2xvY2F0aW9u",
-            "X3Jlc3BvbnNlGISADCABKAsyKy5nYW1lTWVzc2FnZUNvcmUuVXBkYXRlU2Vs",
-            "ZkxvY2F0aW9uUmVzcG9uc2VIABI/ChF1c2Vfc2tpbGxfcmVxdWVzdBiFgAwg",
-            "ASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLlVzZVNraWxsUmVxdWVzdEgAEkEKEnVz",
-            "ZV9za2lsbF9yZXNwb25zZRiGgAwgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlVz",
-            "ZVNraWxsUmVzcG9uc2VIABJJChZyZXNwYXduX3BsYXllcl9yZXF1ZXN0GImA",
-            "DCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuUmVzcGF3blBsYXllclJlcXVlc3RI",
-            "ABJLChdyZXNwYXduX3BsYXllcl9yZXNwb25zZRiQgAwgASgLMiYuZ2FtZU1l",
-            "c3NhZ2VDb3JlLlJlc3Bhd25QbGF5ZXJSZXNwb25zZUgAEmIKJGJyb2FkX2Nh",
-            "c3RfaW5pdF9tYXBfZWxlbWVudF9yZXNwb25zZRiRgAwgASgLMjAuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdEluaXRNYXBFbGVtZW50UmVzcG9uc2VIABJk",
-            "CiVicm9hZF9jYXN0X21hcF9lbnRpdHlfdXBkYXRlX3Jlc3BvbnNlGJKADCAB",
-            "KAsyMS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0TWFwRW50aXR5VXBkYXRl",
-            "UmVzcG9uc2VIABJfCiJicm9hZF9jYXN0X2VudGl0eV9kZXN0cm95X3Jlc3Bv",
-            "bnNlGJOADCABKAsyLy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5",
-            "RGVzdHJveVJlc3BvbnNlSAASWQofYnJvYWRfY2FzdF9lbnRpdHlfbW92ZV9y",
-            "ZXNwb25zZRiUgAwgASgLMiwuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVu",
-            "dGl0eU1vdmVSZXNwb25zZUgAEl0KIWJyb2FkX2Nhc3RfZW50aXR5X2NvbWJh",
-            "dF9yZXNwb25zZRiVgAwgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
-            "dEVudGl0eUNvbWJhdFJlc3BvbnNlSAASXwoiYnJvYWRfY2FzdF9yZXNwYXdu",
-            "X3BsYXllcl9yZXNwb25zZRiWgAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJy",
-            "b2FkQ2FzdFJlc3Bhd25QbGF5ZXJSZXNwb25zZUgAEj4KEHRlbGVwb3J0X3Jl",
-            "cXVlc3QYl4AMIAEoCzIgLmdhbWVNZXNzYWdlQ29yZS5UZWxlcG9ydFJlcXVl",
-            "c3RIABJAChF0ZWxlcG9ydF9yZXNwb25zZRiYgAwgASgLMiEuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRlbGVwb3J0UmVzcG9uc2VIABJsCilicm9hZF9jYXN0X2VudGl0",
-            "eV9wcm9maWxlX3VwZGF0ZV9yZXNwb25zZRiZgAwgASgLMjUuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkJyb2FkQ2FzdEVudGl0eVByb2ZpbGVVcGRhdGVSZXNwb25zZUgA",
-            "El0KIWJyb2FkX2Nhc3RfbW9uc3Rlcl9kZWF0aF9yZXNwb25zZRihgAwgASgL",
-            "Mi4uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdE1vbnN0ZXJEZWF0aFJlc3Bv",
-            "bnNlSAASagooYnJvYWRfY2FzdF9lbnRpdHlfYXZhdGFyX3VwZGF0ZV9yZXNw",
-            "b25zZRiigAwgASgLMjQuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0",
-            "eUF2YXRhclVwZGF0ZVJlc3BvbnNlSAAScwotYnJvYWRfY2FzdF9lbnRpdHlf",
-            "YmF0dGxlX2RhdGFfdXBkYXRlX3Jlc3BvbnNlGKOADCABKAsyOC5nYW1lTWVz",
-            "c2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0YVVwZGF0ZVJlc3Bv",
-            "bnNlSAAScQosYnJvYWRfY2FzdF9lbnRpdHlfYnVpbGRfZGF0YV91cGRhdGVf",
-            "cmVzcG9uc2UYpYAMIAEoCzI3LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RF",
-            "bnRpdHlCdWlsZERhdGFVcGRhdGVSZXNwb25zZUgAElYKHXBsYXllcl9hY3Rp",
-            "b25fY29sbGVjdF9yZXF1ZXN0GKeADCABKAsyKy5nYW1lTWVzc2FnZUNvcmUu",
-            "UGxheWVyQWN0aW9uQ29sbGVjdFJlcXVlc3RIABJYCh5wbGF5ZXJfYWN0aW9u",
-            "X2NvbGxlY3RfcmVzcG9uc2UYqYAMIAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5Q",
-            "bGF5ZXJBY3Rpb25Db2xsZWN0UmVzcG9uc2VIABJsCilicm9hZF9jYXN0X3Bs",
-            "YXllcl9hY3Rpb25fY29sbGVjdF9yZXNwb25zZRixgAwgASgLMjUuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdFBsYXllckFjdGlvbkNvbGxlY3RSZXNwb25z",
-            "ZUgAEk8KGXNjZW5lX2Rlc3RydWN0aW9uX3JlcXVlc3QYs4AMIAEoCzIoLmdh",
-            "bWVNZXNzYWdlQ29yZS5TY2VuZURlc3RydWN0aW9uUmVxdWVzdEgAElEKGnNj",
-            "ZW5lX2Rlc3RydWN0aW9uX3Jlc3BvbnNlGLSADCABKAsyKS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuU2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlSAASZQolYnJvYWRfY2Fz",
-            "dF9zY2VuZV9kZXN0cnVjdGlvbl9yZXNwb25zZRi1gAwgASgLMjIuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdFNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25zZUgA",
-            "ElAKGnBsYXllcl9hY3Rpb25fY2hhdF9yZXF1ZXN0GLeADCABKAsyKC5nYW1l",
-            "TWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ2hhdFJlcXVlc3RIABJSChtwbGF5",
-            "ZXJfYWN0aW9uX2NoYXRfcmVzcG9uc2UYuIAMIAEoCzIpLmdhbWVNZXNzYWdl",
-            "Q29yZS5QbGF5ZXJBY3Rpb25DaGF0UmVzcG9uc2VIABJmCiZicm9hZF9jYXN0",
-            "X3BsYXllcl9hY3Rpb25fY2hhdF9yZXNwb25zZRi5gAwgASgLMjIuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdFBsYXllckFjdGlvbkNoYXRSZXNwb25zZUgA",
-            "EkYKFWdldF9ob21lX2RhdGFfcmVxdWVzdBjBgAwgASgLMiMuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkdldEhvbWVEYXRhUmVxdWVzdEgAEkgKFmdldF9ob21lX2RhdGFf",
-            "cmVzcG9uc2UYwoAMIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5HZXRIb21lRGF0",
-            "YVJlc3BvbnNlSAASTgoZcXVlcnlfU2VydmVyX3RpbWVfcmVxdWVzdBjDgAwg",
-            "ASgLMicuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5U2VydmVyVGltZVJlcXVlc3RI",
-            "ABJQChpxdWVyeV9TZXJ2ZXJfdGltZV9yZXNwb25zZRjEgAwgASgLMiguZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLlF1ZXJ5U2VydmVyVGltZVJlc3BvbnNlSAASXwoiYnJv",
-            "YWRfY2FzdF9jaGFuZ2Vfc2VydmljZV9yZXNwb25zZRjFgAwgASgLMi8uZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdENoYW5nZVNlcnZpY2VSZXNwb25zZUgA",
-            "EmkKKGJyb2FkX2Nhc3RfaG9tZV9kYXRhX2luaXRfYmF0Y2hfcmVzcG9uc2UY",
-            "yYAMIAEoCzIzLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RIb21lRGF0YUlu",
-            "aXRCYXRjaFJlc3BvbnNlSAASZAolYnJvYWRfY2FzdF9ob21lX3NraWxsX3Jl",
-            "c3VsdF9yZXNwb25zZRjRgAwgASgLMjEuZ2FtZU1lc3NhZ2VDb3JlLkJyb2Fk",
-            "Q2FzdEhvbWVTa2lsbFJlc3VsdFJlc3BvbnNlSAASTgoZcXVlcnlfdGFsZW50",
-            "X3RyZWVfcmVxdWVzdBjTgAwgASgLMicuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5",
-            "VGFsZW50VHJlZVJlcXVlc3RIABJQChpxdWVyeV90YWxlbnRfdHJlZV9yZXNw",
-            "b25zZRjUgAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5VGFsZW50VHJl",
-            "ZVJlc3BvbnNlSAASZgomYnJvYWRfY2FzdF90YWxlbnRfdHJlZV91cGRhdGVf",
-            "cmVzcG9uc2UY1YAMIAEoCzIyLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RU",
-            "YWxlbnRUcmVlVXBkYXRlUmVzcG9uc2VIABJxCixicm9hZF9jYXN0X2FuaW1h",
-            "bF9zY2VuZV9kYXRhX3VwZGF0ZV9yZXNwb25zZRjXgAwgASgLMjcuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkJyb2FkQ2FzdEFuaW1hbFNjZW5lRGF0YVVwZGF0ZVJlc3Bv",
-            "bnNlSAASWwogYnJvYWRfY2FzdF9hbmltYWxfZGVhdGhfcmVzcG9uc2UY2YAM",
-            "IAEoCzItLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RBbmltYWxEZWF0aFJl",
-            "c3BvbnNlSAASaAonYnJvYWRfY2FzdF9hbmltYWxfYXV0b19wcm9kdWNlX3Jl",
-            "c3BvbnNlGOGADCABKAsyMy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0QW5p",
-            "bWFsQXV0b1Byb2R1Y2VSZXNwb25zZUgAElkKH2Jyb2FkX2Nhc3RfcGlja3Vw",
-            "X2Ryb3BfcmVzcG9uc2UY44AMIAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5Ccm9h",
-            "ZENhc3RQaWNrdXBEcm9wUmVzcG9uc2VIABJWCh1hbmltYWxfc3BlY2lhbF9h",
-            "Y3Rpb25fcmVxdWVzdBjlgAwgASgLMisuZ2FtZU1lc3NhZ2VDb3JlLkFuaW1h",
-            "bFNwZWNpYWxBY3Rpb25SZXF1ZXN0SAASWAoeYW5pbWFsX3NwZWNpYWxfYWN0",
-            "aW9uX3Jlc3BvbnNlGOaADCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuQW5pbWFs",
-            "U3BlY2lhbEFjdGlvblJlc3BvbnNlSAASSQoWY2FwdHVyZV9hbmltYWxfcmVx",
-            "dWVzdBjngAwgASgLMiUuZ2FtZU1lc3NhZ2VDb3JlLkNhcHR1cmVBbmltYWxS",
-            "ZXF1ZXN0SAASSwoXY2FwdHVyZV9hbmltYWxfcmVzcG9uc2UY6IAMIAEoCzIm",
-            "LmdhbWVNZXNzYWdlQ29yZS5DYXB0dXJlQW5pbWFsUmVzcG9uc2VIABJkCiVi",
-            "cm9hZF9jYXN0X2VudGl0eV9tb3ZlX3NwZWVkX3Jlc3BvbnNlGOmADCABKAsy",
-            "MS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5TW92ZVNwZWVkUmVz",
-            "cG9uc2VIABJ1Ci5icm9hZF9jYXN0X2VudGl0eV9jYXB0dXJlX2RhdGFfdXBk",
-            "YXRlX3Jlc3BvbnNlGPCADCABKAsyOS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRD",
-            "YXN0RW50aXR5Q2FwdHVyZURhdGFVcGRhdGVSZXNwb25zZUgAEkUKFGV4aXRf",
-            "Y2FwdHVyZV9yZXF1ZXN0GPGADCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuRXhp",
-            "dENhcHR1cmVSZXF1ZXN0SAASRwoVZXhpdF9jYXB0dXJlX3Jlc3BvbnNlGPKA",
-            "DCABKAsyJC5nYW1lTWVzc2FnZUNvcmUuRXhpdENhcHR1cmVSZXNwb25zZUgA",
-            "ElwKIGVudGl0eV9hY2N1bXVsYXRlX3N0YXR1c19yZXF1ZXN0GPOADCABKAsy",
-            "Li5nYW1lTWVzc2FnZUNvcmUuRW50aXR5QWNjdW11bGF0ZVN0YXR1c1JlcXVl",
-            "c3RIABJeCiFlbnRpdHlfYWNjdW11bGF0ZV9zdGF0dXNfcmVzcG9uc2UY9IAM",
-            "IAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlBY2N1bXVsYXRlU3RhdHVz",
-            "UmVzcG9uc2VIABJyCixicm9hZF9jYXN0X2VudGl0eV9hY2N1bXVsYXRlX3N0",
-            "YXR1c19yZXNwb25zZRj1gAwgASgLMjguZ2FtZU1lc3NhZ2VDb3JlLkJyb2Fk",
-            "Q2FzdEVudGl0eUFjY3VtdWxhdGVTdGF0dXNSZXNwb25zZUgAEkEKEnNlbGZf",
+            "c2FnZUNvcmUuRnJlZWRBbmltYWxSZXNwb25zZUgAEkUKFHF1ZXJ5X3BsYXll",
+            "cl9yZXF1ZXN0GIGACCABKAsyIy5nYW1lTWVzc2FnZUNvcmUuUXVlcnlQbGF5",
+            "ZXJSZXF1ZXN0SAASRwoVcXVlcnlfcGxheWVyX3Jlc3BvbnNlGIKACCABKAsy",
+            "JC5nYW1lTWVzc2FnZUNvcmUuUXVlcnlQbGF5ZXJSZXNwb25zZUgAEkcKFWNy",
+            "ZWF0ZV9wbGF5ZXJfcmVxdWVzdBiDgAggASgLMiQuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LkNyZWF0ZVBsYXllclJlcXVlc3RIABJJChZjcmVhdGVfcGxheWVyX3Jlc3Bv",
+            "bnNlGISACCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuQ3JlYXRlUGxheWVyUmVz",
+            "cG9uc2VIABI/ChFlbnRlcl9tYXBfcmVxdWVzdBiBgAwgASgLMiAuZ2FtZU1l",
+            "c3NhZ2VDb3JlLkVudGVyTWFwUmVxdWVzdEgAEkEKEmVudGVyX21hcF9yZXNw",
+            "b25zZRiCgAwgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLkVudGVyTWFwUmVzcG9u",
+            "c2VIABJUChx1cGRhdGVfc2VsZl9sb2NhdGlvbl9yZXF1ZXN0GIOADCABKAsy",
+            "Ki5nYW1lTWVzc2FnZUNvcmUuVXBkYXRlU2VsZkxvY2F0aW9uUmVxdWVzdEgA",
+            "ElYKHXVwZGF0ZV9zZWxmX2xvY2F0aW9uX3Jlc3BvbnNlGISADCABKAsyKy5n",
+            "YW1lTWVzc2FnZUNvcmUuVXBkYXRlU2VsZkxvY2F0aW9uUmVzcG9uc2VIABI/",
+            "ChF1c2Vfc2tpbGxfcmVxdWVzdBiFgAwgASgLMiAuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlVzZVNraWxsUmVxdWVzdEgAEkEKEnVzZV9za2lsbF9yZXNwb25zZRiGgAwg",
+            "ASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlVzZVNraWxsUmVzcG9uc2VIABJJChZy",
+            "ZXNwYXduX3BsYXllcl9yZXF1ZXN0GImADCABKAsyJS5nYW1lTWVzc2FnZUNv",
+            "cmUuUmVzcGF3blBsYXllclJlcXVlc3RIABJLChdyZXNwYXduX3BsYXllcl9y",
+            "ZXNwb25zZRiQgAwgASgLMiYuZ2FtZU1lc3NhZ2VDb3JlLlJlc3Bhd25QbGF5",
+            "ZXJSZXNwb25zZUgAEmIKJGJyb2FkX2Nhc3RfaW5pdF9tYXBfZWxlbWVudF9y",
+            "ZXNwb25zZRiRgAwgASgLMjAuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdElu",
+            "aXRNYXBFbGVtZW50UmVzcG9uc2VIABJkCiVicm9hZF9jYXN0X21hcF9lbnRp",
+            "dHlfdXBkYXRlX3Jlc3BvbnNlGJKADCABKAsyMS5nYW1lTWVzc2FnZUNvcmUu",
+            "QnJvYWRDYXN0TWFwRW50aXR5VXBkYXRlUmVzcG9uc2VIABJfCiJicm9hZF9j",
+            "YXN0X2VudGl0eV9kZXN0cm95X3Jlc3BvbnNlGJOADCABKAsyLy5nYW1lTWVz",
+            "c2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5RGVzdHJveVJlc3BvbnNlSAASWQof",
+            "YnJvYWRfY2FzdF9lbnRpdHlfbW92ZV9yZXNwb25zZRiUgAwgASgLMiwuZ2Ft",
+            "ZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eU1vdmVSZXNwb25zZUgAEl0K",
+            "IWJyb2FkX2Nhc3RfZW50aXR5X2NvbWJhdF9yZXNwb25zZRiVgAwgASgLMi4u",
+            "Z2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eUNvbWJhdFJlc3BvbnNl",
+            "SAASXwoiYnJvYWRfY2FzdF9yZXNwYXduX3BsYXllcl9yZXNwb25zZRiWgAwg",
+            "ASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFJlc3Bhd25QbGF5ZXJS",
+            "ZXNwb25zZUgAEj4KEHRlbGVwb3J0X3JlcXVlc3QYl4AMIAEoCzIgLmdhbWVN",
+            "ZXNzYWdlQ29yZS5UZWxlcG9ydFJlcXVlc3RIABJAChF0ZWxlcG9ydF9yZXNw",
+            "b25zZRiYgAwgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlRlbGVwb3J0UmVzcG9u",
+            "c2VIABJsCilicm9hZF9jYXN0X2VudGl0eV9wcm9maWxlX3VwZGF0ZV9yZXNw",
+            "b25zZRiZgAwgASgLMjUuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0",
+            "eVByb2ZpbGVVcGRhdGVSZXNwb25zZUgAEl0KIWJyb2FkX2Nhc3RfbW9uc3Rl",
+            "cl9kZWF0aF9yZXNwb25zZRihgAwgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkJy",
+            "b2FkQ2FzdE1vbnN0ZXJEZWF0aFJlc3BvbnNlSAASagooYnJvYWRfY2FzdF9l",
+            "bnRpdHlfYXZhdGFyX3VwZGF0ZV9yZXNwb25zZRiigAwgASgLMjQuZ2FtZU1l",
+            "c3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0ZVJlc3BvbnNl",
+            "SAAScwotYnJvYWRfY2FzdF9lbnRpdHlfYmF0dGxlX2RhdGFfdXBkYXRlX3Jl",
+            "c3BvbnNlGKOADCABKAsyOC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50",
+            "aXR5QmF0dGxlRGF0YVVwZGF0ZVJlc3BvbnNlSAAScQosYnJvYWRfY2FzdF9l",
+            "bnRpdHlfYnVpbGRfZGF0YV91cGRhdGVfcmVzcG9uc2UYpYAMIAEoCzI3Lmdh",
+            "bWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlCdWlsZERhdGFVcGRhdGVS",
+            "ZXNwb25zZUgAElYKHXBsYXllcl9hY3Rpb25fY29sbGVjdF9yZXF1ZXN0GKeA",
+            "DCABKAsyKy5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0aW9uQ29sbGVjdFJl",
+            "cXVlc3RIABJYCh5wbGF5ZXJfYWN0aW9uX2NvbGxlY3RfcmVzcG9uc2UYqYAM",
+            "IAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBY3Rpb25Db2xsZWN0UmVz",
+            "cG9uc2VIABJsCilicm9hZF9jYXN0X3BsYXllcl9hY3Rpb25fY29sbGVjdF9y",
+            "ZXNwb25zZRixgAwgASgLMjUuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFBs",
+            "YXllckFjdGlvbkNvbGxlY3RSZXNwb25zZUgAEk8KGXNjZW5lX2Rlc3RydWN0",
+            "aW9uX3JlcXVlc3QYs4AMIAEoCzIoLmdhbWVNZXNzYWdlQ29yZS5TY2VuZURl",
+            "c3RydWN0aW9uUmVxdWVzdEgAElEKGnNjZW5lX2Rlc3RydWN0aW9uX3Jlc3Bv",
+            "bnNlGLSADCABKAsyKS5nYW1lTWVzc2FnZUNvcmUuU2NlbmVEZXN0cnVjdGlv",
+            "blJlc3BvbnNlSAASZQolYnJvYWRfY2FzdF9zY2VuZV9kZXN0cnVjdGlvbl9y",
+            "ZXNwb25zZRi1gAwgASgLMjIuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFNj",
+            "ZW5lRGVzdHJ1Y3Rpb25SZXNwb25zZUgAElAKGnBsYXllcl9hY3Rpb25fY2hh",
+            "dF9yZXF1ZXN0GLeADCABKAsyKC5nYW1lTWVzc2FnZUNvcmUuUGxheWVyQWN0",
+            "aW9uQ2hhdFJlcXVlc3RIABJSChtwbGF5ZXJfYWN0aW9uX2NoYXRfcmVzcG9u",
+            "c2UYuIAMIAEoCzIpLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBY3Rpb25DaGF0",
+            "UmVzcG9uc2VIABJmCiZicm9hZF9jYXN0X3BsYXllcl9hY3Rpb25fY2hhdF9y",
+            "ZXNwb25zZRi5gAwgASgLMjIuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdFBs",
+            "YXllckFjdGlvbkNoYXRSZXNwb25zZUgAEkYKFWdldF9ob21lX2RhdGFfcmVx",
+            "dWVzdBjBgAwgASgLMiMuZ2FtZU1lc3NhZ2VDb3JlLkdldEhvbWVEYXRhUmVx",
+            "dWVzdEgAEkgKFmdldF9ob21lX2RhdGFfcmVzcG9uc2UYwoAMIAEoCzIkLmdh",
+            "bWVNZXNzYWdlQ29yZS5HZXRIb21lRGF0YVJlc3BvbnNlSAASTgoZcXVlcnlf",
+            "U2VydmVyX3RpbWVfcmVxdWVzdBjDgAwgASgLMicuZ2FtZU1lc3NhZ2VDb3Jl",
+            "LlF1ZXJ5U2VydmVyVGltZVJlcXVlc3RIABJQChpxdWVyeV9TZXJ2ZXJfdGlt",
+            "ZV9yZXNwb25zZRjEgAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5U2Vy",
+            "dmVyVGltZVJlc3BvbnNlSAASXwoiYnJvYWRfY2FzdF9jaGFuZ2Vfc2Vydmlj",
+            "ZV9yZXNwb25zZRjFgAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2Fz",
+            "dENoYW5nZVNlcnZpY2VSZXNwb25zZUgAEmkKKGJyb2FkX2Nhc3RfaG9tZV9k",
+            "YXRhX2luaXRfYmF0Y2hfcmVzcG9uc2UYyYAMIAEoCzIzLmdhbWVNZXNzYWdl",
+            "Q29yZS5Ccm9hZENhc3RIb21lRGF0YUluaXRCYXRjaFJlc3BvbnNlSAASZAol",
+            "YnJvYWRfY2FzdF9ob21lX3NraWxsX3Jlc3VsdF9yZXNwb25zZRjRgAwgASgL",
+            "MjEuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEhvbWVTa2lsbFJlc3VsdFJl",
+            "c3BvbnNlSAASTgoZcXVlcnlfdGFsZW50X3RyZWVfcmVxdWVzdBjTgAwgASgL",
+            "MicuZ2FtZU1lc3NhZ2VDb3JlLlF1ZXJ5VGFsZW50VHJlZVJlcXVlc3RIABJQ",
+            "ChpxdWVyeV90YWxlbnRfdHJlZV9yZXNwb25zZRjUgAwgASgLMiguZ2FtZU1l",
+            "c3NhZ2VDb3JlLlF1ZXJ5VGFsZW50VHJlZVJlc3BvbnNlSAASZgomYnJvYWRf",
+            "Y2FzdF90YWxlbnRfdHJlZV91cGRhdGVfcmVzcG9uc2UY1YAMIAEoCzIyLmdh",
+            "bWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RUYWxlbnRUcmVlVXBkYXRlUmVzcG9u",
+            "c2VIABJxCixicm9hZF9jYXN0X2FuaW1hbF9zY2VuZV9kYXRhX3VwZGF0ZV9y",
+            "ZXNwb25zZRjXgAwgASgLMjcuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEFu",
+            "aW1hbFNjZW5lRGF0YVVwZGF0ZVJlc3BvbnNlSAASWwogYnJvYWRfY2FzdF9h",
+            "bmltYWxfZGVhdGhfcmVzcG9uc2UY2YAMIAEoCzItLmdhbWVNZXNzYWdlQ29y",
+            "ZS5Ccm9hZENhc3RBbmltYWxEZWF0aFJlc3BvbnNlSAASaAonYnJvYWRfY2Fz",
+            "dF9hbmltYWxfYXV0b19wcm9kdWNlX3Jlc3BvbnNlGOGADCABKAsyMy5nYW1l",
+            "TWVzc2FnZUNvcmUuQnJvYWRDYXN0QW5pbWFsQXV0b1Byb2R1Y2VSZXNwb25z",
+            "ZUgAElkKH2Jyb2FkX2Nhc3RfcGlja3VwX2Ryb3BfcmVzcG9uc2UY44AMIAEo",
+            "CzIsLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RQaWNrdXBEcm9wUmVzcG9u",
+            "c2VIABJWCh1hbmltYWxfc3BlY2lhbF9hY3Rpb25fcmVxdWVzdBjlgAwgASgL",
+            "MisuZ2FtZU1lc3NhZ2VDb3JlLkFuaW1hbFNwZWNpYWxBY3Rpb25SZXF1ZXN0",
+            "SAASWAoeYW5pbWFsX3NwZWNpYWxfYWN0aW9uX3Jlc3BvbnNlGOaADCABKAsy",
+            "LC5nYW1lTWVzc2FnZUNvcmUuQW5pbWFsU3BlY2lhbEFjdGlvblJlc3BvbnNl",
+            "SAASSQoWY2FwdHVyZV9hbmltYWxfcmVxdWVzdBjngAwgASgLMiUuZ2FtZU1l",
+            "c3NhZ2VDb3JlLkNhcHR1cmVBbmltYWxSZXF1ZXN0SAASSwoXY2FwdHVyZV9h",
+            "bmltYWxfcmVzcG9uc2UY6IAMIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5DYXB0",
+            "dXJlQW5pbWFsUmVzcG9uc2VIABJkCiVicm9hZF9jYXN0X2VudGl0eV9tb3Zl",
+            "X3NwZWVkX3Jlc3BvbnNlGOmADCABKAsyMS5nYW1lTWVzc2FnZUNvcmUuQnJv",
+            "YWRDYXN0RW50aXR5TW92ZVNwZWVkUmVzcG9uc2VIABJ1Ci5icm9hZF9jYXN0",
+            "X2VudGl0eV9jYXB0dXJlX2RhdGFfdXBkYXRlX3Jlc3BvbnNlGPCADCABKAsy",
+            "OS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5Q2FwdHVyZURhdGFV",
+            "cGRhdGVSZXNwb25zZUgAEkUKFGV4aXRfY2FwdHVyZV9yZXF1ZXN0GPGADCAB",
+            "KAsyIy5nYW1lTWVzc2FnZUNvcmUuRXhpdENhcHR1cmVSZXF1ZXN0SAASRwoV",
+            "ZXhpdF9jYXB0dXJlX3Jlc3BvbnNlGPKADCABKAsyJC5nYW1lTWVzc2FnZUNv",
+            "cmUuRXhpdENhcHR1cmVSZXNwb25zZUgAElwKIGVudGl0eV9hY2N1bXVsYXRl",
+            "X3N0YXR1c19yZXF1ZXN0GPOADCABKAsyLi5nYW1lTWVzc2FnZUNvcmUuRW50",
+            "aXR5QWNjdW11bGF0ZVN0YXR1c1JlcXVlc3RIABJeCiFlbnRpdHlfYWNjdW11",
+            "bGF0ZV9zdGF0dXNfcmVzcG9uc2UY9IAMIAEoCzIvLmdhbWVNZXNzYWdlQ29y",
+            "ZS5FbnRpdHlBY2N1bXVsYXRlU3RhdHVzUmVzcG9uc2VIABJyCixicm9hZF9j",
+            "YXN0X2VudGl0eV9hY2N1bXVsYXRlX3N0YXR1c19yZXNwb25zZRj1gAwgASgL",
+            "MjguZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0eUFjY3VtdWxhdGVT",
+            "dGF0dXNSZXNwb25zZUgAEksKF2VudGl0eV9kaWFsb2d1ZV9yZXF1ZXN0GPaA",
+            "DCABKAsyJi5nYW1lTWVzc2FnZUNvcmUuRW50aXR5RGlhbG9ndWVSZXF1ZXN0",
+            "SAASTQoYZW50aXR5X2RpYWxvZ3VlX3Jlc3BvbnNlGPeADCABKAsyJy5nYW1l",
+            "TWVzc2FnZUNvcmUuRW50aXR5RGlhbG9ndWVSZXNwb25zZUgAEkEKEnNlbGZf",
             "dGFza3NfcmVxdWVzdBiBgBAgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlNlbGZU",
             "YXNrc1JlcXVlc3RIABJDChNzZWxmX3Rhc2tzX3Jlc3BvbnNlGIKAECABKAsy",
             "Ii5nYW1lTWVzc2FnZUNvcmUuU2VsZlRhc2tzUmVzcG9uc2VIABJZCh9icm9h",
@@ -586,7 +586,7 @@ namespace GameMessageCore {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.TalentReflection.Descriptor, global::GameMessageCore.CaptureReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "UpgradeTalentNodeRequest", "UpgradeTalentNodeResponse", "QueryTalentExpRequest", "QueryTalentExpResponse", "BroadCastUpTalentExpResponse", "QueryAnimalListRequest", "QueryAnimalListResponse", "BroadCastUpdateAnimalListResponse", "FreedAnimalRequest", "FreedAnimalResponse", "EntityDialogueRequest", "EntityDialogueResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "BroadCastHomeDataInitBatchResponse", "BroadCastHomeSkillResultResponse", "QueryTalentTreeRequest", "QueryTalentTreeResponse", "BroadCastTalentTreeUpdateResponse", "BroadCastAnimalSceneDataUpdateResponse", "BroadCastAnimalDeathResponse", "BroadCastAnimalAutoProduceResponse", "BroadCastPickupDropResponse", "AnimalSpecialActionRequest", "AnimalSpecialActionResponse", "CaptureAnimalRequest", "CaptureAnimalResponse", "BroadCastEntityMoveSpeedResponse", "BroadCastEntityCaptureDataUpdateResponse", "ExitCaptureRequest", "ExitCaptureResponse", "EntityAccumulateStatusRequest", "EntityAccumulateStatusResponse", "BroadCastEntityAccumulateStatusResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AcceptTaskListRequest", "AcceptTaskListResponse", "AbandonTaskRequest", "AbandonTaskResponse", "AbandonTaskListRequest", "AbandonTaskListResponse", "TaskRewardRequest", "TaskRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "BroadCastTaskListRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse", "BroadCastMsgAggregationResponse" }, new[]{ "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "UpgradeTalentNodeRequest", "UpgradeTalentNodeResponse", "QueryTalentExpRequest", "QueryTalentExpResponse", "BroadCastUpTalentExpResponse", "QueryAnimalListRequest", "QueryAnimalListResponse", "BroadCastUpdateAnimalListResponse", "FreedAnimalRequest", "FreedAnimalResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "BroadCastHomeDataInitBatchResponse", "BroadCastHomeSkillResultResponse", "QueryTalentTreeRequest", "QueryTalentTreeResponse", "BroadCastTalentTreeUpdateResponse", "BroadCastAnimalSceneDataUpdateResponse", "BroadCastAnimalDeathResponse", "BroadCastAnimalAutoProduceResponse", "BroadCastPickupDropResponse", "AnimalSpecialActionRequest", "AnimalSpecialActionResponse", "CaptureAnimalRequest", "CaptureAnimalResponse", "BroadCastEntityMoveSpeedResponse", "BroadCastEntityCaptureDataUpdateResponse", "ExitCaptureRequest", "ExitCaptureResponse", "EntityAccumulateStatusRequest", "EntityAccumulateStatusResponse", "BroadCastEntityAccumulateStatusResponse", "EntityDialogueRequest", "EntityDialogueResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AcceptTaskListRequest", "AcceptTaskListResponse", "AbandonTaskRequest", "AbandonTaskResponse", "AbandonTaskListRequest", "AbandonTaskListResponse", "TaskRewardRequest", "TaskRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "BroadCastTaskListRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse", "BroadCastMsgAggregationResponse" }, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTickOutResponse), global::GameMessageCore.BroadCastTickOutResponse.Parser, new[]{ "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetRequest), global::GameMessageCore.ItemGetRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetResponse), global::GameMessageCore.ItemGetResponse.Parser, null, null, null, null, null),
@@ -963,12 +963,6 @@ namespace GameMessageCore {
         case PayloadOneofCase.FreedAnimalResponse:
           FreedAnimalResponse = other.FreedAnimalResponse.Clone();
           break;
-        case PayloadOneofCase.EntityDialogueRequest:
-          EntityDialogueRequest = other.EntityDialogueRequest.Clone();
-          break;
-        case PayloadOneofCase.EntityDialogueResponse:
-          EntityDialogueResponse = other.EntityDialogueResponse.Clone();
-          break;
         case PayloadOneofCase.QueryPlayerRequest:
           QueryPlayerRequest = other.QueryPlayerRequest.Clone();
           break;
@@ -1145,6 +1139,12 @@ namespace GameMessageCore {
           break;
         case PayloadOneofCase.BroadCastEntityAccumulateStatusResponse:
           BroadCastEntityAccumulateStatusResponse = other.BroadCastEntityAccumulateStatusResponse.Clone();
+          break;
+        case PayloadOneofCase.EntityDialogueRequest:
+          EntityDialogueRequest = other.EntityDialogueRequest.Clone();
+          break;
+        case PayloadOneofCase.EntityDialogueResponse:
+          EntityDialogueResponse = other.EntityDialogueResponse.Clone();
           break;
         case PayloadOneofCase.SelfTasksRequest:
           SelfTasksRequest = other.SelfTasksRequest.Clone();
@@ -2006,30 +2006,6 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "entity_dialogue_request" field.</summary>
-    public const int EntityDialogueRequestFieldNumber = 65649;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityDialogueRequest EntityDialogueRequest {
-      get { return payloadCase_ == PayloadOneofCase.EntityDialogueRequest ? (global::GameMessageCore.EntityDialogueRequest) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.EntityDialogueRequest;
-      }
-    }
-
-    /// <summary>Field number for the "entity_dialogue_response" field.</summary>
-    public const int EntityDialogueResponseFieldNumber = 65650;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::GameMessageCore.EntityDialogueResponse EntityDialogueResponse {
-      get { return payloadCase_ == PayloadOneofCase.EntityDialogueResponse ? (global::GameMessageCore.EntityDialogueResponse) payload_ : null; }
-      set {
-        payload_ = value;
-        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.EntityDialogueResponse;
-      }
-    }
-
     /// <summary>Field number for the "query_player_request" field.</summary>
     public const int QueryPlayerRequestFieldNumber = 131073;
     /// <summary>
@@ -2744,6 +2720,30 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "entity_dialogue_request" field.</summary>
+    public const int EntityDialogueRequestFieldNumber = 196726;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.EntityDialogueRequest EntityDialogueRequest {
+      get { return payloadCase_ == PayloadOneofCase.EntityDialogueRequest ? (global::GameMessageCore.EntityDialogueRequest) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.EntityDialogueRequest;
+      }
+    }
+
+    /// <summary>Field number for the "entity_dialogue_response" field.</summary>
+    public const int EntityDialogueResponseFieldNumber = 196727;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::GameMessageCore.EntityDialogueResponse EntityDialogueResponse {
+      get { return payloadCase_ == PayloadOneofCase.EntityDialogueResponse ? (global::GameMessageCore.EntityDialogueResponse) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.EntityDialogueResponse;
+      }
+    }
+
     /// <summary>Field number for the "self_tasks_request" field.</summary>
     public const int SelfTasksRequestFieldNumber = 262145;
     /// <summary>
@@ -3132,8 +3132,6 @@ namespace GameMessageCore {
       BroadCastUpdateAnimalListResponse = 65639,
       FreedAnimalRequest = 65641,
       FreedAnimalResponse = 65648,
-      EntityDialogueRequest = 65649,
-      EntityDialogueResponse = 65650,
       QueryPlayerRequest = 131073,
       QueryPlayerResponse = 131074,
       CreatePlayerRequest = 131075,
@@ -3193,6 +3191,8 @@ namespace GameMessageCore {
       EntityAccumulateStatusRequest = 196723,
       EntityAccumulateStatusResponse = 196724,
       BroadCastEntityAccumulateStatusResponse = 196725,
+      EntityDialogueRequest = 196726,
+      EntityDialogueResponse = 196727,
       SelfTasksRequest = 262145,
       SelfTasksResponse = 262146,
       BroadCastUpdateTaskResponse = 262147,
@@ -3313,8 +3313,6 @@ namespace GameMessageCore {
       if (!object.Equals(BroadCastUpdateAnimalListResponse, other.BroadCastUpdateAnimalListResponse)) return false;
       if (!object.Equals(FreedAnimalRequest, other.FreedAnimalRequest)) return false;
       if (!object.Equals(FreedAnimalResponse, other.FreedAnimalResponse)) return false;
-      if (!object.Equals(EntityDialogueRequest, other.EntityDialogueRequest)) return false;
-      if (!object.Equals(EntityDialogueResponse, other.EntityDialogueResponse)) return false;
       if (!object.Equals(QueryPlayerRequest, other.QueryPlayerRequest)) return false;
       if (!object.Equals(QueryPlayerResponse, other.QueryPlayerResponse)) return false;
       if (!object.Equals(CreatePlayerRequest, other.CreatePlayerRequest)) return false;
@@ -3374,6 +3372,8 @@ namespace GameMessageCore {
       if (!object.Equals(EntityAccumulateStatusRequest, other.EntityAccumulateStatusRequest)) return false;
       if (!object.Equals(EntityAccumulateStatusResponse, other.EntityAccumulateStatusResponse)) return false;
       if (!object.Equals(BroadCastEntityAccumulateStatusResponse, other.BroadCastEntityAccumulateStatusResponse)) return false;
+      if (!object.Equals(EntityDialogueRequest, other.EntityDialogueRequest)) return false;
+      if (!object.Equals(EntityDialogueResponse, other.EntityDialogueResponse)) return false;
       if (!object.Equals(SelfTasksRequest, other.SelfTasksRequest)) return false;
       if (!object.Equals(SelfTasksResponse, other.SelfTasksResponse)) return false;
       if (!object.Equals(BroadCastUpdateTaskResponse, other.BroadCastUpdateTaskResponse)) return false;
@@ -3472,8 +3472,6 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastUpdateAnimalListResponse) hash ^= BroadCastUpdateAnimalListResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.FreedAnimalRequest) hash ^= FreedAnimalRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.FreedAnimalResponse) hash ^= FreedAnimalResponse.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) hash ^= EntityDialogueRequest.GetHashCode();
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) hash ^= EntityDialogueResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) hash ^= QueryPlayerRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.QueryPlayerResponse) hash ^= QueryPlayerResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.CreatePlayerRequest) hash ^= CreatePlayerRequest.GetHashCode();
@@ -3533,6 +3531,8 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.EntityAccumulateStatusRequest) hash ^= EntityAccumulateStatusRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.EntityAccumulateStatusResponse) hash ^= EntityAccumulateStatusResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastEntityAccumulateStatusResponse) hash ^= BroadCastEntityAccumulateStatusResponse.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) hash ^= EntityDialogueRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) hash ^= EntityDialogueResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) hash ^= SelfTasksRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SelfTasksResponse) hash ^= SelfTasksResponse.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.BroadCastUpdateTaskResponse) hash ^= BroadCastUpdateTaskResponse.GetHashCode();
@@ -3834,14 +3834,6 @@ namespace GameMessageCore {
         output.WriteRawTag(130, 135, 32);
         output.WriteMessage(FreedAnimalResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
-        output.WriteRawTag(138, 135, 32);
-        output.WriteMessage(EntityDialogueRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
-        output.WriteRawTag(146, 135, 32);
-        output.WriteMessage(EntityDialogueResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         output.WriteRawTag(138, 128, 64);
         output.WriteMessage(QueryPlayerRequest);
@@ -4077,6 +4069,14 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastEntityAccumulateStatusResponse) {
         output.WriteRawTag(170, 135, 96);
         output.WriteMessage(BroadCastEntityAccumulateStatusResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
+        output.WriteRawTag(178, 135, 96);
+        output.WriteMessage(EntityDialogueRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
+        output.WriteRawTag(186, 135, 96);
+        output.WriteMessage(EntityDialogueResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -4448,14 +4448,6 @@ namespace GameMessageCore {
         output.WriteRawTag(130, 135, 32);
         output.WriteMessage(FreedAnimalResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
-        output.WriteRawTag(138, 135, 32);
-        output.WriteMessage(EntityDialogueRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
-        output.WriteRawTag(146, 135, 32);
-        output.WriteMessage(EntityDialogueResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         output.WriteRawTag(138, 128, 64);
         output.WriteMessage(QueryPlayerRequest);
@@ -4691,6 +4683,14 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.BroadCastEntityAccumulateStatusResponse) {
         output.WriteRawTag(170, 135, 96);
         output.WriteMessage(BroadCastEntityAccumulateStatusResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
+        output.WriteRawTag(178, 135, 96);
+        output.WriteMessage(EntityDialogueRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
+        output.WriteRawTag(186, 135, 96);
+        output.WriteMessage(EntityDialogueResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         output.WriteRawTag(138, 128, 128, 1);
@@ -4998,12 +4998,6 @@ namespace GameMessageCore {
       if (payloadCase_ == PayloadOneofCase.FreedAnimalResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(FreedAnimalResponse);
       }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(EntityDialogueRequest);
-      }
-      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
-        size += 3 + pb::CodedOutputStream.ComputeMessageSize(EntityDialogueResponse);
-      }
       if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(QueryPlayerRequest);
       }
@@ -5180,6 +5174,12 @@ namespace GameMessageCore {
       }
       if (payloadCase_ == PayloadOneofCase.BroadCastEntityAccumulateStatusResponse) {
         size += 3 + pb::CodedOutputStream.ComputeMessageSize(BroadCastEntityAccumulateStatusResponse);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(EntityDialogueRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
+        size += 3 + pb::CodedOutputStream.ComputeMessageSize(EntityDialogueResponse);
       }
       if (payloadCase_ == PayloadOneofCase.SelfTasksRequest) {
         size += 4 + pb::CodedOutputStream.ComputeMessageSize(SelfTasksRequest);
@@ -5644,18 +5644,6 @@ namespace GameMessageCore {
           }
           FreedAnimalResponse.MergeFrom(other.FreedAnimalResponse);
           break;
-        case PayloadOneofCase.EntityDialogueRequest:
-          if (EntityDialogueRequest == null) {
-            EntityDialogueRequest = new global::GameMessageCore.EntityDialogueRequest();
-          }
-          EntityDialogueRequest.MergeFrom(other.EntityDialogueRequest);
-          break;
-        case PayloadOneofCase.EntityDialogueResponse:
-          if (EntityDialogueResponse == null) {
-            EntityDialogueResponse = new global::GameMessageCore.EntityDialogueResponse();
-          }
-          EntityDialogueResponse.MergeFrom(other.EntityDialogueResponse);
-          break;
         case PayloadOneofCase.QueryPlayerRequest:
           if (QueryPlayerRequest == null) {
             QueryPlayerRequest = new global::GameMessageCore.QueryPlayerRequest();
@@ -6009,6 +5997,18 @@ namespace GameMessageCore {
             BroadCastEntityAccumulateStatusResponse = new global::GameMessageCore.BroadCastEntityAccumulateStatusResponse();
           }
           BroadCastEntityAccumulateStatusResponse.MergeFrom(other.BroadCastEntityAccumulateStatusResponse);
+          break;
+        case PayloadOneofCase.EntityDialogueRequest:
+          if (EntityDialogueRequest == null) {
+            EntityDialogueRequest = new global::GameMessageCore.EntityDialogueRequest();
+          }
+          EntityDialogueRequest.MergeFrom(other.EntityDialogueRequest);
+          break;
+        case PayloadOneofCase.EntityDialogueResponse:
+          if (EntityDialogueResponse == null) {
+            EntityDialogueResponse = new global::GameMessageCore.EntityDialogueResponse();
+          }
+          EntityDialogueResponse.MergeFrom(other.EntityDialogueResponse);
           break;
         case PayloadOneofCase.SelfTasksRequest:
           if (SelfTasksRequest == null) {
@@ -6739,24 +6739,6 @@ namespace GameMessageCore {
             FreedAnimalResponse = subBuilder;
             break;
           }
-          case 525194: {
-            global::GameMessageCore.EntityDialogueRequest subBuilder = new global::GameMessageCore.EntityDialogueRequest();
-            if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
-              subBuilder.MergeFrom(EntityDialogueRequest);
-            }
-            input.ReadMessage(subBuilder);
-            EntityDialogueRequest = subBuilder;
-            break;
-          }
-          case 525202: {
-            global::GameMessageCore.EntityDialogueResponse subBuilder = new global::GameMessageCore.EntityDialogueResponse();
-            if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
-              subBuilder.MergeFrom(EntityDialogueResponse);
-            }
-            input.ReadMessage(subBuilder);
-            EntityDialogueResponse = subBuilder;
-            break;
-          }
           case 1048586: {
             global::GameMessageCore.QueryPlayerRequest subBuilder = new global::GameMessageCore.QueryPlayerRequest();
             if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -7286,6 +7268,24 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastEntityAccumulateStatusResponse = subBuilder;
+            break;
+          }
+          case 1573810: {
+            global::GameMessageCore.EntityDialogueRequest subBuilder = new global::GameMessageCore.EntityDialogueRequest();
+            if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
+              subBuilder.MergeFrom(EntityDialogueRequest);
+            }
+            input.ReadMessage(subBuilder);
+            EntityDialogueRequest = subBuilder;
+            break;
+          }
+          case 1573818: {
+            global::GameMessageCore.EntityDialogueResponse subBuilder = new global::GameMessageCore.EntityDialogueResponse();
+            if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
+              subBuilder.MergeFrom(EntityDialogueResponse);
+            }
+            input.ReadMessage(subBuilder);
+            EntityDialogueResponse = subBuilder;
             break;
           }
           case 2097162: {
@@ -8093,24 +8093,6 @@ namespace GameMessageCore {
             FreedAnimalResponse = subBuilder;
             break;
           }
-          case 525194: {
-            global::GameMessageCore.EntityDialogueRequest subBuilder = new global::GameMessageCore.EntityDialogueRequest();
-            if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
-              subBuilder.MergeFrom(EntityDialogueRequest);
-            }
-            input.ReadMessage(subBuilder);
-            EntityDialogueRequest = subBuilder;
-            break;
-          }
-          case 525202: {
-            global::GameMessageCore.EntityDialogueResponse subBuilder = new global::GameMessageCore.EntityDialogueResponse();
-            if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
-              subBuilder.MergeFrom(EntityDialogueResponse);
-            }
-            input.ReadMessage(subBuilder);
-            EntityDialogueResponse = subBuilder;
-            break;
-          }
           case 1048586: {
             global::GameMessageCore.QueryPlayerRequest subBuilder = new global::GameMessageCore.QueryPlayerRequest();
             if (payloadCase_ == PayloadOneofCase.QueryPlayerRequest) {
@@ -8640,6 +8622,24 @@ namespace GameMessageCore {
             }
             input.ReadMessage(subBuilder);
             BroadCastEntityAccumulateStatusResponse = subBuilder;
+            break;
+          }
+          case 1573810: {
+            global::GameMessageCore.EntityDialogueRequest subBuilder = new global::GameMessageCore.EntityDialogueRequest();
+            if (payloadCase_ == PayloadOneofCase.EntityDialogueRequest) {
+              subBuilder.MergeFrom(EntityDialogueRequest);
+            }
+            input.ReadMessage(subBuilder);
+            EntityDialogueRequest = subBuilder;
+            break;
+          }
+          case 1573818: {
+            global::GameMessageCore.EntityDialogueResponse subBuilder = new global::GameMessageCore.EntityDialogueResponse();
+            if (payloadCase_ == PayloadOneofCase.EntityDialogueResponse) {
+              subBuilder.MergeFrom(EntityDialogueResponse);
+            }
+            input.ReadMessage(subBuilder);
+            EntityDialogueResponse = subBuilder;
             break;
           }
           case 2097162: {

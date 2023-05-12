@@ -43,34 +43,34 @@ namespace GameMessageCore {
             "ChZCcm9hZENhc3RVcEdyYW5hcnlJdGVtENeABBIXChFVcGdyYWRlVGFsZW50",
             "Tm9kZRDZgAQSFAoOUXVlcnlUYWxlbnRFeHAQ4YAEEhoKFEJyb2FkQ2FzdFVw",
             "VGFsZW50RXhwEOOABBIVCg9RdWVyeUFuaW1hbExpc3QQ5YAEEh8KGUJyb2Fk",
-            "Q2FzdFVwZGF0ZUFuaW1hbExpc3QQ54AEEhEKC0ZyZWVkQW5pbWFsEOmABBIU",
-            "Cg5FbnRpdHlEaWFsb2d1ZRDxgAQSEQoLUXVlcnlQbGF5ZXIQgYAIEhIKDENy",
-            "ZWF0ZVBsYXllchCDgAgSDgoIRW50ZXJNYXAQgYAMEhgKElVwZGF0ZVNlbGZM",
-            "b2NhdGlvbhCDgAwSDgoIVXNlU2tpbGwQhYAMEhMKDVJlc3Bhd25QbGF5ZXIQ",
-            "iYAMEh0KF0Jyb2FkQ2FzdEluaXRNYXBFbGVtZW50EJGADBIeChhCcm9hZENh",
-            "c3RNYXBFbnRpdHlVcGRhdGUQkoAMEhwKFkJyb2FkQ2FzdEVudGl0eURlc3Ry",
-            "b3kQk4AMEhkKE0Jyb2FkQ2FzdEVudGl0eU1vdmUQlIAMEhsKFUJyb2FkQ2Fz",
-            "dEVudGl0eUNvbWJhdBCVgAwSHAoWQnJvYWRDYXN0UmVzcGF3blBsYXllchCW",
-            "gAwSDgoIVGVsZXBvcnQQl4AMEiIKHEJyb2FkQ2FzdEVudGl0eVByb2ZpbGVV",
-            "cGRhdGUQmYAMEhsKFUJyb2FkQ2FzdE1vbnN0ZXJEZWF0aBChgAwSIQobQnJv",
-            "YWRDYXN0RW50aXR5QXZhdGFyVXBkYXRlEKKADBIlCh9Ccm9hZENhc3RFbnRp",
-            "dHlCYXR0bGVEYXRhVXBkYXRlEKOADBIkCh5Ccm9hZENhc3RFbnRpdHlCdWls",
-            "ZERhdGFVcGRhdGUQpYAMEhkKE1BsYXllckFjdGlvbkNvbGxlY3QQp4AMEiIK",
-            "HEJyb2FkQ2FzdFBsYXllckFjdGlvbkNvbGxlY3QQqYAMEhYKEFNjZW5lRGVz",
-            "dHJ1Y3Rpb24Qs4AMEh8KGUJyb2FkQ2FzdFNjZW5lRGVzdHJ1Y3Rpb24QtYAM",
-            "EhYKEFBsYXllckFjdGlvbkNoYXQQt4AMEh8KGUJyb2FkQ2FzdFBsYXllckFj",
-            "dGlvbkNoYXQQuYAMEhEKC0dldEhvbWVEYXRhEMGADBIVCg9RdWVyeVNlcnZl",
-            "clRpbWUQw4AMEhwKFkJyb2FkQ2FzdENoYW5nZVNlcnZpY2UQxYAMEiAKGkJy",
-            "b2FkQ2FzdEhvbWVEYXRhSW5pdEJhdGNoEMmADBIeChhCcm9hZENhc3RIb21l",
-            "U2tpbGxSZXN1bHQQ0YAMEhUKD1F1ZXJ5VGFsZW50VHJlZRDTgAwSHwoZQnJv",
-            "YWRDYXN0VGFsZW50VHJlZVVwZGF0ZRDVgAwSJAoeQnJvYWRDYXN0QW5pbWFs",
-            "U2NlbmVEYXRhVXBkYXRlENeADBIaChRCcm9hZENhc3RBbmltYWxEZWF0aBDZ",
-            "gAwSIAoaQnJvYWRDYXN0QW5pbWFsQXV0b1Byb2R1Y2UQ4YAMEhkKE0Jyb2Fk",
-            "Q2FzdFBpY2t1cERyb3AQ44AMEhkKE0FuaW1hbFNwZWNpYWxBY3Rpb24Q5YAM",
-            "EhMKDUNhcHR1cmVBbmltYWwQ54AMEh4KGEJyb2FkQ2FzdEVudGl0eU1vdmVT",
-            "cGVlZBDpgAwSJgogQnJvYWRDYXN0RW50aXR5Q2FwdHVyZURhdGFVcGRhdGUQ",
-            "8IAMEhEKC0V4aXRDYXB0dXJlEPGADBIcChZFbnRpdHlBY2N1bXVsYXRlU3Rh",
-            "dHVzEPKADBIlCh9Ccm9hZENhc3RFbnRpdHlBY2N1bXVsYXRlU3RhdHVzEPOA",
+            "Q2FzdFVwZGF0ZUFuaW1hbExpc3QQ54AEEhEKC0ZyZWVkQW5pbWFsEOmABBIR",
+            "CgtRdWVyeVBsYXllchCBgAgSEgoMQ3JlYXRlUGxheWVyEIOACBIOCghFbnRl",
+            "ck1hcBCBgAwSGAoSVXBkYXRlU2VsZkxvY2F0aW9uEIOADBIOCghVc2VTa2ls",
+            "bBCFgAwSEwoNUmVzcGF3blBsYXllchCJgAwSHQoXQnJvYWRDYXN0SW5pdE1h",
+            "cEVsZW1lbnQQkYAMEh4KGEJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZRCSgAwS",
+            "HAoWQnJvYWRDYXN0RW50aXR5RGVzdHJveRCTgAwSGQoTQnJvYWRDYXN0RW50",
+            "aXR5TW92ZRCUgAwSGwoVQnJvYWRDYXN0RW50aXR5Q29tYmF0EJWADBIcChZC",
+            "cm9hZENhc3RSZXNwYXduUGxheWVyEJaADBIOCghUZWxlcG9ydBCXgAwSIgoc",
+            "QnJvYWRDYXN0RW50aXR5UHJvZmlsZVVwZGF0ZRCZgAwSGwoVQnJvYWRDYXN0",
+            "TW9uc3RlckRlYXRoEKGADBIhChtCcm9hZENhc3RFbnRpdHlBdmF0YXJVcGRh",
+            "dGUQooAMEiUKH0Jyb2FkQ2FzdEVudGl0eUJhdHRsZURhdGFVcGRhdGUQo4AM",
+            "EiQKHkJyb2FkQ2FzdEVudGl0eUJ1aWxkRGF0YVVwZGF0ZRClgAwSGQoTUGxh",
+            "eWVyQWN0aW9uQ29sbGVjdBCngAwSIgocQnJvYWRDYXN0UGxheWVyQWN0aW9u",
+            "Q29sbGVjdBCpgAwSFgoQU2NlbmVEZXN0cnVjdGlvbhCzgAwSHwoZQnJvYWRD",
+            "YXN0U2NlbmVEZXN0cnVjdGlvbhC1gAwSFgoQUGxheWVyQWN0aW9uQ2hhdBC3",
+            "gAwSHwoZQnJvYWRDYXN0UGxheWVyQWN0aW9uQ2hhdBC5gAwSEQoLR2V0SG9t",
+            "ZURhdGEQwYAMEhUKD1F1ZXJ5U2VydmVyVGltZRDDgAwSHAoWQnJvYWRDYXN0",
+            "Q2hhbmdlU2VydmljZRDFgAwSIAoaQnJvYWRDYXN0SG9tZURhdGFJbml0QmF0",
+            "Y2gQyYAMEh4KGEJyb2FkQ2FzdEhvbWVTa2lsbFJlc3VsdBDRgAwSFQoPUXVl",
+            "cnlUYWxlbnRUcmVlENOADBIfChlCcm9hZENhc3RUYWxlbnRUcmVlVXBkYXRl",
+            "ENWADBIkCh5Ccm9hZENhc3RBbmltYWxTY2VuZURhdGFVcGRhdGUQ14AMEhoK",
+            "FEJyb2FkQ2FzdEFuaW1hbERlYXRoENmADBIgChpCcm9hZENhc3RBbmltYWxB",
+            "dXRvUHJvZHVjZRDhgAwSGQoTQnJvYWRDYXN0UGlja3VwRHJvcBDjgAwSGQoT",
+            "QW5pbWFsU3BlY2lhbEFjdGlvbhDlgAwSEwoNQ2FwdHVyZUFuaW1hbBDngAwS",
+            "HgoYQnJvYWRDYXN0RW50aXR5TW92ZVNwZWVkEOmADBImCiBCcm9hZENhc3RF",
+            "bnRpdHlDYXB0dXJlRGF0YVVwZGF0ZRDwgAwSEQoLRXhpdENhcHR1cmUQ8YAM",
+            "EhwKFkVudGl0eUFjY3VtdWxhdGVTdGF0dXMQ8oAMEiUKH0Jyb2FkQ2FzdEVu",
+            "dGl0eUFjY3VtdWxhdGVTdGF0dXMQ84AMEhQKDkVudGl0eURpYWxvZ3VlEPaA",
             "DBIPCglTZWxmVGFza3MQgYAQEhkKE0Jyb2FkQ2FzdFVwZGF0ZVRhc2sQg4AQ",
             "Eh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EISAEBIQCgpBY2NlcHRUYXNr",
             "EIWAEBIUCg5BY2NlcHRUYXNrTGlzdBCHgBASEQoLQWJhbmRvblRhc2sQiYAQ",
@@ -231,16 +231,12 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("FreedAnimal")] FreedAnimal = 65641,
     /// <summary>
-    /// 实体对话
-    /// </summary>
-    [pbr::OriginalName("EntityDialogue")] EntityDialogue = 65649,
-    /// <summary>
     ///accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("QueryPlayer")] QueryPlayer = 131073,
     [pbr::OriginalName("CreatePlayer")] CreatePlayer = 131075,
     /// <summary>
-    ///sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    ///sceneSer 协议 : 0x03ZZZZ  场景服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("EnterMap")] EnterMap = 196609,
     [pbr::OriginalName("UpdateSelfLocation")] UpdateSelfLocation = 196611,
@@ -321,6 +317,10 @@ namespace GameMessageCore {
     /// 实体蓄力状态广播
     /// </summary>
     [pbr::OriginalName("BroadCastEntityAccumulateStatus")] BroadCastEntityAccumulateStatus = 196723,
+    /// <summary>
+    /// 实体对话
+    /// </summary>
+    [pbr::OriginalName("EntityDialogue")] EntityDialogue = 196726,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

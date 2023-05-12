@@ -69,6 +69,7 @@ enum EnvelopeType {
     QueryAnimalList                 = 0x010065;     // 请求Animal列表
     BroadCastUpdateAnimalList       = 0x010067;     // 广播批量更新Animal列表(add | update | remove)
     FreedAnimal                     = 0x010069;     // 释放Animal
+    EntityDialogue                  = 0x010071;     // 实体对话
 
     
  

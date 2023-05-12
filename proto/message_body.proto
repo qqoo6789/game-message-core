@@ -98,7 +98,8 @@ message Envelope {
     BroadCastUpdateAnimalListResponse broad_cast_update_animal_list_response = 0x010067;
     FreedAnimalRequest                freed_animal_request                   = 0x010069;
     FreedAnimalResponse               freed_animal_response                  = 0x010070;
-
+    EntityDialogueRequest             entity_dialogue_request                = 0x010071;
+    EntityDialogueResponse            entity_dialogue_response               = 0x010072;
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -459,6 +460,11 @@ message FreedAnimalResponse{
 }
 
 
+message EntityDialogueRequest{
+    bool  isTalk = 1;
+}
+message EntityDialogueResponse{
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

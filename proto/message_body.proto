@@ -461,7 +461,8 @@ message FreedAnimalResponse{
 
 
 message EntityDialogueRequest{
-    bool  isTalk = 1;
+    DialogueEvent  event = 1;
+    int64  entityId = 2;
 }
 message EntityDialogueResponse{
 }

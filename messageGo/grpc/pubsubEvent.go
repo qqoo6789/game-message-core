@@ -22,6 +22,9 @@ const (
 	// 无缝切换地图
 	SubscriptionEventUserChangeService SubscriptionEvent = "EventTopicUserChangeService"
 
+	// 清理指定userId 缓存数据
+	SubscriptionEventClearUserCache SubscriptionEvent = "EventTopicClearUserCache"
+
 	SubscriptionEventSavePlayerData SubscriptionEvent = "EventTopicSavePlayerData"
 	SubscriptionEventKillMonster    SubscriptionEvent = "EventTopicKillMonster"
 	SubscriptionEventPlayerDeath    SubscriptionEvent = "EventTopicPlayerDeath"

@@ -27,41 +27,42 @@ namespace GameMessageCore {
             "Cgtza2lsbC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlGgxlbnRpdHkucHJvdG8a",
             "DHZlY3Rvci5wcm90byJlCgpEYW1hZ2VEYXRhEi8KCWRtZ19zdGF0ZRgBIAEo",
             "DjIcLmdhbWVNZXNzYWdlQ29yZS5EYW1hZ2VTdGF0ZRITCgtjdXJyZW50X2lu",
-            "dBgCIAEoBRIRCglkZWx0YV9pbnQYAyABKAUifgoURGFtYWdlRWZmZWN0QmVh",
-            "dEJhY2sSMAoHY3VyX2xvYxgBIAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5FbnRp",
-            "dHlMb2NhdGlvbhI0CgtiYWNrX3RvX3BvcxgCIAEoCzIfLmdhbWVNZXNzYWdl",
-            "Q29yZS5FbnRpdHlMb2NhdGlvbiKAAgoMRGFtYWdlRWZmZWN0EjMKCmVmZmVj",
-            "dFR5cGUYASABKA4yHy5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0SWQS",
-            "EgoKZXhwaXJlZF9hdBgCIAEoBRITCglpbnRfdmFsdWUYCiABKAVIABITCglz",
-            "dHJfdmFsdWUYCyABKAlIABJACg9iZWF0X2JhY2tfdmFsdWUYDCABKAsyJS5n",
-            "YW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0QmVhdEJhY2tIABIzCgxkYW1h",
-            "Z2VfdmFsdWUYDSABKAsyGy5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRGF0YUgA",
-            "QgYKBGRhdGEiegoMRW50aXR5RGFtYWdlEikKBmVudGl0eRgBIAEoCzIZLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIQCghza2lsbF9pZBgCIAEoBRItCgZl",
-            "ZmZlY3QYAyADKAsyHS5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZmZWN0IrAB",
-            "Cg5Ta2lsbEZseWVyRGF0YRIpCgZ0YXJnZXQYASABKAsyGS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuRW50aXR5SWQSEgoKZGVzdF9zdGFtcBgCIAEoAxIlCgNkaXIYAyAB",
-            "KAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxInCgV0b1BvcxgEIAEoCzIY",
-            "LmdhbWVNZXNzYWdlQ29yZS5WZWN0b3IzEg8KB2l0ZW1DaWQYBSABKAUqxAEK",
-            "EUVudGl0eUNvbWJhdFN0YXRlEhwKGEVudGl0eUNvbWJhdFN0YXRlVW5rbm93",
-            "bhAAEhoKFkVudGl0eUNvbWJhdFN0YXRlQmVnaW4QARIYChRFbnRpdHlDb21i",
-            "YXRTdGF0ZUVuZBACEiAKHEVudGl0eUNvbWJhdFN0YXRlSW50ZXJydXB0ZWQQ",
-            "AxIbChdFbnRpdHlDb21iYXRTdGF0ZUZseUhpdBAEEhwKGEVudGl0eUNvbWJh",
-            "dFN0YXRlVHJpZ2dlchAFKowCCg5EYW1hZ2VFZmZlY3RJZBIZChVEYW1hZ2VF",
-            "ZmZlY3RJZFVua25vd24QABIXChJEYW1hZ2VFZmZlY3RJZDEwMDEQ6QcSFwoS",
-            "RGFtYWdlRWZmZWN0SWQxMDAyEOoHEhcKEkRhbWFnZUVmZmVjdElkMTAwMxDr",
-            "BxIXChJEYW1hZ2VFZmZlY3RJZDEwMDQQ7AcSFwoSRGFtYWdlRWZmZWN0SWQx",
-            "MDA1EO0HEhcKEkRhbWFnZUVmZmVjdElkMTAwNhDuBxIXChJEYW1hZ2VFZmZl",
-            "Y3RJZDEwMDcQ7wcSFwoSRGFtYWdlRWZmZWN0SWQxMDA4EPAHEhcKEkRhbWFn",
-            "ZUVmZmVjdElkMTAwORDxBypjCgtEYW1hZ2VTdGF0ZRIVChFEYW1hZ2VTdGF0",
-            "ZU5vcm1hbBAAEhMKD0RhbWFnZVN0YXRlQ3JpdBABEhMKD0RhbWFnZVN0YXRl",
-            "TWlzcxADEhMKD0RhbWFnZVN0YXRlRmFsbBAEKiQKDVVzZVNraWxsU3RhdGUS",
-            "CQoFU3RhcnQQABIICgRTdG9wEAFiBnByb3RvMw=="));
+            "dBgCIAEoBRIRCglkZWx0YV9pbnQYAyABKAUikgEKFERhbWFnZUVmZmVjdEJl",
+            "YXRCYWNrEjAKB2N1cl9sb2MYASABKAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50",
+            "aXR5TG9jYXRpb24SNAoLYmFja190b19wb3MYAiABKAsyHy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRW50aXR5TG9jYXRpb24SEgoKZGVsYXlfdGltZRgDIAEoBSKAAgoM",
+            "RGFtYWdlRWZmZWN0EjMKCmVmZmVjdFR5cGUYASABKA4yHy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRGFtYWdlRWZmZWN0SWQSEgoKZXhwaXJlZF9hdBgCIAEoBRITCglp",
+            "bnRfdmFsdWUYCiABKAVIABITCglzdHJfdmFsdWUYCyABKAlIABJACg9iZWF0",
+            "X2JhY2tfdmFsdWUYDCABKAsyJS5nYW1lTWVzc2FnZUNvcmUuRGFtYWdlRWZm",
+            "ZWN0QmVhdEJhY2tIABIzCgxkYW1hZ2VfdmFsdWUYDSABKAsyGy5nYW1lTWVz",
+            "c2FnZUNvcmUuRGFtYWdlRGF0YUgAQgYKBGRhdGEiegoMRW50aXR5RGFtYWdl",
+            "EikKBmVudGl0eRgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIQ",
+            "Cghza2lsbF9pZBgCIAEoBRItCgZlZmZlY3QYAyADKAsyHS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuRGFtYWdlRWZmZWN0IrABCg5Ta2lsbEZseWVyRGF0YRIpCgZ0YXJn",
+            "ZXQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSEgoKZGVzdF9z",
+            "dGFtcBgCIAEoAxIlCgNkaXIYAyABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVj",
+            "dG9yMxInCgV0b1BvcxgEIAEoCzIYLmdhbWVNZXNzYWdlQ29yZS5WZWN0b3Iz",
+            "Eg8KB2l0ZW1DaWQYBSABKAUqxAEKEUVudGl0eUNvbWJhdFN0YXRlEhwKGEVu",
+            "dGl0eUNvbWJhdFN0YXRlVW5rbm93bhAAEhoKFkVudGl0eUNvbWJhdFN0YXRl",
+            "QmVnaW4QARIYChRFbnRpdHlDb21iYXRTdGF0ZUVuZBACEiAKHEVudGl0eUNv",
+            "bWJhdFN0YXRlSW50ZXJydXB0ZWQQAxIbChdFbnRpdHlDb21iYXRTdGF0ZUZs",
+            "eUhpdBAEEhwKGEVudGl0eUNvbWJhdFN0YXRlVHJpZ2dlchAFKowCCg5EYW1h",
+            "Z2VFZmZlY3RJZBIZChVEYW1hZ2VFZmZlY3RJZFVua25vd24QABIXChJEYW1h",
+            "Z2VFZmZlY3RJZDEwMDEQ6QcSFwoSRGFtYWdlRWZmZWN0SWQxMDAyEOoHEhcK",
+            "EkRhbWFnZUVmZmVjdElkMTAwMxDrBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDQQ",
+            "7AcSFwoSRGFtYWdlRWZmZWN0SWQxMDA1EO0HEhcKEkRhbWFnZUVmZmVjdElk",
+            "MTAwNhDuBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDcQ7wcSFwoSRGFtYWdlRWZm",
+            "ZWN0SWQxMDA4EPAHEhcKEkRhbWFnZUVmZmVjdElkMTAwORDxBypjCgtEYW1h",
+            "Z2VTdGF0ZRIVChFEYW1hZ2VTdGF0ZU5vcm1hbBAAEhMKD0RhbWFnZVN0YXRl",
+            "Q3JpdBABEhMKD0RhbWFnZVN0YXRlTWlzcxADEhMKD0RhbWFnZVN0YXRlRmFs",
+            "bBAEKiQKDVVzZVNraWxsU3RhdGUSCQoFU3RhcnQQABIICgRTdG9wEAFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), typeof(global::GameMessageCore.UseSkillState), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageData), global::GameMessageCore.DamageData.Parser, new[]{ "DmgState", "CurrentInt", "DeltaInt" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageEffectBeatBack), global::GameMessageCore.DamageEffectBeatBack.Parser, new[]{ "CurLoc", "BackToPos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageEffectBeatBack), global::GameMessageCore.DamageEffectBeatBack.Parser, new[]{ "CurLoc", "BackToPos", "DelayTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.DamageEffect), global::GameMessageCore.DamageEffect.Parser, new[]{ "EffectType", "ExpiredAt", "IntValue", "StrValue", "BeatBackValue", "DamageValue" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityDamage), global::GameMessageCore.EntityDamage.Parser, new[]{ "Entity", "SkillId", "Effect" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.SkillFlyerData), global::GameMessageCore.SkillFlyerData.Parser, new[]{ "Target", "DestStamp", "Dir", "ToPos", "ItemCid" }, null, null, null, null)
@@ -473,6 +474,7 @@ namespace GameMessageCore {
     public DamageEffectBeatBack(DamageEffectBeatBack other) : this() {
       curLoc_ = other.curLoc_ != null ? other.curLoc_.Clone() : null;
       backToPos_ = other.backToPos_ != null ? other.backToPos_.Clone() : null;
+      delayTime_ = other.delayTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -506,6 +508,18 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "delay_time" field.</summary>
+    public const int DelayTimeFieldNumber = 3;
+    private int delayTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int DelayTime {
+      get { return delayTime_; }
+      set {
+        delayTime_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -523,6 +537,7 @@ namespace GameMessageCore {
       }
       if (!object.Equals(CurLoc, other.CurLoc)) return false;
       if (!object.Equals(BackToPos, other.BackToPos)) return false;
+      if (DelayTime != other.DelayTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -532,6 +547,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (curLoc_ != null) hash ^= CurLoc.GetHashCode();
       if (backToPos_ != null) hash ^= BackToPos.GetHashCode();
+      if (DelayTime != 0) hash ^= DelayTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -558,6 +574,10 @@ namespace GameMessageCore {
         output.WriteRawTag(18);
         output.WriteMessage(BackToPos);
       }
+      if (DelayTime != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DelayTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -576,6 +596,10 @@ namespace GameMessageCore {
         output.WriteRawTag(18);
         output.WriteMessage(BackToPos);
       }
+      if (DelayTime != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DelayTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -591,6 +615,9 @@ namespace GameMessageCore {
       }
       if (backToPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BackToPos);
+      }
+      if (DelayTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DelayTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -615,6 +642,9 @@ namespace GameMessageCore {
           BackToPos = new global::GameMessageCore.EntityLocation();
         }
         BackToPos.MergeFrom(other.BackToPos);
+      }
+      if (other.DelayTime != 0) {
+        DelayTime = other.DelayTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -645,6 +675,10 @@ namespace GameMessageCore {
             input.ReadMessage(BackToPos);
             break;
           }
+          case 24: {
+            DelayTime = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -672,6 +706,10 @@ namespace GameMessageCore {
               BackToPos = new global::GameMessageCore.EntityLocation();
             }
             input.ReadMessage(BackToPos);
+            break;
+          }
+          case 24: {
+            DelayTime = input.ReadInt32();
             break;
           }
         }

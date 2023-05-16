@@ -67,6 +67,7 @@ message DamageData{
 message DamageEffectBeatBack{
   EntityLocation  cur_loc = 1;
   EntityLocation  back_to_pos = 2;
+  int32  delay_time = 3;
 }
 
 message DamageEffect{

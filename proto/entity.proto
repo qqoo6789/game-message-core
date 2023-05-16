@@ -183,3 +183,10 @@ message EntityExtendCD {
   int32 type = 1; //扩展类型
   int64 time = 2; //到期时间
 }
+
+enum DialogueEvent {
+  // 对话开始
+  ConversationStart = 0;
+  // 对话结束
+  ConversationEnd = 1;
+}

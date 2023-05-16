@@ -75,6 +75,54 @@ func (MovementType) EnumDescriptor() ([]byte, []int) {
 	return file_entity_proto_rawDescGZIP(), []int{0}
 }
 
+type DialogueEvent int32
+
+const (
+	// 对话开始
+	DialogueEvent_ConversationStart DialogueEvent = 0
+	// 对话结束
+	DialogueEvent_ConversationEnd DialogueEvent = 1
+)
+
+// Enum value maps for DialogueEvent.
+var (
+	DialogueEvent_name = map[int32]string{
+		0: "ConversationStart",
+		1: "ConversationEnd",
+	}
+	DialogueEvent_value = map[string]int32{
+		"ConversationStart": 0,
+		"ConversationEnd":   1,
+	}
+)
+
+func (x DialogueEvent) Enum() *DialogueEvent {
+	p := new(DialogueEvent)
+	*p = x
+	return p
+}
+
+func (x DialogueEvent) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (DialogueEvent) Descriptor() protoreflect.EnumDescriptor {
+	return file_entity_proto_enumTypes[1].Descriptor()
+}
+
+func (DialogueEvent) Type() protoreflect.EnumType {
+	return &file_entity_proto_enumTypes[1]
+}
+
+func (x DialogueEvent) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use DialogueEvent.Descriptor instead.
+func (DialogueEvent) EnumDescriptor() ([]byte, []int) {
+	return file_entity_proto_rawDescGZIP(), []int{1}
+}
+
 type EntityId struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -1677,9 +1725,13 @@ var file_entity_proto_rawDesc = []byte{
 	0x6e, 0x74, 0x54, 0x79, 0x70, 0x65, 0x57, 0x61, 0x6c, 0x6b, 0x10, 0x01, 0x12, 0x13, 0x0a, 0x0f,
 	0x4d, 0x6f, 0x76, 0x65, 0x6d, 0x65, 0x6e, 0x74, 0x54, 0x79, 0x70, 0x65, 0x52, 0x75, 0x6e, 0x10,
 	0x02, 0x12, 0x14, 0x0a, 0x10, 0x4d, 0x6f, 0x76, 0x65, 0x6d, 0x65, 0x6e, 0x74, 0x54, 0x79, 0x70,
-	0x65, 0x49, 0x64, 0x6c, 0x65, 0x10, 0x03, 0x42, 0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d, 0x65, 0x73,
-	0x73, 0x61, 0x67, 0x65, 0x47, 0x6f, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x33,
+	0x65, 0x49, 0x64, 0x6c, 0x65, 0x10, 0x03, 0x2a, 0x3b, 0x0a, 0x0d, 0x44, 0x69, 0x61, 0x6c, 0x6f,
+	0x67, 0x75, 0x65, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x12, 0x15, 0x0a, 0x11, 0x43, 0x6f, 0x6e, 0x76,
+	0x65, 0x72, 0x73, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x53, 0x74, 0x61, 0x72, 0x74, 0x10, 0x00, 0x12,
+	0x13, 0x0a, 0x0f, 0x43, 0x6f, 0x6e, 0x76, 0x65, 0x72, 0x73, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x45,
+	0x6e, 0x64, 0x10, 0x01, 0x42, 0x13, 0x5a, 0x11, 0x2e, 0x2f, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67,
+	0x65, 0x47, 0x6f, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+	0x33,
 }
 
 var (
@@ -1694,79 +1746,80 @@ func file_entity_proto_rawDescGZIP() []byte {
 	return file_entity_proto_rawDescData
 }
 
-var file_entity_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_entity_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_entity_proto_msgTypes = make([]protoimpl.MessageInfo, 16)
 var file_entity_proto_goTypes = []interface{}{
 	(MovementType)(0),                     // 0: gameMessageCore.MovementType
-	(*EntityId)(nil),                      // 1: gameMessageCore.EntityId
-	(*EntityLocation)(nil),                // 2: gameMessageCore.EntityLocation
-	(*EntityWithLocation)(nil),            // 3: gameMessageCore.EntityWithLocation
-	(*DestructionElementData)(nil),        // 4: gameMessageCore.DestructionElementData
-	(*Player)(nil),                        // 5: gameMessageCore.Player
-	(*Monster)(nil),                       // 6: gameMessageCore.Monster
-	(*Npc)(nil),                           // 7: gameMessageCore.Npc
-	(*NftBuild)(nil),                      // 8: gameMessageCore.NftBuild
-	(*Resource)(nil),                      // 9: gameMessageCore.Resource
-	(*HomeAnimal)(nil),                    // 10: gameMessageCore.HomeAnimal
-	(*ResourcePointInfo)(nil),             // 11: gameMessageCore.ResourcePointInfo
-	(*EntityMoveStep)(nil),                // 12: gameMessageCore.EntityMoveStep
-	(*EntityMovement)(nil),                // 13: gameMessageCore.EntityMovement
-	(*EntityCD)(nil),                      // 14: gameMessageCore.EntityCD
-	(*EntitySkillCD)(nil),                 // 15: gameMessageCore.EntitySkillCD
-	(*EntityExtendCD)(nil),                // 16: gameMessageCore.EntityExtendCD
-	(EntityType)(0),                       // 17: gameMessageCore.EntityType
-	(*Vector3)(nil),                       // 18: gameMessageCore.Vector3
-	(*PlayerBaseData)(nil),                // 19: gameMessageCore.PlayerBaseData
-	(*AttributeData)(nil),                 // 20: gameMessageCore.AttributeData
-	(*AvatarAttribute)(nil),               // 21: gameMessageCore.AvatarAttribute
-	(*CaptureData)(nil),                   // 22: gameMessageCore.CaptureData
-	(*CollectResourceProgressResult)(nil), // 23: gameMessageCore.CollectResourceProgressResult
-	(*ProxyAnimalBaseData)(nil),           // 24: gameMessageCore.ProxyAnimalBaseData
-	(*ProxyAnimalData)(nil),               // 25: gameMessageCore.ProxyAnimalData
+	(DialogueEvent)(0),                    // 1: gameMessageCore.DialogueEvent
+	(*EntityId)(nil),                      // 2: gameMessageCore.EntityId
+	(*EntityLocation)(nil),                // 3: gameMessageCore.EntityLocation
+	(*EntityWithLocation)(nil),            // 4: gameMessageCore.EntityWithLocation
+	(*DestructionElementData)(nil),        // 5: gameMessageCore.DestructionElementData
+	(*Player)(nil),                        // 6: gameMessageCore.Player
+	(*Monster)(nil),                       // 7: gameMessageCore.Monster
+	(*Npc)(nil),                           // 8: gameMessageCore.Npc
+	(*NftBuild)(nil),                      // 9: gameMessageCore.NftBuild
+	(*Resource)(nil),                      // 10: gameMessageCore.Resource
+	(*HomeAnimal)(nil),                    // 11: gameMessageCore.HomeAnimal
+	(*ResourcePointInfo)(nil),             // 12: gameMessageCore.ResourcePointInfo
+	(*EntityMoveStep)(nil),                // 13: gameMessageCore.EntityMoveStep
+	(*EntityMovement)(nil),                // 14: gameMessageCore.EntityMovement
+	(*EntityCD)(nil),                      // 15: gameMessageCore.EntityCD
+	(*EntitySkillCD)(nil),                 // 16: gameMessageCore.EntitySkillCD
+	(*EntityExtendCD)(nil),                // 17: gameMessageCore.EntityExtendCD
+	(EntityType)(0),                       // 18: gameMessageCore.EntityType
+	(*Vector3)(nil),                       // 19: gameMessageCore.Vector3
+	(*PlayerBaseData)(nil),                // 20: gameMessageCore.PlayerBaseData
+	(*AttributeData)(nil),                 // 21: gameMessageCore.AttributeData
+	(*AvatarAttribute)(nil),               // 22: gameMessageCore.AvatarAttribute
+	(*CaptureData)(nil),                   // 23: gameMessageCore.CaptureData
+	(*CollectResourceProgressResult)(nil), // 24: gameMessageCore.CollectResourceProgressResult
+	(*ProxyAnimalBaseData)(nil),           // 25: gameMessageCore.ProxyAnimalBaseData
+	(*ProxyAnimalData)(nil),               // 26: gameMessageCore.ProxyAnimalData
 }
 var file_entity_proto_depIdxs = []int32{
-	17, // 0: gameMessageCore.EntityId.type:type_name -> gameMessageCore.EntityType
-	18, // 1: gameMessageCore.EntityLocation.loc:type_name -> gameMessageCore.Vector3
-	1,  // 2: gameMessageCore.EntityWithLocation.type_id:type_name -> gameMessageCore.EntityId
-	5,  // 3: gameMessageCore.EntityWithLocation.player:type_name -> gameMessageCore.Player
-	6,  // 4: gameMessageCore.EntityWithLocation.monster:type_name -> gameMessageCore.Monster
-	8,  // 5: gameMessageCore.EntityWithLocation.build:type_name -> gameMessageCore.NftBuild
-	7,  // 6: gameMessageCore.EntityWithLocation.npc:type_name -> gameMessageCore.Npc
-	9,  // 7: gameMessageCore.EntityWithLocation.resource:type_name -> gameMessageCore.Resource
-	10, // 8: gameMessageCore.EntityWithLocation.homeAnimal:type_name -> gameMessageCore.HomeAnimal
-	19, // 9: gameMessageCore.Player.base_data:type_name -> gameMessageCore.PlayerBaseData
-	20, // 10: gameMessageCore.Player.profile:type_name -> gameMessageCore.AttributeData
-	21, // 11: gameMessageCore.Player.avatars:type_name -> gameMessageCore.AvatarAttribute
-	18, // 12: gameMessageCore.Player.position:type_name -> gameMessageCore.Vector3
-	18, // 13: gameMessageCore.Player.dir:type_name -> gameMessageCore.Vector3
-	14, // 14: gameMessageCore.Player.entity_cd:type_name -> gameMessageCore.EntityCD
-	22, // 15: gameMessageCore.Player.capture_data:type_name -> gameMessageCore.CaptureData
-	20, // 16: gameMessageCore.Monster.profile:type_name -> gameMessageCore.AttributeData
-	18, // 17: gameMessageCore.Monster.position:type_name -> gameMessageCore.Vector3
-	18, // 18: gameMessageCore.Monster.dir:type_name -> gameMessageCore.Vector3
-	22, // 19: gameMessageCore.Monster.capture_data:type_name -> gameMessageCore.CaptureData
-	20, // 20: gameMessageCore.Npc.profile:type_name -> gameMessageCore.AttributeData
-	18, // 21: gameMessageCore.Npc.position:type_name -> gameMessageCore.Vector3
-	18, // 22: gameMessageCore.Npc.dir:type_name -> gameMessageCore.Vector3
-	18, // 23: gameMessageCore.NftBuild.position:type_name -> gameMessageCore.Vector3
-	18, // 24: gameMessageCore.NftBuild.dir:type_name -> gameMessageCore.Vector3
-	18, // 25: gameMessageCore.Resource.position:type_name -> gameMessageCore.Vector3
-	18, // 26: gameMessageCore.Resource.dir:type_name -> gameMessageCore.Vector3
-	11, // 27: gameMessageCore.Resource.pointInfo:type_name -> gameMessageCore.ResourcePointInfo
-	23, // 28: gameMessageCore.Resource.progressInfo:type_name -> gameMessageCore.CollectResourceProgressResult
-	18, // 29: gameMessageCore.HomeAnimal.position:type_name -> gameMessageCore.Vector3
-	18, // 30: gameMessageCore.HomeAnimal.dir:type_name -> gameMessageCore.Vector3
-	24, // 31: gameMessageCore.HomeAnimal.animalBaseData:type_name -> gameMessageCore.ProxyAnimalBaseData
-	25, // 32: gameMessageCore.HomeAnimal.animalDetailData:type_name -> gameMessageCore.ProxyAnimalData
-	20, // 33: gameMessageCore.HomeAnimal.profile:type_name -> gameMessageCore.AttributeData
-	2,  // 34: gameMessageCore.EntityMoveStep.location:type_name -> gameMessageCore.EntityLocation
-	1,  // 35: gameMessageCore.EntityMovement.type_id:type_name -> gameMessageCore.EntityId
-	12, // 36: gameMessageCore.EntityMovement.cur_location:type_name -> gameMessageCore.EntityMoveStep
-	12, // 37: gameMessageCore.EntityMovement.dest_location:type_name -> gameMessageCore.EntityMoveStep
+	18, // 0: gameMessageCore.EntityId.type:type_name -> gameMessageCore.EntityType
+	19, // 1: gameMessageCore.EntityLocation.loc:type_name -> gameMessageCore.Vector3
+	2,  // 2: gameMessageCore.EntityWithLocation.type_id:type_name -> gameMessageCore.EntityId
+	6,  // 3: gameMessageCore.EntityWithLocation.player:type_name -> gameMessageCore.Player
+	7,  // 4: gameMessageCore.EntityWithLocation.monster:type_name -> gameMessageCore.Monster
+	9,  // 5: gameMessageCore.EntityWithLocation.build:type_name -> gameMessageCore.NftBuild
+	8,  // 6: gameMessageCore.EntityWithLocation.npc:type_name -> gameMessageCore.Npc
+	10, // 7: gameMessageCore.EntityWithLocation.resource:type_name -> gameMessageCore.Resource
+	11, // 8: gameMessageCore.EntityWithLocation.homeAnimal:type_name -> gameMessageCore.HomeAnimal
+	20, // 9: gameMessageCore.Player.base_data:type_name -> gameMessageCore.PlayerBaseData
+	21, // 10: gameMessageCore.Player.profile:type_name -> gameMessageCore.AttributeData
+	22, // 11: gameMessageCore.Player.avatars:type_name -> gameMessageCore.AvatarAttribute
+	19, // 12: gameMessageCore.Player.position:type_name -> gameMessageCore.Vector3
+	19, // 13: gameMessageCore.Player.dir:type_name -> gameMessageCore.Vector3
+	15, // 14: gameMessageCore.Player.entity_cd:type_name -> gameMessageCore.EntityCD
+	23, // 15: gameMessageCore.Player.capture_data:type_name -> gameMessageCore.CaptureData
+	21, // 16: gameMessageCore.Monster.profile:type_name -> gameMessageCore.AttributeData
+	19, // 17: gameMessageCore.Monster.position:type_name -> gameMessageCore.Vector3
+	19, // 18: gameMessageCore.Monster.dir:type_name -> gameMessageCore.Vector3
+	23, // 19: gameMessageCore.Monster.capture_data:type_name -> gameMessageCore.CaptureData
+	21, // 20: gameMessageCore.Npc.profile:type_name -> gameMessageCore.AttributeData
+	19, // 21: gameMessageCore.Npc.position:type_name -> gameMessageCore.Vector3
+	19, // 22: gameMessageCore.Npc.dir:type_name -> gameMessageCore.Vector3
+	19, // 23: gameMessageCore.NftBuild.position:type_name -> gameMessageCore.Vector3
+	19, // 24: gameMessageCore.NftBuild.dir:type_name -> gameMessageCore.Vector3
+	19, // 25: gameMessageCore.Resource.position:type_name -> gameMessageCore.Vector3
+	19, // 26: gameMessageCore.Resource.dir:type_name -> gameMessageCore.Vector3
+	12, // 27: gameMessageCore.Resource.pointInfo:type_name -> gameMessageCore.ResourcePointInfo
+	24, // 28: gameMessageCore.Resource.progressInfo:type_name -> gameMessageCore.CollectResourceProgressResult
+	19, // 29: gameMessageCore.HomeAnimal.position:type_name -> gameMessageCore.Vector3
+	19, // 30: gameMessageCore.HomeAnimal.dir:type_name -> gameMessageCore.Vector3
+	25, // 31: gameMessageCore.HomeAnimal.animalBaseData:type_name -> gameMessageCore.ProxyAnimalBaseData
+	26, // 32: gameMessageCore.HomeAnimal.animalDetailData:type_name -> gameMessageCore.ProxyAnimalData
+	21, // 33: gameMessageCore.HomeAnimal.profile:type_name -> gameMessageCore.AttributeData
+	3,  // 34: gameMessageCore.EntityMoveStep.location:type_name -> gameMessageCore.EntityLocation
+	2,  // 35: gameMessageCore.EntityMovement.type_id:type_name -> gameMessageCore.EntityId
+	13, // 36: gameMessageCore.EntityMovement.cur_location:type_name -> gameMessageCore.EntityMoveStep
+	13, // 37: gameMessageCore.EntityMovement.dest_location:type_name -> gameMessageCore.EntityMoveStep
 	0,  // 38: gameMessageCore.EntityMovement.type:type_name -> gameMessageCore.MovementType
-	18, // 39: gameMessageCore.EntityMovement.Dir:type_name -> gameMessageCore.Vector3
-	15, // 40: gameMessageCore.EntityCD.skill_cd_list:type_name -> gameMessageCore.EntitySkillCD
-	16, // 41: gameMessageCore.EntityCD.extend_cd_list:type_name -> gameMessageCore.EntityExtendCD
+	19, // 39: gameMessageCore.EntityMovement.Dir:type_name -> gameMessageCore.Vector3
+	16, // 40: gameMessageCore.EntityCD.skill_cd_list:type_name -> gameMessageCore.EntitySkillCD
+	17, // 41: gameMessageCore.EntityCD.extend_cd_list:type_name -> gameMessageCore.EntityExtendCD
 	42, // [42:42] is the sub-list for method output_type
 	42, // [42:42] is the sub-list for method input_type
 	42, // [42:42] is the sub-list for extension type_name
@@ -1993,7 +2046,7 @@ func file_entity_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_entity_proto_rawDesc,
-			NumEnums:      1,
+			NumEnums:      2,
 			NumMessages:   16,
 			NumExtensions: 0,
 			NumServices:   0,

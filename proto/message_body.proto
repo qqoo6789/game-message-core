@@ -164,6 +164,8 @@ message Envelope {
     EntityAccumulateStatusRequest           entity_accumulate_status_request              = 0x030073;
     EntityAccumulateStatusResponse          entity_accumulate_status_response             = 0x030074;
     BroadCastEntityAccumulateStatusResponse broad_cast_entity_accumulate_status_response  = 0x030075;
+    EntityDialogueRequest             entity_dialogue_request                = 0x030076;
+    EntityDialogueResponse            entity_dialogue_response               = 0x030077;
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -459,6 +461,12 @@ message FreedAnimalResponse{
 }
 
 
+message EntityDialogueRequest{
+    DialogueEvent  event = 1;
+    int64  entityId = 2;
+}
+message EntityDialogueResponse{
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

@@ -95,11 +95,12 @@ namespace GameMessageCore {
             "aWQYASABKAUSDAoEdGltZRgCIAEoAyIsCg5FbnRpdHlFeHRlbmRDRBIMCgR0",
             "eXBlGAEgASgFEgwKBHRpbWUYAiABKAMqaAoMTW92ZW1lbnRUeXBlEhcKE01v",
             "dmVtZW50VHlwZVVua25vd24QABIUChBNb3ZlbWVudFR5cGVXYWxrEAESEwoP",
-            "TW92ZW1lbnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADYgZwcm90",
-            "bzM="));
+            "TW92ZW1lbnRUeXBlUnVuEAISFAoQTW92ZW1lbnRUeXBlSWRsZRADKjsKDURp",
+            "YWxvZ3VlRXZlbnQSFQoRQ29udmVyc2F0aW9uU3RhcnQQABITCg9Db252ZXJz",
+            "YXRpb25FbmQQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.EntityTypeDefineReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.HomeReflection.Descriptor, global::GameMessageCore.CaptureReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.MovementType), typeof(global::GameMessageCore.DialogueEvent), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityId), global::GameMessageCore.EntityId.Parser, new[]{ "Type", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityLocation), global::GameMessageCore.EntityLocation.Parser, new[]{ "MapId", "Loc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.EntityWithLocation), global::GameMessageCore.EntityWithLocation.Parser, new[]{ "TypeId", "Player", "Monster", "Build", "Npc", "Resource", "HomeAnimal" }, new[]{ "Entity" }, null, null, null),
@@ -136,6 +137,17 @@ namespace GameMessageCore {
     /// 保持现在的外观移动
     /// </summary>
     [pbr::OriginalName("MovementTypeIdle")] Idle = 3,
+  }
+
+  public enum DialogueEvent {
+    /// <summary>
+    /// 对话开始
+    /// </summary>
+    [pbr::OriginalName("ConversationStart")] ConversationStart = 0,
+    /// <summary>
+    /// 对话结束
+    /// </summary>
+    [pbr::OriginalName("ConversationEnd")] ConversationEnd = 1,
   }
 
   #endregion

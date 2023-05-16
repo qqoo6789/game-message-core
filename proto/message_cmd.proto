@@ -77,7 +77,7 @@ enum EnvelopeType {
     QueryPlayer                     = 0x020001;
     CreatePlayer                    = 0x020003;   
 
-    //sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
+    //sceneSer 协议 : 0x03ZZZZ  场景服务 协议 ************************************
     EnterMap                        = 0x030001;
     UpdateSelfLocation              = 0x030003;
     UseSkill                        = 0x030005;
@@ -118,6 +118,7 @@ enum EnvelopeType {
     ExitCapture                     = 0x030071;     // 客户端请求退出捕获状态
     EntityAccumulateStatus          = 0x030072;     // 实体蓄力状态请求
     BroadCastEntityAccumulateStatus = 0x030073;     // 实体蓄力状态广播
+    EntityDialogue                  = 0x030076;     // 实体对话
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasks                       = 0x040001;     // 查询玩家已接的任务列表（进行中状态）

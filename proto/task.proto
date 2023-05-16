@@ -74,6 +74,7 @@ message TaskOptionTargetPosition{
 
 message TaskOptionCnf {
   TaskOptionType kind = 1;
+  int32          GuiderPoint = 2;
 
   oneof data{
     // 角色达到某等级

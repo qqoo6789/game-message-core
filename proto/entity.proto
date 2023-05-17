@@ -28,7 +28,7 @@ message EntityLocation {
 
 message EntityWithLocation {
   EntityId      type_id = 1; 
-
+  EntityMovement movement = 2;
   oneof entity {
     Player        player = 10;
     Monster       monster = 11;

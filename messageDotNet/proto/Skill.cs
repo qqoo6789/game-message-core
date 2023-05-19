@@ -53,11 +53,11 @@ namespace GameMessageCore {
             "EkRhbWFnZUVmZmVjdElkMTAwMxDrBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDQQ",
             "7AcSFwoSRGFtYWdlRWZmZWN0SWQxMDA1EO0HEhcKEkRhbWFnZUVmZmVjdElk",
             "MTAwNhDuBxIXChJEYW1hZ2VFZmZlY3RJZDEwMDcQ7wcSFwoSRGFtYWdlRWZm",
-            "ZWN0SWQxMDA4EPAHEhcKEkRhbWFnZUVmZmVjdElkMTAwORDxBypjCgtEYW1h",
+            "ZWN0SWQxMDA4EPAHEhcKEkRhbWFnZUVmZmVjdElkMTAwORDxByp+CgtEYW1h",
             "Z2VTdGF0ZRIVChFEYW1hZ2VTdGF0ZU5vcm1hbBAAEhMKD0RhbWFnZVN0YXRl",
             "Q3JpdBABEhMKD0RhbWFnZVN0YXRlTWlzcxADEhMKD0RhbWFnZVN0YXRlRmFs",
-            "bBAEKiQKDVVzZVNraWxsU3RhdGUSCQoFU3RhcnQQABIICgRTdG9wEAFiBnBy",
-            "b3RvMw=="));
+            "bBAEEhkKFURhbWFnZVN0YXRlV2F0ZXJEcm93bhAFKiQKDVVzZVNraWxsU3Rh",
+            "dGUSCQoFU3RhcnQQABIICgRTdG9wEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EntityCombatState), typeof(global::GameMessageCore.DamageEffectId), typeof(global::GameMessageCore.DamageState), typeof(global::GameMessageCore.UseSkillState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -153,6 +153,10 @@ namespace GameMessageCore {
     /// 掉落伤害
     /// </summary>
     [pbr::OriginalName("DamageStateFall")] Fall = 4,
+    /// <summary>
+    /// 溺水伤害
+    /// </summary>
+    [pbr::OriginalName("DamageStateWaterDrown")] WaterDrown = 5,
   }
 
   public enum UseSkillState {

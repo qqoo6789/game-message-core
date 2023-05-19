@@ -54,6 +54,8 @@ enum DamageState {
   DamageStateMiss = 3;
   // 掉落伤害
   DamageStateFall = 4;
+  // 溺水伤害
+  DamageStateWaterDrown = 5;
 }
 
 message DamageData{

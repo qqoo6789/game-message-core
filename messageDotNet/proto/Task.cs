@@ -37,41 +37,42 @@ namespace GameMessageCore {
             "IAEoBSJbCh1UYXNrT3B0aW9uRmluaXNoVGFza0xpc3RDb3VudBIrCgRraW5k",
             "GAEgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0VHlwZRINCgVjb3Vu",
             "dBgCIAEoBSJPChhUYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24SCQoBeBgBIAEo",
-            "BRIJCgF5GAIgASgFEgkKAXoYAyABKAUSEgoKZGlzdE9mZnNldBgEIAEoBSLv",
-            "BQoNVGFza09wdGlvbkNuZhItCgRraW5kGAEgASgOMh8uZ2FtZU1lc3NhZ2VD",
-            "b3JlLlRhc2tPcHRpb25UeXBlEhMKCXVzZXJMZXZlbBgLIAEoBUgAEjUKCmhh",
-            "bmRJbkl0ZW0YDCABKAsyHy5nYW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbkl0",
-            "ZW1IABIyCgd1c2VJdGVtGA0gASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLlRhc2tP",
-            "cHRpb25JdGVtSAASMgoHZ2V0SXRlbRgOIAEoCzIfLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrT3B0aW9uSXRlbUgAEj0KC2tpbGxNb25zdGVyGA8gASgLMiYuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25LaWxsTW9uc3RlckgAEkAKC3RhbGVu",
-            "dExldmVsGBAgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25UYWxl",
-            "bnRUYXJnZXRMdkgAEkIKCW5vZGVMZXZlbBgRIAEoCzItLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrT3B0aW9uVGFsZW50VGFyZ2V0Tm9kZUxWSAASOQoJdXNlUmVj",
-            "aXBlGBMgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNp",
-            "cGVIABIYCg5SZWNpcGVVc2VDb3VudBgUIAEoBUgAEkUKD0ZpbmlzaFRhc2tD",
-            "b3VudBgVIAEoCzIqLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uRmluaXNo",
-            "VGFza0NvdW50SAASTQoTRmluaXNoVGFza0xpc3RDb3VudBgWIAEoCzIuLmdh",
-            "bWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uRmluaXNoVGFza0xpc3RDb3VudEgA",
-            "EkMKDlRhcmdldFBvc2l0aW9uGBcgASgLMikuZ2FtZU1lc3NhZ2VDb3JlLlRh",
-            "c2tPcHRpb25UYXJnZXRQb3NpdGlvbkgAQgYKBGRhdGEiTQoKVGFza09wdGlv",
-            "bhIxCglvcHRpb25DbmYYASABKAsyHi5nYW1lTWVzc2FnZUNvcmUuVGFza09w",
-            "dGlvbkNuZhIMCgRyYXRlGAIgASgFIlgKBFRhc2sSDgoGdGFza0lkGAEgASgF",
-            "EhIKCmNyZWF0ZWRTZWMYAiABKAMSLAoHb3B0aW9ucxgDIAMoCzIbLmdhbWVN",
-            "ZXNzYWdlQ29yZS5UYXNrT3B0aW9uIk4KDk5vcm1hbFRhc2tEYXRhEhMKC2Zp",
-            "bmlzaFRhc2tzGAEgAygFEicKCGN1clRhc2tzGAIgAygLMhUuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2siwgEKCFRhc2tMaXN0EgoKAmlkGAEgASgFEisKBGtpbmQY",
-            "AiABKA4yHS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlEi8KCnRhbGVu",
-            "dEtpbmQYAyABKA4yGy5nYW1lTWVzc2FnZUNvcmUuVGFsZW50VHlwZRIMCgRy",
-            "YXRlGAYgASgFEicKCGN1cl90YXNrGAcgASgLMhUuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LlRhc2sSFQoNcmVjZWl2ZVJld2FyZBgIIAEoBSrvAQoOVGFza09wdGlvblR5",
-            "cGUSGQoVVW5rbm93blRhc2tPcHRpb25UeXBlEAASDgoKSGFuZEluSXRlbRAB",
-            "EgsKB1VzZUl0ZW0QAhILCgdHZXRJdGVtEAMSDwoLS2lsbE1vbnN0ZXIQBBIN",
-            "CglVc2VSZWNpcGUQCRISCg5SZWNpcGVVc2VDb3VudBAKEg0KCVRhc2tDb3Vu",
-            "dBALEhUKEVRhc2tMaXN0VHlwZUNvdW50EAwSEgoOVGFyZ2V0UG9zaXRpb24Q",
-            "DRISCg5UYWxlbnRUYXJnZXRMdhAOEhYKElRhbGVudFRhcmdldE5vZGVMVhAP",
-            "KkAKDFRhc2tMaXN0VHlwZRIXChNUYXNrTGlzdFR5cGVVbmtub3duEAASCQoF",
-            "RGFpbHkQARIMCghSZXdhcmRlZBACYgZwcm90bzM="));
+            "BRIJCgF5GAIgASgFEgkKAXoYAyABKAUSEgoKZGlzdE9mZnNldBgEIAEoBSKE",
+            "BgoNVGFza09wdGlvbkNuZhItCgRraW5kGAEgASgOMh8uZ2FtZU1lc3NhZ2VD",
+            "b3JlLlRhc2tPcHRpb25UeXBlEhMKC0d1aWRlclBvaW50GAIgASgFEhMKCXVz",
+            "ZXJMZXZlbBgLIAEoBUgAEjUKCmhhbmRJbkl0ZW0YDCABKAsyHy5nYW1lTWVz",
+            "c2FnZUNvcmUuVGFza09wdGlvbkl0ZW1IABIyCgd1c2VJdGVtGA0gASgLMh8u",
+            "Z2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25JdGVtSAASMgoHZ2V0SXRlbRgO",
+            "IAEoCzIfLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uSXRlbUgAEj0KC2tp",
+            "bGxNb25zdGVyGA8gASgLMiYuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25L",
+            "aWxsTW9uc3RlckgAEkAKC3RhbGVudExldmVsGBAgASgLMikuZ2FtZU1lc3Nh",
+            "Z2VDb3JlLlRhc2tPcHRpb25UYWxlbnRUYXJnZXRMdkgAEkIKCW5vZGVMZXZl",
+            "bBgRIAEoCzItLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uVGFsZW50VGFy",
+            "Z2V0Tm9kZUxWSAASOQoJdXNlUmVjaXBlGBMgASgLMiQuZ2FtZU1lc3NhZ2VD",
+            "b3JlLlRhc2tPcHRpb25Vc2VSZWNpcGVIABIYCg5SZWNpcGVVc2VDb3VudBgU",
+            "IAEoBUgAEkUKD0ZpbmlzaFRhc2tDb3VudBgVIAEoCzIqLmdhbWVNZXNzYWdl",
+            "Q29yZS5UYXNrT3B0aW9uRmluaXNoVGFza0NvdW50SAASTQoTRmluaXNoVGFz",
+            "a0xpc3RDb3VudBgWIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9u",
+            "RmluaXNoVGFza0xpc3RDb3VudEgAEkMKDlRhcmdldFBvc2l0aW9uGBcgASgL",
+            "MikuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25UYXJnZXRQb3NpdGlvbkgA",
+            "QgYKBGRhdGEiTQoKVGFza09wdGlvbhIxCglvcHRpb25DbmYYASABKAsyHi5n",
+            "YW1lTWVzc2FnZUNvcmUuVGFza09wdGlvbkNuZhIMCgRyYXRlGAIgASgFIlgK",
+            "BFRhc2sSDgoGdGFza0lkGAEgASgFEhIKCmNyZWF0ZWRTZWMYAiABKAMSLAoH",
+            "b3B0aW9ucxgDIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYXNrT3B0aW9uIk4K",
+            "Dk5vcm1hbFRhc2tEYXRhEhMKC2ZpbmlzaFRhc2tzGAEgAygFEicKCGN1clRh",
+            "c2tzGAIgAygLMhUuZ2FtZU1lc3NhZ2VDb3JlLlRhc2siwgEKCFRhc2tMaXN0",
+            "EgoKAmlkGAEgASgFEisKBGtpbmQYAiABKA4yHS5nYW1lTWVzc2FnZUNvcmUu",
+            "VGFza0xpc3RUeXBlEi8KCnRhbGVudEtpbmQYAyABKA4yGy5nYW1lTWVzc2Fn",
+            "ZUNvcmUuVGFsZW50VHlwZRIMCgRyYXRlGAYgASgFEicKCGN1cl90YXNrGAcg",
+            "ASgLMhUuZ2FtZU1lc3NhZ2VDb3JlLlRhc2sSFQoNcmVjZWl2ZVJld2FyZBgI",
+            "IAEoBSrvAQoOVGFza09wdGlvblR5cGUSGQoVVW5rbm93blRhc2tPcHRpb25U",
+            "eXBlEAASDgoKSGFuZEluSXRlbRABEgsKB1VzZUl0ZW0QAhILCgdHZXRJdGVt",
+            "EAMSDwoLS2lsbE1vbnN0ZXIQBBINCglVc2VSZWNpcGUQCRISCg5SZWNpcGVV",
+            "c2VDb3VudBAKEg0KCVRhc2tDb3VudBALEhUKEVRhc2tMaXN0VHlwZUNvdW50",
+            "EAwSEgoOVGFyZ2V0UG9zaXRpb24QDRISCg5UYWxlbnRUYXJnZXRMdhAOEhYK",
+            "ElRhbGVudFRhcmdldE5vZGVMVhAPKkAKDFRhc2tMaXN0VHlwZRIXChNUYXNr",
+            "TGlzdFR5cGVVbmtub3duEAASCQoFRGFpbHkQARIMCghSZXdhcmRlZBACYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.TalentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TaskOptionType), typeof(global::GameMessageCore.TaskListType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +84,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionFinishTaskCount), global::GameMessageCore.TaskOptionFinishTaskCount.Parser, new[]{ "Kind", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionFinishTaskListCount), global::GameMessageCore.TaskOptionFinishTaskListCount.Parser, new[]{ "Kind", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionTargetPosition), global::GameMessageCore.TaskOptionTargetPosition.Parser, new[]{ "X", "Y", "Z", "DistOffset" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCnf), global::GameMessageCore.TaskOptionCnf.Parser, new[]{ "Kind", "UserLevel", "HandInItem", "UseItem", "GetItem", "KillMonster", "TalentLevel", "NodeLevel", "UseRecipe", "RecipeUseCount", "FinishTaskCount", "FinishTaskListCount", "TargetPosition" }, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOptionCnf), global::GameMessageCore.TaskOptionCnf.Parser, new[]{ "Kind", "GuiderPoint", "UserLevel", "HandInItem", "UseItem", "GetItem", "KillMonster", "TalentLevel", "NodeLevel", "UseRecipe", "RecipeUseCount", "FinishTaskCount", "FinishTaskListCount", "TargetPosition" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TaskOption), global::GameMessageCore.TaskOption.Parser, new[]{ "OptionCnf", "Rate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Task), global::GameMessageCore.Task.Parser, new[]{ "TaskId", "CreatedSec", "Options" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.NormalTaskData), global::GameMessageCore.NormalTaskData.Parser, new[]{ "FinishTasks", "CurTasks" }, null, null, null, null),
@@ -2120,6 +2121,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TaskOptionCnf(TaskOptionCnf other) : this() {
       kind_ = other.kind_;
+      guiderPoint_ = other.guiderPoint_;
       switch (other.DataCase) {
         case DataOneofCase.UserLevel:
           UserLevel = other.UserLevel;
@@ -2177,6 +2179,18 @@ namespace GameMessageCore {
       get { return kind_; }
       set {
         kind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GuiderPoint" field.</summary>
+    public const int GuiderPointFieldNumber = 2;
+    private int guiderPoint_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GuiderPoint {
+      get { return guiderPoint_; }
+      set {
+        guiderPoint_ = value;
       }
     }
 
@@ -2407,6 +2421,7 @@ namespace GameMessageCore {
         return true;
       }
       if (Kind != other.Kind) return false;
+      if (GuiderPoint != other.GuiderPoint) return false;
       if (UserLevel != other.UserLevel) return false;
       if (!object.Equals(HandInItem, other.HandInItem)) return false;
       if (!object.Equals(UseItem, other.UseItem)) return false;
@@ -2428,6 +2443,7 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) hash ^= Kind.GetHashCode();
+      if (GuiderPoint != 0) hash ^= GuiderPoint.GetHashCode();
       if (dataCase_ == DataOneofCase.UserLevel) hash ^= UserLevel.GetHashCode();
       if (dataCase_ == DataOneofCase.HandInItem) hash ^= HandInItem.GetHashCode();
       if (dataCase_ == DataOneofCase.UseItem) hash ^= UseItem.GetHashCode();
@@ -2462,6 +2478,10 @@ namespace GameMessageCore {
       if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Kind);
+      }
+      if (GuiderPoint != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GuiderPoint);
       }
       if (dataCase_ == DataOneofCase.UserLevel) {
         output.WriteRawTag(88);
@@ -2525,6 +2545,10 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteEnum((int) Kind);
       }
+      if (GuiderPoint != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GuiderPoint);
+      }
       if (dataCase_ == DataOneofCase.UserLevel) {
         output.WriteRawTag(88);
         output.WriteInt32(UserLevel);
@@ -2586,6 +2610,9 @@ namespace GameMessageCore {
       if (Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Kind);
       }
+      if (GuiderPoint != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GuiderPoint);
+      }
       if (dataCase_ == DataOneofCase.UserLevel) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserLevel);
       }
@@ -2636,6 +2663,9 @@ namespace GameMessageCore {
       }
       if (other.Kind != global::GameMessageCore.TaskOptionType.UnknownTaskOptionType) {
         Kind = other.Kind;
+      }
+      if (other.GuiderPoint != 0) {
+        GuiderPoint = other.GuiderPoint;
       }
       switch (other.DataCase) {
         case DataOneofCase.UserLevel:
@@ -2723,6 +2753,10 @@ namespace GameMessageCore {
             break;
           case 8: {
             Kind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            GuiderPoint = input.ReadInt32();
             break;
           }
           case 88: {
@@ -2840,6 +2874,10 @@ namespace GameMessageCore {
             break;
           case 8: {
             Kind = (global::GameMessageCore.TaskOptionType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            GuiderPoint = input.ReadInt32();
             break;
           }
           case 88: {

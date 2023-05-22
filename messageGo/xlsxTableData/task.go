@@ -9,8 +9,9 @@ import (
 
 // ----------- make task xlsx used types --------------------------
 type TaskXlsxOption struct {
-	OptionType proto.TaskOptionType `json:"optionType"`
-	Value      string               `json:"value"`
+	OptionType  proto.TaskOptionType `json:"optionType"`
+	Value       string               `json:"value"`
+	GuiderPoint int32                `json:"guiderPoint"`
 }
 
 type TaskXlsxOptions struct {
@@ -20,12 +21,13 @@ type TaskXlsxOptions struct {
 //--------------- task db table used types --------------------------
 
 type TaskRowOption struct {
-	OptionType proto.TaskOptionType `json:"optionType"`
-	Param1     int32                `json:"param1"`
-	Param2     int32                `json:"param2"`
-	Param3     int32                `json:"param3"`
-	Param4     int32                `json:"param4"`
-	Chance     int32                `json:"chance"` // 权重值
+	OptionType  proto.TaskOptionType `json:"optionType"`
+	Param1      int32                `json:"param1"`
+	Param2      int32                `json:"param2"`
+	Param3      int32                `json:"param3"`
+	Param4      int32                `json:"param4"`
+	Chance      int32                `json:"chance"` // 权重值
+	GuiderPoint int32                `json:"guiderPoint"`
 }
 
 type TaskRowOptionList struct {

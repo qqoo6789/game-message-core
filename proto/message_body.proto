@@ -1,13 +1,11 @@
 syntax = "proto3";
 package gameMessageCore;
 option go_package = "./messageGo/proto";
-
-import "message_cmd.proto";
+ 
 import "player.proto";
 import "os.proto";
 import "platform.proto";
 import "item.proto";
-import "item_slot.proto";
 import "entity.proto";
 import "entityProfile.proto";
 import "skill.proto";
@@ -20,886 +18,819 @@ import "home.proto";
 import "talent.proto";
 import "capture.proto";
 
-
-
-
-
-// 消息交互体.
-message Envelope { 
-  EnvelopeType  type = 1;
-  int32         seq_id = 2;
-  int32         error_code = 3;
-  string        error_message = 4;
-
-  oneof payload {
-    //保留id协议      : 0x00ZZZZ   *********************************************** 
-    
-    BroadCastTickOutResponse          broad_cast_tick_out_response          = 0x009999;     
-
-    //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
-    ItemGetRequest                    item_get_request                      = 0x010001;
-    ItemGetResponse                   item_get_response                     = 0x010002;
-    ItemUseRequest                    item_use_request                      = 0x010003;
-    ItemUseResponse                   item_use_response                     = 0x010004;
-    ItemDropRequest                   item_drop_request                     = 0x010005;
-    ItemDropResponse                  item_drop_response                    = 0x010006;
-    UpdateAvatarRequest               update_avatar_request                 = 0x010007;
-    UpdateAvatarResponse              update_avatar_response                = 0x010008;
-    UnloadAvatarRequest               unload_avatar_request                 = 0x010009;
-    UnloadAvatarResponse              unload_avatar_response                = 0x010010;
-    BroadCastItemAddResponse          broad_cast_item_add_response          = 0x010011;
-    BroadCastItemUpdateResponse       broad_cast_item_update_response       = 0x010012;
-    BroadCastItemDelResponse          broad_cast_item_del_response          = 0x010013;
-    BroadCastUpdateItemSlotResponse   broad_cast_update_item_slot_response  = 0x010014;
-    GetItemSlotRequest                get_item_slot_request                 = 0x010015;
-    GetItemSlotResponse               get_item_slot_response                = 0x010016;
-    UpgradeItemSlotRequest            upgrade_item_slot_request             = 0x010017;
-    UpgradeItemSlotResponse           upgrade_item_slot_response            = 0x010018;
-    SigninPlayerRequest               signin_player_request                 = 0x010019;
-    SigninPlayerResponse              signin_player_response                = 0x010020;
-    SignOutPlayerRequest              sign_out_player_request               = 0x010021;
-    SignOutPlayerResponse             sign_out_player_response              = 0x010022;
-
-    QueryLandsRequest                 query_lands_request                   = 0x010025;
-    QueryLandsResponse                query_lands_response                  = 0x010026;
-    BroadCastInitLandResponse         broad_cast_init_land_response         = 0x010027;
-    BroadCastInitItemResponse         broad_cast_init_item_response         = 0x010029;
-    BuildRequest                      build_request                         = 0x010031;
-    BuildResponse                     build_response                        = 0x010032;         
-    RecyclingRequest                  recycling_request                     = 0x010033;
-    RecyclingResponse                 recycling_response                    = 0x010034;         
-    ChargedRequest                    charged_request                       = 0x010035;
-    ChargedResponse                   charged_response                      = 0x010036;
-    HarvestRequest                    harvest_request                       = 0x010037;
-    HarvestResponse                   harvest_response                      = 0x010038;         
-    CollectionRequest                 collection_request                    = 0x010039;         
-    CollectionResponse                collection_response                   = 0x010040;         
-    BroadCastMultiUpLandResponse      broad_cast_multi_up_land_response     = 0x010041; 
-    SelfNftBuildsRequest              self_nft_builds_request               = 0x010043;         
-    SelfNftBuildsResponse             self_nft_builds_response              = 0x010044; 
-    BroadCastSelfBuildUpdateResponse  broad_cast_self_build_update_response = 0x010045; 
-    BroadCastSelfBuildRecyclingResponse broad_cast_self_build_recycling_response = 0x010047; 
-    MintBatteryRequest                mint_battery_request                  = 0x010049;
-    MintBatteryResponse               mint_battery_response                 = 0x010050;
-    QueryGranaryRequest               query_granary_request                 = 0x010051;
-    QueryGranaryResponse              query_granary_response                = 0x010052;
-    GranaryCollectRequest             granary_collect_request               = 0x010053;
-    GranaryCollectResponse            granary_collect_response              = 0x010054;
-    BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
-    BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
-    UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010059;
-    UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010060;
-    QueryTalentExpRequest             query_talent_exp_request              = 0x010061;
-    QueryTalentExpResponse            query_talent_exp_response             = 0x010062;
-    BroadCastUpTalentExpResponse      broad_cast_up_talent_exp_response     = 0x010063;
-
-    QueryAnimalListRequest            query_animal_list_request              = 0x010065;
-    QueryAnimalListResponse           query_animal_list_response             = 0x010066;
-    BroadCastUpdateAnimalListResponse broad_cast_update_animal_list_response = 0x010067;
-    FreedAnimalRequest                freed_animal_request                   = 0x010069;
-    FreedAnimalResponse               freed_animal_response                  = 0x010070;
-
-
-
-    //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
-    QueryPlayerRequest                query_player_request                  = 0x020001;
-    QueryPlayerResponse               query_player_response                 = 0x020002;
-    CreatePlayerRequest               create_player_request                 = 0x020003;
-    CreatePlayerResponse              create_player_response                = 0x020004;
-
-
-    //sceneSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
-    EnterMapRequest                   enter_map_request                     = 0x030001;    
-    EnterMapResponse                  enter_map_response                    = 0x030002;
-    UpdateSelfLocationRequest         update_self_location_request          = 0x030003;
-    UpdateSelfLocationResponse        update_self_location_response         = 0x030004;
-    UseSkillRequest                   use_skill_request                     = 0x030005;
-    UseSkillResponse                  use_skill_response                    = 0x030006; 
-    RespawnPlayerRequest              respawn_player_request                = 0x030009;
-    RespawnPlayerResponse             respawn_player_response               = 0x030010;
-    BroadCastInitMapElementResponse   broad_cast_init_map_element_response  = 0x030011;
-    BroadCastMapEntityUpdateResponse  broad_cast_map_entity_update_response = 0x030012;
-    BroadCastEntityDestroyResponse    broad_cast_entity_destroy_response    = 0x030013;
-    BroadCastEntityMoveResponse       broad_cast_entity_move_response       = 0x030014;
-    BroadCastEntityCombatResponse     broad_cast_entity_combat_response     = 0x030015;
-    BroadCastRespawnPlayerResponse    broad_cast_respawn_player_response    = 0x030016;   
-    TeleportRequest                   teleport_request                      = 0x030017;
-    TeleportResponse                  teleport_response                     = 0x030018;
-    BroadCastEntityProfileUpdateResponse    broad_cast_entity_profile_update_response     = 0x030019;
-    BroadCastMonsterDeathResponse           broad_cast_monster_death_response             = 0x030021;
-    BroadCastEntityAvatarUpdateResponse     broad_cast_entity_avatar_update_response      = 0x030022;
-    BroadCastEntityBattleDataUpdateResponse broad_cast_entity_battle_data_update_response = 0x030023;
-    BroadCastEntityBuildDataUpdateResponse  broad_cast_entity_build_data_update_response  = 0x030025;
-    PlayerActionCollectRequest              player_action_collect_request                 = 0x030027;
-    PlayerActionCollectResponse             player_action_collect_response                = 0x030029;    
-    BroadCastPlayerActionCollectResponse    broad_cast_player_action_collect_response     = 0x030031;                               
-    SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
-    SceneDestructionResponse                scene_destruction_response                    = 0x030034;
-    BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
-    PlayerActionChatRequest                 player_action_chat_request                    = 0x030037;
-    PlayerActionChatResponse                player_action_chat_response                   = 0x030038;    
-    BroadCastPlayerActionChatResponse       broad_cast_player_action_chat_response        = 0x030039;
-    GetHomeDataRequest                      get_home_data_request                         = 0x030041; 
-    GetHomeDataResponse                     get_home_data_response                        = 0x030042; 
-    QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
-    QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
-    BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
-    BroadCastHomeDataInitBatchResponse      broad_cast_home_data_init_batch_response      = 0x030049; 
-    BroadCastHomeSkillResultResponse        broad_cast_home_skill_result_response         = 0x030051;
-    QueryTalentTreeRequest                  query_talent_tree_request                     = 0x030053;
-    QueryTalentTreeResponse                 query_talent_tree_response                    = 0x030054;
-    BroadCastTalentTreeUpdateResponse       broad_cast_talent_tree_update_response        = 0x030055;
-    BroadCastAnimalSceneDataUpdateResponse  broad_cast_animal_scene_data_update_response  = 0x030057;
-    BroadCastAnimalDeathResponse            broad_cast_animal_death_response              = 0x030059;
-    BroadCastAnimalAutoProduceResponse      broad_cast_animal_auto_produce_response       = 0x030061;
-    BroadCastPickupDropResponse             broad_cast_pickup_drop_response               = 0x030063;
-    AnimalSpecialActionRequest              animal_special_action_request                 = 0x030065;
-    AnimalSpecialActionResponse             animal_special_action_response                = 0x030066;
-    CaptureAnimalRequest                    capture_animal_request                        = 0x030067;
-    CaptureAnimalResponse                   capture_animal_response                       = 0x030068;
-    BroadCastEntityMoveSpeedResponse        broad_cast_entity_move_speed_response         = 0x030069;
-    BroadCastEntityCaptureDataUpdateResponse  broad_cast_entity_capture_data_update_response  = 0x030070;
-    ExitCaptureRequest                      exit_capture_request                          = 0x030071;
-    ExitCaptureResponse                     exit_capture_response                         = 0x030072;
-    EntityAccumulateStatusRequest           entity_accumulate_status_request              = 0x030073;
-    EntityAccumulateStatusResponse          entity_accumulate_status_response             = 0x030074;
-    BroadCastEntityAccumulateStatusResponse broad_cast_entity_accumulate_status_response  = 0x030075;
-    EntityDialogueRequest             entity_dialogue_request                = 0x030076;
-    EntityDialogueResponse            entity_dialogue_response               = 0x030077;
-    BroadCastEntityEquipmentSkillResponse   broad_cast_entity_equipment_skill_response     = 0x030078;
-
-    //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
-    SelfTasksRequest                  self_tasks_request                    = 0x040001;
-    SelfTasksResponse                 self_tasks_response                   = 0x040002;
-    BroadCastUpdateTaskResponse       broad_cast_update_task_response       = 0x040003;
-    BroadCastUpdateTaskListResponse   broad_cast_update_task_list_response  = 0x040004;
-    AcceptTaskRequest                 accept_task_request                   = 0x040005;
-    AcceptTaskResponse                accept_task_response                  = 0x040006;
-    AcceptTaskListRequest             accept_task_list_request              = 0x040007;
-    AcceptTaskListResponse            accept_task_list_response             = 0x040008;
-    AbandonTaskRequest                abandon_task_request                  = 0x040009;
-    AbandonTaskResponse               abandon_task_response                 = 0x040010;
-    AbandonTaskListRequest            abandon_task_list_request             = 0x040011;
-    AbandonTaskListResponse           abandon_task_list_response            = 0x040012;
-    TaskRewardRequest                 task_reward_request                   = 0x040013;
-    TaskRewardResponse                task_reward_response                  = 0x040014;
-    UpgradeTaskProgressRequest        upgrade_task_progress_request         = 0x040015;
-    UpgradeTaskProgressResponse       upgrade_task_progress_response        = 0x040016;
-    BroadCastTaskRewardResponse       broad_cast_task_reward_response       = 0x040017;
-    BroadCastTaskListRewardResponse   broad_cast_task_list_reward_response  = 0x040019;
-
-
-    //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
-    SendChatMessageRequest            send_chat_message_request                 = 0x0510001;
-    SendChatMessageResponse           send_chat_message_response                = 0x0510002;
-    BroadCastChatMessagesResponse     broad_cast_chat_messages_response         = 0x0510003;
-    BroadCastRemoveChatMessageResponse broad_cast_remove_chat_message_response  = 0x0510004;
-    BroadCastUpdateChatStateResponse  broad_cast_update_chat_state_response     = 0x0510005;
-
-
-    //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
-    PingRequest                       ping_request                          = 0x060001;
-    PingResponse                      ping_response                         = 0x060002;
-    //   协议 : 0x07ZZZZ  广播合并 协议 ************************************
-    BroadCastMsgAggregationResponse   broadCast_msg_aggregation_response  = 0x070001;
-
-    //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
-
-    //CTRlServer协议 : 0x0aZZZZ  控制服务 协议 ************************************ 
-
-  }
+ 
+// C->S MESSAGE TITLE
+message ReqTitle{
+  int32         seqId = 1;
 }
-
+// S->C MESSAGE TITLE
+message RespTitle{
+  int32         seqId         = 1;
+  int32         errorCode     = 2;
+  string        errorMessage  = 3;
+}
+ 
 //***************************************************************************
-//***************************************************************************
-
 
 //保留id协议      : 0x00ZZZZ   ***********************************************      
-
-message BroadCastTickOutResponse{
-    TickOutType   kind = 1;
+message BroadCastTickOutRes{
+  RespTitle     resTitle  = 1;
+  TickOutType   kind      = 2;
 }
 
 
 //mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
-message ItemGetRequest {}
-message ItemGetResponse {}
-message BroadCastInitItemResponse{
-  repeated Item   items = 1;
+message ItemGetReq {
+  ReqTitle      reqTitle  = 1; 
 }
-message ItemUseRequest { 
+message ItemGetResp {
+  RespTitle     resTitle  = 1;
+}
+message BroadCastInitItemResp{
+  RespTitle     resTitle  = 1;
+  repeated Item items     = 2;
+}
+message ItemUseReq { 
+  ReqTitle      reqTitle  = 1;
   // 使用的道具 id
-  string          itemId = 1;
+  string        itemId    = 2;
   // 使用消耗品的动态参数
-  string          args = 2;
+  string        args      = 3;
 }
-message ItemUseResponse {
+message ItemUseResp {
+  RespTitle     resTitle  = 1;
 }
-message ItemDropRequest {
-  string item_id = 1;
-  int32  num = 2;
+message ItemDropReq {
+  ReqTitle      reqTitle  = 1;
+  string        itemId    = 2;
+  int32         num       = 3;
 }
-message ItemDropResponse {
+message ItemDropResp {
+  RespTitle     resTitle  = 1;
 }
 // 穿装备
-message UpdateAvatarRequest {
-  string          itemId = 1;
-  bool            isAppearance = 2; // 是否使用为时装
+message UpdateAvatarReq {
+  ReqTitle      reqTitle     = 1;
+  string        itemId       = 2;
+  bool          isAppearance = 3; // 是否使用为时装
 }
-message UpdateAvatarResponse {
+message UpdateAvatarResp {
+  RespTitle     resTitle  = 1;
 }
 // 卸下装备
-message UnloadAvatarRequest {
-  string item_id = 1;
+message UnloadAvatarReq {
+  ReqTitle      reqTitle  = 1;
+  string        itemId    = 2;
 }
-message UnloadAvatarResponse {
+message UnloadAvatarResp {
+  RespTitle     resTitle  = 1;
 }
-message BroadCastItemAddResponse {
-  repeated Item   items = 1;
+message BroadCastItemAddResp {
+  RespTitle     resTitle  = 1;
+  repeated Item items     = 2;
 }
-message BroadCastItemUpdateResponse {
-  repeated Item   items = 1;
+message BroadCastItemUpdateResp {
+  RespTitle     resTitle  = 1;
+  repeated Item items     = 2;
 }
-message BroadCastItemDelResponse {
-  repeated Item   items = 1;
-}
-
-message BroadCastUpdateItemSlotResponse{
-  repeated ItemSlot slots = 1;
-}
-message GetItemSlotRequest {
-}
-message GetItemSlotResponse{
-  repeated ItemSlot slots = 1;
-}
-message UpgradeItemSlotRequest{
-  AvatarPosition    position = 1;
-}
-message UpgradeItemSlotResponse{
-  repeated ItemSlot slots = 1;
+message BroadCastItemDelResp{
+  RespTitle     resTitle  = 1;
+  repeated Item items     = 2;
 }
 
-message SigninPlayerRequest {
-  int64           user_id = 1;
-  string          token   = 2;      // token校验信息
-  int64           client_time = 3;
-  bool            reconnect = 4;
-  OSType          os_type = 5;      // 渠道(android/ios)
-  PlatformType    platform = 6;     // 平台(taptap...)
-  // 客户端期望链接的scene_service_app_id,仅在开发模式有效
-  string          scene_service_app_id = 7; 
+message SigninPlayerReq {
+  ReqTitle      reqTitle          = 1;
+  int64         user_id           = 2;
+  string        token             = 3; // token校验信息
+  int64         clientTime        = 4;
+  bool          reconnect         = 5;
+  OSType        osType            = 6;      // 渠道(android/ios)
+  PlatformType  platform          = 7;     // 平台(taptap...)
+  // 客户端期望链接的 sceneServiceAppId,仅在开发模式有效
+  string        sceneServiceAppId = 8; 
 }
-message SigninPlayerResponse {
-  Player          player = 1; // 玩家信息
-  int64           server_time = 2;
-  int64           client_time = 3;
-  string          scene_service_app_id = 4;
-  int64           last_login_time = 5; //上次登录banner的时间
+message SigninPlayerResp {
+  RespTitle     resTitle          = 1;
+  Player        player            = 2; // 玩家信息
+  int64         serverTime        = 3;
+  int64         clientTime        = 4;
+  string        sceneServiceAppId = 5;
+  int64         lastLoginTime     = 6; //上次登录banner的时间
 }
-message SignOutPlayerRequest{}
-message SignOutPlayerResponse{}
-
-message BroadCastEntityProfileUpdateResponse {
-  EntityId                entity_id = 1;
-  repeated AttributeData  profiles = 2;
+message SignOutPlayerReq{
+  ReqTitle      reqTitle          = 1; 
 }
-
-message BroadCastMonsterDeathResponse{
-  int32                 map_id = 1;
-  int64                 killer_id = 2;
-  int64                 monster_id = 3;
-  int32                 cid = 4; 
-  Vector3               pos = 5;
-  repeated ItemBaseInfo drop_list = 6;
+message SignOutPlayerResp{
+  RespTitle     resTitle          = 1;
 }
 
-message BroadCastEntityBattleDataUpdateResponse {
-  EntityId    entity_id = 1;
-  bool        isInBattle = 2;
-  int64       owner_id = 3;
+message BroadCastEntityProfileUpdateResp {
+  RespTitle               resTitle  = 1;
+  EntityId                entity_id = 2;
+  repeated AttributeData  profiles  = 3;
 }
- 
 
+message BroadCastMonsterDeathResp{
+  RespTitle               resTitle    = 1;
+  int32                   mapId       = 2;
+  int64                   killerId    = 3;
+  int64                   monsterId   = 4;
+  int32                   cid         = 5; 
+  Vector3                 pos         = 6;
+  repeated ItemBaseInfo   dropList    = 7;
+}
 
-message BroadCastEntityCaptureDataUpdateResponse {
-   CaptureStatus status   = 1;
-   int64      from_id     = 2;
-   int64      to_id       = 3;
-   CaptureData capture_data_from = 4;
-   CaptureData capture_data_to   = 5;
-   CaptureFailReason failReason  = 6;
+message BroadCastEntityBattleDataUpdateResp {
+  RespTitle               resTitle    = 1; 
+  EntityId                entityId    = 2;
+  bool                    isInBattle  = 3;
+  int64                   ownerId     = 4;
+}
+
+message BroadCastEntityCaptureDataUpdateResp{
+  RespTitle               resTitle        = 1; 
+  CaptureStatus           status          = 2;
+  int64                   fromId          = 3;
+  int64                   toId            = 4;
+  CaptureData             captureDataRrom = 5;
+  CaptureData             captureDataTo   = 6;
+  CaptureFailReason       failReason      = 7;
 }
 
 
 // 占地相关
-message QueryLandsRequest{}
-message QueryLandsResponse{}
-message BroadCastInitLandResponse{
-  repeated LandData lands = 1;
+message QueryLandsReq{
+  ReqTitle          reqTitle  = 1;
+}
+message QueryLandsResp{
+  RespTitle         resTitle  = 1;
+}
+message BroadCastInitLandResp{
+  RespTitle         resTitle  = 1;
+  repeated LandData lands     = 2;
 } 
-message BuildRequest{
-  string          nftId = 1;
-  Vector3         position = 2;
-  repeated int32  landIds = 3; 
+message BuildReq{
+  ReqTitle          reqTitle  = 1;
+  string            nftId     = 2;
+  Vector3           position  = 3;
+  repeated int32    landIds   = 4; 
 }
-message BuildResponse{
-  NftBuild        build = 1;
+message BuildResp{
+  RespTitle         resTitle  = 1;
+  NftBuild          build     = 2;
 }
-message RecyclingRequest{
-  int64       buildId = 1; // == entity Id
-  string      nftId   = 2;  
+message RecyclingReq{
+  ReqTitle          reqTitle  = 1;
+  int64             buildId   = 2; // == entity Id
+  string            nftId     = 3;  
 }
-message RecyclingResponse{}
-message ChargedRequest{
-  int64       buildId        = 1;
-  string      nftId          = 2;
-  int32       num            = 3; 
-}
-message ChargedResponse{}
-message HarvestRequest{
-  int64       buildId = 1;
-  string      nftId   = 2;  
-}
-message HarvestResponse{}
-message CollectionRequest{
-  int64       buildId = 1;
-  string      nftId   = 2;  
-}
-message CollectionResponse{}
-
-message BroadCastMultiUpLandResponse{
-  repeated LandData lands = 1;
+message RecyclingResp{
+  RespTitle         resTitle  = 1;
 }
 
-message SelfNftBuildsRequest{ 
+message ChargedReq{
+  ReqTitle          reqTitle  = 1;
+  int64             buildId   = 2;
+  string            nftId     = 3;
+  int32             num       = 4; 
 }
-message SelfNftBuildsResponse{
-  repeated NftBuild builds = 1;
+message ChargedResp{
+  RespTitle         resTitle  = 1;
+}
+message HarvestReq{
+  ReqTitle          reqTitle  = 1;
+  int64             buildId   = 2;
+  string            nftId     = 3;  
+}
+message HarvestResp{
+  RespTitle         resTitle  = 1;
+}
+message CollectionReq{
+  ReqTitle          reqTitle  = 1;
+  int64             buildId   = 2;
+  string            nftId     = 3;  
+}
+message CollectionResp{
+  RespTitle         resTitle  = 1;
 }
 
-message BroadCastSelfBuildUpdateResponse{
-  NftBuild          build = 1;
+message BroadCastMultiUpLandResp{
+  RespTitle         resTitle  = 1;
+  repeated LandData lands     = 2;
 }
 
-message BroadCastSelfBuildRecyclingResponse{
-  int64           buildId  = 1; 
-  string          fromNft = 2;
-  int64           owner = 3;   
+message SelfNftBuildsReq{ 
+  ReqTitle          reqTitle  = 1;
+}
+message SelfNftBuildsResp{
+  RespTitle         resTitle  = 1;
+  repeated NftBuild builds    = 2;
+}
+message BroadCastSelfBuildUpdateResp{
+  RespTitle         resTitle  = 1;
+  NftBuild          build     = 2;
+}
+message BroadCastSelfBuildRecyclingResp{
+  RespTitle         resTitle  = 1;
+  int64             buildId   = 2; 
+  string            fromNft   = 3;
+  int64             owner     = 4;   
 }
 
-message MintBatteryRequest{ 
+message MintBatteryReq{ 
+  ReqTitle          reqTitle  = 1;
   // mint 数量
-  int32          mintNum = 1;
+  int32             mintNum   = 2;
   // 赠送数量, 由前端传过来, 防止后端配表跟前端不一致时, 出现问题
-  int32          giftNum = 2;
+  int32             giftNum   = 3;
 }
-message MintBatteryResponse{ }
-
-message ExitCaptureRequest{ 
-   CaptureFailReason failReason  = 1;
-}
-message ExitCaptureResponse{ 
-}
-message EntityAccumulateStatusRequest{ 
-   int32 skillId = 1;        // 技能id
-   bool  isStart = 2;        // 蓄力开始 or 结束
-   float accumulateTime = 3; // 蓄力时间
-}
-message EntityAccumulateStatusResponse{ 
-}
-message BroadCastEntityAccumulateStatusResponse{ 
-   int32 skillId = 1;        // 技能id
-   bool  isStart = 2;        // 蓄力开始 or 结束
-   float accumulateTime = 3; // 蓄力时间
-   int64 entityId = 4;       // 蓄力实体
+message MintBatteryResp{
+  RespTitle         resTitle  = 1;
 }
 
-message QueryGranaryRequest{}
-message QueryGranaryResponse{
-  repeated ItemBaseInfo items = 1;
+message ExitCaptureReq{ 
+  ReqTitle          reqTitle        = 1;
+  CaptureFailReason failReason      = 2;
 }
-message GranaryCollectRequest{}
-message GranaryCollectResponse{
-  repeated ItemBaseInfo items = 1;
+message ExitCaptureResp{ 
+  RespTitle         resTitle        = 1;
 }
-message BroadCastGranaryUpdateResponse{
-  repeated ItemBaseInfo items = 1;
+message EntityAccumulateStatusReq{
+  ReqTitle          reqTitle        = 1; 
+  int32             skillId         = 2; // 技能id
+  bool              isStart         = 3; // 蓄力开始 or 结束
+  float             accumulateTime  = 4; // 蓄力时间
 }
-message BroadCastUpGranaryItemResponse{
-  ItemBaseInfo    items = 1;
+message EntityAccumulateStatusResp{ 
+  RespTitle         resTitle        = 1;
+}
+message BroadCastEntityAccumulateStatusResp{ 
+  RespTitle         resTitle        = 1;
+  int32             skillId         = 2; // 技能id
+  bool              isStart         = 3; // 蓄力开始 or 结束
+  float             accumulateTime  = 4; // 蓄力时间
+  int64             entityId        = 5; // 蓄力实体
+}
+
+message QueryGranaryReq{
+  ReqTitle              reqTitle  = 1;
+}
+message QueryGranaryResp{
+  RespTitle             resTitle  = 1;
+  repeated ItemBaseInfo items     = 2;
+}
+message GranaryCollectReq{
+  ReqTitle              reqTitle  = 1;
+}
+message GranaryCollectResp{
+  RespTitle             resTitle  = 1;
+  repeated ItemBaseInfo items     = 2;
+}
+message BroadCastGranaryUpdateResp{
+  RespTitle             resTitle  = 1;
+  repeated ItemBaseInfo items     = 2;
+}
+message BroadCastUpGranaryItemResp{
+  RespTitle             resTitle  = 1;
+  ItemBaseInfo          items     = 2;
 }
  
 // 天赋树相关
-message UpgradeTalentNodeRequest{
-  TalentType      type = 1;
-  int32           nodeId = 2;
+message UpgradeTalentNodeReq{
+  ReqTitle        reqTitle  = 1;
+  TalentType      type      = 2;
+  int32           nodeId    = 3;
 }  
-message UpgradeTalentNodeResponse{} 
-message QueryTalentExpRequest{}        
-message QueryTalentExpResponse{
-   repeated TalentExp      expData = 1;
+message UpgradeTalentNodeResp{
+  RespTitle       resTitle  = 1;
 } 
-message BroadCastUpTalentExpResponse{
-   repeated TalentExp      updateExps = 1;
+message QueryTalentExpReq{
+  ReqTitle            reqTitle  = 1;
+}        
+message QueryTalentExpResp{
+  RespTitle           resTitle  = 1;
+  repeated TalentExp  expData   = 2;
+} 
+message BroadCastUpTalentExpResp{
+  RespTitle           resTitle    = 1;
+  repeated TalentExp  updateExps  = 2;
 } 
 
 // 家园动物相关
-message QueryAnimalListRequest{
+message QueryAnimalListReq{
+  ReqTitle                        reqTitle  = 1;
 }
-message QueryAnimalListResponse{
-  repeated   ProxyAnimalBaseData  animals = 1;
+message QueryAnimalListResp{
+  RespTitle                       resTitle  = 1;
+  repeated   ProxyAnimalBaseData  animals   = 2;
 }
-message BroadCastUpdateAnimalListResponse{
-  repeated   ProxyAnimalBaseData  addAnimals = 1;
-  repeated   ProxyAnimalBaseData  updateAnimals = 2;
-  repeated   uint64               removeAnimals = 3;
+message BroadCastUpdateAnimalListResp{
+  RespTitle                       resTitle      = 1;
+  repeated   ProxyAnimalBaseData  addAnimals    = 2;
+  repeated   ProxyAnimalBaseData  updateAnimals = 3;
+  repeated   uint64               removeAnimals = 4;
 }
-message FreedAnimalRequest{
-  repeated   uint64  animalId = 1;
+message FreedAnimalReq{
+  ReqTitle            reqTitle = 1;
+  repeated   uint64   animalId = 2;
 }
-message FreedAnimalResponse{
-  repeated   uint64  animalId = 1;
-}
-
-
-message EntityDialogueRequest{
-    DialogueEvent  event = 1;
-    int64  entityId = 2;
-}
-message EntityDialogueResponse{
+message FreedAnimalResp{
+  RespTitle           resTitle = 1;
+  repeated   uint64   animalId = 2;
 }
 
-message BroadCastEntityEquipmentSkillResponse{ 
-  int64 entityId = 1;               // 实体ID
-  repeated int32 equipmentSkills = 2;        // 装备技能列表
+message EntityDialogueReq{
+  ReqTitle        reqTitle  = 1;
+  DialogueEvent   event     = 2;
+  int64           entityId  = 3;
+}
+message EntityDialogueResp{
+  RespTitle       resTitle  = 1;
+}
+
+message BroadCastEntityEquipmentSkillResp{ 
+  RespTitle       resTitle        = 1;
+  int64           entityId        = 2;    // 实体ID
+  repeated int32  equipmentSkills = 3;    // 装备技能列表
 }
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
-message QueryPlayerRequest {
-  string          token = 1; 
+message QueryPlayerReq {
+  ReqTitle        reqTitle  = 1;
+  string          token     = 2; 
 }
-message QueryPlayerResponse {
-  PlayerBaseData  player = 1; // 玩家信息
+message QueryPlayerResp {
+  RespTitle       resTitle  = 1;
+  PlayerBaseData  player    = 2; // 玩家信息
 }
 
-message CreatePlayerRequest {
-  string          token = 1;
-  string          nick_name = 2;// 名字
-  int32           role_id = 3;  // 配置 ID
-  string          gender = 4;   // 玩家性别，男生为 male, 女生为 female
-  string          icon = 5;     //角色头像
-  PlayerFeature   feature = 6;  // 容貌数据
-  OSType          os_type = 7;  // 渠道(android/ios)
-  PlatformType    platform = 8; // 平台(taptap...)
+message CreatePlayerReq {
+  ReqTitle        reqTitle  = 1;
+  string          token     = 2;
+  string          nickName  = 3;  // 名字
+  int32           roleId    = 4;  // 配置 ID
+  string          gender    = 5;  // 玩家性别，男生为 male, 女生为 female
+  string          icon      = 6;  //角色头像
+  PlayerFeature   feature   = 7;  // 容貌数据
+  OSType          osType    = 8;  // 渠道(android/ios)
+  PlatformType    platform  = 9;  // 平台(taptap...)
 }
-message CreatePlayerResponse {
-  PlayerBaseData  player = 1; // 玩家信息
+message CreatePlayerResp {
+  RespTitle       resTitle  = 1;
+  PlayerBaseData  player    = 2; // 玩家信息
 }
 
 
 //screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
-message EnterMapRequest {}
-message EnterMapResponse {
-  // 当前玩家信息
-  Player          me = 1;
-  // 当前玩家位置
-  EntityLocation  location = 2;
-  int32           relive_time = 3;
+message EnterMapReq {
+  ReqTitle        reqTitle    = 1;
 }
-message UpdateSelfLocationRequest {
-  EntityMovement  movement = 1;
+message EnterMapResp {
+  RespTitle       resTitle    = 1;
+  Player          me          = 2; // 当前玩家信息  
+  EntityLocation  location    = 3; // 当前玩家位置
+  int32           reliveTime  = 4;
 }
-message UpdateSelfLocationResponse {
-  EntityMovement  movement = 1;
-  float          speed = 2;
+message UpdateSelfLocationReq{
+  ReqTitle        reqTitle    = 1;
+  EntityMovement  movement    = 2;
 }
-
-//使用技能扣除道具
-message UseSkillCostItem{
-  int32     cid = 1;
-  string    nftId = 2;
-  int32     num = 3;
+message UpdateSelfLocationResp {
+  RespTitle       resTitle    = 1;
+  EntityMovement  movement    = 2;
+  float           speed       = 3;
 }
 
-message UseSkillRequest {
+message UseSkillReq{
+  ReqTitle          reqTitle      = 1;
   // 使用的技能 id
-  int32           skill_id = 1;
+  int32             skillIDd      = 2;
   // 技能使用方向，相对于玩家当前位置.
-  EntityLocation  dir = 2;
+  EntityLocation    dir           = 3;
   // 技能使用的位置  指定后，会将玩家重置到该位置.
-  EntityLocation  from_location = 3;
+  EntityLocation    fromLocation  = 4;
   // 技能指定使用的目标
-  EntityId        target_id = 4;
+  EntityId          targetId      = 5;
   // 使用技能状态
-  UseSkillState skill_state = 5;
+  UseSkillState     skillState    = 6;
   //家园采集信息
-  UseCollectResourceSkillInfo homeCollectInfo = 6;
+  UseCollectResourceSkillInfo homeCollectInfo = 7;
   // 蓄力技能蓄力时间 s
-  float   accu_time   = 7; 
+  float             accuTime      = 8; 
   // 技能消耗道具
-  UseSkillCostItem  costItem     = 8;
+  UseSkillCostItem  costItem      = 9;
 }
-message UseSkillResponse {
+message UseSkillResp {
+  RespTitle         resTitle      = 1;
 } 
-message RespawnPlayerRequest {
-  PlayerRespawnPoint respawn_point = 1;
+message RespawnPlayerReq {
+  ReqTitle            reqTitle      = 1;
+  PlayerRespawnPoint  respawnPoint  = 2;
 }
-message RespawnPlayerResponse {
-  int64          user_id = 1;
-  int32          cur_hp = 2;
-  bool           active = 3;
-  EntityLocation location = 4;
+message RespawnPlayerResp {
+  RespTitle           resTitle      = 1;
+  int64               userId        = 2;
+  int32               curHp         = 3;
+  bool                active        = 4;
+  EntityLocation      location      = 5;
 }
-message BroadCastRespawnPlayerResponse {
-  int64          user_id = 1;
-  int32          cur_hp = 2;
-  bool           active = 3;
-  EntityLocation location = 4;
-  int64 revive_cd = 5;
-}
-
-message PlayerActionCollectRequest {
-}
-message PlayerActionCollectResponse {
-}
-message BroadCastPlayerActionCollectResponse {
-  int64          user_id = 1;
+message BroadCastRespawnPlayerResp {
+  RespTitle           resTitle      = 1;
+  int64               userId        = 2;
+  int32               curHp         = 3;
+  bool                active        = 4;
+  EntityLocation      location      = 5;
+  int64               reviveCd      = 6;
 }
 
-message PlayerActionChatRequest {
-  bool           show = 1;
+message PlayerActionCollectReq {
+  ReqTitle      reqTitle  = 1;
 }
-message PlayerActionChatResponse {
+message PlayerActionCollectResp {
+  RespTitle     resTitle  = 1;
 }
-message BroadCastPlayerActionChatResponse {
-  int64          user_id = 1;
-  bool           show = 2;
+message BroadCastPlayerActionCollectResp {
+  RespTitle     resTitle  = 1;
+  int64         userId    = 2;
 }
-message GetHomeDataRequest {
-  int64         req_data_user_id = 1;
+
+message PlayerActionChatReq {
+  ReqTitle      reqTitle  = 1;
+  bool          show      = 2;
 }
-message GetHomeDataResponse{
-  int64         owner_user_id = 1;
-  string        owner_name = 2;
-  int32         soilDataAllCount = 3;
-  string        animalBowlArr = 4;
+message PlayerActionChatResp {
+  RespTitle     resTitle  = 1;
 }
-message BroadCastHomeDataInitBatchResponse
-{
-  repeated ProxySoilData soilDataList = 1;
+message BroadCastPlayerActionChatResp {
+  RespTitle     resTitle  = 1;
+  int64         userId    = 2;
+  bool          show      = 3;
+}
+message GetHomeDataReq {
+  ReqTitle      reqTitle      = 1;
+  int64         reqDataUserId = 2;
+}
+message GetHomeDataResp{
+  RespTitle     resTitle          = 1;
+  int64         ownerUserId       = 2;
+  string        ownerName         = 3;
+  int32         soilDataAllCount  = 4;
+  string        animalBowlArr     = 5;
+}
+message BroadCastHomeDataInitBatchResp{
+  RespTitle               resTitle                = 1;
+  repeated ProxySoilData  soilDataList            = 2;
   //有进度的才会有
-  repeated HomeSoilProgressInfo soilProgressList = 2;
-  int64         owner_user_id = 3;
-  bool          final = 4;
+  repeated HomeSoilProgressInfo soilProgressList  = 3;
+  int64                   ownerUserId             = 4;
+  bool                    final                   = 5;
 }
 
 //释放家园技能结果
-message BroadCastHomeSkillResultResponse
-{
+message BroadCastHomeSkillResultResp{
+  RespTitle     resTitle      = 1;
   //释放技能的用户id
-  int64        actionUserId = 1;
-  int32        skillId = 2;
+  int64         actionUserId  = 2;
+  int32         skillId       = 3;
   //消耗道具的cid 比如种子 肥料
-  int32        costItemCid = 3;
+  int32         costItemCid   = 4;
   //每个家园对象的操作结果
-  repeated CollectResourceOperateResult operateResultList = 4;
+  repeated CollectResourceOperateResult operateResultList = 5;
 }
 
-message BroadCastAnimalSceneDataUpdateResponse
-{
-  AnimalUpdateData animalUpdateData = 1;
-  AnimalBowlUpdateData animalBowlUpdateData = 2;
+message BroadCastAnimalSceneDataUpdateResp{
+  RespTitle             resTitle              = 1;
+  AnimalUpdateData      animalUpdateData      = 2;
+  AnimalBowlUpdateData  animalBowlUpdateData  = 3;
 }
-
-message BroadCastAnimalDeathResponse
-{
-  uint64 animalId = 1;
+message BroadCastAnimalDeathResp{
+  RespTitle             resTitle    = 1;
+  uint64                animalId    = 2;
 }
-
-message BroadCastAnimalAutoProduceResponse
-{
-  uint64 animalId = 1;
-  ProxyProductData productData = 2;
+message BroadCastAnimalAutoProduceResp{
+  RespTitle             resTitle    = 1;  
+  uint64                animalId    = 2;
+  ProxyProductData      productData = 3;
 }
+message BroadCastPickupDropResp{
+  RespTitle             resTitle      = 1;
+  int64                 pickPlayerId  = 2;
+  int64                 dropId        = 3;
+  DropType              dropType      = 4;
+  repeated ItemBaseInfo dropList      = 5;
 
-message BroadCastPickupDropResponse
-{
-  int64 pickPlayerId = 1;
-  int64 dropId = 2;
-  DropType dropType = 3;
-  repeated ItemBaseInfo dropList = 4;
   oneof extraInfo {
-    uint64 animalId = 10;
+    uint64              animalId      = 10;
  }
 }
 
-message BroadCastInitMapElementResponse {
+message BroadCastInitMapElementResp {
+  RespTitle                   resTitle  = 1;
   // 视野内新增的实体列表
-  repeated EntityWithLocation entity = 1; //实体
-  repeated DestructionElementData destruction_elements = 2; // 视野内当前场景中被破坏的元素列表
-  bool     final = 3; // 是否最后一个包
+  repeated EntityWithLocation entity    = 2;  
+  repeated DestructionElementData destructionElements = 3; // 视野内当前场景中被破坏的元素列表
+  bool                        final     = 4; // 是否最后一个包
 } 
-message BroadCastMapEntityUpdateResponse{
+message BroadCastMapEntityUpdateResp{
+  RespTitle                   resTitle      = 1;
   // 视野内新增的实体列表
-  repeated EntityWithLocation entity_added = 1;
+  repeated EntityWithLocation entityAdded   = 2;
   // 视野内移除的实体列表
-  repeated EntityId           entity_removed = 2;
+  repeated EntityId           entityRemoved = 3;
   // 视野内当前场景中被破坏的元素列表
-  repeated DestructionElementData destruction_elements = 3;
+  repeated DestructionElementData destructionElements = 4;
 }
-message BroadCastEntityMoveResponse{
-  repeated EntityMovement     moves = 1;
+message BroadCastEntityMoveResp{
+  RespTitle                   resTitle      = 1;
+  repeated EntityMovement     moves         = 2;
 }
-message BroadCastEntityMoveSpeedResponse{
-  float  speed = 1;
+message BroadCastEntityMoveSpeedResp{
+  RespTitle             resTitle      = 1;
+  float                 speed         = 2;
 }
-message BroadCastEntityDestroyResponse{
+message BroadCastEntityDestroyResp{
+  RespTitle             resTitle      = 1;
     // 销毁的 实体列表
-  repeated EntityId           entities = 1;
+  repeated EntityId     entities      = 2;
 }
-message BroadCastEntityCombatResponse{
+message BroadCastEntityCombatResp{
+  RespTitle             resTitle      = 1;
   // 技能释放阶段
-  EntityCombatState state = 1;
+  EntityCombatState     state         = 2;
   // 使用的技能 id
-  int32 skill_id = 2;
+  int32                 skillId       = 3;
   // 连击动作
-  int32 combo_index = 3;
+  int32                 comboIndex    = 4;
   // 使用技能的对象 id
-  EntityId from_entity = 4;
+  EntityId              fromEntity    = 5;
   // 使用技能的目标
-  repeated int64 target_list  = 5;
+  repeated int64        targetList    = 6;
   // 技能使用方向，相对于释放玩家当前位置.
-  EntityLocation dir = 6;
+  EntityLocation        dir           = 7;
   // 技能释放的位置
-  EntityLocation from_location = 7;
+  EntityLocation        fromLocation  = 8;
   // 当前消息状态的服务器时间
-  int64 cur_stamp = 8;
+  int64                 curStamp      = 9;
   // 接收技能伤害的对象 id 数组
-  repeated EntityDamage targets = 9;
+  repeated EntityDamage targets       = 10;
   // 产生的所有技能飞行物
-  repeated SkillFlyerData flyers= 10;
+  repeated SkillFlyerData flyers      = 11;
   // 技能使用道具
-  UseSkillCostItem costItem = 11;
+  UseSkillCostItem      costItem      = 12;
 }
 
-message TeleportRequest {
-  Vector3 to_pos = 9;
+message TeleportReq {
+  ReqTitle      reqTitle  = 1;
+  Vector3       toPos     = 2;
 }
-message TeleportResponse {
+message TeleportResp {
+  RespTitle     resTitle  = 1;
 }
-message BroadCastEntityAvatarUpdateResponse {
+
+message BroadCastEntityAvatarUpdateResp {
+  RespTitle                 resTitle  = 1;
   // 变化的entity id
-  EntityId              entity_id = 1;
+  EntityId                  entityId  = 2;
   // 变化后的 avatar 装备列表
-  repeated AvatarAttribute avatars = 2;
+  repeated AvatarAttribute  avatars   = 3;
 }
-message BroadCastEntityBuildDataUpdateResponse {
+
+message BroadCastEntityBuildDataUpdateResp {
+  RespTitle       resTitle          = 1;
   // 变化的entity id
-  EntityId        entity_id = 1; 
+  EntityId        entityId          = 2; 
   // 电量过期时间 单位秒
-  int32           electricEnd = 2;	
+  int32           electricEnd       = 3;	
   // 产出开始时间点.
-  int32           harvestStartAt = 3;
+  int32           harvestStartAt    = 4;
   // 可以收集的时间
-  int32           harvestAt  = 4;
+  int32           harvestAt         = 5;
   // 可收获的物品数量统计(没电时转移到采集) 单位秒
-  int32           harvestItemCount = 5;
+  int32           harvestItemCount  = 6;
   // 采集开始时间点
-  int32           collectionStartAt = 6;
+  int32           collectionStartAt = 7;
   // 下次可采集(偷取)的时间戳 单位秒
-  int32           collectionAt  = 7;
+  int32           collectionAt      = 8;
   // 可采集(偷取)物品数量统计
-  int32           collectionItemCount = 8;
+  int32           collectionItemCount = 9;
 }
 
-message SceneDestructionRequest{
-  repeated int64 ids = 1;
+message SceneDestructionReq{
+  ReqTitle        reqTitle  = 1;
+  repeated int64  ids       = 2;
 }
-message SceneDestructionResponse{}
-message BroadCastSceneDestructionResponse
-{
-  repeated DestructionElementData destruction_elements = 1;
+message SceneDestructionResp{
+  RespTitle       resTitle  = 1;
 }
-
-
-message QueryServerTimeRequest {
-  int64     client_time = 1;
-}
-message QueryServerTimeResponse {
-  int64     client_time = 1;
-  int64     system_time = 2;
-}
-message BroadCastChangeServiceResponse{
-  ServiceType         serType    = 1;
-  SceneServiceSubType serSubType = 2;
-  int64               serOwner   = 3;  
+message BroadCastSceneDestructionResp{
+  RespTitle                       resTitle            = 1;
+  repeated DestructionElementData destructionElements = 2;
 }
 
+message QueryServerTimeReq {
+  ReqTitle    reqTitle    = 1;
+  int64       clientTime  = 2;
+}
+message QueryServerTimeResp {
+  RespTitle   resTitle    = 1;
+  int64       clientTime  = 2;
+  int64       systemTime  = 3;
+}
 
+message BroadCastChangeServiceResp{
+  RespTitle           resTitle   = 1;
+  ServiceType         serType    = 2;
+  SceneServiceSubType serSubType = 3;
+  int64               serOwner   = 4;  
+}
 
-message QueryTalentTreeRequest{}        
-message QueryTalentTreeResponse{
-  repeated TalentLevel    levelData = 1;
-  repeated TalentTree     tree = 2;
+message QueryTalentTreeReq{
+  ReqTitle                  reqTitle  = 1;
+}        
+message QueryTalentTreeResp{
+  RespTitle                 resTitle  = 1;
+  repeated TalentLevel      levelData = 2;
+  repeated TalentTree       tree      = 3;
 }      
-message BroadCastTalentTreeUpdateResponse{
-  repeated TalentLevel      levelData = 1;
-  repeated TalentTreeUpdate upTrees = 2;
+message BroadCastTalentTreeUpdateResp{
+  RespTitle                 resTitle  = 1;
+  repeated TalentLevel      levelData = 2;
+  repeated TalentTreeUpdate upTrees   = 3;
 }      
 
-message AnimalSpecialActionRequest
-{
-  uint64 animalId = 1;
-  AnimalSpecialActionType actionType = 2;
+message AnimalSpecialActionReq{
+  ReqTitle                reqTitle    = 1;
+  uint64                  animalId    = 2;
+  AnimalSpecialActionType actionType  = 3;
 }
-message AnimalSpecialActionResponse
-{
-  uint64 animalId = 1;
-  AnimalSpecialActionType actionType = 2;
+message AnimalSpecialActionResp{
+  RespTitle               resTitle    = 1;
+  uint64                  animalId    = 2;
+  AnimalSpecialActionType actionType  = 3;
 }
 
 // 抓捕Animal(同步可能释放一个 Animal) to scene service
-message CaptureAnimalRequest{
-  repeated uint64              freedAnimalIds = 1; 
-  repeated ProxyAnimalBaseData captrueAnimals = 2;
+message CaptureAnimalReq{
+  ReqTitle                      reqTitle       = 1;
+  repeated uint64               freedAnimalIds = 2; 
+  repeated ProxyAnimalBaseData  captrueAnimals = 3;
 }        
-message CaptureAnimalResponse{}  
+message CaptureAnimalResp{
+  RespTitle                     resTitle       = 1;
+}  
 
 
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 
-message SelfTasksRequest {}
-message SelfTasksResponse {
-  NormalTaskData     normalTasks = 1;
-  repeated  TaskList taskLists   = 2; 
+message SelfTasksReq {
+  ReqTitle      reqTitle  = 1;
+}
+message SelfTasksResp {
+  RespTitle           resTitle    = 1;
+  NormalTaskData      normalTasks = 2;
+  repeated  TaskList  taskLists   = 3; 
 }
 // 广播更新玩家普通任务 
-message BroadCastUpdateTaskResponse {
-  NormalTaskData     normalTasks = 1;
+message BroadCastUpdateTaskResp {
+  RespTitle           resTitle    = 1;
+  NormalTaskData      normalTasks = 2;
 }
 // 玩家任务链更新
-message BroadCastUpdateTaskListResponse {
-  TaskListType      taskListKind = 1;
-  TaskList          taskListInfo = 2;
+message BroadCastUpdateTaskListResp {
+  RespTitle           resTitle      = 1;
+  TaskListType        taskListKind  = 2;
+  TaskList            taskListInfo  = 3;
 }
 
 // 领取任务
-message  AcceptTaskRequest{
-  int32             taskId = 1;
+message  AcceptTaskReq{
+  ReqTitle          reqTitle  = 1;
+  int32             taskId    = 2;
 }
-message  AcceptTaskResponse{
-  NormalTaskData     normalTasks = 1;
+message  AcceptTaskResp{
+  RespTitle          resTitle     = 1;
+  NormalTaskData     normalTasks  = 2;
 }
 
 // 领取任务链任务
-message  AcceptTaskListRequest{
-  TaskListType      taskListKind = 1;
-  TalentType        talentKind = 2;
+message  AcceptTaskListReq{
+  ReqTitle          reqTitle      = 1;
+  TaskListType      taskListKind  = 2;
+  TalentType        talentKind    = 3;
 }
-message  AcceptTaskListResponse{
-  TaskList          taskListInfo = 1;
+message  AcceptTaskListResp{
+  RespTitle         resTitle     = 1;
+  TaskList          taskListInfo = 2;
 }
 
 // 放弃任务(任务有保护时间)
-message  AbandonTaskRequest{
-  int32             taskId = 1;
+message  AbandonTaskReq{
+  ReqTitle          reqTitle  = 1;
+  int32             taskId    = 2;
 }
-message  AbandonTaskResponse{
-  NormalTaskData     normalTasks = 1;
+message  AbandonTaskResp{
+  RespTitle         resTitle    = 1;
+  NormalTaskData    normalTasks = 2;
 }
 
 // 放弃任务链的任务(任务有保护时间)
-message  AbandonTaskListRequest{
-  TaskListType      taskListKind = 1; 
+message  AbandonTaskListReq{
+  ReqTitle          reqTitle     = 1;
+  TaskListType      taskListKind = 2; 
 }
-message  AbandonTaskListResponse{
-  TaskListType      taskListKind = 1; 
+message  AbandonTaskListResp{
+  RespTitle         resTitle     = 1;
+  TaskListType      taskListKind = 2; 
 }
 
 // 获取任务奖励
-message  TaskRewardRequest{
+message  TaskRewardReq{
+  ReqTitle          reqTitle      = 1;
   // 任务链类型, 当TaskListType == Unknown 时表示领取玩家normal任务的奖励
-  TaskListType      taskListKind = 1;
-  int32             taskId       = 2;
+  TaskListType      taskListKind  = 2;
+  int32             taskId        = 3;
 }
-message  TaskRewardResponse{
-  TaskListType      taskListKind  = 1;
-  int32             taskId        = 2;
-  TaskList          taskListInfo  = 3;
-  NormalTaskData    normalTasks   = 4;
+message  TaskRewardResp{
+  RespTitle         resTitle      = 1;
+  TaskListType      taskListKind  = 2;
+  int32             taskId        = 3;
+  TaskList          taskListInfo  = 4;
+  NormalTaskData    normalTasks   = 5;
 }
  
-message  UpgradeTaskProgressRequest{
+message  UpgradeTaskProgressReq{
+  ReqTitle                  reqTitle      = 1;
   // 任务链类型, 当TaskListType == Unknown 时表示领取玩家normal任务的奖励
-  TaskListType              taskListKind = 1;
-  int32                     taskId       = 2;
+  TaskListType              taskListKind  = 2;
+  int32                     taskId        = 3;
   // item NFT ids : 上交若干数量的指定道具
-  repeated TaskOptionItem   items = 3;
+  repeated TaskOptionItem   items         = 4;
   // 到达指定坐标点指定半径范围内的区域
-  TaskOptionTargetPosition  pos = 4;
+  TaskOptionTargetPosition  pos           = 5;
   // 使用指定的配方合成
-  TaskOptionUseRecipe       useRecipe = 5; 
+  TaskOptionUseRecipe       useRecipe     = 6; 
 }
-message  UpgradeTaskProgressResponse{
+message  UpgradeTaskProgressResp{
+  RespTitle                 resTitle      = 1;
 }
 // 推送获取的任务奖励
-message BroadCastTaskRewardResponse{
-  TaskListType              taskListKind = 1;
-  int32                     taskId = 2;
-  repeated  TalentExp       talentExps = 3;
-  repeated  ItemBaseInfo    items = 4;
+message BroadCastTaskRewardResp{
+  RespTitle                 resTitle      = 1;
+  TaskListType              taskListKind  = 2;
+  int32                     taskId        = 3;
+  repeated  TalentExp       talentExps    = 4;
+  repeated  ItemBaseInfo    items         = 5;
 }
 // 推送获取的任务链奖励
-message BroadCastTaskListRewardResponse{
-  TaskListType              taskListKind = 1;  
-  repeated  TalentExp       talentExps = 2;
-  repeated  ItemBaseInfo    items = 3;
+message BroadCastTaskListRewardResp{
+  RespTitle                 resTitle      = 1;
+  TaskListType              taskListKind  = 2;  
+  repeated  TalentExp       talentExps    = 3;
+  repeated  ItemBaseInfo    items         = 4;
 }
-
-
-
 
 
 //chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
-
-message SendChatMessageRequest {
-  ChatChannelType chat_type = 1;
-  string          content = 2;
+message SendChatMessageReq {
+  ReqTitle        reqTitle        = 1;
+  ChatChannelType chatType        = 2;
+  string          content         = 3;
   // 发送到*世界/分线/附近/副本*这些公共频道的时候不需要带`receiver_id`
   // 只有*私聊*需要带`receiver_id`
-  int64          receiver_player_id = 3;
+  int64           receiverPlayerId = 4;
 }
-message SendChatMessageResponse {
-  int64          msg_id = 1;
+message SendChatMessageResp {
+  RespTitle       resTitle        = 1;
+  int64           msgId           = 2;
 }
 // 玩家接收到的聊天信息
-message BroadCastChatMessagesResponse {
-  repeated ChatMessage    messages = 1;
-  bool                    historical_record = 2;
+message BroadCastChatMessagesResp {
+  RespTitle             resTitle          = 1;
+  repeated ChatMessage  messages          = 2;
+  bool                  historicalRecord  = 3;
 }
-message BroadCastRemoveChatMessageResponse{
-  repeated int64  msg_ids = 1;
+message BroadCastRemoveChatMessageResp{
+  RespTitle             resTitle  = 1;
+  repeated int64        msgIds    = 2;
 }
-message BroadCastUpdateChatStateResponse{
-  ChatState       chat_state = 1;
+message BroadCastUpdateChatStateResp{
+  RespTitle             resTitle  = 1;
+  ChatState             chatState = 2;
 }
 
 
 
 //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
-message PingRequest {}
-message PingResponse {}
-//   协议 : 0x07ZZZZ  广播合并 协议 ************************************
-message BroadCastMsgAggregationResponse {
-    repeated Envelope message_list = 1;
+message PingReq {
+  ReqTitle      reqTitle  = 1;
 }
+message PingResp {
+  RespTitle     resTitle  = 1;
+} 
+
 
 
 //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
-
-
-
-
 
 
 //CTRlServer协议 : 0x0aZZZZ  控制服务 协议 ************************************ 

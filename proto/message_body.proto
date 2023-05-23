@@ -33,7 +33,7 @@ message RespTitle{
 //***************************************************************************
 
 //保留id协议      : 0x00ZZZZ   ***********************************************      
-message BroadCastTickOutRes{
+message BroadCastTickOutResp{
   RespTitle     resTitle  = 1;
   TickOutType   kind      = 2;
 }

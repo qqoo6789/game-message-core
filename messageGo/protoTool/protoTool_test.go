@@ -1,35 +1,46 @@
 package protoTool
 
 import (
+	"game-message-core/proto"
 	"testing"
 )
 
-func Test_ProtoTool(t *testing.T) {
-	// msg := &proto.Envelope{
-	// 	SeqId: 999,
-	// 	Type:  proto.EnvelopeType_SigninPlayer,
-	// 	Payload: &proto.Envelope_SigninPlayerRequest{
-	// 		SigninPlayerRequest: &proto.SigninPlayerRequest{
-	// 			UserId: 7001,
-	// 			Token:  "vvvvvvvvvvvbbbbbbbbbbbbbbbb",
-	// 		},
-	// 	},
-	// }
-	// t.Log(fmt.Sprintf("%+v", msg))
-	// t.Log("******************************************************")
+func makeSingInMsgBody() ([]byte, error) {
+	msg := &proto.SigninPlayerReq{
+		ReqTitle:          &proto.ReqTitle{SeqId: 99},
+		UserId:            7001,
+		Token:             "vvvvvvvvvvvbbbbbbbbbbbbbbbb",
+		SceneServiceAppId: "game-service-world",
+	}
 
-	// bs, err := MarshalProto(msg)
-	// t.Log(err)
-	// t.Log(bs)
-	// t.Log(string(bs))
-	// t.Log("******************************************************")
+	return MarshalProto(msg)
+}
+func UnmarshalSingInMsg(body []byte, t *testing.T) {
+	msg := &proto.SigninPlayerReq{}
+	err := UnmarshalProto(body, msg)
+	t.Log(err)
+	t.Log(msg)
+}
 
-	// msgParse := &proto.Envelope{}
-	// err = UnmarshalProto(bs, msgParse)
-	// t.Log(err)
-	// t.Log(fmt.Sprintf("%+v", msgParse))
-	// t.Log("******************************************************")
+func Test_NetDataCode(t *testing.T) {
+	eType := proto.EnvelopeType_SigninPlayer
+	data, err := makeSingInMsgBody()
+	t.Log(data)
+	t.Log(err)
 
-	// t.Log(EnvelopeTypeToServiceType(msgParse.Type))
+	println()
+	println()
 
+	body := EnCodeNetData(eType, data)
+	t.Log(body)
+
+	println()
+	println()
+
+	rType, bs, err := DeCodeNetData(body)
+	t.Log(rType)
+	t.Log(bs)
+	t.Log(err)
+
+	UnmarshalSingInMsg(bs, t)
 }

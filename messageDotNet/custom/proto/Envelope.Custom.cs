@@ -9,43 +9,43 @@ using System.Reflection;
 
 namespace GameMessageCore
 {
-    public sealed partial class Envelope : ICustomReference
-    {
-        private PropertyInfo _payloadInfo;
-        public static Envelope Create(EnvelopeType type, string suffix, int errCode, string errMsg, object payload)
-        {
-            Envelope reference = CustomReferencePool.Acquire<Envelope>();
-            reference.Type = type;
-            reference.ErrorCode = errCode;
-            reference.ErrorMessage = errMsg;
+    // public sealed partial class Envelope : ICustomReference
+    // {
+    //     private PropertyInfo _payloadInfo;
+    //     public static Envelope Create(EnvelopeType type, string suffix, int errCode, string errMsg, object payload)
+    //     {
+    //         Envelope reference = CustomReferencePool.Acquire<Envelope>();
+    //         reference.Type = type;
+    //         reference.ErrorCode = errCode;
+    //         reference.ErrorMessage = errMsg;
 
-            string name = type.ToString() + suffix;
-            reference._payloadInfo = reference.GetType().GetProperty(name);
-            reference._payloadInfo.SetValue(reference, payload);
-            reference.SeqId = 0;
+    //         string name = type.ToString() + suffix;
+    //         reference._payloadInfo = reference.GetType().GetProperty(name);
+    //         reference._payloadInfo.SetValue(reference, payload);
+    //         reference.SeqId = 0;
 
-            return reference;
-        }
+    //         return reference;
+    //     }
 
-        public void Dispose()
-        {
-            CustomReferencePool.Release(this);
-        }
+    //     public void Dispose()
+    //     {
+    //         CustomReferencePool.Release(this);
+    //     }
 
-        public void Clear()
-        {
+    //     public void Clear()
+    //     {
 
-            object payload = _payloadInfo.GetValue(this);
-            if (payload is not null and ICustomReference)
-            {
-                CustomReferencePool.Release(payload);
-            }
-            _payloadInfo.SetValue(this, null);
+    //         object payload = _payloadInfo.GetValue(this);
+    //         if (payload is not null and ICustomReference)
+    //         {
+    //             CustomReferencePool.Release(payload);
+    //         }
+    //         _payloadInfo.SetValue(this, null);
 
-            Type = EnvelopeType.Unknown;
-            ErrorCode = 0;
-            ErrorMessage = "";
-            SeqId = 0;
-        }
-    }
+    //         Type = EnvelopeType.Unknown;
+    //         ErrorCode = 0;
+    //         ErrorMessage = "";
+    //         SeqId = 0;
+    //     }
+    // }
 }

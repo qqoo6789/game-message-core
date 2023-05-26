@@ -1,64 +1,213 @@
-using System.Diagnostics;
-
-
 using System;
+using UnityEngine;
 using Google.Protobuf;
+using GameMessageCore;
+using System.Collections.Generic;
+using System.Reflection;
+using Snappy.Sharp;
 
 namespace ProtoBuf.Runtime
 {
     public static class ProtoUtil
     {
-
+        public static readonly SnappyCompressor Compressor = new();
+        public static readonly SnappyDecompressor Decompressor = new();
+        private static readonly byte[] s_compressBytes = new byte[1024 * 8]; // 压缩字节 缓冲区
         /// <summary>
-        /// 把envelope 编码为（包长+包内容）字节数组
+        /// 编码成字节流 [type][bodyLen][body]
         /// </summary>
-        /// <param name="envelope">协议对象</param>
-        /// <param name="packetHeaderLength">包头长度</param>
-        public static byte[] EncodeToBytes(GameMessageCore.Envelope envelope, int packetHeaderLength)
+        /// <param name="message">消息体</param>
+        /// <param name="packetType">消息类型</param>
+        /// <param name="headerLen">整体头字节长度</param>
+        /// <param name="typeHeaderLen">类型头字节长度</param>
+        /// <param name="bodyHeaderLen">内容头字节长度</param>
+        /// <param name="isNeedCompress">是否需要压缩数据</param>
+        /// <returns></returns>
+        public static byte[] EncodeToBytes(ProtoMessage message, int headerLen, int typeHeaderLen, int bodyHeaderLen, bool isNeedCompress)
         {
-            // 获取消息包envelope的长度
-            int envelopLength = envelope.CalculateSize();
-            // 创建（头长度+内容长度）的字节数组
-            byte[] destination = new byte[packetHeaderLength + envelopLength];
-            // 头部区域写入数据
-            if (packetHeaderLength > 0)
+            // 内容长度
+            short bodyLength = (short)message.MsgData.CalculateSize();
+
+            // 分配字节数组 长度为[总头长+类型头长+内容头长+内容长度]
+            byte[] destination = new byte[headerLen + typeHeaderLen + bodyHeaderLen + bodyLength];
+            // 类型头开始索引
+            int typeHeaderStartIndex = headerLen;
+            // 内容头开始索引            
+            int bodyHeaderStartIndex = headerLen + typeHeaderLen;
+            // 内容开始索引     
+            int bodyStartIndex = headerLen + typeHeaderLen + bodyHeaderLen;
+
+            //（一般而言，socket 才会进入这个判断。给整个消息体加一个长度头）
+            if (headerLen > 0)
             {
-                byte[] headerBytes = BitConverter.GetBytes(envelopLength);
-                if (headerBytes.Length != packetHeaderLength)
+                byte[] headerBytes = BitConverter.GetBytes(typeHeaderLen + bodyHeaderLen + bodyLength);
+                if (headerBytes.Length != headerLen)
                 {
-                    Debug.Fail($"protobuf Serialize head size error,cur={headerBytes.Length} expected={packetHeaderLength}");
+                    Debug.LogError($"protobuf Serialize headerLen size error,cur={headerBytes.Length} expected={headerLen}");
                     return null;
                 }
-                for (int i = 0; i < packetHeaderLength; i++)
-                {
-                    destination[i] = headerBytes[i];
-                }
+                Buffer.BlockCopy(headerBytes, 0, destination, 0, headerLen);
             }
-            // 选取内容区域，写入数据
-            Span<byte> envelopBytes = new(destination, packetHeaderLength, destination.Length - packetHeaderLength);
-            envelope.WriteTo(envelopBytes);
+
+            if (typeHeaderLen > 0)
+            {
+                // 写入 包类型头
+                byte[] typeHeaderBytes = BitConverter.GetBytes((int)message.MsgType);
+                if (typeHeaderBytes.Length != typeHeaderLen)
+                {
+                    Debug.LogError($"protobuf Serialize typeHeaderLen size error,cur={typeHeaderBytes.Length} expected={typeHeaderLen}");
+                    return null;
+                }
+                Buffer.BlockCopy(typeHeaderBytes, 0, destination, typeHeaderStartIndex, typeHeaderLen);
+            }
+
+
+            if (bodyHeaderLen > 0)
+            {
+                // 写入 内容头
+                byte[] bodyHeaderBytes = BitConverter.GetBytes(bodyLength);
+                if (bodyHeaderBytes.Length != bodyHeaderLen)
+                {
+                    Debug.LogError($"protobuf Serialize bodyHeaderLen size error,cur={bodyHeaderBytes.Length} expected={bodyHeaderLen}");
+                    return null;
+                }
+                Buffer.BlockCopy(bodyHeaderBytes, 0, destination, bodyHeaderStartIndex, bodyHeaderLen);
+            }
+
+            // 写入内容
+            Span<byte> bodyBytes = new(destination, bodyStartIndex, bodyLength);
+            message.MsgData.WriteTo(bodyBytes);
+
+            // 压缩
+            if (isNeedCompress)
+            {
+                // byte[] compressBytes = new byte[Compressor.MaxCompressedLength(destination.Length)];
+                int compressLen = Compressor.Compress(destination, 0, destination.Length, s_compressBytes);
+                return new Span<byte>(s_compressBytes, 0, compressLen).ToArray();
+            }
             return destination;
-        }
-        /// <summary>
-        /// 解码协议数据 内容部分（不包括头长） 
-        /// </summary>
-        /// <param name="byteSpan"></param>
-        /// <returns></returns>
-        public static GameMessageCore.Envelope Decode(Span<byte> byteSpan)
-        {
-            GameMessageCore.Envelope envelope = GameMessageCore.Envelope.Parser.ParseFrom(byteSpan);
-            return envelope;
         }
 
         /// <summary>
-        /// 解码协议数据 内容部分（不包括头长） 
+        /// 解码协议数据 该方法解码数据格式为 [type][bodyLen][body]
         /// </summary>
-        /// <param name="envelopBytes"></param>
-        /// <returns></returns>
-        public static GameMessageCore.Envelope Decode(byte[] envelopBytes)
+        /// <param name="source">源字节数组</param>
+        /// <param name="typeHeaderLen">类型头字节长度</param>
+        /// <param name="bodyHeaderLen">内容头字节长度</param>
+        /// <param name="suffix">消息后缀</param>
+        /// <param name="isNeedDeCompress">是否需要解压</param>
+        /// <returns>解析结果数组</returns>
+        public static List<ProtoMessage> Decode(byte[] source, int typeHeaderLen, int bodyHeaderLen, eProtoMsgSuffix suffix, bool isNeedDeCompress)
         {
-            GameMessageCore.Envelope envelope = GameMessageCore.Envelope.Parser.ParseFrom(envelopBytes);
-            return envelope;
+
+            if (typeHeaderLen <= 0)
+            {
+                Debug.LogError($"protobuf Decode typeHeaderLen error,typeHeaderLen={typeHeaderLen} expected > 0");
+                return null;
+            }
+            if (bodyHeaderLen <= 0)
+            {
+                Debug.LogError($"protobuf Decode bodyHeaderLen error,bodyHeaderLen={bodyHeaderLen} expected > 0");
+                return null;
+            }
+            if (isNeedDeCompress)
+            {
+                source = Decompressor.Decompress(source, 0, source.Length);
+            }
+            List<ProtoMessage> protoMsgs = new();
+            for (int i = 0; i < source.Length;)
+            {
+                // 取的[类型]部分的Span,并转为 EnvelopeType
+                Span<byte> typeHeaderSpan = new(source, i, typeHeaderLen);
+                EnvelopeType msgType = (EnvelopeType)BitConverter.ToInt32(typeHeaderSpan);
+
+                // 取的[内容长度]部分的Span，并转为 长度数值
+                Span<byte> bodyHeaderSpan = new(source, i + typeHeaderLen, bodyHeaderLen);
+                short bodyLen = BitConverter.ToInt16(bodyHeaderSpan);
+
+                // 取的[内容]部分的Span
+                Span<byte> bodySpan = new(source, i + typeHeaderLen + bodyHeaderLen, bodyLen);
+
+                IMessage message = ParseMessage(bodySpan, msgType, suffix);
+                if (message != null)
+                {
+                    protoMsgs.Add(ProtoMessage.Create(msgType, suffix, message));
+                }
+
+                // 移动指针
+                i += typeHeaderLen + bodyHeaderLen + bodyLen;
+            }
+            return protoMsgs;
+        }
+
+
+        /// <summary>
+        /// 解码协议数据 该方法解码数据格式为 [body] ,type 消息类型由外部传入
+        /// </summary>
+        /// <param name="body"></param>
+        /// <param name="msgType"></param>
+        /// <param name="suffix"></param>
+        /// <param name="isNeedDeCompress">是否需要解压</param>
+        /// <returns></returns>
+        public static ProtoMessage Decode(byte[] body, EnvelopeType msgType, eProtoMsgSuffix suffix, bool isNeedDeCompress)
+        {
+            if (isNeedDeCompress)
+            {
+                body = Decompressor.Decompress(body, 0, body.Length);
+            }
+            IMessage message = ParseMessage(body, msgType, suffix);
+            return message != null ? ProtoMessage.Create(msgType, suffix, message) : null;
+        }
+
+        /// <summary>
+        /// 获取解析器
+        /// </summary>
+        /// <param name="msgType"></param>
+        /// <param name="suffix"></param>
+        /// <returns></returns>
+        private static MessageParser GetMessageParser(EnvelopeType msgType, eProtoMsgSuffix suffix)
+        {
+            // 消息体类名称
+            string respClassName = $"GameMessageCore.{msgType}{suffix}";
+            Type respClassType = Type.GetType(respClassName);
+            if (respClassType != null)
+            {
+                // 获取parser
+                PropertyInfo parserProperty = respClassType.GetProperty("Parser", BindingFlags.Static | BindingFlags.Public);
+                return (MessageParser)parserProperty.GetValue(null);
+            }
+            else
+            {
+                // 类型未找到
+                Debug.LogError($"GetMessageParser no find respClassName :{respClassName}");
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// 解析 Span message
+        /// </summary>
+        /// <param name="body"></param>
+        /// <param name="msgType"></param>
+        /// <param name="suffix"></param>
+        /// <returns></returns>
+        private static IMessage ParseMessage(Span<byte> body, EnvelopeType msgType, eProtoMsgSuffix suffix)
+        {
+            try
+            {
+                MessageParser messageParser = GetMessageParser(msgType, suffix);
+                if (messageParser != null)
+                {
+                    IMessage message = messageParser.ParseFrom(body);
+                    return message;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"ParseMessage parser error :{e}");
+            }
+
+            return null;
         }
 
         /// <summary>
@@ -70,5 +219,6 @@ namespace ProtoBuf.Runtime
         {
             return BitConverter.ToInt32(headerBytes, 0);
         }
+
     }
 }

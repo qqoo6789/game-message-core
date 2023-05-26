@@ -10,12 +10,12 @@ using System.Collections.Generic;
 
 namespace GameMessageCore
 {
-    public sealed partial class BroadCastMapEntityUpdateResponse : ICustomReference
+    public sealed partial class BroadCastMapEntityUpdateResp : ICustomReference
     {
 
-        public static BroadCastMapEntityUpdateResponse Create(List<EntityId> removeEntitys, List<EntityWithLocation> addEntitys, List<DestructionElementData> destructionData)
+        public static BroadCastMapEntityUpdateResp Create(List<EntityId> removeEntitys, List<EntityWithLocation> addEntitys, List<DestructionElementData> destructionData)
         {
-            BroadCastMapEntityUpdateResponse reference = CustomReferencePool.Acquire<BroadCastMapEntityUpdateResponse>();
+            BroadCastMapEntityUpdateResp reference = CustomReferencePool.Acquire<BroadCastMapEntityUpdateResp>();
             if (removeEntitys != null)
             {
                 reference.EntityRemoved.AddRange(removeEntitys);

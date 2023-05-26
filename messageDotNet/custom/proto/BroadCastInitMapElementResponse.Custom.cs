@@ -10,11 +10,11 @@ using System.Collections.Generic;
 
 namespace GameMessageCore
 {
-    public sealed partial class BroadCastInitMapElementResponse : ICustomReference
+    public sealed partial class BroadCastInitMapElementResp : ICustomReference
     {
-        public static BroadCastInitMapElementResponse Create(List<EntityWithLocation> addEntitys, List<DestructionElementData> destruction, bool final)
+        public static BroadCastInitMapElementResp Create(List<EntityWithLocation> addEntitys, List<DestructionElementData> destruction, bool final)
         {
-            BroadCastInitMapElementResponse reference = CustomReferencePool.Acquire<BroadCastInitMapElementResponse>();
+            BroadCastInitMapElementResp reference = CustomReferencePool.Acquire<BroadCastInitMapElementResp>();
             if (addEntitys != null)
             {
                 reference.Entity.AddRange(addEntitys);

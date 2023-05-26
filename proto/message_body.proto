@@ -152,7 +152,7 @@ message BroadCastEntityCaptureDataUpdateResp{
   CaptureStatus           status          = 2;
   int64                   fromId          = 3;
   int64                   toId            = 4;
-  CaptureData             captureDataRrom = 5;
+  CaptureData             captureDataFrom = 5;
   CaptureData             captureDataTo   = 6;
   CaptureFailReason       failReason      = 7;
 }
@@ -403,7 +403,7 @@ message UpdateSelfLocationResp {
 message UseSkillReq{
   ReqTitle          reqTitle      = 1;
   // 使用的技能 id
-  int32             skillIDd      = 2;
+  int32             skillId       = 2;
   // 技能使用方向，相对于玩家当前位置.
   EntityLocation    dir           = 3;
   // 技能使用的位置  指定后，会将玩家重置到该位置.

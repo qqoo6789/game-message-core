@@ -168,7 +168,7 @@ namespace ProtoBuf.Runtime
         private static MessageParser GetMessageParser(EnvelopeType msgType, eProtoMsgSuffix suffix)
         {
             // 消息体类名称
-            string respClassName = $"GameMessageCore.{msgType}{suffix}";
+            string respClassName = $"{ProtoDefine.PROTO_NAMESPACE}.{msgType}{suffix}";
             Type respClassType = Type.GetType(respClassName);
             if (respClassType != null)
             {

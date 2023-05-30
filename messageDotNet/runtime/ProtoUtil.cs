@@ -13,6 +13,8 @@ namespace ProtoBuf.Runtime
         public static readonly SnappyCompressor Compressor = new();
         public static readonly SnappyDecompressor Decompressor = new();
         private static readonly byte[] s_compressBytes = new byte[1024 * 8]; // 压缩字节 缓冲区
+        private static readonly Dictionary<string, MessageParser> s_protoClassParserDic = new(); // 协议类解析器parser字典，避免反复反射获取
+
         /// <summary>
         /// 编码成字节流 [type][bodyLen][body]
         /// </summary>
@@ -169,12 +171,20 @@ namespace ProtoBuf.Runtime
         {
             // 消息体类名称
             string respClassName = $"{ProtoDefine.PROTO_NAMESPACE}.{msgType}{suffix}";
+            MessageParser messageParser = s_protoClassParserDic.GetValueOrDefault(respClassName);
+            if (messageParser != null)
+            {
+                return messageParser;
+            }
+
             Type respClassType = Type.GetType(respClassName);
             if (respClassType != null)
             {
                 // 获取parser
                 PropertyInfo parserProperty = respClassType.GetProperty("Parser", BindingFlags.Static | BindingFlags.Public);
-                return (MessageParser)parserProperty.GetValue(null);
+                MessageParser parser = (MessageParser)parserProperty.GetValue(null);
+                s_protoClassParserDic.Add(respClassName, parser);
+                return parser;
             }
             else
             {
@@ -196,6 +206,7 @@ namespace ProtoBuf.Runtime
             try
             {
                 MessageParser messageParser = GetMessageParser(msgType, suffix);
+
                 if (messageParser != null)
                 {
                     IMessage message = messageParser.ParseFrom(body);

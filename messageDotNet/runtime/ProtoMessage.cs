@@ -187,8 +187,13 @@ public class ProtoMessage : ICustomReference
 
     public void Clear()
     {
+        if (MsgData is not null and ICustomReference)
+        {
+            CustomReferencePool.Release(MsgData);
+        }
         MsgData = null;
         MsgType = EnvelopeType.Unknown;
         Suffix = eProtoMsgSuffix.None;
+
     }
 }

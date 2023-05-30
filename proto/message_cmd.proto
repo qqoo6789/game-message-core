@@ -1,24 +1,24 @@
 // 应用交互消息定义.
-
 //***************************************************************************
-// 消息协议号 ： 服务端主动推送的以  BroadCast开头  如 xxx  ***********************
-// 消息结构   ： server -> client 以 Response   如 BroadCastXXResponse结尾******
-// 消息结构   ： server回复client  以 Response   如 xxxResponse 结尾  ***********
-// 消息结构   ： client->server   以 Request    如 xxxRequest  结尾  ***********
+// 消息协议号 ： 服务端主动推送的以 BroadCast 开头   如 BroadCastxxx 
+// 消息结构   ： server -> client 以 Resp  结尾   如 BroadCastXXResp   
+// 消息结构   ： server -> client 以 Resp  结尾   如 xxxResp           
+// 消息结构   ： client -> server 以 Req   结尾   如 xxxReq            
 //***************************************************************************
 
 //*************************************************************************** 
-//协议ID规则      : 0xXXZZZZ, 其中 XX 为服务ID头, ZZZZ为具体的协议ID, 示例如下 ****  
-//保留id协议      : 0x00ZZZZ   *********************************************** 
-//mainServer协议 : 0x01ZZZZ  主数据服务协议************************************
-//accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
-//screenSer 协议 : 0x03ZZZZ  战斗服务 协议 ************************************
-//taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
-//chatServer协议 : 0x05ZZZZ  聊天服务 协议 ************************************
-//getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
-//ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
-//CTRlServer协议 : 0x0aZZZZ  控制服务 协议 ************************************ 
+// 协议ID规则       : 0xXXZZZZ, 其中 XX 为服务ID头, ZZZZ为具体的协议ID, 示例如下   
+// 保留id协议       : 0x00ZZZZ    
+// mainServer协议   : 0x01ZZZZ  主数据服务协议
+// accountSer协议   : 0x02ZZZZ  账号服务 协议 
+// screenSer 协议   : 0x03ZZZZ  战斗服务 协议 
+// taskServer协议   : 0x04ZZZZ  任务服务 协议 
+// chatServer协议   : 0x05ZZZZ  聊天服务 协议 
+// agentServer协议  : 0x06ZZZZ  网关服务 协议 
+// ServiceMgr协议   : 0x09ZZZZ  服务管理 协议(客户端不能调用) 
+// CTRlServer协议   : 0x0aZZZZ  控制服务 协议 
 //**************************************************************************
+
 
 syntax = "proto3";
 package gameMessageCore;
@@ -27,7 +27,7 @@ option go_package = "./messageGo/proto";
 
 enum EnvelopeType {    
     //保留id协议      : 0x00ZZZZ   *********************************************** 
-    Unknown = 0;
+    Unknown                         = 0x000000;
 
     BroadCastTickOut                = 0x009999;    // 踢玩家下线
 
@@ -39,10 +39,8 @@ enum EnvelopeType {
     UnloadAvatar                    = 0x010009;
     BroadCastItemAdd                = 0x010011;     // 添加道具
     BroadCastItemUpdate             = 0x010012;     // 更新道具
-    BroadCastItemDel                = 0x010013;     // del道具
-    BroadCastUpdateItemSlot         = 0x010014;     // 推送 玩家道具槽
-    GetItemSlot                     = 0x010015;     // 查询 玩家道具槽信息
-    UpgradeItemSlot                 = 0x010017;     // 升级 玩家道具槽
+    BroadCastItemDel                = 0x010013;     // del道具 
+
     SigninPlayer                    = 0x010019;     // 登录角色
     SignOutPlayer                   = 0x010021;     // 角色退出游戏
 
@@ -118,8 +116,8 @@ enum EnvelopeType {
     ExitCapture                     = 0x030071;     // 客户端请求退出捕获状态
     EntityAccumulateStatus          = 0x030072;     // 实体蓄力状态请求
     BroadCastEntityAccumulateStatus = 0x030073;     // 实体蓄力状态广播
-    EntityDialogue                  = 0x030076;     // 实体对话
-    BroadCastEntityEquipmentSkill   = 0x030078;     // 广播实体装备技能
+    EntityDialogue                  = 0x030075;     // 实体对话
+    BroadCastEntityEquipmentSkill   = 0x030077;     // 广播实体装备技能
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasks                       = 0x040001;     // 查询玩家已接的任务列表（进行中状态）
@@ -143,11 +141,10 @@ enum EnvelopeType {
 
 
 
-    //getaway   协议 : 0x06ZZZZ  网关服务 协议 ************************************
-    Ping                = 0x060001;
+    //agentService协议 : 0x06ZZZZ  网关服务 协议 ************************************
+    Ping                           = 0x060001;
     
-    //协议 : 0x07ZZZZ  广播合并 协议 ************************************
-    BroadCastMsgAggregation  = 0x070001;
+     
 
     //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
 

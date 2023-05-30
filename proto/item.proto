@@ -153,6 +153,12 @@ message ItemBaseInfo {
   int32       quality = 3;
 }
 
+//使用技能扣除道具
+message UseSkillCostItem{
+  int32       cid     = 1;
+  string      nftId   = 2;
+  int32       num     = 3;
+}
 
 // 玩家装备
 message AvatarAttribute {
@@ -164,4 +170,5 @@ message AvatarAttribute {
   // 属性
   repeated  AttributeData data = 4;
 }
+
 

@@ -93,30 +93,30 @@ namespace ProtoBuf.Runtime
         /// <summary>
         /// 解码协议数据 该方法解码数据格式为 [type][bodyLen][body]
         /// </summary>
+        /// <param name="protoMsgResults">装载结果</param>
         /// <param name="source">源字节数组</param>
         /// <param name="typeHeaderLen">类型头字节长度</param>
         /// <param name="bodyHeaderLen">内容头字节长度</param>
         /// <param name="suffix">消息后缀</param>
         /// <param name="isNeedDeCompress">是否需要解压</param>
         /// <returns>解析结果数组</returns>
-        public static List<ProtoMessage> Decode(byte[] source, int typeHeaderLen, int bodyHeaderLen, eProtoMsgSuffix suffix, bool isNeedDeCompress)
+        public static void Decode(List<ProtoMessage> protoMsgResults, byte[] source, int typeHeaderLen, int bodyHeaderLen, eProtoMsgSuffix suffix, bool isNeedDeCompress)
         {
-
+            protoMsgResults.Clear();
             if (typeHeaderLen <= 0)
             {
                 Debug.LogError($"protobuf Decode typeHeaderLen error,typeHeaderLen={typeHeaderLen} expected > 0");
-                return null;
+                return;
             }
             if (bodyHeaderLen <= 0)
             {
                 Debug.LogError($"protobuf Decode bodyHeaderLen error,bodyHeaderLen={bodyHeaderLen} expected > 0");
-                return null;
+                return;
             }
             if (isNeedDeCompress)
             {
                 source = Decompressor.Decompress(source, 0, source.Length);
             }
-            List<ProtoMessage> protoMsgs = new();
             for (int i = 0; i < source.Length;)
             {
                 // 取的[类型]部分的Span,并转为 EnvelopeType
@@ -133,13 +133,12 @@ namespace ProtoBuf.Runtime
                 IMessage message = ParseMessage(bodySpan, msgType, suffix);
                 if (message != null)
                 {
-                    protoMsgs.Add(ProtoMessage.Create(msgType, suffix, message));
+                    protoMsgResults.Add(ProtoMessage.Create(msgType, suffix, message));
                 }
 
                 // 移动指针
                 i += typeHeaderLen + bodyHeaderLen + bodyLen;
             }
-            return protoMsgs;
         }
 
 

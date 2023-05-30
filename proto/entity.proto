@@ -75,6 +75,7 @@ message Monster {
   bool                    is_battle = 8;     //战斗状态
   int64                   owner_id = 9;       //战斗所属者
   CaptureData             capture_data = 10;  //捕获数据
+  repeated int32          equipmentSkills = 11;// 装备技能列表
 }
 
 message Npc {

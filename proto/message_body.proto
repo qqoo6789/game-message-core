@@ -166,6 +166,7 @@ message Envelope {
     BroadCastEntityAccumulateStatusResponse broad_cast_entity_accumulate_status_response  = 0x030075;
     EntityDialogueRequest             entity_dialogue_request                = 0x030076;
     EntityDialogueResponse            entity_dialogue_response               = 0x030077;
+    BroadCastEntityEquipmentSkillResponse   broad_cast_entity_equipment_skill_response     = 0x030078;
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasksRequest                  self_tasks_request                    = 0x040001;
@@ -468,7 +469,10 @@ message EntityDialogueRequest{
 message EntityDialogueResponse{
 }
 
-
+message BroadCastEntityEquipmentSkillResponse{ 
+  int64 entityId = 1;               // 实体ID
+  repeated int32 equipmentSkills = 2;        // 装备技能列表
+}
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerRequest {
   string          token = 1; 

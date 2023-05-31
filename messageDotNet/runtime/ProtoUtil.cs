@@ -170,8 +170,8 @@ namespace ProtoBuf.Runtime
         {
             // 消息体类名称
             string respClassName = $"{ProtoDefine.PROTO_NAMESPACE}.{msgType}{suffix}";
-            MessageParser messageParser = s_protoClassParserDic.GetValueOrDefault(respClassName);
-            if (messageParser != null)
+
+            if (s_protoClassParserDic.TryGetValue(respClassName, out MessageParser messageParser))
             {
                 return messageParser;
             }

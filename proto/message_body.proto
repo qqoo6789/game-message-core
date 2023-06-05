@@ -410,14 +410,16 @@ message UseSkillReq{
   EntityLocation    fromLocation  = 4;
   // 技能指定使用的目标
   EntityId          targetId      = 5;
+  // 技能指定目标位置
+  EntityLocation    targetPos     = 6;
   // 使用技能状态
-  UseSkillState     skillState    = 6;
+  UseSkillState     skillState    = 7;
   //家园采集信息
-  UseCollectResourceSkillInfo homeCollectInfo = 7;
+  UseCollectResourceSkillInfo homeCollectInfo = 8;
   // 蓄力技能蓄力时间 s
-  float             accuTime      = 8; 
+  float             accuTime      = 9; 
   // 技能消耗道具
-  UseSkillCostItem  costItem      = 9;
+  UseSkillCostItem  costItem      = 10;
 }
 message UseSkillResp {
   RespTitle         resTitle      = 1;

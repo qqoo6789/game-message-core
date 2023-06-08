@@ -410,14 +410,16 @@ message UseSkillReq{
   EntityLocation    fromLocation  = 4;
   // 技能指定使用的目标
   EntityId          targetId      = 5;
+  // 技能指定目标位置
+  EntityLocation    targetPos     = 6;
   // 使用技能状态
-  UseSkillState     skillState    = 6;
+  UseSkillState     skillState    = 7;
   //家园采集信息
-  UseCollectResourceSkillInfo homeCollectInfo = 7;
+  UseCollectResourceSkillInfo homeCollectInfo = 8;
   // 蓄力技能蓄力时间 s
-  float             accuTime      = 8; 
+  float             accuTime      = 9; 
   // 技能消耗道具
-  UseSkillCostItem  costItem      = 9;
+  UseSkillCostItem  costItem      = 10;
 }
 message UseSkillResp {
   RespTitle         resTitle      = 1;
@@ -568,14 +570,16 @@ message BroadCastEntityCombatResp{
   EntityLocation        dir           = 7;
   // 技能释放的位置
   EntityLocation        fromLocation  = 8;
+  // 技能目标为
+  EntityLocation        targetLocation  = 9;
   // 当前消息状态的服务器时间
-  int64                 curStamp      = 9;
+  int64                 curStamp      = 10;
   // 接收技能伤害的对象 id 数组
-  repeated EntityDamage targets       = 10;
+  repeated EntityDamage targets       = 11;
   // 产生的所有技能飞行物
-  repeated SkillFlyerData flyers      = 11;
+  repeated SkillFlyerData flyers      = 12;
   // 技能使用道具
-  UseSkillCostItem      costItem      = 12;
+  UseSkillCostItem      costItem      = 13;
 }
 
 message TeleportReq {

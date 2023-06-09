@@ -16,10 +16,6 @@ public class PullClientMessageInput
     public int MsgId;
     public byte[] MsgBody;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }
 
 /// <summary>
@@ -30,11 +26,7 @@ public class PullClientMessageOutput
 {
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 /// <summary>
@@ -50,11 +42,7 @@ public class BroadCastToClientInput
     public string SocketId;
     public int MsgId;
     public byte[] MsgBody;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 /// <summary>
@@ -65,11 +53,7 @@ public class BroadCastToClientOutput
 {
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 
@@ -83,11 +67,7 @@ public class MultipleBroadCastToClientInput
     public long MsgVersion;
     public string ServiceAppId;
     public MultiClientMsgData[] MsgDataList;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 /// <summary>
@@ -98,9 +78,5 @@ public class MultipleBroadCastToClientOutput
 {
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }

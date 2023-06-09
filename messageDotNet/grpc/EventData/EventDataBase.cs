@@ -11,11 +11,5 @@ public class EventDataBase
     public long UserId;
     public float PosX;
     public float PosY;
-    public float PosZ;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public float PosZ; 
 }

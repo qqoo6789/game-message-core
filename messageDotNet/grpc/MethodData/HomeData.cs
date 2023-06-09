@@ -9,20 +9,13 @@ public class MainServiceActionSaveHomeDataInput
 {
     public long UserId;
     public GrpcHomeData Data;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }
 [Serializable]
 public class MainServiceActionSaveHomeDataOutput
 {
     public bool Success;
     public string ErrMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+  
 }
 
 /// <summary>
@@ -32,21 +25,13 @@ public class MainServiceActionSaveHomeDataOutput
 public class MainServiceActionUpHomeLastSaveTimeInput
 {
     public long UserId;
-    public long LastSaveMs;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public long LastSaveMs; 
 }
 [Serializable]
 public class MainServiceActionUpHomeLastSaveTimeOutput
 {
     public bool Success;
-    public string ErrMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public string ErrMsg; 
 }
 
 /// <summary>
@@ -55,11 +40,7 @@ public class MainServiceActionUpHomeLastSaveTimeOutput
 [Serializable]
 public class MainServiceActionGetHomeDataInput
 {
-    public long UserId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public long UserId; 
 }
 [Serializable]
 public class MainServiceActionGetHomeDataOutput
@@ -67,11 +48,7 @@ public class MainServiceActionGetHomeDataOutput
     public bool Success;
     public string ErrMsg;
     public long UserId;
-    public GrpcHomeData Data;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcHomeData Data; 
 
 }
 
@@ -82,21 +59,13 @@ public class MainServiceActionGetHomeDataOutput
 public class MultiUpdateAnimalBaseDataInput
 {
     public long UserId;
-    public GrpcAnimalBaseData[] Animals;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcAnimalBaseData[] Animals; 
 }
 [Serializable]
 public class MultiUpdateAnimalBaseDataOutput
 {
     public bool Success;
-    public string ErrMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public string ErrMsg; 
 
 }
 
@@ -106,11 +75,7 @@ public class MultiUpdateAnimalBaseDataOutput
 [Serializable]
 public class GetUserAnimalListInput
 {
-    public long UserId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public long UserId; 
 }
 [Serializable]
 public class GetUserAnimalListOutput
@@ -119,12 +84,7 @@ public class GetUserAnimalListOutput
     public string ErrMsg;
     public long UserId;
     public GrpcAnimalBaseData[] Animals;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 /// <summary>
@@ -136,20 +96,13 @@ public class CaptureAnimalInput
     public long UserId;
     public long FreedAnimalId;
     public GrpcAnimalBaseData Animal;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+     
 }
 [Serializable]
 public class CaptureAnimalOutput
 {
     public bool Success;
     public string ErrMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }
 
 

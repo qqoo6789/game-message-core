@@ -14,11 +14,6 @@ public class GrpcPlayerFeature
     public int Clothes;
     public int Pants;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
     public void Set(GameMessageCore.PlayerFeature feature)
     {
         if (feature == null)
@@ -63,12 +58,6 @@ public class GrpcPlayerBaseData
     public string RoleIcon;
     public GrpcPlayerFeature Feature;
     public bool Guide;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
     public void Set(GameMessageCore.PlayerBaseData baseData)
     {
         if (baseData == null)

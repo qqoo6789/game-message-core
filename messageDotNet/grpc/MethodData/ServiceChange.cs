@@ -17,11 +17,7 @@ public class StartServiceInput
     public GameMessageCore.ServiceType ServiceType;
     public GameMessageCore.SceneServiceSubType SceneSerSubType;
     public long OwnerId;
-    public int MapId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int MapId; 
 }
 [Serializable]
 public class StartServiceOutput
@@ -29,10 +25,7 @@ public class StartServiceOutput
     public bool Success;
     public string ErrMsg;
     public ServiceData SerInfo;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 
 
@@ -47,10 +40,7 @@ public class ApplyEnterServiceInput
     public GrpcVector3 UserPosition;
     public GrpcVector3 UserDir;
     public ServiceData FromSer;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class ApplyEnterServiceOutput
@@ -58,11 +48,7 @@ public class ApplyEnterServiceOutput
     public long UserId;
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 
@@ -80,10 +66,7 @@ public class JoinServiceInput
     public GrpcVector3 UserDir;
     public ServiceData FromSer;
     public string SkillEffectData;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class JoinServiceOutput
@@ -91,12 +74,7 @@ public class JoinServiceOutput
     public long UserId;
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 

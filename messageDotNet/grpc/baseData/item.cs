@@ -11,12 +11,7 @@ public class GrpcAvatarAttribute
     // cid
     public int ObjectId;
     // 属性增量
-    public GrpcAttributeData[] Data;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcAttributeData[] Data; 
 
     public void Set(GameMessageCore.AvatarAttribute attr)
     {
@@ -60,13 +55,7 @@ public class GrpcItemBaseInfo
 
     public int Cid;
     public int Num;
-    public int Quality;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public int Quality; 
     public void Set(GameMessageCore.ItemBaseInfo info)
     {
         if (info == null)
@@ -95,12 +84,7 @@ public class GrpcNFTConsumableInfo
 {
     public string Quality;
     public GameMessageCore.NFTConsumableType ConsumableType;
-    public int Value;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int Value; 
 
     public void Set(GameMessageCore.NFTConsumableInfo info)
     {

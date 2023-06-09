@@ -14,10 +14,5 @@ public class AgentServiceResp
     public int MaxOnline;
     public long CreatedAt;
     public long UpdateAt;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }

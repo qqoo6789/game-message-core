@@ -8,10 +8,7 @@ using UnityEngine;
 public class MainServiceActionGetAllBuildInput
 {
     public int MapId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class MainServiceActionGetAllBuildOutput
@@ -19,9 +16,6 @@ public class MainServiceActionGetAllBuildOutput
     public bool Success;
     public string ErrMsg;
     public GrpcNftBuild[] AllBuilds;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+     
 
 }

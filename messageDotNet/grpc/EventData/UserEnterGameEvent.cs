@@ -13,9 +13,5 @@ public class UserEnterGameEvent
     public GrpcPlayerBaseData BaseData;
     public GrpcVector3 Position;
     public GrpcVector3 Dir;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }

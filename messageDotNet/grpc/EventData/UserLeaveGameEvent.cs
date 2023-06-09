@@ -9,9 +9,5 @@ public class UserLeaveGameEvent
 { // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public string SceneServiceAppId;
-    public long UserId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public long UserId; 
 }

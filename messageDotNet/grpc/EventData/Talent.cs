@@ -10,12 +10,7 @@ public class UpdateTalentEvent
     public long MsgVersion;
     public long UserId;
     public GrpcTalentLevel[] Levels;
-    public GrpcTalentTreeUpdate[] Trees;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcTalentTreeUpdate[] Trees; 
 
 }
 
@@ -29,11 +24,5 @@ public class AddTalentExpEvent
     public string ServiceAppId;
     public int MapId;
     public long UserId;
-    public GrpcTalentExp[] AddExps;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public GrpcTalentExp[] AddExps; 
 }

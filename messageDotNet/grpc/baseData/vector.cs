@@ -7,13 +7,7 @@ public class GrpcVector3
 {
     public float X;
     public float Y;
-    public float Z;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public float Z; 
     public void Set(GameMessageCore.Vector3 v)
     {
         if (v == null)

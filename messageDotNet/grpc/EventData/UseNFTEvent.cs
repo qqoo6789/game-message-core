@@ -16,11 +16,5 @@ public class UserUseNFTEvent
     public GrpcNFTConsumableInfo ConsumableData;
     public float X;
     public float Y;
-    public float Z;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public float Z; 
 }

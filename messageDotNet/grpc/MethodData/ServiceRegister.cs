@@ -11,12 +11,7 @@ public class ServiceRegisterInput
     public ServiceData Service;
     // register service current time MS
     public long RegisterAt;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 
@@ -31,11 +26,5 @@ public class ServiceRegisterOutput
     public long RegisterAt;
     // service manager current time MS
     public long ManagerAt;
-
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }

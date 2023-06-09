@@ -9,11 +9,6 @@ public class MultiClientMsgData : ICustomReference
     public int MsgId;
     public byte[] MsgBody;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
     public void Dispose()
     {
         CustomReferencePool.Release(this);

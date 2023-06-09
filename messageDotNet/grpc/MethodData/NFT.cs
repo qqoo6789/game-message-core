@@ -6,11 +6,7 @@ public class GrpcNftBaseData
 {
     public string NftId;
     public int ItemCid;
-    public int Num;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int Num;    
 }
 
 /// <summary>
@@ -22,21 +18,14 @@ public class MainServiceActionUseNftInput
     public long UserId;
     public GrpcNftBaseData Nft;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class MainServiceActionUseNftOutput
 {
     public bool Success;
     public string FailedMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 /// <summary>
@@ -47,22 +36,14 @@ public class MainServiceActionTakeNftInput
 {
     public long UserId;
     public GrpcNftBaseData[] TakeNfts;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 [Serializable]
 public class MainServiceActionTakeNftOutput
 {
     public bool Success;
     public string FailedMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 
 /// <summary>
@@ -73,19 +54,12 @@ public class MainServiceActionMintNftInput
 {
     public long UserId;
     public GrpcItemBaseInfo Item;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class MainServiceActionMintNftOutput
 {
     public bool Success;
     public string FailedMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+   
 }

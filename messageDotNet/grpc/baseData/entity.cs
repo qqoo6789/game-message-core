@@ -9,11 +9,6 @@ public class GrpcAttributeData
     public int Value;
     public GameMessageCore.AttributeDisplayType DisplayType;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
     public void Set(GameMessageCore.AttributeData attr)
     {
         if (attr == null)
@@ -61,11 +56,6 @@ public class GrpcNftBuild
     public int LandPlacementPowerZeroCooldownStartAt;
     //电量不足时建造保护期
     public int LandPlacementPowerZeroCooldownAt;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 
     public void Set(GameMessageCore.NftBuild build)
     {

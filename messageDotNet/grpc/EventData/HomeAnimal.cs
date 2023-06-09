@@ -7,12 +7,7 @@ public class FreedAnimalEvent
 {
     public long MsgVersion;
     public long UserId;
-    public GrpcAnimalBaseData Animal;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcAnimalBaseData Animal; 
 }
 
 [Serializable]
@@ -23,10 +18,5 @@ public class CaptureAnimalEvent
     public int MapId;
     public long UserId;
     public GrpcAnimalBaseData FreedAnimal;
-    public GrpcAnimalBaseData CaptureAnimal;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcAnimalBaseData CaptureAnimal; 
 }

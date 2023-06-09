@@ -11,10 +11,6 @@ public class ManagerActionSelectServiceInput
     public GameMessageCore.SceneServiceSubType SceneSerSubType;
     public long OwnerId;
     public int MapId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }
 
 
@@ -27,11 +23,7 @@ public class ManagerActionSelectServiceOutput
     public int ErrorCode;
     public string ErrorMessage;
     public ServiceData Service;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 
 }
 
@@ -45,10 +37,7 @@ public class MultiSelectServiceInput
     public GameMessageCore.SceneServiceSubType SceneSerSubType;
     public long OwnerId;
     public int MapId;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    
 }
 [Serializable]
 public class MultiSelectServiceOutput
@@ -57,8 +46,4 @@ public class MultiSelectServiceOutput
     public string ErrorMessage;
     public ServiceData[] Services;
 
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
 }

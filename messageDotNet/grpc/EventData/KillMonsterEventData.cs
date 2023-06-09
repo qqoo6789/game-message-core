@@ -17,10 +17,5 @@ public class KillMonsterEventData
     public float PosZ;
     public int MonsterCid;
     public string MonsterName;
-    public GrpcItemBaseInfo[] DropList;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcItemBaseInfo[] DropList; 
 }

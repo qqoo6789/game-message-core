@@ -16,10 +16,4 @@ public class ServiceData
     public long CreatedAt;
     public long UpdatedAt;
 
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
 }

@@ -11,12 +11,7 @@ public class UserApplyEnterServiceResEvent
     public long MsgVersion;
     public long UserId;
     public bool Success;
-    public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public string ErrMsg; 
 }
 
 /// <summary>
@@ -29,11 +24,7 @@ public class UserJoinServiceResEvent
     public long MsgVersion;
     public long UserId;
     public bool Success;
-    public string ErrMsg;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public string ErrMsg; 
 }
 
 /// <summary>
@@ -50,11 +41,5 @@ public class UserChangeServiceEvent
     public string UserAgentAppId;
     public string UserSocketId;
     public GrpcVector3 UserPosition;
-    public GrpcVector3 UserDir;
-
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcVector3 UserDir; 
 }

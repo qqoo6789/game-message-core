@@ -12,12 +12,7 @@ public class GrpcAnimalBaseData
     public int Favorability;
     public long CreateMs;
     public long UpdateMs;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 // home data
@@ -75,10 +70,5 @@ public class GrpcHomeData
         return string.Compare(json1, json2) == 0;
         // }
     }
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }

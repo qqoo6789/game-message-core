@@ -6,12 +6,7 @@ using UnityEngine;
 public class GrpcTalentExp
 {
     public GameMessageCore.TalentType TalentType;
-    public long Exp;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public long Exp; 
 }
 
 
@@ -20,12 +15,7 @@ public class GrpcTalentLevel
 {
     public GameMessageCore.TalentType TalentType;
     public int Level;
-    public int MasterLevel;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int MasterLevel; 
     public GameMessageCore.TalentLevel ToProtoData()
     {
         return new GameMessageCore.TalentLevel()
@@ -42,12 +32,7 @@ public class GrpcTalentLevel
 public class GrpcTalentNodeData
 {
     public int NodeId;
-    public int Level;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int Level; 
     public GameMessageCore.TalentNode ToProtoData()
     {
         return new GameMessageCore.TalentNode()
@@ -64,12 +49,7 @@ public class GrpcTalentNodeData
 public class GrpcTalentTree
 {
     public GameMessageCore.TalentType TalentType;
-    public GrpcTalentNodeData[] Nodes;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcTalentNodeData[] Nodes; 
 
     public GameMessageCore.TalentTree ToProtoData()
     {
@@ -90,12 +70,7 @@ public class GrpcTalentTree
 public class GrpcTalentData
 {
     public GrpcTalentLevel[] Levels;
-    public GrpcTalentTree[] Trees;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcTalentTree[] Trees; 
 
     public GameMessageCore.TalentData ToProtoData()
     {
@@ -127,12 +102,7 @@ public class GrpcTalentTreeUpdate
     public GameMessageCore.TalentType TalentType;
     public GrpcTalentNodeData[] AddNodes;
     public GrpcTalentNodeData[] UpdateNodes;
-    public int[] RemoveNodes;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public int[] RemoveNodes; 
 
     public GameMessageCore.TalentTreeUpdate ToProtoData()
     {

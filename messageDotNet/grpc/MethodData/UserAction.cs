@@ -13,22 +13,14 @@ public class UpdateUsedAvatarInput
     public long UserId;
     public GrpcAvatarAttribute[] UsingAvatars;
     public GrpcAttributeData[] CurProfile;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+   
 }
 [Serializable]
 public class UpdateUsedAvatarOutput
 {
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 /// <summary>
@@ -40,23 +32,14 @@ public class UpdateUserProfileInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public long UserId;
-    public GrpcAttributeData[] CurProfile;
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+    public GrpcAttributeData[] CurProfile; 
 }
 [Serializable]
 public class UpdateUserProfileOutput
 {
     public bool Success;
     public string ErrMsg;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }
 
 /// <summary>
@@ -68,11 +51,7 @@ public class GetUserDataInput
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public long UserId;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
+ 
 }
 [Serializable]
 public class GetUserDataOutput
@@ -88,10 +67,5 @@ public class GetUserDataOutput
     public GrpcVector3 Dir;
     public GrpcAvatarAttribute[] Avatars;
     public GrpcTalentData TalentData;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+ 
 }

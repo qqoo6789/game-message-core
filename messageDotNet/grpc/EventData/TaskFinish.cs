@@ -10,11 +10,5 @@ public class TaskFinishEvent
     public long MsgVersion;
     public long UserId;
     public GameMessageCore.TaskListType TaskListType;
-    public int TaskId;
-
-    public string ToJson()
-    {
-        return JsonUtility.ToJson(this);
-    }
-
+    public int TaskId; 
 }

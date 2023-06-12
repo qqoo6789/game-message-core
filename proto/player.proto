@@ -20,6 +20,7 @@ message PlayerFeature {
   int32 glove = 6; // 手套
   int32 clothes = 7; // 衣服/上衣
   int32 pants = 8; // 裤子
+  int32 skin = 9;  // 肤色
 }
 
 message PlayerBaseData {

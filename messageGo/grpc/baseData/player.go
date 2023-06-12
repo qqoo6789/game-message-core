@@ -11,6 +11,7 @@ type GrpcPlayerFeature struct {
 	Glove   int32 `json:"glove"`
 	Clothes int32 `json:"clothes"`
 	Pants   int32 `json:"pants"`
+	Skin    int32 `json:"skin"`
 }
 
 func (p *GrpcPlayerFeature) Set(feature *proto.PlayerFeature) {
@@ -25,6 +26,7 @@ func (p *GrpcPlayerFeature) Set(feature *proto.PlayerFeature) {
 	p.Glove = feature.Glove
 	p.Clothes = feature.Clothes
 	p.Pants = feature.Pants
+	p.Skin = feature.Skin
 }
 func (p *GrpcPlayerFeature) ToProtoData() *proto.PlayerFeature {
 	return &proto.PlayerFeature{
@@ -36,6 +38,7 @@ func (p *GrpcPlayerFeature) ToProtoData() *proto.PlayerFeature {
 		Glove:   p.Glove,
 		Clothes: p.Clothes,
 		Pants:   p.Pants,
+		Skin:    p.Skin,
 	}
 }
 

@@ -13,6 +13,7 @@ public class GrpcPlayerFeature
     public int Glove;
     public int Clothes;
     public int Pants;
+    public int Skin;
 
     public void Set(GameMessageCore.PlayerFeature feature)
     {
@@ -28,6 +29,8 @@ public class GrpcPlayerFeature
         Glove = feature.Glove;
         Clothes = feature.Clothes;
         Pants = feature.Pants;
+        Pants = feature.Pants;
+        Skin = feature.Skin;
     }
 
     public GameMessageCore.PlayerFeature ToProtoData()
@@ -42,6 +45,7 @@ public class GrpcPlayerFeature
             Glove = Glove,
             Clothes = Clothes,
             Pants = Pants,
+            Skin = Skin,
         };
     }
 }

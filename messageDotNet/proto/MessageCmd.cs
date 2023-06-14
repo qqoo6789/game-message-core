@@ -71,7 +71,7 @@ namespace GameMessageCore {
             "gAwSJQofQnJvYWRDYXN0RW50aXR5QWNjdW11bGF0ZVN0YXR1cxDzgAwSFAoO",
             "RW50aXR5RGlhbG9ndWUQ9YAMEiMKHUJyb2FkQ2FzdEVudGl0eUVxdWlwbWVu",
             "dFNraWxsEPeADBIlCh9Ccm9hZENhc3RFbnRpdHlDYXB0dXJlVHJhcFNraWxs",
-            "EPiADBIPCglTZWxmVGFza3MQgYAQEhkKE0Jyb2FkQ2FzdFVwZGF0ZVRhc2sQ",
+            "EPmADBIPCglTZWxmVGFza3MQgYAQEhkKE0Jyb2FkQ2FzdFVwZGF0ZVRhc2sQ",
             "g4AQEh0KF0Jyb2FkQ2FzdFVwZGF0ZVRhc2tMaXN0EISAEBIQCgpBY2NlcHRU",
             "YXNrEIWAEBIUCg5BY2NlcHRUYXNrTGlzdBCHgBASEQoLQWJhbmRvblRhc2sQ",
             "iYAQEhUKD0FiYW5kb25UYXNrTGlzdBCRgBASEAoKVGFza1Jld2FyZBCTgBAS",
@@ -315,7 +315,7 @@ namespace GameMessageCore {
     /// <summary>
     /// 捕获释放技能结果
     /// </summary>
-    [pbr::OriginalName("BroadCastEntityCaptureTrapSkill")] BroadCastEntityCaptureTrapSkill = 196728,
+    [pbr::OriginalName("BroadCastEntityCaptureTrapSkill")] BroadCastEntityCaptureTrapSkill = 196729,
     /// <summary>
     ///taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     /// </summary>

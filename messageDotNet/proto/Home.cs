@@ -25,57 +25,61 @@ namespace GameMessageCore {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cgpob21lLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUaCml0ZW0ucHJvdG8aDHZl",
-            "Y3Rvci5wcm90byLHAQoNUHJveHlTb2lsRGF0YRIKCgJpZBgBIAEoBBISCgpz",
-            "b2lsU3RhdHVzGAIgASgFEhgKEHN0YXR1c1N0YXJ0U3RhbXAYAyABKAMSFAoM",
-            "Z3Jvd2luZ1N0YWdlGAQgASgFEg8KB3NlZWRDaWQYBSABKAUSEwoLc293aW5n",
-            "VmFsaWQYBiABKAgSEQoJbWFudXJlQ2lkGAcgASgFEhMKC21hbnVyZVZhbGlk",
-            "GAggASgIEhgKEGV4dHJhV2F0ZXJpbmdOdW0YCSABKAUiWQoXQ29sbGVjdFJl",
-            "c291cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgCIAEoDjIkLmdh",
-            "bWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIm0KG1VzZUNvbGxl",
-            "Y3RSZXNvdXJjZVNraWxsSW5mbxI5Cgd0YXJnZXRzGAEgAygLMiguZ2FtZU1l",
-            "c3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEhMKC2Nvc3RJdGVt",
-            "Q2lkGAIgASgFImgKFEhvbWVTb2lsUHJvZ3Jlc3NJbmZvEgoKAmlkGAEgASgE",
-            "EkQKDHByb2dyZXNzSW5mbxgCIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xs",
-            "ZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdCLqAQocQ29sbGVjdFJlc291cmNl",
-            "T3BlcmF0ZVJlc3VsdBI8Cgp0YXJnZXRJbmZvGAEgASgLMiguZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEkYKDnByb2dyZXNzUmVz",
-            "dWx0GAIgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVBy",
-            "b2dyZXNzUmVzdWx0EkQKDWV4ZWN1dGVSZXN1bHQYAyABKAsyLS5nYW1lTWVz",
-            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlRXhlY3V0ZVJlc3VsdCJqCh1Db2xs",
-            "ZWN0UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdBIVCg10b3RhbFByb2dyZXNzGAEg",
-            "ASgFEhkKEXByb2dyZXNzRnVsbFN0YW1wGAIgASgDEhcKD3Byb2dyZXNzT3du",
-            "ZXJJZBgDIAEoAyJ8ChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVzdWx0EhEK",
-            "CWl0ZW1WYWxpZBgBIAEoCBIYChBFeHRyYVdhdGVyaW5nTnVtGAIgASgFEi8K",
-            "CGRyb3BMaXN0GAMgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5m",
-            "byKxAQoPUHJveHlBbmltYWxEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1",
-            "bmdlclByb2dyZXNzGAIgASgFEhcKD2hhcnZlc3RQcm9ncmVzcxgDIAEoBRIT",
-            "Cgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0RlYWQYBSABKAgSNgoLcHJvZHVj",
-            "dERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNvcmUuUHJveHlQcm9kdWN0RGF0",
-            "YSJ8ChNQcm94eUFuaW1hbEJhc2VEYXRhEhAKCGFuaW1hbElkGAEgASgEEgwK",
-            "BG5hbWUYAiABKAkSCwoDY2lkGAMgASgFEhQKDGZhdm9yYWJpbGl0eRgEIAEo",
-            "BRIQCghjcmVhdGVNcxgFIAEoAxIQCgh1cGRhdGVNcxgGIAEoAyKEAQoQUHJv",
-            "eHlQcm9kdWN0RGF0YRIRCglwcm9kdWN0SWQYASABKAMSDwoHaXRlbUNpZBgC",
-            "IAEoBRIPCgdpdGVtTnVtGAMgASgFEg8KB3F1YWxpdHkYBCABKAUSKgoIcG9z",
-            "aXRpb24YBSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyI8ChBBbmlt",
-            "YWxVcGRhdGVEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1bmdlclByb2dy",
-            "ZXNzGAIgASgFIlMKFEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgB",
-            "IAEoBBIPCgdmb29kQ2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgD",
-            "IAEoBSqAAQoTQ29sbGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3Vy",
-            "Y2VUeXBlVW5rbm93bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAES",
-            "EAoMSG9tZVJlc291cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAI",
-            "KmQKF0FuaW1hbFNwZWNpYWxBY3Rpb25UeXBlEiIKHkFuaW1hbFNwZWNpYWxB",
-            "Y3Rpb25UeXBlVW5rbm93bhAAEiUKIUFuaW1hbFNwZWNpYWxBY3Rpb25UeXBl",
-            "VG91Y2hEZWF0aBABYgZwcm90bzM="));
+            "Y3Rvci5wcm90byKMAQoNUHJveHlTb2lsRGF0YRIKCgJpZBgBIAEoBBISCgpz",
+            "b2lsU3RhdHVzGAIgASgFEhgKEHN0YXR1c1N0YXJ0U3RhbXAYAyABKAMSDwoH",
+            "ZmVydGlsZRgEIAEoBRIwCghzZWVkRGF0YRgFIAEoCzIeLmdhbWVNZXNzYWdl",
+            "Q29yZS5Qcm94eVNlZWREYXRhIo0BCg1Qcm94eVNlZWREYXRhEhQKDGdyb3dp",
+            "bmdTdGFnZRgBIAEoBRIPCgdzZWVkQ2lkGAIgASgFEhMKC3Nvd2luZ1ZhbGlk",
+            "GAMgASgIEhEKCW1hbnVyZUNpZBgEIAEoBRITCgttYW51cmVWYWxpZBgFIAEo",
+            "CBIYChBleHRyYVdhdGVyaW5nTnVtGAYgASgFIlkKF0NvbGxlY3RSZXNvdXJj",
+            "ZUJhc2VJbmZvEgoKAmlkGAEgASgEEjIKBHR5cGUYAiABKA4yJC5nYW1lTWVz",
+            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlVHlwZSJtChtVc2VDb2xsZWN0UmVz",
+            "b3VyY2VTa2lsbEluZm8SOQoHdGFyZ2V0cxgBIAMoCzIoLmdhbWVNZXNzYWdl",
+            "Q29yZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxITCgtjb3N0SXRlbUNpZBgC",
+            "IAEoBSJoChRIb21lU29pbFByb2dyZXNzSW5mbxIKCgJpZBgBIAEoBBJECgxw",
+            "cm9ncmVzc0luZm8YAiABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJl",
+            "c291cmNlUHJvZ3Jlc3NSZXN1bHQi6gEKHENvbGxlY3RSZXNvdXJjZU9wZXJh",
+            "dGVSZXN1bHQSPAoKdGFyZ2V0SW5mbxgBIAEoCzIoLmdhbWVNZXNzYWdlQ29y",
+            "ZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxJGCg5wcm9ncmVzc1Jlc3VsdBgC",
+            "IAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVz",
+            "c1Jlc3VsdBJECg1leGVjdXRlUmVzdWx0GAMgASgLMi0uZ2FtZU1lc3NhZ2VD",
+            "b3JlLkNvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQiagodQ29sbGVjdFJl",
+            "c291cmNlUHJvZ3Jlc3NSZXN1bHQSFQoNdG90YWxQcm9ncmVzcxgBIAEoBRIZ",
+            "ChFwcm9ncmVzc0Z1bGxTdGFtcBgCIAEoAxIXCg9wcm9ncmVzc093bmVySWQY",
+            "AyABKAMiwQEKHENvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQSLwoIZHJv",
+            "cExpc3QYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvEhMK",
+            "CWl0ZW1WYWxpZBgCIAEoCEgAEhoKEEV4dHJhV2F0ZXJpbmdOdW0YAyABKAVI",
+            "ABIVCgtzb2lsRmVydGlsZRgEIAEoBUgAEhoKEGFuaW1hbEhhcHB5VmFsdWUY",
+            "BSABKAVIAEIMCgphY3Rpb25EYXRhIrEBCg9Qcm94eUFuaW1hbERhdGESEAoI",
+            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUSFwoPaGFy",
+            "dmVzdFByb2dyZXNzGAMgASgFEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
+            "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
+            "Q29yZS5Qcm94eVByb2R1Y3REYXRhInwKE1Byb3h5QW5pbWFsQmFzZURhdGES",
+            "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
+            "FAoMZmF2b3JhYmlsaXR5GAQgASgFEhAKCGNyZWF0ZU1zGAUgASgDEhAKCHVw",
+            "ZGF0ZU1zGAYgASgDIoQBChBQcm94eVByb2R1Y3REYXRhEhEKCXByb2R1Y3RJ",
+            "ZBgBIAEoAxIPCgdpdGVtQ2lkGAIgASgFEg8KB2l0ZW1OdW0YAyABKAUSDwoH",
+            "cXVhbGl0eRgEIAEoBRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdl",
+            "Q29yZS5WZWN0b3IzIjwKEEFuaW1hbFVwZGF0ZURhdGESEAoIYW5pbWFsSWQY",
+            "ASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93bFVw",
+            "ZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUSGgoS",
+            "cmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3VyY2VU",
+            "eXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVj",
+            "dFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpBbmlt",
+            "YWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lhbEFjdGlvblR5",
+            "cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3duEAASJQohQW5p",
+            "bWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "Fertile", "SeedData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySeedData), global::GameMessageCore.ProxySeedData.Parser, new[]{ "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp", "ProgressOwnerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "ItemValid", "ExtraWateringNum", "DropList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "DropList", "ItemValid", "ExtraWateringNum", "SoilFertile", "AnimalHappyValue" }, new[]{ "ActionData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimalId", "Name", "Cid", "Favorability", "CreateMs", "UpdateMs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "ItemNum", "Quality", "Position" }, null, null, null, null),
@@ -155,12 +159,8 @@ namespace GameMessageCore {
       id_ = other.id_;
       soilStatus_ = other.soilStatus_;
       statusStartStamp_ = other.statusStartStamp_;
-      growingStage_ = other.growingStage_;
-      seedCid_ = other.seedCid_;
-      sowingValid_ = other.sowingValid_;
-      manureCid_ = other.manureCid_;
-      manureValid_ = other.manureValid_;
-      extraWateringNum_ = other.extraWateringNum_;
+      fertile_ = other.fertile_;
+      seedData_ = other.seedData_ != null ? other.seedData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -206,75 +206,27 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "growingStage" field.</summary>
-    public const int GrowingStageFieldNumber = 4;
-    private int growingStage_;
+    /// <summary>Field number for the "fertile" field.</summary>
+    public const int FertileFieldNumber = 4;
+    private int fertile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int GrowingStage {
-      get { return growingStage_; }
+    public int Fertile {
+      get { return fertile_; }
       set {
-        growingStage_ = value;
+        fertile_ = value;
       }
     }
 
-    /// <summary>Field number for the "seedCid" field.</summary>
-    public const int SeedCidFieldNumber = 5;
-    private int seedCid_;
+    /// <summary>Field number for the "seedData" field.</summary>
+    public const int SeedDataFieldNumber = 5;
+    private global::GameMessageCore.ProxySeedData seedData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SeedCid {
-      get { return seedCid_; }
+    public global::GameMessageCore.ProxySeedData SeedData {
+      get { return seedData_; }
       set {
-        seedCid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "sowingValid" field.</summary>
-    public const int SowingValidFieldNumber = 6;
-    private bool sowingValid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool SowingValid {
-      get { return sowingValid_; }
-      set {
-        sowingValid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "manureCid" field.</summary>
-    public const int ManureCidFieldNumber = 7;
-    private int manureCid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ManureCid {
-      get { return manureCid_; }
-      set {
-        manureCid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "manureValid" field.</summary>
-    public const int ManureValidFieldNumber = 8;
-    private bool manureValid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool ManureValid {
-      get { return manureValid_; }
-      set {
-        manureValid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "extraWateringNum" field.</summary>
-    public const int ExtraWateringNumFieldNumber = 9;
-    private int extraWateringNum_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ExtraWateringNum {
-      get { return extraWateringNum_; }
-      set {
-        extraWateringNum_ = value;
+        seedData_ = value;
       }
     }
 
@@ -296,12 +248,8 @@ namespace GameMessageCore {
       if (Id != other.Id) return false;
       if (SoilStatus != other.SoilStatus) return false;
       if (StatusStartStamp != other.StatusStartStamp) return false;
-      if (GrowingStage != other.GrowingStage) return false;
-      if (SeedCid != other.SeedCid) return false;
-      if (SowingValid != other.SowingValid) return false;
-      if (ManureCid != other.ManureCid) return false;
-      if (ManureValid != other.ManureValid) return false;
-      if (ExtraWateringNum != other.ExtraWateringNum) return false;
+      if (Fertile != other.Fertile) return false;
+      if (!object.Equals(SeedData, other.SeedData)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -312,12 +260,8 @@ namespace GameMessageCore {
       if (Id != 0UL) hash ^= Id.GetHashCode();
       if (SoilStatus != 0) hash ^= SoilStatus.GetHashCode();
       if (StatusStartStamp != 0L) hash ^= StatusStartStamp.GetHashCode();
-      if (GrowingStage != 0) hash ^= GrowingStage.GetHashCode();
-      if (SeedCid != 0) hash ^= SeedCid.GetHashCode();
-      if (SowingValid != false) hash ^= SowingValid.GetHashCode();
-      if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
-      if (ManureValid != false) hash ^= ManureValid.GetHashCode();
-      if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
+      if (Fertile != 0) hash ^= Fertile.GetHashCode();
+      if (seedData_ != null) hash ^= SeedData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -348,29 +292,13 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt64(StatusStartStamp);
       }
-      if (GrowingStage != 0) {
+      if (Fertile != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(GrowingStage);
+        output.WriteInt32(Fertile);
       }
-      if (SeedCid != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(SeedCid);
-      }
-      if (SowingValid != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(SowingValid);
-      }
-      if (ManureCid != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ManureCid);
-      }
-      if (ManureValid != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(ManureValid);
-      }
-      if (ExtraWateringNum != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(ExtraWateringNum);
+      if (seedData_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SeedData);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -394,29 +322,13 @@ namespace GameMessageCore {
         output.WriteRawTag(24);
         output.WriteInt64(StatusStartStamp);
       }
-      if (GrowingStage != 0) {
+      if (Fertile != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(GrowingStage);
+        output.WriteInt32(Fertile);
       }
-      if (SeedCid != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(SeedCid);
-      }
-      if (SowingValid != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(SowingValid);
-      }
-      if (ManureCid != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ManureCid);
-      }
-      if (ManureValid != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(ManureValid);
-      }
-      if (ExtraWateringNum != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(ExtraWateringNum);
+      if (seedData_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SeedData);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -437,6 +349,366 @@ namespace GameMessageCore {
       if (StatusStartStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(StatusStartStamp);
       }
+      if (Fertile != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Fertile);
+      }
+      if (seedData_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SeedData);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProxySoilData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0UL) {
+        Id = other.Id;
+      }
+      if (other.SoilStatus != 0) {
+        SoilStatus = other.SoilStatus;
+      }
+      if (other.StatusStartStamp != 0L) {
+        StatusStartStamp = other.StatusStartStamp;
+      }
+      if (other.Fertile != 0) {
+        Fertile = other.Fertile;
+      }
+      if (other.seedData_ != null) {
+        if (seedData_ == null) {
+          SeedData = new global::GameMessageCore.ProxySeedData();
+        }
+        SeedData.MergeFrom(other.SeedData);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            Fertile = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            if (seedData_ == null) {
+              SeedData = new global::GameMessageCore.ProxySeedData();
+            }
+            input.ReadMessage(SeedData);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt64();
+            break;
+          }
+          case 16: {
+            SoilStatus = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            StatusStartStamp = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            Fertile = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            if (seedData_ == null) {
+              SeedData = new global::GameMessageCore.ProxySeedData();
+            }
+            input.ReadMessage(SeedData);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ProxySeedData : pb::IMessage<ProxySeedData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProxySeedData> _parser = new pb::MessageParser<ProxySeedData>(() => new ProxySeedData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProxySeedData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySeedData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySeedData(ProxySeedData other) : this() {
+      growingStage_ = other.growingStage_;
+      seedCid_ = other.seedCid_;
+      sowingValid_ = other.sowingValid_;
+      manureCid_ = other.manureCid_;
+      manureValid_ = other.manureValid_;
+      extraWateringNum_ = other.extraWateringNum_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProxySeedData Clone() {
+      return new ProxySeedData(this);
+    }
+
+    /// <summary>Field number for the "growingStage" field.</summary>
+    public const int GrowingStageFieldNumber = 1;
+    private int growingStage_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GrowingStage {
+      get { return growingStage_; }
+      set {
+        growingStage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "seedCid" field.</summary>
+    public const int SeedCidFieldNumber = 2;
+    private int seedCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SeedCid {
+      get { return seedCid_; }
+      set {
+        seedCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sowingValid" field.</summary>
+    public const int SowingValidFieldNumber = 3;
+    private bool sowingValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SowingValid {
+      get { return sowingValid_; }
+      set {
+        sowingValid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureCid" field.</summary>
+    public const int ManureCidFieldNumber = 4;
+    private int manureCid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManureCid {
+      get { return manureCid_; }
+      set {
+        manureCid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "manureValid" field.</summary>
+    public const int ManureValidFieldNumber = 5;
+    private bool manureValid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ManureValid {
+      get { return manureValid_; }
+      set {
+        manureValid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "extraWateringNum" field.</summary>
+    public const int ExtraWateringNumFieldNumber = 6;
+    private int extraWateringNum_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ExtraWateringNum {
+      get { return extraWateringNum_; }
+      set {
+        extraWateringNum_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProxySeedData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProxySeedData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GrowingStage != other.GrowingStage) return false;
+      if (SeedCid != other.SeedCid) return false;
+      if (SowingValid != other.SowingValid) return false;
+      if (ManureCid != other.ManureCid) return false;
+      if (ManureValid != other.ManureValid) return false;
+      if (ExtraWateringNum != other.ExtraWateringNum) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GrowingStage != 0) hash ^= GrowingStage.GetHashCode();
+      if (SeedCid != 0) hash ^= SeedCid.GetHashCode();
+      if (SowingValid != false) hash ^= SowingValid.GetHashCode();
+      if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
+      if (ManureValid != false) hash ^= ManureValid.GetHashCode();
+      if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (GrowingStage != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(ManureValid);
+      }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ExtraWateringNum);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (GrowingStage != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GrowingStage);
+      }
+      if (SeedCid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SeedCid);
+      }
+      if (SowingValid != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(SowingValid);
+      }
+      if (ManureCid != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(ManureCid);
+      }
+      if (ManureValid != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(ManureValid);
+      }
+      if (ExtraWateringNum != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(ExtraWateringNum);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
       if (GrowingStage != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(GrowingStage);
       }
@@ -463,18 +735,9 @@ namespace GameMessageCore {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProxySoilData other) {
+    public void MergeFrom(ProxySeedData other) {
       if (other == null) {
         return;
-      }
-      if (other.Id != 0UL) {
-        Id = other.Id;
-      }
-      if (other.SoilStatus != 0) {
-        SoilStatus = other.SoilStatus;
-      }
-      if (other.StatusStartStamp != 0L) {
-        StatusStartStamp = other.StatusStartStamp;
       }
       if (other.GrowingStage != 0) {
         GrowingStage = other.GrowingStage;
@@ -510,38 +773,26 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            SoilStatus = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            StatusStartStamp = input.ReadInt64();
-            break;
-          }
-          case 32: {
             GrowingStage = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 16: {
             SeedCid = input.ReadInt32();
             break;
           }
-          case 48: {
+          case 24: {
             SowingValid = input.ReadBool();
             break;
           }
-          case 56: {
+          case 32: {
             ManureCid = input.ReadInt32();
             break;
           }
-          case 64: {
+          case 40: {
             ManureValid = input.ReadBool();
             break;
           }
-          case 72: {
+          case 48: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }
@@ -561,38 +812,26 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            SoilStatus = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            StatusStartStamp = input.ReadInt64();
-            break;
-          }
-          case 32: {
             GrowingStage = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 16: {
             SeedCid = input.ReadInt32();
             break;
           }
-          case 48: {
+          case 24: {
             SowingValid = input.ReadBool();
             break;
           }
-          case 56: {
+          case 32: {
             ManureCid = input.ReadInt32();
             break;
           }
-          case 64: {
+          case 40: {
             ManureValid = input.ReadBool();
             break;
           }
-          case 72: {
+          case 48: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }
@@ -617,7 +856,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -846,7 +1085,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[2]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1067,7 +1306,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[3]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1305,7 +1544,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[4]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1601,7 +1840,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[5]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1873,7 +2112,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[6]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1893,9 +2132,22 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CollectResourceExecuteResult(CollectResourceExecuteResult other) : this() {
-      itemValid_ = other.itemValid_;
-      extraWateringNum_ = other.extraWateringNum_;
       dropList_ = other.dropList_.Clone();
+      switch (other.ActionDataCase) {
+        case ActionDataOneofCase.ItemValid:
+          ItemValid = other.ItemValid;
+          break;
+        case ActionDataOneofCase.ExtraWateringNum:
+          ExtraWateringNum = other.ExtraWateringNum;
+          break;
+        case ActionDataOneofCase.SoilFertile:
+          SoilFertile = other.SoilFertile;
+          break;
+        case ActionDataOneofCase.AnimalHappyValue:
+          AnimalHappyValue = other.AnimalHappyValue;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1905,45 +2157,98 @@ namespace GameMessageCore {
       return new CollectResourceExecuteResult(this);
     }
 
+    /// <summary>Field number for the "dropList" field.</summary>
+    public const int DropListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::GameMessageCore.ItemBaseInfo> _repeated_dropList_codec
+        = pb::FieldCodec.ForMessage(10, global::GameMessageCore.ItemBaseInfo.Parser);
+    private readonly pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> dropList_ = new pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> DropList {
+      get { return dropList_; }
+    }
+
     /// <summary>Field number for the "itemValid" field.</summary>
-    public const int ItemValidFieldNumber = 1;
-    private bool itemValid_;
+    public const int ItemValidFieldNumber = 2;
     /// <summary>
     ///道具有效  在播种和施肥时候专精不够时候 会返回false
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ItemValid {
-      get { return itemValid_; }
+      get { return actionDataCase_ == ActionDataOneofCase.ItemValid ? (bool) actionData_ : false; }
       set {
-        itemValid_ = value;
+        actionData_ = value;
+        actionDataCase_ = ActionDataOneofCase.ItemValid;
       }
     }
 
     /// <summary>Field number for the "ExtraWateringNum" field.</summary>
-    public const int ExtraWateringNumFieldNumber = 2;
-    private int extraWateringNum_;
+    public const int ExtraWateringNumFieldNumber = 3;
     /// <summary>
     ///额外浇水次数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ExtraWateringNum {
-      get { return extraWateringNum_; }
+      get { return actionDataCase_ == ActionDataOneofCase.ExtraWateringNum ? (int) actionData_ : 0; }
       set {
-        extraWateringNum_ = value;
+        actionData_ = value;
+        actionDataCase_ = ActionDataOneofCase.ExtraWateringNum;
       }
     }
 
-    /// <summary>Field number for the "dropList" field.</summary>
-    public const int DropListFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::GameMessageCore.ItemBaseInfo> _repeated_dropList_codec
-        = pb::FieldCodec.ForMessage(26, global::GameMessageCore.ItemBaseInfo.Parser);
-    private readonly pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> dropList_ = new pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo>();
+    /// <summary>Field number for the "soilFertile" field.</summary>
+    public const int SoilFertileFieldNumber = 4;
+    /// <summary>
+    ///土地肥沃度
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::GameMessageCore.ItemBaseInfo> DropList {
-      get { return dropList_; }
+    public int SoilFertile {
+      get { return actionDataCase_ == ActionDataOneofCase.SoilFertile ? (int) actionData_ : 0; }
+      set {
+        actionData_ = value;
+        actionDataCase_ = ActionDataOneofCase.SoilFertile;
+      }
+    }
+
+    /// <summary>Field number for the "animalHappyValue" field.</summary>
+    public const int AnimalHappyValueFieldNumber = 5;
+    /// <summary>
+    ///动物开心值
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int AnimalHappyValue {
+      get { return actionDataCase_ == ActionDataOneofCase.AnimalHappyValue ? (int) actionData_ : 0; }
+      set {
+        actionData_ = value;
+        actionDataCase_ = ActionDataOneofCase.AnimalHappyValue;
+      }
+    }
+
+    private object actionData_;
+    /// <summary>Enum of possible cases for the "actionData" oneof.</summary>
+    public enum ActionDataOneofCase {
+      None = 0,
+      ItemValid = 2,
+      ExtraWateringNum = 3,
+      SoilFertile = 4,
+      AnimalHappyValue = 5,
+    }
+    private ActionDataOneofCase actionDataCase_ = ActionDataOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ActionDataOneofCase ActionDataCase {
+      get { return actionDataCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearActionData() {
+      actionDataCase_ = ActionDataOneofCase.None;
+      actionData_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1961,9 +2266,12 @@ namespace GameMessageCore {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!dropList_.Equals(other.dropList_)) return false;
       if (ItemValid != other.ItemValid) return false;
       if (ExtraWateringNum != other.ExtraWateringNum) return false;
-      if(!dropList_.Equals(other.dropList_)) return false;
+      if (SoilFertile != other.SoilFertile) return false;
+      if (AnimalHappyValue != other.AnimalHappyValue) return false;
+      if (ActionDataCase != other.ActionDataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1971,9 +2279,12 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ItemValid != false) hash ^= ItemValid.GetHashCode();
-      if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
       hash ^= dropList_.GetHashCode();
+      if (actionDataCase_ == ActionDataOneofCase.ItemValid) hash ^= ItemValid.GetHashCode();
+      if (actionDataCase_ == ActionDataOneofCase.ExtraWateringNum) hash ^= ExtraWateringNum.GetHashCode();
+      if (actionDataCase_ == ActionDataOneofCase.SoilFertile) hash ^= SoilFertile.GetHashCode();
+      if (actionDataCase_ == ActionDataOneofCase.AnimalHappyValue) hash ^= AnimalHappyValue.GetHashCode();
+      hash ^= (int) actionDataCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1992,15 +2303,23 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ItemValid != false) {
-        output.WriteRawTag(8);
+      dropList_.WriteTo(output, _repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.ItemValid) {
+        output.WriteRawTag(16);
         output.WriteBool(ItemValid);
       }
-      if (ExtraWateringNum != 0) {
-        output.WriteRawTag(16);
+      if (actionDataCase_ == ActionDataOneofCase.ExtraWateringNum) {
+        output.WriteRawTag(24);
         output.WriteInt32(ExtraWateringNum);
       }
-      dropList_.WriteTo(output, _repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.SoilFertile) {
+        output.WriteRawTag(32);
+        output.WriteInt32(SoilFertile);
+      }
+      if (actionDataCase_ == ActionDataOneofCase.AnimalHappyValue) {
+        output.WriteRawTag(40);
+        output.WriteInt32(AnimalHappyValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2011,15 +2330,23 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ItemValid != false) {
-        output.WriteRawTag(8);
+      dropList_.WriteTo(ref output, _repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.ItemValid) {
+        output.WriteRawTag(16);
         output.WriteBool(ItemValid);
       }
-      if (ExtraWateringNum != 0) {
-        output.WriteRawTag(16);
+      if (actionDataCase_ == ActionDataOneofCase.ExtraWateringNum) {
+        output.WriteRawTag(24);
         output.WriteInt32(ExtraWateringNum);
       }
-      dropList_.WriteTo(ref output, _repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.SoilFertile) {
+        output.WriteRawTag(32);
+        output.WriteInt32(SoilFertile);
+      }
+      if (actionDataCase_ == ActionDataOneofCase.AnimalHappyValue) {
+        output.WriteRawTag(40);
+        output.WriteInt32(AnimalHappyValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2030,13 +2357,19 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ItemValid != false) {
+      size += dropList_.CalculateSize(_repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.ItemValid) {
         size += 1 + 1;
       }
-      if (ExtraWateringNum != 0) {
+      if (actionDataCase_ == ActionDataOneofCase.ExtraWateringNum) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExtraWateringNum);
       }
-      size += dropList_.CalculateSize(_repeated_dropList_codec);
+      if (actionDataCase_ == ActionDataOneofCase.SoilFertile) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SoilFertile);
+      }
+      if (actionDataCase_ == ActionDataOneofCase.AnimalHappyValue) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AnimalHappyValue);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2049,13 +2382,22 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.ItemValid != false) {
-        ItemValid = other.ItemValid;
-      }
-      if (other.ExtraWateringNum != 0) {
-        ExtraWateringNum = other.ExtraWateringNum;
-      }
       dropList_.Add(other.dropList_);
+      switch (other.ActionDataCase) {
+        case ActionDataOneofCase.ItemValid:
+          ItemValid = other.ItemValid;
+          break;
+        case ActionDataOneofCase.ExtraWateringNum:
+          ExtraWateringNum = other.ExtraWateringNum;
+          break;
+        case ActionDataOneofCase.SoilFertile:
+          SoilFertile = other.SoilFertile;
+          break;
+        case ActionDataOneofCase.AnimalHappyValue:
+          AnimalHappyValue = other.AnimalHappyValue;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2071,16 +2413,24 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ItemValid = input.ReadBool();
+          case 10: {
+            dropList_.AddEntriesFrom(input, _repeated_dropList_codec);
             break;
           }
           case 16: {
+            ItemValid = input.ReadBool();
+            break;
+          }
+          case 24: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }
-          case 26: {
-            dropList_.AddEntriesFrom(input, _repeated_dropList_codec);
+          case 32: {
+            SoilFertile = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            AnimalHappyValue = input.ReadInt32();
             break;
           }
         }
@@ -2098,16 +2448,24 @@ namespace GameMessageCore {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            ItemValid = input.ReadBool();
+          case 10: {
+            dropList_.AddEntriesFrom(ref input, _repeated_dropList_codec);
             break;
           }
           case 16: {
+            ItemValid = input.ReadBool();
+            break;
+          }
+          case 24: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }
-          case 26: {
-            dropList_.AddEntriesFrom(ref input, _repeated_dropList_codec);
+          case 32: {
+            SoilFertile = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            AnimalHappyValue = input.ReadInt32();
             break;
           }
         }
@@ -2131,7 +2489,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[7]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2514,7 +2872,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[8]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2888,7 +3246,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[9]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3237,7 +3595,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[10]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3466,7 +3824,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[11]; }
+      get { return global::GameMessageCore.HomeReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

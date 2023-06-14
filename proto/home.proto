@@ -31,12 +31,18 @@ message ProxySoilData
     uint64 id = 1;
     int32 soilStatus = 2;
     int64 statusStartStamp = 3;
-    int32 growingStage = 4;
-    int32 seedCid = 5;
-    bool sowingValid = 6;
-    int32 manureCid = 7;
-    bool manureValid = 8;
-    int32 extraWateringNum = 9;
+    int32 fertile = 4;
+    ProxySeedData seedData = 5;
+}
+
+message ProxySeedData
+{
+    int32 growingStage = 1;
+    int32 seedCid = 2;
+    bool sowingValid = 3;
+    int32 manureCid = 4;
+    bool manureValid = 5;
+    int32 extraWateringNum = 6;
 }
 
 message CollectResourceBaseInfo{
@@ -78,11 +84,18 @@ message CollectResourceProgressResult
 
 message CollectResourceExecuteResult
 {
-    //道具有效  在播种和施肥时候专精不够时候 会返回false
-    bool itemValid=1;
-    //额外浇水次数
-    int32 ExtraWateringNum = 2;
-    repeated ItemBaseInfo dropList = 3;
+    repeated ItemBaseInfo dropList = 1;
+    oneof actionData
+    {
+      //道具有效  在播种和施肥时候专精不够时候 会返回false
+      bool itemValid = 2;
+      //额外浇水次数
+      int32 ExtraWateringNum = 3;
+      //土地肥沃度
+      int32 soilFertile = 4;
+      //动物开心值
+      int32 animalHappyValue = 5;
+    }
 }
 
 message ProxyAnimalData

@@ -484,11 +484,13 @@ message GetHomeDataReq {
   int64         reqDataUserId = 2;
 }
 message GetHomeDataResp{
-  RespTitle     resTitle          = 1;
-  int64         ownerUserId       = 2;
-  string        ownerName         = 3;
-  int32         soilDataAllCount  = 4;
-  string        animalBowlArr     = 5;
+  RespTitle     resTitle              = 1;
+  int64         ownerUserId           = 2;
+  string        ownerName             = 3;
+  int32         soilDataAllCount      = 4;
+  string        animalBowlArr         = 5;
+  int32         UsedSoilFertileValue  = 6;
+  int32         UsedAnimalHappyValue  = 7;
 }
 message BroadCastHomeDataInitBatchResp{
   RespTitle               resTitle                = 1;

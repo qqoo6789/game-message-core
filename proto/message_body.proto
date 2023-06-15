@@ -157,6 +157,17 @@ message BroadCastEntityCaptureDataUpdateResp{
   CaptureFailReason       failReason      = 7;
 }
 
+message BroadCastEntityCaptureTrapSkillResp{
+  RespTitle               resTitle        = 1;
+  int64                   entityId        = 2;
+  Vector3                 position        = 3;
+  int64                   timedExplosionAt= 4; // 定时爆炸时间戳
+  bool                    isStart        =5; // 开始或结束
+
+
+}
+
+
 
 // 占地相关
 message QueryLandsReq{

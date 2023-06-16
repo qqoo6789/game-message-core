@@ -106,6 +106,7 @@ message ProxyAnimalData
   bool isComforted = 4;
   bool isDead = 5;
   ProxyProductData productData = 6;
+  int32 happiness = 7;
 }
 
 message ProxyAnimalBaseData

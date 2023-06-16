@@ -50,25 +50,26 @@ namespace GameMessageCore {
             "cExpc3QYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvEhMK",
             "CWl0ZW1WYWxpZBgCIAEoCEgAEhoKEEV4dHJhV2F0ZXJpbmdOdW0YAyABKAVI",
             "ABIVCgtzb2lsRmVydGlsZRgEIAEoBUgAEhoKEGFuaW1hbEhhcHB5VmFsdWUY",
-            "BSABKAVIAEIMCgphY3Rpb25EYXRhIrEBCg9Qcm94eUFuaW1hbERhdGESEAoI",
+            "BSABKAVIAEIMCgphY3Rpb25EYXRhIsQBCg9Qcm94eUFuaW1hbERhdGESEAoI",
             "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAISFwoPaGFy",
             "dmVzdFByb2dyZXNzGAMgASgCEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
             "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
-            "Q29yZS5Qcm94eVByb2R1Y3REYXRhInwKE1Byb3h5QW5pbWFsQmFzZURhdGES",
-            "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
-            "FAoMZmF2b3JhYmlsaXR5GAQgASgFEhAKCGNyZWF0ZU1zGAUgASgDEhAKCHVw",
-            "ZGF0ZU1zGAYgASgDIoQBChBQcm94eVByb2R1Y3REYXRhEhEKCXByb2R1Y3RJ",
-            "ZBgBIAEoAxIPCgdpdGVtQ2lkGAIgASgFEg8KB2l0ZW1OdW0YAyABKAUSDwoH",
-            "cXVhbGl0eRgEIAEoBRIqCghwb3NpdGlvbhgFIAEoCzIYLmdhbWVNZXNzYWdl",
-            "Q29yZS5WZWN0b3IzIjwKEEFuaW1hbFVwZGF0ZURhdGESEAoIYW5pbWFsSWQY",
-            "ASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUiUwoUQW5pbWFsQm93bFVw",
-            "ZGF0ZURhdGESDgoGYm93bElkGAEgASgEEg8KB2Zvb2RDaWQYAiABKAUSGgoS",
-            "cmVtYWluRm9vZENhcGFjaXR5GAMgASgFKoABChNDb2xsZWN0UmVzb3VyY2VU",
-            "eXBlEh4KGkNvbGxlY3RSZXNvdXJjZVR5cGVVbmtub3duEAASGwoXQ29sbGVj",
-            "dFJlc291cmNlVHlwZVNvaWwQARIQCgxIb21lUmVzb3VyY2UQAhIOCgpBbmlt",
-            "YWxCb3dsEAQSCgoGQW5pbWFsEAgqZAoXQW5pbWFsU3BlY2lhbEFjdGlvblR5",
-            "cGUSIgoeQW5pbWFsU3BlY2lhbEFjdGlvblR5cGVVbmtub3duEAASJQohQW5p",
-            "bWFsU3BlY2lhbEFjdGlvblR5cGVUb3VjaERlYXRoEAFiBnByb3RvMw=="));
+            "Q29yZS5Qcm94eVByb2R1Y3REYXRhEhEKCWhhcHBpbmVzcxgHIAEoBSJ8ChNQ",
+            "cm94eUFuaW1hbEJhc2VEYXRhEhAKCGFuaW1hbElkGAEgASgEEgwKBG5hbWUY",
+            "AiABKAkSCwoDY2lkGAMgASgFEhQKDGZhdm9yYWJpbGl0eRgEIAEoBRIQCghj",
+            "cmVhdGVNcxgFIAEoAxIQCgh1cGRhdGVNcxgGIAEoAyKEAQoQUHJveHlQcm9k",
+            "dWN0RGF0YRIRCglwcm9kdWN0SWQYASABKAMSDwoHaXRlbUNpZBgCIAEoBRIP",
+            "CgdpdGVtTnVtGAMgASgFEg8KB3F1YWxpdHkYBCABKAUSKgoIcG9zaXRpb24Y",
+            "BSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyI8ChBBbmltYWxVcGRh",
+            "dGVEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIg",
+            "ASgFIlMKFEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgBIAEoBBIP",
+            "Cgdmb29kQ2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSqA",
+            "AQoTQ29sbGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBl",
+            "VW5rbm93bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9t",
+            "ZVJlc291cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAIKmQKF0Fu",
+            "aW1hbFNwZWNpYWxBY3Rpb25UeXBlEiIKHkFuaW1hbFNwZWNpYWxBY3Rpb25U",
+            "eXBlVW5rbm93bhAAEiUKIUFuaW1hbFNwZWNpYWxBY3Rpb25UeXBlVG91Y2hE",
+            "ZWF0aBABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -80,7 +81,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp", "ProgressOwnerId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "DropList", "ItemValid", "ExtraWateringNum", "SoilFertile", "AnimalHappyValue" }, new[]{ "ActionData" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData", "Happiness" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimalId", "Name", "Cid", "Favorability", "CreateMs", "UpdateMs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyProductData), global::GameMessageCore.ProxyProductData.Parser, new[]{ "ProductId", "ItemCid", "ItemNum", "Quality", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.AnimalUpdateData), global::GameMessageCore.AnimalUpdateData.Parser, new[]{ "AnimalId", "HungerProgress" }, null, null, null, null),
@@ -2515,6 +2516,7 @@ namespace GameMessageCore {
       isComforted_ = other.isComforted_;
       isDead_ = other.isDead_;
       productData_ = other.productData_ != null ? other.productData_.Clone() : null;
+      happiness_ = other.happiness_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2596,6 +2598,18 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "happiness" field.</summary>
+    public const int HappinessFieldNumber = 7;
+    private int happiness_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Happiness {
+      get { return happiness_; }
+      set {
+        happiness_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2617,6 +2631,7 @@ namespace GameMessageCore {
       if (IsComforted != other.IsComforted) return false;
       if (IsDead != other.IsDead) return false;
       if (!object.Equals(ProductData, other.ProductData)) return false;
+      if (Happiness != other.Happiness) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2630,6 +2645,7 @@ namespace GameMessageCore {
       if (IsComforted != false) hash ^= IsComforted.GetHashCode();
       if (IsDead != false) hash ^= IsDead.GetHashCode();
       if (productData_ != null) hash ^= ProductData.GetHashCode();
+      if (Happiness != 0) hash ^= Happiness.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2672,6 +2688,10 @@ namespace GameMessageCore {
         output.WriteRawTag(50);
         output.WriteMessage(ProductData);
       }
+      if (Happiness != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(Happiness);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2706,6 +2726,10 @@ namespace GameMessageCore {
         output.WriteRawTag(50);
         output.WriteMessage(ProductData);
       }
+      if (Happiness != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(Happiness);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2733,6 +2757,9 @@ namespace GameMessageCore {
       }
       if (productData_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductData);
+      }
+      if (Happiness != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Happiness);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2766,6 +2793,9 @@ namespace GameMessageCore {
           ProductData = new global::GameMessageCore.ProxyProductData();
         }
         ProductData.MergeFrom(other.ProductData);
+      }
+      if (other.Happiness != 0) {
+        Happiness = other.Happiness;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2809,6 +2839,10 @@ namespace GameMessageCore {
             input.ReadMessage(ProductData);
             break;
           }
+          case 56: {
+            Happiness = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2849,6 +2883,10 @@ namespace GameMessageCore {
               ProductData = new global::GameMessageCore.ProxyProductData();
             }
             input.ReadMessage(ProductData);
+            break;
+          }
+          case 56: {
+            Happiness = input.ReadInt32();
             break;
           }
         }

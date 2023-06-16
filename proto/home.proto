@@ -101,8 +101,8 @@ message CollectResourceExecuteResult
 message ProxyAnimalData
 {
   uint64 animalId = 1;
-  int32 hungerProgress  = 2;
-  int32 harvestProgress = 3;
+  float hungerProgress  = 2;
+  float harvestProgress = 3;
   bool isComforted = 4;
   bool isDead = 5;
   ProxyProductData productData = 6;

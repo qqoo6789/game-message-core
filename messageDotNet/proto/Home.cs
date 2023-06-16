@@ -51,8 +51,8 @@ namespace GameMessageCore {
             "CWl0ZW1WYWxpZBgCIAEoCEgAEhoKEEV4dHJhV2F0ZXJpbmdOdW0YAyABKAVI",
             "ABIVCgtzb2lsRmVydGlsZRgEIAEoBUgAEhoKEGFuaW1hbEhhcHB5VmFsdWUY",
             "BSABKAVIAEIMCgphY3Rpb25EYXRhIrEBCg9Qcm94eUFuaW1hbERhdGESEAoI",
-            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAUSFwoPaGFy",
-            "dmVzdFByb2dyZXNzGAMgASgFEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
+            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAISFwoPaGFy",
+            "dmVzdFByb2dyZXNzGAMgASgCEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
             "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
             "Q29yZS5Qcm94eVByb2R1Y3REYXRhInwKE1Byb3h5QW5pbWFsQmFzZURhdGES",
             "EAoIYW5pbWFsSWQYASABKAQSDAoEbmFtZRgCIAEoCRILCgNjaWQYAyABKAUS",
@@ -2538,10 +2538,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "hungerProgress" field.</summary>
     public const int HungerProgressFieldNumber = 2;
-    private int hungerProgress_;
+    private float hungerProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HungerProgress {
+    public float HungerProgress {
       get { return hungerProgress_; }
       set {
         hungerProgress_ = value;
@@ -2550,10 +2550,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "harvestProgress" field.</summary>
     public const int HarvestProgressFieldNumber = 3;
-    private int harvestProgress_;
+    private float harvestProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HarvestProgress {
+    public float HarvestProgress {
       get { return harvestProgress_; }
       set {
         harvestProgress_ = value;
@@ -2612,8 +2612,8 @@ namespace GameMessageCore {
         return true;
       }
       if (AnimalId != other.AnimalId) return false;
-      if (HungerProgress != other.HungerProgress) return false;
-      if (HarvestProgress != other.HarvestProgress) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(HungerProgress, other.HungerProgress)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(HarvestProgress, other.HarvestProgress)) return false;
       if (IsComforted != other.IsComforted) return false;
       if (IsDead != other.IsDead) return false;
       if (!object.Equals(ProductData, other.ProductData)) return false;
@@ -2625,8 +2625,8 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (AnimalId != 0UL) hash ^= AnimalId.GetHashCode();
-      if (HungerProgress != 0) hash ^= HungerProgress.GetHashCode();
-      if (HarvestProgress != 0) hash ^= HarvestProgress.GetHashCode();
+      if (HungerProgress != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(HungerProgress);
+      if (HarvestProgress != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(HarvestProgress);
       if (IsComforted != false) hash ^= IsComforted.GetHashCode();
       if (IsDead != false) hash ^= IsDead.GetHashCode();
       if (productData_ != null) hash ^= ProductData.GetHashCode();
@@ -2652,13 +2652,13 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteUInt64(AnimalId);
       }
-      if (HungerProgress != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(HungerProgress);
+      if (HungerProgress != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(HungerProgress);
       }
-      if (HarvestProgress != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HarvestProgress);
+      if (HarvestProgress != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(HarvestProgress);
       }
       if (IsComforted != false) {
         output.WriteRawTag(32);
@@ -2686,13 +2686,13 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteUInt64(AnimalId);
       }
-      if (HungerProgress != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(HungerProgress);
+      if (HungerProgress != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(HungerProgress);
       }
-      if (HarvestProgress != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HarvestProgress);
+      if (HarvestProgress != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(HarvestProgress);
       }
       if (IsComforted != false) {
         output.WriteRawTag(32);
@@ -2719,11 +2719,11 @@ namespace GameMessageCore {
       if (AnimalId != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AnimalId);
       }
-      if (HungerProgress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HungerProgress);
+      if (HungerProgress != 0F) {
+        size += 1 + 4;
       }
-      if (HarvestProgress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HarvestProgress);
+      if (HarvestProgress != 0F) {
+        size += 1 + 4;
       }
       if (IsComforted != false) {
         size += 1 + 1;
@@ -2749,10 +2749,10 @@ namespace GameMessageCore {
       if (other.AnimalId != 0UL) {
         AnimalId = other.AnimalId;
       }
-      if (other.HungerProgress != 0) {
+      if (other.HungerProgress != 0F) {
         HungerProgress = other.HungerProgress;
       }
-      if (other.HarvestProgress != 0) {
+      if (other.HarvestProgress != 0F) {
         HarvestProgress = other.HarvestProgress;
       }
       if (other.IsComforted != false) {
@@ -2786,12 +2786,12 @@ namespace GameMessageCore {
             AnimalId = input.ReadUInt64();
             break;
           }
-          case 16: {
-            HungerProgress = input.ReadInt32();
+          case 21: {
+            HungerProgress = input.ReadFloat();
             break;
           }
-          case 24: {
-            HarvestProgress = input.ReadInt32();
+          case 29: {
+            HarvestProgress = input.ReadFloat();
             break;
           }
           case 32: {
@@ -2828,12 +2828,12 @@ namespace GameMessageCore {
             AnimalId = input.ReadUInt64();
             break;
           }
-          case 16: {
-            HungerProgress = input.ReadInt32();
+          case 21: {
+            HungerProgress = input.ReadFloat();
             break;
           }
-          case 24: {
-            HarvestProgress = input.ReadInt32();
+          case 29: {
+            HarvestProgress = input.ReadFloat();
             break;
           }
           case 32: {

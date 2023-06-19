@@ -24,23 +24,23 @@ namespace GameMessageCore {
     static PlayerReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgxwbGF5ZXIucHJvdG8SD2dhbWVNZXNzYWdlQ29yZSKHAQoNUGxheWVyRmVh",
+            "CgxwbGF5ZXIucHJvdG8SD2dhbWVNZXNzYWdlQ29yZSKVAQoNUGxheWVyRmVh",
             "dHVyZRIPCgdleWVicm93GAEgASgFEg0KBW1vdXRoGAIgASgFEgsKA2V5ZRgD",
             "IAEoBRIMCgRmYWNlGAQgASgFEgwKBGhhaXIYBSABKAUSDQoFZ2xvdmUYBiAB",
-            "KAUSDwoHY2xvdGhlcxgHIAEoBRINCgVwYW50cxgIIAEoBSKjAQoOUGxheWVy",
-            "QmFzZURhdGESDwoHdXNlcl9pZBgBIAEoAxIMCgRuYW1lGAIgASgJEg8KB3Jv",
-            "bGVfaWQYAyABKAUSDgoGZ2VuZGVyGAUgASgJEhEKCXJvbGVfaWNvbhgGIAEo",
-            "CRIvCgdmZWF0dXJlGAcgASgLMh4uZ2FtZU1lc3NhZ2VDb3JlLlBsYXllckZl",
-            "YXR1cmUSDQoFZ3VpZGUYCCABKAgqaQoSUGxheWVyUmVzcGF3blBvaW50EhsK",
-            "F1BsYXllclJlc3Bhd25Qb2ludExjb2FsEAASGgoWUGxheWVyUmVzcGF3blBv",
-            "aW50Q2l0eRABEhoKFlBsYXllclJlc3Bhd25Qb2ludEFyZWEQAipcCgtUaWNr",
-            "T3V0VHlwZRIWChJUaWNrT3V0VHlwZVVua25vd24QABIQCgxTZXJ2aWNlQ2xv",
-            "c2UQARIQCgxSZXBlYXRTaW5nSW4QAhIRCg1JbGxlZ2FsQXRrU3BkEANiBnBy",
-            "b3RvMw=="));
+            "KAUSDwoHY2xvdGhlcxgHIAEoBRINCgVwYW50cxgIIAEoBRIMCgRza2luGAkg",
+            "ASgFIqMBCg5QbGF5ZXJCYXNlRGF0YRIPCgd1c2VyX2lkGAEgASgDEgwKBG5h",
+            "bWUYAiABKAkSDwoHcm9sZV9pZBgDIAEoBRIOCgZnZW5kZXIYBSABKAkSEQoJ",
+            "cm9sZV9pY29uGAYgASgJEi8KB2ZlYXR1cmUYByABKAsyHi5nYW1lTWVzc2Fn",
+            "ZUNvcmUuUGxheWVyRmVhdHVyZRINCgVndWlkZRgIIAEoCCppChJQbGF5ZXJS",
+            "ZXNwYXduUG9pbnQSGwoXUGxheWVyUmVzcGF3blBvaW50TGNvYWwQABIaChZQ",
+            "bGF5ZXJSZXNwYXduUG9pbnRDaXR5EAESGgoWUGxheWVyUmVzcGF3blBvaW50",
+            "QXJlYRACKlwKC1RpY2tPdXRUeXBlEhYKElRpY2tPdXRUeXBlVW5rbm93bhAA",
+            "EhAKDFNlcnZpY2VDbG9zZRABEhAKDFJlcGVhdFNpbmdJbhACEhEKDUlsbGVn",
+            "YWxBdGtTcGQQA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.PlayerRespawnPoint), typeof(global::GameMessageCore.TickOutType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerFeature), global::GameMessageCore.PlayerFeature.Parser, new[]{ "Eyebrow", "Mouth", "Eye", "Face", "Hair", "Glove", "Clothes", "Pants" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerFeature), global::GameMessageCore.PlayerFeature.Parser, new[]{ "Eyebrow", "Mouth", "Eye", "Face", "Hair", "Glove", "Clothes", "Pants", "Skin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.PlayerBaseData), global::GameMessageCore.PlayerBaseData.Parser, new[]{ "UserId", "Name", "RoleId", "Gender", "RoleIcon", "Feature", "Guide" }, null, null, null, null)
           }));
     }
@@ -118,6 +118,7 @@ namespace GameMessageCore {
       glove_ = other.glove_;
       clothes_ = other.clothes_;
       pants_ = other.pants_;
+      skin_ = other.skin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -247,6 +248,21 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "skin" field.</summary>
+    public const int SkinFieldNumber = 9;
+    private int skin_;
+    /// <summary>
+    /// 肤色
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Skin {
+      get { return skin_; }
+      set {
+        skin_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -270,6 +286,7 @@ namespace GameMessageCore {
       if (Glove != other.Glove) return false;
       if (Clothes != other.Clothes) return false;
       if (Pants != other.Pants) return false;
+      if (Skin != other.Skin) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -285,6 +302,7 @@ namespace GameMessageCore {
       if (Glove != 0) hash ^= Glove.GetHashCode();
       if (Clothes != 0) hash ^= Clothes.GetHashCode();
       if (Pants != 0) hash ^= Pants.GetHashCode();
+      if (Skin != 0) hash ^= Skin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -335,6 +353,10 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteInt32(Pants);
       }
+      if (Skin != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(Skin);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -377,6 +399,10 @@ namespace GameMessageCore {
         output.WriteRawTag(64);
         output.WriteInt32(Pants);
       }
+      if (Skin != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(Skin);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -410,6 +436,9 @@ namespace GameMessageCore {
       }
       if (Pants != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Pants);
+      }
+      if (Skin != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Skin);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -446,6 +475,9 @@ namespace GameMessageCore {
       }
       if (other.Pants != 0) {
         Pants = other.Pants;
+      }
+      if (other.Skin != 0) {
+        Skin = other.Skin;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -494,6 +526,10 @@ namespace GameMessageCore {
             Pants = input.ReadInt32();
             break;
           }
+          case 72: {
+            Skin = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -539,6 +575,10 @@ namespace GameMessageCore {
           }
           case 64: {
             Pants = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            Skin = input.ReadInt32();
             break;
           }
         }

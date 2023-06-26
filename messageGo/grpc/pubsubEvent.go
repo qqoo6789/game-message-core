@@ -16,6 +16,9 @@ const (
 type SubscriptionEvent string
 
 const (
+	// 动态读取配置数据
+	SubscriptionEventReloadConfigData SubscriptionEvent = "EventTopicReloadConfigData"
+
 	// 服务注册｜注销｜迁移
 	SubscriptionEventServiceUnregister SubscriptionEvent = "EventTopicServiceUnregister"
 

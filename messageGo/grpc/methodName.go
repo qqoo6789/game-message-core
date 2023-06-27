@@ -1,5 +1,9 @@
 package grpc
 
+const (
+	RpcInvokeBroadSystemMessage string = "RpcInvokeBroadSystemMessage"
+)
+
 type ManagerServiceAction string
 
 const (

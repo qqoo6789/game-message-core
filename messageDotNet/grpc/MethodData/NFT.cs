@@ -6,7 +6,7 @@ public class GrpcNftBaseData
 {
     public string NftId;
     public int ItemCid;
-    public int Num;    
+    public int Num;
 }
 
 /// <summary>
@@ -17,15 +17,12 @@ public class MainServiceActionUseNftInput
 {
     public long UserId;
     public GrpcNftBaseData Nft;
-
-    
 }
 [Serializable]
 public class MainServiceActionUseNftOutput
 {
     public bool Success;
     public string FailedMsg;
- 
 }
 
 /// <summary>
@@ -36,14 +33,12 @@ public class MainServiceActionTakeNftInput
 {
     public long UserId;
     public GrpcNftBaseData[] TakeNfts;
- 
 }
 [Serializable]
 public class MainServiceActionTakeNftOutput
 {
     public bool Success;
     public string FailedMsg;
- 
 }
 
 /// <summary>
@@ -54,12 +49,27 @@ public class MainServiceActionMintNftInput
 {
     public long UserId;
     public GrpcItemBaseInfo Item;
-    
 }
 [Serializable]
 public class MainServiceActionMintNftOutput
 {
     public bool Success;
     public string FailedMsg;
-   
+}
+
+/// <summary>
+/// dapr call mainService mint User nft input
+/// </summary>
+[Serializable]
+public class MainServiceActionMultiMintNftInput
+{
+    public long UserId;
+    public GrpcItemBaseInfo[] Items;
+}
+[Serializable]
+public class MainServiceActionMultiMintNftOutput
+{
+    public bool Success;
+    public string FailedMsg;
+
 }

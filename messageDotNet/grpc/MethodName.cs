@@ -39,6 +39,10 @@ public static class MainServiceAction
     /// </summary>
     public const string MINT_NFT = "MainServiceActionMintNFT";
     /// <summary>
+    /// 批量添加nft
+    /// </summary>
+    public const string MULTI_MINT_NFT = "MainServiceActionMultiMintNFT";
+    /// <summary>
     /// 扣除nft
     /// </summary>
     public const string TAKE_NFT = "MainServiceActionTakeNFT";

@@ -39,3 +39,13 @@ type MainServiceActionMintNftOutput struct {
 	Success   bool   `json:"success"`
 	FailedMsg string `json:"failedMsg"`
 }
+
+// 通知mainService 批量 make User nft input
+type MainServiceActionMultiMintNftInput struct {
+	UserId int64                        `json:"userId"`
+	Items  []base_data.GrpcItemBaseInfo `json:"items"`
+}
+type MainServiceActionMultiMintNftOutput struct {
+	Success   bool   `json:"success"`
+	FailedMsg string `json:"failedMsg"`
+}

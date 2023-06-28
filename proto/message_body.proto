@@ -434,6 +434,7 @@ message UseSkillReq{
 }
 message UseSkillResp {
   RespTitle         resTitle      = 1;
+  int32             randomSeed       = 2; 
 } 
 message RespawnPlayerReq {
   ReqTitle            reqTitle      = 1;

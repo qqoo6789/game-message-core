@@ -61,7 +61,7 @@ message Player {
   bool                  is_battle = 10;     //战斗状态
   // repeated bian.proto.EntityBuff buff_list = 28;
   CaptureData             capture_data = 11;  //捕获数据
-
+  int32                   randomSeed = 12;     //随机种子
 }
 
 message Monster {

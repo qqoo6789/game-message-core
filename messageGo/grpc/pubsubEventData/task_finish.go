@@ -12,3 +12,13 @@ type TaskFinishEvent struct {
 	TaskId       int32                        `json:"taskId"`
 	RewardItem   []base_data.GrpcItemBaseInfo `json:"rewardItem"`
 }
+
+func (p *TaskFinishEvent) Clear() {
+	p.MsgVersion = 0
+	p.UserId = 0
+	p.TaskListType = 0
+	p.TaskId = 0
+	if p.RewardItem != nil {
+		p.RewardItem = p.RewardItem[:0]
+	}
+}

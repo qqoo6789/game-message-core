@@ -12,6 +12,15 @@ type GrpcAvatarAttribute struct {
 	Data []GrpcAttributeData `json:"data"`
 }
 
+func (p *GrpcAvatarAttribute) Clear() {
+	p.Position = 0
+	p.Rarity = ""
+	p.ObjectId = 0
+	if p.Data != nil {
+		p.Data = p.Data[:0]
+	}
+}
+
 func (p *GrpcAvatarAttribute) Set(attr *proto.AvatarAttribute) {
 	if attr == nil {
 		return
@@ -41,6 +50,12 @@ type GrpcItemBaseInfo struct {
 	Quality int32 `json:"quality"`
 }
 
+func (p *GrpcItemBaseInfo) Clear() {
+	p.Cid = 0
+	p.Num = 0
+	p.Quality = 1
+}
+
 func (p *GrpcItemBaseInfo) Set(info *proto.ItemBaseInfo) {
 	if info == nil {
 		return
@@ -65,6 +80,11 @@ type GrpcNFTConsumableInfo struct {
 	Value          int32                   `json:"value"`
 }
 
+func (p *GrpcNFTConsumableInfo) Clear() {
+	p.Quality = ""
+	p.ConsumableType = 0
+	p.Value = 0
+}
 func (p *GrpcNFTConsumableInfo) Set(info *proto.NFTConsumableInfo) {
 	if info == nil {
 		return

@@ -9,6 +9,12 @@ type GrpcVector3 struct {
 	Z float32 `json:"z"`
 }
 
+func (p *GrpcVector3) Clear() {
+	p.X = 0
+	p.Y = 0
+	p.Z = 0
+}
+
 func (p *GrpcVector3) Set(v *proto.Vector3) {
 	if v == nil {
 		return

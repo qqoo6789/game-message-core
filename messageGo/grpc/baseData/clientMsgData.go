@@ -6,3 +6,13 @@ type MultiClientMsgData struct {
 	MsgId    int32   `json:"msgId"`
 	MsgBody  []byte  `json:"msgBody"` // proto message marshal bytes
 }
+
+func (p *MultiClientMsgData) Clear() {
+	p.MsgId = 0
+	if p.MsgBody != nil {
+		p.MsgBody = p.MsgBody[:0]
+	}
+	if p.UserList != nil {
+		p.UserList = p.UserList[:0]
+	}
+}

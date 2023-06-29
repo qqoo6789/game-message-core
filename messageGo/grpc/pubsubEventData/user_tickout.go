@@ -10,3 +10,12 @@ type TickOutPlayerEvent struct {
 	SocketId          string            `json:"socketId"`
 	TickOutCode       proto.TickOutType `json:"tickOutCode"`
 }
+
+func (p *TickOutPlayerEvent) Clear() {
+	p.MsgVersion = 0
+	p.UserId = 0
+	p.AgentAppId = ""
+	p.SceneServiceAppId = ""
+	p.SocketId = ""
+	p.TickOutCode = 0
+}

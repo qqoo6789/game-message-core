@@ -15,3 +15,19 @@ type KillMonsterEventData struct {
 	MonsterName       string                       `json:"monsterName"`
 	DropList          []base_data.GrpcItemBaseInfo `json:"dropList"`
 }
+
+func (p *KillMonsterEventData) Clear() {
+	p.MsgVersion = 0
+	p.SceneServiceAppId = ""
+	p.MapId = 0
+	p.OwnerId = 0
+	p.KillerId = 0
+	p.PosX = 0
+	p.PosY = 0
+	p.PosZ = 0
+	p.MonsterCid = 0
+	p.MonsterName = ""
+	if p.DropList != nil {
+		p.DropList = p.DropList[:0]
+	}
+}

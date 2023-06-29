@@ -9,3 +9,11 @@ type UserGetNFTEvent struct {
 	UserId     int64                        `json:"userId"`
 	Items      []base_data.GrpcItemBaseInfo `json:"items"`
 }
+
+func (p *UserGetNFTEvent) Clear() {
+	p.MsgVersion = 0
+	p.UserId = 0
+	if p.Items != nil {
+		p.Items = p.Items[:0]
+	}
+}

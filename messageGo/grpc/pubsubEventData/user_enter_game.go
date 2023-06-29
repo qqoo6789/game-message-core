@@ -27,3 +27,31 @@ type UserEnterGameEvent struct {
 	DirY              float32 `json:"dirY"`
 	DirZ              float32 `json:"dirZ"`
 }
+
+func (p *UserEnterGameEvent) Clear() {
+	p.MsgVersion = 0
+	p.SceneServiceAppId = ""
+	p.AgentAppId = ""
+	p.UserSocketId = ""
+	p.UserId = 0
+	p.Name = ""
+	p.RoleId = 0
+	p.Gender = ""
+	p.RoleIcon = ""
+	p.Guide = false
+	p.Eyebrow = 0
+	p.Mouth = 0
+	p.Eye = 0
+	p.Face = 0
+	p.Hair = 0
+	p.Glove = 0
+	p.Clothes = 0
+	p.Pants = 0
+	p.MapId = 0
+	p.X = 0
+	p.Y = 0
+	p.Z = 0
+	p.DirX = 0
+	p.DirY = 0
+	p.DirZ = 0
+}

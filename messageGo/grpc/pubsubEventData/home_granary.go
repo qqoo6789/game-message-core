@@ -12,3 +12,13 @@ type GranaryStockpileEvent struct {
 	OccupantId   int64                        `json:"occupantId"`   // 使用者Id(owner | 进入家园的其他人员)
 	OccupantName string                       `json:"occupantName"` // 使用者Name
 }
+
+func (p *GranaryStockpileEvent) Clear() {
+	p.MsgVersion = 0
+	p.HomeOwner = 0
+	p.OccupantId = 0
+	p.OccupantName = ""
+	if p.Items != nil {
+		p.Items = p.Items[:0]
+	}
+}

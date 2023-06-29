@@ -14,6 +14,18 @@ type GrpcPlayerFeature struct {
 	Skin    int32 `json:"skin"`
 }
 
+func (p *GrpcPlayerFeature) Clear() {
+	p.Eyebrow = 0
+	p.Mouth = 0
+	p.Eye = 0
+	p.Face = 0
+	p.Hair = 0
+	p.Glove = 0
+	p.Clothes = 0
+	p.Pants = 0
+	p.Skin = 0
+}
+
 func (p *GrpcPlayerFeature) Set(feature *proto.PlayerFeature) {
 	if feature == nil {
 		return
@@ -51,6 +63,16 @@ type GrpcPlayerBaseData struct {
 	RoleIcon string            `json:"roleIcon"`
 	Feature  GrpcPlayerFeature `json:"feature"`
 	Guide    bool              `json:"guide"`
+}
+
+func (p *GrpcPlayerBaseData) Clear() {
+	p.UserId = 0
+	p.Name = ""
+	p.RoleId = 0
+	p.Gender = ""
+	p.RoleIcon = ""
+	p.Guide = false
+	p.Feature.Clear()
 }
 
 func (p *GrpcPlayerBaseData) Set(baseData *proto.PlayerBaseData) {

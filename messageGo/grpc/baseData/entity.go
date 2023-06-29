@@ -11,6 +11,12 @@ type GrpcAttributeData struct {
 	DisplayType proto.AttributeDisplayType `json:"displayType"`
 }
 
+func (p *GrpcAttributeData) Clear() {
+	p.Id = 0
+	p.Value = 0
+	p.DisplayType = proto.AttributeDisplayType_Number
+}
+
 func (p *GrpcAttributeData) Set(attr *proto.AttributeData) {
 	if attr == nil {
 		return
@@ -53,6 +59,26 @@ type GrpcNftBuild struct {
 	LandPlacementPowerZeroCooldownStartAt int32 `json:"landPlacementPowerZeroCooldownStartAt"`
 	// 电量不足时建造保护期
 	LandPlacementPowerZeroCooldownAt int32 `json:"landPlacementPowerZeroCooldown"`
+}
+
+func (p *GrpcNftBuild) Clear() {
+	p.Id = 0
+	p.Cid = 0
+	p.FromNft = ""
+	p.Owner = 0
+	p.ElectricEnd = 0
+	p.HarvestStartAt = 0
+	p.HarvestAt = 0
+	p.HarvestItemCount = 0
+	p.CollectionStartAt = 0
+	p.CollectionAt = 0
+	p.CollectionItemCount = 0
+	p.LandPlacementPowerZeroCooldownStartAt = 0
+	p.LandPlacementPowerZeroCooldownAt = 0
+	p.Position = GrpcVector3{}
+	if p.LandIds != nil {
+		p.LandIds = p.LandIds[:0]
+	}
 }
 
 func (p *GrpcNftBuild) Set(build *proto.NftBuild) {

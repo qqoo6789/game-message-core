@@ -11,3 +11,15 @@ type PlayerDeathEventData struct {
 	KillerId   int64   `json:"killerId"`
 	KillerName string  `json:"killerName"`
 }
+
+func (p *PlayerDeathEventData) Clear() {
+	p.MsgVersion = 0
+	p.MapId = 0
+	p.UserId = 0
+	p.PosX = 0
+	p.PosY = 0
+	p.PosZ = 0
+	p.KillerType = 0
+	p.KillerId = 0
+	p.KillerName = ""
+}

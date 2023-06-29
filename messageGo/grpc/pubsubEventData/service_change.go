@@ -15,3 +15,14 @@ type UserChangeServiceEvent struct {
 	UserPosition   base_data.GrpcVector3 `json:"userPosition"`
 	UserDir        base_data.GrpcVector3 `json:"userDir"`
 }
+
+func (p *UserChangeServiceEvent) Clear() {
+	p.MsgVersion = 0
+	p.UserId = 0
+	p.FormService.Clear()
+	p.ToService.Clear()
+	p.UserAgentAppId = ""
+	p.UserSocketId = ""
+	p.UserPosition.Clear()
+	p.UserDir.Clear()
+}

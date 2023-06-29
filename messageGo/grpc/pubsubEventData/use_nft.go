@@ -17,3 +17,16 @@ type UserUseNFTEvent struct {
 	Y              float32                          `json:"y"`
 	Z              float32                          `json:"z"`
 }
+
+func (p *UserUseNFTEvent) Clear() {
+	p.MsgVersion = 0
+	p.UserId = 0
+	p.NftId = ""
+	p.Cid = 0
+	p.NftType = 0
+	p.Num = 0
+	p.ConsumableData = nil
+	p.X = 0
+	p.Y = 0
+	p.Z = 0
+}

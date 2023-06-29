@@ -15,3 +15,16 @@ type ServiceData struct {
 	CreatedAt       int64                     `json:"createdAt"`
 	UpdatedAt       int64                     `json:"updatedAt"`
 }
+
+func (p *ServiceData) Clear() {
+	p.AppId = ""
+	p.ServiceType = 0
+	p.SceneSerSubType = 0
+	p.Owner = 0
+	p.Url = ""
+	p.MapId = 0
+	p.Online = 0
+	p.MaxOnline = 0
+	p.CreatedAt = 0
+	p.UpdatedAt = 0
+}

@@ -108,6 +108,15 @@ type GetUserAnimalListOutput struct {
 	Animals []base_data.GrpcAnimalBaseData `json:"animals"`
 }
 
+func (p *GetUserAnimalListOutput) Clear() {
+	p.Success = false
+	p.ErrMsg = ""
+	p.UserId = 0
+	if p.Animals != nil {
+		p.Animals = p.Animals[:0]
+	}
+}
+
 //  capture animal  scene world to main service
 type CaptureAnimalInput struct {
 	UserId        int64                        `json:"userId"`

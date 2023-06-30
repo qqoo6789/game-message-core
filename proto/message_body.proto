@@ -17,6 +17,7 @@ import "service.proto";
 import "home.proto";
 import "talent.proto";
 import "capture.proto";
+import "login.proto";
 
  
 // C->S MESSAGE TITLE
@@ -100,22 +101,18 @@ message BroadCastItemDelResp{
 
 message SigninPlayerReq {
   ReqTitle      reqTitle          = 1;
-  int64         user_id           = 2;
-  string        token             = 3; // token校验信息
-  int64         clientTime        = 4;
-  bool          reconnect         = 5;
-  OSType        osType            = 6;      // 渠道(android/ios)
-  PlatformType  platform          = 7;     // 平台(taptap...)
+  string        token             = 2; // token校验信息
+  int64         clientTime        = 3;
+  bool          reconnect         = 4; 
   // 客户端期望链接的 sceneServiceAppId,仅在开发模式有效
-  string        sceneServiceAppId = 8; 
+  string        sceneServiceAppId = 5; 
 }
 message SigninPlayerResp {
   RespTitle     resTitle          = 1;
   Player        player            = 2; // 玩家信息
   int64         serverTime        = 3;
   int64         clientTime        = 4;
-  string        sceneServiceAppId = 5;
-  int64         lastLoginTime     = 6; //上次登录banner的时间
+   string       sceneServiceAppId = 5;
 }
 message SignOutPlayerReq{
   ReqTitle      reqTitle          = 1; 
@@ -163,11 +160,7 @@ message BroadCastEntityCaptureTrapSkillResp{
   Vector3                 position        = 3;
   int64                   timedExplosionAt= 4; // 定时爆炸时间戳
   bool                    isStart        =5; // 开始或结束
-
-
 }
-
-
 
 // 占地相关
 message QueryLandsReq{
@@ -364,6 +357,9 @@ message BroadCastEntityEquipmentSkillResp{
   int64           entityId        = 2;    // 实体ID
   repeated int32  equipmentSkills = 3;    // 装备技能列表
 }
+
+
+
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
 message QueryPlayerReq {
   ReqTitle        reqTitle  = 1;
@@ -388,6 +384,23 @@ message CreatePlayerReq {
 message CreatePlayerResp {
   RespTitle       resTitle  = 1;
   PlayerBaseData  player    = 2; // 玩家信息
+}
+
+message LoginReq {
+  ReqTitle      reqTitle          = 1;
+  string        token             = 2;    // token校验信息 
+  OSType        osType            = 3;    // 渠道(android/ios)
+  PlatformType  platform          = 4;    // 平台(taptap...) 
+}
+message LoginResp {
+  RespTitle     resTitle          = 1; 
+  int64         lastLoginTime     = 2;    //上次登录的时间
+  int32         queue             = 3;    //排队位置
+}
+message BroadCastQueueResp{
+  RespTitle     resTitle          = 1; 
+  LoginState    loginState        = 2;
+  int32         queue             = 3;    //排队位置
 }
 
 

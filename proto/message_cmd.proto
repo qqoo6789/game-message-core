@@ -73,7 +73,11 @@ enum EnvelopeType {
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayer                     = 0x020001;
-    CreatePlayer                    = 0x020003;   
+    CreatePlayer                    = 0x020003;  
+    Login                           = 0x020005;
+    BroadCastQueue                  = 0x020007;
+    
+
 
     //sceneSer 协议 : 0x03ZZZZ  场景服务 协议 ************************************
     EnterMap                        = 0x030001;

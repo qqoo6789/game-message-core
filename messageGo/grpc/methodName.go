@@ -2,6 +2,7 @@ package grpc
 
 const (
 	RpcInvokeBroadSystemMessage string = "RpcInvokeBroadSystemMessage"
+	RpcInvokeCheckUserLogin     string = "RpcInvokeCheckUserLogin"
 )
 
 type ManagerServiceAction string

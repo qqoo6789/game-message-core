@@ -5,8 +5,8 @@ option go_package = "./messageGo/proto";
 
 
 enum LoginState {
-    Leave = 0;
-    Queue = 1;
-    Playing = 2; 
+    Leave   = 0;
+    Queue   = 1;
+    SingIn  = 2;
+    Play    = 3;
 }
- 

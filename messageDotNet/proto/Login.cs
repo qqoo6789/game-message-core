@@ -24,8 +24,9 @@ namespace GameMessageCore {
     static LoginReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgtsb2dpbi5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKi8KCkxvZ2luU3RhdGUS",
-            "CQoFTGVhdmUQABIJCgVRdWV1ZRABEgsKB1BsYXlpbmcQAmIGcHJvdG8z"));
+            "Cgtsb2dpbi5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKjgKCkxvZ2luU3RhdGUS",
+            "CQoFTGVhdmUQABIJCgVRdWV1ZRABEgoKBlNpbmdJbhACEggKBFBsYXkQA2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.LoginState), }, null, null));
@@ -37,7 +38,8 @@ namespace GameMessageCore {
   public enum LoginState {
     [pbr::OriginalName("Leave")] Leave = 0,
     [pbr::OriginalName("Queue")] Queue = 1,
-    [pbr::OriginalName("Playing")] Playing = 2,
+    [pbr::OriginalName("SingIn")] SingIn = 2,
+    [pbr::OriginalName("Play")] Play = 3,
   }
 
   #endregion

@@ -76,10 +76,14 @@ message CollectResourceProgressResult
 {
     //最新总进度值 适用于分段式的进度
     int32 totalProgress = 1;
+    //进度变化值 适用于分段式的进度
+    int32 deltaProgress = 2;
+    //是否暴击 适用于分段式的进度
+    bool isCrit = 3;
     //进度充满时的时间戳 适用于浇水连续式的进度
-    int64 progressFullStamp = 2;
+    int64 progressFullStamp = 4;
     //进度归属玩家id
-    int64 progressOwnerId=3;
+    int64 progressOwnerId=5;
 }
 
 message CollectResourceExecuteResult

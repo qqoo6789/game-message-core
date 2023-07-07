@@ -420,9 +420,9 @@ message UseSkillReq{
   // 技能使用的位置  指定后，会将玩家重置到该位置.
   EntityLocation    fromLocation  = 4;
   // 技能指定使用的目标
-  EntityId          targetId      = 5;
+  repeated int64    targetList      = 5;
   // 技能指定目标位置
-  EntityLocation    targetPos     = 6;
+  repeated Vector3  targetPosList     = 6;
   // 使用技能状态
   UseSkillState     skillState    = 7;
   //家园采集信息
@@ -585,7 +585,7 @@ message BroadCastEntityCombatResp{
   // 技能释放的位置
   EntityLocation        fromLocation  = 8;
   // 技能目标为
-  EntityLocation        targetLocation  = 9;
+  repeated Vector3      targetPosList  = 9;
   // 当前消息状态的服务器时间
   int64                 curStamp      = 10;
   // 接收技能伤害的对象 id 数组

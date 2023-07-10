@@ -43,33 +43,34 @@ namespace GameMessageCore {
             "ZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxJGCg5wcm9ncmVzc1Jlc3VsdBgC",
             "IAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVz",
             "c1Jlc3VsdBJECg1leGVjdXRlUmVzdWx0GAMgASgLMi0uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkNvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQiagodQ29sbGVjdFJl",
-            "c291cmNlUHJvZ3Jlc3NSZXN1bHQSFQoNdG90YWxQcm9ncmVzcxgBIAEoBRIZ",
-            "ChFwcm9ncmVzc0Z1bGxTdGFtcBgCIAEoAxIXCg9wcm9ncmVzc093bmVySWQY",
-            "AyABKAMiwQEKHENvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQSLwoIZHJv",
-            "cExpc3QYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvEhMK",
-            "CWl0ZW1WYWxpZBgCIAEoCEgAEhoKEEV4dHJhV2F0ZXJpbmdOdW0YAyABKAVI",
-            "ABIVCgtzb2lsRmVydGlsZRgEIAEoBUgAEhoKEGFuaW1hbEhhcHB5VmFsdWUY",
-            "BSABKAVIAEIMCgphY3Rpb25EYXRhIsQBCg9Qcm94eUFuaW1hbERhdGESEAoI",
-            "YW5pbWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAISFwoPaGFy",
-            "dmVzdFByb2dyZXNzGAMgASgCEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlz",
-            "RGVhZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdl",
-            "Q29yZS5Qcm94eVByb2R1Y3REYXRhEhEKCWhhcHBpbmVzcxgHIAEoBSJ8ChNQ",
-            "cm94eUFuaW1hbEJhc2VEYXRhEhAKCGFuaW1hbElkGAEgASgEEgwKBG5hbWUY",
-            "AiABKAkSCwoDY2lkGAMgASgFEhQKDGZhdm9yYWJpbGl0eRgEIAEoBRIQCghj",
-            "cmVhdGVNcxgFIAEoAxIQCgh1cGRhdGVNcxgGIAEoAyKEAQoQUHJveHlQcm9k",
-            "dWN0RGF0YRIRCglwcm9kdWN0SWQYASABKAMSDwoHaXRlbUNpZBgCIAEoBRIP",
-            "CgdpdGVtTnVtGAMgASgFEg8KB3F1YWxpdHkYBCABKAUSKgoIcG9zaXRpb24Y",
-            "BSABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyI8ChBBbmltYWxVcGRh",
-            "dGVEYXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIg",
-            "ASgFIlMKFEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgBIAEoBBIP",
-            "Cgdmb29kQ2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSqA",
-            "AQoTQ29sbGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBl",
-            "VW5rbm93bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9t",
-            "ZVJlc291cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAIKmQKF0Fu",
-            "aW1hbFNwZWNpYWxBY3Rpb25UeXBlEiIKHkFuaW1hbFNwZWNpYWxBY3Rpb25U",
-            "eXBlVW5rbm93bhAAEiUKIUFuaW1hbFNwZWNpYWxBY3Rpb25UeXBlVG91Y2hE",
-            "ZWF0aBABYgZwcm90bzM="));
+            "b3JlLkNvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQikQEKHUNvbGxlY3RS",
+            "ZXNvdXJjZVByb2dyZXNzUmVzdWx0EhUKDXRvdGFsUHJvZ3Jlc3MYASABKAUS",
+            "FQoNZGVsdGFQcm9ncmVzcxgCIAEoBRIOCgZpc0NyaXQYAyABKAgSGQoRcHJv",
+            "Z3Jlc3NGdWxsU3RhbXAYBCABKAMSFwoPcHJvZ3Jlc3NPd25lcklkGAUgASgD",
+            "IsEBChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVzdWx0Ei8KCGRyb3BMaXN0",
+            "GAEgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbxITCglpdGVt",
+            "VmFsaWQYAiABKAhIABIaChBFeHRyYVdhdGVyaW5nTnVtGAMgASgFSAASFQoL",
+            "c29pbEZlcnRpbGUYBCABKAVIABIaChBhbmltYWxIYXBweVZhbHVlGAUgASgF",
+            "SABCDAoKYWN0aW9uRGF0YSLEAQoPUHJveHlBbmltYWxEYXRhEhAKCGFuaW1h",
+            "bElkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgCEhcKD2hhcnZlc3RQ",
+            "cm9ncmVzcxgDIAEoAhITCgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0RlYWQY",
+            "BSABKAgSNgoLcHJvZHVjdERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNvcmUu",
+            "UHJveHlQcm9kdWN0RGF0YRIRCgloYXBwaW5lc3MYByABKAUifAoTUHJveHlB",
+            "bmltYWxCYXNlRGF0YRIQCghhbmltYWxJZBgBIAEoBBIMCgRuYW1lGAIgASgJ",
+            "EgsKA2NpZBgDIAEoBRIUCgxmYXZvcmFiaWxpdHkYBCABKAUSEAoIY3JlYXRl",
+            "TXMYBSABKAMSEAoIdXBkYXRlTXMYBiABKAMihAEKEFByb3h5UHJvZHVjdERh",
+            "dGESEQoJcHJvZHVjdElkGAEgASgDEg8KB2l0ZW1DaWQYAiABKAUSDwoHaXRl",
+            "bU51bRgDIAEoBRIPCgdxdWFsaXR5GAQgASgFEioKCHBvc2l0aW9uGAUgASgL",
+            "MhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiPAoQQW5pbWFsVXBkYXRlRGF0",
+            "YRIQCghhbmltYWxJZBgBIAEoBBIWCg5odW5nZXJQcm9ncmVzcxgCIAEoBSJT",
+            "ChRBbmltYWxCb3dsVXBkYXRlRGF0YRIOCgZib3dsSWQYASABKAQSDwoHZm9v",
+            "ZENpZBgCIAEoBRIaChJyZW1haW5Gb29kQ2FwYWNpdHkYAyABKAUqgAEKE0Nv",
+            "bGxlY3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25v",
+            "d24QABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNv",
+            "dXJjZRACEg4KCkFuaW1hbEJvd2wQBBIKCgZBbmltYWwQCCpkChdBbmltYWxT",
+            "cGVjaWFsQWN0aW9uVHlwZRIiCh5BbmltYWxTcGVjaWFsQWN0aW9uVHlwZVVu",
+            "a25vd24QABIlCiFBbmltYWxTcGVjaWFsQWN0aW9uVHlwZVRvdWNoRGVhdGgQ",
+            "AWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +80,7 @@ namespace GameMessageCore {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceOperateResult), global::GameMessageCore.CollectResourceOperateResult.Parser, new[]{ "TargetInfo", "ProgressResult", "ExecuteResult" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "ProgressFullStamp", "ProgressOwnerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceProgressResult), global::GameMessageCore.CollectResourceProgressResult.Parser, new[]{ "TotalProgress", "DeltaProgress", "IsCrit", "ProgressFullStamp", "ProgressOwnerId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceExecuteResult), global::GameMessageCore.CollectResourceExecuteResult.Parser, new[]{ "DropList", "ItemValid", "ExtraWateringNum", "SoilFertile", "AnimalHappyValue" }, new[]{ "ActionData" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalData), global::GameMessageCore.ProxyAnimalData.Parser, new[]{ "AnimalId", "HungerProgress", "HarvestProgress", "IsComforted", "IsDead", "ProductData", "Happiness" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxyAnimalBaseData), global::GameMessageCore.ProxyAnimalBaseData.Parser, new[]{ "AnimalId", "Name", "Cid", "Favorability", "CreateMs", "UpdateMs" }, null, null, null, null),
@@ -1862,6 +1863,8 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CollectResourceProgressResult(CollectResourceProgressResult other) : this() {
       totalProgress_ = other.totalProgress_;
+      deltaProgress_ = other.deltaProgress_;
+      isCrit_ = other.isCrit_;
       progressFullStamp_ = other.progressFullStamp_;
       progressOwnerId_ = other.progressOwnerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1888,8 +1891,38 @@ namespace GameMessageCore {
       }
     }
 
+    /// <summary>Field number for the "deltaProgress" field.</summary>
+    public const int DeltaProgressFieldNumber = 2;
+    private int deltaProgress_;
+    /// <summary>
+    ///进度变化值 适用于分段式的进度
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int DeltaProgress {
+      get { return deltaProgress_; }
+      set {
+        deltaProgress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isCrit" field.</summary>
+    public const int IsCritFieldNumber = 3;
+    private bool isCrit_;
+    /// <summary>
+    ///是否暴击 适用于分段式的进度
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsCrit {
+      get { return isCrit_; }
+      set {
+        isCrit_ = value;
+      }
+    }
+
     /// <summary>Field number for the "progressFullStamp" field.</summary>
-    public const int ProgressFullStampFieldNumber = 2;
+    public const int ProgressFullStampFieldNumber = 4;
     private long progressFullStamp_;
     /// <summary>
     ///进度充满时的时间戳 适用于浇水连续式的进度
@@ -1904,7 +1937,7 @@ namespace GameMessageCore {
     }
 
     /// <summary>Field number for the "progressOwnerId" field.</summary>
-    public const int ProgressOwnerIdFieldNumber = 3;
+    public const int ProgressOwnerIdFieldNumber = 5;
     private long progressOwnerId_;
     /// <summary>
     ///进度归属玩家id
@@ -1934,6 +1967,8 @@ namespace GameMessageCore {
         return true;
       }
       if (TotalProgress != other.TotalProgress) return false;
+      if (DeltaProgress != other.DeltaProgress) return false;
+      if (IsCrit != other.IsCrit) return false;
       if (ProgressFullStamp != other.ProgressFullStamp) return false;
       if (ProgressOwnerId != other.ProgressOwnerId) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1944,6 +1979,8 @@ namespace GameMessageCore {
     public override int GetHashCode() {
       int hash = 1;
       if (TotalProgress != 0) hash ^= TotalProgress.GetHashCode();
+      if (DeltaProgress != 0) hash ^= DeltaProgress.GetHashCode();
+      if (IsCrit != false) hash ^= IsCrit.GetHashCode();
       if (ProgressFullStamp != 0L) hash ^= ProgressFullStamp.GetHashCode();
       if (ProgressOwnerId != 0L) hash ^= ProgressOwnerId.GetHashCode();
       if (_unknownFields != null) {
@@ -1968,12 +2005,20 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TotalProgress);
       }
-      if (ProgressFullStamp != 0L) {
+      if (DeltaProgress != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(DeltaProgress);
+      }
+      if (IsCrit != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsCrit);
+      }
+      if (ProgressFullStamp != 0L) {
+        output.WriteRawTag(32);
         output.WriteInt64(ProgressFullStamp);
       }
       if (ProgressOwnerId != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(40);
         output.WriteInt64(ProgressOwnerId);
       }
       if (_unknownFields != null) {
@@ -1990,12 +2035,20 @@ namespace GameMessageCore {
         output.WriteRawTag(8);
         output.WriteInt32(TotalProgress);
       }
-      if (ProgressFullStamp != 0L) {
+      if (DeltaProgress != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(DeltaProgress);
+      }
+      if (IsCrit != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsCrit);
+      }
+      if (ProgressFullStamp != 0L) {
+        output.WriteRawTag(32);
         output.WriteInt64(ProgressFullStamp);
       }
       if (ProgressOwnerId != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(40);
         output.WriteInt64(ProgressOwnerId);
       }
       if (_unknownFields != null) {
@@ -2010,6 +2063,12 @@ namespace GameMessageCore {
       int size = 0;
       if (TotalProgress != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalProgress);
+      }
+      if (DeltaProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DeltaProgress);
+      }
+      if (IsCrit != false) {
+        size += 1 + 1;
       }
       if (ProgressFullStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ProgressFullStamp);
@@ -2031,6 +2090,12 @@ namespace GameMessageCore {
       }
       if (other.TotalProgress != 0) {
         TotalProgress = other.TotalProgress;
+      }
+      if (other.DeltaProgress != 0) {
+        DeltaProgress = other.DeltaProgress;
+      }
+      if (other.IsCrit != false) {
+        IsCrit = other.IsCrit;
       }
       if (other.ProgressFullStamp != 0L) {
         ProgressFullStamp = other.ProgressFullStamp;
@@ -2058,10 +2123,18 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            ProgressFullStamp = input.ReadInt64();
+            DeltaProgress = input.ReadInt32();
             break;
           }
           case 24: {
+            IsCrit = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ProgressFullStamp = input.ReadInt64();
+            break;
+          }
+          case 40: {
             ProgressOwnerId = input.ReadInt64();
             break;
           }
@@ -2085,10 +2158,18 @@ namespace GameMessageCore {
             break;
           }
           case 16: {
-            ProgressFullStamp = input.ReadInt64();
+            DeltaProgress = input.ReadInt32();
             break;
           }
           case 24: {
+            IsCrit = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ProgressFullStamp = input.ReadInt64();
+            break;
+          }
+          case 40: {
             ProgressOwnerId = input.ReadInt64();
             break;
           }

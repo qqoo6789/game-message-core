@@ -28,54 +28,53 @@ namespace GameMessageCore {
             "Y3Rvci5wcm90byKMAQoNUHJveHlTb2lsRGF0YRIKCgJpZBgBIAEoBBISCgpz",
             "b2lsU3RhdHVzGAIgASgFEhgKEHN0YXR1c1N0YXJ0U3RhbXAYAyABKAMSDwoH",
             "ZmVydGlsZRgEIAEoBRIwCghzZWVkRGF0YRgFIAEoCzIeLmdhbWVNZXNzYWdl",
-            "Q29yZS5Qcm94eVNlZWREYXRhIo0BCg1Qcm94eVNlZWREYXRhEhQKDGdyb3dp",
-            "bmdTdGFnZRgBIAEoBRIPCgdzZWVkQ2lkGAIgASgFEhMKC3Nvd2luZ1ZhbGlk",
-            "GAMgASgIEhEKCW1hbnVyZUNpZBgEIAEoBRITCgttYW51cmVWYWxpZBgFIAEo",
-            "CBIYChBleHRyYVdhdGVyaW5nTnVtGAYgASgFIlkKF0NvbGxlY3RSZXNvdXJj",
-            "ZUJhc2VJbmZvEgoKAmlkGAEgASgEEjIKBHR5cGUYAiABKA4yJC5nYW1lTWVz",
-            "c2FnZUNvcmUuQ29sbGVjdFJlc291cmNlVHlwZSJtChtVc2VDb2xsZWN0UmVz",
-            "b3VyY2VTa2lsbEluZm8SOQoHdGFyZ2V0cxgBIAMoCzIoLmdhbWVNZXNzYWdl",
-            "Q29yZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxITCgtjb3N0SXRlbUNpZBgC",
-            "IAEoBSJoChRIb21lU29pbFByb2dyZXNzSW5mbxIKCgJpZBgBIAEoBBJECgxw",
-            "cm9ncmVzc0luZm8YAiABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQ29sbGVjdFJl",
-            "c291cmNlUHJvZ3Jlc3NSZXN1bHQi6gEKHENvbGxlY3RSZXNvdXJjZU9wZXJh",
-            "dGVSZXN1bHQSPAoKdGFyZ2V0SW5mbxgBIAEoCzIoLmdhbWVNZXNzYWdlQ29y",
-            "ZS5Db2xsZWN0UmVzb3VyY2VCYXNlSW5mbxJGCg5wcm9ncmVzc1Jlc3VsdBgC",
-            "IAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VQcm9ncmVz",
-            "c1Jlc3VsdBJECg1leGVjdXRlUmVzdWx0GAMgASgLMi0uZ2FtZU1lc3NhZ2VD",
-            "b3JlLkNvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQikQEKHUNvbGxlY3RS",
-            "ZXNvdXJjZVByb2dyZXNzUmVzdWx0EhUKDXRvdGFsUHJvZ3Jlc3MYASABKAUS",
-            "FQoNZGVsdGFQcm9ncmVzcxgCIAEoBRIOCgZpc0NyaXQYAyABKAgSGQoRcHJv",
-            "Z3Jlc3NGdWxsU3RhbXAYBCABKAMSFwoPcHJvZ3Jlc3NPd25lcklkGAUgASgD",
-            "IsEBChxDb2xsZWN0UmVzb3VyY2VFeGVjdXRlUmVzdWx0Ei8KCGRyb3BMaXN0",
-            "GAEgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbxITCglpdGVt",
-            "VmFsaWQYAiABKAhIABIaChBFeHRyYVdhdGVyaW5nTnVtGAMgASgFSAASFQoL",
-            "c29pbEZlcnRpbGUYBCABKAVIABIaChBhbmltYWxIYXBweVZhbHVlGAUgASgF",
-            "SABCDAoKYWN0aW9uRGF0YSLEAQoPUHJveHlBbmltYWxEYXRhEhAKCGFuaW1h",
-            "bElkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgCEhcKD2hhcnZlc3RQ",
-            "cm9ncmVzcxgDIAEoAhITCgtpc0NvbWZvcnRlZBgEIAEoCBIOCgZpc0RlYWQY",
-            "BSABKAgSNgoLcHJvZHVjdERhdGEYBiABKAsyIS5nYW1lTWVzc2FnZUNvcmUu",
-            "UHJveHlQcm9kdWN0RGF0YRIRCgloYXBwaW5lc3MYByABKAUifAoTUHJveHlB",
-            "bmltYWxCYXNlRGF0YRIQCghhbmltYWxJZBgBIAEoBBIMCgRuYW1lGAIgASgJ",
-            "EgsKA2NpZBgDIAEoBRIUCgxmYXZvcmFiaWxpdHkYBCABKAUSEAoIY3JlYXRl",
-            "TXMYBSABKAMSEAoIdXBkYXRlTXMYBiABKAMihAEKEFByb3h5UHJvZHVjdERh",
-            "dGESEQoJcHJvZHVjdElkGAEgASgDEg8KB2l0ZW1DaWQYAiABKAUSDwoHaXRl",
-            "bU51bRgDIAEoBRIPCgdxdWFsaXR5GAQgASgFEioKCHBvc2l0aW9uGAUgASgL",
-            "MhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMiPAoQQW5pbWFsVXBkYXRlRGF0",
-            "YRIQCghhbmltYWxJZBgBIAEoBBIWCg5odW5nZXJQcm9ncmVzcxgCIAEoBSJT",
-            "ChRBbmltYWxCb3dsVXBkYXRlRGF0YRIOCgZib3dsSWQYASABKAQSDwoHZm9v",
-            "ZENpZBgCIAEoBRIaChJyZW1haW5Gb29kQ2FwYWNpdHkYAyABKAUqgAEKE0Nv",
-            "bGxlY3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25v",
-            "d24QABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNv",
-            "dXJjZRACEg4KCkFuaW1hbEJvd2wQBBIKCgZBbmltYWwQCCpkChdBbmltYWxT",
-            "cGVjaWFsQWN0aW9uVHlwZRIiCh5BbmltYWxTcGVjaWFsQWN0aW9uVHlwZVVu",
-            "a25vd24QABIlCiFBbmltYWxTcGVjaWFsQWN0aW9uVHlwZVRvdWNoRGVhdGgQ",
-            "AWIGcHJvdG8z"));
+            "Q29yZS5Qcm94eVNlZWREYXRhImMKDVByb3h5U2VlZERhdGESFAoMZ3Jvd2lu",
+            "Z1N0YWdlGAEgASgFEg8KB3NlZWRDaWQYAiABKAUSEQoJbWFudXJlQ2lkGAMg",
+            "ASgFEhgKEGV4dHJhV2F0ZXJpbmdOdW0YBCABKAUiWQoXQ29sbGVjdFJlc291",
+            "cmNlQmFzZUluZm8SCgoCaWQYASABKAQSMgoEdHlwZRgCIAEoDjIkLmdhbWVN",
+            "ZXNzYWdlQ29yZS5Db2xsZWN0UmVzb3VyY2VUeXBlIm0KG1VzZUNvbGxlY3RS",
+            "ZXNvdXJjZVNraWxsSW5mbxI5Cgd0YXJnZXRzGAEgAygLMiguZ2FtZU1lc3Nh",
+            "Z2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEhMKC2Nvc3RJdGVtQ2lk",
+            "GAIgASgFImgKFEhvbWVTb2lsUHJvZ3Jlc3NJbmZvEgoKAmlkGAEgASgEEkQK",
+            "DHByb2dyZXNzSW5mbxgCIAEoCzIuLmdhbWVNZXNzYWdlQ29yZS5Db2xsZWN0",
+            "UmVzb3VyY2VQcm9ncmVzc1Jlc3VsdCLqAQocQ29sbGVjdFJlc291cmNlT3Bl",
+            "cmF0ZVJlc3VsdBI8Cgp0YXJnZXRJbmZvGAEgASgLMiguZ2FtZU1lc3NhZ2VD",
+            "b3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZvEkYKDnByb2dyZXNzUmVzdWx0",
+            "GAIgASgLMi4uZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZVByb2dy",
+            "ZXNzUmVzdWx0EkQKDWV4ZWN1dGVSZXN1bHQYAyABKAsyLS5nYW1lTWVzc2Fn",
+            "ZUNvcmUuQ29sbGVjdFJlc291cmNlRXhlY3V0ZVJlc3VsdCKRAQodQ29sbGVj",
+            "dFJlc291cmNlUHJvZ3Jlc3NSZXN1bHQSFQoNdG90YWxQcm9ncmVzcxgBIAEo",
+            "BRIVCg1kZWx0YVByb2dyZXNzGAIgASgFEg4KBmlzQ3JpdBgDIAEoCBIZChFw",
+            "cm9ncmVzc0Z1bGxTdGFtcBgEIAEoAxIXCg9wcm9ncmVzc093bmVySWQYBSAB",
+            "KAMiwQEKHENvbGxlY3RSZXNvdXJjZUV4ZWN1dGVSZXN1bHQSLwoIZHJvcExp",
+            "c3QYASADKAsyHS5nYW1lTWVzc2FnZUNvcmUuSXRlbUJhc2VJbmZvEhMKCWl0",
+            "ZW1WYWxpZBgCIAEoCEgAEhoKEEV4dHJhV2F0ZXJpbmdOdW0YAyABKAVIABIV",
+            "Cgtzb2lsRmVydGlsZRgEIAEoBUgAEhoKEGFuaW1hbEhhcHB5VmFsdWUYBSAB",
+            "KAVIAEIMCgphY3Rpb25EYXRhIsQBCg9Qcm94eUFuaW1hbERhdGESEAoIYW5p",
+            "bWFsSWQYASABKAQSFgoOaHVuZ2VyUHJvZ3Jlc3MYAiABKAISFwoPaGFydmVz",
+            "dFByb2dyZXNzGAMgASgCEhMKC2lzQ29tZm9ydGVkGAQgASgIEg4KBmlzRGVh",
+            "ZBgFIAEoCBI2Cgtwcm9kdWN0RGF0YRgGIAEoCzIhLmdhbWVNZXNzYWdlQ29y",
+            "ZS5Qcm94eVByb2R1Y3REYXRhEhEKCWhhcHBpbmVzcxgHIAEoBSJ8ChNQcm94",
+            "eUFuaW1hbEJhc2VEYXRhEhAKCGFuaW1hbElkGAEgASgEEgwKBG5hbWUYAiAB",
+            "KAkSCwoDY2lkGAMgASgFEhQKDGZhdm9yYWJpbGl0eRgEIAEoBRIQCghjcmVh",
+            "dGVNcxgFIAEoAxIQCgh1cGRhdGVNcxgGIAEoAyKEAQoQUHJveHlQcm9kdWN0",
+            "RGF0YRIRCglwcm9kdWN0SWQYASABKAMSDwoHaXRlbUNpZBgCIAEoBRIPCgdp",
+            "dGVtTnVtGAMgASgFEg8KB3F1YWxpdHkYBCABKAUSKgoIcG9zaXRpb24YBSAB",
+            "KAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyI8ChBBbmltYWxVcGRhdGVE",
+            "YXRhEhAKCGFuaW1hbElkGAEgASgEEhYKDmh1bmdlclByb2dyZXNzGAIgASgF",
+            "IlMKFEFuaW1hbEJvd2xVcGRhdGVEYXRhEg4KBmJvd2xJZBgBIAEoBBIPCgdm",
+            "b29kQ2lkGAIgASgFEhoKEnJlbWFpbkZvb2RDYXBhY2l0eRgDIAEoBSqAAQoT",
+            "Q29sbGVjdFJlc291cmNlVHlwZRIeChpDb2xsZWN0UmVzb3VyY2VUeXBlVW5r",
+            "bm93bhAAEhsKF0NvbGxlY3RSZXNvdXJjZVR5cGVTb2lsEAESEAoMSG9tZVJl",
+            "c291cmNlEAISDgoKQW5pbWFsQm93bBAEEgoKBkFuaW1hbBAIKmQKF0FuaW1h",
+            "bFNwZWNpYWxBY3Rpb25UeXBlEiIKHkFuaW1hbFNwZWNpYWxBY3Rpb25UeXBl",
+            "VW5rbm93bhAAEiUKIUFuaW1hbFNwZWNpYWxBY3Rpb25UeXBlVG91Y2hEZWF0",
+            "aBABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.CollectResourceType), typeof(global::GameMessageCore.AnimalSpecialActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySoilData), global::GameMessageCore.ProxySoilData.Parser, new[]{ "Id", "SoilStatus", "StatusStartStamp", "Fertile", "SeedData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySeedData), global::GameMessageCore.ProxySeedData.Parser, new[]{ "GrowingStage", "SeedCid", "SowingValid", "ManureCid", "ManureValid", "ExtraWateringNum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ProxySeedData), global::GameMessageCore.ProxySeedData.Parser, new[]{ "GrowingStage", "SeedCid", "ManureCid", "ExtraWateringNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.CollectResourceBaseInfo), global::GameMessageCore.CollectResourceBaseInfo.Parser, new[]{ "Id", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.UseCollectResourceSkillInfo), global::GameMessageCore.UseCollectResourceSkillInfo.Parser, new[]{ "Targets", "CostItemCid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.HomeSoilProgressInfo), global::GameMessageCore.HomeSoilProgressInfo.Parser, new[]{ "Id", "ProgressInfo" }, null, null, null, null),
@@ -506,9 +505,7 @@ namespace GameMessageCore {
     public ProxySeedData(ProxySeedData other) : this() {
       growingStage_ = other.growingStage_;
       seedCid_ = other.seedCid_;
-      sowingValid_ = other.sowingValid_;
       manureCid_ = other.manureCid_;
-      manureValid_ = other.manureValid_;
       extraWateringNum_ = other.extraWateringNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -543,20 +540,8 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "sowingValid" field.</summary>
-    public const int SowingValidFieldNumber = 3;
-    private bool sowingValid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool SowingValid {
-      get { return sowingValid_; }
-      set {
-        sowingValid_ = value;
-      }
-    }
-
     /// <summary>Field number for the "manureCid" field.</summary>
-    public const int ManureCidFieldNumber = 4;
+    public const int ManureCidFieldNumber = 3;
     private int manureCid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -567,20 +552,8 @@ namespace GameMessageCore {
       }
     }
 
-    /// <summary>Field number for the "manureValid" field.</summary>
-    public const int ManureValidFieldNumber = 5;
-    private bool manureValid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool ManureValid {
-      get { return manureValid_; }
-      set {
-        manureValid_ = value;
-      }
-    }
-
     /// <summary>Field number for the "extraWateringNum" field.</summary>
-    public const int ExtraWateringNumFieldNumber = 6;
+    public const int ExtraWateringNumFieldNumber = 4;
     private int extraWateringNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -608,9 +581,7 @@ namespace GameMessageCore {
       }
       if (GrowingStage != other.GrowingStage) return false;
       if (SeedCid != other.SeedCid) return false;
-      if (SowingValid != other.SowingValid) return false;
       if (ManureCid != other.ManureCid) return false;
-      if (ManureValid != other.ManureValid) return false;
       if (ExtraWateringNum != other.ExtraWateringNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -621,9 +592,7 @@ namespace GameMessageCore {
       int hash = 1;
       if (GrowingStage != 0) hash ^= GrowingStage.GetHashCode();
       if (SeedCid != 0) hash ^= SeedCid.GetHashCode();
-      if (SowingValid != false) hash ^= SowingValid.GetHashCode();
       if (ManureCid != 0) hash ^= ManureCid.GetHashCode();
-      if (ManureValid != false) hash ^= ManureValid.GetHashCode();
       if (ExtraWateringNum != 0) hash ^= ExtraWateringNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -651,20 +620,12 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(SeedCid);
       }
-      if (SowingValid != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SowingValid);
-      }
       if (ManureCid != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(ManureCid);
       }
-      if (ManureValid != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(ManureValid);
-      }
       if (ExtraWateringNum != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt32(ExtraWateringNum);
       }
       if (_unknownFields != null) {
@@ -685,20 +646,12 @@ namespace GameMessageCore {
         output.WriteRawTag(16);
         output.WriteInt32(SeedCid);
       }
-      if (SowingValid != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(SowingValid);
-      }
       if (ManureCid != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(ManureCid);
       }
-      if (ManureValid != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(ManureValid);
-      }
       if (ExtraWateringNum != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt32(ExtraWateringNum);
       }
       if (_unknownFields != null) {
@@ -717,14 +670,8 @@ namespace GameMessageCore {
       if (SeedCid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SeedCid);
       }
-      if (SowingValid != false) {
-        size += 1 + 1;
-      }
       if (ManureCid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ManureCid);
-      }
-      if (ManureValid != false) {
-        size += 1 + 1;
       }
       if (ExtraWateringNum != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ExtraWateringNum);
@@ -747,14 +694,8 @@ namespace GameMessageCore {
       if (other.SeedCid != 0) {
         SeedCid = other.SeedCid;
       }
-      if (other.SowingValid != false) {
-        SowingValid = other.SowingValid;
-      }
       if (other.ManureCid != 0) {
         ManureCid = other.ManureCid;
-      }
-      if (other.ManureValid != false) {
-        ManureValid = other.ManureValid;
       }
       if (other.ExtraWateringNum != 0) {
         ExtraWateringNum = other.ExtraWateringNum;
@@ -783,18 +724,10 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            SowingValid = input.ReadBool();
-            break;
-          }
-          case 32: {
             ManureCid = input.ReadInt32();
             break;
           }
-          case 40: {
-            ManureValid = input.ReadBool();
-            break;
-          }
-          case 48: {
+          case 32: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }
@@ -822,18 +755,10 @@ namespace GameMessageCore {
             break;
           }
           case 24: {
-            SowingValid = input.ReadBool();
-            break;
-          }
-          case 32: {
             ManureCid = input.ReadInt32();
             break;
           }
-          case 40: {
-            ManureValid = input.ReadBool();
-            break;
-          }
-          case 48: {
+          case 32: {
             ExtraWateringNum = input.ReadInt32();
             break;
           }

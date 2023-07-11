@@ -76,7 +76,6 @@ public static class SubscriptionEvent
     /// </summary>
     public const string TASK_LIST_FINISH = "EventTopicTaskListFinish";
 
-    public const string TICK_OUT_PLAYER = "EventTopicTickOutPlayer";
     /// <summary>
     /// home Granary Stockpile Event
     /// </summary>

@@ -47,8 +47,6 @@ const (
 	SubscriptionEventNftBuildUpdate SubscriptionEvent = "EventTopicNftBuildUpdate"
 	SubscriptionEventNftBuildRemove SubscriptionEvent = "EventTopicNftBuildRemove"
 
-	SubscriptionEventTickOutPlayer SubscriptionEvent = "EventTopicTickOutPlayer"
-
 	// home Granary Stockpile Event
 	SubscriptionEventGranaryStockpile SubscriptionEvent = "EventTopicGranaryStockpile"
 

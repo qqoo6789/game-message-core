@@ -1,4 +1,14 @@
 
+
+/// <summary>
+/// service method API name
+/// </summary>
+public static class RpcInvoke
+{
+    public const string TICK_OUT_PLAYER = "RpcInvokeTickOutPlayer";
+}
+
+
 /// <summary>
 /// MELAND service call method API name
 /// </summary>
@@ -131,3 +141,5 @@ public static class ChangeServiceAction
     /// </summary>
     public const string JOIN_SERVICE = "ChangeServiceActionJoinService";
 }
+
+

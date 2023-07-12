@@ -9,6 +9,8 @@ public static class GRPCAppId
     public const string GAME_SERVICE_APPID_ACCOUNT = "game-service-account";
     public const string GAME_SERVICE_APPID_TASK = "game-service-task";
     public const string GAME_SERVICE_APPID_CHAT = "game-service-chat";
+    public const string GAME_SERVICE_APPID_CONTROLLER = "game-service-controller";
+    public const string GAME_SERVICE_APPID_LOG = "game-service-log";
     public const string GAME_SERVICE_APPID_SCENE_XX = "game-service-scene-xx";
     public const string GAME_SERVICE_APPID_AGENT_XX = "game-service-agent-xx";
 }

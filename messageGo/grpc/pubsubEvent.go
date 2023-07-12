@@ -34,6 +34,7 @@ const (
 	SubscriptionEventUseNFT         SubscriptionEvent = "EventTopicUseNFT"
 	SubscriptionEventGetNft         SubscriptionEvent = "EventTopicGetNFT"
 
+	SubscriptionEventCreateUser     SubscriptionEvent = "EventTopicCreateUser"
 	SubscriptionEventUserEnterGame  SubscriptionEvent = "EventTopicUserEnterGame"
 	SubscriptionEventUserLeaveGame  SubscriptionEvent = "EventTopicUserLeaveGame"
 	SubscriptionEventTaskFinish     SubscriptionEvent = "EventTopicTaskFinish"

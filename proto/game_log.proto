@@ -1,0 +1,27 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+
+enum GameLogType {
+    log_unknow           =  0;
+    create_user          =  1; // 创建角色
+    enter_game           =  2; // 进入游戏
+    leave_game           =  3; // 退出游戏
+    kill_monster         =  4; // 击杀怪物
+    capture_animal       =  5; // 抓捕动物
+    free_animal          =  6; // 释放动物
+    accept_task          =  7; // 接取任务
+    abandon_task         =  8; // 放弃任务   
+    finish_task          =  9; // 完成任务
+    accept_task_list     = 10; // 接取任务链
+    abandon_task_list    = 11; // 放弃任务链
+    finish_task_list     = 12; // 完成任务链
+    enter_home           = 13; // 进入家园服
+    quit_home            = 14; // 退出家园服
+    upgrade_talent       = 15; // 升级天赋树节点 
+    sowing               = 16; // 播种      
+    collect              = 17; // 采集(包含采草和挖矿)   
+}
+

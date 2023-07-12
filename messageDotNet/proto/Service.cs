@@ -24,14 +24,15 @@ namespace GameMessageCore {
     static ServiceReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1zZXJ2aWNlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUq1gEKC1NlcnZpY2VU",
+            "Cg1zZXJ2aWNlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqhQIKC1NlcnZpY2VU",
             "eXBlEhYKElNlcnZpY2VUeXBlVW5rbm93bhAAEhMKD1NlcnZpY2VUeXBlTWFp",
             "bhABEhYKElNlcnZpY2VUeXBlQWNjb3VudBACEhQKEFNlcnZpY2VUeXBlU2Nl",
             "bmUQAxITCg9TZXJ2aWNlVHlwZVRhc2sQBBITCg9TZXJ2aWNlVHlwZUNoYXQQ",
             "BRIUChBTZXJ2aWNlVHlwZUFnZW50EAYSFgoSU2VydmljZVR5cGVNYW5hZ2Vy",
-            "EAcSFAoQU2VydmljZVR5cGVMaW1pdBAIKksKE1NjZW5lU2VydmljZVN1YlR5",
-            "cGUSEgoOVW5rbm93blN1YlR5cGUQABIJCgVXb3JsZBABEggKBEhvbWUQAhIL",
-            "CgdEdW5nZW9uEANiBnByb3RvMw=="));
+            "EAcSGQoVU2VydmljZVR5cGVDb250cm9sbGVyEAgSEgoOU2VydmljZVR5cGVM",
+            "b2cQCRIUChBTZXJ2aWNlVHlwZUxpbWl0EAoqSwoTU2NlbmVTZXJ2aWNlU3Vi",
+            "VHlwZRISCg5Vbmtub3duU3ViVHlwZRAAEgkKBVdvcmxkEAESCAoESG9tZRAC",
+            "EgsKB0R1bmdlb24QA2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceType), typeof(global::GameMessageCore.SceneServiceSubType), }, null, null));
@@ -71,9 +72,17 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("ServiceTypeManager")] Manager = 7,
     /// <summary>
+    /// 后台控制服务
+    /// </summary>
+    [pbr::OriginalName("ServiceTypeController")] Controller = 8,
+    /// <summary>
+    /// 日志服务
+    /// </summary>
+    [pbr::OriginalName("ServiceTypeLog")] Log = 9,
+    /// <summary>
     /// 服务类型上限标记必须放在最后
     /// </summary>
-    [pbr::OriginalName("ServiceTypeLimit")] Limit = 8,
+    [pbr::OriginalName("ServiceTypeLimit")] Limit = 10,
   }
 
   public enum SceneServiceSubType {

@@ -26,8 +26,12 @@ enum ServiceType{
   ServiceTypeAgent = 6;
   // 服务管理
   ServiceTypeManager = 7;  
+  // 后台控制服务
+  ServiceTypeController = 8;  
+  // 日志服务
+  ServiceTypeLog = 9;  
   // 服务类型上限标记必须放在最后
-  ServiceTypeLimit = 8;
+  ServiceTypeLimit = 10;
 }
 
 enum SceneServiceSubType{

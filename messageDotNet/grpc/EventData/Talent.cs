@@ -10,7 +10,7 @@ public class UpdateTalentEvent
     public long MsgVersion;
     public long UserId;
     public GrpcTalentLevel[] Levels;
-    public GrpcTalentTreeUpdate[] Trees; 
+    public GrpcTalentTreeUpdate[] Trees;
 
 }
 
@@ -21,8 +21,10 @@ public class UpdateTalentEvent
 public class AddTalentExpEvent
 { // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
-    public string ServiceAppId;
-    public int MapId;
+    public ServiceData FormService;
     public long UserId;
-    public GrpcTalentExp[] AddExps; 
+    public GrpcTalentExp[] AddExps;
+    public GameMessageCore.EntityType FromEntityType;
+    public int FromEntityCid;
+    public string FromEntityName;
 }

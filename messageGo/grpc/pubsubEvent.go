@@ -28,6 +28,8 @@ const (
 	// 清理指定userId 缓存数据
 	SubscriptionEventClearUserCache SubscriptionEvent = "EventTopicClearUserCache"
 
+	SubscriptionEventMintNFT        SubscriptionEvent = "EventTopicMintNFT"
+	SubscriptionEventMultiMintNFT   SubscriptionEvent = "EventTopicMultiMintNFT"
 	SubscriptionEventSavePlayerData SubscriptionEvent = "EventTopicSavePlayerData"
 	SubscriptionEventKillMonster    SubscriptionEvent = "EventTopicKillMonster"
 	SubscriptionEventPlayerDeath    SubscriptionEvent = "EventTopicPlayerDeath"

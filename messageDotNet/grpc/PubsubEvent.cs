@@ -27,6 +27,14 @@ public static class SubscriptionEvent
     public const string USER_CHANGE_SERVICE = "EventTopicUserChangeService";
 
     /// <summary>
+    /// 添加nft
+    /// </summary>
+    public const string MINT_NFT = "EventTopicMintNFT";
+    /// <summary>
+    /// 批量添加nft
+    /// </summary>
+    public const string MULTI_MINT_NFT = "EventTopicMultiMintNFT";
+    /// <summary>
     /// 存储玩家数据
     /// </summary>
     public const string SAVE_PLAYER_DATA = "EventTopicSavePlayerData";

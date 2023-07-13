@@ -40,36 +40,3 @@ public class MainServiceActionTakeNftOutput
     public bool Success;
     public string FailedMsg;
 }
-
-/// <summary>
-/// dapr call mainService mint User nft input
-/// </summary>
-[Serializable]
-public class MainServiceActionMintNftInput
-{
-    public long UserId;
-    public GrpcItemBaseInfo Item;
-}
-[Serializable]
-public class MainServiceActionMintNftOutput
-{
-    public bool Success;
-    public string FailedMsg;
-}
-
-/// <summary>
-/// dapr call mainService mint User nft input
-/// </summary>
-[Serializable]
-public class MainServiceActionMultiMintNftInput
-{
-    public long UserId;
-    public GrpcItemBaseInfo[] Items;
-}
-[Serializable]
-public class MainServiceActionMultiMintNftOutput
-{
-    public bool Success;
-    public string FailedMsg;
-
-}

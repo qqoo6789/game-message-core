@@ -34,5 +34,5 @@ public class MultiMintNftEvent
     // 消息版本号 值为毫秒时间戳
     public long MsgVersion;
     public ServiceData FormService;
-    public MintNftInfo[] Nft;
+    public MintNftInfo[] Nfts;
 }

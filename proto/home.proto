@@ -39,10 +39,8 @@ message ProxySeedData
 {
     int32 growingStage = 1;
     int32 seedCid = 2;
-    bool sowingValid = 3;
-    int32 manureCid = 4;
-    bool manureValid = 5;
-    int32 extraWateringNum = 6;
+    int32 manureCid = 3;
+    int32 extraWateringNum = 4;
 }
 
 message CollectResourceBaseInfo{

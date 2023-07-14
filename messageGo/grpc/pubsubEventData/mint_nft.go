@@ -2,22 +2,17 @@ package pubsubEventData
 
 import (
 	base_data "game-message-core/grpc/baseData"
-	"game-message-core/proto"
 )
 
 type MintNftInfo struct {
-	Owner          int64                        `json:"owner"`
-	Items          []base_data.GrpcItemBaseInfo `json:"items"`
-	FromEntityType proto.EntityType             `json:"fromEntityType"`
-	FromEntityCid  int32                        `json:"fromEntityCid"`
-	FromEntityName string                       `json:"fromEntityName"`
+	Owner      int64                        `json:"owner"`
+	Items      []base_data.GrpcItemBaseInfo `json:"items"`
+	FromEntity base_data.EntityInfo         `json:"fromEntity"`
 }
 
 func (p *MintNftInfo) Clear() {
 	p.Owner = 0
-	p.FromEntityType = 0
-	p.FromEntityCid = 0
-	p.FromEntityName = ""
+	p.FromEntity.Clear()
 	if p.Items != nil {
 		p.Items = p.Items[:0]
 	}

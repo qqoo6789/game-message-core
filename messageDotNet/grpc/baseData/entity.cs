@@ -1,6 +1,15 @@
 using System;
 using UnityEngine;
 
+
+[Serializable]
+public class EntityInfo
+{
+    public GameMessageCore.EntityType EntityType;
+    public int EntityCid;
+    public string EntityName;
+}
+
 // 对应 proto.EntityProfile
 [Serializable]
 public class GrpcAttributeData

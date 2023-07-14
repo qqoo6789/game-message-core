@@ -7,9 +7,7 @@ public class MintNftInfo
 {
     public long Owner;
     public GrpcItemBaseInfo[] Items;
-    public GameMessageCore.EntityType FromEntityType;
-    public int FromEntityCid;
-    public string FromEntityName;
+    public EntityInfo FromEntity;
 }
 
 /// <summary>

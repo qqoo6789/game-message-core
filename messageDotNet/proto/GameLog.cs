@@ -24,14 +24,15 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpsCCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKsgCCgtHYW1lTG9n",
             "VHlwZRIOCgpsb2dfdW5rbm93EAASDwoLY3JlYXRlX3VzZXIQARIOCgplbnRl",
             "cl9nYW1lEAISDgoKbGVhdmVfZ2FtZRADEhAKDGtpbGxfbW9uc3RlchAEEhIK",
             "DmNhcHR1cmVfYW5pbWFsEAUSDwoLZnJlZV9hbmltYWwQBhIPCgthY2NlcHRf",
             "dGFzaxAHEhAKDGFiYW5kb25fdGFzaxAIEg8KC2ZpbmlzaF90YXNrEAkSFAoQ",
             "YWNjZXB0X3Rhc2tfbGlzdBAKEhUKEWFiYW5kb25fdGFza19saXN0EAsSFAoQ",
             "ZmluaXNoX3Rhc2tfbGlzdBAMEg4KCmVudGVyX2hvbWUQDRINCglxdWl0X2hv",
-            "bWUQDmIGcHJvdG8z"));
+            "bWUQDhISCg51cGdyYWRlX3RhbGVudBAPEgoKBnNvd2luZxAQEgsKB2NvbGxl",
+            "Y3QQEWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -42,20 +43,74 @@ namespace GameMessageCore {
   #region Enums
   public enum GameLogType {
     [pbr::OriginalName("log_unknow")] LogUnknow = 0,
+    /// <summary>
+    /// 创建角色
+    /// </summary>
     [pbr::OriginalName("create_user")] CreateUser = 1,
+    /// <summary>
+    /// 进入游戏
+    /// </summary>
     [pbr::OriginalName("enter_game")] EnterGame = 2,
+    /// <summary>
+    /// 退出游戏
+    /// </summary>
     [pbr::OriginalName("leave_game")] LeaveGame = 3,
+    /// <summary>
+    /// 击杀怪物
+    /// </summary>
     [pbr::OriginalName("kill_monster")] KillMonster = 4,
+    /// <summary>
+    /// 抓捕动物
+    /// </summary>
     [pbr::OriginalName("capture_animal")] CaptureAnimal = 5,
+    /// <summary>
+    /// 释放动物
+    /// </summary>
     [pbr::OriginalName("free_animal")] FreeAnimal = 6,
+    /// <summary>
+    /// 接取任务
+    /// </summary>
     [pbr::OriginalName("accept_task")] AcceptTask = 7,
+    /// <summary>
+    /// 放弃任务   
+    /// </summary>
     [pbr::OriginalName("abandon_task")] AbandonTask = 8,
+    /// <summary>
+    /// 完成任务
+    /// </summary>
     [pbr::OriginalName("finish_task")] FinishTask = 9,
+    /// <summary>
+    /// 接取任务链
+    /// </summary>
     [pbr::OriginalName("accept_task_list")] AcceptTaskList = 10,
+    /// <summary>
+    /// 放弃任务链
+    /// </summary>
     [pbr::OriginalName("abandon_task_list")] AbandonTaskList = 11,
+    /// <summary>
+    /// 完成任务链
+    /// </summary>
     [pbr::OriginalName("finish_task_list")] FinishTaskList = 12,
+    /// <summary>
+    /// 进入家园服
+    /// </summary>
     [pbr::OriginalName("enter_home")] EnterHome = 13,
+    /// <summary>
+    /// 退出家园服
+    /// </summary>
     [pbr::OriginalName("quit_home")] QuitHome = 14,
+    /// <summary>
+    /// 升级天赋树节点 
+    /// </summary>
+    [pbr::OriginalName("upgrade_talent")] UpgradeTalent = 15,
+    /// <summary>
+    /// 播种      
+    /// </summary>
+    [pbr::OriginalName("sowing")] Sowing = 16,
+    /// <summary>
+    /// 采集(包含采草和挖矿)   
+    /// </summary>
+    [pbr::OriginalName("collect")] Collect = 17,
   }
 
   #endregion

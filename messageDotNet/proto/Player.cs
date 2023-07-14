@@ -34,9 +34,9 @@ namespace GameMessageCore {
             "ZUNvcmUuUGxheWVyRmVhdHVyZRINCgVndWlkZRgIIAEoCCppChJQbGF5ZXJS",
             "ZXNwYXduUG9pbnQSGwoXUGxheWVyUmVzcGF3blBvaW50TGNvYWwQABIaChZQ",
             "bGF5ZXJSZXNwYXduUG9pbnRDaXR5EAESGgoWUGxheWVyUmVzcGF3blBvaW50",
-            "QXJlYRACKlwKC1RpY2tPdXRUeXBlEhYKElRpY2tPdXRUeXBlVW5rbm93bhAA",
-            "EhAKDFNlcnZpY2VDbG9zZRABEhAKDFJlcGVhdFNpbmdJbhACEhEKDUlsbGVn",
-            "YWxBdGtTcGQQA2IGcHJvdG8z"));
+            "QXJlYRACKlsKC1RpY2tPdXRUeXBlEhYKElRpY2tPdXRUeXBlVW5rbm93bhAA",
+            "EhAKDFNlcnZpY2VDbG9zZRABEg8KC1JlcGVhdExvZ2luEAISEQoNSWxsZWdh",
+            "bEF0a1NwZBADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.PlayerRespawnPoint), typeof(global::GameMessageCore.TickOutType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -63,7 +63,7 @@ namespace GameMessageCore {
     /// <summary>
     /// 重复登录
     /// </summary>
-    [pbr::OriginalName("RepeatSingIn")] RepeatSingIn = 2,
+    [pbr::OriginalName("RepeatLogin")] RepeatLogin = 2,
     /// <summary>
     /// 非法攻击速度
     /// </summary>

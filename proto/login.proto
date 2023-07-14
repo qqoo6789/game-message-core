@@ -1,0 +1,12 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+
+
+enum LoginState {
+    Leave   = 0;
+    Queue   = 1;
+    SingIn  = 2;
+    Play    = 3;
+}

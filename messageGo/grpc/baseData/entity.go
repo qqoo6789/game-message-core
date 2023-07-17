@@ -4,6 +4,18 @@ import (
 	"game-message-core/proto"
 )
 
+type EntityInfo struct {
+	EntityType proto.EntityType `json:"fromEntityType"`
+	EntityCid  int32            `json:"fromEntityCid"`
+	EntityName string           `json:"fromEntityName"`
+}
+
+func (p *EntityInfo) Clear() {
+	p.EntityType = 0
+	p.EntityCid = 0
+	p.EntityName = ""
+}
+
 // 对应 proto.EntityProfile
 type GrpcAttributeData struct {
 	Id          int32                      `json:"id"`

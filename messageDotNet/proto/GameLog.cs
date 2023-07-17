@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKsgCCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKtUCCgtHYW1lTG9n",
             "VHlwZRIOCgpsb2dfdW5rbm93EAASDwoLY3JlYXRlX3VzZXIQARIOCgplbnRl",
             "cl9nYW1lEAISDgoKbGVhdmVfZ2FtZRADEhAKDGtpbGxfbW9uc3RlchAEEhIK",
             "DmNhcHR1cmVfYW5pbWFsEAUSDwoLZnJlZV9hbmltYWwQBhIPCgthY2NlcHRf",
@@ -32,7 +32,7 @@ namespace GameMessageCore {
             "YWNjZXB0X3Rhc2tfbGlzdBAKEhUKEWFiYW5kb25fdGFza19saXN0EAsSFAoQ",
             "ZmluaXNoX3Rhc2tfbGlzdBAMEg4KCmVudGVyX2hvbWUQDRINCglxdWl0X2hv",
             "bWUQDhISCg51cGdyYWRlX3RhbGVudBAPEgoKBnNvd2luZxAQEgsKB2NvbGxl",
-            "Y3QQEWIGcHJvdG8z"));
+            "Y3QQERILCgdnbV9tYWtlEBJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -111,6 +111,10 @@ namespace GameMessageCore {
     /// 采集(包含采草和挖矿)   
     /// </summary>
     [pbr::OriginalName("collect")] Collect = 17,
+    /// <summary>
+    /// gm后台添加
+    /// </summary>
+    [pbr::OriginalName("gm_make")] GmMake = 18,
   }
 
   #endregion

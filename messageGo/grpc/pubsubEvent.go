@@ -41,6 +41,8 @@ const (
 	SubscriptionEventUserLeaveGame  SubscriptionEvent = "EventTopicUserLeaveGame"
 	SubscriptionEventTaskFinish     SubscriptionEvent = "EventTopicTaskFinish"
 	SubscriptionEventTaskListFinish SubscriptionEvent = "EventTopicTaskListFinish"
+	SubscriptionEventAcceptTask     SubscriptionEvent = "EventTopicAcceptTask"
+	SubscriptionEventAbandonTask    SubscriptionEvent = "EventTopicAbandonTask"
 
 	//《invalid event》
 	SubscriptionEventSlotLevelUpgrade SubscriptionEvent = "EventTopicSlotLevelUpgrade"

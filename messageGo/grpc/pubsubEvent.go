@@ -56,8 +56,9 @@ const (
 	SubscriptionEventGranaryStockpile SubscriptionEvent = "EventTopicGranaryStockpile"
 
 	// update user talent data event
-	SubscriptionEventUpdateTalent SubscriptionEvent = "EventTopicUpdateTalent"
-	SubscriptionEventAddTalentExp SubscriptionEvent = "EventTopicAddTalentExp"
+	SubscriptionEventUpdateTalent  SubscriptionEvent = "EventTopicUpdateTalent"
+	SubscriptionEventAddTalentExp  SubscriptionEvent = "EventTopicAddTalentExp"
+	SubscriptionEventTakeTalentExp SubscriptionEvent = "EventTopicTakeTalentExp"
 
 	// Capture & FREED Animal Event
 	SubscriptionEventFreedAnimal   SubscriptionEvent = "EventTopicFreedAnimal"

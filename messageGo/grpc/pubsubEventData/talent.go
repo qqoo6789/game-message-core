@@ -47,3 +47,24 @@ func (p *AddTalentExpEvent) Clear() {
 	p.FormService.Clear()
 	p.AddExp.Clear()
 }
+
+type TakeTalentExpEvent struct {
+	MsgVersion  int64                     `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	Owner       int64                     `json:"owner"`
+	TakeExps    []base_data.GrpcTalentExp `json:"takeExps"`
+	TakeDesc    string                    `json:"takeDesc"`
+	FormService base_data.ServiceData     `json:"formService"`
+}
+
+func (p *TakeTalentExpEvent) Clear() {
+	p.MsgVersion = 0
+	p.Owner = 0
+	p.TakeDesc = ""
+	p.FormService.Clear()
+	for i := 0; i < len(p.TakeExps); i++ {
+		p.TakeExps[i].Clear()
+	}
+	if p.TakeExps != nil {
+		p.TakeExps = p.TakeExps[:0]
+	}
+}

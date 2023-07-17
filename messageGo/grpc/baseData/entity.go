@@ -5,9 +5,9 @@ import (
 )
 
 type EntityInfo struct {
-	EntityType proto.EntityType `json:"fromEntityType"`
-	EntityCid  int32            `json:"fromEntityCid"`
-	EntityName string           `json:"fromEntityName"`
+	EntityType proto.EntityType `json:"entityType"`
+	EntityCid  int32            `json:"entityCid"`
+	EntityName string           `json:"entityName"`
 }
 
 func (p *EntityInfo) Clear() {

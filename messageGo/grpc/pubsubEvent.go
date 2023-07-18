@@ -63,4 +63,9 @@ const (
 	// Capture & FREED Animal Event
 	SubscriptionEventFreedAnimal   SubscriptionEvent = "EventTopicFreedAnimal"
 	SubscriptionEventCaptureAnimal SubscriptionEvent = "EventTopicCaptureAnimal"
+
+	// user home action event
+	SubscriptionEventHomeSowing        SubscriptionEvent = "EventTopicHomeSowing"
+	SubscriptionEventHomePutAnimalFood SubscriptionEvent = "EventTopicHomePutAnimalFood"
+	SubscriptionEventHomeHarvest       SubscriptionEvent = "EventTopicHomeHarvest"
 )

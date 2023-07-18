@@ -111,6 +111,20 @@ public static class SubscriptionEvent
     public const string CAPTURE_ANIMAL = "EventTopicCaptureAnimal";
 
 
+    /// <summary>
+    /// 家园播种事件
+    /// </summary>
+    public const string HOME_SOWING = "EventTopicHomeSowing";
+
+    /// <summary>
+    /// 家园放置动物食物事件
+    /// </summary>
+    public const string HOME_PUT_ANIMAL_FOOD = "EventTopicHomePutAnimalFood";
+
+    /// <summary>
+    /// 家园收获土地产出事件
+    /// </summary>
+    public const string HOME_HARVEST = "EventTopicHomeHarvest";
 
 }
 

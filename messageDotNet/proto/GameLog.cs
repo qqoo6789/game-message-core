@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKtUCCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKuICCgtHYW1lTG9n",
             "VHlwZRIOCgpsb2dfdW5rbm93EAASDwoLY3JlYXRlX3VzZXIQARIOCgplbnRl",
             "cl9nYW1lEAISDgoKbGVhdmVfZ2FtZRADEhAKDGtpbGxfbW9uc3RlchAEEhIK",
             "DmNhcHR1cmVfYW5pbWFsEAUSDwoLZnJlZV9hbmltYWwQBhIPCgthY2NlcHRf",
@@ -32,7 +32,7 @@ namespace GameMessageCore {
             "YWNjZXB0X3Rhc2tfbGlzdBAKEhUKEWFiYW5kb25fdGFza19saXN0EAsSFAoQ",
             "ZmluaXNoX3Rhc2tfbGlzdBAMEg4KCmVudGVyX2hvbWUQDRINCglxdWl0X2hv",
             "bWUQDhISCg51cGdyYWRlX3RhbGVudBAPEgoKBnNvd2luZxAQEgsKB2NvbGxl",
-            "Y3QQERILCgdnbV9tYWtlEBJiBnByb3RvMw=="));
+            "Y3QQERILCgd1c2VfbmZ0EBISCwoHZ21fbWFrZRBjYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -112,9 +112,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("collect")] Collect = 17,
     /// <summary>
+    /// 使用nft   
+    /// </summary>
+    [pbr::OriginalName("use_nft")] UseNft = 18,
+    /// <summary>
     /// gm后台添加
     /// </summary>
-    [pbr::OriginalName("gm_make")] GmMake = 18,
+    [pbr::OriginalName("gm_make")] GmMake = 99,
   }
 
   #endregion

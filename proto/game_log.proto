@@ -23,6 +23,7 @@ enum GameLogType {
     upgrade_talent       = 15; // 升级天赋树节点 
     sowing               = 16; // 播种      
     collect              = 17; // 采集(包含采草和挖矿)   
-    gm_make              = 18; // gm后台添加
+    use_nft              = 18; // 使用nft
+    gm_make              = 99; // gm后台添加
 }
 

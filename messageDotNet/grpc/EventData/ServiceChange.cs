@@ -18,4 +18,5 @@ public class UserChangeServiceEvent
     public string UserSocketId;
     public GrpcVector3 UserPosition;
     public GrpcVector3 UserDir;
+    public long UsedMs;
 }

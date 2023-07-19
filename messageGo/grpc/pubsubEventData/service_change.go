@@ -10,6 +10,7 @@ type UserChangeServiceEvent struct {
 	UserId         int64                 `json:"userId"`
 	FormService    base_data.ServiceData `json:"formService"`
 	ToService      base_data.ServiceData `json:"toService"`
+	State          string                `json:"state"` // ChangeMapStart | ChangeMapEnd | ChangeMapCancel
 	UserAgentAppId string                `json:"userAgentAppId"`
 	UserSocketId   string                `json:"userSocketId"`
 	UserPosition   base_data.GrpcVector3 `json:"userPosition"`

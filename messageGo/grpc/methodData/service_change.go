@@ -46,6 +46,7 @@ type ApplyEnterServiceInput struct {
 	UserPosition base_data.GrpcVector3 `json:"userPosition"`
 	UserDir      base_data.GrpcVector3 `json:"userDir"`
 	FromSer      base_data.ServiceData `json:"fromSer"`
+	CreateAt     int64                 `json:"createAt"`
 }
 
 func (p *ApplyEnterServiceInput) Clear() {

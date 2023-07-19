@@ -15,6 +15,7 @@ type UserChangeServiceEvent struct {
 	UserSocketId   string                `json:"userSocketId"`
 	UserPosition   base_data.GrpcVector3 `json:"userPosition"`
 	UserDir        base_data.GrpcVector3 `json:"userDir"`
+	UsedMs         int64                 `json:"usedMs"`
 }
 
 func (p *UserChangeServiceEvent) Clear() {

@@ -21,13 +21,14 @@ enum GameLogType {
     ChangeMapStart      = 13; // 开始切换地图(切换服务器)
     ChangeMapEnd        = 14; // 完成切换地图(切换服务器)
     ChangeMapCancel     = 15; // 玩家放弃切换地图(切换服务器)
-    UpgradeTalent       = 16; // 升级天赋树节点 
-    UseNft              = 17; // 使用nft
-    HomeSowing          = 18; // 播种
-    HomePutAnimalFood   = 19; // 放置动物食物
-    HomeHarvest         = 20; // 家园土地收获
-    CollectStart        = 21; // 开始采集(包含采草和挖矿)
-    CollectEnd          = 22; // 采集完成(包含采草和挖矿)
+    ChangeMapFail       = 16; // 玩家放弃切换地图(切换服务器)
+    UpgradeTalent       = 17; // 升级天赋树节点 
+    UseNft              = 18; // 使用nft
+    HomeSowing          = 19; // 播种
+    HomePutAnimalFood   = 20; // 放置动物食物
+    HomeHarvest         = 21; // 家园土地收获
+    CollectStart        = 22; // 开始采集(包含采草和挖矿)
+    CollectEnd          = 23; // 采集完成(包含采草和挖矿)
     
 
     GmMake              = 99; // gm后台添加

@@ -24,17 +24,17 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKqkDCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrwDCgtHYW1lTG9n",
             "VHlwZRINCglMb2dVbmtub3cQABIOCgpDcmVhdGVVc2VyEAESDQoJRW50ZXJH",
             "YW1lEAISDQoJTGVhdmVHYW1lEAMSEAoMS2lsbE1vbnN0ZXJzEAQSEgoOQ2Fw",
             "dHVyZUFuaW1hbHMQBRIPCgtGcmVlQW5pbWFscxAGEg4KClRhc2tBY2NlcHQQ",
             "BxIPCgtUYXNrQWJhbmRvbhAIEgsKB1Rhc2tFbmQQCRISCg5UYXNrTGlzdEFj",
             "Y2VwdBAKEhMKD1Rhc2tMaXN0QWJhbmRvbhALEg8KC1Rhc2tMaXN0RW5kEAwS",
             "EgoOQ2hhbmdlTWFwU3RhcnQQDRIQCgxDaGFuZ2VNYXBFbmQQDhITCg9DaGFu",
-            "Z2VNYXBDYW5jZWwQDxIRCg1VcGdyYWRlVGFsZW50EBASCgoGVXNlTmZ0EBES",
-            "DgoKSG9tZVNvd2luZxASEhUKEUhvbWVQdXRBbmltYWxGb29kEBMSDwoLSG9t",
-            "ZUhhcnZlc3QQFBIQCgxDb2xsZWN0U3RhcnQQFRIOCgpDb2xsZWN0RW5kEBYS",
-            "CgoGR21NYWtlEGNiBnByb3RvMw=="));
+            "Z2VNYXBDYW5jZWwQDxIRCg1DaGFuZ2VNYXBGYWlsEBASEQoNVXBncmFkZVRh",
+            "bGVudBAREgoKBlVzZU5mdBASEg4KCkhvbWVTb3dpbmcQExIVChFIb21lUHV0",
+            "QW5pbWFsRm9vZBAUEg8KC0hvbWVIYXJ2ZXN0EBUSEAoMQ29sbGVjdFN0YXJ0",
+            "EBYSDgoKQ29sbGVjdEVuZBAXEgoKBkdtTWFrZRBjYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -106,33 +106,37 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("ChangeMapCancel")] ChangeMapCancel = 15,
     /// <summary>
+    /// 玩家放弃切换地图(切换服务器)
+    /// </summary>
+    [pbr::OriginalName("ChangeMapFail")] ChangeMapFail = 16,
+    /// <summary>
     /// 升级天赋树节点 
     /// </summary>
-    [pbr::OriginalName("UpgradeTalent")] UpgradeTalent = 16,
+    [pbr::OriginalName("UpgradeTalent")] UpgradeTalent = 17,
     /// <summary>
     /// 使用nft
     /// </summary>
-    [pbr::OriginalName("UseNft")] UseNft = 17,
+    [pbr::OriginalName("UseNft")] UseNft = 18,
     /// <summary>
     /// 播种
     /// </summary>
-    [pbr::OriginalName("HomeSowing")] HomeSowing = 18,
+    [pbr::OriginalName("HomeSowing")] HomeSowing = 19,
     /// <summary>
     /// 放置动物食物
     /// </summary>
-    [pbr::OriginalName("HomePutAnimalFood")] HomePutAnimalFood = 19,
+    [pbr::OriginalName("HomePutAnimalFood")] HomePutAnimalFood = 20,
     /// <summary>
     /// 家园土地收获
     /// </summary>
-    [pbr::OriginalName("HomeHarvest")] HomeHarvest = 20,
+    [pbr::OriginalName("HomeHarvest")] HomeHarvest = 21,
     /// <summary>
     /// 开始采集(包含采草和挖矿)
     /// </summary>
-    [pbr::OriginalName("CollectStart")] CollectStart = 21,
+    [pbr::OriginalName("CollectStart")] CollectStart = 22,
     /// <summary>
     /// 采集完成(包含采草和挖矿)
     /// </summary>
-    [pbr::OriginalName("CollectEnd")] CollectEnd = 22,
+    [pbr::OriginalName("CollectEnd")] CollectEnd = 23,
     /// <summary>
     /// gm后台添加
     /// </summary>

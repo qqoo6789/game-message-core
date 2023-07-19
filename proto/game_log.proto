@@ -25,7 +25,8 @@ enum GameLogType {
     sowing               = 17; // 播种
     put_animal_food      = 18; // 放置动物食物
     harvest              = 19; // 家园土地收获
-    collect              = 20; // 采集(包含采草和挖矿)
+    collect_start        = 20; // 开始采集(包含采草和挖矿)
+    collect_end          = 21; // 采集完成(包含采草和挖矿)
     
 
     gm_make              = 99; // gm后台添加

@@ -8,6 +8,7 @@ public class EntityInfo
     public GameMessageCore.EntityType EntityType;
     public int EntityCid;
     public string EntityName;
+    public long EntityId;
 }
 
 // 对应 proto.EntityProfile

@@ -68,4 +68,6 @@ const (
 	SubscriptionEventHomeSowing        SubscriptionEvent = "EventTopicHomeSowing"
 	SubscriptionEventHomePutAnimalFood SubscriptionEvent = "EventTopicHomePutAnimalFood"
 	SubscriptionEventHomeHarvest       SubscriptionEvent = "EventTopicHomeHarvest"
+
+	SubscriptionEventCollect SubscriptionEvent = "EventTopicCollect"
 )

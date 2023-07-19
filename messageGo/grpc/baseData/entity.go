@@ -8,6 +8,7 @@ type EntityInfo struct {
 	EntityType proto.EntityType `json:"entityType"`
 	EntityCid  int32            `json:"entityCid"`
 	EntityName string           `json:"entityName"`
+	EntityId   int64            `json:"entityId"`
 }
 
 func (p *EntityInfo) Clear() {

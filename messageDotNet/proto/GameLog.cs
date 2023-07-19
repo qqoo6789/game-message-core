@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKoQDCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpsDCgtHYW1lTG9n",
             "VHlwZRIOCgpsb2dfdW5rbm93EAASDwoLY3JlYXRlX3VzZXIQARIOCgplbnRl",
             "cl9nYW1lEAISDgoKbGVhdmVfZ2FtZRADEhAKDGtpbGxfbW9uc3RlchAEEhIK",
             "DmNhcHR1cmVfYW5pbWFsEAUSDwoLZnJlZV9hbmltYWwQBhIPCgthY2NlcHRf",
@@ -32,8 +32,9 @@ namespace GameMessageCore {
             "YWNjZXB0X3Rhc2tfbGlzdBAKEhUKEWFiYW5kb25fdGFza19saXN0EAsSFAoQ",
             "ZmluaXNoX3Rhc2tfbGlzdBAMEg4KCmVudGVyX2hvbWUQDRINCglxdWl0X2hv",
             "bWUQDhISCg51cGdyYWRlX3RhbGVudBAPEgsKB3VzZV9uZnQQEBIKCgZzb3dp",
-            "bmcQERITCg9wdXRfYW5pbWFsX2Zvb2QQEhILCgdoYXJ2ZXN0EBMSCwoHY29s",
-            "bGVjdBAUEgsKB2dtX21ha2UQY2IGcHJvdG8z"));
+            "bmcQERITCg9wdXRfYW5pbWFsX2Zvb2QQEhILCgdoYXJ2ZXN0EBMSEQoNY29s",
+            "bGVjdF9zdGFydBAUEg8KC2NvbGxlY3RfZW5kEBUSCwoHZ21fbWFrZRBjYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -121,9 +122,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("harvest")] Harvest = 19,
     /// <summary>
-    /// 采集(包含采草和挖矿)
+    /// 开始采集(包含采草和挖矿)
     /// </summary>
-    [pbr::OriginalName("collect")] Collect = 20,
+    [pbr::OriginalName("collect_start")] CollectStart = 20,
+    /// <summary>
+    /// 采集完成(包含采草和挖矿)
+    /// </summary>
+    [pbr::OriginalName("collect_end")] CollectEnd = 21,
     /// <summary>
     /// gm后台添加
     /// </summary>

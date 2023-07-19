@@ -126,5 +126,11 @@ public static class SubscriptionEvent
     /// </summary>
     public const string HOME_HARVEST = "EventTopicHomeHarvest";
 
+
+    /// <summary>
+    /// 开始采集物品 搭配状态(collect_start || collect_end)使用
+    /// </summary>
+    public const string COLLECT = "EventTopicCollect";
+
 }
 

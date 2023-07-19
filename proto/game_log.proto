@@ -5,30 +5,30 @@ option go_package = "./messageGo/proto";
 
 
 enum GameLogType {
-    log_unknow           =  0;
-    create_user          =  1; // 创建角色
-    enter_game           =  2; // 进入游戏
-    leave_game           =  3; // 退出游戏
-    kill_monster         =  4; // 击杀怪物
-    capture_animal       =  5; // 抓捕动物
-    free_animal          =  6; // 释放动物
-    accept_task          =  7; // 接取任务
-    abandon_task         =  8; // 放弃任务   
-    finish_task          =  9; // 完成任务
-    accept_task_list     = 10; // 接取任务链
-    abandon_task_list    = 11; // 放弃任务链
-    finish_task_list     = 12; // 完成任务链
-    enter_home           = 13; // 进入家园服
-    quit_home            = 14; // 退出家园服
-    upgrade_talent       = 15; // 升级天赋树节点 
-    use_nft              = 16; // 使用nft
-    sowing               = 17; // 播种
-    put_animal_food      = 18; // 放置动物食物
-    harvest              = 19; // 家园土地收获
-    collect_start        = 20; // 开始采集(包含采草和挖矿)
-    collect_end          = 21; // 采集完成(包含采草和挖矿)
+    LogUnknow           =  0;
+    CreateUser          =  1; // 创建角色
+    EnterGame           =  2; // 进入游戏
+    LeaveGame           =  3; // 退出游戏
+    KillMonsters        =  4; // 击杀怪物
+    CaptureAnimals      =  5; // 抓捕动物
+    FreeAnimals         =  6; // 释放动物
+    TaskAccept          =  7; // 接取任务
+    TaskAbandon         =  8; // 放弃任务   
+    TaskEnd             =  9; // 完成任务
+    TaskListAccept      = 10; // 接取任务链
+    TaskListAbandon     = 11; // 放弃任务链
+    TaskListEnd         = 12; // 完成任务链
+    ChangeMapStart      = 13; // 开始切换地图(切换服务器)
+    ChangeMapEnd        = 14; // 完成切换地图(切换服务器)
+    UpgradeTalent       = 15; // 升级天赋树节点 
+    UseNft              = 16; // 使用nft
+    HomeSowing          = 17; // 播种
+    HomePutAnimalFood   = 18; // 放置动物食物
+    HomeHarvest         = 19; // 家园土地收获
+    CollectStart        = 20; // 开始采集(包含采草和挖矿)
+    CollectEnd          = 21; // 采集完成(包含采草和挖矿)
     
 
-    gm_make              = 99; // gm后台添加
+    GmMake              = 99; // gm后台添加
 }
 

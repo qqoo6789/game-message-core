@@ -24,17 +24,16 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpsDCgtHYW1lTG9n",
-            "VHlwZRIOCgpsb2dfdW5rbm93EAASDwoLY3JlYXRlX3VzZXIQARIOCgplbnRl",
-            "cl9nYW1lEAISDgoKbGVhdmVfZ2FtZRADEhAKDGtpbGxfbW9uc3RlchAEEhIK",
-            "DmNhcHR1cmVfYW5pbWFsEAUSDwoLZnJlZV9hbmltYWwQBhIPCgthY2NlcHRf",
-            "dGFzaxAHEhAKDGFiYW5kb25fdGFzaxAIEg8KC2ZpbmlzaF90YXNrEAkSFAoQ",
-            "YWNjZXB0X3Rhc2tfbGlzdBAKEhUKEWFiYW5kb25fdGFza19saXN0EAsSFAoQ",
-            "ZmluaXNoX3Rhc2tfbGlzdBAMEg4KCmVudGVyX2hvbWUQDRINCglxdWl0X2hv",
-            "bWUQDhISCg51cGdyYWRlX3RhbGVudBAPEgsKB3VzZV9uZnQQEBIKCgZzb3dp",
-            "bmcQERITCg9wdXRfYW5pbWFsX2Zvb2QQEhILCgdoYXJ2ZXN0EBMSEQoNY29s",
-            "bGVjdF9zdGFydBAUEg8KC2NvbGxlY3RfZW5kEBUSCwoHZ21fbWFrZRBjYgZw",
-            "cm90bzM="));
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpQDCgtHYW1lTG9n",
+            "VHlwZRINCglMb2dVbmtub3cQABIOCgpDcmVhdGVVc2VyEAESDQoJRW50ZXJH",
+            "YW1lEAISDQoJTGVhdmVHYW1lEAMSEAoMS2lsbE1vbnN0ZXJzEAQSEgoOQ2Fw",
+            "dHVyZUFuaW1hbHMQBRIPCgtGcmVlQW5pbWFscxAGEg4KClRhc2tBY2NlcHQQ",
+            "BxIPCgtUYXNrQWJhbmRvbhAIEgsKB1Rhc2tFbmQQCRISCg5UYXNrTGlzdEFj",
+            "Y2VwdBAKEhMKD1Rhc2tMaXN0QWJhbmRvbhALEg8KC1Rhc2tMaXN0RW5kEAwS",
+            "EgoOQ2hhbmdlTWFwU3RhcnQQDRIQCgxDaGFuZ2VNYXBFbmQQDhIRCg1VcGdy",
+            "YWRlVGFsZW50EA8SCgoGVXNlTmZ0EBASDgoKSG9tZVNvd2luZxAREhUKEUhv",
+            "bWVQdXRBbmltYWxGb29kEBISDwoLSG9tZUhhcnZlc3QQExIQCgxDb2xsZWN0",
+            "U3RhcnQQFBIOCgpDb2xsZWN0RW5kEBUSCgoGR21NYWtlEGNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -44,95 +43,95 @@ namespace GameMessageCore {
   }
   #region Enums
   public enum GameLogType {
-    [pbr::OriginalName("log_unknow")] LogUnknow = 0,
+    [pbr::OriginalName("LogUnknow")] LogUnknow = 0,
     /// <summary>
     /// 创建角色
     /// </summary>
-    [pbr::OriginalName("create_user")] CreateUser = 1,
+    [pbr::OriginalName("CreateUser")] CreateUser = 1,
     /// <summary>
     /// 进入游戏
     /// </summary>
-    [pbr::OriginalName("enter_game")] EnterGame = 2,
+    [pbr::OriginalName("EnterGame")] EnterGame = 2,
     /// <summary>
     /// 退出游戏
     /// </summary>
-    [pbr::OriginalName("leave_game")] LeaveGame = 3,
+    [pbr::OriginalName("LeaveGame")] LeaveGame = 3,
     /// <summary>
     /// 击杀怪物
     /// </summary>
-    [pbr::OriginalName("kill_monster")] KillMonster = 4,
+    [pbr::OriginalName("KillMonsters")] KillMonsters = 4,
     /// <summary>
     /// 抓捕动物
     /// </summary>
-    [pbr::OriginalName("capture_animal")] CaptureAnimal = 5,
+    [pbr::OriginalName("CaptureAnimals")] CaptureAnimals = 5,
     /// <summary>
     /// 释放动物
     /// </summary>
-    [pbr::OriginalName("free_animal")] FreeAnimal = 6,
+    [pbr::OriginalName("FreeAnimals")] FreeAnimals = 6,
     /// <summary>
     /// 接取任务
     /// </summary>
-    [pbr::OriginalName("accept_task")] AcceptTask = 7,
+    [pbr::OriginalName("TaskAccept")] TaskAccept = 7,
     /// <summary>
     /// 放弃任务   
     /// </summary>
-    [pbr::OriginalName("abandon_task")] AbandonTask = 8,
+    [pbr::OriginalName("TaskAbandon")] TaskAbandon = 8,
     /// <summary>
     /// 完成任务
     /// </summary>
-    [pbr::OriginalName("finish_task")] FinishTask = 9,
+    [pbr::OriginalName("TaskEnd")] TaskEnd = 9,
     /// <summary>
     /// 接取任务链
     /// </summary>
-    [pbr::OriginalName("accept_task_list")] AcceptTaskList = 10,
+    [pbr::OriginalName("TaskListAccept")] TaskListAccept = 10,
     /// <summary>
     /// 放弃任务链
     /// </summary>
-    [pbr::OriginalName("abandon_task_list")] AbandonTaskList = 11,
+    [pbr::OriginalName("TaskListAbandon")] TaskListAbandon = 11,
     /// <summary>
     /// 完成任务链
     /// </summary>
-    [pbr::OriginalName("finish_task_list")] FinishTaskList = 12,
+    [pbr::OriginalName("TaskListEnd")] TaskListEnd = 12,
     /// <summary>
-    /// 进入家园服
+    /// 开始切换地图(切换服务器)
     /// </summary>
-    [pbr::OriginalName("enter_home")] EnterHome = 13,
+    [pbr::OriginalName("ChangeMapStart")] ChangeMapStart = 13,
     /// <summary>
-    /// 退出家园服
+    /// 完成切换地图(切换服务器)
     /// </summary>
-    [pbr::OriginalName("quit_home")] QuitHome = 14,
+    [pbr::OriginalName("ChangeMapEnd")] ChangeMapEnd = 14,
     /// <summary>
     /// 升级天赋树节点 
     /// </summary>
-    [pbr::OriginalName("upgrade_talent")] UpgradeTalent = 15,
+    [pbr::OriginalName("UpgradeTalent")] UpgradeTalent = 15,
     /// <summary>
     /// 使用nft
     /// </summary>
-    [pbr::OriginalName("use_nft")] UseNft = 16,
+    [pbr::OriginalName("UseNft")] UseNft = 16,
     /// <summary>
     /// 播种
     /// </summary>
-    [pbr::OriginalName("sowing")] Sowing = 17,
+    [pbr::OriginalName("HomeSowing")] HomeSowing = 17,
     /// <summary>
     /// 放置动物食物
     /// </summary>
-    [pbr::OriginalName("put_animal_food")] PutAnimalFood = 18,
+    [pbr::OriginalName("HomePutAnimalFood")] HomePutAnimalFood = 18,
     /// <summary>
     /// 家园土地收获
     /// </summary>
-    [pbr::OriginalName("harvest")] Harvest = 19,
+    [pbr::OriginalName("HomeHarvest")] HomeHarvest = 19,
     /// <summary>
     /// 开始采集(包含采草和挖矿)
     /// </summary>
-    [pbr::OriginalName("collect_start")] CollectStart = 20,
+    [pbr::OriginalName("CollectStart")] CollectStart = 20,
     /// <summary>
     /// 采集完成(包含采草和挖矿)
     /// </summary>
-    [pbr::OriginalName("collect_end")] CollectEnd = 21,
+    [pbr::OriginalName("CollectEnd")] CollectEnd = 21,
     /// <summary>
     /// gm后台添加
     /// </summary>
-    [pbr::OriginalName("gm_make")] GmMake = 99,
+    [pbr::OriginalName("GmMake")] GmMake = 99,
   }
 
   #endregion

@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static GameLogReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKrwDCgtHYW1lTG9n",
+            "Cg5nYW1lX2xvZy5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKssDCgtHYW1lTG9n",
             "VHlwZRINCglMb2dVbmtub3cQABIOCgpDcmVhdGVVc2VyEAESDQoJRW50ZXJH",
             "YW1lEAISDQoJTGVhdmVHYW1lEAMSEAoMS2lsbE1vbnN0ZXJzEAQSEgoOQ2Fw",
             "dHVyZUFuaW1hbHMQBRIPCgtGcmVlQW5pbWFscxAGEg4KClRhc2tBY2NlcHQQ",
@@ -34,7 +34,8 @@ namespace GameMessageCore {
             "Z2VNYXBDYW5jZWwQDxIRCg1DaGFuZ2VNYXBGYWlsEBASEQoNVXBncmFkZVRh",
             "bGVudBAREgoKBlVzZU5mdBASEg4KCkhvbWVTb3dpbmcQExIVChFIb21lUHV0",
             "QW5pbWFsRm9vZBAUEg8KC0hvbWVIYXJ2ZXN0EBUSEAoMQ29sbGVjdFN0YXJ0",
-            "EBYSDgoKQ29sbGVjdEVuZBAXEgoKBkdtTWFrZRBjYgZwcm90bzM="));
+            "EBYSDgoKQ29sbGVjdEVuZBAXEg0KCVVzZXJEZWF0aBAYEgoKBkdtTWFrZRBj",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.GameLogType), }, null, null));
@@ -137,6 +138,7 @@ namespace GameMessageCore {
     /// 采集完成(包含采草和挖矿)
     /// </summary>
     [pbr::OriginalName("CollectEnd")] CollectEnd = 23,
+    [pbr::OriginalName("UserDeath")] UserDeath = 24,
     /// <summary>
     /// gm后台添加
     /// </summary>

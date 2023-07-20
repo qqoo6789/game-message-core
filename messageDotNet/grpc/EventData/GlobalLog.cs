@@ -16,7 +16,7 @@ public class GlobalLogEvent
     public string ObjectType;
     public long ObjectId;
     public string ObjectName;
-    public int64 ObjectOwner;
+    public long ObjectOwner;
     public uint ObjectCid;
     public int ObjectNumber;
     public GrpcVector3 Pos;

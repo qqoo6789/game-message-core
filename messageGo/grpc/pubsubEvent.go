@@ -70,4 +70,7 @@ const (
 	SubscriptionEventHomeHarvest       SubscriptionEvent = "EventTopicHomeHarvest"
 
 	SubscriptionEventCollect SubscriptionEvent = "EventTopicCollect"
+
+	// 日志采集
+	SubscriptionEventGlobalLog SubscriptionEvent = "EventTopicGlobalLog"
 )

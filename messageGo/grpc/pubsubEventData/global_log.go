@@ -6,9 +6,7 @@ import (
 )
 
 // 日志采集
-type GlobalLogEvent struct {
-	MsgVersion   int64                 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
-	FormService  base_data.ServiceData `json:"formService"`
+type GlobalLogInfo struct {
 	Action       proto.GameLogType     `json:"action"`
 	UserId       int64                 `json:"userId"`
 	ObjectType   string                `json:"objectType"`
@@ -21,9 +19,7 @@ type GlobalLogEvent struct {
 	Desc         string                `json:"desc"`
 }
 
-func (p *GlobalLogEvent) Clear() {
-	p.MsgVersion = 0
-	p.FormService.Clear()
+func (p *GlobalLogInfo) Clear() {
 	p.Action = 0
 	p.UserId = 0
 	p.ObjectType = ""
@@ -34,4 +30,17 @@ func (p *GlobalLogEvent) Clear() {
 	p.ObjectNumber = 0
 	p.Pos.Clear()
 	p.Desc = ""
+}
+
+// 日志采集
+type GlobalLogEvent struct {
+	MsgVersion  int64                 `json:"msgVersion"` // 消息版本号 值为毫秒时间戳
+	FormService base_data.ServiceData `json:"formService"`
+	Log         GlobalLogInfo         `json:"log"`
+}
+
+func (p *GlobalLogEvent) Clear() {
+	p.MsgVersion = 0
+	p.FormService.Clear()
+	p.Log.Clear()
 }

@@ -1,6 +1,9 @@
 package base_data
 
-import "game-message-core/proto"
+import (
+	"encoding/json"
+	"game-message-core/proto"
+)
 
 // 对应 proto.Vector3
 type GrpcVector3 struct {
@@ -23,6 +26,14 @@ func (p *GrpcVector3) Set(v *proto.Vector3) {
 	p.Y = v.Y
 	p.Z = v.Z
 }
+
+func (p *GrpcVector3) ToJson() string {
+	if bs, err := json.Marshal(p); err == nil {
+		return string(bs)
+	}
+	return ""
+}
+
 func (p *GrpcVector3) ToProtoData() proto.Vector3 {
 	return proto.Vector3{X: p.X, Y: p.Y, Z: p.Z}
 }

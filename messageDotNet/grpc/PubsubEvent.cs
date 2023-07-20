@@ -132,5 +132,13 @@ public static class SubscriptionEvent
     /// </summary>
     public const string COLLECT = "EventTopicCollect";
 
+    /// <summary>
+    ///  日志采集
+    /// </summary>
+    public const string GLOBAL_LOG = "EventTopicGlobalLog";
+
+
+
+
 }
 

@@ -29,6 +29,7 @@ enum GameLogType {
     HomeHarvest         = 21; // 家园土地收获
     CollectStart        = 22; // 开始采集(包含采草和挖矿)
     CollectEnd          = 23; // 采集完成(包含采草和挖矿)
+    UserDeath           = 24; 
     
 
     GmMake              = 99; // gm后台添加

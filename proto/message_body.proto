@@ -162,6 +162,11 @@ message BroadCastEntityCaptureTrapSkillResp{
   bool                    isStart        =5; // 开始或结束
 }
 
+message BroadCastEntityBTreeDataUpdateResp{
+  RespTitle               resTitle        = 1;
+  int64                   entityId        = 2;
+  BTreeData               btreeData = 3;     //行为树数据
+}
 // 占地相关
 message QueryLandsReq{
   ReqTitle          reqTitle  = 1;

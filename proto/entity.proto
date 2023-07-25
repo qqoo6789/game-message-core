@@ -76,6 +76,7 @@ message Monster {
   int64                   owner_id = 9;       //战斗所属者
   CaptureData             capture_data = 10;  //捕获数据
   repeated int32          equipmentSkills = 11;// 装备技能列表
+  BTreeData               btreeData = 12;     //行为树数据
 }
 
 message Npc {
@@ -190,4 +191,15 @@ enum DialogueEvent {
   ConversationStart = 0;
   // 对话结束
   ConversationEnd = 1;
+}
+
+message BTreePhaseProgress {
+  int32 phase = 1;
+  int32 progress = 2;
+}
+
+message BTreeData {
+  int32 phase = 1;
+  int64 phaseTime = 2;
+  repeated BTreePhaseProgress phaseProgressList = 3;
 }

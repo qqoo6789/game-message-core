@@ -123,6 +123,7 @@ enum EnvelopeType {
     EntityDialogue                  = 0x030075;     // 实体对话
     BroadCastEntityEquipmentSkill   = 0x030077;     // 广播实体装备技能
     BroadCastEntityCaptureTrapSkill = 0x030079;     // 捕获释放技能结果
+    BroadCastEntityBTreeDataUpdate  = 0x030081;     // 实体行为树数据更新
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
     SelfTasks                       = 0x040001;     // 查询玩家已接的任务列表（进行中状态）

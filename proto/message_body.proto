@@ -358,6 +358,24 @@ message BroadCastEntityEquipmentSkillResp{
   repeated int32  equipmentSkills = 3;    // 装备技能列表
 }
 
+message QueryPlayerSettingReq{
+  ReqTitle            reqTitle = 1;
+}
+message QueryPlayerSettingResp{
+  RespTitle               resTitle = 1;
+  repeated PlayerSetting  settings = 2;
+}
+
+message SavePlayerSettingReq{
+  ReqTitle                reqTitle = 1;
+  repeated PlayerSetting  settings = 2;
+}
+message SavePlayerSettingResp{
+  RespTitle               resTitle = 1;
+}
+
+
+
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

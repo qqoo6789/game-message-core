@@ -67,6 +67,8 @@ enum EnvelopeType {
     QueryAnimalList                 = 0x010065;     // 请求Animal列表
     BroadCastUpdateAnimalList       = 0x010067;     // 广播批量更新Animal列表(add | update | remove)
     FreedAnimal                     = 0x010069;     // 释放Animal
+    QueryPlayerSetting              = 0x010071;     // 请求客户端所有自定义存储数据
+    SavePlayerSetting               = 0x010073;     // 存储客户端自定义存储数据
 
     
  

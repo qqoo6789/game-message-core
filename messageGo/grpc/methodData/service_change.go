@@ -41,18 +41,12 @@ func (p *StartServiceOutput) Clear() {
 
 // user请求进入目标scene service request（预进入阶段）
 type ApplyEnterServiceInput struct {
-	ApplyUser    int64                 `json:"applyUser"`
-	CurHp        int32                 `json:"curHp"`
-	UserPosition base_data.GrpcVector3 `json:"userPosition"`
-	UserDir      base_data.GrpcVector3 `json:"userDir"`
-	FromSer      base_data.ServiceData `json:"fromSer"`
-	CreateAt     int64                 `json:"createAt"`
+	ApplyUser int64                 `json:"applyUser"`
+	FromSer   base_data.ServiceData `json:"fromSer"`
 }
 
 func (p *ApplyEnterServiceInput) Clear() {
 	p.ApplyUser = 0
-	p.CurHp = 0
-	p.UserPosition.Clear()
 	p.FromSer.Clear()
 }
 
@@ -78,6 +72,7 @@ type JoinServiceInput struct {
 	UserDir         base_data.GrpcVector3 `json:"userDir"`
 	FromSer         base_data.ServiceData `json:"fromSer"`
 	SkillEffectData string                `json:"skillEffectData"`
+	UsedMs          int64                 `json:"usedMs"`
 }
 
 func (p *JoinServiceInput) Clear() {
@@ -89,6 +84,7 @@ func (p *JoinServiceInput) Clear() {
 	p.UserDir.Clear()
 	p.FromSer.Clear()
 	p.SkillEffectData = ""
+	p.UsedMs = 0
 }
 
 type JoinServiceOutput struct {

@@ -36,12 +36,7 @@ public class StartServiceOutput
 public class ApplyEnterServiceInput
 {
     public long ApplyUser;
-    public int CurHp;
-    public GrpcVector3 UserPosition;
-    public GrpcVector3 UserDir;
     public ServiceData FromSer;
-    public long CreateAt;
-
 }
 [Serializable]
 public class ApplyEnterServiceOutput
@@ -49,7 +44,6 @@ public class ApplyEnterServiceOutput
     public long UserId;
     public bool Success;
     public string ErrMsg;
-
 }
 
 
@@ -67,6 +61,7 @@ public class JoinServiceInput
     public GrpcVector3 UserDir;
     public ServiceData FromSer;
     public string SkillEffectData;
+    public long UsedMs;
 
 }
 [Serializable]

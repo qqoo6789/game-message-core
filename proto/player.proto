@@ -50,6 +50,6 @@ enum TickOutType{
 }
 
  message PlayerSetting{
-  uint32      key    = 1;
+  int32      key    = 1;
   string      value  = 2;
 }

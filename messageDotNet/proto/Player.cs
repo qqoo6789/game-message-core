@@ -32,7 +32,7 @@ namespace GameMessageCore {
             "bWUYAiABKAkSDwoHcm9sZV9pZBgDIAEoBRIOCgZnZW5kZXIYBSABKAkSEQoJ",
             "cm9sZV9pY29uGAYgASgJEi8KB2ZlYXR1cmUYByABKAsyHi5nYW1lTWVzc2Fn",
             "ZUNvcmUuUGxheWVyRmVhdHVyZRINCgVndWlkZRgIIAEoCCIrCg1QbGF5ZXJT",
-            "ZXR0aW5nEgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoCSppChJQbGF5ZXJS",
+            "ZXR0aW5nEgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoCSppChJQbGF5ZXJS",
             "ZXNwYXduUG9pbnQSGwoXUGxheWVyUmVzcGF3blBvaW50TGNvYWwQABIaChZQ",
             "bGF5ZXJSZXNwYXduUG9pbnRDaXR5EAESGgoWUGxheWVyUmVzcGF3blBvaW50",
             "QXJlYRACKlsKC1RpY2tPdXRUeXBlEhYKElRpY2tPdXRUeXBlVW5rbm93bhAA",
@@ -1066,10 +1066,10 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "key" field.</summary>
     public const int KeyFieldNumber = 1;
-    private uint key_;
+    private int key_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Key {
+    public int Key {
       get { return key_; }
       set {
         key_ = value;
@@ -1134,7 +1134,7 @@ namespace GameMessageCore {
     #else
       if (Key != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Key);
+        output.WriteInt32(Key);
       }
       if (Value.Length != 0) {
         output.WriteRawTag(18);
@@ -1152,7 +1152,7 @@ namespace GameMessageCore {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Key != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Key);
+        output.WriteInt32(Key);
       }
       if (Value.Length != 0) {
         output.WriteRawTag(18);
@@ -1169,7 +1169,7 @@ namespace GameMessageCore {
     public int CalculateSize() {
       int size = 0;
       if (Key != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Key);
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Key);
       }
       if (Value.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
@@ -1208,7 +1208,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Key = input.ReadUInt32();
+            Key = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1231,7 +1231,7 @@ namespace GameMessageCore {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Key = input.ReadUInt32();
+            Key = input.ReadInt32();
             break;
           }
           case 18: {

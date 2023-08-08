@@ -588,6 +588,12 @@ message BroadCastMapEntityUpdateResp{
   // 视野内当前场景中被破坏的元素列表
   repeated DestructionElementData destructionElements = 4;
 }
+message BroadCastMapEntityBornResp{
+  RespTitle                   resTitle      = 1;
+  // 视野内出生的实体列表
+  repeated EntityWithLocation entityList    = 2;
+}
+
 message BroadCastEntityMoveResp{
   RespTitle                   resTitle      = 1;
   repeated EntityMovement     moves         = 2;

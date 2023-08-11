@@ -24,15 +24,15 @@ namespace GameMessageCore {
     static ServiceReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1zZXJ2aWNlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqhQIKC1NlcnZpY2VU",
+            "Cg1zZXJ2aWNlLnByb3RvEg9nYW1lTWVzc2FnZUNvcmUqnAIKC1NlcnZpY2VU",
             "eXBlEhYKElNlcnZpY2VUeXBlVW5rbm93bhAAEhMKD1NlcnZpY2VUeXBlTWFp",
             "bhABEhYKElNlcnZpY2VUeXBlQWNjb3VudBACEhQKEFNlcnZpY2VUeXBlU2Nl",
             "bmUQAxITCg9TZXJ2aWNlVHlwZVRhc2sQBBITCg9TZXJ2aWNlVHlwZUNoYXQQ",
             "BRIUChBTZXJ2aWNlVHlwZUFnZW50EAYSFgoSU2VydmljZVR5cGVNYW5hZ2Vy",
             "EAcSGQoVU2VydmljZVR5cGVDb250cm9sbGVyEAgSEgoOU2VydmljZVR5cGVM",
-            "b2cQCRIUChBTZXJ2aWNlVHlwZUxpbWl0EAoqSwoTU2NlbmVTZXJ2aWNlU3Vi",
-            "VHlwZRISCg5Vbmtub3duU3ViVHlwZRAAEgkKBVdvcmxkEAESCAoESG9tZRAC",
-            "EgsKB0R1bmdlb24QA2IGcHJvdG8z"));
+            "b2cQCRIVChFTZXJ2aWNlVHlwZUZyaWVuZBAKEhQKEFNlcnZpY2VUeXBlTGlt",
+            "aXQQCypLChNTY2VuZVNlcnZpY2VTdWJUeXBlEhIKDlVua25vd25TdWJUeXBl",
+            "EAASCQoFV29ybGQQARIICgRIb21lEAISCwoHRHVuZ2VvbhADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.ServiceType), typeof(global::GameMessageCore.SceneServiceSubType), }, null, null));
@@ -80,9 +80,13 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("ServiceTypeLog")] Log = 9,
     /// <summary>
+    /// 好友(队伍 工会)服务
+    /// </summary>
+    [pbr::OriginalName("ServiceTypeFriend")] Friend = 10,
+    /// <summary>
     /// 服务类型上限标记必须放在最后
     /// </summary>
-    [pbr::OriginalName("ServiceTypeLimit")] Limit = 10,
+    [pbr::OriginalName("ServiceTypeLimit")] Limit = 11,
   }
 
   public enum SceneServiceSubType {

@@ -30,8 +30,10 @@ enum ServiceType{
   ServiceTypeController = 8;  
   // 日志服务
   ServiceTypeLog = 9;  
+  // 好友(队伍 工会)服务
+  ServiceTypeFriend = 10;  
   // 服务类型上限标记必须放在最后
-  ServiceTypeLimit = 10;
+  ServiceTypeLimit = 11;
 }
 
 enum SceneServiceSubType{

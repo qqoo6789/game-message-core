@@ -46,6 +46,8 @@ message ItemGetReq {
 }
 message ItemGetResp {
   RespTitle     resTitle  = 1;
+  uint32        itemCount = 2;
+
 }
 message BroadCastInitItemResp{
   RespTitle     resTitle  = 1;

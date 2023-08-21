@@ -1,0 +1,18 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+
+ 
+message TeamMember {
+  int64   userId  = 1; 
+  string  name    = 2;
+  string  icon    = 3;
+  int64   teamId  = 4;   
+}
+ 
+message Team {
+  int64               id      = 1; 
+  string              name    = 2;
+  int64               leader  = 3;
+  repeated TeamMember members = 4;   
+}

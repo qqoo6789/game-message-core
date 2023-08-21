@@ -4,6 +4,7 @@ const (
 	RpcInvokeBroadSystemMessage string = "RpcInvokeBroadSystemMessage"
 	RpcInvokeCheckUserLogin     string = "RpcInvokeCheckUserLogin"
 	RpcInvokeTickOutPlayer      string = "RpcInvokeTickOutPlayer"
+	RpcInvokeGetTeamData        string = "RpcInvokeGetTeamData"
 )
 
 type ManagerServiceAction string

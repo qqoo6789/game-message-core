@@ -73,4 +73,10 @@ const (
 
 	// 日志采集
 	SubscriptionEventGlobalLog SubscriptionEvent = "EventTopicGlobalLog"
+
+	// friend events
+	SubscriptionEventCreateTeam  SubscriptionEvent = "EventTopicCreateTeam"
+	SubscriptionEventDisbandTeam SubscriptionEvent = "EventTopicDisbandTeam"
+	SubscriptionEventJoinTeam    SubscriptionEvent = "EventTopicJoinTeam"
+	SubscriptionEventQuitTeam    SubscriptionEvent = "EventTopicQuitTeam"
 )

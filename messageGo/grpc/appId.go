@@ -12,4 +12,5 @@ const (
 	GAME_SERVICE_APPID_LOG        AppId = "game-service-log"
 	GAME_SERVICE_APPID_SCENE_XX   AppId = "game-service-scene-xx" // xx为动态ID
 	GAME_SERVICE_APPID_AGENT_XX   AppId = "game-service-agent-xx" // xx为动态ID
+	GAME_SERVICE_APPID_FRIEND     AppId = "game-service-friend"
 )

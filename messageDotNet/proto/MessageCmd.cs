@@ -24,7 +24,7 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKpoUCgxFbnZl",
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKugVCgxFbnZl",
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -82,7 +82,12 @@ namespace GameMessageCore {
             "c3RUYXNrTGlzdFJld2FyZBCZgBASFQoPU2VuZENoYXRNZXNzYWdlEIGAFBIb",
             "ChVCcm9hZENhc3RDaGF0TWVzc2FnZXMQg4AUEiAKGkJyb2FkQ2FzdFJlbW92",
             "ZUNoYXRNZXNzYWdlEISAFBIeChhCcm9hZENhc3RVcGRhdGVDaGF0U3RhdGUQ",
-            "hYAUEgoKBFBpbmcQgYAYYgZwcm90bzM="));
+            "hYAUEgoKBFBpbmcQgYAYEhAKCkNyZWF0ZVRlYW0QgYAgEhEKC0Rpc2JhbmRU",
+            "ZWFtEIOAIBIaChRCcm9hZENhc3REaXNiYW5kVGVhbRCFgCASDgoISm9pblRl",
+            "YW0Qh4AgEhcKEUJyb2FkQ2FzdEpvaW5UZWFtEImAIBIOCghRdWl0VGVhbRCR",
+            "gCASFwoRQnJvYWRDYXN0UXVpdFRlYW0Qk4AgEhcKEVRpY2tPdXRUZWFtTWVt",
+            "YmVyEJWAIBIgChpCcm9hZENhc3RUaWNrT3V0VGVhbU1lbWJlchCXgCBiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
@@ -391,6 +396,42 @@ namespace GameMessageCore {
     ///agentService协议 : 0x06ZZZZ  网关服务 协议 ************************************
     /// </summary>
     [pbr::OriginalName("Ping")] Ping = 393217,
+    /// <summary>
+    ///FriendService协议 : 0x08ZZZZ 好友服务 协议 ************************************
+    /// </summary>
+    [pbr::OriginalName("CreateTeam")] CreateTeam = 524289,
+    /// <summary>
+    /// 解散队伍(队长权限)
+    /// </summary>
+    [pbr::OriginalName("DisbandTeam")] DisbandTeam = 524291,
+    /// <summary>
+    /// 广播解散队伍 
+    /// </summary>
+    [pbr::OriginalName("BroadCastDisbandTeam")] BroadCastDisbandTeam = 524293,
+    /// <summary>
+    /// 申请加入队伍
+    /// </summary>
+    [pbr::OriginalName("JoinTeam")] JoinTeam = 524295,
+    /// <summary>
+    /// 申请加入队伍
+    /// </summary>
+    [pbr::OriginalName("BroadCastJoinTeam")] BroadCastJoinTeam = 524297,
+    /// <summary>
+    /// 申请退出队伍(队长退出  解散or重新分配队长)
+    /// </summary>
+    [pbr::OriginalName("QuitTeam")] QuitTeam = 524305,
+    /// <summary>
+    /// 广播退出队伍
+    /// </summary>
+    [pbr::OriginalName("BroadCastQuitTeam")] BroadCastQuitTeam = 524307,
+    /// <summary>
+    /// 提出队员(队长权限)
+    /// </summary>
+    [pbr::OriginalName("TickOutTeamMember")] TickOutTeamMember = 524309,
+    /// <summary>
+    /// 广播提出队员
+    /// </summary>
+    [pbr::OriginalName("BroadCastTickOutTeamMember")] BroadCastTickOutTeamMember = 524311,
   }
 
   #endregion

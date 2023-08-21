@@ -153,6 +153,19 @@ enum EnvelopeType {
     Ping                           = 0x060001;
     
      
+    //FriendService协议 : 0x08ZZZZ 好友服务 协议 ************************************
+    CreateTeam                      = 0x080001;      // 创建队伍
+    DisbandTeam                     = 0x080003;      // 解散队伍(队长权限)
+    BroadCastDisbandTeam            = 0x080005;      // 广播解散队伍 
+    JoinTeam                        = 0x080007;      // 申请加入队伍
+    BroadCastJoinTeam               = 0x080009;      // 申请加入队伍
+    QuitTeam                        = 0x080011;      // 申请退出队伍(队长退出  解散or重新分配队长)
+    BroadCastQuitTeam               = 0x080013;      // 广播退出队伍
+    TickOutTeamMember               = 0x080015;      // 提出队员(队长权限)
+    BroadCastTickOutTeamMember      = 0x080017;      // 广播提出队员
+
+
+
 
     //ServiceMgr协议 : 0x09ZZZZ  服务管理 协议(客户端不能调用) **********************
 

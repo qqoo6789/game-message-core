@@ -29,8 +29,8 @@ namespace GameMessageCore {
             "bhABEhYKElNlcnZpY2VUeXBlQWNjb3VudBACEhQKEFNlcnZpY2VUeXBlU2Nl",
             "bmUQAxITCg9TZXJ2aWNlVHlwZVRhc2sQBBITCg9TZXJ2aWNlVHlwZUNoYXQQ",
             "BRIUChBTZXJ2aWNlVHlwZUFnZW50EAYSFgoSU2VydmljZVR5cGVNYW5hZ2Vy",
-            "EAcSGQoVU2VydmljZVR5cGVDb250cm9sbGVyEAgSEgoOU2VydmljZVR5cGVM",
-            "b2cQCRIVChFTZXJ2aWNlVHlwZUZyaWVuZBAKEhQKEFNlcnZpY2VUeXBlTGlt",
+            "EAcSFQoRU2VydmljZVR5cGVGcmllbmQQCBIZChVTZXJ2aWNlVHlwZUNvbnRy",
+            "b2xsZXIQCRISCg5TZXJ2aWNlVHlwZUxvZxAKEhQKEFNlcnZpY2VUeXBlTGlt",
             "aXQQCypLChNTY2VuZVNlcnZpY2VTdWJUeXBlEhIKDlVua25vd25TdWJUeXBl",
             "EAASCQoFV29ybGQQARIICgRIb21lEAISCwoHRHVuZ2VvbhADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -72,17 +72,17 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("ServiceTypeManager")] Manager = 7,
     /// <summary>
+    /// 好友(队伍 工会)服务
+    /// </summary>
+    [pbr::OriginalName("ServiceTypeFriend")] Friend = 8,
+    /// <summary>
     /// 后台控制服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeController")] Controller = 8,
+    [pbr::OriginalName("ServiceTypeController")] Controller = 9,
     /// <summary>
     /// 日志服务
     /// </summary>
-    [pbr::OriginalName("ServiceTypeLog")] Log = 9,
-    /// <summary>
-    /// 好友(队伍 工会)服务
-    /// </summary>
-    [pbr::OriginalName("ServiceTypeFriend")] Friend = 10,
+    [pbr::OriginalName("ServiceTypeLog")] Log = 10,
     /// <summary>
     /// 服务类型上限标记必须放在最后
     /// </summary>

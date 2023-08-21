@@ -137,8 +137,11 @@ public static class SubscriptionEvent
     /// </summary>
     public const string GLOBAL_LOG = "EventTopicGlobalLog";
 
-
-
+    // friend events
+    public const string CREATE_TEAM = "EventTopicCreateTeam";
+    public const string DISBAND_TEAM = "EventTopicDisbandTeam";
+    public const string JOIN_TEAM = "EventTopicJoinTeam";
+    public const string QUIT_TEAM = "EventTopicQuitTeam";
 
 }
 

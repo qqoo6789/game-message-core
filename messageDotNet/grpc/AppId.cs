@@ -13,4 +13,5 @@ public static class GRPCAppId
     public const string GAME_SERVICE_APPID_LOG = "game-service-log";
     public const string GAME_SERVICE_APPID_SCENE_XX = "game-service-scene-xx";
     public const string GAME_SERVICE_APPID_AGENT_XX = "game-service-agent-xx";
+    public const string GAME_SERVICE_APPID_FRIEND = "game-service-friend";
 }

@@ -18,6 +18,7 @@ import "home.proto";
 import "talent.proto";
 import "capture.proto";
 import "login.proto";
+import "team.proto";
 
  
 // C->S MESSAGE TITLE
@@ -884,6 +885,67 @@ message PingReq {
 message PingResp {
   RespTitle     resTitle  = 1;
 } 
+
+  
+//FriendService协议 : 0x08ZZZZ 好友服务 协议 ************************************
+message CreateTeamReq{
+  ReqTitle  reqTitle  = 1;
+  string    name      = 2;
+}              
+message CreateTeamResp{
+  RespTitle resTitle  = 1;
+  Team      teamData  = 2;
+}
+
+message DisbandTeamReq{
+  ReqTitle  reqTitle  = 1;
+}
+message DisbandTeamResp{
+  RespTitle resTitle  = 1;
+}
+message BroadCastDisbandTeamResp{
+  RespTitle resTitle  = 1;
+  int64     teamId    = 2;
+}
+
+message JoinTeamReq{
+  ReqTitle  reqTitle  = 1;
+  int64     teamId    = 2;
+}
+message JoinTeamResp{
+  RespTitle resTitle  = 1;
+  Team      teamData  = 2;  
+}
+message BroadCastJoinTeamResp{
+  RespTitle   resTitle  = 1;
+  TeamMember  member    = 2;
+}
+
+message QuitTeamReq{
+  ReqTitle  reqTitle  = 1;
+}
+message QuitTeamResp{
+  RespTitle resTitle  = 1;
+}
+message BroadCastQuitTeamResp{
+  RespTitle resTitle  = 1;
+  Team      teamData  = 2; 
+  int64     member    = 3;
+}
+
+message TickOutTeamMemberReq{
+ ReqTitle   reqTitle  = 1;
+ int64      memberId  = 2;
+}
+message TickOutTeamMemberResp{
+  RespTitle resTitle  = 1;
+}
+message BroadCastTickOutTeamMemberResp{
+  RespTitle   resTitle  = 1;
+  int64       member    = 2;
+}
+
+
 
 
 

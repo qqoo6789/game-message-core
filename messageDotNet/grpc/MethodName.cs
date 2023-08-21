@@ -6,6 +6,7 @@
 public static class RpcInvoke
 {
     public const string TICK_OUT_PLAYER = "RpcInvokeTickOutPlayer";
+    public const string GET_TEAM_DATA = "RpcInvokeGetTeamData";
 }
 
 

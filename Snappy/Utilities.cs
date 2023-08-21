@@ -29,10 +29,13 @@ namespace Snappy.Sharp
             Debug.Assert(sourceIndex + 7 < source.Length);
             Debug.Assert(destIndex + 7 < dest.Length);
 
-            fixed (byte* src = &source[sourceIndex], dst = &dest[destIndex])
-            {
-                *(long*)dst = *(long*)src;
-            }
+            //指针操作在Android的热更包中crash，所以改用Buffer.BlockCopy
+            // fixed (byte* src = &source[sourceIndex], dst = &dest[destIndex])
+            // {
+            //     *(long*)dst = *(long*)src;
+            // }
+            int bytesToCopy = 8;//why 8? because long is 8 bytes *(long*)dst = *((long*)src);
+            Buffer.BlockCopy(source, sourceIndex, dest, destIndex, bytesToCopy);
         }
 
         ///<summary>>

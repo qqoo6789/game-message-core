@@ -1,12 +1,10 @@
 {
-    "name": "game.message.core",
+    "name": "Snappy",
     "rootNamespace": "",
-    "references": [
-        "GUID:d5814023a6cc64d9ea5b407971c656f7"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

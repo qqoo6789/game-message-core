@@ -11,4 +11,5 @@ public class UserLeaveGameEvent
     public string SceneServiceAppId;
     public long UserId;
     public string UserSocketId;
+    public long OnLineMs;
 }
